@@ -103,6 +103,40 @@ add_action( 'after_setup_theme', 'digistarter_setup' );
  * Enqueue scripts and styles.
  */
 if ( !function_exists('digistarter_scripts') ) :
+
+	
+    function berea_scripts_styles() {
+    
+        /*   REGISTER MEGA DROPDOWN SCRIPTS */
+        wp_register_script('megadropdown_modernizr', get_template_directory_uri().'/assets/mega-dropdown/js/modernizr.js');
+        
+        /*   Change from WP default jQuery version to 2.2.1 (used by mega-dropdown) */
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', get_template_directory_uri().'/assets/mega-dropdown/js/jquery-2.1.1.js');  
+        
+        wp_register_script('megadropdown_jquery_menu_aim', get_template_directory_uri().'/assets/mega-dropdown/js/jquery.menu-aim.js');
+        wp_register_script('megadropdown_main', get_template_directory_uri().'/assets/mega-dropdown/js/main.js');
+    
+    
+        /*   REGISTER MEGA DROPDOWN STYLES */
+        wp_register_style('megadropdown_reset', get_template_directory_uri().'/assets/mega-dropdown/css/reset.css');
+        //wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/mega-dropdown/css/style.css');
+    
+    
+    
+        /*   CALL ALL CSS AND SCRIPTS FOR SITE */
+        wp_enqueue_script('megadropdown_modernizr');
+        wp_enqueue_script('jquery');  
+        wp_enqueue_script('megadropdown_jquery_menu_aim');
+        wp_enqueue_script('megadropdown_main');
+    
+        wp_enqueue_style('megadropdown_reset');
+        wp_enqueue_style('megadropdown_style');
+    }
+    add_action( 'wp_enqueue_scripts', 'berea_scripts_styles' );	
+
+
+
 	function digistarter_scripts() {
 
 		if ( SCRIPT_DEBUG || WP_DEBUG ) :
@@ -130,6 +164,7 @@ if ( !function_exists('digistarter_scripts') ) :
 		}
 	}
 	add_action( 'wp_enqueue_scripts', 'digistarter_scripts' );
+	
 endif; // Enqueue Scripts and Styles
 
 /**
