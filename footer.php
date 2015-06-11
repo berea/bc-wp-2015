@@ -4,7 +4,7 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package digistarter
+ * @package berea
  */
 ?>
 		<?php tha_content_bottom(); ?>
@@ -14,11 +14,11 @@
 		<footer id="colophon" class="site-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 			<?php tha_footer_top(); ?>
 			<div class="site-info">
-				<?php do_action( 'digistarter_credits' ); ?>
-				<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by <span class="genericon genericon-wordpress"></span> %s', 'digistarter' ), 'WordPress' ); ?></a>
+				<?php do_action( 'berea_credits' ); ?>
+				<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by <span class="genericon genericon-wordpress"></span> %s', 'berea' ), 'WordPress' ); ?></a>
 				<span class="sep"> | </span>
 
-				<?php echo esc_attr( get_theme_mod( 'digistarter_footer_colophon', __('Some Like it Neat, by Alex Vasquez', 'digistarter' ) ) );  ?><br />
+				<?php echo esc_attr( get_theme_mod( 'berea_footer_colophon', __('Some Like it Neat, by Alex Vasquez', 'berea' ) ) );  ?><br />
 
 			</div><!-- .site-info -->
 			<?php tha_footer_bottom(); ?>

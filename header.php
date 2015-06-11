@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package digistarter
+ * @package berea
  */
 ?><!DOCTYPE html>
 <?php tha_html_before(); ?>
@@ -21,10 +21,10 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('nav-is-fixed'); ?>>
 <?php tha_body_top(); ?>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'digistarter' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'berea' ); ?></a>
 	<div class="wrap">
 		<?php tha_header_before(); ?>
 		<header id="masthead" class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
@@ -34,18 +34,8 @@
 				<div class="site-description"><?php bloginfo( 'description' ) ?></div>
 			</div>
 
-			<nav id="primary-nav" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-				<button class="menu-button">
-					<span class="dashicons <?php echo get_theme_mod( 'digistarter_mobile_nav_icon', 'dashicons-menu' ); ?>"></span><?php echo get_theme_mod( 'digistarter_mobile_nav_label', 'Menu' ); ?>
-				</button>
-				<?php 	wp_nav_menu( array(
-					    'theme_location' => 'primary-navigation',
-					    'menu_class' => 'flexnav', //Adding the class for FlexNav
-					    'items_wrap' => '<ul data-breakpoint=" '. esc_attr( get_theme_mod( 'digistarter_mobile_min_width' ) ) .' " id="%1$s" class="%2$s">%3$s</ul>', // Adding data-breakpoint for FlexNav
-					    ));
-				?>
+			<?php include 'universal_menu.php'; ?>
 
-			</nav><!-- #site-navigation -->
 			<?php tha_header_bottom(); ?>
 
 		</header><!-- #masthead -->
