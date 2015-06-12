@@ -843,7 +843,7 @@ a:hover, a:visited:hover {
 
 #primary,
 #secondary {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -1005,7 +1005,7 @@ input#s {
 -------------------------------------------------------------- */
 body {
   color: #000;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
   word-break: break-word;
 }
@@ -1129,7 +1129,7 @@ body {
   padding: 25px 0;
   font-size: 20px;
   font-size: 1.25rem;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Open Sans", sans-serif;
   font-style: italic;
 }
 @media screen and (min-width: 200px) {
@@ -1313,7 +1313,7 @@ ul.nav-menu li.current_page_item {
 #breadcrumbs {
   font-size: 14px;
   font-size: 0.875rem;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Open Sans", sans-serif;
   padding: 20px 0 20px 50px;
 }
 #breadcrumbs a, #breadcrumbs a:visited {
