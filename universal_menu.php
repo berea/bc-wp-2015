@@ -7,119 +7,136 @@
 
 				<ul class="cd-secondary-nav is-hidden">
 					<li class="go-back"><a href="#0">Menu</a></li>
-					<li class="see-all"><a href="#">All Clothing</a></li>
+					<li class="see-all"><a href="#">ADMISSIONS&gt;</a></li>
 					<li class="has-children">
-						<a href="#">ADMISSION INFO</a>
+						<a href="#">ADMISSIONS INFO</a>
 
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Clothing</a></li>
-							<li class="see-all"><a href="#">All Accessories</a></li>
-							<li class="has-children">
-								<a href="#0">Beanies</a>
-
-								<ul class="is-hidden">
-									<li class="go-back"><a href="#0">Accessories</a></li>
-									<li class="see-all"><a href="#">All Benies</a></li>
-									<li><a href="#">Caps &amp; Hats</a></li>
-									<li><a href="#">Gifts</a></li>
-									<li><a href="#">Scarves &amp; Snoods</a></li>
-								</ul>
-							</li>
-							<li class="has-children">
-								<a href="#0">Caps &amp; Hats</a>
-
-								<ul class="is-hidden">
-									<li class="go-back"><a href="#0">Accessories</a></li>
-									<li class="see-all"><a href="#">All Caps &amp; Hats</a></li>
-									<li><a href="#">Beanies</a></li>
-									<li><a href="#">Caps</a></li>
-									<li><a href="#">Hats</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Glasses</a></li>
-							<li><a href="#">Gloves</a></li>
-							<li><a href="#">Jewellery</a></li>
-							<li><a href="#">Scarves</a></li>
-							<li><a href="#">Wallets</a></li>
-							<li><a href="#">Watches</a></li>
+							<li class="go-back"><a href="#0">ADMISSIONS INFO</a></li>
+							<li><a href="#">Admissions Requirements</a></li>
+							<li><a href="#">Publications and Forms</a></li>
+							<li><a href="#">New Freshmen</a></li>
+							<li><a href="#">International Students</a></li>
+							<li><a href="#">Transfer Students</a></li>
 						</ul>
 					</li>
-
 					<li class="has-children">
-						<a href="#">Bottoms</a>
+						<a href="#">STUDENT LIFE</a>
 
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Clothing</a></li>
-							<li class="see-all"><a href="#">All Bottoms</a></li>
-							<li><a href="#">Casual Trousers</a></li>
-							<li class="has-children">
-								<a href="#0">Jeans</a>
-
-								<ul class="is-hidden">
-									<li class="go-back"><a href="#0">Bottoms</a></li>
-									<li class="see-all"><a href="#">All Jeans</a></li>
-									<li><a href="#">Ripped</a></li>
-									<li><a href="#">Skinny</a></li>
-									<li><a href="#">Slim</a></li>
-									<li><a href="#">Straight</a></li>
-								</ul>
-							</li>
-							<li><a href="#0">Leggings</a></li>
-							<li><a href="#0">Shorts</a></li>
+							<li class="go-back"><a href="#0">STUDENT LIFE</a></li>
+							<li><a href="#">Academic Excellence</a></li>
+							<li><a href="#">Career Preparation</a></li>
+							<li><a href="#">Athletics</a></li>
+							<li><a href="#">Study Abroad</a></li>
+							<li><a href="#">Service and Leadership</a></li>
 						</ul>
 					</li>
-
 					<li class="has-children">
-						<a href="#">Jackets</a>
+						<a href="#">FINANCIAL AID</a>
 
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Clothing</a></li>
-							<li class="see-all"><a href="#">All Jackets</a></li>
-							<li><a href="#">Blazers</a></li>
-							<li><a href="#">Bomber jackets</a></li>
-							<li><a href="#">Denim Jackets</a></li>
-							<li><a href="#">Duffle Coats</a></li>
-							<li><a href="#">Leather Jackets</a></li>
-							<li><a href="#">Parkas</a></li>
+							<li class="go-back"><a href="#0">FiNANCIAL AID</a></li>
+							<li><a href="#">Tuition Promise Scholarship</a></li>
+							<li><a href="#">Labor Grant Aid</a></li>
+							<li><a href="#">Financial Eligibility</a></li>
+							<li><a href="#">Estimate First-Year Costs</a></li>
+							<li><a href="#">Submit and RFQ</a></li>
 						</ul>
 					</li>
-
 					<li class="has-children">
-						<a href="#">Tops</a>
+						<a href="#">???</a>
 
 						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">Clothing</a></li>
-							<li class="see-all"><a href="#">All Tops</a></li>
-							<li><a href="#">Cardigans</a></li>
-							<li><a href="#">Coats</a></li>
-							<li><a href="#">Hoodies &amp; Sweatshirts</a></li>
-							<li><a href="#">Jumpers</a></li>
-							<li><a href="#">Polo Shirts</a></li>
-							<li><a href="#">Shirts</a></li>
-							<li class="has-children">
-								<a href="#0">T-Shirts</a>
-
-								<ul class="is-hidden">
-									<li class="go-back"><a href="#0">Tops</a></li>
-									<li class="see-all"><a href="#">All T-shirts</a></li>
-									<li><a href="#">Plain</a></li>
-									<li><a href="#">Print</a></li>
-									<li><a href="#">Striped</a></li>
-									<li><a href="#">Long sleeved</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Vests</a></li>
+							<li class="go-back"><a href="#0">???</a></li>
+							<li><a href="#">APPLY TODAY</a></li>
+							<li><a href="#">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></li>
+							<li><a href="#">SCHEDULE A CAMPUS VISIT</a></li>
 						</ul>
 					</li>
 				</ul>
 			</li>
 
 			<li class="has-children">
-				<a href="#">Gallery</a>
+				<a href="#">ACADEMICS</a>
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<li class="see-all"><a href="#">ACADEMICS&gt;</a></li>
+					<li>
+						<a class="cd-nav-item item-1" href="#">
+							<h3>DEGREE PROGRAMS</h3>
+							<p>Bachelor of Arts and Bachelor of Science degrees in 28 fields.</p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item item-2" href="#">
+							<h3>LABOR PROGRAM</h3>
+							<p>Students are engaged in a learning environment that encourages them to be active learners, workers, and servers.</p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item item-3" href="#">
+							<h3>LIBRARY</h3>
+							<p>It has books. And stuff.</p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item item-4" href="#">
+							<h3>MAJORS & MINORS</h3>
+							<p>This is the item description</p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item item-5" href="#">
+							<h3>ACADEMIC CALENDAR</h3>
+							<p>This is the item description</p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item item-6" href="#">
+							<h3>CENTERS</h3>
+							<p>This is the item description</p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item item-7" href="#">
+							<h3>CATALOG & STUDENT HANDBOOK</h3>
+							<p>This is the item description</p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item item-8" href="#">
+							<h3>RESOURCES</h3>
+							<p>This is the item description</p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item item-8" href="#">
+							<h3>FACULTY & STAFF SCHOLARLY WORK</h3>
+							<p>This is the item description</p>
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="">
+				<a href="#">ALUMNI</a>
+			</li>
+
+			<li class="has-children">
+				<a href="#">NEWS</a>
 
 				<ul class="cd-nav-gallery is-hidden">
 					<li class="go-back"><a href="#0">Menu</a></li>
-					<li class="see-all"><a href="#">Browse Gallery</a></li>
+					<li class="see-all"><a href="#">NEWS&gt;</a></li>
 					<li>
 						<a class="cd-nav-item" href="#">
 							<img src="img/img.jpg" alt="Product Image">
@@ -150,69 +167,20 @@
 				</ul>
 			</li>
 
-			<li class="has-children">
-				<a href="#">Services</a>
-				<ul class="cd-nav-icons is-hidden">
-					<li class="go-back"><a href="#0">Menu</a></li>
-					<li class="see-all"><a href="#">Browse Services</a></li>
-					<li>
-						<a class="cd-nav-item item-1" href="#">
-							<h3>Service #1</h3>
-							<p>This is the item description</p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item item-2" href="#">
-							<h3>Service #2</h3>
-							<p>This is the item description</p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item item-3" href="#">
-							<h3>Service #3</h3>
-							<p>This is the item description</p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item item-4" href="#">
-							<h3>Service #4</h3>
-							<p>This is the item description</p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item item-5" href="#">
-							<h3>Service #5</h3>
-							<p>This is the item description</p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item item-6" href="#">
-							<h3>Service #6</h3>
-							<p>This is the item description</p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item item-7" href="#">
-							<h3>Service #7</h3>
-							<p>This is the item description</p>
-						</a>
-					</li>
-
-					<li>
-						<a class="cd-nav-item item-8" href="#">
-							<h3>Service #8</h3>
-							<p>This is the item description</p>
-						</a>
-					</li>
-				</ul>
+			<li class="">
+				<a href="#">EVENTS</a>
 			</li>
 
-			<li><a href="#">Standard</a></li>
+
+			<li>
+				<a href="#">GIVE</a>
+			</li>
+
 		</ul> <!-- primary-nav -->
 	</nav> <!-- cd-nav -->
+
+	<div id="cd-search" class="cd-search">
+		<form>
+			<input type="search" placeholder="Search...">
+		</form>
+	</div>
