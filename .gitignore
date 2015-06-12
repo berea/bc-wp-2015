@@ -36,6 +36,7 @@
 ehthumbs.db
 Thumbs.db
 
-# NodeJS modules #
-##################
+# SASS/NodeJS/Gulp files #
+##########################
 node_modules
+assets/.sass-cache
