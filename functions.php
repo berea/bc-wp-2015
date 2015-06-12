@@ -108,19 +108,19 @@ if ( !function_exists('berea_scripts') ) :
     function berea_scripts_styles() {
     
         /*   REGISTER MEGA DROPDOWN SCRIPTS */
-        wp_register_script('megadropdown_modernizr', get_template_directory_uri().'/assets/mega-dropdown/js/modernizr.js');
+        wp_register_script('megadropdown_modernizr', get_template_directory_uri().'/assets/mega-site-navigation/js/modernizr.js');
         
-        /*   Change from WP default jQuery version to 2.2.1 (used by mega-dropdown) */
+        /*   Change from WP default jQuery version to 2.2.1 (used by mega-site-navigation) */
         wp_deregister_script('jquery');
-        wp_register_script('jquery', get_template_directory_uri().'/assets/mega-dropdown/js/jquery-2.1.1.js');  
+        wp_register_script('jquery', get_template_directory_uri().'/assets/mega-site-navigation/js/jquery-2.1.1.js');  
         
-        wp_register_script('megadropdown_jquery_menu_aim', get_template_directory_uri().'/assets/mega-dropdown/js/jquery.menu-aim.js');
-        wp_register_script('megadropdown_main', get_template_directory_uri().'/assets/mega-dropdown/js/main.js');
+        //wp_register_script('megadropdown_jquery_menu_aim', get_template_directory_uri().'/assets/mega-site-navigation/js/jquery.menu-aim.js');
+        wp_register_script('megadropdown_main', get_template_directory_uri().'/assets/mega-site-navigation/js/main.js');
     
     
         /*   REGISTER MEGA DROPDOWN STYLES */
-        wp_register_style('megadropdown_reset', get_template_directory_uri().'/assets/mega-dropdown/css/reset.css');
-        wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/mega-dropdown/css/example.css');
+        wp_register_style('megadropdown_reset', get_template_directory_uri().'/assets/mega-site-navigation/css/reset.css');
+        wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/mega-site-navigation/css/example.css');
     
     
     
