@@ -12,10 +12,22 @@ get_header(); ?>
 
         <div id="primary" class="content-area">
                 <main id="main" class="site-main" role="main">
+ 
+                        <div id="homepage-slider">
 
+                                <?php include 'partials/homepage_slider.php'; ?>
 
-This is the homepage.
+                        </div>
 
+                        <div id="homepage-central-content-block">
+
+                                <?php include 'partials/no_tuition_promise.php'; ?>
+
+                                <?php include 'partials/news.php'; ?>
+
+                                <?php include 'partials/people_slider.php'; ?>
+
+                        </div><!-- #homepage-central-content-block -->
 
                 </main><!-- #main -->
         </div><!-- #primary -->

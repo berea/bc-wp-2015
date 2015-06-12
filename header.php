@@ -17,6 +17,8 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
 	<?php tha_head_bottom(); ?>
 	<?php wp_head(); ?>
 </head>
@@ -31,7 +33,7 @@
 			<?php tha_header_top(); ?>
 
 
-		<ul class="cd-header-buttons">
+		<ul class="cd-header-buttons"><!-- Needed for mega-site-navigation -->
 			<li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>
 			<li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
 		</ul> <!-- cd-header-buttons -->
