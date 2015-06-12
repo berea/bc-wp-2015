@@ -120,7 +120,7 @@ if ( !function_exists('berea_scripts') ) :
     
         /*   REGISTER MEGA DROPDOWN STYLES */
         wp_register_style('megadropdown_reset', get_template_directory_uri().'/assets/mega-site-navigation/css/reset.css');
-        wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/mega-site-navigation/css/example.css');
+        wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/mega-site-navigation/css/style.css');
     
     
     
