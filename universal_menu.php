@@ -139,28 +139,25 @@
 					<li class="see-all"><a href="#">NEWS&gt;</a></li>
 					<li>
 						<a class="cd-nav-item" href="#">
-							<img src="img/img.jpg" alt="Product Image">
+							<!-- img src="img/img.jpg" alt="Product Image"-->
 							<h3>Product #1</h3>
 						</a>
 					</li>
 
 					<li>
 						<a class="cd-nav-item" href="#">
-							<img src="img/img.jpg" alt="Product Image">
 							<h3>Product #2</h3>
 						</a>
 					</li>
 
 					<li>
 						<a class="cd-nav-item" href="#">
-							<img src="img/img.jpg" alt="Product Image">
 							<h3>Product #3</h3>
 						</a>
 					</li>
 
 					<li>
 						<a class="cd-nav-item" href="#">
-							<img src="img/img.jpg" alt="Product Image">
 							<h3>Product #4</h3>
 						</a>
 					</li>
