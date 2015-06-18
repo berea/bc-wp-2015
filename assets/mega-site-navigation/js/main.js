@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
 	//mobile - open lateral menu clicking on the menu icon
 	$('.cd-nav-trigger').on('click', function(event){
 		event.preventDefault();
-		if( $('.cd-main-content').hasClass('nav-is-visible') ) {
+		if( $('.cd-primary-nav').hasClass('nav-is-visible') ) {
 			closeNav();
 			$('.cd-overlay').removeClass('is-visible');
 		} else {
