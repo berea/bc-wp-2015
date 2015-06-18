@@ -139,7 +139,7 @@
 					<li class="see-all"><a href="#">NEWS&gt;</a></li>
 					<li>
 						<a class="cd-nav-item" href="#">
-							<!-- img src="img/img.jpg" alt="Product Image"-->
+							<!-- img src="css/img/img.jpg" alt="Product Image"-->
 							<h3>Product #1</h3>
 						</a>
 					</li>
