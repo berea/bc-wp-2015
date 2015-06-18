@@ -126,12 +126,12 @@ if ( !function_exists('berea_scripts') ) :
         //wp_register_style('megadropdown_reset', get_template_directory_uri().'/assets/css/reset.css');
         //wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/css/style.css');
         
-        wp_register_style('megadropdown_reset', get_template_directory_uri().'/assets/mega-site-navigation/css/reset.css');
-        wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/mega-site-navigation/css/style.css');
+        //wp_register_style('megadropdown_reset', get_template_directory_uri().'/assets/mega-site-navigation/css/reset.css');
+        //wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/mega-site-navigation/css/style.css');
     
     
         /*   CALL ALL CSS AND SCRIPTS FOR SITE */
-        wp_enqueue_script('megadropdown_modernizr');
+        wp_enqueue_script('megadropdown_modernizr, array(), 'false');
         wp_enqueue_script('jquery');  
         wp_enqueue_script('megadropdown_jquery_menu_aim');
         wp_enqueue_script('megadropdown_main');
@@ -149,14 +149,14 @@ if ( !function_exists('berea_scripts') ) :
 		if ( SCRIPT_DEBUG || WP_DEBUG ) :
 
 			// Concatonated Scripts
-			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production.js', array( 'jquery' ), '2.1.1', false );
+			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production.js', array( 'jquery' ), '1.0.0', false );
 
 			// Main Style
 			wp_enqueue_style( 'berea-style',  get_stylesheet_directory_uri() . '/assets/css/style.css' );
 
 		else :
 			// Concatonated Scripts
-			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production-min.js', array( 'jquery' ), '2.1.1', false );
+			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production-min.js', array( 'jquery' ), '1.0.0', false );
 
 			// Main Style
 			wp_enqueue_style( 'berea-style',  get_stylesheet_directory_uri() . '/assets/css/style-min.css' );
