@@ -34,8 +34,8 @@
 
 
 		<ul class="cd-header-buttons"><!-- Needed for mega-site-navigation -->
-			<li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>
-			<li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
+			<li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>
+			<li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
 		</ul> <!-- cd-header-buttons -->
 
 
