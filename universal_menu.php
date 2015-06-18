@@ -137,9 +137,10 @@
 				<ul class="cd-nav-gallery is-hidden">
 					<li class="go-back"><a href="#0">Menu</a></li>
 					<li class="see-all"><a href="#">NEWS&gt;</a></li>
+
+<!--
 					<li>
 						<a class="cd-nav-item" href="#">
-							<!-- img src="img/img.jpg" alt="Product Image"-->
 							<h3>Product #1</h3>
 						</a>
 					</li>
@@ -161,6 +162,36 @@
 							<h3>Product #4</h3>
 						</a>
 					</li>
+-->
+
+<?php
+
+// The Query
+$the_query = new WP_Query( 'category_name=news&showposts=4' );
+
+// The Loop
+if ( $the_query->have_posts() ) {
+	while ( $the_query->have_posts() ) {
+		$the_query->the_post();
+		echo '<li>';
+		echo '<a class="cd-nav-item" href="' . get_permalink() . '">';
+		if ( has_post_thumbnail() ) { 
+			the_post_thumbnail( 'news-thumbnail' );
+		}
+		else {
+			echo '<img src="/wp-content/themes/berea2015/bc-wp-2015/assets/images/221_147_placeholder.jpg" height="147" width="221">';
+		}
+		echo '<br /><h3>' . get_the_title() . '</h3></a></li>';
+	}
+} else {
+	// no posts found
+}
+/* Restore original Post Data */
+wp_reset_postdata();
+ 
+?>
+
+
 				</ul>
 			</li>
 
