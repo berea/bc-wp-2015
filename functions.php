@@ -95,6 +95,11 @@ function berea_setup() {
 	 */
 	require_once( get_template_directory() . '/library/vendors/tgm-plugin-activation/required-plugins.php' );
 
+	/** 
+	 * Thumbnail used for news teaser in the universal nav and on the homepage 
+	 **/
+	add_image_size( 'news-thumbnail', 221, 147, true ); // (cropped)
+
 }
 endif; // berea_setup
 add_action( 'after_setup_theme', 'berea_setup' );
