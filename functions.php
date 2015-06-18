@@ -123,9 +123,11 @@ if ( !function_exists('berea_scripts') ) :
    		//wp_register_script('megadropdown_main', get_template_directory_uri().'/assets/mega-site-navigation/js/main.js');
     
         /*   REGISTER MEGA DROPDOWN STYLES */
+        wp_register_style('megadropdown_reset', get_template_directory_uri().'/assets/css/reset.css');
+        wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/css/style.css');
+        
         //wp_register_style('megadropdown_reset', get_template_directory_uri().'/assets/mega-site-navigation/css/reset.css');
         //wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/mega-site-navigation/css/style.css');
-    
     
     
         /*   CALL ALL CSS AND SCRIPTS FOR SITE */
