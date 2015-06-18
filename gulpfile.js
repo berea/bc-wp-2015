@@ -5,7 +5,7 @@
 */
 
 // Project configuration
-var project     = 'bc-wp-2015', // Optional - Use your own project name here...
+var project     = 'somelikeitneat', // Optional - Use your own project name here...
 	build       = './build/', // Files that you want to package into a zip go here
 	source      = './assets/', 	// Your main project assets and naming 'source' instead of 'src' to avoid confusion with gulp.src
 	bower       = './bower_components/'; // Not truly using this yet, more or less playing right now. TO-DO Place in Dev branch
@@ -84,7 +84,7 @@ gulp.task('js', function() {
 		// .pipe(jshint('.jshintrc')) // TO-DO: Reporting seems to be broken for js errors.
 		// .pipe(jshint.reporter('default'))
 		.pipe(concat('production.js'))
-		.pipe(gulp.dest(source+'js'))
+		.pipe(gulp.dest(source+'js/'))
 		.pipe(rename({ suffix: '-min' }))
 		.pipe(uglify())
 		.pipe(gulp.dest(build+'assets/js/'))

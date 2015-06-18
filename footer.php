@@ -19,6 +19,7 @@
 			<?php tha_footer_top(); ?>
 
 
+<<<<<<< HEAD
 <h3>NO-TUITION PROMISE</h3>
 
 <p>Berea is the only one of America’s top colleges that awards every enrolled student a no-tuition promise.</p>
@@ -54,12 +55,18 @@
 
 <h3>MAPS &amp; DIRECTIONS</h3>
 
+=======
+>>>>>>> 449824cdc95566195aadbb3bf1bef521c4007937
 
 
 <div id="footer-social">
 	<p>FOLLOW US: Facebook, YouTube, Twitter, Instagram, RSS</p>
 </div><!-- #footer-social -->
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 449824cdc95566195aadbb3bf1bef521c4007937
 			<div class="site-info">
 
 <p>BEREA COLLEGE | BEREA, KY | 859-985-3000</p>
