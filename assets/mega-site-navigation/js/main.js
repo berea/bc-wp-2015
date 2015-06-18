@@ -122,13 +122,16 @@ jQuery(document).ready(function($){
 
 	function moveNavigation(){
 		var navigation = $('.cd-nav');
+        closeNav();
+		$('.cd-overlay').removeClass('is-visible');
+				
   		var desktop = checkWindowWidth();
         if ( desktop ) {
 			navigation.detach();
 			navigation.insertBefore('.cd-header-buttons');
 		} else {
 			navigation.detach();
-			navigation.insertAfter('.cd-main-content');
+			navigation.insertAfter('.cd-overlay');
 		}
 	}
 });
