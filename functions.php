@@ -108,19 +108,23 @@ if ( !function_exists('berea_scripts') ) :
     function berea_scripts_styles() {
     
         /*   REGISTER MEGA DROPDOWN SCRIPTS */
-        wp_register_script('megadropdown_modernizr', get_template_directory_uri().'/assets/mega-site-navigation/js/modernizr.js');
-        
+        //removed the mega-site-navigation from the filepath
+        wp_register_script('megadropdown_modernizr', get_template_directory_uri().'/assets/js/modernizr.js');
+		//wp_register_script('megadropdown_modernizr', get_template_directory_uri().'/assets/mega-site-navigation/js/modernizr.js');
+
         /*   Change from WP default jQuery version to 2.2.1 (used by mega-site-navigation) */
         wp_deregister_script('jquery');
-        wp_register_script('jquery', get_template_directory_uri().'/assets/mega-site-navigation/js/jquery-2.1.1.js');  
-        
+        wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.js');  
+        //wp_register_script('jquery', get_template_directory_uri().'/assets/mega-site-navigation/js/jquery-2.1.1.js');  
+
+
         //wp_register_script('megadropdown_jquery_menu_aim', get_template_directory_uri().'/assets/mega-site-navigation/js/jquery.menu-aim.js');
-        wp_register_script('megadropdown_main', get_template_directory_uri().'/assets/mega-site-navigation/js/main.js');
-    
+        wp_register_script('megadropdown_main', get_template_directory_uri().'/assets/js/navigation.js');
+   		//wp_register_script('megadropdown_main', get_template_directory_uri().'/assets/mega-site-navigation/js/main.js');
     
         /*   REGISTER MEGA DROPDOWN STYLES */
-        wp_register_style('megadropdown_reset', get_template_directory_uri().'/assets/mega-site-navigation/css/reset.css');
-        wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/mega-site-navigation/css/style.css');
+        //wp_register_style('megadropdown_reset', get_template_directory_uri().'/assets/mega-site-navigation/css/reset.css');
+        //wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/mega-site-navigation/css/style.css');
     
     
     
@@ -130,8 +134,9 @@ if ( !function_exists('berea_scripts') ) :
         wp_enqueue_script('megadropdown_jquery_menu_aim');
         wp_enqueue_script('megadropdown_main');
     
-        wp_enqueue_style('megadropdown_reset');
-        wp_enqueue_style('megadropdown_style');
+    	//not sure if needed since it's now consolidated.
+        //wp_enqueue_style('megadropdown_reset');
+        //wp_enqueue_style('megadropdown_style');
     }
     add_action( 'wp_enqueue_scripts', 'berea_scripts_styles' );	
 
