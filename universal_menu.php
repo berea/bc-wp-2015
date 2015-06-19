@@ -179,7 +179,10 @@ if ( $the_query->have_posts() ) {
 			the_post_thumbnail( 'news-thumbnail' );
 		}
 		else {
-			echo '<img src="/wp-content/themes/berea2015/bc-wp-2015/assets/images/221_147_placeholder.jpg" height="147" width="221">';
+			//echo '<img src="/wp-content/themes/berea2015/bc-wp-2015/assets/images/';
+			
+			echo '<img src="' .  get_bloginfo('stylesheet_directory') . '/assets/images/221_147_placeholder.jpg" height="147" width="221">';
+			
 		}
 		echo '<br /><h3>' . get_the_title() . '</h3></a></li>';
 	}
