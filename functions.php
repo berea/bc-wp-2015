@@ -95,6 +95,11 @@ function berea_setup() {
 	 */
 	require_once( get_template_directory() . '/library/vendors/tgm-plugin-activation/required-plugins.php' );
 
+	/** 
+	 * Thumbnail used for news teaser in the universal nav and on the homepage 
+	 **/
+	add_image_size( 'news-thumbnail', 221, 147, true ); // (cropped)
+
 }
 endif; // berea_setup
 add_action( 'after_setup_theme', 'berea_setup' );
@@ -119,12 +124,7 @@ if ( !function_exists('berea_scripts') ) :
         //wp_register_script('megadropdown_jquery_menu_aim', get_template_directory_uri().'/assets/mega-site-navigation/js/jquery.menu-aim.js');
         wp_register_script('megadropdown_main', get_template_directory_uri().'/assets/js/vendor/navigation.js');
     
-        /*   REGISTER MEGA DROPDOWN STYLES */
-        wp_register_style('megadropdown_reset', get_template_directory_uri().'/assets/css/reset.css');
-        wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/css/style.css');
-        
-        //wp_register_style('megadropdown_reset', get_template_directory_uri().'/assets/mega-site-navigation/css/reset.css');
-        //wp_register_style('megadropdown_style', get_template_directory_uri().'/assets/mega-site-navigation/css/style.css');
+        /*   REGISTER MEGA DROPDOWN STYLES <-- integrated with the other css files 	*/
     
     
         /*   CALL ALL CSS AND SCRIPTS FOR SITE */
