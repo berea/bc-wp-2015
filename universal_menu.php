@@ -138,13 +138,8 @@
 					<li class="go-back"><a href="#0">Menu</a></li>
 					<li class="see-all"><a href="#">NEWS&gt;</a></li>
 
-<!--
 					<li>
 						<a class="cd-nav-item" href="#">
-<<<<<<< HEAD
-							<!-- img src="css/img/img.jpg" alt="Product Image"-->
-=======
->>>>>>> 2858c7d243c0306e37c79ddfc967e13da45cdb44
 							<h3>Product #1</h3>
 						</a>
 					</li>
@@ -166,8 +161,6 @@
 							<h3>Product #4</h3>
 						</a>
 					</li>
--->
-
 <?php
 
 // The Query
