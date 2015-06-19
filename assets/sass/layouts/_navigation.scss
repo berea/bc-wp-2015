@@ -14,6 +14,7 @@ Primary style
 	@include box-sizing(border-box);
 }
 
+/* ----------------------------------
 html {
 	font-size: 62.5%;
 }
@@ -39,7 +40,7 @@ a {
 }
 
 img {
-	/* make images responsive */
+	// make images responsive 
 	max-width: 100%;
 }
 
@@ -47,7 +48,7 @@ input {
 	font-family: $primary-font;
 	font-size: 1.6rem;
 }
-
+---------------------------------- */
 input[type="search"]::-ms-clear {
 	/* removes close icon - IE */
     display: none;

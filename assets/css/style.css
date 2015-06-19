@@ -1165,37 +1165,41 @@ Primary style
   box-sizing: border-box;
 }
 
+/* ----------------------------------
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
-  color: #2e3233;
-  background-color: #ffffff;
-}
-@media only screen and (max-width: 1169px) {
-  body.nav-on-left.overflow-hidden {
-    overflow: hidden;
-  }
+	font: {
+		size: 1.6rem;
+		family: $primary-font; // variables inside partials > _variables.scss
+	}
+	color: $color-1;
+	background-color: $color-4;
+
+	@include MQ(maxL) { // layout mixins inside partials > _layout.scss
+		&.nav-on-left.overflow-hidden {
+			overflow: hidden;
+		}
+	}
 }
 
 a {
-  color: #C75B12;
-  text-decoration: none;
+	color: $color-5;
+	text-decoration: none;
 }
 
 img {
-  /* make images responsive */
-  max-width: 100%;
+	// make images responsive 
+	max-width: 100%;
 }
 
 input {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+	font-family: $primary-font;
+	font-size: 1.6rem;
 }
-
+---------------------------------- */
 input[type="search"]::-ms-clear {
   /* removes close icon - IE */
   display: none;
