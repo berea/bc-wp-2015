@@ -62,13 +62,13 @@ gulp.task('styles', function () {
 		.pipe(sass({ style: 'expanded', }))
 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 		.pipe(plumber.stop())
-		.pipe(gulp.dest(source+'css'))
+		.pipe(gulp.dest(source+'css/'))
 		.pipe(cmq()) // Combines Media Queries
 		.pipe(reload({stream:true})) // Inject Styles when style file is created
 		.pipe(rename({ suffix: '-min' }))
 		.pipe(minifycss({keepBreaks:true}))
 		.pipe(minifycss({ keepSpecialComments: 0 }))
-		.pipe(gulp.dest(source+'css'))
+		.pipe(gulp.dest(source+'css/'))
 		.pipe(reload({stream:true})) // Inject Styles when min style file is created
 		.pipe(notify({ message: 'Styles task complete', onLast: true }))
 });

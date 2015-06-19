@@ -141,6 +141,10 @@
 <!--
 					<li>
 						<a class="cd-nav-item" href="#">
+<<<<<<< HEAD
+							<!-- img src="css/img/img.jpg" alt="Product Image"-->
+=======
+>>>>>>> 2858c7d243c0306e37c79ddfc967e13da45cdb44
 							<h3>Product #1</h3>
 						</a>
 					</li>
