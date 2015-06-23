@@ -25,14 +25,10 @@ var gulp	= require('gulp'),
 	notify	= require('gulp-notify'),
 	cmq		= require('gulp-combine-media-queries'),
 	runSequence	= require('run-sequence'), //updated from deprecated
-	
-		//test to try gulp-sass
 	sass	= require('gulp-sass'), // Our Sass compiler
 	plugins	= require('gulp-load-plugins')({ camelize: true }),
 	ignore	= require('gulp-ignore'), // Helps with ignoring files and directories in our run tasks
-	
-	del	= require('del'),	//vanilla delete module in nodejs
-	//rimraf	= require('gulp-rimraf'), // Helps with removing files and directories in our run tasks
+	del	= require('del'),	//vanilla delete module in node.js
 	zip		= require('gulp-zip'), // Using to zip up our packaged theme into a tasty zip file that can be installed in WordPress!
 	plumber	= require('gulp-plumber'), // Helps prevent stream crashing on errors
 	pipe	= require('gulp-coffee'),
@@ -115,22 +111,7 @@ gulp.task('images', function() {
  *
  * Being a little overzealous, but we're cleaning out the build folder, codekit-cache directory and annoying DS_Store files and Also
  * clearing out unoptimized image files in zip as those will have been moved and optimized
-*/
-
-// gulp.task('cleanup', function() {
-  // return gulp.src(['**/build','**/.sass-cache','**/.codekit-cache','**/.DS_Store', 'src/images/*'], { read: false }) // much faster
-    // // .pipe(ignore('node_modules/**')) //Example of a directory to ignore
-    // .pipe(rimraf())
-    // .pipe(notify({ message: 'Clean task complete', onLast: true }));
-// });
-// gulp.task('cleanupFinal', function() {
-  // return gulp.src(['**/build','**/.sass-cache','**/.codekit-cache','**/.DS_Store', 'src/images/*'], { read: false }) // much faster
-    // // .pipe(ignore('node_modules/**')) //Example of a directory to ignore
-    // .pipe(rimraf())
-    // .pipe(notify({ message: 'Build task complete', onLast: true }));
-// });
-
-/**
+ *
  * Revamped cleanup functions, featuring the delete method, instead of rimraf (deprecated)
 */
 gulp.task('cleanup', function(){
