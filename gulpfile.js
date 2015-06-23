@@ -30,7 +30,9 @@ var gulp	= require('gulp'),
 	sass	= require('gulp-sass'), // Our Sass compiler
 	plugins	= require('gulp-load-plugins')({ camelize: true }),
 	ignore	= require('gulp-ignore'), // Helps with ignoring files and directories in our run tasks
-	rimraf	= require('gulp-rimraf'), // Helps with removing files and directories in our run tasks
+	
+	del	= require('del'),	//vanilla delete module in nodejs
+	//rimraf	= require('gulp-rimraf'), // Helps with removing files and directories in our run tasks
 	zip		= require('gulp-zip'), // Using to zip up our packaged theme into a tasty zip file that can be installed in WordPress!
 	plumber	= require('gulp-plumber'), // Helps prevent stream crashing on errors
 	pipe	= require('gulp-coffee'),
@@ -115,19 +117,41 @@ gulp.task('images', function() {
  * clearing out unoptimized image files in zip as those will have been moved and optimized
 */
 
-gulp.task('cleanup', function() {
-  return gulp.src(['**/build','**/.sass-cache','**/.codekit-cache','**/.DS_Store', 'src/images/*'], { read: false }) // much faster
-    // .pipe(ignore('node_modules/**')) //Example of a directory to ignore
-    .pipe(rimraf())
-    .pipe(notify({ message: 'Clean task complete', onLast: true }));
-});
-gulp.task('cleanupFinal', function() {
-  return gulp.src(['**/build','**/.sass-cache','**/.codekit-cache','**/.DS_Store', 'src/images/*'], { read: false }) // much faster
-    // .pipe(ignore('node_modules/**')) //Example of a directory to ignore
-    .pipe(rimraf())
-    .pipe(notify({ message: 'Build task complete', onLast: true }));
-});
+// gulp.task('cleanup', function() {
+  // return gulp.src(['**/build','**/.sass-cache','**/.codekit-cache','**/.DS_Store', 'src/images/*'], { read: false }) // much faster
+    // // .pipe(ignore('node_modules/**')) //Example of a directory to ignore
+    // .pipe(rimraf())
+    // .pipe(notify({ message: 'Clean task complete', onLast: true }));
+// });
+// gulp.task('cleanupFinal', function() {
+  // return gulp.src(['**/build','**/.sass-cache','**/.codekit-cache','**/.DS_Store', 'src/images/*'], { read: false }) // much faster
+    // // .pipe(ignore('node_modules/**')) //Example of a directory to ignore
+    // .pipe(rimraf())
+    // .pipe(notify({ message: 'Build task complete', onLast: true }));
+// });
 
+/**
+ * Revamped cleanup functions, featuring the delete method, instead of rimraf (deprecated)
+*/
+gulp.task('cleanup', function(){
+	del([
+		'**/build',
+		'**/.sass-cache',
+		'**/.codekit-cache',
+		'**/.DS_Store',
+		'src/images/*'
+	]);
+});
+//These tasks are completely identical
+gulp.task('cleanupFinal', function(){
+	del([
+		'**/build',
+		'**/.sass-cache',
+		'**/.codekit-cache',
+		'**/.DS_Store',
+		'src/images/*'
+	]);
+});
 
 /**
  * Build task that moves essential theme files for production-ready sites
