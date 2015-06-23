@@ -24,8 +24,10 @@ var gulp 	= require('gulp'),
 	concat 				= require('gulp-concat'),
 	notify 				= require('gulp-notify'),
 	cmq 					= require('gulp-combine-media-queries'),
-	runSequence 	= require('gulp-run-sequence'),
-	sass 					= require('gulp-ruby-sass'), // Our Sass compiler
+	runSequence 	= require('run-sequence'), //updated from deprecated
+	
+		//test to try gulp-sass
+	sass 					= require('gulp-sass'), // Our Sass compiler
 	plugins 			= require('gulp-load-plugins')({ camelize: true }),
 	ignore 				= require('gulp-ignore'), // Helps with ignoring files and directories in our run tasks
 	rimraf 				= require('gulp-rimraf'), // Helps with removing files and directories in our run tasks
