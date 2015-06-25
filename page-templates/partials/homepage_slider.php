@@ -1,14 +1,22 @@
 <!-- This is the homepage slider -->
 
-<h1>THE BEST EDUCATION MONEY CAN'T BUY</h1>
+<div id="headline">
+	<h1>THE BEST EDUCATION MONEY CAN'T BUY</h1>
+</div>
 
-<p>Donec id elit non mi porta gravida at eget metus.</p>
+<div id="tagline">
+	<p>Donec id elit non mi porta gravida at eget metus.</p>
+</div>
 
-<input type="button" value="Read More">
+<div id="readmore">
+	<input type="button" value="Read More">
+</div>
 
-<ul>
-	<li>APPLY</li>
-	<li>GIVE</li>
-	<li>VISIT</li>
-	<li>EXPLORE</li>
-</ul>
+<div id="hero-nav">
+	<ul>
+		<li>APPLY</li>
+		<li>GIVE</li>
+		<li>VISIT</li>
+		<li>EXPLORE</li>
+	</ul>
+</div>
