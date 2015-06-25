@@ -1,4 +1,6 @@
 footer {
+	color: $bc-white;
+	background: $bc-blue; 
 	float: left;
 	margin: 0 auto;
 	padding: 0 40px;
@@ -20,5 +22,14 @@ footer {
 		margin-bottom: 40px;
 		padding: 10px;
 		text-align: right;
+	}
+	.footer-promise {
+
+	}
+	.footer-about {
+
+	}
+	.footer-distinctly {
+
 	}
 }
