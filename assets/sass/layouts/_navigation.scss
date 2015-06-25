@@ -96,8 +96,10 @@ Main components
 
 .cd-main-header {
 	height: $header-height-S;
-	background: $color-4;
+	background: transparent;
 	z-index: $above-content;
+	border-top: 5px solid $bc-orange;
+	
 
 	.nav-is-fixed & {
 		/* add .nav-is-fixed class to body if you want a fixed navigation on > 1170px */
