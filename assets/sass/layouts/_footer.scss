@@ -1,13 +1,23 @@
 footer {
-	color: $bc-white;
-	background: $bc-blue; 
+	max-width: 1024px;
 	float: left;
 	margin: 0 auto;
 	padding: 0 40px;
 	width: 100%;
 	.site-info {
+		color: $bc-blue;
+		background: $bc-lightblue;
 		margin: auto;
 		width: 100%;
+        text-align: center;
+        font-size: 1.3em;
+        padding-top: 20px;
+        h3 {
+          font-size: 1.3em;
+        }
+        p {
+          font-family: $opensans-condensed;
+        }
 	}
 	.footer-left {
 		@include span-columns(6);
@@ -23,13 +33,52 @@ footer {
 		padding: 10px;
 		text-align: right;
 	}
+	.footer-main {
+		@include clearfix;
+		color: $bc-white;
+		background: $bc-blue;
+        padding: 20px;
+        h3 {
+          text-align: center;
+          font-size: 1.3em;
+        }
+	}
 	.footer-promise {
+		float: left;
+		width: 25%;
+        padding: 5px;
 
 	}
 	.footer-about {
+		float: left;
+		width: 25%;
+        padding: 5px;
 
 	}
 	.footer-distinctly {
+		float: left;
+		width: 25%;
+        padding: 5px;
 
 	}
+	.footer-maps {
+		float: left;
+		width: 25%;
+        padding: 5px;
+
+	}
+	.footer-more {
+
+	}
+	.footer-social {
+		clear: left;
+		color: $bc-white;
+		background: $bc-orange;
+		text-align: center;
+        padding: 20px;
+        font-size: 1.3em;
+        font-weight: bold;
+
+	}
+
 }

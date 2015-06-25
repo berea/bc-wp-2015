@@ -19,71 +19,63 @@
 			<?php tha_footer_top(); ?>
 
 
-<div id="footer-promise">
-<h3>NO-TUITION PROMISE</h3>
+<div class="footer-main">
+	<div class="footer-promise">
+		<h3>NO-TUITION PROMISE</h3>
 
-<p>Berea is the only one of America’s top colleges that awards every enrolled student a no-tuition promise.</p>
+		<p>Berea is the only one of America’s top colleges that awards every enrolled student a no-tuition promise.</p>
 
-<p>No student pays for tuition.</p>
+		<p>No student pays for tuition.</p>
 
-<p>Our generous TUTITION PROMISE SCOLARSHIP makes it possible for you to graduate debt-free. Even if you borrow for special learning opportunites or to replace your family’s total contribution, you will have a low debt compared to national trends. We sometimes call Berea “the best education money can’t buy.”</p>
-</div>
+		<p>Our generous TUTITION PROMISE SCOLARSHIP makes it possible for you to graduate debt-free. Even if you borrow for special learning opportunites or to replace your family’s total contribution, you will have a low debt compared to national trends. We sometimes call Berea “the best education money can’t buy.”</p>
+	</div><!-- .footer-promise -->
 
-<div id="footer-about">
-<h3>ABOUT BEREA</h3>
+	<div class="footer-about">
+		<h3>ABOUT BEREA</h3>
 
-<ul>
-	<li>Our Mission</li>
-	<li>Visitor’s Center</li>
-	<li>Jobs</li>
-</ul>
+		<ul>
+			<li>Our Mission</li>
+			<li>Visitor’s Center</li>
+			<li>Jobs</li>
+		</ul>
 
-<ul>
-	<li>Partners for Education</li>
-	<li>Seabury Athletic Center</li>
-	<li>Loyal Jones Appalachian Center</li>
-	<li>bell hooks Institute</li>
-	<li>Hutchins Library</li>
-</ul>
+		<ul>
+			<li>Partners for Education</li>
+			<li>Seabury Athletic Center</li>
+			<li>Loyal Jones Appalachian Center</li>
+			<li>Bell hooks Institute</li>
+			<li>Hutchins Library</li>
+		</ul>
 
-<ul>
-	<li>City of Berea</li>
-	<li>Madison County</li>
-	<li>Kentucky</li>
-</ul>
-</div>
+		<ul>
+			<li>City of Berea</li>
+			<li>Madison County</li>
+			<li>Kentucky</li>
+		</ul>
+	</div><!-- .footer-about -->
 
+	<div class="footer-distinctly">
+		<h3>DISTINCTLY BEREAN</h3>
+	</div><!-- .footer-distinctly -->
 
-<div id="footer-distinctly">
-<h3>DISTINCTLY BEREAN</h3>
+	<div class="footer-maps">
+		<h3>MAPS &amp; DIRECTIONS</h3>
+	</div><!-- .footer-maps -->
 
-</div>
+	<div class="footer-more">
+		<a href="#" class="btn btn-large">MORE ABOUT BEREA &gt;</a>
+	</div><!-- .footer-more -->
+</div><!-- #footer-main -->
 
-
-<div id="footer-maps"
-<h3>MAPS &amp; DIRECTIONS</h3>
-
-
-</div>
-
-
-<div id="footer-more">
-	<a href="#" class="btn btn-large">MORE ABOUT BEREA &gt;</a>
-</div>
-
-
-<div id="footer-social">
+<div class="footer-social">
 	<p>FOLLOW US: Facebook, YouTube, Twitter, Instagram, RSS</p>
 </div><!-- #footer-social -->
 
-			<div class="site-info">
-
-<p>BEREA COLLEGE | BEREA, KY | 859-985-3000</p>
-
-<p>&copy; 2015 Berea College | Privacy Policy | Terms of Use | Website Administration</p>
-<p>Consumer Information & Student Right to Know</p>
-
-			</div><!-- .site-info -->
+<div class="site-info">
+	<h3>BEREA COLLEGE | BEREA, KY | 859-985-3000</h3>
+	<p>&copy; 2015 Berea College | Privacy Policy | Terms of Use | Website Administration</p>
+	<p>Consumer Information & Student Right to Know</p>
+</div><!-- .site-info -->
 			<?php //tha_footer_bottom(); ?>
 		</footer><!-- #colophon -->
 		<?php tha_footer_after(); ?>
