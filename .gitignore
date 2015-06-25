@@ -42,3 +42,7 @@ node_modules
 assets/.sass-cache
 .sass-cache
 build
+
+# PhpStorm project folder #
+###########################
+.idea/
