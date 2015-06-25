@@ -1027,7 +1027,7 @@ body {
 #primary {
   margin: auto;
   margin-top: 60px;
-  width: 100%;
+  border: 2px solid red;
 }
 #primary:after {
   content: "";
@@ -1051,7 +1051,7 @@ body {
     display: block;
     margin-right: 4.34783%;
     width: 65.21739%;
-    margin-right: 0;
+    margin-left: 17.3913%;
   }
   #primary:last-child {
     margin-right: 0;
@@ -1249,8 +1249,9 @@ Main components
 
 .cd-main-header {
   height: 50px;
-  background: #ffffff;
+  background: transparent;
   z-index: 3;
+  border-top: 5px solid #C75B12;
 }
 .nav-is-fixed .cd-main-header {
   /* add .nav-is-fixed class to body if you want a fixed navigation on > 1170px */
@@ -2471,7 +2472,6 @@ object {
 6.6 Footer
 --------------------------------------------------------------*/
 footer {
-  max-width: 1024px;
   float: left;
   margin: 0 auto;
   padding: 0 40px;
