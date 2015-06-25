@@ -955,7 +955,7 @@ Main components
 	top: 0;
 	left: 0;
 	cursor: pointer;
-	background-color: rgba($color-2, .8);
+	background-color: rgba($bc-blue, .8);
 	visibility: hidden;
 	opacity: 0;
 	@include backface-visibility(hidden);
