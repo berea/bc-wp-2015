@@ -27,11 +27,11 @@ body {
 	}
 	@include media($md) {
 		@include span-columns( 4 );
-		@include omega( block );
+        @include shift(1);
 	}
 	margin: auto;
 	margin-top: 60px;
-	width: 100%;
+	border: 2px solid red;
 
 	ul {
 		list-style: none;
