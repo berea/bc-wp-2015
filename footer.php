@@ -19,6 +19,7 @@
 			<?php tha_footer_top(); ?>
 
 
+<div id="footer-promise">
 <h3>NO-TUITION PROMISE</h3>
 
 <p>Berea is the only one of America’s top colleges that awards every enrolled student a no-tuition promise.</p>
@@ -26,7 +27,9 @@
 <p>No student pays for tuition.</p>
 
 <p>Our generous TUTITION PROMISE SCOLARSHIP makes it possible for you to graduate debt-free. Even if you borrow for special learning opportunites or to replace your family’s total contribution, you will have a low debt compared to national trends. We sometimes call Berea “the best education money can’t buy.”</p>
+</div>
 
+<div id="footer-about">
 <h3>ABOUT BEREA</h3>
 
 <ul>
@@ -48,11 +51,25 @@
 	<li>Madison County</li>
 	<li>Kentucky</li>
 </ul>
+</div>
 
 
+<div id="footer-distinctly">
 <h3>DISTINCTLY BEREAN</h3>
 
+</div>
+
+
+<div id="footer-maps"
 <h3>MAPS &amp; DIRECTIONS</h3>
+
+
+</div>
+
+
+<div id="footer-more">
+	<a href="#" class="btn btn-large">MORE ABOUT BEREA &gt;</a>
+</div>
 
 
 <div id="footer-social">
