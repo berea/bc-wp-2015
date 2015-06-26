@@ -37,6 +37,7 @@ and Blueprint http://www.blueprintcss.org/
 	6.5 - Sidebar
 	6.6 - Footer
 	6.7 - Accessbility
+7.0 - BC additions
 
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -2267,6 +2268,10 @@ support for no js
   margin-bottom: 1.5em;
 }
 
+.site-main {
+  background: #FFFFFF;
+}
+
 .site-main .gallery a img {
   border: none;
   height: auto;
@@ -2592,4 +2597,15 @@ footer .footer-social {
   border-radius: 3px;
   -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
           box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+/*------------------------------------------------------------------
+7.0 BC additions
+------------------------------------------------------------------*/
+.hero-nav > ul {
+  display: inline !important;
+}
+
+.hero-nav > li {
+  list-style: none;
 }
