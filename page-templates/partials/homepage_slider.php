@@ -1,22 +1,20 @@
 <!-- This is the homepage slider -->
 
-<div class="headline">
-	<h1>THE BEST EDUCATION MONEY CAN'T BUY</h1>
-</div>
+<div class="homepage-slider">
 
-<div class="tagline">
-	<p>Donec id elit non mi porta gravida at eget metus.</p>
-</div>
+    <h1>THE BEST EDUCATION<br />MONEY CAN'T BUY</h1>
 
-<div class="readmore">
-	<input type="button" value="Read More">
-</div>
+    <p class="tagline">Donec id elit non mi porta gravida at eget metus. <a href="#">Read More &gt;</a></p>
 
-<div class="hero-nav">
-	<ul>
-		<li>APPLY</li>
-		<li>GIVE</li>
-		<li>VISIT</li>
-		<li>EXPLORE</li>
-	</ul>
-</div>
+    <div class="hero-nav-wrapper">
+        <ul class="hero-nav">
+            <li>APPLY</li>
+            <li>GIVE</li>
+            <li>VISIT</li>
+            <li>EXPLORE</li>
+        </ul>
+    </div>
+
+    <p>&nbsp;</p>
+
+</div><!-- .homepage-slider -->
