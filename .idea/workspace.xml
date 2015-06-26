@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5ee74198-25c2-4e14-9c38-b1d0ff47c0ba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/_bc-additions.scss" afterPath="$PROJECT_DIR$/assets/sass/_bc-additions.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page-templates/partials/homepage_slider.php" afterPath="$PROJECT_DIR$/page-templates/partials/homepage_slider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page-templates/partials/people_slider.php" afterPath="$PROJECT_DIR$/page-templates/partials/people_slider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style-min.css" afterPath="$PROJECT_DIR$/assets/css/style-min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css.map" afterPath="$PROJECT_DIR$/assets/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page-templates/template-homepage.php" afterPath="$PROJECT_DIR$/page-templates/template-homepage.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bc-wp-2015.iws" />
@@ -53,11 +52,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homepage_slider.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homepage_slider.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page-templates/partials/homepage_slider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30357143" vertical-offset="0" max-vertical-offset="840">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="375">
+              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page-templates/partials/news.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-25.625" vertical-offset="60" max-vertical-offset="900">
+              <caret line="45" column="105" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="105" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-homepage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page-templates/template-homepage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="540">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="people_slider.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page-templates/partials/people_slider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3808948" vertical-offset="0" max-vertical-offset="827">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -76,8 +105,8 @@
       <file leaf-file-name="_bc-additions.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/sass/_bc-additions.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="1035">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state vertical-scroll-proportion="-28.75" vertical-offset="0" max-vertical-offset="1230">
+              <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -123,8 +152,9 @@
         <option value="$PROJECT_DIR$/assets/sass/style.scss" />
         <option value="$PROJECT_DIR$/assets/sass/base/_variables.scss" />
         <option value="$PROJECT_DIR$/page-templates/template-homepage.php" />
-        <option value="$PROJECT_DIR$/assets/sass/_bc-additions.scss" />
         <option value="$PROJECT_DIR$/page-templates/partials/homepage_slider.php" />
+        <option value="$PROJECT_DIR$/page-templates/partials/people_slider.php" />
+        <option value="$PROJECT_DIR$/assets/sass/_bc-additions.scss" />
       </list>
     </option>
   </component>
@@ -608,22 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page-templates/partials/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.625" vertical-offset="60" max-vertical-offset="900">
-          <caret line="45" column="105" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page-templates/template-homepage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="540">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/sass/base/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
@@ -728,18 +742,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/page-templates/partials/news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.625" vertical-offset="60" max-vertical-offset="900">
+          <caret line="45" column="105" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page-templates/template-homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="540">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/sass/_bc-additions.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="1035">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state vertical-scroll-proportion="-28.75" vertical-offset="0" max-vertical-offset="1230">
+          <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page-templates/partials/homepage_slider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30357143" vertical-offset="0" max-vertical-offset="840">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="375">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page-templates/partials/people_slider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3808948" vertical-offset="0" max-vertical-offset="827">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
           <folding />
         </state>
       </provider>

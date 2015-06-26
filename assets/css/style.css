@@ -2892,3 +2892,30 @@ input#s {
 .homepage-slider p a:link, .homepage-slider p a:hover, .homepage-slider p a:visited, .homepage-slider p a:active {
   color: #005A8B;
 }
+
+.people-slider ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.people-slider ul > li {
+  display: block;
+  float: left;
+}
+.people-slider ul > li:last-child {
+  margin-right: 0px;
+}
+.people-slider ul li {
+  padding: 0 20px;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  font-weight: bold;
+}
