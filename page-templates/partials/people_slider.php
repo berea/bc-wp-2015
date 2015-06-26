@@ -1,8 +1,9 @@
 <!-- People Slider -->
 
-<div class="people-slider">
 
-    <h1>PEOPLE</h1>
+<h3 class="heading-underlined">PEOPLE</h3>
+
+<div class="people-slider">
 
     <ul>
         <li>

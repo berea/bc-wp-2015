@@ -2915,7 +2915,42 @@ input#s {
 }
 .people-slider ul li {
   padding: 0 20px;
-  color: #FFFFFF;
+  color: #005A8B;
   font-size: 1.2em;
   font-weight: bold;
+}
+
+.news ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.news ul > li {
+  display: block;
+  float: left;
+}
+.news ul > li:last-child {
+  margin-right: 0px;
+}
+.news ul li {
+  padding: 0 5px;
+  color: #005A8B;
+}
+
+.heading-underlined {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: #005A8B;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  border-bottom: 2px solid #C75B12;
+  font-weight: normal;
 }
