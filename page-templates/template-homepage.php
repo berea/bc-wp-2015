@@ -11,14 +11,16 @@
 get_header(); ?>
 
         <div id="primary" class="content-area">
+
+            <div id="homepage-slider">
+
+                <?php include 'partials/homepage_slider.php'; ?>
+
+            </div>
+
+
                 <main id="main" class="site-main" role="main">
  
-                        <div id="homepage-slider">
-
-                                <?php include 'partials/homepage_slider.php'; ?>
-
-                        </div>
-
                         <div id="homepage-central-content-block">
 
                                 <?php include 'partials/no_tuition_promise.php'; ?>
