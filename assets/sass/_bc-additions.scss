@@ -36,14 +36,17 @@
 }
 
 .homepage-slider {
+  height: 620px;
   background: url('../images/1024_640_placeholder.jpg');
   h1 {
     font-family: $opensans-condensed;
     color: $bc-white;
     text-align: right;
     font-size: 3em;
-    padding-top: 150px;
+    padding-top: 350px;
     padding-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   p {
     text-align: right;
