@@ -26,12 +26,14 @@ body {
 		@include span-columns( 4 );
 	}
 	@include media($md) {
-		@include span-columns( 4 );
-        @include shift(1);
+		@include span-columns( 6 );
+        // @include shift(1);
+        @include omega();        
 	}
 	margin: auto;
 	margin-top: 60px;
 	border: 2px solid red;
+	background-color: $bc-white;
 
 	ul {
 		list-style: none;
