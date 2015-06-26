@@ -343,7 +343,6 @@ Main components
 	background: $color-1;
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
-	z-index: $below-content;
 	/* Force Hardware Acceleration in WebKit */
 	@include transform(translateZ(0));
 
@@ -951,7 +950,7 @@ Main components
 .cd-overlay {
 	/* shadow layer visible when navigation is active */
 	position: fixed;
-	z-index: 2;
+	z-index: $content;
 	height: 100%;
 	width: 100%;
 	top: 0;
