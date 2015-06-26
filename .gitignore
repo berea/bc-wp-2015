@@ -46,3 +46,5 @@ build
 # PhpStorm project folder #
 ###########################
 .idea/
+
+/.idea/workspace.xml
