@@ -42,8 +42,9 @@
     font-family: $opensans-condensed;
     color: $bc-white;
     text-align: right;
-    font-size: 3em;
-    padding-top: 350px;
+    font-size: 48px;
+    font-weight: 700;
+    padding-top: 320px;
     padding-right: 20px;
     margin-top: 0;
     margin-bottom: 0;
@@ -52,13 +53,22 @@
     text-align: right;
     padding-right: 20px;
     color: $bc-white;
-    a {
-      text-decoration: none;
-      @include button(pill, $bc-white);
-    }
-    a:link, a:hover, a:visited, a:active {
-      color: $bc-blue;
-    }
+  }
+  .tagline {
+      font-family: $garamond;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      a {
+        font-family: $opensans-condensed;
+        font-size: 14px !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        @include button(pill, $bc-white);
+      }
+      a:link, a:hover, a:visited, a:active {
+        color: $bc-blue;
+      }
   }
 }
 
