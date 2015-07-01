@@ -17,6 +17,24 @@
   }
 }
 
+
+.cd-header-ribbon {
+  width: 210px;
+  height: 280px;
+  background-color: $bc-blue;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  z-index: $above-content;
+  img {
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    width: 190px;
+    height: 190px;
+  }
+}
+
 .hero-nav-wrapper {
   background-color:rgba(0, 90, 139, 0.8); // This is $bc-blue
   padding: 20px;
@@ -37,7 +55,7 @@
 
 .homepage-slider {
   height: 620px;
-  background: url('../images/1024_640_placeholder.jpg');
+  background: url('../images/1024_640_campus_shot.jpg');
   h1 {
     font-family: $opensans-condensed;
     color: $bc-white;

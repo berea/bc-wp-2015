@@ -98,8 +98,11 @@ Main components
 	height: $header-height-S;
 	background: transparent;
 	z-index: $above-content;
-	border-top: 5px solid $bc-orange;
-	
+	//max-width: $max-width;
+  	font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  	text-transform: uppercase;
+  	font-size: 20px;
+  	color: $bc-blue;
 
 	.nav-is-fixed & {
 		/* add .nav-is-fixed class to body if you want a fixed navigation on > 1170px */
@@ -335,9 +338,12 @@ Main components
 }
 
 .cd-primary-nav, .cd-primary-nav ul {
+  	list-style-type: none;
 	position: fixed;
 	top: 0;
 	right: 0;
+  	padding: 0px;
+  	margin: 0px;
 	height: 100%;
 	width: $nav-width-S;
 	background: $color-1;
@@ -528,7 +534,7 @@ Main components
 
 		> li {
 			float: left;
-			margin-left: 3em;
+			margin-left: 0px;
 		}
 
 		> li > a {

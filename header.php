@@ -26,6 +26,12 @@
 <body <?php body_class('nav-is-fixed'); ?>>
 <?php tha_body_top(); ?>
 <div id="page" class="hfeed site">
+
+	<div id="ribbon" class="cd-header-ribbon">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/smiley-face.png" />
+	</div>
+
+
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'berea' ); ?></a>
 	<div class="wrap">
 		<?php tha_header_before(); ?>
