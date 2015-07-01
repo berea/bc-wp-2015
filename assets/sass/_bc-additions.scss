@@ -19,19 +19,19 @@
 
 
 .cd-header-ribbon {
-  width: 210px;
-  height: 280px;
-  background-color: $bc-blue;
+  width: 228px;
+  height: 265px;
+  background: url("../images/bc-ribbon.png");
   position: absolute;
   top: 0px;
-  left: 50px;
+  left: 45px;
   z-index: $above-content;
   img {
     display: block;
     margin: auto;
-    margin-top: 35px;
-    width: 190px;
-    height: 190px;
+    margin-top: 20px;
+    width: 210px;
+    height: 210px;
   }
 }
 
@@ -55,7 +55,7 @@
 
 .homepage-slider {
   height: 620px;
-  background: url('../images/1024_640_campus_shot.jpg');
+  background: url('../images/front_page_image.png');
   h1 {
     font-family: $opensans-condensed;
     color: $bc-white;
