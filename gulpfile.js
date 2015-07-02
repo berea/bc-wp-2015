@@ -87,7 +87,7 @@ gulp.task('js', function() {
 		.pipe(gulp.dest(source+'js/'))
 		.pipe(rename({ suffix: '-min' }))
 		.pipe(uglify())
-		.pipe(gulp.dest(build+'assets/js/'))
+		.pipe(gulp.dest(source+'js/'))
 		.pipe(notify({ message: 'Scripts task complete', onLast: true }));
 });
 
