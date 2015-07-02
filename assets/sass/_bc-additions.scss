@@ -17,6 +17,24 @@
   }
 }
 
+
+.cd-header-ribbon {
+  width: 228px;
+  height: 265px;
+  background: url("../images/bc-ribbon.png");
+  position: absolute;
+  top: 0px;
+  left: 45px;
+  z-index: $above-content;
+  img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 210px;
+    height: 210px;
+  }
+}
+
 .hero-nav-wrapper {
   background-color:rgba(0, 90, 139, 0.8); // This is $bc-blue
   padding: 20px;
@@ -36,26 +54,39 @@
 }
 
 .homepage-slider {
-  background: url('../images/1024_640_placeholder.jpg');
+  height: 620px;
+  background: url('../images/front_page_image.png');
   h1 {
     font-family: $opensans-condensed;
     color: $bc-white;
     text-align: right;
-    font-size: 3em;
-    padding-top: 150px;
+    font-size: 48px;
+    font-weight: 700;
+    padding-top: 320px;
     padding-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   p {
     text-align: right;
     padding-right: 20px;
     color: $bc-white;
-    a {
-      text-decoration: none;
-      @include button(pill, $bc-white);
-    }
-    a:link, a:hover, a:visited, a:active {
-      color: $bc-blue;
-    }
+  }
+  .tagline {
+      font-family: $garamond;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      a {
+        font-family: $opensans-condensed;
+        font-size: 14px !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        @include button(pill, $bc-white);
+      }
+      a:link, a:hover, a:visited, a:active {
+        color: $bc-blue;
+      }
   }
 }
 

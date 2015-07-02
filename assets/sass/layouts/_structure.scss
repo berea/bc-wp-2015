@@ -8,10 +8,11 @@ body {
 	font-family: $content;
 	line-height: 1.5em;
 	word-break: break-word;
+  	border-top: 4px solid $bc-orange;
 }
 #page {
-	 @include outer-container;
-
+	@include outer-container;
+  	position: relative;
 }
 .wrap {}
 
@@ -31,8 +32,8 @@ body {
         @include omega();        
 	}
 	margin: auto;
-	margin-top: 60px;
-	background-color: $bc-white;
+	margin-top:50px;
+	background-color: transparent;
 
 	ul {
 		list-style: none;

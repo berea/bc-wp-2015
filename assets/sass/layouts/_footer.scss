@@ -1,8 +1,10 @@
 footer {
 	float: left;
-	margin: 0 auto;
+	margin: auto;
+  	// margin-top: -100px;
 	padding: 0px;
 	width: 100%;
+  	z-index: $below-content;
 	.site-info {
 		color: $bc-blue;
 		background: $bc-lightblue;
@@ -37,6 +39,7 @@ footer {
 		color: $bc-white;
 		background: $bc-blue;
         padding: 20px;
+	  	padding-top: 100px;
         h3 {
           text-align: center;
           font-size: 1.3em;
