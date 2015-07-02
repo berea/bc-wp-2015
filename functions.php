@@ -59,6 +59,9 @@ function berea_setup() {
 		'default-image' => '',
 	) ) );
 
+    // Enable support for custom header images.
+    add_theme_support( 'custom-header' );
+
 	/**
 	 * Including Theme Hook Alliance (https://github.com/zamoose/themehookalliance).
 	 */
@@ -222,12 +225,13 @@ endif;
 if ( !function_exists('berea_optional_scripts') ) :
     function berea_optional_scripts() {
 
-        // Link Color
-        if( get_theme_mod( 'berea_homepage_slider_image' ) == '') {
-
-        } else { ?>
+        // Header Image
+        if( get_header_image() == '') {
+            
+        } else {
+            ?>
             <style type="text/css">
-                .homepage-slider { background: url("<?php echo get_theme_mod( 'berea_homepage_slider_image' ); ?>"); }
+                .homepage-slider { background: url("<?php echo get_header_image(); ?>"); }
             </style>
         <?php }
 
