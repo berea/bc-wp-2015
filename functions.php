@@ -220,21 +220,21 @@ if ( !function_exists('berea_add_breadcrumbs') ) :
 endif;
 
 if ( !function_exists('berea_optional_scripts') ) :
-	function berea_optional_scripts() {
+    function berea_optional_scripts() {
 
-		 // Link Color
-		 if( get_theme_mod( 'berea_add_link_color' ) == '') {
+        // Link Color
+        if( get_theme_mod( 'berea_homepage_slider_image' ) == '') {
 
-		 } else { ?>
-			<style type="text/css">
-				a { color: <?php echo get_theme_mod( 'berea_add_link_color' ); ?>; }
-			</style>
-		<?php }
+        } else { ?>
+            <style type="text/css">
+                .homepage-slider { background: url("<?php echo get_theme_mod( 'berea_homepage_slider_image' ); ?>"); }
+            </style>
+        <?php }
 
-
-	}
-	add_action( 'wp_head', 'berea_optional_scripts' );
+    }
+    add_action( 'wp_head', 'berea_optional_scripts' );
 endif;
+
 
 if ( !function_exists('berea_mobile_styles') ) :
 	function berea_mobile_styles() {
@@ -251,20 +251,6 @@ if ( !function_exists('berea_mobile_styles') ) :
 		 }
 	}
 	add_action('wp_head', 'berea_mobile_styles' );
-endif;
-
-if ( !function_exists('berea_add_footer_divs') ) :
-	function berea_add_footer_divs() { ?>
-
-		<div class="footer-left">
-			 <?php echo esc_attr( get_theme_mod( 'berea_footer_left', __( '&copy; All Rights Reserved', 'berea' ) ) ); ?>
-
-		</div>
-		<div class="footer-right">
-			<?php echo esc_attr( get_theme_mod( 'berea_footer_right', 'Footer Content Right' ) );  ?>
-		</div>
-<?php }
-add_action( 'tha_footer_bottom', 'berea_add_footer_divs' );
 endif;
 
 add_action( 'tha_head_bottom', 'berea_add_selectivizr' );

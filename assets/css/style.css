@@ -1008,12 +1008,14 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
   word-break: break-word;
+  border-top: 4px solid #C75B12;
 }
 
 #page {
-  max-width: 71.25em;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 #page:after {
   content: "";
@@ -1027,9 +1029,8 @@ body {
 
 #primary {
   margin: auto;
-  margin-top: 60px;
-  border: 2px solid red;
-  background-color: #FFFFFE;
+  margin-top: 50px;
+  background-color: transparent;
 }
 #primary:after {
   content: "";
@@ -1253,7 +1254,10 @@ Main components
   height: 50px;
   background: transparent;
   z-index: 3;
-  border-top: 5px solid #C75B12;
+  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #005A8B;
 }
 .nav-is-fixed .cd-main-header {
   /* add .nav-is-fixed class to body if you want a fixed navigation on > 1170px */
@@ -1489,15 +1493,17 @@ Main components
 }
 
 .cd-primary-nav, .cd-primary-nav ul {
+  list-style-type: none;
   position: fixed;
   top: 0;
   right: 0;
+  padding: 0px;
+  margin: 0px;
   height: 100%;
   width: 260px;
   background: #2e3233;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  z-index: 1;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -1679,7 +1685,7 @@ Main components
   }
   .cd-primary-nav > li {
     float: left;
-    margin-left: 3em;
+    margin-left: 0px;
   }
   .cd-primary-nav > li > a {
     /* main navigation buttons style */
@@ -2270,7 +2276,10 @@ support for no js
 }
 
 .site-main {
+  max-width: 980px;
   background: #FFFFFF;
+  margin: -100px auto 0px auto;
+  z-index: 2;
 }
 
 .site-main .gallery a img {
@@ -2479,9 +2488,10 @@ object {
 --------------------------------------------------------------*/
 footer {
   float: left;
-  margin: 0 auto;
-  padding: 0 40px;
+  margin: auto;
+  padding: 0px;
   width: 100%;
+  z-index: 1;
 }
 footer .site-info {
   color: #005A8B;
@@ -2528,6 +2538,7 @@ footer .footer-main {
   color: #FFFFFF;
   background: #005A8B;
   padding: 20px;
+  padding-top: 100px;
 }
 footer .footer-main:after {
   content: "";
@@ -2753,6 +2764,23 @@ input#s {
 }
 
 /* http://sachagreif.com/useful-sass-mixins/ */
+.cd-header-ribbon {
+  width: 228px;
+  height: 265px;
+  background: url("../images/bc-ribbon.png");
+  position: absolute;
+  top: 0px;
+  left: 45px;
+  z-index: 3;
+}
+.cd-header-ribbon img {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 210px;
+  height: 210px;
+}
+
 .hero-nav-wrapper {
   background-color: rgba(0, 90, 139, 0.8);
   padding: 20px;
@@ -2787,22 +2815,35 @@ input#s {
 }
 
 .homepage-slider {
-  background: url("/wp-content/themes/berea2015/bc-wp-2015/assets/images/1024_640_placeholder.jpg");
+  height: 620px;
+  background: url("../images/front_page_image.png");
 }
 .homepage-slider h1 {
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   color: #FFFFFF;
   text-align: right;
-  font-size: 3em;
-  padding-top: 150px;
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 320px;
   padding-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .homepage-slider p {
   text-align: right;
   padding-right: 20px;
   color: #FFFFFF;
 }
-.homepage-slider p a {
+.homepage-slider .tagline {
+  font-family: "Crimson Text", serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+.homepage-slider .tagline a {
+  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px !important;
+  text-transform: uppercase;
   text-decoration: none;
   border: 1px solid #d9d9d9;
   border-color: #d9d9d9 #c9c9c9 #bdbdbd;
@@ -2843,7 +2884,7 @@ input#s {
   text-shadow: 0 -1px 1px white;
   background-clip: padding-box;
 }
-.homepage-slider p a:hover:not(:disabled) {
+.homepage-slider .tagline a:hover:not(:disabled) {
   border: 1px solid #c9c9c9;
   border-color: #c9c9c9 #bababa #adadad;
   -webkit-box-shadow: inset 0 1px 0 0 white;
@@ -2856,7 +2897,7 @@ input#s {
   text-shadow: 0 -1px 1px #c7c7c7;
   background-clip: padding-box;
 }
-.homepage-slider p a:active:not(:disabled), .homepage-slider p a:focus:not(:disabled) {
+.homepage-slider .tagline a:active:not(:disabled), .homepage-slider .tagline a:focus:not(:disabled) {
   background: #e6e6e6;
   border: 1px solid #b3b3b3;
   border-bottom: 1px solid #b0b0b0;
@@ -2864,7 +2905,7 @@ input#s {
           box-shadow: inset 0 0 6px 3px #c8c8c8;
   text-shadow: 0 -1px 1px #c8c8c8;
 }
-.homepage-slider p a:hover:not(:disabled) {
+.homepage-slider .tagline a:hover:not(:disabled) {
   border: 1px solid #c9c9c9;
   border-color: #c9c9c9 #bababa #b8a5a2;
   -webkit-box-shadow: inset 0 1px 0 0 white;
@@ -2877,7 +2918,7 @@ input#s {
   text-shadow: 0 -1px 1px #c7c7c7;
   background-clip: padding-box;
 }
-.homepage-slider p a:active:not(:disabled), .homepage-slider p a:focus:not(:disabled) {
+.homepage-slider .tagline a:active:not(:disabled), .homepage-slider .tagline a:focus:not(:disabled) {
   background: #e6e6e6;
   border: 1px solid #b3b3b3;
   border-bottom: 1px solid #b5adab;
@@ -2885,11 +2926,11 @@ input#s {
           box-shadow: inset 0 0 6px 3px #c9c7c7;
   text-shadow: 0 -1px 1px #c8c8c8;
 }
-.homepage-slider p a:disabled {
+.homepage-slider .tagline a:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
-.homepage-slider p a:link, .homepage-slider p a:hover, .homepage-slider p a:visited, .homepage-slider p a:active {
+.homepage-slider .tagline a:link, .homepage-slider .tagline a:hover, .homepage-slider .tagline a:visited, .homepage-slider .tagline a:active {
   color: #005A8B;
 }
 
