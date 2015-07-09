@@ -124,6 +124,7 @@ jQuery(document).ready(function($){
 		var navigation = $('.cd-nav');
         closeNav();
 		$('.cd-overlay').removeClass('is-visible');
+		toggleSearch('close');
 				
   		var desktop = checkWindowWidth();
         if ( desktop ) {

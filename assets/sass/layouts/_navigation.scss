@@ -163,7 +163,7 @@ Main components
 
 	@include MQ(L) {
 		top: 18px;
-		right: 4em;
+		right: 1em;
 	}
 }
 
@@ -498,7 +498,7 @@ Main components
 
 	.cd-primary-nav {
 		position: static;
-		padding: 0 150px 0 0;
+		padding: 0 80px 0 0;
 		height: auto;
 		width: auto;
 		float: right;
@@ -567,7 +567,7 @@ Main components
 			/* dropdown menu style */
 			position: absolute;
 			top: $header-height-L;
-			width: 100vw;
+			max-width: 1024px;
 			background: $color-4;
 			padding: 48px 64px 130px;
 			box-shadow: inset 0 1px 0 $color-3, 0 3px 6px rgba(#000, .05);
@@ -911,8 +911,8 @@ Main components
 		border: none;
 		background: $color-4;
 		height: 100%;
-		width: 100%;
-		padding: 0 5%;
+		width: 820px;
+		padding: 0;
 		box-shadow: inset 0 1px 0 $color-3, 0 3px 6px rgba(#000, .05);
 		@include appearance(none);
 
