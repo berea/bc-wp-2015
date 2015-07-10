@@ -10,7 +10,7 @@
 		<?php tha_content_bottom(); ?>
 		</div><!-- #content -->
 		<?php tha_content_after(); ?>
- 
+
  		<!-- This is the mega-dropdown -->
 		<?php include 'universal_menu.php'; ?>
 
@@ -34,36 +34,40 @@
 		<h3>ABOUT BEREA</h3>
 
 		<ul>
-			<li>Our Mission</li>
-			<li>Visitor’s Center</li>
-			<li>Jobs</li>
+			<li><a href="http://www.berea.edu/about/mission/">Our Mission</a></li>
+			<li><a href="http://www.berea.edu/visitors-center/">Visitor’s Center</a></li>
+			<li><a href="http://www.berea.edu/people-services/jobs/">Jobs</a></li>
 		</ul>
 
-		<ul>
-			<li>Partners for Education</li>
-			<li>Seabury Athletic Center</li>
-			<li>Loyal Jones Appalachian Center</li>
-			<li>Bell hooks Institute</li>
-			<li>Hutchins Library</li>
-		</ul>
-
-		<ul>
-			<li>City of Berea</li>
-			<li>Madison County</li>
-			<li>Kentucky</li>
-		</ul>
 	</div><!-- .footer-about -->
 
 	<div class="footer-distinctly">
 		<h3>DISTINCTLY BEREAN</h3>
+		<ul>
+			<li><a href="#">Partners for Education</a></li>
+			<li><a href="http://www.berea.edu/seab/">Seabury Athletic Center</a></li>
+			<li><a href="http://www.berea.edu/appalachian-center/">Loyal Jones Appalachian Center</a></li>
+			<li><a href="#">Bell hooks Institute</a></li>
+			<li><a href="http://libraryguides.berea.edu/">Hutchins Library</a></li>
+		</ul>
 	</div><!-- .footer-distinctly -->
 
 	<div class="footer-maps">
 		<h3>MAPS &amp; DIRECTIONS</h3>
+		<ul>
+			<li><a href="http://www.berea.edu/campus-map/">Map of Campus</a></li>
+			<li><a href="http://www.berea.edu/campus-map/directions/">Directions to Campus</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="http://bereaky.gov/">City of Berea</a></li>
+			<li><a href="http://www.madisoncountyky.us/">Madison County</a></li>
+			<li><a href="http://kentucky.gov/Pages/home.aspx">Kentucky</a></li>
+		</ul>
 	</div><!-- .footer-maps -->
 
 	<div class="footer-more">
-		<a href="#" class="btn btn-large">MORE ABOUT BEREA &gt;</a>
+		<a href="http://www.berea.edu/about/" class="btn btn-large">MORE ABOUT BEREA &gt;</a>
 	</div><!-- .footer-more -->
 </div><!-- #footer-main -->
 
