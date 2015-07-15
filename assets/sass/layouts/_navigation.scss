@@ -393,6 +393,8 @@ Main components
 
 .cd-primary-nav {
 
+  	text-transform: none;
+
 	.see-all a {
 		/* different style for the See all button on mobile and tablet */
 		color: $color-4;
@@ -429,7 +431,7 @@ Main components
 
 		p {
 			color: $color-1;
-			font-size: 1.3rem;
+			font-size: 1.1rem;
 			/* hide description on small devices */
 			display: none;
 		}
@@ -515,7 +517,7 @@ Main components
 		ul {
 			position: static;
 			height: auto;
-			width: auto;
+			width: 1024px;
 			background: transparent;
 			overflow: visible;
 			z-index: $above-content;
@@ -557,6 +559,7 @@ Main components
 				color: $color-2;
 				box-shadow: inset 0 -2px 0 $color-2;
 			}
+
 		}
 
 		.go-back, .see-all {

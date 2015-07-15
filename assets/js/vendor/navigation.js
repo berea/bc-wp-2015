@@ -10,9 +10,8 @@ jQuery(document).ready(function($){
 	//mobile - open lateral menu clicking on the menu icon
 	$('.cd-nav-trigger').on('click', function(event){
 		event.preventDefault();
-		if( $('.cd-main-content').hasClass('nav-is-visible') ) {
+		if( $('.cd-overlay').hasClass('is-visible') ) {
 			closeNav();
-			$('.cd-overlay').removeClass('is-visible');
 		} else {
 			$(this).addClass('nav-is-visible');
 			$('.cd-primary-nav').addClass('nav-is-visible');
@@ -87,6 +86,7 @@ jQuery(document).ready(function($){
 		$('.cd-main-content').removeClass('nav-is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 			$('body').removeClass('overflow-hidden');
 		});
+		if(!$('#cd-search').hasClass('is-visible')) $('.cd-overlay').removeClass('is-visible');
 	}
 
 	function toggleSearch(type) {
@@ -99,9 +99,8 @@ jQuery(document).ready(function($){
 			//toggle search visibility
 			$('.cd-search').toggleClass('is-visible');
 			$('.cd-search-trigger').toggleClass('search-is-visible');
-			$('.cd-overlay').toggleClass('search-is-visible');
 			if($(window).width() > MqL && $('.cd-search').hasClass('is-visible')) $('.cd-search').find('input[type="search"]').focus();
-			($('.cd-search').hasClass('is-visible')) ? $('.cd-overlay').addClass('is-visible') : $('.cd-overlay').removeClass('is-visible') ;
+			($('#cd-search').hasClass('is-visible')) ? $('.cd-overlay').addClass('is-visible') : $('.cd-overlay').removeClass('is-visible') ;
 		}
 	}
 
