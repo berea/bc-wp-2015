@@ -3015,3 +3015,12 @@ input#s {
   border-bottom: 2px solid #C75B12;
   font-weight: normal;
 }
+
+.vertical-center {
+  vertical-align: middle;
+}
+
+.vertical-center-nudge-right {
+  vertical-align: middle;
+  padding-left: 1em;
+}

@@ -125,3 +125,12 @@
   border-bottom: 2px solid $bc-orange;
   font-weight: normal;
 }
+
+.vertical-center {
+  vertical-align: middle;
+}
+
+.vertical-center-nudge-right {
+  vertical-align: middle;
+  padding-left: 1em;
+}
