@@ -90,47 +90,66 @@
   }
 }
 
-.people-slider {
-  ul {
-    @include navigation-list;
-    display: flex;
-    justify-content: space-around;
-    li {
-      padding: 0 20px;
-      color: $bc-blue;
-      font-size: 1.2em;
-      font-weight: bold;
-    }
-  }
-}
-
-.news {
-  ul {
-    @include navigation-list;
-    display: flex;
-    justify-content: space-around;
-    li {
-      padding: 0 5px;
-      color: $bc-blue;
-    }
-  }
-}
-
-.heading-underlined {
-  font-size: 1.3em;
-  text-transform: uppercase;
-  color: $bc-blue;
-  padding-bottom: 10px;
-  padding-top: 30px;
-  border-bottom: 2px solid $bc-orange;
-  font-weight: normal;
-}
-
+// Used in icon list
 .vertical-center {
   vertical-align: middle;
 }
 
+// Used in icon list
 .vertical-center-nudge-right {
   vertical-align: middle;
   padding-left: 1em;
 }
+
+
+
+.homepage-central-content-block {
+
+}
+
+
+
+
+
+
+
+
+
+// Temporarily commented out; Charlie isn't sure if this design will be the final one.
+//
+//.people-slider {
+//  ul {
+//    @include navigation-list;
+//    display: flex;
+//    justify-content: space-around;
+//    li {
+//      padding: 0 20px;
+//      color: $bc-blue;
+//      font-size: 1.2em;
+//      font-weight: bold;
+//    }
+//  }
+//}
+//
+//.news {
+//  ul {
+//    @include navigation-list;
+//    display: flex;
+//    justify-content: space-around;
+//    li {
+//      padding: 0 5px;
+//      color: $bc-blue;
+//    }
+//  }
+//}
+//
+//.heading-underlined {
+//  font-size: 1.3em;
+//  text-transform: uppercase;
+//  color: $bc-blue;
+//  padding-bottom: 10px;
+//  padding-top: 30px;
+//  border-bottom: 2px solid $bc-orange;
+//  font-weight: normal;
+//}
+//
