@@ -28,7 +28,7 @@
 <div id="page" class="hfeed site">
 
 	<div id="ribbon" class="cd-header-ribbon">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/primary_white_transparent.svg" alt="Berea College"/>
+		<div id="logo"></div>
 	</div>
 
 
