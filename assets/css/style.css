@@ -2791,20 +2791,37 @@ input#s {
 /* http://sachagreif.com/useful-sass-mixins/ */
 /* http://www.nodenerd.com/resetting-omega-mixin-bourbon-neat */
 .cd-header-ribbon {
-  width: 228px;
-  height: 265px;
-  background: url("../images/bc-ribbon.png");
+  background: url("../images/bc-ribbon-flat.png");
+  background-repeat: no-repeat;
   position: absolute;
   top: 0px;
   left: 45px;
+  width: 228px;
+  height: 100px;
   z-index: 3;
 }
-.cd-header-ribbon img {
-  display: block;
+@media only screen and (min-width: 480px) {
+  .cd-header-ribbon {
+    background: url("../images/bc-ribbon.png");
+    height: 265px;
+  }
+}
+.cd-header-ribbon div#logo {
+  background: url("../images/bc-logo-stacked.svg");
+  background-size: 150px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: block;
   width: 210px;
   height: 210px;
+}
+@media only screen and (min-width: 480px) {
+  .cd-header-ribbon div#logo {
+    background: url("../images/primary_white_transparent.svg");
+    background-size: 210px;
+  }
 }
 
 .hero-nav-wrapper {
