@@ -2296,7 +2296,7 @@ support for no js
 .site-main {
   max-width: 980px;
   background: #FFFFFF;
-  margin: -100px auto 0px auto;
+  margin: -60px auto 0px auto;
   z-index: 2;
 }
 
@@ -2508,7 +2508,7 @@ footer {
   position: relative;
   float: left;
   margin: auto;
-  margin-top: -40px;
+  margin-top: -60px;
   padding: 0px;
   width: 100%;
   z-index: -1;
@@ -2962,6 +2962,26 @@ input#s {
   padding-left: 1em;
 }
 
+.nudge-half-right {
+  padding-left: .5em;
+}
+
 .nudge-left {
   padding-right: 1em;
+}
+
+li.block {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 23.40426%;
+}
+li.block:last-child {
+  margin-right: 0;
+}
+li.block:nth-child(4n) {
+  margin-right: 0;
+}
+li.block:nth-child(4n+1) {
+  clear: left;
 }

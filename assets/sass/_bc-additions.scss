@@ -99,6 +99,10 @@
   padding-left: 1em;
 }
 
+.nudge-half-right {
+  padding-left: .5em;
+}
+
 .nudge-left {
   padding-right: 1em;
 }
@@ -109,6 +113,11 @@
 }
 
 
+
+li.block {
+  @include span-columns(3);
+  @include omega(4n);
+}
 
 
 
