@@ -2958,7 +2958,10 @@ input#s {
   vertical-align: middle;
 }
 
-.vertical-center-nudge-right {
-  vertical-align: middle;
+.nudge-right {
   padding-left: 1em;
+}
+
+.nudge-left {
+  padding-right: 1em;
 }

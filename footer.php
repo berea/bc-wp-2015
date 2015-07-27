@@ -100,7 +100,15 @@
 </div><!-- #footer-main -->
 
 <div class="footer-social">
-	<p>FOLLOW US: Facebook, YouTube, Twitter, Instagram, RSS</p>
+
+		<p><span class="vertical-center">FOLLOW US:</span>
+			<img class="vertical-center nudge-right" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook4.png" width="25" height="25" /><span class="vertical-center">Facebook</span>
+			<img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/play3.png" width="25" height="25" /><span class="vertical-center">YouTube</span>
+			<img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter3.png" width="25" height="25" /><span class="vertical-center">Twitter</span>
+			<img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/instagram.png" width="25" height="25" /><span class="vertical-center">Instagram</span>
+			<img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/feed4.png" width="25" height="25" /><span class="vertical-center">RSS</span>
+		</p>
+
 </div><!-- #footer-social -->
 
 <div class="site-info">
