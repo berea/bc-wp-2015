@@ -103,11 +103,11 @@
 
 		<p>
 			<span class="vertical-center nudge-left">FOLLOW US:</span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook4.png" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Facebook</span></span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/play3.png" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">YouTube</span></span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter3.png" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Twitter</span></span>
+			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.png" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Facebook</span></span>
+			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/youtube.png" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">YouTube</span></span>
+			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter.png" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Twitter</span></span>
 			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/instagram.png" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Instagram</span></span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/feed4.png" width="25" height="25" /><span class="vertical-center nudge-half-right">RSS</span></span>
+			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/rss.png" width="25" height="25" /><span class="vertical-center nudge-half-right">RSS</span></span>
 		</p>
 </div><!-- .footer-social -->
 

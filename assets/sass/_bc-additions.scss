@@ -1,6 +1,8 @@
 // Berea College additions
 
 @import "components/buttons";
+@import "neat/_neat.scss";
+//@import "_grid-settings.scss";
 
 /* http://sachagreif.com/useful-sass-mixins/ */
 @mixin navigation-list {
@@ -17,6 +19,13 @@
   }
 }
 
+/* http://www.nodenerd.com/resetting-omega-mixin-bourbon-neat */
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+$fg-column: $column;
+$fg-gutter: $gutter;
 
 .cd-header-ribbon {
   width: 228px;
@@ -36,20 +45,27 @@
 }
 
 .hero-nav-wrapper {
-  background-color:rgba(0, 90, 139, 0.8); // This is $bc-blue
+  @include outer-container;
+  background-color:rgba(0, 90, 139, 0.8); // This is $bc-blue at 80% opacity
   padding: 20px;
   text-align: center;
 }
 
 .hero-nav {
   @include navigation-list;
-  display: flex;
-  justify-content: space-around;
-  li {
-    padding: 0 20px;
-    color: $bc-white;
-    font-size: 1.2em;
-    font-weight: bold;
+  padding: 0 20px;
+  color: $bc-white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.hero-nav-item {
+  @include span-columns(6);
+  @include omega(2n);
+  @include MQ(M) {
+    @include omega-reset(2n);
+    @include span-columns(3);
+    @include omega(4n);
   }
 }
 

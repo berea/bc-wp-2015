@@ -2783,7 +2783,13 @@ input#s {
   width: 70%;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* http://sachagreif.com/useful-sass-mixins/ */
+/* http://www.nodenerd.com/resetting-omega-mixin-bourbon-neat */
 .cd-header-ribbon {
   width: 228px;
   height: 265px;
@@ -2802,9 +2808,17 @@ input#s {
 }
 
 .hero-nav-wrapper {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: rgba(0, 90, 139, 0.8);
   padding: 20px;
   text-align: center;
+}
+.hero-nav-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .hero-nav {
@@ -2812,13 +2826,10 @@ input#s {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  padding: 0 20px;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 .hero-nav > li {
   display: block;
@@ -2827,11 +2838,44 @@ input#s {
 .hero-nav > li:last-child {
   margin-right: 0px;
 }
-.hero-nav li {
-  padding: 0 20px;
-  color: #FFFFFF;
-  font-size: 1.2em;
-  font-weight: bold;
+
+.hero-nav-item {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 48.93617%;
+}
+.hero-nav-item:last-child {
+  margin-right: 0;
+}
+.hero-nav-item:nth-child(2n) {
+  margin-right: 0;
+}
+.hero-nav-item:nth-child(2n+1) {
+  clear: left;
+}
+@media only screen and (min-width: 768px) {
+  .hero-nav-item {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+  }
+  .hero-nav-item:nth-child(2n) {
+    margin-right: 2.12766%;
+  }
+  .hero-nav-item:nth-child(2n+1) {
+    clear: none;
+  }
+  .hero-nav-item:last-child {
+    margin-right: 0;
+  }
+  .hero-nav-item:nth-child(4n) {
+    margin-right: 0;
+  }
+  .hero-nav-item:nth-child(4n+1) {
+    clear: left;
+  }
 }
 
 .homepage-slider {
