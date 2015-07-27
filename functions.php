@@ -45,7 +45,7 @@ function berea_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_editor_style
 	 */
-	add_editor_style( '/assets/css/style.css' );
+	add_editor_style( '/assets/css/style-min.css' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary-navigation', __( 'Primary Menu', 'berea' ) );
@@ -261,7 +261,7 @@ add_action( 'tha_head_bottom', 'berea_add_selectivizr' );
 function berea_add_selectivizr() { ?>
 	<!--[if (gte IE 6)&(lte IE 8)]>
   		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/selectivizr/selectivizr-min.js"></script>
-  		<noscript><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" /></noscript>
+  		<noscript><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style-min.css" /></noscript>
 	<![endif]-->
 <?php }
 
