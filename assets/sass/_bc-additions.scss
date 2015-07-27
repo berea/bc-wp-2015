@@ -33,7 +33,17 @@
     width: 210px;
     height: 210px;
   }
+  div#logo {
+    margin: auto;
+    margin-top: 20px;
+    background: url("../images/primary_white_transparent.svg");
+    background-size: 210px;
+    display: block;
+    width: 210px;
+    height: 210px;
+  }
 }
+
 
 .hero-nav-wrapper {
   background-color:rgba(0, 90, 139, 0.8); // This is $bc-blue
