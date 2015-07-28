@@ -27,7 +27,7 @@
 
 		<p>No student pays for tuition.</p>
 
-		<p>Our generous TUTITION PROMISE SCOLARSHIP makes it possible for you to graduate debt-free. Even if you borrow for special learning opportunites or to replace your family’s total contribution, you will have a low debt compared to national trends. We sometimes call Berea “the best education money can’t buy.”</p>
+		<p>Our generous TUTITION PROMISE SCHOLARSHIP makes it possible for you to graduate debt-free. Even if you borrow for special learning opportunites or to replace your family’s total contribution, you will have a low debt compared to national trends. We sometimes call Berea “the best education money can’t buy.”</p>
 	</div><!-- .footer-promise -->
 
 	<div class="footer-about">
@@ -84,9 +84,6 @@
 				<a class="google-map-code" href="http://www.pureblack.de" id="get-map-data">werbeagentur altdorf, landshut</a>
 			</div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(37.5717311,-84.28973889999997),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(37.5717311, -84.28973889999997)});infowindow = new google.maps.InfoWindow({content:"<b>Berea College</b><br/>101 Chestunut Street<br/>40404 Kentucky" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 		</div>
-		<!-- <a href="http://www.berea.edu/campus-map/">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/map.png" alt="Maps"/>
-		</a> -->
 
 		<div>
 			<a href="https://www.google.com/maps/place/Berea+College/@37.5716935,-84.2890655,17z/data=!4m2!3m1!1s0x8842e192a683f201:0x193cd1402103123a">Google Maps</a> |
@@ -103,21 +100,26 @@
 
 		<p>
 			<span class="vertical-center nudge-left">FOLLOW US:</span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.png" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Facebook</span></span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/youtube.png" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">YouTube</span></span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter.png" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Twitter</span></span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/instagram.png" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Instagram</span></span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/rss.png" width="25" height="25" /><span class="vertical-center nudge-half-right">RSS</span></span>
+			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.png" alt="Facebook" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Facebook</span></span>
+			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/youtube.png" alt="YouTube" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">YouTube</span></span>
+			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter.png" alt="Twitter" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Twitter</span></span>
+			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/instagram.png" alt="Instagram" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Instagram</span></span>
+			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/rss.png" alt="RSS" width="25" height="25" /><span class="vertical-center nudge-half-right">RSS</span></span>
 		</p>
 </div><!-- .footer-social -->
 
 <div class="site-info">
-	<h3> BEREA COLLEGE | BEREA, KY | 859-985-3000</h3>
-	<p><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a> |
-		<a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a> |
-		<a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a> |
-		<a href="/wp-admin">Website Administration</a></p>
-	<p><a href="http://www.berea.edu/cisrk/">Consumer Information & Student Right to Know</a></p>
+	<ul class="site-info-school">
+		<li>BEREA COLLEGE</li>
+		<li>BEREA, KY</li>
+		<li>859-985-3000</li>
+	</ul>
+	<ul class="site-info-links">
+		<li><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></li>
+		<li><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li>
+		<li><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li>
+		<li><a href="http://www.berea.edu/cisrk/">Consumer Information & Student Right to Know</a></li>
+	</ul>
 </div><!-- .site-info -->
 			<?php //tha_footer_bottom(); ?>
 		</footer><!-- #colophon -->

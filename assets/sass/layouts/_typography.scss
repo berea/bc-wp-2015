@@ -93,16 +93,17 @@ strong, b {
 	color: #000;
 	font-family: $title;
 }
-a, a:visited {
-	@include transition (all 200ms ease-in-out);
-	color: #666;
-	text-decoration: none;
-
-	&:hover {
-		@include transition (all 200ms ease-in-out);
-		color: $primary-color;
-	}
-}
+// Commented out JLH 7/28/15 - we do not want links to fade into red!
+//a, a:visited {
+//	@include transition (all 200ms ease-in-out);
+//	color: #666;
+//	text-decoration: none;
+//
+//	&:hover {
+//		@include transition (all 200ms ease-in-out);
+//		color: $primary-color;
+//	}
+//}
 ul {
 	@extend %default-ul; // Adds browser default spacing back
 }

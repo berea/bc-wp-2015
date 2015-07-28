@@ -806,18 +806,6 @@ strong, b {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
-a, a:visited {
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-  color: #666;
-  text-decoration: none;
-}
-a:hover, a:visited:hover {
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-  color: #ff0000;
-}
-
 .entry-title {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-align: center;
@@ -2515,18 +2503,42 @@ footer {
 }
 footer .site-info {
   color: #005A8B;
-  background: #DBE4E8;
+  background: transparent;
   margin: auto;
   width: 100%;
   text-align: center;
   font-size: 1.3em;
   padding-top: 20px;
 }
-footer .site-info h3 {
-  font-size: 1.3em;
+footer .site-info a, footer .site-info a:link, footer .site-info a:hover, footer .site-info a:visited {
+  color: #005A8B;
 }
-footer .site-info p {
+footer .site-info ul {
+  margin: 0;
+  padding: 0;
+}
+footer .site-info ul li {
+  list-style-type: none;
+  display: inline;
+}
+footer .site-info .site-info-school li {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+footer .site-info .site-info-school li:before {
+  content: " | ";
+}
+footer .site-info .site-info-school li:first-child:before {
+  content: none;
+}
+footer .site-info .site-info-links li {
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+footer .site-info .site-info-links li:before {
+  content: " | ";
+}
+footer .site-info .site-info-links li:first-child:before {
+  content: none;
 }
 footer .footer-left {
   float: left;
@@ -2789,7 +2801,11 @@ input#s {
 }
 
 /* http://sachagreif.com/useful-sass-mixins/ */
-/* http://www.nodenerd.com/resetting-omega-mixin-bourbon-neat */
+/*
+ * http://www.nodenerd.com/resetting-omega-mixin-bourbon-neat
+ * http://www.joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat/
+ * "n order to use @include omega-reset(), you need to set Bourbon's $fg-column and $fg-gutter variables to match what Bourbon Neat is doing."
+ */
 .cd-header-ribbon {
   background: url("../images/bc-ribbon-flat.png");
   background-repeat: no-repeat;
@@ -2828,14 +2844,17 @@ input#s {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(0, 90, 139, 0.8);
-  padding: 20px;
   text-align: center;
 }
 .hero-nav-wrapper:after {
   content: "";
   display: table;
   clear: both;
+}
+@media only screen and (min-width: 768px) {
+  .hero-nav-wrapper {
+    background-color: rgba(0, 90, 139, 0.8);
+  }
 }
 
 .hero-nav {
@@ -2857,6 +2876,9 @@ input#s {
 }
 
 .hero-nav-item {
+  background-color: rgba(0, 90, 139, 0.8);
+  margin-bottom: 20px;
+  padding: 20px 0;
   float: left;
   display: block;
   margin-right: 2.12766%;
@@ -2873,6 +2895,8 @@ input#s {
 }
 @media only screen and (min-width: 768px) {
   .hero-nav-item {
+    background-color: transparent;
+    margin-bottom: 0;
     float: left;
     display: block;
     margin-right: 2.12766%;
@@ -2893,6 +2917,10 @@ input#s {
   .hero-nav-item:nth-child(4n+1) {
     clear: left;
   }
+}
+
+.hero-nav a, a:link, a:hover, a:visited {
+  color: #FFFFFF;
 }
 
 .homepage-slider {
@@ -3029,20 +3057,4 @@ input#s {
 
 .nudge-left {
   padding-right: 1em;
-}
-
-li.block {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 23.40426%;
-}
-li.block:last-child {
-  margin-right: 0;
-}
-li.block:nth-child(4n) {
-  margin-right: 0;
-}
-li.block:nth-child(4n+1) {
-  clear: left;
 }

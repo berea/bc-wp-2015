@@ -7,19 +7,53 @@ footer {
 	width: 100%;
   	z-index: -1;
 	.site-info {
-		color: $bc-blue;
-		background: $bc-lightblue;
-		margin: auto;
+	  	color: $bc-blue;
+		//background: $bc-lightblue;
+	    background: transparent;
+	    margin: auto;
 		width: 100%;
         text-align: center;
         font-size: 1.3em;
         padding-top: 20px;
-        h3 {
-          font-size: 1.3em;
-        }
-        p {
-          font-family: $opensans-condensed;
-        }
+		// Converting to ul/li....
+        //h3 {
+        //  font-size: 1.3em;
+        //}
+        //p {
+        //  font-family: $opensans-condensed;
+        //}
+	  	a,a:link,a:hover,a:visited {
+		  color: $bc-blue;
+		}
+	  	ul {
+		  margin: 0;
+		  padding: 0;
+		  li {
+			list-style-type: none;
+			display: inline;
+		  }
+		}
+	  	.site-info-school li {
+		  font-size: 1.3em;
+		  font-weight: bold;
+		}
+		.site-info-school li:before {
+		  content: " | ";
+		}
+		.site-info-school li:first-child:before {
+		  content: none;
+		}
+	  	.site-info-links li {
+		  font-family: $opensans-condensed;
+		}
+		.site-info-links li:before {
+		  content: " | ";
+		}
+		.site-info-links li:first-child:before {
+		  content: none;
+		}
+
+
 	}
 	.footer-left {
 		@include span-columns(6);
