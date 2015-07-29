@@ -78,23 +78,44 @@
 
 		<div id="black-text">
 			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-			<div style="overflow:hidden;height:210px;width:210px;">
-				<div id="gmap_canvas" style="height:210px;width:210px;"></div>
-				<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-				<a class="google-map-code" href="http://www.pureblack.de" id="get-map-data">werbeagentur altdorf, landshut</a>
-			</div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(37.5717311,-84.28973889999997),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(37.5717311, -84.28973889999997)});infowindow = new google.maps.InfoWindow({content:"<b>Berea College</b><br/>101 Chestunut Street<br/>40404 Kentucky" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+			<div id="gmap_container">
+				<div id="gmap_canvas" style="height:250px;width:100%;"></div>
+			</div>
+			<script type="text/javascript">
+				function init_map(){
+					var myOptions = {
+						zoom:14,
+						center:new google.maps.LatLng(37.575,-84.28974),
+						mapTypeId: google.maps.MapTypeId.TERRAIN
+					};
+
+					map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+					marker = new google.maps.Marker({
+						map: map,position: new google.maps.LatLng(37.5717311, -84.28973889999997)
+					});
+					infowindow = new google.maps.InfoWindow({
+						content:"<b>Berea College</b><br/>101 Chestunut Street<br/>40404 Kentucky"
+					});
+					google.maps.event.addListener(marker, "click", function(){
+						infowindow.open(map,marker);
+					});
+					infowindow.open(map,marker);
+				}
+				google.maps.event.addDomListener(window, 'load', init_map);
+			</script>
+
 		</div>
 
-		<div>
+		<div id="gmap_links">
 			<a href="https://www.google.com/maps/place/Berea+College/@37.5716935,-84.2890655,17z/data=!4m2!3m1!1s0x8842e192a683f201:0x193cd1402103123a">Google Maps</a> |
 			<a href="http://www.bing.com/maps/default.aspx?q=berea+college+maps&mkt=en&FORM=HDRSC4">Bing Maps</a>
 		</div>
 	</div><!-- .footer-maps -->
-
-	<div class="footer-more">
-		<a href="http://www.berea.edu/about/" class="btn btn-large">MORE ABOUT BEREA &gt;</a>
-	</div><!-- .footer-more -->
 </div><!-- #footer-main -->
+
+<div class="footer-more">
+	<a href="http://www.berea.edu/about/" class="btn btn-large">MORE ABOUT BEREA &gt;</a>
+</div><!-- .footer-more -->
 
 <div class="footer-social">
 

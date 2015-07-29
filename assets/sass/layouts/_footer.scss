@@ -5,7 +5,7 @@ footer {
   	margin-top: -60px;
 	padding: 0px;
 	width: 100%;
-  	z-index: -1;
+  	z-index: 1;
 	.site-info {
 	  	color: $bc-blue;
 		//background: $bc-lightblue;
@@ -81,32 +81,104 @@ footer {
         }
 	}
 	.footer-promise {
+
+	  width: 100%;
+	  @include MQ(M) {
+		display: block;
 		float: left;
 		width: 25%;
-        padding: 5px;
+		padding: 5px;
+	  }
 
 	}
 	.footer-about {
-		float: left;
-		width: 25%;
-        padding: 5px;
+
+		display: none;
+
+	  	@include MQ(S) {
+		  	display: block;
+		  	float: left;
+			width: 25%;
+        	padding: 5px;
+		}
 
 	}
 	.footer-distinctly {
+	  display: none;
+
+	  @include MQ(S) {
+		display: block;
 		float: left;
 		width: 25%;
-        padding: 5px;
+		padding: 5px;
+	  }
 
 	}
+
 	.footer-maps {
+	  width: 300px;
+	  margin-top: 0px;
+	  margin-right: auto;
+	  margin-bottom: 20px;
+	  margin-left: auto;
+	  text-align: center;
+
+	  @include MQ(S) {
+		display: block;
 		float: left;
 		width: 25%;
-        padding: 5px;
+		padding: 5px;
+		margin: 0px;
+	  }
+
+	  #gmap_container {
+		overflow: hidden;
+
+		#gmap_canvas {
+
+		  img {
+			max-width: none !important;
+			background: none !important;
+		  }
+
+		  @include MQ(M) {
+			height: 210px;
+			width: 210px;
+		  }
+		}
+	  }
+
+	  #gmap_links {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-weight: 700;
+	  }
 
 	}
+
+
 	.footer-more {
-
+	  width: 300px;
+	  margin-top: 1em;
+	  margin-right: auto;
+	  margin-bottom: 1em;
+	  margin-left: auto;
+	  background: $bc-white;
+	  border-radius: 10px;
+	  color: $bc-orange;
+	  display: block;
+	  font-size: 1.75em;
+	  font-weight: 700;
+	  letter-spacing: -1px;
+	  padding: 1em;
+	  text-align: center;
+	  text-transform: uppercase;
+	  a {
+		color: $bc-orange;
+	  }
 	}
+
+
 	.footer-social {
 		clear: left;
 		color: $bc-white;
