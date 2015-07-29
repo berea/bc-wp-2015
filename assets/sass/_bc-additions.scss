@@ -105,6 +105,8 @@ $fg-gutter: $gutter;
 .homepage-slider {
   height: 620px;
   background: url('../images/front_page_image.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
   h1 {
     font-family: $opensans-condensed;
     color: $bc-white;
