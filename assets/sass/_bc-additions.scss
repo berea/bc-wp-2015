@@ -209,3 +209,25 @@ $fg-gutter: $gutter;
 //  font-weight: normal;
 //}
 //
+
+
+
+/* For department homepage */
+.menu-block-wrapper {
+  @include outer-container;
+  padding-bottom: 20px;
+}
+
+.menu-block {
+  background: $bc-orange;
+  padding: 20px 0;
+  margin: 20px 0;
+  @include span-columns(12);
+  @include omega(1n);
+  @include MQ(M) {
+    @include omega-reset(1n);
+    @include span-columns(4);
+    @include omega(3n);
+  }
+
+}

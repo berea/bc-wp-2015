@@ -1066,7 +1066,7 @@ body {
   list-style: none;
 }
 #primary ul li {
-  list-style-type: square;
+  list-style-type: none;
 }
 
 #secondary {
@@ -3155,4 +3155,59 @@ input#s {
 
 .nudge-left {
   padding-right: 1em;
+}
+
+/* For department homepage */
+.menu-block-wrapper {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+.menu-block-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu-block {
+  background: #C75B12;
+  padding: 20px 0;
+  margin: 20px 0;
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 100%;
+}
+.menu-block:last-child {
+  margin-right: 0;
+}
+.menu-block:nth-child(1n) {
+  margin-right: 0;
+}
+.menu-block:nth-child(1n+1) {
+  clear: left;
+}
+@media only screen and (min-width: 768px) {
+  .menu-block {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 31.91489%;
+  }
+  .menu-block:nth-child(1n) {
+    margin-right: 2.12766%;
+  }
+  .menu-block:nth-child(1n+1) {
+    clear: none;
+  }
+  .menu-block:last-child {
+    margin-right: 0;
+  }
+  .menu-block:nth-child(3n) {
+    margin-right: 0;
+  }
+  .menu-block:nth-child(3n+1) {
+    clear: left;
+  }
 }
