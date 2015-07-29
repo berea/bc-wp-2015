@@ -104,8 +104,12 @@
   min-height: 200px;
   max-width: 980px;
   background: $bc-white;
-  margin: -60px auto 0px auto;
+  margin: 0px auto;
   z-index: $content;
+  padding-top: 20px;
+  @include MQ(M) {
+	margin: -60px auto 0px auto;
+  }
 }
 .site-main .gallery a img {
 	border: none;
