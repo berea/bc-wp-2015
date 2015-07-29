@@ -104,6 +104,19 @@ strong, b {
 //		color: $primary-color;
 //	}
 //}
+
+
+/* To make links go to 80% opacity on hover */
+/* https://css-tricks.com/almanac/properties/o/opacity/ */
+a, a:visited {
+  &:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; // IE8
+	filter: alpha(opacity=80); // IE 5-7
+	opacity: 0.8;
+  }
+}
+
+
 ul {
 	@extend %default-ul; // Adds browser default spacing back
 }

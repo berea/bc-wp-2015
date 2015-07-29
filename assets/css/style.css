@@ -806,6 +806,14 @@ strong, b {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
+/* To make links go to 80% opacity on hover */
+/* https://css-tricks.com/almanac/properties/o/opacity/ */
+a:hover, a:visited:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
 .entry-title {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-align: center;
@@ -1002,6 +1010,7 @@ body {
   line-height: 1.5em;
   word-break: break-word;
   border-top: 4px solid #C75B12;
+  background: url("../images/bg_texture.png");
 }
 
 #page {
@@ -2282,6 +2291,7 @@ support for no js
 }
 
 .site-main {
+  min-height: 200px;
   max-width: 980px;
   background: #FFFFFF;
   margin: -60px auto 0px auto;
@@ -2496,10 +2506,19 @@ footer {
   position: relative;
   float: left;
   margin: auto;
-  margin-top: -60px;
   padding: 0px;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
+}
+@media only screen and (min-width: 768px) {
+  footer {
+    margin-top: -60px;
+  }
+}
+footer .footer-floats:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 footer .site-info {
   color: #005A8B;
@@ -2570,7 +2589,7 @@ footer .footer-main {
   color: #FFFFFF;
   background: #005A8B;
   padding: 20px;
-  padding-top: 100px;
+  padding-top: 2em;
 }
 footer .footer-main:after {
   content: "";
@@ -2578,28 +2597,105 @@ footer .footer-main:after {
   clear: both;
 }
 footer .footer-main h3 {
-  text-align: center;
-  font-size: 1.3em;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+  footer .footer-main {
+    padding-top: 100px;
+  }
+  footer .footer-main h3 {
+    text-align: center;
+  }
 }
 footer .footer-promise {
-  float: left;
-  width: 25%;
-  padding: 5px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  footer .footer-promise {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
 }
 footer .footer-about {
-  float: left;
-  width: 25%;
-  padding: 5px;
+  display: none;
+}
+@media only screen and (min-width: 480px) {
+  footer .footer-about {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
 }
 footer .footer-distinctly {
-  float: left;
-  width: 25%;
-  padding: 5px;
+  display: none;
+}
+@media only screen and (min-width: 480px) {
+  footer .footer-distinctly {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
 }
 footer .footer-maps {
-  float: left;
-  width: 25%;
-  padding: 5px;
+  width: 300px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  text-align: center;
+}
+@media only screen and (min-width: 480px) {
+  footer .footer-maps {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 5px;
+    margin: 0px;
+  }
+}
+footer .footer-maps #gmap_container {
+  overflow: hidden;
+}
+footer .footer-maps #gmap_container #gmap_canvas img {
+  max-width: none !important;
+  background: none !important;
+}
+@media only screen and (min-width: 768px) {
+  footer .footer-maps #gmap_container #gmap_canvas {
+    height: 210px;
+    width: 210px;
+  }
+}
+footer .footer-maps #gmap_links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+footer .footer-more {
+  width: 300px;
+  margin-top: 1em;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+  background: #FFFFFF;
+  border-radius: 10px;
+  color: #C75B12;
+  display: block;
+  font-size: 1.75em;
+  font-weight: 700;
+  letter-spacing: -1px;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+footer .footer-more a {
+  color: #C75B12;
 }
 footer .footer-social {
   clear: left;
@@ -2926,6 +3022,8 @@ input#s {
 .homepage-slider {
   height: 620px;
   background: url("../images/front_page_image.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .homepage-slider h1 {
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
