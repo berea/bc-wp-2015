@@ -6,6 +6,11 @@ footer {
 	padding: 0px;
 	width: 100%;
   	z-index: 1;
+
+  	.footer-floats {
+	  @include clearfix;
+	}
+
 	.site-info {
 	  	color: $bc-blue;
 		//background: $bc-lightblue;

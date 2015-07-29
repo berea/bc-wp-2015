@@ -20,102 +20,109 @@
 
 
 <div class="footer-main">
-	<div class="footer-promise">
-		<h3>NO-TUITION PROMISE</h3>
 
-		<p>Berea is the only one of America’s top colleges that awards every enrolled student a no-tuition promise.</p>
+	<div class="footer-floats">
 
-		<p>No student pays for tuition.</p>
+		<div class="footer-promise">
+			<h3>NO-TUITION PROMISE</h3>
 
-		<p>Our generous TUTITION PROMISE SCHOLARSHIP makes it possible for you to graduate debt-free. Even if you borrow for special learning opportunites or to replace your family’s total contribution, you will have a low debt compared to national trends. We sometimes call Berea “the best education money can’t buy.”</p>
-	</div><!-- .footer-promise -->
+			<p>Berea is the only one of America’s top colleges that awards every enrolled student a no-tuition promise.</p>
 
-	<div class="footer-about">
-		<h3>ABOUT BEREA</h3>
+			<p>No student pays for tuition.</p>
 
-		<ul>
-			<li><a href="http://www.berea.edu/about/mission/">Our Mission</a></li>
-			<li><a href="http://www.berea.edu/visitors-center/">Visitor’s Center</a></li>
-			<li><a href="http://www.berea.edu/people-services/jobs/">Jobs</a></li>
-		</ul>
+			<p>Our generous TUTITION PROMISE SCHOLARSHIP makes it possible for you to graduate debt-free. Even if you borrow for special learning opportunites or to replace your family’s total contribution, you will have a low debt compared to national trends. We sometimes call Berea “the best education money can’t buy.”</p>
+		</div><!-- .footer-promise -->
 
+		<div class="footer-about">
+			<h3>ABOUT BEREA</h3>
 
-
-		<ul>
-			<li><a href="#">Partners for Education</a></li>
-			<li><a href="http://www.berea.edu/seab/">Seabury Athletic Center</a></li>
-			<li><a href="http://www.berea.edu/appalachian-center/">Loyal Jones Appalachian Center</a></li>
-			<li><a href="#">Bell hooks Institute</a></li>
-			<li><a href="http://libraryguides.berea.edu/">Hutchins Library</a></li>
-		</ul>
-
-		<ul>
-			<li><a href="http://bereaky.gov/">City of Berea</a></li>
-			<li><a href="http://www.madisoncountyky.us/">Madison County</a></li>
-			<li><a href="http://kentucky.gov/Pages/home.aspx">Kentucky</a></li>
-		</ul>
+			<ul>
+				<li><a href="http://www.berea.edu/about/mission/">Our Mission</a></li>
+				<li><a href="http://www.berea.edu/visitors-center/">Visitor’s Center</a></li>
+				<li><a href="http://www.berea.edu/people-services/jobs/">Jobs</a></li>
+			</ul>
 
 
 
-	</div><!-- .footer-about -->
+			<ul>
+				<li><a href="#">Partners for Education</a></li>
+				<li><a href="http://www.berea.edu/seab/">Seabury Athletic Center</a></li>
+				<li><a href="http://www.berea.edu/appalachian-center/">Loyal Jones Appalachian Center</a></li>
+				<li><a href="#">Bell hooks Institute</a></li>
+				<li><a href="http://libraryguides.berea.edu/">Hutchins Library</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="http://bereaky.gov/">City of Berea</a></li>
+				<li><a href="http://www.madisoncountyky.us/">Madison County</a></li>
+				<li><a href="http://kentucky.gov/Pages/home.aspx">Kentucky</a></li>
+			</ul>
 
 
 
-	<div class="footer-distinctly">
-		<h3>DISTINCTLY BEREAN</h3>
+		</div><!-- .footer-about -->
 
-			<a href="http://www.boonetavernhotel.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/boonetavern165x59.png" alt="Boone Tavern"/></a>
-			<br><br><br>
-			<a href="http://bereacollegecrafts.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/studentcrafts165x42.png" alt="Student Crafts"/></a>
-			<br><br><br>
-			<a href="http://www.berea.edu/conference-services/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/conference-services-165x42.png" alt="Conference Services"/></a>
-			<br><br><br>
 
-	</div><!-- .footer-distinctly -->
 
-	<div class="footer-maps">
-		<h3>MAPS &amp; DIRECTIONS</h3>
+		<div class="footer-distinctly">
+			<h3>DISTINCTLY BEREAN</h3>
 
-		<div id="black-text">
-			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-			<div id="gmap_container">
-				<div id="gmap_canvas" style="height:250px;width:100%;"></div>
-			</div>
-			<script type="text/javascript">
-				function init_map(){
-					var myOptions = {
-						zoom:14,
-						center:new google.maps.LatLng(37.575,-84.28974),
-						mapTypeId: google.maps.MapTypeId.TERRAIN
-					};
+				<a href="http://www.boonetavernhotel.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/boonetavern165x59.png" alt="Boone Tavern"/></a>
+				<br><br><br>
+				<a href="http://bereacollegecrafts.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/studentcrafts165x42.png" alt="Student Crafts"/></a>
+				<br><br><br>
+				<a href="http://www.berea.edu/conference-services/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/conference-services-165x42.png" alt="Conference Services"/></a>
+				<br><br><br>
 
-					map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
-					marker = new google.maps.Marker({
-						map: map,position: new google.maps.LatLng(37.5717311, -84.28973889999997)
-					});
-					infowindow = new google.maps.InfoWindow({
-						content:"<b>Berea College</b><br/>101 Chestunut Street<br/>40404 Kentucky"
-					});
-					google.maps.event.addListener(marker, "click", function(){
+		</div><!-- .footer-distinctly -->
+
+		<div class="footer-maps">
+			<h3>MAPS &amp; DIRECTIONS</h3>
+
+			<div id="black-text">
+				<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+				<div id="gmap_container">
+					<div id="gmap_canvas" style="height:250px;width:100%;"></div>
+				</div>
+				<script type="text/javascript">
+					function init_map(){
+						var myOptions = {
+							zoom:14,
+							center:new google.maps.LatLng(37.575,-84.28974),
+							mapTypeId: google.maps.MapTypeId.TERRAIN
+						};
+
+						map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+						marker = new google.maps.Marker({
+							map: map,position: new google.maps.LatLng(37.5717311, -84.28973889999997)
+						});
+						infowindow = new google.maps.InfoWindow({
+							content:"<b>Berea College</b><br/>101 Chestunut Street<br/>40404 Kentucky"
+						});
+						google.maps.event.addListener(marker, "click", function(){
+							infowindow.open(map,marker);
+						});
 						infowindow.open(map,marker);
-					});
-					infowindow.open(map,marker);
-				}
-				google.maps.event.addDomListener(window, 'load', init_map);
-			</script>
+					}
+					google.maps.event.addDomListener(window, 'load', init_map);
+				</script>
 
-		</div>
+			</div>
 
-		<div id="gmap_links">
-			<a href="https://www.google.com/maps/place/Berea+College/@37.5716935,-84.2890655,17z/data=!4m2!3m1!1s0x8842e192a683f201:0x193cd1402103123a">Google Maps</a> |
-			<a href="http://www.bing.com/maps/default.aspx?q=berea+college+maps&mkt=en&FORM=HDRSC4">Bing Maps</a>
-		</div>
-	</div><!-- .footer-maps -->
+			<div id="gmap_links">
+				<a href="https://www.google.com/maps/place/Berea+College/@37.5716935,-84.2890655,17z/data=!4m2!3m1!1s0x8842e192a683f201:0x193cd1402103123a">Google Maps</a> |
+				<a href="http://www.bing.com/maps/default.aspx?q=berea+college+maps&mkt=en&FORM=HDRSC4">Bing Maps</a>
+			</div>
+		</div><!-- .footer-maps -->
+
+	</div><!-- .footer-floats -->
+
+	<div class="footer-more">
+		<a href="http://www.berea.edu/about/" class="btn btn-large">MORE ABOUT BEREA &gt;</a>
+	</div><!-- .footer-more -->
+
 </div><!-- #footer-main -->
 
-<div class="footer-more">
-	<a href="http://www.berea.edu/about/" class="btn btn-large">MORE ABOUT BEREA &gt;</a>
-</div><!-- .footer-more -->
 
 <div class="footer-social">
 
