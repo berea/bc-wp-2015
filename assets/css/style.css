@@ -2538,17 +2538,42 @@ footer .site-info ul {
 }
 footer .site-info ul li {
   list-style-type: none;
-  display: inline;
+  display: block;
+}
+@media only screen and (min-width: 480px) {
+  footer .site-info ul li {
+    display: inline;
+  }
 }
 footer .site-info .site-info-school li {
   font-size: 1.3em;
   font-weight: bold;
+  padding-bottom: 10px;
 }
 footer .site-info .site-info-school li:before {
-  content: " | ";
+  content: none;
+}
+@media only screen and (min-width: 480px) {
+  footer .site-info .site-info-school li:before {
+    content: " | ";
+  }
 }
 footer .site-info .site-info-school li:first-child:before {
   content: none;
+}
+footer .site-info .site-info-links {
+  display: none;
+}
+@media only screen and (min-width: 480px) {
+  footer .site-info .site-info-links {
+    display: block;
+  }
+}
+footer .site-info .site-info-links p {
+  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+footer .site-info .site-info-links ul {
+  padding-top: 20px;
 }
 footer .site-info .site-info-links li {
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -2558,6 +2583,28 @@ footer .site-info .site-info-links li:before {
 }
 footer .site-info .site-info-links li:first-child:before {
   content: none;
+}
+footer .site-info .site-info-links-mobile {
+  display: block;
+}
+footer .site-info .site-info-links-mobile p {
+  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  padding: 15px 0;
+}
+footer .site-info .site-info-links-mobile ul {
+  margin: 0;
+  padding: 0;
+}
+footer .site-info .site-info-links-mobile ul li {
+  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  list-style-type: disc;
+  display: block;
+  padding-bottom: 7px;
+}
+@media only screen and (min-width: 480px) {
+  footer .site-info .site-info-links-mobile {
+    display: none;
+  }
 }
 footer .footer-left {
   float: left;
@@ -3155,6 +3202,10 @@ input#s {
 
 .nudge-left {
   padding-right: 1em;
+}
+
+.group-elements {
+  display: inline-block;
 }
 
 /* For department homepage */

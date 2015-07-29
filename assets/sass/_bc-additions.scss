@@ -212,6 +212,12 @@ $fg-gutter: $gutter;
 
 
 
+.group-elements {
+  display: inline-block;
+}
+
+
+
 /* For department homepage */
 .menu-block-wrapper {
   @include outer-container;

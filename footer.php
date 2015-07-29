@@ -128,11 +128,11 @@
 
 		<p>
 			<span class="vertical-center nudge-left">FOLLOW US:</span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.png" alt="Facebook" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Facebook</span></span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/youtube.png" alt="YouTube" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">YouTube</span></span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter.png" alt="Twitter" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Twitter</span></span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/instagram.png" alt="Instagram" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Instagram</span></span>
-			<span style="display: inline-block"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/rss.png" alt="RSS" width="25" height="25" /><span class="vertical-center nudge-half-right">RSS</span></span>
+            <a href="http://www.facebook.com/pages/Berea-KY/Berea-College/39126548204"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.png" alt="Facebook" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Facebook</span></span></a>
+			<a href="http://www.youtube.com/berea"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/youtube.png" alt="YouTube" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">YouTube</span></span></a>
+			<a href="http://twitter.com/bereacollege"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter.png" alt="Twitter" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Twitter</span></span></a>
+			<a href="#"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/instagram.png" alt="Instagram" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Instagram</span></span></a>
+			<a href="http://www.blogtalkradio.com/bereacollege"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/rss.png" alt="RSS" width="25" height="25" /><span class="vertical-center nudge-half-right">RSS</span></span></a>
 		</p>
 </div><!-- .footer-social -->
 
@@ -142,20 +142,30 @@
 		<li>BEREA, KY</li>
 		<li>859-985-3000</li>
 	</ul>
-	<ul class="site-info-links">
-		<li><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></li>
-		<li><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li>
-		<li><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li>
-		<li><a href="http://www.berea.edu/cisrk/">Consumer Information & Student Right to Know</a></li>
-	</ul>
+    <div class="site-info-links">
+        <ul>
+            <li><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></li>
+            <li><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li>
+        </ul>
+        <p><a href="http://www.berea.edu/cisrk/">Consumer Information & Student Right to Know</a></p>
+    </div><!-- .site-info-links -->
+    <div class="site-info-links-mobile">
+        <p><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></p>
+        <ul class="site-info-links-mobile">
+            <li><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li>
+            <li><a href="http://www.berea.edu/cisrk/">Consumer Information &<br />Student Right to Know</a></li>
+        </ul>
+    </div><!-- .site-info-links-mobile -->
 </div><!-- .site-info -->
 			<?php //tha_footer_bottom(); ?>
 		</footer><!-- #colophon -->
-		<?php tha_footer_after(); ?>
+		<?php //tha_footer_after(); ?>
 	</div><!-- .wrap -->
 </div><!-- #page -->
 
-<?php tha_body_bottom(); ?>
+<?php //tha_body_bottom(); ?>
 <?php wp_footer(); ?>
 </body>
 </html>
