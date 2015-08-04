@@ -75,14 +75,13 @@ footer {
         display: block;
         p {
           font-family: $opensans-condensed;
-          padding: 15px 0;
+          padding-top: 15px;
         }
         ul {
           margin: 0;
           padding: 0;
           li {
             font-family: $opensans-condensed;
-            list-style-type: disc;
             display: block;
             padding-bottom: 7px;
           }
@@ -199,7 +198,6 @@ footer {
 	  }
 
 	}
-
 
 	.footer-more {
 	  width: 300px;

@@ -2595,7 +2595,7 @@ footer .site-info .site-info-links-mobile {
 }
 footer .site-info .site-info-links-mobile p {
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  padding: 15px 0;
+  padding-top: 15px;
 }
 footer .site-info .site-info-links-mobile ul {
   margin: 0;
@@ -2603,7 +2603,6 @@ footer .site-info .site-info-links-mobile ul {
 }
 footer .site-info .site-info-links-mobile ul li {
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  list-style-type: disc;
   display: block;
   padding-bottom: 7px;
 }

@@ -152,11 +152,9 @@
     </div><!-- .site-info-links -->
     <div class="site-info-links-mobile">
         <p><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></p>
-        <ul class="site-info-links-mobile">
-            <li><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li>
-            <li><a href="http://www.berea.edu/cisrk/">Consumer Information &<br />Student Right to Know</a></li>
-        </ul>
+        <p><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></p>
+        <p><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></p>
+        <p><a href="http://www.berea.edu/cisrk/">Consumer Information &<br />Student Right to Know</a></p>
     </div><!-- .site-info-links-mobile -->
 </div><!-- .site-info -->
 			<?php //tha_footer_bottom(); ?>
@@ -166,6 +164,6 @@
 </div><!-- #page -->
 
 <?php //tha_body_bottom(); ?>
-<?php wp_footer(); ?>
+<?php //wp_footer(); ?>
 </body>
 </html>
