@@ -150,16 +150,15 @@ $fg-gutter: $gutter;
   }
 
   .read-more {
-    a {
+    a, a:link, a:hover, a:visited, a:active {
       font-family: $opensans-condensed;
       font-size: 14px !important;
       text-transform: uppercase;
       text-decoration: none;
       color: $bc-white;
       @include button(pill, $bc-orange);
-    }
-    a:link, a:hover, a:visited, a:active {
-      color: $bc-blue;
+      font-weight: 700;
+      border: none !important;
     }
   }
 }
