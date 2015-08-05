@@ -96,7 +96,8 @@ function berea_setup() {
 	/**
 	 * Including TGM Plugin Activation
 	 */
-	require_once( get_template_directory() . '/library/vendors/tgm-plugin-activation/required-plugins.php' );
+	// not using the tgm required plugin tools
+	// require_once( get_template_directory() . '/library/vendors/tgm-plugin-activation/required-plugins.php' );
 
 	/** 
 	 * Thumbnail used for news teaser in the universal nav and on the homepage 
