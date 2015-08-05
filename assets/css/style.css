@@ -2561,7 +2561,9 @@ footer .site-info .site-info-school li:before {
 }
 @media only screen and (min-width: 480px) {
   footer .site-info .site-info-school li:before {
-    content: " | ";
+    content: "|";
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 footer .site-info .site-info-school li:first-child:before {
@@ -2582,10 +2584,14 @@ footer .site-info .site-info-links ul {
   padding-top: 20px;
 }
 footer .site-info .site-info-links li {
+  padding-left: .5em;
+  padding-right: .5em;
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 footer .site-info .site-info-links li:before {
-  content: " | ";
+  content: "|";
+  margin-left: 7px;
+  margin-right: 20px;
 }
 footer .site-info .site-info-links li:first-child:before {
   content: none;
@@ -2661,16 +2667,22 @@ footer .footer-main h3 {
     text-align: center;
   }
 }
-footer .footer-promise {
-  width: 100%;
-}
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) {
   footer .footer-promise {
     display: block;
     float: left;
-    width: 25%;
+    width: 33%;
     padding: 5px;
   }
+}
+@media only screen and (min-width: 768px) {
+  footer .footer-promise {
+    width: 25%;
+  }
+}
+footer .footer-promise p > strong {
+  color: #FFFFFF;
+  font-size: inherit;
 }
 footer .footer-about {
   display: none;
@@ -2679,8 +2691,13 @@ footer .footer-about {
   footer .footer-about {
     display: block;
     float: left;
-    width: 25%;
+    width: 33%;
     padding: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer .footer-about {
+    width: 25%;
   }
 }
 footer .footer-distinctly {
@@ -2690,8 +2707,13 @@ footer .footer-distinctly {
   footer .footer-distinctly {
     display: block;
     float: left;
-    width: 25%;
+    width: 33%;
     padding: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer .footer-distinctly {
+    width: 25%;
   }
 }
 footer .footer-maps {
@@ -2701,33 +2723,112 @@ footer .footer-maps {
   margin-bottom: 20px;
   margin-left: auto;
   text-align: center;
+  display: block;
+  float: left;
+}
+footer .footer-maps h3 {
+  padding-top: 30px;
+}
+footer .footer-maps #topleft {
+  float: none;
+}
+footer .footer-maps #bottomright {
+  float: none;
+}
+footer .footer-maps #gmap_links_leftside {
+  display: none;
+  width: 100%;
+}
+footer .footer-maps #berea_logo_leftside {
+  display: none;
+  width: 100%;
 }
 @media only screen and (min-width: 480px) {
   footer .footer-maps {
     display: block;
     float: left;
-    width: 25%;
+    width: 100%;
     padding: 5px;
     margin: 0px;
   }
+  footer .footer-maps h3 {
+    padding-top: 0px;
+  }
+  footer .footer-maps #topleft {
+    width: 30%;
+    float: left;
+  }
+  footer .footer-maps #bottomright {
+    width: 70%;
+    float: right;
+  }
+  footer .footer-maps #gmap_container #gmap_canvas img {
+    max-width: none !important;
+    background: none !important;
+  }
 }
-footer .footer-maps #gmap_container {
-  overflow: hidden;
-}
-footer .footer-maps #gmap_container #gmap_canvas img {
-  max-width: none !important;
-  background: none !important;
-}
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) and (min-width: 768px) {
   footer .footer-maps #gmap_container #gmap_canvas {
     height: 210px;
     width: 210px;
   }
 }
-footer .footer-maps #gmap_links {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-weight: 700;
+@media only screen and (min-width: 480px) {
+  footer .footer-maps #gmap_links_undermap {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  footer .footer-maps #gmap_links_leftside {
+    display: block;
+  }
+  footer .footer-maps #berea_logo_leftside {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer .footer-maps {
+    width: 25%;
+  }
+  footer .footer-maps h3 {
+    padding-top: 0;
+  }
+  footer .footer-maps #topleft {
+    float: none;
+    width: 100%;
+  }
+  footer .footer-maps #bottomright {
+    float: none;
+    width: 100%;
+  }
+  footer .footer-maps #gmap_container {
+    overflow: hidden;
+  }
+  footer .footer-maps #gmap_container #gmap_canvas img {
+    max-width: none !important;
+    background: none !important;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  footer .footer-maps #gmap_container #gmap_canvas {
+    height: 210px;
+    width: 210px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer .footer-maps #gmap_links_leftside {
+    display: none;
+  }
+  footer .footer-maps #berea_logo_leftside {
+    display: none;
+  }
+  footer .footer-maps #gmap_links_undermap {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
 }
 footer .footer-more {
   width: 300px;
@@ -2749,14 +2850,20 @@ footer .footer-more {
 footer .footer-more a {
   color: #C75B12;
 }
+@media only screen and (min-width: 480px) {
+  footer .footer-more {
+    display: none;
+  }
+}
 footer .footer-social {
   clear: left;
   color: #FFFFFF;
   background: #C75B12;
   text-align: center;
-  padding: 20px;
+  padding: 23px 20px 20px 20px;
   font-size: 1.3em;
   font-weight: bold;
+  line-height: 2.5;
 }
 
 /*--------------------------------------------------------------
@@ -3113,7 +3220,7 @@ input#s {
   font-weight: 700;
   letter-spacing: -0.015em;
 }
-.homepage-slider .read-more a {
+.homepage-slider .read-more a, .homepage-slider .read-more a:link, .homepage-slider .read-more a:hover, .homepage-slider .read-more a:visited, .homepage-slider .read-more a:active {
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 14px !important;
   text-transform: uppercase;
@@ -3121,7 +3228,7 @@ input#s {
   color: #FFFFFF;
   border: 1px solid #6c3e21;
   border-color: #6c3e21 #593515 #492c0c;
-  border-radius: 16px;
+  border-radius: 10px;
   -webkit-box-shadow: inset 0 1px 0 0 #e66716;
           box-shadow: inset 0 1px 0 0 #e66716;
   color: white;
@@ -3133,13 +3240,15 @@ input#s {
   background-image: -webkit-linear-gradient(#C75B12, #a45902);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#C75B12), to(#a45902));
   background-image: linear-gradient(#C75B12, #a45902);
-  padding: 7px 18px;
+  padding: 7px;
   text-align: center;
   text-decoration: none;
   text-shadow: 0 -1px 1px #734519;
   background-clip: padding-box;
+  font-weight: 700;
+  border: none !important;
 }
-.homepage-slider .read-more a:hover:not(:disabled) {
+.homepage-slider .read-more a:hover:not(:disabled), .homepage-slider .read-more a:link:hover:not(:disabled), .homepage-slider .read-more a:hover:hover:not(:disabled), .homepage-slider .read-more a:visited:hover:not(:disabled), .homepage-slider .read-more a:active:hover:not(:disabled) {
   border: 1px solid #5b2f12;
   border-color: #5b2f12 #482607 #351d01;
   -webkit-box-shadow: inset 0 1px 0 0 #d46214;
@@ -3152,7 +3261,7 @@ input#s {
   text-shadow: 0 -1px 1px #5d330b;
   background-clip: padding-box;
 }
-.homepage-slider .read-more a:active:not(:disabled), .homepage-slider .read-more a:focus:not(:disabled) {
+.homepage-slider .read-more a:active:not(:disabled), .homepage-slider .read-more a:focus:not(:disabled), .homepage-slider .read-more a:link:active:not(:disabled), .homepage-slider .read-more a:link:focus:not(:disabled), .homepage-slider .read-more a:hover:active:not(:disabled), .homepage-slider .read-more a:hover:focus:not(:disabled), .homepage-slider .read-more a:visited:active:not(:disabled), .homepage-slider .read-more a:visited:focus:not(:disabled), .homepage-slider .read-more a:active:active:not(:disabled), .homepage-slider .read-more a:active:focus:not(:disabled) {
   background: #8e4f18;
   border: 1px solid #3a2006;
   border-bottom: 1px solid #382203;
@@ -3160,12 +3269,9 @@ input#s {
           box-shadow: inset 0 0 6px 3px #643b08;
   text-shadow: 0 -1px 1px #5c350f;
 }
-.homepage-slider .read-more a:disabled {
+.homepage-slider .read-more a:disabled, .homepage-slider .read-more a:link:disabled, .homepage-slider .read-more a:hover:disabled, .homepage-slider .read-more a:visited:disabled, .homepage-slider .read-more a:active:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-}
-.homepage-slider .read-more a:link, .homepage-slider .read-more a:hover, .homepage-slider .read-more a:visited, .homepage-slider .read-more a:active {
-  color: #005A8B;
 }
 
 .vertical-center {

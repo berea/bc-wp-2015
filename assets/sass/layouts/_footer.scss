@@ -43,7 +43,9 @@ footer {
         &:before {
           content: none;
           @include MQ(S) {
-            content: " | ";
+            content: "|";
+            margin-left: 20px;
+            margin-right: 20px;
           }
         }
         &:first-child:before {
@@ -63,9 +65,13 @@ footer {
         padding-top: 20px;
       }
       .site-info-links li {
+        padding-left: .5em;
+        padding-right: .5em;
         font-family: $opensans-condensed;
         &:before {
-          content: " | ";
+          content: "|";
+          margin-left: 7px;
+          margin-right: 20px;
         }
         &:first-child:before {
           content: none;
@@ -125,25 +131,37 @@ footer {
 	}
 	.footer-promise {
 
-	  width: 100%;
-	  @include MQ(M) {
-		display: block;
-		float: left;
-		width: 25%;
-		padding: 5px;
-	  }
+      @include MQ(S) {
+        display: block;
+        float: left;
+        width: 33%;
+        padding: 5px;
+      }
+
+      @include MQ(M) {
+        width: 25%;
+      }
+
+      p > strong {
+        color: $bc-white;
+        font-size: inherit;
+      }
 
 	}
 	.footer-about {
 
-		display: none;
+      display: none;
 
-	  	@include MQ(S) {
-		  	display: block;
-		  	float: left;
-			width: 25%;
-        	padding: 5px;
-		}
+      @include MQ(S) {
+        display: block;
+        float: left;
+        width: 33%;
+        padding: 5px;
+      }
+
+      @include MQ(M) {
+        width: 25%;
+      }
 
 	}
 	.footer-distinctly {
@@ -152,10 +170,13 @@ footer {
 	  @include MQ(S) {
 		display: block;
 		float: left;
-		width: 25%;
+		width: 33%;
 		padding: 5px;
 	  }
 
+      @include MQ(M) {
+        width: 25%;
+      }
 	}
 
 	.footer-maps {
@@ -165,37 +186,141 @@ footer {
 	  margin-bottom: 20px;
 	  margin-left: auto;
 	  text-align: center;
+      display: block;
+      float: left;
+
+
+      h3 {
+        padding-top: 30px;
+      }
+
+      #topleft {
+        float: none;
+      }
+
+      #bottomright {
+        float: none;
+      }
+
+      #gmap_links_leftside {
+        display: none;
+        width: 100%;
+      }
+
+      #berea_logo_leftside {
+        display: none;
+        width: 100%;
+      }
 
 	  @include MQ(S) {
 		display: block;
 		float: left;
-		width: 25%;
+		width: 100%;
 		padding: 5px;
 		margin: 0px;
-	  }
 
-	  #gmap_container {
-		overflow: hidden;
+        h3 {
+          padding-top: 0px;
+        }
 
-		#gmap_canvas {
+        #topleft {
+          width: 30%;
+          float: left;
+        }
 
-		  img {
-			max-width: none !important;
-			background: none !important;
-		  }
+        #bottomright {
+          width: 70%;
+          float: right;
+        }
 
-		  @include MQ(M) {
-			height: 210px;
-			width: 210px;
-		  }
-		}
-	  }
+        #gmap_container {
+          //overflow: hidden;
 
-	  #gmap_links {
-		margin-top: 20px;
-		margin-bottom: 20px;
-		font-weight: 700;
-	  }
+          #gmap_canvas {
+
+            img {
+              max-width: none !important;
+              background: none !important;
+            }
+
+            @include MQ(M) {
+              height: 210px;
+              width: 210px;
+            }
+          }
+        }
+
+        #gmap_links_undermap {
+          display: none;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          font-weight: 700;
+        }
+
+        #gmap_links_leftside {
+          display: block;
+        }
+
+        #berea_logo_leftside {
+          display: block;
+        }
+
+      }
+
+      @include MQ(M) {
+
+        width: 25%;
+
+        h3 {
+          padding-top: 0;
+        }
+
+        #topleft {
+          float: none;
+          width: 100%;
+        }
+
+        #bottomright {
+          float: none;
+          width: 100%;
+        }
+
+        #gmap_container {
+          overflow: hidden;
+
+          #gmap_canvas {
+
+            img {
+              max-width: none !important;
+              background: none !important;
+            }
+
+            @include MQ(M) {
+              height: 210px;
+              width: 210px;
+            }
+          }
+        }
+
+        #gmap_links_leftside {
+          display: none;
+        }
+
+        #berea_logo_leftside {
+          display: none;
+        }
+
+        #gmap_links_undermap {
+          display: block;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          font-weight: 700;
+        }
+
+
+
+
+      }
 
 	}
 
@@ -218,17 +343,23 @@ footer {
 	  a {
 		color: $bc-orange;
 	  }
+
+      @include MQ(S) {
+        display: none;
+      }
+
 	}
 
 
 	.footer-social {
-		clear: left;
-		color: $bc-white;
-		background: $bc-orange;
-		text-align: center;
-        padding: 20px;
-        font-size: 1.3em;
-        font-weight: bold;
+      clear: left;
+      color: $bc-white;
+      background: $bc-orange;
+      text-align: center;
+      padding: 23px 20px 20px 20px;
+      font-size: 1.3em;
+      font-weight: bold;
+      line-height: 2.5;
 
 	}
 

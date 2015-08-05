@@ -30,7 +30,7 @@
 
 			<p>No student pays for tuition.</p>
 
-			<p>Our generous TUTITION PROMISE SCHOLARSHIP makes it possible for you to graduate debt-free. Even if you borrow for special learning opportunites or to replace your family’s total contribution, you will have a low debt compared to national trends. We sometimes call Berea “the best education money can’t buy.”</p>
+			<p>Our generous <strong>TUTITION PROMISE SCHOLARSHIP</strong> makes it possible for you to graduate debt-free. Even if you borrow for special learning opportunites or to replace your family’s total contribution, you will have a low debt compared to national trends. We sometimes call Berea “the best education money can’t buy.”</p>
 		</div><!-- .footer-promise -->
 
 		<div class="footer-about">
@@ -48,7 +48,7 @@
 				<li><a href="#">Partners for Education</a></li>
 				<li><a href="http://www.berea.edu/seab/">Seabury Athletic Center</a></li>
 				<li><a href="http://www.berea.edu/appalachian-center/">Loyal Jones Appalachian Center</a></li>
-				<li><a href="#">Bell hooks Institute</a></li>
+				<li><a href="#">bell hooks Institute</a></li>
 				<li><a href="http://libraryguides.berea.edu/">Hutchins Library</a></li>
 			</ul>
 
@@ -77,42 +77,61 @@
 		</div><!-- .footer-distinctly -->
 
 		<div class="footer-maps">
-			<h3>MAPS &amp; DIRECTIONS</h3>
 
-			<div id="black-text">
-				<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-				<div id="gmap_container">
-					<div id="gmap_canvas" style="height:250px;width:100%;"></div>
-				</div>
-				<script type="text/javascript">
-					function init_map(){
-						var myOptions = {
-							zoom:14,
-							center:new google.maps.LatLng(37.575,-84.28974),
-							mapTypeId: google.maps.MapTypeId.TERRAIN
-						};
+            <div id="topleft">
 
-						map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
-						marker = new google.maps.Marker({
-							map: map,position: new google.maps.LatLng(37.5717311, -84.28973889999997)
-						});
-						infowindow = new google.maps.InfoWindow({
-							content:"<b>Berea College</b><br/>101 Chestunut Street<br/>40404 Kentucky"
-						});
-						google.maps.event.addListener(marker, "click", function(){
-							infowindow.open(map,marker);
-						});
-						infowindow.open(map,marker);
-					}
-					google.maps.event.addDomListener(window, 'load', init_map);
-				</script>
+                <h3>MAPS &amp; DIRECTIONS</h3>
 
-			</div>
+                <div id="gmap_links_leftside">
+                    <a href="https://www.google.com/maps/place/Berea+College/@37.5716935,-84.2890655,17z/data=!4m2!3m1!1s0x8842e192a683f201:0x193cd1402103123a">Google Maps</a> |
+                    <a href="http://www.bing.com/maps/default.aspx?q=berea+college+maps&mkt=en&FORM=HDRSC4">Bing Maps</a>
+                </div>
 
-			<div id="gmap_links">
-				<a href="https://www.google.com/maps/place/Berea+College/@37.5716935,-84.2890655,17z/data=!4m2!3m1!1s0x8842e192a683f201:0x193cd1402103123a">Google Maps</a> |
-				<a href="http://www.bing.com/maps/default.aspx?q=berea+college+maps&mkt=en&FORM=HDRSC4">Bing Maps</a>
-			</div>
+                <div id="berea_logo_leftside">
+                    <a href="http://www.berea.edu/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bc-logo-stacked.png" alt="Berea College"/></a>
+                </div>
+
+            </div><!-- #topleft -->
+
+            <div id="bottomright">
+
+                <div id="black-text">
+                    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+                    <div id="gmap_container">
+                        <div id="gmap_canvas" style="height:250px;width:100%;"></div>
+                    </div>
+                    <script type="text/javascript">
+                        function init_map(){
+                            var myOptions = {
+                                zoom:14,
+                                center:new google.maps.LatLng(37.575,-84.28974),
+                                mapTypeId: google.maps.MapTypeId.TERRAIN
+                            };
+
+                            map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+                            marker = new google.maps.Marker({
+                                map: map,position: new google.maps.LatLng(37.5717311, -84.28973889999997)
+                            });
+                            infowindow = new google.maps.InfoWindow({
+                                content:"<b>Berea College</b><br/>101 Chestunut Street<br/>40404 Kentucky"
+                            });
+                            google.maps.event.addListener(marker, "click", function(){
+                                infowindow.open(map,marker);
+                            });
+                            infowindow.open(map,marker);
+                        }
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
+
+                </div>
+
+                <div id="gmap_links_undermap">
+                    <a href="https://www.google.com/maps/place/Berea+College/@37.5716935,-84.2890655,17z/data=!4m2!3m1!1s0x8842e192a683f201:0x193cd1402103123a">Google Maps</a> |
+                    <a href="http://www.bing.com/maps/default.aspx?q=berea+college+maps&mkt=en&FORM=HDRSC4">Bing Maps</a>
+                </div>
+
+            </div><!-- #bottomright -->
+
 		</div><!-- .footer-maps -->
 
 	</div><!-- .footer-floats -->
@@ -125,7 +144,6 @@
 
 
 <div class="footer-social">
-
 		<p>
 			<span class="vertical-center nudge-left">FOLLOW US:</span>
             <a href="http://www.facebook.com/pages/Berea-KY/Berea-College/39126548204"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.png" alt="Facebook" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Facebook</span></span></a>
@@ -144,9 +162,7 @@
 	</ul>
     <div class="site-info-links">
         <ul>
-            <li><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></li>
-            <li><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li>
+            <li><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></li><li><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li><li><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li><li><a href="#">Website Administration</a></li>
         </ul>
         <p><a href="http://www.berea.edu/cisrk/">Consumer Information & Student Right to Know</a></p>
     </div><!-- .site-info-links -->
