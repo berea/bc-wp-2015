@@ -3179,7 +3179,6 @@ input#s {
 
 .homepage-slider {
   height: 620px;
-  background: url("../images/front_page_image.png");
   background-size: 100%;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -3275,7 +3274,6 @@ input#s {
 
 .homepage-slider-dept {
   height: 620px;
-  background: url("../images/front_page_image.png");
   background-size: 100%;
   background-repeat: no-repeat;
   overflow: hidden;

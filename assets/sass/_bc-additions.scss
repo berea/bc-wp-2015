@@ -19,6 +19,7 @@
   }
 }
 
+
 /*
  * http://www.nodenerd.com/resetting-omega-mixin-bourbon-neat
  * http://www.joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat/
@@ -105,7 +106,7 @@ $fg-gutter: $gutter;
 
 .homepage-slider {
   height: 620px;
-  background: url('../images/front_page_image.png');
+  //background: url('../images/front_page_image.png');
   background-size: 100%;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -165,7 +166,7 @@ $fg-gutter: $gutter;
 
 .homepage-slider-dept {
   height: 620px;
-  background: url('../images/front_page_image.png');
+  //background: url('../images/front_page_image.png');
   background-size: 100%;
   background-repeat: no-repeat;
   overflow: hidden;
