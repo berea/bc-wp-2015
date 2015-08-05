@@ -1010,7 +1010,6 @@ body {
   line-height: 1.5em;
   word-break: break-word;
   border-top: 4px solid #C75B12;
-  background: url("../images/bg_texture.png");
 }
 
 #page {
@@ -3272,6 +3271,14 @@ input#s {
 .homepage-slider .read-more a:disabled, .homepage-slider .read-more a:link:disabled, .homepage-slider .read-more a:hover:disabled, .homepage-slider .read-more a:visited:disabled, .homepage-slider .read-more a:active:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.homepage-slider-dept {
+  height: 620px;
+  background: url("../images/front_page_image.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .vertical-center {

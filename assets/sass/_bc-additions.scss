@@ -163,10 +163,16 @@ $fg-gutter: $gutter;
   }
 }
 
+.homepage-slider-dept {
+  height: 620px;
+  background: url('../images/front_page_image.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
 
 
-
-// Used in icon list
+// Used in icon lists (homepage-slider and footer-social)
 .vertical-center {
   vertical-align: middle;
 }

@@ -9,7 +9,7 @@ body {
 	line-height: 1.5em;
 	word-break: break-word;
   	border-top: 4px solid $bc-orange;
-  	background: url('../images/bg_texture.png');
+  	//background: url('../images/bg_texture.png');
 }
 #page {
 	@include outer-container;
