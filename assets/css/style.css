@@ -1434,7 +1434,7 @@ Main components
   display: inline-block;
   height: 3px;
   width: 24px;
-  background: #2e3233;
+  background: #005A8B;
 }
 .cd-nav-trigger span {
   /* line in the center */
@@ -1502,7 +1502,7 @@ Main components
   margin: 0px;
   height: 100%;
   width: 260px;
-  background: #2e3233;
+  background: #FFFFFF;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   /* Force Hardware Acceleration in WebKit */
@@ -1520,13 +1520,16 @@ Main components
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
-  color: #ffffff;
+  color: #C75B12 !important;
+  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.6em;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-bottom: 1px solid #3a3f40;
+  border-bottom: 2px solid #de6614;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -1559,8 +1562,8 @@ Main components
 }
 .cd-primary-nav .see-all a {
   /* different style for the See all button on mobile and tablet */
-  color: #ffffff;
-  background: #C75B12;
+  color: #C75B12;
+  background: #FFFFFF;
 }
 .cd-primary-nav .cd-nav-gallery .cd-nav-item, .cd-primary-nav .cd-nav-icons .cd-nav-item {
   /* items with picture (or icon) and title */
@@ -2169,6 +2172,18 @@ support for no js
     position: fixed;
   }
 }
+/* Added to style the news dropdown */
+@media only screen and (min-width: 1170px) {
+  p.cd-news-date {
+    text-align: right;
+    font-size: .85em;
+    padding-bottom: 5px;
+  }
+
+  h3.cd-news-title {
+    text-transform: none;
+  }
+}
 /*--------------------------------------------------------------
 6.3 Content
 --------------------------------------------------------------*/
@@ -2513,6 +2528,7 @@ footer {
   margin: auto;
   padding: 0px;
   width: 100%;
+  z-index: 1;
 }
 @media only screen and (min-width: 768px) {
   footer {
