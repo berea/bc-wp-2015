@@ -165,7 +165,7 @@ $fg-gutter: $gutter;
 }
 
 .homepage-slider-dept {
-  height: 620px;
+  height: 310px;
   //background: url('../images/front_page_image.png');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -192,7 +192,8 @@ $fg-gutter: $gutter;
 
 
 .homepage-central-content-block {
-
+  position: relative;
+  z-index: 100;
 }
 
 

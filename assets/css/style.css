@@ -2513,7 +2513,7 @@ footer {
   margin: auto;
   padding: 0px;
   width: 100%;
-  z-index: 1;
+  z-index: -1;
 }
 @media only screen and (min-width: 768px) {
   footer {
@@ -3273,7 +3273,7 @@ input#s {
 }
 
 .homepage-slider-dept {
-  height: 620px;
+  height: 310px;
   background-size: 100%;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -3293,6 +3293,11 @@ input#s {
 
 .nudge-left {
   padding-right: 1em;
+}
+
+.homepage-central-content-block {
+  position: relative;
+  z-index: 100;
 }
 
 .group-elements {
