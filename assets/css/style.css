@@ -2513,7 +2513,6 @@ footer {
   margin: auto;
   padding: 0px;
   width: 100%;
-  z-index: -1;
 }
 @media only screen and (min-width: 768px) {
   footer {
