@@ -330,3 +330,23 @@ function berea_get_default_menu()
 	return $output;
 }
 
+// Not allowed to be overwritten in child themes.
+function berea_get_header() {
+
+	$parent_header = get_template_directory() . '/header.php';
+	$child_header = get_stylesheet_directory() . '/header.php';
+
+    echo "<p>Parent: $parent_header</p>\n";
+    echo "<p>Child: $child_header</p>\n";
+
+	if ( file_exists($child_header) ) {
+        echo "<p>Found child header</p>\n";
+		include($child_header);
+	}
+	else {
+        echo "<p>Found parent header</p>\n";
+		include($parent_header);
+	}
+
+}
+
