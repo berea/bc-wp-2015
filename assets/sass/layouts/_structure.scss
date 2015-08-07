@@ -20,6 +20,13 @@ body {
 #main {
 	padding: 0px 50px;
   	padding-bottom: 20px;
+  	position: relative;
+  	z-index: 1;
+}
+#main-footer-shim {
+  	background-color:$bc-blue;
+  	height:60px;
+  	margin-top:-60px;
 }
 
 #primary {
