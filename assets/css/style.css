@@ -3193,12 +3193,11 @@ input#s {
 }
 
 .homepage-slider {
-  height: 620px;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   overflow: hidden;
 }
-
 .homepage-slider .slider-textblock {
   margin: 20px;
   margin-top: 220px;
@@ -3287,11 +3286,18 @@ input#s {
   cursor: not-allowed;
 }
 
-.homepage-slider-dept {
+.homepage-slider-sizing-main {
+  height: 192px;
+  width: 100%;
+}
+@media only screen and (min-width: 480px) {
+  .homepage-slider-sizing-main {
+    height: 620px;
+  }
+}
+
+.homepage-slider-sizing-dept {
   height: 310px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 .vertical-center {

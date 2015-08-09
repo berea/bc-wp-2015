@@ -228,11 +228,11 @@ if ( !function_exists('berea_optional_scripts') ) :
 
         // Header Image
         if( get_header_image() == '') {
-            
+
         } else {
             ?>
             <style type="text/css">
-                .homepage-slider { background: url("<?php echo get_header_image(); ?>"); }
+                .homepage-slider { background: url("<?php echo get_header_image(); ?>" ); }
             </style>
         <?php }
 
@@ -327,25 +327,21 @@ function berea_get_default_menu()
 
 	}
 
+
 	return $output;
 }
 
 // Not allowed to be overwritten in child themes.
-function berea_get_header() {
+function berea_get_homepage_slider() {
 
-	$parent_header = get_template_directory() . '/header.php';
-	$child_header = get_stylesheet_directory() . '/header.php';
+	$parent_slider = get_template_directory() . '/page-templates/partials/homepage_slider.php';
+	$child_slider = get_stylesheet_directory() . '/page-templates/partials/homepage_slider.php';
 
-    echo "<p>Parent: $parent_header</p>\n";
-    echo "<p>Child: $child_header</p>\n";
-
-	if ( file_exists($child_header) ) {
-        echo "<p>Found child header</p>\n";
-		include($child_header);
+	if ( file_exists($child_slider) ) {
+		include($child_slider);
 	}
 	else {
-        echo "<p>Found parent header</p>\n";
-		include($parent_header);
+		include($parent_slider);
 	}
 
 }

@@ -1,0 +1,1 @@
+<!-- Parent theme homepage slider -->

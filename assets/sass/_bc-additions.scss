@@ -103,16 +103,12 @@ $fg-gutter: $gutter;
   color: $bc-white;
 }
 
-
 .homepage-slider {
-  height: 620px;
-  //background: url('../images/front_page_image.png');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   overflow: hidden;
-}
 
-.homepage-slider {
   .slider-textblock {
     margin: 20px;
     margin-top: 220px;
@@ -120,7 +116,6 @@ $fg-gutter: $gutter;
     padding: 20px;
     text-align: right;
   }
-
 
   h1 {
     font-family: $opensans-condensed;
@@ -164,31 +159,23 @@ $fg-gutter: $gutter;
   }
 }
 
-.homepage-slider-dept {
-  height: 310px;
-  //background: url('../images/front_page_image.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
+.homepage-slider-sizing-main {
+  height: 192px;
+  width: 100%;
+  @include MQ(S) {
+    height: 620px;
+  }
 }
 
+.homepage-slider-sizing-dept {
+  height: 310px;
+}
 
 // Used in icon lists (homepage-slider and footer-social)
-.vertical-center {
-  vertical-align: middle;
-}
-
-.nudge-right {
-  padding-left: 1em;
-}
-
-.nudge-half-right {
-  padding-left: .5em;
-}
-
-.nudge-left {
-  padding-right: 1em;
-}
+.vertical-center { vertical-align: middle; }
+.nudge-right { padding-left: 1em; }
+.nudge-half-right { padding-left: .5em; }
+.nudge-left { padding-right: 1em; }
 
 
 .homepage-central-content-block {
