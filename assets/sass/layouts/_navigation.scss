@@ -378,6 +378,15 @@ Main components
 		@include transition(transform .3s, opacity .3s);
 	}
 
+	@include MQ(L) {
+	  a {
+		color: $bc-blue !important;
+		font-size: 1em;
+	  }
+
+	}
+
+
 	&.is-hidden {
 		/* secondary navigations hidden by default */
 		@include transform(translateX(100%));
