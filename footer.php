@@ -116,11 +116,11 @@
                             infowindow = new google.maps.InfoWindow({
                                 content:"<b>Berea College</b><br/>101 Chestunut Street<br/>40404 Kentucky"
                             });
-                            */
                             google.maps.event.addListener(marker, "click", function(){
                                 infowindow.open(map,marker);
                             });
                             infowindow.open(map,marker);
+                            */
                         }
                         google.maps.event.addDomListener(window, 'load', init_map);
                     </script>
