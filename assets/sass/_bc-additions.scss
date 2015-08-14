@@ -35,34 +35,39 @@ $fg-gutter: $gutter;
 
 
 .cd-header-ribbon {
-  background: url("../images/bc-ribbon-flat.png");
-  background-repeat: no-repeat;
   position: absolute;
   top: 0px;
   left: 45px;
-  width: 228px;
-  height: 100px;
+  background: url("../images/bc-ribbon-flat.png");
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 80px;
   z-index: $above-content;
 
   @include MQ(S) {
     background: url("../images/bc-ribbon.png");
+    width: 228px;
     height: 265px;
   }
 
   div#logo {
     background: url("../images/bc-logo-stacked.svg");
-    background-size: 150px;
+    background-size: contain;
     margin: auto;
     margin-top: 10px;
     background-repeat: no-repeat;
     background-position: top center;
     display: block;
-    width: 210px;
-    height: 210px;
+    width: 114px;
+    height: 80px;
 
     @include MQ(S) {
       background: url("../images/primary_white_transparent.svg");
       background-size: 210px;
+      background-repeat: no-repeat;
+      background-position: top center;
+      width: 228px;
+      height: 265px;
     }
   }
 }
@@ -71,14 +76,16 @@ $fg-gutter: $gutter;
 .hero-nav-wrapper {
   @include outer-container;
   text-align: center;
+  margin: 0 20px;
   @include MQ(M) {
+    margin-bottom: 50px;
     background-color:rgba(0, 90, 139, 0.8); // This is $bc-blue at 80% opacity
   }
 }
 
 .hero-nav {
   @include navigation-list;
-  padding: 0 20px;
+  padding-top: 0 20px;
   color: $bc-white;
   font-size: 1.2em;
   font-weight: bold;
@@ -86,7 +93,7 @@ $fg-gutter: $gutter;
 
 .hero-nav-item {
   background-color:rgba(0, 90, 139, 0.8); // This is $bc-blue at 80% opacity
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 20px 0;
   @include span-columns(6);
   @include omega(2n);
@@ -104,24 +111,26 @@ $fg-gutter: $gutter;
 }
 
 .homepage-slider {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  overflow: hidden;
+
+  @include MQ(S) {
+    text-align: right;
+  }
 
   .slider-textblock {
     margin: 20px;
     margin-top: 220px;
     background-color: $bc-white;
-    padding: 20px;
-    text-align: right;
+    padding: 7px;
+    @include MQ(S){
+      background-color: transparent;
+    }
   }
 
   h1 {
     font-family: $opensans-condensed;
     color: $bc-blue;
     text-align: center;
-    font-size: 3em;
+    font-size: 2.6em;
     font-weight: 700;
     line-height: 1em;
     padding-top: 0px;
@@ -130,22 +139,44 @@ $fg-gutter: $gutter;
     margin-right: auto;
     margin-bottom: 15px;
     margin-left: auto;
-    width: 80%;
+    width: 90%;
     border-bottom: 3px solid $bc-orange;
+
+    @include MQ(S) {
+      text-align: right;
+      margin-right: 0px;
+      color: $bc-white;
+      text-shadow: 0 0 1px #000;
+      padding-bottom: 0px;
+      border-bottom: none;
+      font-size: 4em;
+      line-height: 1.3em;
+    }
+
   }
   p {
     text-align: left;
-    padding-right: 20px;
     color: $bc-blue;
+
+    @include MQ(S) {
+      text-align: right;
+      color: $bc-white;
+    }
   }
+
   .tagline {
     font-family: $garamond;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 1.5em;
+    font-weight: 200;
+    width: 90%;
+    margin: 0 auto;
     letter-spacing: -0.015em;
   }
 
   .read-more {
+    text-align: right;
+    padding: 5px;
+
     a, a:link, a:hover, a:visited, a:active {
       font-family: $opensans-condensed;
       font-size: 14px !important;
