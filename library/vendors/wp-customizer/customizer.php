@@ -17,7 +17,6 @@
 function berea_customize_register( $wp_customize ) {
     $wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
     $wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-    $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 }
 add_action( 'customize_register', 'berea_customize_register' );
 
@@ -49,6 +48,7 @@ $wp_customize->remove_section( 'colors' );
 // Changing panels for default Customizer settings
 $wp_customize->get_section('static_front_page')->panel = 'site_content';
 $wp_customize->get_section('title_tagline')->panel = 'site_content';
+$wp_customize->get_section('header_image')->panel = 'site_content';
 $wp_customize->get_section('background_image')->panel = 'site_content';
 
 /**
@@ -59,7 +59,7 @@ $wp_customize->add_panel( 'site_content', array(
     'capability' => 'edit_theme_options',
     'theme_supports' => '',
     'title' => __( 'General Site Content Settings', 'berea' ),
-    'description' => __( 'Navigation related settings and config.', 'berea' ),
+    'description' => __( 'Basic settings and config.', 'berea' ),
 ) );
 
 

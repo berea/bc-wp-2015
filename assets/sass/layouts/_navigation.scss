@@ -4,6 +4,8 @@
 
 @import 'partials/layout'; // responsive grid and media queries
 
+@import '../bourbon/addons/_font-family'; // font families
+
 /* -------------------------------- 
 
 Primary style
@@ -99,8 +101,9 @@ Main components
 	background: transparent;
 	z-index: $above-content;
 	//max-width: $max-width;
-  	font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  	text-transform: uppercase;
+  	//font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: $opensans-condensed;
+    text-transform: uppercase;
   	font-size: 20px;
   	color: $bc-blue;
 
@@ -163,7 +166,7 @@ Main components
 
 	@include MQ(L) {
 		top: 18px;
-		right: 4em;
+		right: 1em;
 	}
 }
 
@@ -278,7 +281,7 @@ Main components
 		display: inline-block;
 		height: 3px;
 		width: 24px;
-		background: $color-1;
+		background: $bc-blue;
 	}
 
 	span {
@@ -346,7 +349,7 @@ Main components
   	margin: 0px;
 	height: 100%;
 	width: $nav-width-S;
-	background: $color-1;
+	background: $bc-white;
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
 	/* Force Hardware Acceleration in WebKit */
@@ -360,17 +363,29 @@ Main components
 		height: 50px;
 		line-height: 50px;
 		padding: 0 20px;
-		color: $color-4;
+		color: $bc-orange !important;
+        font-family: $opensans-condensed;
+        font-size: 1.6em;
+        font-weight: normal;
 		-webkit-font-smoothing: antialiased;
   		-moz-osx-font-smoothing: grayscale;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
-		border-bottom: 1px solid lighten($color-1, 5%);
+		border-bottom: 2px solid lighten($bc-orange, 5%);
 		@include transform(translateZ(0));
 		will-change: transform, opacity;
 		@include transition(transform .3s, opacity .3s);
 	}
+
+	@include MQ(L) {
+	  a {
+		color: $bc-blue !important;
+		font-size: 1em;
+	  }
+
+	}
+
 
 	&.is-hidden {
 		/* secondary navigations hidden by default */
@@ -393,10 +408,12 @@ Main components
 
 .cd-primary-nav {
 
+  	text-transform: none;
+
 	.see-all a {
 		/* different style for the See all button on mobile and tablet */
-		color: $color-4;
-		background: $color-5;
+		color: $bc-orange;
+		background: $bc-white;
 	}
 
 	.cd-nav-gallery .cd-nav-item, .cd-nav-icons .cd-nav-item {
@@ -429,7 +446,7 @@ Main components
 
 		p {
 			color: $color-1;
-			font-size: 1.3rem;
+			font-size: 1.1rem;
 			/* hide description on small devices */
 			display: none;
 		}
@@ -498,7 +515,7 @@ Main components
 
 	.cd-primary-nav {
 		position: static;
-		padding: 0 150px 0 0;
+		padding: 0 80px 0 0;
 		height: auto;
 		width: auto;
 		float: right;
@@ -515,7 +532,7 @@ Main components
 		ul {
 			position: static;
 			height: auto;
-			width: auto;
+			width: 1024px;
 			background: transparent;
 			overflow: visible;
 			z-index: $above-content;
@@ -557,6 +574,7 @@ Main components
 				color: $color-2;
 				box-shadow: inset 0 -2px 0 $color-2;
 			}
+
 		}
 
 		.go-back, .see-all {
@@ -567,7 +585,7 @@ Main components
 			/* dropdown menu style */
 			position: absolute;
 			top: $header-height-L;
-			width: 100vw;
+			max-width: 1024px;
 			background: $color-4;
 			padding: 48px 64px 130px;
 			box-shadow: inset 0 1px 0 $color-3, 0 3px 6px rgba(#000, .05);
@@ -720,12 +738,15 @@ Main components
 				padding: 0;
 				height: auto;
 				line-height: 1.2;
+			  	width: 100%;
 
 				img {
 					position: static;
 					margin-top: 0;
-					height: auto;
-					width: 100%;
+					height: 147px;
+				  	width: auto;
+				  	margin-left: auto;
+				  	margin-right: auto;
 					margin-bottom: .6em;
 				}
 
@@ -911,10 +932,19 @@ Main components
 		border: none;
 		background: $color-4;
 		height: 100%;
-		width: 100%;
-		padding: 0 5%;
 		box-shadow: inset 0 1px 0 $color-3, 0 3px 6px rgba(#000, .05);
 		@include appearance(none);
+
+
+	  	@include MQ(M) {
+			width: 100%;
+		  	padding-left: 20px;
+		}
+
+	  @include MQ(L) {
+		width: 820px;
+		padding: 0;
+	  }
 
 		@include placeholder {
 			color: darken($color-3, 10%);
@@ -1023,4 +1053,18 @@ support for no js
 	.no-js .nav-is-fixed .cd-primary-nav {
 		position: fixed;
 	}
+}
+
+
+/* Added to style the news dropdown */
+
+@include MQ(L) {
+  p.cd-news-date {
+	text-align: right;
+	font-size: .85em;
+	padding-bottom: 5px;
+  }
+  h3.cd-news-title {
+	text-transform: none;
+  }
 }

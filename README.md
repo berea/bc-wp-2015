@@ -1,7 +1,9 @@
 #README#
 
-##Wordpress##
+##Setting up a local dev environment##
 
-Below are the design specifications and details for how this project will be utilized.
+1. Import the Wordpress_Null.ova file to create a new VM. (This is a modified version of the Turnkey Linux Wordpress machine.)
 
-Each person should have their own branch for working on specific problems and eventually pulled back into the main branch.
+2. Convert the Wordpress install on the VM to multisite. Directions can be found here:
+
+

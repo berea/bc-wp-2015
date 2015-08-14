@@ -45,7 +45,7 @@ function berea_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_editor_style
 	 */
-	add_editor_style( '/assets/css/style.css' );
+	add_editor_style( '/assets/css/style-min.css' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary-navigation', __( 'Primary Menu', 'berea' ) );
@@ -58,6 +58,9 @@ function berea_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+    // Enable support for custom header images.
+    add_theme_support( 'custom-header' );
 
 	/**
 	 * Including Theme Hook Alliance (https://github.com/zamoose/themehookalliance).
@@ -93,7 +96,8 @@ function berea_setup() {
 	/**
 	 * Including TGM Plugin Activation
 	 */
-	require_once( get_template_directory() . '/library/vendors/tgm-plugin-activation/required-plugins.php' );
+	// not using the tgm required plugin tools
+	// require_once( get_template_directory() . '/library/vendors/tgm-plugin-activation/required-plugins.php' );
 
 	/** 
 	 * Thumbnail used for news teaser in the universal nav and on the homepage 
@@ -222,12 +226,13 @@ endif;
 if ( !function_exists('berea_optional_scripts') ) :
     function berea_optional_scripts() {
 
-        // Link Color
-        if( get_theme_mod( 'berea_homepage_slider_image' ) == '') {
+        // Header Image
+        if( get_header_image() == '') {
 
-        } else { ?>
+        } else {
+            ?>
             <style type="text/css">
-                .homepage-slider { background: url("<?php echo get_theme_mod( 'berea_homepage_slider_image' ); ?>"); }
+                .homepage-slider { background: url("<?php echo get_header_image(); ?>" ); }
             </style>
         <?php }
 
@@ -257,7 +262,87 @@ add_action( 'tha_head_bottom', 'berea_add_selectivizr' );
 function berea_add_selectivizr() { ?>
 	<!--[if (gte IE 6)&(lte IE 8)]>
   		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/selectivizr/selectivizr-min.js"></script>
-  		<noscript><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" /></noscript>
+  		<noscript><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style-min.css" /></noscript>
 	<![endif]-->
 <?php }
+
+
+
+
+
+
+// Custom functions for the Berea themes:
+
+function berea_get_default_menu()
+{
+
+	$args = array(
+		'order' => 'ASC',
+		'orderby' => 'menu_order',
+		'post_type' => 'nav_menu_item',
+		'post_status' => 'publish',
+		'output' => ARRAY_A,
+		'output_key' => 'menu_order',
+		'nopaging' => true,
+		'update_post_term_cache' => false);
+
+	$menu = "Default";
+
+	$menu_items = wp_get_nav_menu_items($menu, $args);
+
+	$output = array();
+
+	$column = 0;
+	$column_limit = 4;
+	$item = 0;
+	$item_limit = 4;
+
+	foreach ($menu_items as $menu_item) {
+
+		// Increment item counter, because we just got a new item.
+		$item++;
+
+		// Check for new column. This is signified by $menu_item->menu_item_parent = 0.
+		// If it's a new one, increment $column and reset $item.
+		if ($menu_item->menu_item_parent == 0) {
+			$column++;
+			$item = 0;
+		}
+		if ($column < $column_limit) {
+			// This is a column we should display.
+
+			if ($item < $item_limit) {
+				// Less than item max, display it.
+				$output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->ID . ': ' . $menu_item->title . ', parent: ' . $menu_item->menu_item_parent . "</a>";
+
+			} else {
+				// Greater than item_max, don't display it.
+
+			}
+
+		} else {
+			// This is not a column we should display.
+
+		}
+
+	}
+
+
+	return $output;
+}
+
+// Not allowed to be overwritten in child themes.
+function berea_get_homepage_slider() {
+
+	$parent_slider = get_template_directory() . '/page-templates/partials/homepage_slider.php';
+	$child_slider = get_stylesheet_directory() . '/page-templates/partials/homepage_slider.php';
+
+	if ( file_exists($child_slider) ) {
+		include($child_slider);
+	}
+	else {
+		include($parent_slider);
+	}
+
+}
 

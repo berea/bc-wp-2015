@@ -23,12 +23,12 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('nav-is-fixed'); ?>>
+<body <?php body_class(); ?>>
 <?php tha_body_top(); ?>
 <div id="page" class="hfeed site">
 
 	<div id="ribbon" class="cd-header-ribbon">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/primary_white_transparent.svg" />
+		<div id="logo"></div>
 	</div>
 
 
@@ -53,3 +53,7 @@
 		<?php tha_content_before(); ?>
 		<div id="content" class="site-content">
 			<?php tha_content_top(); ?>
+
+			<div id="homepage-slider-wrapper">
+				<?php berea_get_homepage_slider(); ?>
+			</div>
