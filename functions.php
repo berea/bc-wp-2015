@@ -354,7 +354,51 @@ function berea_get_homepage_slider() {
 
 function berea_get_news_for_universal_nav() {
 
-    // stub!
+    $sites = wp_get_sites();
+
+    //print_r($sites);
+    // The site that will have news items is the one with:
+    //  [path] => /
+    $main_site_id = 0;
+    foreach ($sites as $site) {
+        if ($site['path'] == '/') {
+            $main_site_id = $site['blog_id'];
+        }
+    }
+
+    if ($main_site_id > 0) {
+
+        switch_to_blog($main_site_id);
+
+        $the_query = new WP_Query('showposts=4');
+
+        // The Loop
+        if ($the_query->have_posts()) {
+            while ($the_query->have_posts()) {
+                $the_query->the_post();
+                echo '<li>';
+                echo '<p class="cd-news-date">' . get_the_date('M d, Y') . '</p>';
+                echo '<a class="cd-nav-item" href="' . get_permalink() . '">';
+                if (has_post_thumbnail()) {
+                    the_post_thumbnail('news-thumbnail');
+                } else {
+                    echo '<img src="' . get_template_directory_uri() . '/assets/images/221_147_placeholder.jpg" height="147" width="221">';
+                }
+                echo '<br /><h3 class="cd-news-title">' . get_the_title() . '</h3></a></li>';
+            }
+        } else {
+            // no posts found
+        }
+
+        /* Restore original Post Data */
+        wp_reset_postdata();
+
+        restore_current_blog();
+
+    }
+    else {
+        // We did not find a blog at '/', so there's nowhere to pull news from.
+    }
 
 }
 
