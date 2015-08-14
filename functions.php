@@ -346,8 +346,9 @@ function berea_get_homepage_slider() {
 
 }
 
-function get_berea_news_for_universal_nav() {
+function berea_get_news_for_universal_nav() {
 
     // stub!
+
 }
 
