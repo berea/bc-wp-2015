@@ -407,7 +407,8 @@ Main components
 }
 
 .cd-primary-nav {
-
+  	
+	z-index:$above-content;
   	text-transform: none;
 
 	.see-all a {
@@ -986,7 +987,7 @@ Main components
 .cd-overlay {
 	/* shadow layer visible when navigation is active */
 	position: fixed;
-	z-index: $content;
+	z-index: $super-above-content;
 	height: 100%;
 	width: 100%;
 	top: 0;
