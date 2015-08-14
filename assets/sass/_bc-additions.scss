@@ -118,10 +118,11 @@ $fg-gutter: $gutter;
 
   .slider-textblock {
     margin: 20px;
-    margin-top: 220px;
+    margin-top: 200px;
     background-color: $bc-white;
     padding: 7px;
     @include MQ(S){
+      margin-top: 220px;
       background-color: transparent;
     }
   }
