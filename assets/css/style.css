@@ -1545,6 +1545,12 @@ Main components
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
 }
+@media only screen and (min-width: 1170px) {
+  .cd-primary-nav a, .cd-primary-nav ul a {
+    color: #005A8B !important;
+    font-size: 1em;
+  }
+}
 .cd-primary-nav.is-hidden, .cd-primary-nav ul.is-hidden {
   /* secondary navigations hidden by default */
   -webkit-transform: translateX(100%);
@@ -1566,6 +1572,7 @@ Main components
   }
 }
 .cd-primary-nav {
+  z-index: 3;
   text-transform: none;
 }
 .cd-primary-nav .see-all a {
@@ -1874,12 +1881,15 @@ Main components
     padding: 0;
     height: auto;
     line-height: 1.2;
+    width: 100%;
   }
   .cd-primary-nav .cd-nav-gallery .cd-nav-item img {
     position: static;
     margin-top: 0;
-    height: auto;
-    width: 100%;
+    height: 147px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: .6em;
   }
   .cd-primary-nav .cd-nav-gallery .cd-nav-item h3 {
@@ -2106,7 +2116,7 @@ Main components
 .cd-overlay {
   /* shadow layer visible when navigation is active */
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   height: 100%;
   width: 100%;
   top: 0;

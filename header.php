@@ -53,7 +53,3 @@
 		<?php tha_content_before(); ?>
 		<div id="content" class="site-content">
 			<?php tha_content_top(); ?>
-
-			<div id="homepage-slider-wrapper">
-				<?php berea_get_homepage_slider(); ?>
-			</div>

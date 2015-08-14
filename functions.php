@@ -232,7 +232,13 @@ if ( !function_exists('berea_optional_scripts') ) :
         } else {
             ?>
             <style type="text/css">
-                .homepage-slider { background: url("<?php echo get_header_image(); ?>" ); }
+                .homepage-slider {
+					background: url("<?php echo get_header_image(); ?>" );
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position:center top;
+					overflow: hidden;
+				}
             </style>
         <?php }
 
