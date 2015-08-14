@@ -145,8 +145,6 @@
 //$sites = wp_get_sites();
 //print_r($sites);
 
-switch_to_blog(3);
-
 $the_query = new WP_Query( 'category_name=news&showposts=4' );
 
 // The Loop
@@ -170,8 +168,6 @@ while ( $the_query->have_posts() ) {
 
 /* Restore original Post Data */
 wp_reset_postdata();
-
-restore_current_blog();
 
 ?>
 
