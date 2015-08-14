@@ -104,17 +104,19 @@
                         function init_map(){
                             var myOptions = {
                                 zoom:14,
-                                center:new google.maps.LatLng(37.575,-84.28974),
+                                center:new google.maps.LatLng(37.573,-84.2897),
                                 mapTypeId: google.maps.MapTypeId.TERRAIN
                             };
 
                             map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
                             marker = new google.maps.Marker({
-                                map: map,position: new google.maps.LatLng(37.5717311, -84.28973889999997)
+                                map: map,position: new google.maps.LatLng(37.573, -84.2897)
                             });
+							/*
                             infowindow = new google.maps.InfoWindow({
                                 content:"<b>Berea College</b><br/>101 Chestunut Street<br/>40404 Kentucky"
                             });
+                            */
                             google.maps.event.addListener(marker, "click", function(){
                                 infowindow.open(map,marker);
                             });
