@@ -195,12 +195,64 @@ $fg-gutter: $gutter;
   }
 }
 
-.homepage-slider-sizing-main {
-  height: 192px;
-  width: 100%;
-  @include MQ(S) {
-    height: 620px;
+.homepage-slider-background {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:center top;
+  overflow: hidden;
+}
+
+.homepage-slider-sizing-aspect-ratio {
+	&.homepage-slider {
+	  position: relative;
+	  width:100%;
+	}
+	
+	&.homepage-slider:before{
+	  content: "";
+	  display: block;
+	  padding-top: 100%;  /* initial aspect ratio of 1:1*/
+	}
+
+  .homepage-slider-background {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position:center top;
+	overflow: hidden;
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
   }
+
+  /* based on aspect ratios hack: http://www.mademyday.de/css-height-equals-width-with-pure-css.html */
+  &.ratio_2x1:before{
+    padding-top: 50%;
+  }
+  &.ratio_1x2:before{
+    padding-top: 200%;
+  }
+  &.ratio_4x3:before{
+    padding-top: 75%;
+  }
+  &.ratio_16x9:before{
+    padding-top: 56.25%;
+  }
+  &.ratio_256x155:before{
+    padding-top: 60.55%;
+  }
+  &.ratio_1024x620:before{
+    padding-top: 60.55%;
+  }
+}
+
+.homepage-slider-sizing-main {
+  /* height: 192px;
+  width: 100%;
+  @include MQ(L) {
+    height: 620px;
+  } */
 }
 
 .homepage-slider-sizing-dept {
