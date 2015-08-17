@@ -1025,8 +1025,7 @@ body {
 }
 
 #main {
-  padding: 0px 50px;
-  padding-bottom: 20px;
+  padding: 20px 50px;
   position: relative;
   z-index: 1;
 }
