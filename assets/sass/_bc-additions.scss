@@ -76,7 +76,11 @@ $fg-gutter: $gutter;
 .hero-nav-wrapper {
   @include outer-container;
   text-align: center;
-  margin: 0 20px;
+  //margin: 0 20px;
+  width: 100%;
+  @include MQ(S) {
+    margin-bottom: 50px;
+  }
   @include MQ(M) {
     margin-bottom: 50px;
     background-color:rgba(0, 90, 139, 0.8); // This is $bc-blue at 80% opacity

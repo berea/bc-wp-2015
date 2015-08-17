@@ -3131,12 +3131,17 @@ input#s {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin: 0 20px;
+  width: 100%;
 }
 .hero-nav-wrapper:after {
   content: "";
   display: table;
   clear: both;
+}
+@media only screen and (min-width: 481px) {
+  .hero-nav-wrapper {
+    margin-bottom: 50px;
+  }
 }
 @media only screen and (min-width: 769px) {
   .hero-nav-wrapper {
