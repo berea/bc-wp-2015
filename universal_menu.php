@@ -7,17 +7,17 @@
 
 			<ul class="cd-secondary-nav is-hidden">
 				<li class="go-back"><a href="#0">MENU</a></li>
-				<li class="see-all"><a href="http://www.berea.edu/admissions/">ADMISSIONS&gt;</a></li>
+				<li class="see-all"><a href="http://dev.berea.edu/subsite/">ADMISSIONS&gt;</a></li>
 				<li class="has-children">
 					<a href="#">ADMISSIONS INFO</a>
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">ADMISSIONS INFO</a></li>
-						<li><a href="http://www.berea.edu/admissions/visit-berea-college/bereas-academic-requirements/">Admission Requirements</a></li>
-						<li><a href="http://www.berea.edu/admissions/admissions-publications-forms/">Application Forms</a></li>
-						<li><a href="http://www.berea.edu/admissions/applying-high-school-senior-non-traditional-student/">New Freshmen</a></li>
-						<li><a href="http://www.berea.edu/admissions/international/">International Students</a></li>
-						<li><a href="http://www.berea.edu/admissions/transfer-application/">Transfer Students</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">Admission Requirements</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">Application Forms</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">New Freshmen</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">International Students</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">Transfer Students</a></li>
 					</ul>
 				</li>
 				<li class="has-children">
@@ -25,10 +25,10 @@
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">STUDENT LIFE</a></li>
-						<li><a href="http://www.berea.edu/admissions/why-berea/career-preparation/">Career Preparation</a></li>
-						<li><a href="http://www.berea.edu/athletics/">Athletics</a></li>
-						<li><a href="http://www.berea.edu/cie/">Study Abroad</a></li>
-						<li><a href="http://www.berea.edu/admissions/why-berea/service-and-leadership/">Service and Leadership</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">Career Preparation</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">Athletics</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">Study Abroad</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">Service and Leadership</a></li>
 					</ul>
 				</li>
 				<li class="has-children">
@@ -36,11 +36,11 @@
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">FiNANCIAL AID</a></li>
-						<li><a href="http://www.berea.edu/admissions/financial-aid-scholarships/bereas-tuition-scholarship/">Tuition Promise Scholarship</a></li>
-						<li><a href="http://www.berea.edu/admissions/financial-aid-scholarships/aid-for-other-costs/">Labor Grant Aid</a></li>
-						<li><a href="http://www.berea.edu/admissions/quick-estimator/">Financial Eligibility</a></li>
-						<li><a href="https://berea.studentaidcalculator.com/survey.aspx">Estimate First-Year Costs</a></li>
-						<li><a href="http://www.berea.edu/admissions/frq/">Submit and RFQ</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">Tuition Promise Scholarship</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">Labor Grant Aid</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">Financial Eligibility</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">Estimate First-Year Costs</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">Submit and RFQ</a></li>
 					</ul>
 				</li>
 				<li class="has-children">
@@ -48,9 +48,9 @@
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">???</a></li>
-						<li><a href="http://www.berea.edu/admissions/request-info/">APPLY TODAY</a></li>
-						<li><a href="https://bereaquickestimator.studentaidcalculator.com/survey.aspx">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></li>
-						<li><a href="http://www.berea.edu/admissions/visit-berea-college/">SCHEDULE A CAMPUS VISIT</a></li>
+						<li><a href="http://dev.berea.edu/subsite//">APPLY TODAY</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></li>
+						<li><a href="http://dev.berea.edu/subsite/">SCHEDULE A CAMPUS VISIT</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -62,63 +62,63 @@
 				<li class="go-back"><a href="#0">Menu</a></li>
 				<li class="see-all"><a href="#">ACADEMICS&gt;</a></li>
 				<li>
-					<a class="cd-nav-item item-1" href="http://www.berea.edu/academics/">
+					<a class="cd-nav-item item-1" href="http://dev.berea.edu/subsite/">
 						<h3>DEGREE PROGRAMS</h3>
 						<p>Bachelor of Arts and Bachelor of Science degrees in 28 fields.</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-2" href="http://www.berea.edu/labor-program-office/">
+					<a class="cd-nav-item item-2" href="http://dev.berea.edu/subsite/">
 						<h3>LABOR PROGRAM</h3>
 						<p>Students are engaged in a learning environment that encourages them to be active learners, workers, and servers.</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-3" href="http://www.berea.edu/hutchinslibrary/">
+					<a class="cd-nav-item item-3" href="http://dev.berea.edu/subsite/">
 						<h3>LIBRARY</h3>
 						<p>It has books. And stuff.</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-4" href="http://www.berea.edu/academics/majors-minors/">
+					<a class="cd-nav-item item-4" href="http://dev.berea.edu/subsite/">
 						<h3>MAJORS & MINORS</h3>
 						<p>This is the item description</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-5" href="http://www.berea.edu/registrar/academic-calendar/">
+					<a class="cd-nav-item item-5" href="http://dev.berea.edu/subsite/">
 						<h3>ACADEMIC CALENDAR</h3>
 						<p>This is the item description</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-6" href="#">
+					<a class="cd-nav-item item-6" href="http://dev.berea.edu/subsite/">
 						<h3>CENTERS</h3>
 						<p>This is the item description</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-7" href="http://catalog.berea.edu/current/Catalog">
+					<a class="cd-nav-item item-7" href="http://dev.berea.edu/subsite/">
 						<h3>CATALOG & STUDENT HANDBOOK</h3>
 						<p>This is the item description</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-8" href="#">
+					<a class="cd-nav-item item-8" href="http://dev.berea.edu/subsite/">
 						<h3>RESOURCES</h3>
 						<p>This is the item description</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-8" href="#">
+					<a class="cd-nav-item item-8" href="http://dev.berea.edu/subsite/">
 						<h3>FACULTY & STAFF SCHOLARLY WORK</h3>
 						<p>This is the item description</p>
 					</a>
@@ -153,7 +153,7 @@
 
 
 		<li>
-			<a href="http://www.berea.edu/give-to-berea/">GIVE</a>
+			<a href="http://dev.berea.edu/subsite/">GIVE</a>
 		</li>
 
 	</ul> <!-- primary-nav -->
