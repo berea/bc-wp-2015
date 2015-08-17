@@ -315,7 +315,8 @@ function berea_get_default_menu()
 
 			if ($item < $item_limit) {
 				// Less than item max, display it.
-				$output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->ID . ': ' . $menu_item->title . ', parent: ' . $menu_item->menu_item_parent . "</a>";
+//				$output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->ID . ': ' . $menu_item->title . ', parent: ' . $menu_item->menu_item_parent . "</a>";
+                $output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->title . "</a>";
 
 			} else {
 				// Greater than item_max, don't display it.

@@ -257,6 +257,7 @@ $fg-gutter: $gutter;
 
 .homepage-slider-sizing-dept {
   height: 310px;
+  width: 100%;
 }
 
 // Used in icon lists (homepage-slider and footer-social)
@@ -340,6 +341,17 @@ $fg-gutter: $gutter;
     @include omega(3n);
   }
 
+}
+
+
+
+/* For news template in child theme 1 */
+
+#news-list {
+  a:link, a:hover, a:visited {
+    color: $bc-blue;
+    text-decoration: none;
+  }
 }
 
 
