@@ -31,7 +31,6 @@
 		<div id="logo"></div>
 	</div>
 
-
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'berea' ); ?></a>
 	<div class="wrap">
 		<?php tha_header_before(); ?>
@@ -53,3 +52,10 @@
 		<?php tha_content_before(); ?>
 		<div id="content" class="site-content">
 			<?php tha_content_top(); ?>
+
+
+            <div id="homepage-slider">
+                <?php berea_get_homepage_slider(); ?>
+            </div>
+
+
