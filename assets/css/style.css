@@ -3336,14 +3336,62 @@ input#s {
   cursor: not-allowed;
 }
 
-.homepage-slider-sizing-main {
-  height: 192px;
+.homepage-slider-background {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  overflow: hidden;
+}
+
+.homepage-slider-sizing-aspect-ratio {
+  /* based on aspect ratios hack: http://www.mademyday.de/css-height-equals-width-with-pure-css.html */
+}
+.homepage-slider-sizing-aspect-ratio.homepage-slider {
+  position: relative;
   width: 100%;
 }
-@media only screen and (min-width: 481px) {
-  .homepage-slider-sizing-main {
+.homepage-slider-sizing-aspect-ratio.homepage-slider:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  /* initial aspect ratio of 1:1*/
+}
+.homepage-slider-sizing-aspect-ratio .homepage-slider-background {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.homepage-slider-sizing-aspect-ratio.ratio_2x1:before {
+  padding-top: 50%;
+}
+.homepage-slider-sizing-aspect-ratio.ratio_1x2:before {
+  padding-top: 200%;
+}
+.homepage-slider-sizing-aspect-ratio.ratio_4x3:before {
+  padding-top: 75%;
+}
+.homepage-slider-sizing-aspect-ratio.ratio_16x9:before {
+  padding-top: 56.25%;
+}
+.homepage-slider-sizing-aspect-ratio.ratio_256x155:before {
+  padding-top: 60.55%;
+}
+.homepage-slider-sizing-aspect-ratio.ratio_1024x620:before {
+  padding-top: 60.55%;
+}
+
+.homepage-slider-sizing-main {
+  /* height: 192px;
+  width: 100%;
+  @include MQ(L) {
     height: 620px;
-  }
+  } */
 }
 
 .homepage-slider-sizing-dept {
