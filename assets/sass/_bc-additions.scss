@@ -44,7 +44,7 @@ $fg-gutter: $gutter;
   height: 80px;
   z-index: $above-content;
 
-  @include MQ(S) {
+  @include MQ(M) {
     background: url("../images/bc-ribbon.png");
     width: 228px;
     height: 265px;
@@ -61,7 +61,7 @@ $fg-gutter: $gutter;
     width: 114px;
     height: 80px;
 
-    @include MQ(S) {
+    @include MQ(M) {
       background: url("../images/primary_white_transparent.svg");
       background-size: 210px;
       background-repeat: no-repeat;

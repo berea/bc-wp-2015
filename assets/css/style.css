@@ -1025,8 +1025,7 @@ body {
 }
 
 #main {
-  padding: 0px 50px;
-  padding-bottom: 20px;
+  padding: 20px 50px;
   position: relative;
   z-index: 1;
 }
@@ -3097,7 +3096,7 @@ input#s {
   height: 80px;
   z-index: 3;
 }
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 769px) {
   .cd-header-ribbon {
     background: url("../images/bc-ribbon.png");
     width: 228px;
@@ -3115,7 +3114,7 @@ input#s {
   width: 114px;
   height: 80px;
 }
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 769px) {
   .cd-header-ribbon div#logo {
     background: url("../images/primary_white_transparent.svg");
     background-size: 210px;
