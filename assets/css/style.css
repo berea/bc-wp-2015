@@ -3349,6 +3349,7 @@ input#s {
 
 .homepage-slider-sizing-dept {
   height: 310px;
+  width: 100%;
 }
 
 .vertical-center {
@@ -3429,4 +3430,10 @@ input#s {
   .menu-block:nth-child(3n+1) {
     clear: left;
   }
+}
+
+/* For news template in child theme 1 */
+#news-list a:link, #news-list a:hover, #news-list a:visited {
+  color: #005A8B;
+  text-decoration: none;
 }
