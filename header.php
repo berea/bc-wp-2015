@@ -28,7 +28,7 @@
 <div id="page" class="hfeed site">
 
 	<div id="ribbon" class="cd-header-ribbon">
-		<div id="logo"></div>
+		<a href="/"><div id="logo"></div></a>
 	</div>
 
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'berea' ); ?></a>
