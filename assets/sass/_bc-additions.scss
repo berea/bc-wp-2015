@@ -88,6 +88,9 @@ $fg-gutter: $gutter;
 }
 
 .hero-nav {
+  //position: absolute;
+  //top: 90%;
+  //left: 0;
   @include navigation-list;
   padding-top: 0 20px;
   color: $bc-white;
@@ -115,6 +118,8 @@ $fg-gutter: $gutter;
 }
 
 .homepage-slider {
+
+  position: relative;
 
   @include MQ(S) {
     text-align: right;

@@ -2117,7 +2117,7 @@ Main components
 .cd-overlay {
   /* shadow layer visible when navigation is active */
   position: fixed;
-  z-index: 4;
+  z-index: auto;
   height: 100%;
   width: 100%;
   top: 0;
@@ -3215,6 +3215,9 @@ input#s {
   color: #FFFFFF;
 }
 
+.homepage-slider {
+  position: relative;
+}
 @media only screen and (min-width: 481px) {
   .homepage-slider {
     text-align: right;
