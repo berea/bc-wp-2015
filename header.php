@@ -54,8 +54,8 @@
 			<?php tha_content_top(); ?>
 
 
-            <div id="homepage-slider">
+<!--            <div id="homepage-slider">-->
                 <?php berea_get_homepage_slider(); ?>
-            </div>
+<!--            </div>-->
 
 

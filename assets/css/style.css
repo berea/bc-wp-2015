@@ -3472,8 +3472,6 @@ input#s {
 .homepage-slider-sizing-aspect-ratio.homepage-slider:before {
   content: "";
   display: block;
-  padding-top: 100%;
-  /* initial aspect ratio of 1:1*/
 }
 .homepage-slider-sizing-aspect-ratio .homepage-slider-background {
   background-size: contain;
@@ -3502,7 +3500,7 @@ input#s {
   padding-top: 60.55%;
 }
 .homepage-slider-sizing-aspect-ratio.ratio_1024x620:before {
-  padding-top: 60.55%;
+  padding-top: 35%;
 }
 .homepage-slider-sizing-aspect-ratio.ratio_16x3:before {
   padding-top: 18.75%;
