@@ -78,19 +78,24 @@ $fg-gutter: $gutter;
   text-align: center;
   //margin: 0 20px;
   width: 100%;
+
+
+  position: absolute;
+  left: 0;
+
+
   @include MQ(S) {
+    top: 70%;
     margin-bottom: 50px;
   }
   @include MQ(M) {
+    top: 50%;
     margin-bottom: 50px;
     background-color:rgba(0, 90, 139, 0.8); // This is $bc-blue at 80% opacity
   }
 }
 
 .hero-nav {
-  //position: absolute;
-  //top: 90%;
-  //left: 0;
   @include navigation-list;
   padding-top: 0 20px;
   color: $bc-white;
@@ -137,6 +142,7 @@ $fg-gutter: $gutter;
   }
 
   h1 {
+    position: absolute;
     font-family: $opensans-condensed;
     color: $bc-blue;
     text-align: center;
@@ -153,6 +159,7 @@ $fg-gutter: $gutter;
     border-bottom: 3px solid $bc-orange;
 
     @include MQ(S) {
+      top: 15%;
       text-align: right;
       margin-right: 0px;
       color: $bc-white;
@@ -161,6 +168,10 @@ $fg-gutter: $gutter;
       border-bottom: none;
       font-size: 4em;
       line-height: 1.3em;
+    }
+
+    @include MQ(M) {
+      top: 25%;
     }
 
   }
@@ -175,12 +186,22 @@ $fg-gutter: $gutter;
   }
 
   .tagline {
+    position: absolute;
     font-family: $garamond;
     font-size: 1.5em;
     font-weight: 200;
     width: 90%;
     margin: 0 auto;
     letter-spacing: -0.015em;
+
+    @include MQ(S) {
+      top: 35%;
+    }
+
+    @include MQ(M) {
+      top: 45%;
+    }
+
   }
 
   .read-more {

@@ -3131,6 +3131,8 @@ input#s {
   margin-right: auto;
   text-align: center;
   width: 100%;
+  position: absolute;
+  left: 0;
 }
 .hero-nav-wrapper:after {
   content: "";
@@ -3139,11 +3141,13 @@ input#s {
 }
 @media only screen and (min-width: 481px) {
   .hero-nav-wrapper {
+    top: 70%;
     margin-bottom: 50px;
   }
 }
 @media only screen and (min-width: 769px) {
   .hero-nav-wrapper {
+    top: 50%;
     margin-bottom: 50px;
     background-color: rgba(0, 90, 139, 0.8);
   }
@@ -3236,6 +3240,7 @@ input#s {
   }
 }
 .homepage-slider h1 {
+  position: absolute;
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   color: #005A8B;
   text-align: center;
@@ -3253,6 +3258,7 @@ input#s {
 }
 @media only screen and (min-width: 481px) {
   .homepage-slider h1 {
+    top: 15%;
     text-align: right;
     margin-right: 0px;
     color: #FFFFFF;
@@ -3261,6 +3267,11 @@ input#s {
     border-bottom: none;
     font-size: 4em;
     line-height: 1.3em;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .homepage-slider h1 {
+    top: 25%;
   }
 }
 .homepage-slider p {
@@ -3274,12 +3285,23 @@ input#s {
   }
 }
 .homepage-slider .tagline {
+  position: absolute;
   font-family: "Crimson Text", serif;
   font-size: 1.5em;
   font-weight: 200;
   width: 90%;
   margin: 0 auto;
   letter-spacing: -0.015em;
+}
+@media only screen and (min-width: 481px) {
+  .homepage-slider .tagline {
+    top: 35%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .homepage-slider .tagline {
+    top: 45%;
+  }
 }
 .homepage-slider .read-more {
   text-align: right;
