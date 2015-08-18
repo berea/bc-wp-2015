@@ -245,6 +245,12 @@ $fg-gutter: $gutter;
   &.ratio_1024x620:before{
     padding-top: 60.55%;
   }
+  &.ratio_16x3:before{
+    padding-top: 18.75%;
+  }
+  &.ratio_1024x192:before{
+    padding-top: 18.75%;
+  }
 }
 
 .homepage-slider-sizing-main {
