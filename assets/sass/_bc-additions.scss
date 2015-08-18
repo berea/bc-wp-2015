@@ -142,7 +142,7 @@ $fg-gutter: $gutter;
   }
 
   h1 {
-    position: absolute;
+    position: relative;
     font-family: $opensans-condensed;
     color: $bc-blue;
     text-align: center;
@@ -159,6 +159,7 @@ $fg-gutter: $gutter;
     border-bottom: 3px solid $bc-orange;
 
     @include MQ(S) {
+      position: absolute;
       top: 15%;
       text-align: right;
       margin-right: 0px;
@@ -171,6 +172,7 @@ $fg-gutter: $gutter;
     }
 
     @include MQ(M) {
+      position: absolute;
       top: 25%;
     }
 
@@ -186,15 +188,18 @@ $fg-gutter: $gutter;
   }
 
   .tagline {
-    position: absolute;
+    position: relative;
     font-family: $garamond;
     font-size: 1.5em;
     font-weight: 200;
     width: 90%;
     margin: 0 auto;
     letter-spacing: -0.015em;
+    text-align: left;
+    line-height: 1.8em;
 
     @include MQ(S) {
+      position: absolute;
       top: 35%;
     }
 
@@ -213,10 +218,14 @@ $fg-gutter: $gutter;
       font-size: 14px !important;
       text-transform: uppercase;
       text-decoration: none;
-      color: $bc-white;
-      @include button(pill, $bc-orange);
       font-weight: 700;
       border: none !important;
+      color: $bc-white;
+      @include button(pill, $bc-orange);
+      @include MQ(S) {
+        color: $bc-blue;
+        @include button(pill, $bc-white);
+      }
     }
   }
 }
