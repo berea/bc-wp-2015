@@ -3131,23 +3131,19 @@ input#s {
   margin-right: auto;
   text-align: center;
   width: 100%;
-  position: absolute;
-  left: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .hero-nav-wrapper:after {
   content: "";
   display: table;
   clear: both;
 }
-@media only screen and (min-width: 481px) {
-  .hero-nav-wrapper {
-    top: 70%;
-    margin-bottom: 50px;
-  }
-}
 @media only screen and (min-width: 769px) {
   .hero-nav-wrapper {
-    top: 50%;
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
     margin-bottom: 50px;
     background-color: rgba(0, 90, 139, 0.8);
   }
@@ -3158,7 +3154,8 @@ input#s {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  padding-top: 0 20px;
+  padding: 0px 20px;
+  padding-top: 20px;
   color: #FFFFFF;
   font-size: 1.2em;
   font-weight: bold;
@@ -3169,6 +3166,11 @@ input#s {
 }
 .hero-nav > li:last-child {
   margin-right: 0px;
+}
+@media only screen and (min-width: 769px) {
+  .hero-nav {
+    padding-top: 0px;
+  }
 }
 
 .hero-nav-item {
@@ -3220,7 +3222,36 @@ input#s {
 }
 
 .homepage-slider {
-  position: relative;
+  /*    .slider-textblock {
+  	@include MQ(M) {
+  	  position: absolute;
+  	  bottom:180px;
+  	  right:0px;
+  	  width:100%;
+  	  background:none;
+  	} */
+  /*
+    .tagline {
+      position: relative;
+      font-family: $garamond;
+      font-size: 1.5em;
+      font-weight: 200;
+      width: 90%;
+      margin: 0 auto;
+      letter-spacing: -0.015em;
+      text-align: left;
+      line-height: 1.8em;
+  
+      @include MQ(S) {
+        position: absolute;
+        top: 35%;
+      }
+  
+      @include MQ(M) {
+        top: 45%;
+      }
+  
+    } */
 }
 @media only screen and (min-width: 481px) {
   .homepage-slider {
@@ -3228,26 +3259,30 @@ input#s {
   }
 }
 .homepage-slider .slider-textblock {
+  position: relative;
   margin: 20px;
-  margin-top: 200px;
+  margin-top: -60px;
   background-color: #FFFFFF;
-  padding: 7px;
+  padding: 20px;
+  padding-top: 0px;
 }
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 769px) {
   .homepage-slider .slider-textblock {
-    margin-top: 220px;
+    position: absolute;
+    bottom: 180px;
+    right: 0px;
+    width: 100%;
     background-color: transparent;
   }
 }
 .homepage-slider h1 {
-  position: relative;
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   color: #005A8B;
   text-align: center;
   font-size: 2.6em;
   font-weight: 700;
   line-height: 1em;
-  padding-top: 0px;
+  padding-top: 20px;
   padding-bottom: 10px;
   margin-top: 5px;
   margin-right: auto;
@@ -3256,12 +3291,9 @@ input#s {
   width: 90%;
   border-bottom: 3px solid #C75B12;
 }
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 769px) {
   .homepage-slider h1 {
-    position: absolute;
-    top: 15%;
     text-align: right;
-    margin-right: 0px;
     color: #FFFFFF;
     text-shadow: 0 0 1px #000;
     padding-bottom: 0px;
@@ -3270,43 +3302,23 @@ input#s {
     line-height: 1.3em;
   }
 }
-@media only screen and (min-width: 769px) {
-  .homepage-slider h1 {
-    position: absolute;
-    top: 25%;
-  }
-}
 .homepage-slider p {
   text-align: left;
   color: #005A8B;
 }
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 769px) {
   .homepage-slider p {
     text-align: right;
     color: #FFFFFF;
   }
 }
 .homepage-slider .tagline {
-  position: relative;
   font-family: "Crimson Text", serif;
   font-size: 1.5em;
   font-weight: 200;
   width: 90%;
   margin: 0 auto;
   letter-spacing: -0.015em;
-  text-align: left;
-  line-height: 1.8em;
-}
-@media only screen and (min-width: 481px) {
-  .homepage-slider .tagline {
-    position: absolute;
-    top: 35%;
-  }
-}
-@media only screen and (min-width: 769px) {
-  .homepage-slider .tagline {
-    top: 45%;
-  }
 }
 .homepage-slider .read-more {
   text-align: right;
@@ -3365,7 +3377,7 @@ input#s {
   opacity: 0.5;
   cursor: not-allowed;
 }
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 769px) {
   .homepage-slider .read-more a, .homepage-slider .read-more a:link, .homepage-slider .read-more a:hover, .homepage-slider .read-more a:visited, .homepage-slider .read-more a:active {
     color: #005A8B;
     border: 1px solid #d9d9d9;
@@ -3472,6 +3484,8 @@ input#s {
 .homepage-slider-sizing-aspect-ratio.homepage-slider:before {
   content: "";
   display: block;
+  padding-top: 100%;
+  /* initial aspect ratio of 1:1*/
 }
 .homepage-slider-sizing-aspect-ratio .homepage-slider-background {
   background-size: contain;
@@ -3500,7 +3514,7 @@ input#s {
   padding-top: 60.55%;
 }
 .homepage-slider-sizing-aspect-ratio.ratio_1024x620:before {
-  padding-top: 35%;
+  padding-top: 60.55%;
 }
 .homepage-slider-sizing-aspect-ratio.ratio_16x3:before {
   padding-top: 18.75%;

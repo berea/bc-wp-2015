@@ -76,20 +76,13 @@ $fg-gutter: $gutter;
 .hero-nav-wrapper {
   @include outer-container;
   text-align: center;
-  //margin: 0 20px;
   width: 100%;
-
-
-  position: absolute;
-  left: 0;
-
-
-  @include MQ(S) {
-    top: 70%;
-    margin-bottom: 50px;
-  }
+  margin-top: 20px;
+  margin-bottom: 20px;
   @include MQ(M) {
-    top: 50%;
+	position: absolute;
+	bottom:40px;
+	right:0px;
     margin-bottom: 50px;
     background-color:rgba(0, 90, 139, 0.8); // This is $bc-blue at 80% opacity
   }
@@ -97,7 +90,11 @@ $fg-gutter: $gutter;
 
 .hero-nav {
   @include navigation-list;
-  padding-top: 0 20px;
+  padding: 0px 20px;
+  padding-top: 20px;
+  @include MQ(M) {
+    padding-top: 0px;
+  }
   color: $bc-white;
   font-size: 1.2em;
   font-weight: bold;
@@ -124,32 +121,46 @@ $fg-gutter: $gutter;
 
 .homepage-slider {
 
-  position: relative;
-
   @include MQ(S) {
     text-align: right;
   }
+  
+/*    .slider-textblock {
+	@include MQ(M) {
+	  position: absolute;
+	  bottom:180px;
+	  right:0px;
+	  width:100%;
+	  background:none;
+	} */
+
+  
 
   .slider-textblock {
-    margin: 20px;
-    margin-top: 200px;
+    position:relative;
+	margin: 20px;
+    margin-top: -60px;
     background-color: $bc-white;
-    padding: 7px;
-    @include MQ(S){
-      margin-top: 220px;
-      background-color: transparent;
-    }
+    padding: 20px;
+    padding-top:0px;
+    
+	@include MQ(M) {
+	  position: absolute;
+	  bottom:180px;
+	  right:0px;
+	  width:100%;
+	  background-color: transparent;
+	}
   }
 
   h1 {
-    position: relative;
     font-family: $opensans-condensed;
     color: $bc-blue;
     text-align: center;
     font-size: 2.6em;
     font-weight: 700;
     line-height: 1em;
-    padding-top: 0px;
+    padding-top: 20px;
     padding-bottom: 10px;
     margin-top: 5px;
     margin-right: auto;
@@ -158,11 +169,8 @@ $fg-gutter: $gutter;
     width: 90%;
     border-bottom: 3px solid $bc-orange;
 
-    @include MQ(S) {
-      position: absolute;
-      top: 15%;
+    @include MQ(M) {
       text-align: right;
-      margin-right: 0px;
       color: $bc-white;
       text-shadow: 0 0 1px #000;
       padding-bottom: 0px;
@@ -171,22 +179,17 @@ $fg-gutter: $gutter;
       line-height: 1.3em;
     }
 
-    @include MQ(M) {
-      position: absolute;
-      top: 25%;
-    }
-
   }
   p {
     text-align: left;
     color: $bc-blue;
 
-    @include MQ(S) {
+    @include MQ(M) {
       text-align: right;
       color: $bc-white;
     }
   }
-
+/*
   .tagline {
     position: relative;
     font-family: $garamond;
@@ -207,6 +210,15 @@ $fg-gutter: $gutter;
       top: 45%;
     }
 
+  } */
+  
+  .tagline {
+    font-family: $garamond;
+    font-size: 1.5em;
+    font-weight: 200;
+    width: 90%;
+    margin: 0 auto;
+    letter-spacing: -0.015em;
   }
 
   .read-more {
@@ -222,7 +234,7 @@ $fg-gutter: $gutter;
       border: none !important;
       color: $bc-white;
       @include button(pill, $bc-orange);
-      @include MQ(S) {
+      @include MQ(M) {
         color: $bc-blue;
         @include button(pill, $bc-white);
       }
@@ -246,7 +258,7 @@ $fg-gutter: $gutter;
 	&.homepage-slider:before{
 	  content: "";
 	  display: block;
-	  //padding-top: 100%;  /* initial aspect ratio of 1:1*/
+	  padding-top: 100%;  /* initial aspect ratio of 1:1*/
 	}
 
   .homepage-slider-background {
@@ -278,8 +290,7 @@ $fg-gutter: $gutter;
     padding-top: 60.55%;
   }
   &.ratio_1024x620:before{
-    //padding-top: 60.55%;
-    padding-top: 35%;
+    padding-top: 60.55%;
   }
   &.ratio_16x3:before{
     padding-top: 18.75%;
