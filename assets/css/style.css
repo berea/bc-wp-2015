@@ -3269,6 +3269,8 @@ input#s {
 @media only screen and (min-width: 769px) {
   .homepage-slider .slider-textblock {
     position: absolute;
+    margin: 0px;
+    margin-top: 0px;
     bottom: 180px;
     right: 0px;
     width: 100%;
