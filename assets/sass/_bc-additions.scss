@@ -72,6 +72,31 @@ $fg-gutter: $gutter;
   }
 }
 
+.child-theme-bc-wp-2015-child-theme-2 {
+  .cd-header-ribbon {
+	@include MQ(M) {
+	  background: url("../images/bc-ribbon.png");
+	  width: 228px;
+	  height: 145px;
+	  background-position: bottom center;
+	}
+  }
+
+  div#logo {
+    @include MQ(M) {
+      background: url("../images/bc-logo-stacked.svg");
+      background-size: contain;
+	  margin: auto;
+	  margin-top: 24px;
+      background-repeat: no-repeat;
+      background-position: top center;
+      // originally 114x80
+	  width: 160px;
+	  height: 112px;
+    }
+  }
+}
+
 
 .hero-nav-wrapper {
   @include outer-container;
