@@ -72,6 +72,31 @@ $fg-gutter: $gutter;
   }
 }
 
+.child-theme-bc-wp-2015-child-theme-2 {
+  .cd-header-ribbon {
+	@include MQ(M) {
+	  background: url("../images/bc-ribbon.png");
+	  width: 228px;
+	  height: 145px;
+	  background-position: bottom center;
+	}
+  }
+
+  div#logo {
+    @include MQ(M) {
+      background: url("../images/bc-logo-stacked.svg");
+      background-size: contain;
+	  margin: auto;
+	  margin-top: 24px;
+      background-repeat: no-repeat;
+      background-position: top center;
+      // originally 114x80
+	  width: 160px;
+	  height: 112px;
+    }
+  }
+}
+
 
 .hero-nav-wrapper {
   @include outer-container;
@@ -125,17 +150,6 @@ $fg-gutter: $gutter;
     text-align: right;
   }
   
-/*    .slider-textblock {
-	@include MQ(M) {
-	  position: absolute;
-	  bottom:180px;
-	  right:0px;
-	  width:100%;
-	  background:none;
-	} */
-
-  
-
   .slider-textblock {
     position:relative;
 	margin: 20px;
@@ -153,6 +167,19 @@ $fg-gutter: $gutter;
 	  width:100%;
 	  background-color: transparent;
 	}
+  }
+  
+  .slider-breadcrumbs {
+	display:none;
+
+    @include MQ(M) {
+	  display:block;
+	  text-align: right;
+	  color: $bc-white;
+	  margin-right:auto;
+	  margin-left:auto;
+	  width:90%;
+    }
   }
 
   h1 {
@@ -180,8 +207,8 @@ $fg-gutter: $gutter;
       font-size: 4em;
       line-height: 1.3em;
     }
-
   }
+  
   p {
     text-align: left;
     color: $bc-blue;
@@ -311,8 +338,28 @@ $fg-gutter: $gutter;
 }
 
 .homepage-slider-sizing-dept {
-  height: 310px;
   width: 100%;
+  @include MQ(M) {
+    height: 192px;
+  }
+  
+  h1 {
+    border-bottom:none;
+    padding-bottom:0px;
+    margin-bottom:0px;
+	@include MQ(M) {
+	  margin-top:-4px;
+	  padding-top:0px;
+	}
+  }
+  
+  .slider-textblock {
+    margin-top:-30px;
+	@include MQ(M) {
+	  bottom:60px;
+	}
+  }
+
 }
 
 // Used in icon lists (homepage-slider and footer-social)
