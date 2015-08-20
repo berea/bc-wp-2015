@@ -2448,57 +2448,57 @@ object {
   margin: 0;
   text-align: left;
 }
-@media screen and (min-width: 200px) {
+@media only screen and (min-width: 481px) {
   .page-template-page-templatestemplate-right-col-php #primary {
     float: left !important;
   }
 }
-@media screen and (min-width: 200px) and (min-width: 200px) {
+@media only screen and (min-width: 481px) and (min-width: 481px) {
   .page-template-page-templatestemplate-right-col-php #primary {
     float: left;
     display: block;
-    margin-right: 6.66667%;
-    width: 100%;
+    margin-right: 2.12766%;
+    width: 31.91489%;
   }
   .page-template-page-templatestemplate-right-col-php #primary:last-child {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 200px) and (min-width: 768px) {
+@media only screen and (min-width: 481px) and (min-width: 481px) {
   .page-template-page-templatestemplate-right-col-php #primary {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 65.21739%;
+    margin-right: 2.12766%;
+    width: 31.91489%;
   }
   .page-template-page-templatestemplate-right-col-php #primary:last-child {
     margin-right: 0;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .page-template-page-templatestemplate-right-col-php #secondary {
     float: right !important;
     margin-right: 1.5%;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 200px) {
+@media only screen and (min-width: 769px) and (min-width: 481px) {
   .page-template-page-templatestemplate-right-col-php #secondary {
     float: left;
     display: block;
-    margin-right: 6.66667%;
-    width: 100%;
+    margin-right: 2.12766%;
+    width: 31.91489%;
   }
   .page-template-page-templatestemplate-right-col-php #secondary:last-child {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 768px) {
+@media only screen and (min-width: 769px) and (min-width: 769px) {
   .page-template-page-templatestemplate-right-col-php #secondary {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 30.43478%;
+    margin-right: 2.12766%;
+    width: 14.89362%;
   }
   .page-template-page-templatestemplate-right-col-php #secondary:last-child {
     margin-right: 0;
@@ -3469,7 +3469,7 @@ input#s {
   }
 }
 
-.homepage-slider-background {
+.homepage-slider-background, .secondary-slider-background {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
@@ -3489,7 +3489,7 @@ input#s {
   padding-top: 100%;
   /* initial aspect ratio of 1:1*/
 }
-.homepage-slider-sizing-aspect-ratio .homepage-slider-background {
+.homepage-slider-sizing-aspect-ratio .homepage-slider-background, .homepage-slider-sizing-aspect-ratio .secondary-slider-background {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;

@@ -7,30 +7,32 @@
 	}
 
 	#primary {
-		@include media($sm) {
+		@include MQ(S) {
 			float: left !important;
-			@include media($sm) {
+			@include MQ(S) {
 				@include span-columns(4);
 			}
-			@include media($md) {
+			@include MQ(S) {
 				@include span-columns(4);
 			}
 		}
-		@include media($md) {
+		@include MQ(M) {
 
 		}
 	}
 	#secondary {
-		@include media($sm) {
+
+
+		@include MQ(S) {
 
 		}
-		@include media($md) {
+		@include MQ(M) {
 			float: right !important;
 			margin-right: 1.5%;
-			@include media($sm) {
+			@include MQ(S) {
 				@include span-columns(4);
 			}
-			@include media($md) {
+			@include MQ(M) {
 				@include span-columns(2);
 			}
 		}

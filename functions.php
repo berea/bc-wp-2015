@@ -236,6 +236,11 @@ if ( !function_exists('berea_optional_scripts') ) :
 					background-image: url("<?php echo get_header_image(); ?>" );
 				}
             </style>
+            <style type="text/css">
+                .secondary-slider-background {
+                    background-image: url("<?php echo get_theme_mod('berea_secondary_page_header_image') ?>" );
+                }
+            </style>
         <?php }
 
     }
@@ -348,6 +353,27 @@ function berea_get_homepage_slider() {
 	}
 
 }
+
+// Not allowed to be overwritten in child themes.
+function berea_get_secondary_slider() {
+
+    $parent_slider = get_template_directory() . '/page-templates/partials/secondary_slider.php';
+    $child_slider = get_stylesheet_directory() . '/page-templates/partials/secondary_slider.php';
+
+    if ( file_exists($child_slider) ) {
+        include($child_slider);
+    }
+    else {
+        include($parent_slider);
+    }
+
+}
+
+
+
+
+
+
 
 function berea_get_news_for_universal_nav() {
 

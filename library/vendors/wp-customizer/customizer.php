@@ -51,6 +51,41 @@ $wp_customize->get_section('title_tagline')->panel = 'site_content';
 $wp_customize->get_section('header_image')->panel = 'site_content';
 $wp_customize->get_section('background_image')->panel = 'site_content';
 
+
+
+    $wp_customize->add_section( 'berea_secondary_page_header_image_options',
+        array(
+            'title'       => __( 'Secondary Page Header Image', 'berea' ),
+            'priority'    => 100,
+            'capability'  => 'edit_theme_options',
+            'description' => __('Change header image for secondary pages here.', 'berea'),
+            'panel'       => 'site_content',
+        )
+    );
+
+    $wp_customize->add_setting( 'berea_secondary_page_header_image',
+        array(
+            'default' => '',
+            'type' => 'theme_mod',
+            'capability' => 'edit_theme_options',
+            'transport' => '',
+            'sanitize_callback' => 'berea_sanitize_text',
+        )
+    );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control(
+        $wp_customize,
+        'berea_secondary_page_header_image_control',
+        array(
+            'label'    => __( 'Secondary Page Header Image', 'berea' ),
+            'section'  => 'berea_secondary_page_header_image_options',
+            'settings' => 'berea_secondary_page_header_image',
+            'priority' => 10,
+        )
+    ));
+
+
+
 /**
 * Adding Panels for Home Page and Colors
 */
@@ -68,38 +103,38 @@ $wp_customize->add_panel( 'site_content', array(
 *  @link — https://gist.github.com/devinsays/e9c6754340a5253c3ec9
 *  @author — devinsays
 */
-$wp_customize->add_panel( 'panel_id', array(
-	    'priority' => 1000,
-	    'capability' => 'edit_theme_options',
-	    'theme_supports' => '',
-	    'title' => __( 'Example Panel', 'berea' ),
-	    'description' => __( 'Description of what this panel does.', 'berea' ),
-	) );
-
-	$wp_customize->add_section( 'section_id', array(
-	    'priority' => 10,
-	    'capability' => 'edit_theme_options',
-	    'theme_supports' => '',
-	    'title' => __( 'Example Section', 'berea' ),
-	    'description' => '',
-	    'panel' => 'panel_id',
-	) );
-
-	$wp_customize->add_setting( 'textarea_field_id', array(
-		'default' => '',
-		'type' => 'theme_mod',
-		'capability' => 'edit_theme_options',
-		'transport' => '',
-		'sanitize_callback' => 'berea_sanitize_text',
-	) );
-
-	$wp_customize->add_control( 'textarea_field_id', array(
-	    'type' => 'textarea',
-	    'priority' => 10,
-	    'section' => 'section_id',
-	    'label' => __( 'Textarea Field', 'berea' ),
-	    'description' => '',
-	) );
+//	$wp_customize->add_panel( 'panel_id', array(
+//	    'priority' => 1000,
+//	    'capability' => 'edit_theme_options',
+//	    'theme_supports' => '',
+//	    'title' => __( 'Example Panel', 'berea' ),
+//	    'description' => __( 'Description of what this panel does.', 'berea' ),
+//	) );
+//
+//	$wp_customize->add_section( 'section_id', array(
+//	    'priority' => 10,
+//	    'capability' => 'edit_theme_options',
+//	    'theme_supports' => '',
+//	    'title' => __( 'Example Section', 'berea' ),
+//	    'description' => '',
+//	    'panel' => 'panel_id',
+//	) );
+//
+//	$wp_customize->add_setting( 'textarea_field_id', array(
+//		'default' => '',
+//		'type' => 'theme_mod',
+//		'capability' => 'edit_theme_options',
+//		'transport' => '',
+//		'sanitize_callback' => 'berea_sanitize_text',
+//	) );
+//
+//	$wp_customize->add_control( 'textarea_field_id', array(
+//	    'type' => 'textarea',
+//	    'priority' => 10,
+//	    'section' => 'section_id',
+//	    'label' => __( 'Textarea Field', 'berea' ),
+//	    'description' => '',
+//	) );
 
 
 }

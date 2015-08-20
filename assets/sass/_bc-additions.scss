@@ -244,7 +244,7 @@ $fg-gutter: $gutter;
   }
 }
 
-.homepage-slider-background {
+.homepage-slider-background, .secondary-slider-background {
   background-size: contain;
   background-repeat: no-repeat;
   background-position:center top;
@@ -263,7 +263,7 @@ $fg-gutter: $gutter;
 	  padding-top: 100%;  /* initial aspect ratio of 1:1*/
 	}
 
-  .homepage-slider-background {
+  .homepage-slider-background, .secondary-slider-background {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position:center top;
