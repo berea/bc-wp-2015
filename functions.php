@@ -274,7 +274,21 @@ function berea_add_selectivizr() { ?>
 <?php }
 
 
-
+// Add specific CSS class to trap child theme name
+add_filter( 'body_class', 'body_class_add_child_theme_name' );
+function body_class_add_child_theme_name( $classes ) {
+	// add 'class-name' to the $classes array
+	$my_theme = wp_get_theme();
+	if ($my_theme->get( 'Template' )) {
+		$childthemeid=$my_theme->get_stylesheet_directory_uri();
+		// explode on / and take the last folder - the template's directory name
+		if ($childthemeid) { $childthemeid=explode('/',$childthemeid); }
+		if ($childthemeid) { $childthemeid=array_pop($childthemeid); }
+		if ($childthemeid) { $classes[] = 'child-theme-'.$childthemeid; }
+	}
+	// return the $classes array
+	return $classes;
+}
 
 
 
