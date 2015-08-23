@@ -17,7 +17,7 @@
 
 	<div class="entry-content" itemprop="mainContentOfPage">
 
-		<?php the_content(); ?>
+        <?php the_content(); ?>
 
 		<?php if ( function_exists( 'get_the_post_navigation' ) ) {
 

@@ -6,6 +6,16 @@
  *
  * @package berea
  */
+
+// All pages need the short-ribbon class applied to the body tag
+// EXCEPT the homepage in child-theme-1. That's the only page that
+// gets the tall ribbon.
+//
+$class_for_ribbon = 'short-ribbon';
+if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Theme' ) {
+    $class_for_ribbon = '';
+}
+
 ?><!DOCTYPE html>
 <?php tha_html_before(); ?>
 <html <?php language_attributes(); ?>>
@@ -23,7 +33,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class( $class_for_ribbon); ?>>
 <?php tha_body_top(); ?>
 <div id="page" class="hfeed site">
 
@@ -54,8 +64,12 @@
 			<?php tha_content_top(); ?>
 
 
-<!--            <div id="homepage-slider">-->
-                <?php berea_get_homepage_slider(); ?>
-<!--            </div>-->
-
+			<?php
+				if (is_front_page()) {
+					berea_get_homepage_slider();
+				}
+				else {
+                    berea_get_secondary_slider();
+                }
+			?>
 
