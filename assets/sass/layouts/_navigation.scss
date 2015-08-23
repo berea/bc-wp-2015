@@ -99,7 +99,7 @@ Main components
 .cd-main-header {
 	height: $header-height-S;
 	background: transparent;
-	z-index: $above-content;
+	z-index: $above-cd-overlay;
 	//max-width: $max-width;
   	//font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-family: $opensans-condensed;

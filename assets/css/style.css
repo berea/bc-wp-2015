@@ -1263,7 +1263,7 @@ Main components
 .cd-main-header {
   height: 50px;
   background: transparent;
-  z-index: 3;
+  z-index: 6;
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 20px;
