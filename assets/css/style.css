@@ -3126,7 +3126,7 @@ input#s {
 }
 
 @media only screen and (min-width: 769px) {
-  .child-theme-bc-wp-2015-child-theme-2 .cd-header-ribbon {
+  .short-ribbon .cd-header-ribbon {
     background: url("../images/bc-ribbon.png");
     width: 228px;
     height: 145px;
@@ -3134,7 +3134,7 @@ input#s {
   }
 }
 @media only screen and (min-width: 769px) {
-  .child-theme-bc-wp-2015-child-theme-2 div#logo {
+  .short-ribbon div#logo {
     background: url("../images/bc-logo-stacked.svg");
     background-size: contain;
     margin: auto;
@@ -3631,4 +3631,133 @@ input#s {
 #news-list a:link, #news-list a:hover, #news-list a:visited {
   color: #005A8B;
   text-decoration: none;
+}
+
+/* Can this be added on to .entry-content instead? */
+/* For content entered in posts by users */
+/* was .user-entered-content */
+h1.entry-title {
+  font-size: 52px;
+  line-height: 75px;
+  margin: 0px 0px 15px 0px;
+  font-weight: 700;
+  font-style: Normal;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #005a8b;
+}
+
+.entry-content {
+  padding: 0px 0 50px 0;
+  font-size: 16px;
+  min-height: 100%;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 25px;
+}
+.entry-content h1 {
+  font-size: 52px;
+  line-height: 75px;
+  margin: 0px 0px 15px 0px;
+  font-weight: 700;
+  font-style: Normal;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #005a8b;
+}
+.entry-content h2 {
+  font-size: 40px;
+  line-height: 35px;
+  margin: 0px 0px 25px 0px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  font-style: Normal;
+  text-transform: uppercase;
+  color: #c75b12;
+  letter-spacing: 3px;
+}
+.entry-content h3 {
+  font-size: 28px;
+  line-height: 30px;
+  margin: 0px 0px 19px 0px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  font-style: Normal;
+  text-transform: uppercase;
+  color: #739600;
+  letter-spacing: 1px;
+}
+.entry-content h4 {
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-style: Normal;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: #93b1cc;
+  line-height: 25px;
+  width: 960px;
+}
+.entry-content p {
+  margin: 0px 0px 25px 0px;
+  text-transform: inherit;
+  font-size: 16px;
+}
+.entry-content p.intro {
+  font-size: 16px;
+  line-height: 29px;
+  margin: 0px;
+  font-family: open-sans;
+  font-weight: 400;
+  font-style: normal;
+  color: #005a8b;
+  padding: 5px;
+}
+.entry-content blockquote.pull-quote {
+  margin: 0em 1em 1em 0em;
+  border-left: 3px solid #ccc;
+  padding: 0em 0em 0em 0.7em;
+}
+.entry-content div.content {
+  text-align: left;
+  width: 40%;
+  padding: 50px 0px 0px 0px;
+  background-color: white;
+}
+.entry-content h5 {
+  margin: 0px 0px 25px 0px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  font-style: Normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 14px;
+  color: #333333;
+}
+.entry-content p.quote {
+  font-size: 23px;
+  line-height: 28px;
+  font-style: italic;
+  color: #666666;
+  margin: 0px;
+}
+.entry-content blockquote {
+  background-color: #FFFFFE;
+  font-size: 26px;
+  line-height: 37px;
+  margin-bottom: 25px;
+  margin: 0em 1em 1em 0em;
+  border-left: 3px solid #ccc;
+  padding: 0em 0em 0em 0.7em;
+}
+.entry-content div {
+  margin: 0px 0px 0px 23%;
+  width: 1280px;
+  background-color: white;
+  padding: 10px;
 }
