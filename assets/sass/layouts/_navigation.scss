@@ -987,8 +987,7 @@ Main components
 .cd-overlay {
 	/* shadow layer visible when navigation is active */
 	position: fixed;
-	//z-index: $super-above-content; this was the original setting, it covered up the nav on desktop
-    z-index: auto;
+	z-index: $super-above-content; // back to original setting, it is supposed to covered up the nav on desktop!
 	height: 100%;
 	width: 100%;
 	top: 0;

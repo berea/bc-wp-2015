@@ -2117,7 +2117,7 @@ Main components
 .cd-overlay {
   /* shadow layer visible when navigation is active */
   position: fixed;
-  z-index: auto;
+  z-index: 4;
   height: 100%;
   width: 100%;
   top: 0;
