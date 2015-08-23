@@ -916,7 +916,7 @@ Main components
 	width: 100%;
 	top: $header-height-S;
 	left: 0;
-	z-index: $above-content;
+	z-index: $super-above-content;
 	opacity: 0;
 	visibility: hidden;
 	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
