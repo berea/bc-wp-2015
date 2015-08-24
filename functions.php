@@ -294,7 +294,26 @@ function body_class_add_child_theme_name( $classes ) {
 
 // Custom functions for the Berea themes:
 
-function berea_get_default_menu()
+function berea_has_default_menu()
+{
+
+	$args = array(
+		'order' => 'ASC',
+		'orderby' => 'menu_order',
+		'post_type' => 'nav_menu_item',
+		'post_status' => 'publish',
+		'output' => ARRAY_A,
+		'output_key' => 'menu_order',
+		'nopaging' => true,
+		'update_post_term_cache' => false);
+
+	$menu = "Default";
+
+	$menu_items = wp_get_nav_menu_items($menu, $args);
+	 return ($menu_items) ? true : false;
+}
+
+function berea_get_default_menu($for_mobile=false)
 {
 
 	$args = array(
@@ -334,8 +353,14 @@ function berea_get_default_menu()
 
 			if ($item < $item_limit) {
 				// Less than item max, display it.
-//				$output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->ID . ': ' . $menu_item->title . ', parent: ' . $menu_item->menu_item_parent . "</a>";
-                $output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->title . "</a>";
+				//$output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->ID . ': ' . $menu_item->title . ', parent: ' . $menu_item->menu_item_parent . "</a>";
+				if ($for_mobile) {
+					//will depend on exact sequence to get to class="" for injecting things - so don't move it
+					$url=($menu_item->menu_item_parent == 0) ? '#' : $menu_item->url ;
+                	$output[$column][] = '<a href="' . $url . '">' . $menu_item->title . "</a>";
+				} else {
+                	$output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->title . "</a>";
+                }
 
 			} else {
 				// Greater than item_max, don't display it.
