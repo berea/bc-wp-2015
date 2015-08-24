@@ -436,10 +436,26 @@ $fg-gutter: $gutter;
   }
 }
 
+.apply-mobile-injected-menu {
+	& > li:not(.menu-item-hide-on-large) {
+	  display: none;
+	  @include MQ(L) {
+		display:block;
+	  }
+	}
+}
+
 .menu-item-hide-on-large {
   display:block;
   @include MQ(L) {
     display:none;
+  }
+}
+
+.menu-item-show-on-large {
+  display:none;
+  @include MQ(L) {
+    display:block;
   }
 }
 
