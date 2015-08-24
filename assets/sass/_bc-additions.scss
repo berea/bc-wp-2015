@@ -430,6 +430,17 @@ $fg-gutter: $gutter;
 .menu-block-wrapper {
   @include outer-container;
   padding-bottom: 20px;
+  display:none;
+  @include MQ(L) {
+    display:block;
+  }
+}
+
+.menu-item-hide-on-large {
+  display:block;
+  @include MQ(L) {
+    display:none;
+  }
 }
 
 .menu-block {

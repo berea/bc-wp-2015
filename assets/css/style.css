@@ -3579,11 +3579,26 @@ input#s {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 20px;
+  display: none;
 }
 .menu-block-wrapper:after {
   content: "";
   display: table;
   clear: both;
+}
+@media only screen and (min-width: 1171px) {
+  .menu-block-wrapper {
+    display: block;
+  }
+}
+
+.menu-item-hide-on-large {
+  display: block;
+}
+@media only screen and (min-width: 1171px) {
+  .menu-item-hide-on-large {
+    display: none;
+  }
 }
 
 .menu-block {
