@@ -1,3 +1,5 @@
+@import "layouts/partials/_layout.scss";
+
 /* =Structure/Scaffolding
 -------------------------------------------------------------- */
 html {
@@ -31,10 +33,10 @@ body {
 #primary {
 	@include clearfix;
 
-	@include media($sm) {
+	@include MQ(S) {
 		@include span-columns( 4 );
 	}
-	@include media($md) {
+	@include MQ(M) {
 		@include span-columns( 6 );
         // @include shift(1);
         @include omega();        
@@ -55,13 +57,16 @@ body {
 
   background-color: $bc-white;
 
-  @include media($sm) {
-    display: none;
+  display: none;
+
+
+  @include MQ(S) {
+    display: block;
 	//@include span-columns( 4 );
 	//padding: 30px;
   }
 
-  @include media($md) {
+  @include MQ(M) {
     display: block;
 	@include span-columns( 2 );
 	@include omega( block );

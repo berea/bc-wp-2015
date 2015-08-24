@@ -488,146 +488,146 @@ $fg-gutter: $gutter;
 
 
 
-/* Can this be added on to .entry-content instead? */
-/* For content entered in posts by users */
-/* was .user-entered-content */
-h1.entry-title {
-    font-size: 52px;
-    line-height: 75px;
-    margin: 0px 0px 15px 0px;
-    font-weight: 700;
-    font-style: Normal;
-    font-family: $sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: rgba(0, 90, 139, 1);
-}
-
-.entry-content {
-    padding: 0px 0 50px 0;
-    font-size: 16px;
-    min-height: 100%;
-    font-family: $serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 25px;
-    //background-color: rgba(255, 254, 249, 1);
-
-  h1 {
-    font-size: 52px;
-    line-height: 75px;
-    margin: 0px 0px 15px 0px;
-    font-weight: 700;
-    font-style: Normal;
-    font-family: $sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: rgba(0, 90, 139, 1);
-  }
-
-  h2 {
-    font-size: 40px;
-    line-height: 35px;
-    margin: 0px 0px 25px 0px;
-    font-family: $sans-serif;
-    font-weight: 300;
-    font-style: Normal;
-    text-transform: uppercase;
-    color: rgba(199, 91, 18, 1);
-    letter-spacing: 3px;
-  }
-
-  h3 {
-    font-size: 28px;
-    line-height: 30px;
-    margin: 0px 0px 19px 0px;
-    font-family: $sans-serif;
-    font-weight: 300;
-    font-style: Normal;
-    text-transform: uppercase;
-    color: rgba(115, 150, 0, 1);
-    letter-spacing: 1px;
-  }
-
-  h4 {
-    margin-bottom: 25px;
-    font-weight: 300;
-    font-style: Normal;
-    font-family: $sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 25px;
-    color: rgba(147, 177, 204, 1);
-    line-height: 25px;
-    width: 960px;
-  }
-
-  p {
-    margin: 0px 0px 25px 0px;
-    text-transform: inherit;
-    font-size: 16px;
-  }
-
-  p.intro {
-    font-size: 16px;
-    line-height: 29px;
-    margin: 0px;
-    font-family: open-sans;
-    font-weight: 400;
-    font-style: normal;
-    color: rgba(0, 90, 139, 1);
-    padding: 5px;
-  }
-
-  blockquote.pull-quote {
-    margin: 0em 1em 1em 0em;
-    border-left: 3px solid #ccc;
-    padding: 0em 0em 0em 0.7em;
-  }
-
-  div.content {
-    text-align: left;
-    width: 40%;
-    padding: 50px 0px 0px 0px;
-    background-color: rgba(255, 255, 255, 1);
-  }
-
-  h5 {
-    margin: 0px 0px 25px 0px;
-    font-family: $sans-serif;
-    font-weight: 300;
-    font-style: Normal;
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 14px;
-    color: rgba(51, 51, 51, 1);
-  }
-
-  p.quote {
-    font-size: 23px;
-    line-height: 28px;
-    font-style: italic;
-    color: #666666;
-    margin: 0px;
-  }
-
-  blockquote {
-    background-color: $bc-white;
-    font-size: 26px;
-    line-height: 37px;
-    margin-bottom: 25px;
-    margin: 0em 1em 1em 0em;
-    border-left: 3px solid #ccc;
-    padding: 0em 0em 0em 0.7em;
-  }
-
-  div {
-    margin: 0px 0px 0px 23%;
-    width: 1280px;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 10px;
-  }
-
-
-}
+///* Can this be added on to .entry-content instead? */
+///* For content entered in posts by users */
+///* was .user-entered-content */
+//h1.entry-title {
+//    font-size: 52px;
+//    line-height: 75px;
+//    margin: 0px 0px 15px 0px;
+//    font-weight: 700;
+//    font-style: Normal;
+//    font-family: $sans-serif;
+//    text-transform: uppercase;
+//    letter-spacing: 1px;
+//    color: rgba(0, 90, 139, 1);
+//}
+//
+//.entry-content {
+//    padding: 0px 0 50px 0;
+//    font-size: 16px;
+//    min-height: 100%;
+//    font-family: $serif;
+//    font-weight: 400;
+//    font-style: normal;
+//    line-height: 25px;
+//    //background-color: rgba(255, 254, 249, 1);
+//
+//  h1 {
+//    font-size: 52px;
+//    line-height: 75px;
+//    margin: 0px 0px 15px 0px;
+//    font-weight: 700;
+//    font-style: Normal;
+//    font-family: $sans-serif;
+//    text-transform: uppercase;
+//    letter-spacing: 1px;
+//    color: rgba(0, 90, 139, 1);
+//  }
+//
+//  h2 {
+//    font-size: 40px;
+//    line-height: 35px;
+//    margin: 0px 0px 25px 0px;
+//    font-family: $sans-serif;
+//    font-weight: 300;
+//    font-style: Normal;
+//    text-transform: uppercase;
+//    color: rgba(199, 91, 18, 1);
+//    letter-spacing: 3px;
+//  }
+//
+//  h3 {
+//    font-size: 28px;
+//    line-height: 30px;
+//    margin: 0px 0px 19px 0px;
+//    font-family: $sans-serif;
+//    font-weight: 300;
+//    font-style: Normal;
+//    text-transform: uppercase;
+//    color: rgba(115, 150, 0, 1);
+//    letter-spacing: 1px;
+//  }
+//
+//  h4 {
+//    margin-bottom: 25px;
+//    font-weight: 300;
+//    font-style: Normal;
+//    font-family: $sans-serif;
+//    text-transform: uppercase;
+//    letter-spacing: 1px;
+//    font-size: 25px;
+//    color: rgba(147, 177, 204, 1);
+//    line-height: 25px;
+//    width: 960px;
+//  }
+//
+//  p {
+//    margin: 0px 0px 25px 0px;
+//    text-transform: inherit;
+//    font-size: 16px;
+//  }
+//
+//  p.intro {
+//    font-size: 16px;
+//    line-height: 29px;
+//    margin: 0px;
+//    font-family: open-sans;
+//    font-weight: 400;
+//    font-style: normal;
+//    color: rgba(0, 90, 139, 1);
+//    padding: 5px;
+//  }
+//
+//  blockquote.pull-quote {
+//    margin: 0em 1em 1em 0em;
+//    border-left: 3px solid #ccc;
+//    padding: 0em 0em 0em 0.7em;
+//  }
+//
+//  div.content {
+//    text-align: left;
+//    width: 40%;
+//    padding: 50px 0px 0px 0px;
+//    background-color: rgba(255, 255, 255, 1);
+//  }
+//
+//  h5 {
+//    margin: 0px 0px 25px 0px;
+//    font-family: $sans-serif;
+//    font-weight: 300;
+//    font-style: Normal;
+//    text-transform: uppercase;
+//    font-size: 20px;
+//    letter-spacing: 1px;
+//    line-height: 14px;
+//    color: rgba(51, 51, 51, 1);
+//  }
+//
+//  p.quote {
+//    font-size: 23px;
+//    line-height: 28px;
+//    font-style: italic;
+//    color: #666666;
+//    margin: 0px;
+//  }
+//
+//  blockquote {
+//    background-color: $bc-white;
+//    font-size: 26px;
+//    line-height: 37px;
+//    margin-bottom: 25px;
+//    margin: 0em 1em 1em 0em;
+//    border-left: 3px solid #ccc;
+//    padding: 0em 0em 0em 0.7em;
+//  }
+//
+//  div {
+//    margin: 0px 0px 0px 23%;
+//    width: 1280px;
+//    background-color: rgba(255, 255, 255, 1);
+//    padding: 10px;
+//  }
+//
+//
+//}
