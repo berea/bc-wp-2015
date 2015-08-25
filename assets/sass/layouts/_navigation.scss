@@ -416,88 +416,111 @@ Main components
 		color: $bc-orange;
 		background: $bc-white;
 	}
-
-	.cd-nav-gallery .cd-nav-item, .cd-nav-icons .cd-nav-item {
-		/* items with picture (or icon) and title */
-		height: 80px;
-		line-height: 80px;
-
-		h3 {
+	
+	.cd-nav-icons .cd-nav-item {
+		/* for small devices */
+	    p { 
+	        display: none;
+	    }
+	    h3 { 
+			font-size:1.0em;
+			font-weight:normal;
+            font-family: $opensans-condensed;
 			overflow: hidden;
 			text-overflow: ellipsis;
-		}
+			margin-top:13px;
+	    }
 	}
+	
+	@include MQ(L) {
 
-	.cd-nav-gallery .cd-nav-item {
-		padding-left: 90px;
-
-		img {
-			position: absolute;
-			display: block;
-			height: 40px;
-			width: auto;
-			left: 20px;
-			top: 50%;
-			margin-top: -20px;
+		.cd-nav-gallery .cd-nav-item, .cd-nav-icons .cd-nav-item {
+			/* items with picture (or icon) and title */
+			height: 80px;
+			line-height: 80px;
+	
+			h3 {
+				font-size: 18px;
+			    font-weight:bold;
+                font-family: $helvetica;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				margin-top:0px;
+			}
 		}
-	}
-
-	.cd-nav-icons .cd-nav-item {
-		padding-left: 75px;
-
-		p {
-			color: $color-1;
-			font-size: 1.1rem;
-			/* hide description on small devices */
-			display: none;
+	
+		.cd-nav-gallery .cd-nav-item {
+			padding-left: 90px;
+	
+			img {
+				position: absolute;
+				display: block;
+				height: 40px;
+				width: auto;
+				left: 20px;
+				top: 50%;
+				margin-top: -20px;
+			}
 		}
-
-		&::before {
-			/* item icon */
-			content:'';
-			display: block;
-			position: absolute;
-			left: 20px;
-			top: 50%;
-			margin-top: -20px;
-			width: 40px;
-			height: 40px;
-			background-repeat: no-repeat;
-			background-position: center center;
-			background-size: 40px 40px;
+	
+		.cd-nav-icons .cd-nav-item {
+			padding-left: 75px;
+	
+			p {
+				color: $color-1;
+				font-size: 1.1rem;
+				/* show on large devices */
+				display: block;
+			}
+	
+			&::before {
+				/* item icon */
+				content:'';
+				display: block;
+				position: absolute;
+				left: 20px;
+				top: 50%;
+				margin-top: -20px;
+				width: 40px;
+				height: 40px;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 40px 40px;
+			}
+	
+			&.item-1::before {
+				background-image: url('img/line-icon-1.svg');
+			}
+	
+			&.item-2::before {
+				background-image: url('img/line-icon-2.svg');
+			}
+	
+			&.item-3::before {
+				background-image: url('img/line-icon-3.svg');
+			}
+	
+			&.item-4::before {
+				background-image: url('img/line-icon-4.svg');
+			}
+	
+			&.item-5::before {
+				background-image: url('img/line-icon-5.svg');
+			}
+	
+			&.item-6::before {
+				background-image: url('img/line-icon-6.svg');
+			}
+	
+			&.item-7::before {
+				background-image: url('img/line-icon-7.svg');
+			}
+	
+			&.item-8::before {
+				background-image: url('img/line-icon-8.svg');
+			}
 		}
-
-		&.item-1::before {
-			background-image: url('img/line-icon-1.svg');
-		}
-
-		&.item-2::before {
-			background-image: url('img/line-icon-2.svg');
-		}
-
-		&.item-3::before {
-			background-image: url('img/line-icon-3.svg');
-		}
-
-		&.item-4::before {
-			background-image: url('img/line-icon-4.svg');
-		}
-
-		&.item-5::before {
-			background-image: url('img/line-icon-5.svg');
-		}
-
-		&.item-6::before {
-			background-image: url('img/line-icon-6.svg');
-		}
-
-		&.item-7::before {
-			background-image: url('img/line-icon-7.svg');
-		}
-
-		&.item-8::before {
-			background-image: url('img/line-icon-8.svg');
-		}
+	
 	}
 
 	@include MQ(maxL) {
