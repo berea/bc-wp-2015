@@ -1081,6 +1081,9 @@ support for no js
 
 
 /* Added to style the news dropdown */
+.cd-nav li {
+	text-transform: uppercase;
+}
 a.cd-nav-item > img {
   display:none;
 }
@@ -1097,6 +1100,9 @@ h3.cd-news-title {
 }
 
 @include MQ(L) {
+  .cd-nav li {
+	  text-transform: none;
+  }
   a.cd-nav-item > img {
 	display:block;
   }
