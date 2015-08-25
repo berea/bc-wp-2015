@@ -24,8 +24,13 @@ The size of the slider and location of text on it depends on whether or not this
 front page in child-theme-1. It's not quite the same logic as we need for the logo, and it
 is achieved in a different way at the bottom of header.php.
 
+Similarly, the header display itself for child themes is substantailly different, so to 
+trap for that we have added logic in functions.php to inject an identifier for the child
+theme (it's the child theme's directory name). If you change that, functions and css
+elements will need to be updated (_bc-additons).
+
 When the dust settles, we need to revisit the theme structures and do a little cleanup to
-streamline and clarify. These two behaviors are prime candidates for that cleanup.
+streamline and clarify. These behaviors are prime candidates for that cleanup.
 
 ------
 
