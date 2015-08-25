@@ -32,5 +32,11 @@ elements will need to be updated (_bc-additons).
 When the dust settles, we need to revisit the theme structures and do a little cleanup to
 streamline and clarify. These behaviors are prime candidates for that cleanup.
 
+
+## Notes about navigations ##
+
+On child themes the menu that shows up on the site should be called "Default". I expect
+we will change this, but its documented here.
+
 ------
 
