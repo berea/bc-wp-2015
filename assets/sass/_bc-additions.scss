@@ -73,6 +73,7 @@ $fg-gutter: $gutter;
   }
 }
 
+
 .short-ribbon {
   .cd-header-ribbon {
 	@include MQ(M) {
@@ -97,6 +98,41 @@ $fg-gutter: $gutter;
     }
   }
 }
+
+
+.mini-ribbon {
+  background: url("../images/bc-ribbon-flat.png");
+  background-repeat: no-repeat;
+  width: 228px;
+  height: 50px;
+
+  @include MQ(L) {
+    height: 80px;
+  }
+
+  div#logo {
+    background: url("../images/bc-logo-stacked.svg");
+    background-size: contain;
+    margin: auto;
+    margin-top: 5px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 45px;
+
+    @include MQ(L) {
+      height: 75px;
+    }
+  }
+}
+
+
+.shift-down {
+  margin-top: 54px;
+  @include MQ(L) {
+    margin-top: 84px;
+  }
+}
+
 
 
 .hero-nav-wrapper {
