@@ -1004,6 +1004,8 @@ input#s {
 --------------------------------------------------------------*/
 /* =Structure/Scaffolding
 -------------------------------------------------------------- */
+/* #TODO: replace @include media with @include MQ to better match other sass files 
+          removed because it breaks the layout  */
 body {
   color: #000;
   font-family: "Open Sans", sans-serif;
@@ -1045,23 +1047,23 @@ body {
   display: table;
   clear: both;
 }
-@media only screen and (min-width: 481px) {
+@media screen and (min-width: 200px) {
   #primary {
     float: left;
     display: block;
-    margin-right: 2.12766%;
-    width: 31.91489%;
+    margin-right: 6.66667%;
+    width: 100%;
   }
   #primary:last-child {
     margin-right: 0;
   }
 }
-@media only screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   #primary {
     float: left;
     display: block;
-    margin-right: 2.12766%;
-    width: 48.93617%;
+    margin-right: 4.34783%;
+    width: 100%;
     margin-right: 0;
   }
   #primary:last-child {
@@ -1082,18 +1084,18 @@ body {
   padding: 0 30px 0 0;
   width: 100%;
 }
-@media only screen and (min-width: 481px) {
+@media screen and (min-width: 200px) {
   #secondary {
     display: block;
   }
 }
-@media only screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   #secondary {
     display: block;
     float: left;
     display: block;
-    margin-right: 2.12766%;
-    width: 14.89362%;
+    margin-right: 4.34783%;
+    width: 30.43478%;
     margin-right: 0;
   }
   #secondary:last-child {
