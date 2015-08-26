@@ -28,10 +28,25 @@ body {
   	position: relative;
   	z-index: 1;
 }
-#main-footer-shim {
-  	background-color:$bc-blue;
-  	height:60px;
-  	margin-top:-60px;
+#footer-shim {
+	@include clearfix;
+	clear: both;
+	background-color:$bc-blue;
+	height:1px;
+}
+.footer-shim-inner {
+    position:relative;
+    background-color:$bc-blue;
+    height:1px;
+    width:100%;
+}
+.footer-shim-block {
+    position:absolute;
+    top:-60px;
+    left:0px;
+    height:60px;
+    width:100%;
+    background-color:$bc-blue;
 }
 
 #primary {

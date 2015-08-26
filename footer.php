@@ -15,6 +15,13 @@
 		<?php include 'universal_menu.php'; ?>
 
    		<?php tha_footer_before(); ?>
+   		
+   		<!-- footer-shim -->
+		<div id="footer-shim" style="">
+			<div class="footer-shim-inner" style=""><div class="footer-shim-block" style=""></div></div>
+		</div>
+		
+		<!-- footer -->
 		<footer id="colophon" class="site-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 			<?php tha_footer_top(); ?>
 
