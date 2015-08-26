@@ -10608,10 +10608,45 @@ jQuery(document).ready(function($){
 		(!window.requestAnimationFrame) ? setTimeout(moveNavigation, 300) : window.requestAnimationFrame(moveNavigation);
 	});
 
+	$(window).scroll(function(){
+
+		var $o = $('<div class="cd-overlay shift-down"></div>').hide().appendTo('body');
+		var baseMargin = parseInt($o.css('marginTop'));
+		$o.remove();
+
+		var fromTop = $(window).scrollTop();
+		var overlayTopMargin = parseInt( $('.cd-overlay').css('marginTop') );
+
+		var newMargin;
+
+
+		console.log("Base margin: " + baseMargin);
+		console.log("From top: " + fromTop);
+		console.log("Current margin: " + overlayTopMargin);
+
+
+		if (fromTop > baseMargin) {
+			console.log("   RULE 1");
+			newMargin = 0;
+		} else if (overlayTopMargin <= baseMargin-fromTop && fromTop < baseMargin) {
+			console.log("   RULE 2");
+			newMargin = baseMargin - fromTop;
+		} else {
+			console.log("   RULE 3");
+			newMargin = baseMargin - fromTop;
+		};
+
+		console.log("New margin: " + newMargin);
+
+		$('.cd-overlay').css('marginTop', newMargin + 'px');
+	});
+
 	//mobile - open lateral menu clicking on the menu icon
 	$('.cd-nav-trigger').on('click', function(event){
 		event.preventDefault();
 		if( $('.cd-overlay').hasClass('is-visible') ) {
+			toggleRibbon();
+			toggleOverlayShift();
 			closeNav();
 		} else {
 			$(this).addClass('nav-is-visible');
@@ -10620,6 +10655,8 @@ jQuery(document).ready(function($){
 			$('.cd-main-content').addClass('nav-is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 				$('body').addClass('overflow-hidden');
 			});
+			toggleRibbon();
+			toggleOverlayShift();
 			toggleSearch('close');
 			$('.cd-overlay').addClass('is-visible');
 		}
@@ -10629,6 +10666,8 @@ jQuery(document).ready(function($){
 	$('.cd-search-trigger').on('click', function(event){
 		event.preventDefault();
 		toggleSearch();
+		toggleRibbon();
+		toggleOverlayShift();
 		closeNav();
 	});
 
@@ -10637,6 +10676,7 @@ jQuery(document).ready(function($){
 		if($('.cd-primary-nav').hasClass('nav-is-visible')) {
 			closeNav();
 			$('.cd-overlay').removeClass('is-visible');
+            toggleRibbon();
 		}
 	});
 	$('.nav-on-left .cd-overlay').on('swipeleft', function(){
@@ -10692,10 +10732,10 @@ jQuery(document).ready(function($){
 
 	function toggleSearch(type) {
 		if(type=="close") {
-			//close serach 
+			//close search
 			$('.cd-search').removeClass('is-visible');
 			$('.cd-search-trigger').removeClass('search-is-visible');
-			$('.cd-overlay').removeClass('search-is-visible');
+			$('.cd-overlay').removeClass('search-is-visible')
 		} else {
 			//toggle search visibility
 			$('.cd-search').toggleClass('is-visible');
@@ -10704,6 +10744,34 @@ jQuery(document).ready(function($){
 			($('#cd-search').hasClass('is-visible')) ? $('.cd-overlay').addClass('is-visible') : $('.cd-overlay').removeClass('is-visible') ;
 		}
 	}
+
+
+    function toggleRibbon() {
+		if ($('body').hasClass('child-theme-bc-wp-2015-child-theme-1') && $('body').hasClass('home') && ( $(document).innerWidth() >= 769) ) {
+			// main homepage + large media, swap between full & mini
+			if ( $('#ribbon').hasClass('mini-ribbon')) {
+				$('#ribbon').removeClass('mini-ribbon');
+			} else {
+				$('#ribbon').addClass('mini-ribbon');
+			}
+		} else {
+
+			console.log( $(document).width() );
+
+			// medium & small media, swap between show & hide
+			$('#ribbon').toggle();
+		}
+    }
+
+
+	function toggleOverlayShift() {
+		if ( $('.cd-overlay').hasClass('.shift-down')) {
+			$('.cd-overlay').removeClass('shift-down');
+		} else {
+			$('.cd-overlay').addClass('shift-down');
+		}
+	}
+
 
 	function checkWindowWidth() {
 		//check window width (scrollbar included)
