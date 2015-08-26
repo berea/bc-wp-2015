@@ -51,9 +51,6 @@ get_header(); ?>
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
-                
-		<!-- site-main-footer-shim -->
-		<div id="main-footer-shim" class="site-main-footer-shim"></div>
 		
 	</div><!-- #primary -->
 

@@ -111,9 +111,6 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
-                
-		<!-- site-main-footer-shim -->
-		<div id="main-footer-shim" class="site-main-footer-shim"></div>
 		
 	</section><!-- #primary -->
 
