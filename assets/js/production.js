@@ -10645,8 +10645,6 @@ jQuery(document).ready(function($){
 	$('.cd-nav-trigger').on('click', function(event){
 		event.preventDefault();
 		if( $('.cd-overlay').hasClass('is-visible') ) {
-			toggleRibbon();
-			toggleOverlayShift();
 			closeNav();
 		} else {
 			$(this).addClass('nav-is-visible');
@@ -10655,11 +10653,12 @@ jQuery(document).ready(function($){
 			$('.cd-main-content').addClass('nav-is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 				$('body').addClass('overflow-hidden');
 			});
-			toggleRibbon();
-			toggleOverlayShift();
 			toggleSearch('close');
 			$('.cd-overlay').addClass('is-visible');
 		}
+		toggleRibbon();
+		toggleOverlayShift();
+
 	});
 
 	//open search form
@@ -10710,6 +10709,7 @@ jQuery(document).ready(function($){
 			$('.cd-overlay').removeClass('is-visible');
 		}
 		toggleSearch('close');
+		toggleRibbon();
 	});
 
 	//submenu items - go back link
@@ -10747,19 +10747,19 @@ jQuery(document).ready(function($){
 
 
     function toggleRibbon() {
-		if ($('body').hasClass('child-theme-bc-wp-2015-child-theme-1') && $('body').hasClass('home') && ( $(document).innerWidth() >= 769) ) {
+		if ( $(document).innerWidth() >= 769 ) {
 			// main homepage + large media, swap between full & mini
-			if ( $('#ribbon').hasClass('mini-ribbon')) {
+			if ( $('#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
 				$('#ribbon').removeClass('mini-ribbon');
 			} else {
 				$('#ribbon').addClass('mini-ribbon');
 			}
 		} else {
-
-			console.log( $(document).width() );
-
-			// medium & small media, swap between show & hide
-			$('#ribbon').toggle();
+			if ( $('.cd-overlay').hasClass('is-visible') ) {
+				$('#ribbon').hide();
+			} else {
+				$('#ribbon').show();
+			}
 		}
     }
 
