@@ -4,7 +4,7 @@
 
 			<ul class="cd-secondary-nav is-hidden">
 				<li class="go-back"><a href="#0">BACK</a></li>
-				<li class="see-all"><a href="http://dev.berea.edu/subsite/">ADMISSIONS&gt;</a></li>
+				<li class="see-all"><a href="http://dev.berea.edu/subsite/">ADMISSIONS &gt;</a></li>
 				<li class="has-children">
 					<a href="#">ADMISSIONS INFO</a>
 
@@ -57,7 +57,7 @@
 			<a href="#">ACADEMICS</a>
 			<ul class="cd-nav-icons is-hidden">
 				<li class="go-back"><a href="#0">BACK</a></li>
-				<li class="see-all"><a href="#">ACADEMICS&gt;</a></li>
+				<li class="see-all"><a href="#">ACADEMICS &gt;</a></li>
 				<li>
 					<a class="cd-nav-item item-1" href="http://dev.berea.edu/subsite/">
 						<h3>DEGREE PROGRAMS</h3>
@@ -132,7 +132,7 @@
 
 			<ul class="cd-nav-gallery is-hidden">
 				<li class="go-back"><a href="#0">BACK</a></li>
-				<li class="see-all"><a href="#">NEWS&gt;</a></li>
+				<li class="see-all"><a href="#">MORE NEWS &gt;</a></li>
 
 				<?php
 				
