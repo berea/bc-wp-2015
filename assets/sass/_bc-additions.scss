@@ -237,7 +237,7 @@ $fg-gutter: $gutter;
     @include MQ(M) {
       text-align: right;
       color: $bc-white;
-      text-shadow: 0 0 1px #000;
+      text-shadow: 0 0 10px #000;
       padding-bottom: 0px;
       border-bottom: none;
       font-size: 4em;
@@ -667,6 +667,18 @@ $fg-gutter: $gutter;
 //
 //}
 
+
+h1.entry-content {
+    font-size: 52px;
+    line-height: 75px;
+    margin: 0px 0px 15px 0px;
+    font-weight: 700;
+    font-style: Normal;
+    font-family: "open-sans-condensed";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(0, 90, 139, 1);
+}
 
 .entry-content {
 
