@@ -674,7 +674,7 @@ h1.entry-content {
     margin: 0px 0px 15px 0px;
     font-weight: 700;
     font-style: Normal;
-    font-family: "open-sans-condensed";
+    font-family: $sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: rgba(0, 90, 139, 1);
@@ -686,7 +686,7 @@ h1.entry-content {
     padding: 0px 0 50px 0;
     font-size: 16px;
     min-height: 100%;
-    font-family: Crimson Text;
+    font-family: $serif;
     font-weight: 400;
     font-style: normal;
     line-height: 25px;
@@ -699,7 +699,7 @@ h1.entry-content {
     margin: 0px 0px 15px 0px;
     font-weight: 700;
     font-style: Normal;
-    font-family: "open-sans-condensed";
+    font-family: $sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: rgba(0, 90, 139, 1);
@@ -709,7 +709,7 @@ h1.entry-content {
     font-size: 40px;
     line-height: 35px;
     margin: 0px 0px 25px 0px;
-    font-family: open-sans-condensed;
+    font-family: $sans-serif;
     font-weight: 300;
     font-style: Normal;
     text-transform: uppercase;
@@ -721,7 +721,7 @@ h1.entry-content {
     font-size: 28px;
     line-height: 30px;
     margin: 0px 0px 19px 0px;
-    font-family: open-sans-condensed;
+    font-family: $sans-serif;
     font-weight: 300;
     font-style: Normal;
     text-transform: uppercase;
@@ -733,7 +733,7 @@ h1.entry-content {
     margin-bottom: 25px;
     font-weight: 300;
     font-style: Normal;
-    font-family: "open-sans-condensed";
+    font-family: $sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 25px;
@@ -746,13 +746,14 @@ h1.entry-content {
     margin: 0px 0px 25px 0px;
     text-transform: inherit;
     font-size: 16px;
+    font-family: $serif;
   }
 
   p.intro {
     font-size: 16px;
     line-height: 29px;
     margin: 0px;
-    font-family: open-sans;
+    font-family: $sans-serif;
     font-weight: 400;
     font-style: normal;
     color: rgba(0, 90, 139, 1);
@@ -774,7 +775,7 @@ h1.entry-content {
 
   h5 {
     margin: 0px 0px 25px 0px;
-    font-family: open-sans-condensed;
+    font-family: $sans-serif;
     font-weight: 300;
     font-style: Normal;
     text-transform: uppercase;
