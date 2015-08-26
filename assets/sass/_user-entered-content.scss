@@ -6,8 +6,7 @@ h1.entry-content {
   margin: 0px 0px 15px 0px;
   font-weight: 700;
   font-style: Normal;
-  font-family: $sans-serif;
-  font-stretch: condensed;
+  font-family: $opensans-condensed;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: rgba(0, 90, 139, 1);
@@ -32,8 +31,7 @@ h1.entry-content {
     margin: 0px 0px 15px 0px;
     font-weight: 700;
     font-style: Normal;
-    font-family: $sans-serif;
-    font-stretch: condensed;
+    font-family: $opensans-condensed;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: rgba(0, 90, 139, 1);
@@ -43,8 +41,7 @@ h1.entry-content {
     font-size: 40px;
     line-height: 35px;
     margin: 0px 0px 25px 0px;
-    font-family: $sans-serif;
-    font-stretch: condensed;
+    font-family: $opensans-condensed;
     font-weight: 300;
     font-style: Normal;
     text-transform: uppercase;
@@ -56,8 +53,7 @@ h1.entry-content {
     font-size: 28px;
     line-height: 30px;
     margin: 0px 0px 19px 0px;
-    font-family: $sans-serif;
-    font-stretch: condensed;
+    font-family: $opensans-condensed;
     font-weight: 300;
     font-style: Normal;
     text-transform: uppercase;
@@ -69,8 +65,7 @@ h1.entry-content {
     margin-bottom: 25px;
     font-weight: 300;
     font-style: Normal;
-    font-family: $sans-serif;
-    font-stretch: condensed;
+    font-family: $opensans-condensed;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 25px;
@@ -81,8 +76,7 @@ h1.entry-content {
 
   h5 {
     margin: 0px 0px 25px 0px;
-    font-family: $sans-serif;
-    font-stretch: condensed;
+    font-family: $opensans-condensed;
     font-weight: 300;
     font-style: Normal;
     text-transform: uppercase;
@@ -129,6 +123,7 @@ h1.entry-content {
     font-style: italic;
     color: #666666;
     margin: 0px;
+    background-color: none;
   }
 
   blockquote {
