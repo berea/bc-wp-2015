@@ -6,7 +6,7 @@
 				<li class="go-back"><a href="#0">BACK</a></li>
 				<li class="see-all"><a href="http://dev.berea.edu/subsite/">ADMISSIONS &gt;</a></li>
 				<li class="has-children">
-					<a href="#">ADMISSIONS INFO</a>
+					<a href="#">ADMISSION INFO</a>
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">BACK</a></li>
