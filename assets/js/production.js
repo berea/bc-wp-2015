@@ -10800,6 +10800,7 @@ jQuery(document).ready(function($){
 		$('.cd-overlay').removeClass('is-visible');
 		toggleSearch('close');
 		$('#ribbon').removeClass('mini-ribbon');
+		$('#ribbon').show();
 
   		var desktop = checkWindowWidth();
         if ( desktop ) {
