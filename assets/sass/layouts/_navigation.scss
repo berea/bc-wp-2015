@@ -621,7 +621,7 @@ Main components
 		.cd-secondary-nav, .cd-nav-gallery, .cd-nav-icons {
 			/* dropdown menu style */
 			position: absolute;
-			top: $header-height-L;
+			top: $header-height-L !important;
 			max-width: 1024px;
 			background: $color-4;
 			padding: 48px 64px 85px;

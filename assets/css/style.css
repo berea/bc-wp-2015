@@ -1572,7 +1572,7 @@ Main components
     .cd-primary-nav .cd-secondary-nav, .cd-primary-nav .cd-nav-gallery, .cd-primary-nav .cd-nav-icons {
       /* dropdown menu style */
       position: absolute;
-      top: 80px;
+      top: 80px !important;
       max-width: 1024px;
       background: #ffffff;
       padding: 48px 64px 85px;
