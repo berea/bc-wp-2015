@@ -423,7 +423,8 @@ Main components
 
 	.see-all a {
 		/* different style for the See all button on mobile and tablet */
-		color: $bc-orange;
+		color: $bc-blue !important;
+		font-weight: bold;
 		background: $bc-white;
 	}
 	
@@ -438,7 +439,10 @@ Main components
             font-family: $opensans-condensed;
 			overflow: hidden;
 			text-overflow: ellipsis;
-			margin-top:13px;
+			padding-top:13px;
+			margin-top:0px;
+			margin-bottom:0px;
+			
 	    }
 	}
 	
@@ -844,7 +848,7 @@ Main components
 		display: inline-block;
 		height: 2px;
 		width: 10px;
-		background: lighten($color-1, 10%);
+		background: $bc-blue;
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
 	}
@@ -880,6 +884,9 @@ Main components
 
 .cd-primary-nav .go-back a {
 	padding-left: 40px;
+	color: $bc-blue !important;
+	border-bottom-color:$bc-white;
+	background-color:$bc-lightblue;
 
 	&::before, &::after {
 		/* arrow goes on the left side - go back button */
