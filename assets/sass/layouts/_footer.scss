@@ -121,7 +121,7 @@ footer {
         }
 		@include MQ(M) {
 		  	h3 {
-			  	text-align: center;
+			  	text-align: left;
 			}
 		}
 	}
@@ -174,9 +174,9 @@ footer {
         width: 25%;
       }
 	}
-
+  
 	.footer-maps {
-	  width: 300px;
+	  width: 100%;
 	  margin-top: 0px;
 	  margin-right: auto;
 	  margin-bottom: 20px;
@@ -208,60 +208,60 @@ footer {
         width: 100%;
       }
 
-	  @include MQ(S) {
-		display: block;
-		float: left;
-		width: 100%;
-		padding: 5px;
-		margin: 0px;
-
-        h3 {
-          padding-top: 0px;
-        }
-
-        #topleft {
-          width: 30%;
-          float: left;
-        }
-
-        #bottomright {
-          width: 70%;
-          float: right;
-        }
-
-        #gmap_container {
-          //overflow: hidden;
-
-          #gmap_canvas {
-
-            img {
-              max-width: none !important;
-              background: none !important;
-            }
-
-            @include MQ(M) {
-              height: 210px;
-              width: 210px;
-            }
-          }
-        }
-
-        #gmap_links_undermap {
-          display: none;
-          margin-top: 20px;
-          margin-bottom: 20px;
-          font-weight: 700;
-        }
-
-        #gmap_links_leftside {
-          display: block;
-        }
-
-        #berea_logo_leftside {
-          display: block;
-        }
-
-      }
+      //@include MQ(S) {
+		//display: block;
+		//float: left;
+		//width: 100%;
+		//padding: 5px;
+		//margin: 0px;
+      //
+      //  h3 {
+      //    padding-top: 0px;
+      //  }
+      //
+      //  #topleft {
+      //    width: 30%;
+      //    float: left;
+      //  }
+      //
+      //  #bottomright {
+      //    width: 70%;
+      //    float: right;
+      //  }
+      //
+      //  #gmap_container {
+      //    //overflow: hidden;
+      //
+      //    #gmap_canvas {
+      //
+      //      img {
+      //        max-width: none !important;
+      //        background: none !important;
+      //      }
+      //
+      //      @include MQ(M) {
+      //        height: 210px;
+      //        width: 210px;
+      //      }
+      //    }
+      //  }
+      //
+      //  #gmap_links_undermap {
+      //    display: none;
+      //    margin-top: 20px;
+      //    margin-bottom: 20px;
+      //    font-weight: 700;
+      //  }
+      //
+      //  #gmap_links_leftside {
+      //    display: block;
+      //  }
+      //
+      //  #berea_logo_leftside {
+      //    display: block;
+      //  }
+      //
+      //}
 
       @include MQ(M) {
 
@@ -312,9 +312,6 @@ footer {
           margin-bottom: 20px;
           font-weight: 700;
         }
-
-
-
 
       }
 
