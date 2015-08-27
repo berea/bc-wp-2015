@@ -193,7 +193,7 @@ $fg-gutter: $gutter;
     background-color: $bc-white;
     padding: 20px;
     padding-top:0px;
-    
+
 	@include MQ(M) {
 	  position: absolute;
 	  margin:0px;
@@ -203,8 +203,24 @@ $fg-gutter: $gutter;
 	  width:100%;
 	  background-color: transparent;
 	}
+
   }
-  
+
+  .slider-textblock-without-blogname {
+    display: none;
+
+    @include MQ(M) {
+      display: block;
+      position: absolute;
+      margin: 0px;
+      margin-top: 0px;
+      bottom: 180px;
+      right: 0px;
+      width: 100%;
+      background-color: transparent;
+    }
+  }
+
   .slider-breadcrumbs {
 	display:none;
 
@@ -394,6 +410,13 @@ $fg-gutter: $gutter;
 	@include MQ(M) {
 	  bottom:60px;
 	}
+  }
+
+  .slider-textblock-without-blogname {
+    margin-top:-30px;
+    @include MQ(M) {
+      bottom:80px;
+    }
   }
 
 }
