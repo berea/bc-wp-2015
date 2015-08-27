@@ -2564,6 +2564,8 @@ footer {
         padding: 5px; } }
     @media only screen and (min-width: 769px) {
       footer .footer-about {
+        padding-left: 20px;
+        padding-right: -20px;
         width: 25%; } }
   footer .footer-distinctly {
     display: none; }
