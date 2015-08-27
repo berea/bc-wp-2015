@@ -2212,6 +2212,12 @@ Main components
   }
 }
 
+body.search-is-visible .cd-overlay.is-visible {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
 .admin-bar .cd-overlay {
   top: 32px;
 }

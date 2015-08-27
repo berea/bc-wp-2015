@@ -1052,6 +1052,10 @@ Main components
 	}
 }
 
+body.search-is-visible .cd-overlay.is-visible {
+	@include transform(translateX(0));
+}
+
 .admin-bar .cd-overlay {
 	top: 32px;
 	@include MQ(WPA) {
