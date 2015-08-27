@@ -1591,6 +1591,17 @@ Main components
   opacity: 0;
 }
 
+.admin-bar .cd-primary-nav,
+.admin-bar .cd-primary-nav ul {
+  top: 32px;
+}
+@media only screen and (max-width: 782px) {
+  .admin-bar .cd-primary-nav,
+  .admin-bar .cd-primary-nav ul {
+    top: 46px;
+  }
+}
+
 @media only screen and (max-width: 1170px) {
   .nav-on-left .cd-primary-nav, .nav-on-left .cd-primary-nav ul {
     right: auto;
@@ -2198,6 +2209,15 @@ Main components
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
+  }
+}
+
+.admin-bar .cd-overlay {
+  top: 32px;
+}
+@media only screen and (max-width: 782px) {
+  .admin-bar .cd-overlay {
+    top: 46px;
   }
 }
 

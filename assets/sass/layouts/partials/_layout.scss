@@ -3,7 +3,10 @@
 $S:     481px;
 $M:     769px;
 $L:     1171px;
-$maxL:    $L - 1px;     
+$maxL:    $L - 1px;    
+
+//match the wordpress admin bar breakpoint
+$WPA:   782px;
 
 // media queries
 
@@ -19,6 +22,9 @@ $maxL:    $L - 1px;
   }
   @else if $canvas == maxL {
    @media only screen and (max-width: $maxL) { @content; } 
+  }
+  @else if $canvas == WPA {
+   @media only screen and (max-width: $WPA) { @content; } 
   }
 }
 

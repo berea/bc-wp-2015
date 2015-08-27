@@ -400,6 +400,15 @@ Main components
 	}
 }
 
+.admin-bar .cd-primary-nav, 
+.admin-bar .cd-primary-nav ul  {
+	top: 32px;
+	@include MQ(WPA) {
+	  top: 46px;
+	}
+}
+
+
 @include MQ(maxL) {
 	.nav-on-left .cd-primary-nav, .nav-on-left .cd-primary-nav ul {
 		right: auto;
@@ -1040,6 +1049,13 @@ Main components
 		&.is-visible.search-is-visible, .nav-on-left &.is-visible.search-is-visible {
 			@include transform(translateX(0));
 		}
+	}
+}
+
+.admin-bar .cd-overlay {
+	top: 32px;
+	@include MQ(WPA) {
+	  top: 46px;
 	}
 }
 
