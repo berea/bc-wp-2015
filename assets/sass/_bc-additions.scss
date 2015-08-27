@@ -100,13 +100,13 @@ $fg-gutter: $gutter;
 
 
 .mini-ribbon {
-  background: url("../images/bc-ribbon-flat.png");
+  background: url("../images/bc-ribbon-flat.png") !important;
   background-repeat: no-repeat;
   width: 228px;
-  height: 50px;
+  height: 50px !important;
 
   @include MQ(L) {
-    height: 80px;
+    height: 80px !important;
   }
 
   div#logo {
@@ -116,10 +116,10 @@ $fg-gutter: $gutter;
     margin-top: 5px;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 45px;
+    height: 40px;
 
     @include MQ(L) {
-      height: 75px;
+      height: 65px;
     }
   }
 }
@@ -131,7 +131,6 @@ $fg-gutter: $gutter;
     margin-top: 84px;
   }
 }
-
 
 
 .hero-nav-wrapper {
