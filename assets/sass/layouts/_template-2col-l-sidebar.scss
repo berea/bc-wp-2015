@@ -1,4 +1,6 @@
 // 2col Left Sidebar
+.apply-2col-left-sidebar,
+.page-template-template-news,
 .page-template-page-templatestemplate-left-col-php {
 
 	h1.entry-title {
@@ -7,23 +9,47 @@
 	}
 	#primary {
 		float: right !important;
+		margin-right: 0px !important;
 		@include media($sm) {
 			@include span-columns(4);
 		}
 		@include media($md) {
 			@include span-columns(4);
+			margin-right: 1.6% !important;
 		}
+        @include MQ(L) {
+		    margin-right: 20px !important;
+        }
+	}
+	#main {
+	    padding-left:20px !important;
+	    padding-right:20px !important;
 	}
 	#secondary {
-
+		position:relative;
+		z-index:1;
 		float: left !important;
-		margin-right: 1.5%;
+		margin-top: 20px !important;
+		margin-left: 0px !important;
+		margin-bottom: 0px !important;
+		padding-right: 0px !important;
+		background: none;
 		@include media($sm) {
 			@include span-columns(4);
 		}
 		@include media($md) {
 			@include span-columns(2);
+		    margin-top: -60px !important;
+			padding-right: 20px !important;
+			margin-left: 1.6% !important;
 		}
+        @include MQ(L) {
+			margin-left: 20px !important;
+        }
+	}
+	#secondary-inner {
+		padding:20px;
+		background-color:$bc-white;
 	}
 	footer {
 		clear: both;

@@ -1,4 +1,5 @@
 // 2col Right Sidebar
+.apply-2col-right-sidebar, 
 .page-template-page-templatestemplate-right-col-php {
 
 	h1.entry-title {
@@ -7,34 +8,45 @@
 	}
 
 	#primary {
-		@include MQ(S) {
-			float: left !important;
-			@include MQ(S) {
-				@include span-columns(4);
-			}
-			@include MQ(S) {
-				@include span-columns(4);
-			}
+		float: left !important;
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+		@include media($sm) {
+			@include span-columns(4);
 		}
-		@include MQ(M) {
-
+		@include media($md) {
+			@include span-columns(4);
+			margin-left: 1.6% !important;
 		}
+        @include MQ(L) {
+		    margin-left: 20px !important;
+        }
 	}
+	
 	#secondary {
-
-
-		@include MQ(S) {
-
+		position:relative;
+		z-index:1;
+		float: right !important;
+		margin-top: 20px !important;
+		margin-right: 0px !important;
+		margin-bottom: 0px !important;
+		padding-left: 0px !important;
+		background: none;
+		@include media($sm) {
+			@include span-columns(4);
 		}
-		@include MQ(M) {
-			float: right !important;
-			margin-right: 1.5%;
-			@include MQ(S) {
-				@include span-columns(4);
-			}
-			@include MQ(M) {
-				@include span-columns(2);
-			}
+		@include media($md) {
+			@include span-columns(2);
+		    margin-top: -60px !important;
+			padding-left: 20px !important;
+			margin-right: 1.6% !important;
 		}
+        @include MQ(L) {
+			margin-right: 20px !important;
+        }
+	}
+	#secondary-inner {
+		padding:20px;
+		background-color:$bc-white;
 	}
 }
