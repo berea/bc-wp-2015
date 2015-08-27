@@ -2319,6 +2319,49 @@ h3.cd-news-title {
     white-space: normal;
   }
 }
+.cd-item-as-button {
+  text-align: center;
+  display: block;
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+  background-color: #C75B12 !important;
+  color: #FFFFFF !important;
+  font-weight: bold;
+}
+@media only screen and (min-width: 1171px) {
+  .cd-item-as-button {
+    padding-left: 30px;
+    padding-right: 0px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.button-green {
+  background-color: #5f9902 !important;
+}
+
+.button-blue {
+  background-color: #2983a6 !important;
+}
+
+.button-purple {
+  background-color: #82a2c1 !important;
+}
+
+#admissions-apply-button,
+#admissions-eligible-button,
+#admissions-visit-button {
+  height: auto;
+  color: #FFFFFF !important;
+  line-height: 1em !important;
+  font-weight: bold;
+  border-bottom: none;
+}
+
 /*--------------------------------------------------------------
 6.3 Content
 --------------------------------------------------------------*/
@@ -2501,20 +2544,17 @@ object {
 6.4 Page Templates
 --------------------------------------------------------------*/
 .apply-2col-left-sidebar h1.entry-title,
-.page-template-template-news h1.entry-title,
 .page-template-page-templatestemplate-left-col-php h1.entry-title {
   margin: 0;
   text-align: left;
 }
 .apply-2col-left-sidebar #primary,
-.page-template-template-news #primary,
 .page-template-page-templatestemplate-left-col-php #primary {
   float: right !important;
   margin-right: 0px !important;
 }
 @media screen and (min-width: 200px) {
   .apply-2col-left-sidebar #primary,
-  .page-template-template-news #primary,
   .page-template-page-templatestemplate-left-col-php #primary {
     float: left;
     display: block;
@@ -2522,14 +2562,12 @@ object {
     width: 100%;
   }
   .apply-2col-left-sidebar #primary:last-child,
-  .page-template-template-news #primary:last-child,
   .page-template-page-templatestemplate-left-col-php #primary:last-child {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 769px) {
   .apply-2col-left-sidebar #primary,
-  .page-template-template-news #primary,
   .page-template-page-templatestemplate-left-col-php #primary {
     float: left;
     display: block;
@@ -2538,26 +2576,22 @@ object {
     margin-right: 1.6% !important;
   }
   .apply-2col-left-sidebar #primary:last-child,
-  .page-template-template-news #primary:last-child,
   .page-template-page-templatestemplate-left-col-php #primary:last-child {
     margin-right: 0;
   }
 }
 @media only screen and (min-width: 1171px) {
   .apply-2col-left-sidebar #primary,
-  .page-template-template-news #primary,
   .page-template-page-templatestemplate-left-col-php #primary {
     margin-right: 20px !important;
   }
 }
 .apply-2col-left-sidebar #main,
-.page-template-template-news #main,
 .page-template-page-templatestemplate-left-col-php #main {
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
 .apply-2col-left-sidebar #secondary,
-.page-template-template-news #secondary,
 .page-template-page-templatestemplate-left-col-php #secondary {
   position: relative;
   z-index: 1;
@@ -2570,7 +2604,6 @@ object {
 }
 @media screen and (min-width: 200px) {
   .apply-2col-left-sidebar #secondary,
-  .page-template-template-news #secondary,
   .page-template-page-templatestemplate-left-col-php #secondary {
     float: left;
     display: block;
@@ -2578,14 +2611,12 @@ object {
     width: 100%;
   }
   .apply-2col-left-sidebar #secondary:last-child,
-  .page-template-template-news #secondary:last-child,
   .page-template-page-templatestemplate-left-col-php #secondary:last-child {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 769px) {
   .apply-2col-left-sidebar #secondary,
-  .page-template-template-news #secondary,
   .page-template-page-templatestemplate-left-col-php #secondary {
     float: left;
     display: block;
@@ -2596,37 +2627,35 @@ object {
     margin-left: 1.6% !important;
   }
   .apply-2col-left-sidebar #secondary:last-child,
-  .page-template-template-news #secondary:last-child,
   .page-template-page-templatestemplate-left-col-php #secondary:last-child {
     margin-right: 0;
   }
 }
 @media only screen and (min-width: 1171px) {
   .apply-2col-left-sidebar #secondary,
-  .page-template-template-news #secondary,
   .page-template-page-templatestemplate-left-col-php #secondary {
     margin-left: 20px !important;
   }
 }
 .apply-2col-left-sidebar #secondary-inner,
-.page-template-template-news #secondary-inner,
 .page-template-page-templatestemplate-left-col-php #secondary-inner {
   padding: 20px;
   background-color: #FFFFFF;
 }
 .apply-2col-left-sidebar footer,
-.page-template-template-news footer,
 .page-template-page-templatestemplate-left-col-php footer {
   clear: both;
   display: table;
 }
 
 .apply-2col-right-sidebar h1.entry-title,
+.page-template-template-news h1.entry-title,
 .page-template-page-templatestemplate-right-col-php h1.entry-title {
   margin: 0;
   text-align: left;
 }
 .apply-2col-right-sidebar #primary,
+.page-template-template-news #primary,
 .page-template-page-templatestemplate-right-col-php #primary {
   float: left !important;
   margin-left: 0px !important;
@@ -2634,6 +2663,7 @@ object {
 }
 @media screen and (min-width: 200px) {
   .apply-2col-right-sidebar #primary,
+  .page-template-template-news #primary,
   .page-template-page-templatestemplate-right-col-php #primary {
     float: left;
     display: block;
@@ -2641,12 +2671,14 @@ object {
     width: 100%;
   }
   .apply-2col-right-sidebar #primary:last-child,
+  .page-template-template-news #primary:last-child,
   .page-template-page-templatestemplate-right-col-php #primary:last-child {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 769px) {
   .apply-2col-right-sidebar #primary,
+  .page-template-template-news #primary,
   .page-template-page-templatestemplate-right-col-php #primary {
     float: left;
     display: block;
@@ -2655,17 +2687,20 @@ object {
     margin-left: 1.6% !important;
   }
   .apply-2col-right-sidebar #primary:last-child,
+  .page-template-template-news #primary:last-child,
   .page-template-page-templatestemplate-right-col-php #primary:last-child {
     margin-right: 0;
   }
 }
 @media only screen and (min-width: 1171px) {
   .apply-2col-right-sidebar #primary,
+  .page-template-template-news #primary,
   .page-template-page-templatestemplate-right-col-php #primary {
     margin-left: 20px !important;
   }
 }
 .apply-2col-right-sidebar #secondary,
+.page-template-template-news #secondary,
 .page-template-page-templatestemplate-right-col-php #secondary {
   position: relative;
   z-index: 1;
@@ -2678,6 +2713,7 @@ object {
 }
 @media screen and (min-width: 200px) {
   .apply-2col-right-sidebar #secondary,
+  .page-template-template-news #secondary,
   .page-template-page-templatestemplate-right-col-php #secondary {
     float: left;
     display: block;
@@ -2685,12 +2721,14 @@ object {
     width: 100%;
   }
   .apply-2col-right-sidebar #secondary:last-child,
+  .page-template-template-news #secondary:last-child,
   .page-template-page-templatestemplate-right-col-php #secondary:last-child {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 769px) {
   .apply-2col-right-sidebar #secondary,
+  .page-template-template-news #secondary,
   .page-template-page-templatestemplate-right-col-php #secondary {
     float: left;
     display: block;
@@ -2701,17 +2739,20 @@ object {
     margin-right: 1.6% !important;
   }
   .apply-2col-right-sidebar #secondary:last-child,
+  .page-template-template-news #secondary:last-child,
   .page-template-page-templatestemplate-right-col-php #secondary:last-child {
     margin-right: 0;
   }
 }
 @media only screen and (min-width: 1171px) {
   .apply-2col-right-sidebar #secondary,
+  .page-template-template-news #secondary,
   .page-template-page-templatestemplate-right-col-php #secondary {
     margin-right: 20px !important;
   }
 }
 .apply-2col-right-sidebar #secondary-inner,
+.page-template-template-news #secondary-inner,
 .page-template-page-templatestemplate-right-col-php #secondary-inner {
   padding: 20px;
   background-color: #FFFFFF;
@@ -3315,14 +3356,14 @@ input#s {
 }
 
 .mini-ribbon {
-  background: url("../images/bc-ribbon-flat.png");
+  background: url("../images/bc-ribbon-flat.png") !important;
   background-repeat: no-repeat;
   width: 228px;
-  height: 50px;
+  height: 50px !important;
 }
 @media only screen and (min-width: 1171px) {
   .mini-ribbon {
-    height: 80px;
+    height: 80px !important;
   }
 }
 .mini-ribbon div#logo {
@@ -3332,11 +3373,11 @@ input#s {
   margin-top: 5px;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 45px;
+  height: 40px;
 }
 @media only screen and (min-width: 1171px) {
   .mini-ribbon div#logo {
-    height: 75px;
+    height: 65px;
   }
 }
 
