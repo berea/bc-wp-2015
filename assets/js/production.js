@@ -10644,7 +10644,8 @@ jQuery(document).ready(function($){
 	//mobile - open lateral menu clicking on the menu icon
 	$('.cd-nav-trigger').on('click', function(event){
 		event.preventDefault();
-		if( $('.cd-overlay').hasClass('is-visible') ) {
+
+		if( $('.cd-overlay').hasClass('is-visible') && !$('.cd-search').hasClass('is-visible') ) {
 			closeNav();
 		} else {
 			$(this).addClass('nav-is-visible');
