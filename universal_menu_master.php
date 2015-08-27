@@ -40,16 +40,14 @@
 						<li><a href="http://dev.berea.edu/subsite/">Submit and RFQ</a></li>
 					</ul>
 				</li>
-				<li class="has-children">
-					<a href="#">???</a>
-
-					<ul class="is-hidden">
-						<li class="go-back"><a href="#0">???</a></li>
-						<li><a href="http://dev.berea.edu/subsite//">APPLY TODAY</a></li>
-						<li><a href="http://dev.berea.edu/subsite/">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></li>
-						<li><a href="http://dev.berea.edu/subsite/">SCHEDULE A CAMPUS VISIT</a></li>
-					</ul>
+				<li class="has-children menu-item-show-on-large">
+					<div class="cd-item-as-button button-green"><a id="admissions-apply-button" href="http://dev.berea.edu/subsite/">APPLY TODAY</a></div>
+					<div class="cd-item-as-button button-blue"><a id="admissions-eligible-button" href="http://dev.berea.edu/subsite/">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></div>
+					<div class="cd-item-as-button button-purple"><a id="admissions-visit-button" href="http://dev.berea.edu/subsite/">SCHEDULE A CAMPUS VISIT</a></div>
 				</li>
+				<li class="cd-item-as-button menu-item-hide-on-large button-green"><a id="admissions-apply-button" href="http://dev.berea.edu/subsite/">APPLY TODAY</a></li>
+				<li class="cd-item-as-button menu-item-hide-on-large button-blue"><a id="admissions-eligible-button"href="http://dev.berea.edu/subsite/">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></li>
+				<li class="cd-item-as-button menu-item-hide-on-large button-purple"><a id="admissions-visit-button" href="http://dev.berea.edu/subsite/">SCHEDULE A CAMPUS VISIT</a></li>
 			</ul>
 		</li>
 
