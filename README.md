@@ -40,3 +40,18 @@ we will change this, but its documented here.
 
 ------
 
+
+
+
+
+## Notes about the 404 page ##
+
+To give Berea the ability to easily change 404 page content, the standard WordPress
+404 paradigm was changed slightly. 404.php looks for content from a page named "Page 
+Not Found" and inserts that on the page inside a user-entered-content wrapper, which 
+gives it the "typography" treatment.
+
+NB: The "Page Not Found" page needs to have "page-not-found" as its slug. This is 
+easy to mess up. All you need to do it initially create the page with the wrong title.
+To fix it, delete the page, empty the trash, and then recreate it with the correct
+name. 
