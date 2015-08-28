@@ -159,13 +159,23 @@ object {
 		a, a:visited {
 			border-bottom: solid 1px $primary-color;
 		}
+
+		.wpb_single_image a, a:visited {
+		  	border-bottom: 0;
+		}
 	}
 	.entry-meta {
 		a, a:visited {
 			border-bottom: solid 1px $primary-color;
 		}
 	}
+
+
 }
+
+
+
+
 
 
 
