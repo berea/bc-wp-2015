@@ -10610,6 +10610,9 @@ jQuery(document).ready(function($){
 
 	$(window).scroll(function(){
 
+
+		console.log("current v!");
+
 		var $o = $('<div class="cd-overlay shift-down"></div>').hide().appendTo('body');
 		var baseMargin = parseInt($o.css('marginTop'));
 		$o.remove();
@@ -10619,24 +10622,13 @@ jQuery(document).ready(function($){
 
 		var newMargin;
 
-
-		console.log("Base margin: " + baseMargin);
-		console.log("From top: " + fromTop);
-		console.log("Current margin: " + overlayTopMargin);
-
-
 		if (fromTop > baseMargin) {
-			console.log("   RULE 1");
 			newMargin = 0;
 		} else if (overlayTopMargin <= baseMargin-fromTop && fromTop < baseMargin) {
-			console.log("   RULE 2");
 			newMargin = baseMargin - fromTop;
 		} else {
-			console.log("   RULE 3");
 			newMargin = baseMargin - fromTop;
 		};
-
-		console.log("New margin: " + newMargin);
 
 		$('.cd-overlay').css('marginTop', newMargin + 'px');
 	});
