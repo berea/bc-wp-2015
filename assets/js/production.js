@@ -10748,9 +10748,7 @@ jQuery(document).ready(function($){
 			($('#cd-search').hasClass('is-visible')) ? $('.cd-overlay').addClass('is-visible') : $('.cd-overlay').removeClass('is-visible') ;
 		}
 	}
-
-
-    function toggleRibbon() {
+    function toggleRibbonAction() {
 		if ( $(document).innerWidth() >= 769 ) {
 			// main homepage + large media, swap between full & mini
 			if ( $('#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
@@ -10767,6 +10765,12 @@ jQuery(document).ready(function($){
 				$('#ribbon').show();
 			}
 		}
+    }
+    window._navigation_toggleRibbonAction=toggleRibbonAction;
+    
+    function toggleRibbon() {
+    	/* use settimeout to get off the main thread and let the cd-overlay become invisible because it impacts our logic */
+    	setTimeout('window._navigation_toggleRibbonAction()',50)
     }
 
 
