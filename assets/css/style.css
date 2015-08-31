@@ -2856,6 +2856,26 @@ input#s {
         background-position: top center;
         width: 228px;
         height: 265px; } }
+  .cd-header-ribbon.mini-ribbon {
+    background: url("../images/bc-ribbon-flat.png") !important;
+    background-repeat: no-repeat !important;
+    width: 228px !important;
+    height: 50px !important; }
+    @media only screen and (min-width: 1171px) {
+      .cd-header-ribbon.mini-ribbon {
+        height: 80px !important; } }
+    .cd-header-ribbon.mini-ribbon div#logo {
+      background: url("../images/bc-logo-stacked.svg") !important;
+      background-size: contain !important;
+      margin: auto !important;
+      margin-top: 5px !important;
+      background-repeat: no-repeat !important;
+      background-position: top center !important;
+      height: 40px !important; }
+      @media only screen and (min-width: 1171px) {
+        .cd-header-ribbon.mini-ribbon div#logo {
+          height: 65px !important;
+          background-repeat: no-repeat !important; } }
 
 @media only screen and (min-width: 769px) {
   .short-ribbon .cd-header-ribbon {
@@ -2873,26 +2893,6 @@ input#s {
     background-position: top center;
     width: 160px;
     height: 112px; } }
-
-.mini-ribbon {
-  background: url("../images/bc-ribbon-flat.png") !important;
-  background-repeat: no-repeat;
-  width: 228px;
-  height: 50px !important; }
-  @media only screen and (min-width: 1171px) {
-    .mini-ribbon {
-      height: 80px !important; } }
-  .mini-ribbon div#logo {
-    background: url("../images/bc-logo-stacked.svg") !important;
-    background-size: contain;
-    margin: auto;
-    margin-top: 5px;
-    background-repeat: no-repeat;
-    background-position: top center;
-    height: 40px; }
-    @media only screen and (min-width: 1171px) {
-      .mini-ribbon div#logo {
-        height: 65px; } }
 
 .shift-down {
   margin-top: 54px; }

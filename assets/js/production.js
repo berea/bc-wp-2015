@@ -10737,26 +10737,20 @@ jQuery(document).ready(function($){
 		}
 	}
     function toggleRibbonAction() {
-
-
-
 		if ( $(document).innerWidth() >= 769 ) {
 			// main homepage + large media, swap between full & mini
-			if ( $('#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
-				console.log("removing mini-ribbon class");
-				$('#ribbon').removeClass('mini-ribbon');
+			if ( $('div#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
+				$('div#ribbon').removeClass('mini-ribbon');
 			} else {
-				console.log("ADDING mini-ribbon class");
-				$('#ribbon').addClass('mini-ribbon');
-				$('body').addClass('foo-class');
+				$('div#ribbon').addClass('mini-ribbon');
 			}
 		} else {
-			if ( $('#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
-				$('#ribbon').removeClass('mini-ribbon');
+			if ( $('div#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
+				$('div#ribbon').removeClass('mini-ribbon');
 			} else if ( $('.cd-overlay').hasClass('is-visible') ) {
-				$('#ribbon').hide();
+				$('div#ribbon').hide();
 			} else {
-				$('#ribbon').show();
+				$('div#ribbon').show();
 			}
 		}
     }
@@ -10797,8 +10791,8 @@ jQuery(document).ready(function($){
         closeNav();
 		$('.cd-overlay').removeClass('is-visible');
 		toggleSearch('close');
-		$('#ribbon').removeClass('mini-ribbon');
-		$('#ribbon').show();
+		$('div#ribbon').removeClass('mini-ribbon');
+		$('div#ribbon').show();
 
   		var desktop = checkWindowWidth();
         if ( desktop ) {
