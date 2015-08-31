@@ -10737,9 +10737,6 @@ jQuery(document).ready(function($){
 		}
 	}
     function toggleRibbonAction() {
-
-
-
 		if ( $(document).innerWidth() >= 769 ) {
 			// main homepage + large media, swap between full & mini
 			if ( $('#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
