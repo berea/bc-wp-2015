@@ -10609,10 +10609,6 @@ jQuery(document).ready(function($){
 	});
 
 	$(window).scroll(function(){
-
-
-		console.log("current v!");
-
 		var $o = $('<div class="cd-overlay shift-down"></div>').hide().appendTo('body');
 		var baseMargin = parseInt($o.css('marginTop'));
 		$o.remove();
@@ -10741,6 +10737,9 @@ jQuery(document).ready(function($){
 		}
 	}
     function toggleRibbonAction() {
+
+        console.log("toggling ribbon");
+
 		if ( $(document).innerWidth() >= 769 ) {
 			// main homepage + large media, swap between full & mini
 			if ( $('#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
