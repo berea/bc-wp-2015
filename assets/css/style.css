@@ -2883,7 +2883,7 @@ input#s {
     .mini-ribbon {
       height: 80px !important; } }
   .mini-ribbon div#logo {
-    background: url("../images/bc-logo-stacked.svg");
+    background: url("../images/bc-logo-stacked.svg") !important;
     background-size: contain;
     margin: auto;
     margin-top: 5px;

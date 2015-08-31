@@ -110,7 +110,7 @@ $fg-gutter: $gutter;
   }
 
   div#logo {
-    background: url("../images/bc-logo-stacked.svg");
+    background: url("../images/bc-logo-stacked.svg") !important;
     background-size: contain;
     margin: auto;
     margin-top: 5px;
@@ -529,7 +529,6 @@ $fg-gutter: $gutter;
   }
 
 }
-
 
 
 /* For news template in child theme 1 */
