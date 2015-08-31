@@ -10748,6 +10748,7 @@ jQuery(document).ready(function($){
 			} else {
 				console.log("ADDING mini-ribbon class");
 				$('#ribbon').addClass('mini-ribbon');
+				$('body').addClass('foo-class');
 			}
 		} else {
 			if ( $('#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
