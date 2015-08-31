@@ -10738,13 +10738,15 @@ jQuery(document).ready(function($){
 	}
     function toggleRibbonAction() {
 
-        console.log("toggling ribbon");
+
 
 		if ( $(document).innerWidth() >= 769 ) {
 			// main homepage + large media, swap between full & mini
 			if ( $('#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
+				console.log("removing mini-ribbon class");
 				$('#ribbon').removeClass('mini-ribbon');
 			} else {
+				console.log("ADDING mini-ribbon class");
 				$('#ribbon').addClass('mini-ribbon');
 			}
 		} else {
