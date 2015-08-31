@@ -147,20 +147,22 @@ if ( !function_exists('berea_scripts') ) :
 
 	function berea_scripts() {
 
-		if ( SCRIPT_DEBUG || WP_DEBUG ) :
+		/* temporaryily enforcing unminified version
+		#TODO: allow script debug after minify workflow is resolved */
+		if ( TRUE || SCRIPT_DEBUG || WP_DEBUG ) :
 
 			// Concatonated Scripts
 			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production.js', array( 'jquery' ), '1.0.0', false );
 
 			// Main Style
-			wp_enqueue_style( 'berea-style',  get_stylesheet_directory_uri() . '/assets/css/style.css' );
+			wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style.css' );
 
 		else :
 			// Concatonated Scripts
 			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production-min.js', array( 'jquery' ), '1.0.0', false );
 
 			// Main Style
-			wp_enqueue_style( 'berea-style',  get_stylesheet_directory_uri() . '/assets/css/style-min.css' );
+			wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-min.css' );
 
 		endif;
 
