@@ -2216,13 +2216,6 @@ object {
 .infinity-end.neverending .site-footer {
   display: block; }
 
-#content .entry-content a, #content .entry-content a:visited {
-  border-bottom: solid 1px #ff0000; }
-#content .entry-content .wpb_single_image a, #content .entry-content a:visited {
-  border-bottom: 0; }
-#content .entry-meta a, #content .entry-meta a:visited {
-  border-bottom: solid 1px #ff0000; }
-
 /*--------------------------------------------------------------
 6.4 Page Templates
 --------------------------------------------------------------*/
