@@ -61,7 +61,9 @@
 #breadcrumbs {
 	@include fontSize(14px);
 	font-family: $content;
-	padding: 20px 0 20px 50px;
+  	font-weight: 700;
+	padding: 20px 0 0px 50px;
+  	margin-bottom: 0px;
   
 }
 /* =Media

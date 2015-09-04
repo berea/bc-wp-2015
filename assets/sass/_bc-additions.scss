@@ -232,11 +232,18 @@ $fg-gutter: $gutter;
 	  display:block;
 	  text-align: right;
 	  color: $bc-white;
-	  margin-right:auto;
+	  margin-right: 0px;
 	  margin-left:auto;
 	  width:90%;
     }
+
+    #breadcrumbs .breadcrumb_last:only-child {
+      display: none;
+    }
+
   }
+
+
 
   h1 {
     font-family: $opensans-condensed;
@@ -248,7 +255,7 @@ $fg-gutter: $gutter;
     padding-top: 20px;
     padding-bottom: 10px;
     margin-top: 5px;
-    margin-right: auto;
+    margin-right: 0px;
     margin-bottom: 15px;
     margin-left: auto;
     width: 90%;
