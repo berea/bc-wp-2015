@@ -10609,6 +10609,7 @@ jQuery(document).ready(function($){
 	});
 
 	$(window).scroll(function(){
+
 		var $o = $('<div class="cd-overlay shift-down"></div>').hide().appendTo('body');
 		var baseMargin = parseInt($o.css('marginTop'));
 		$o.remove();
@@ -10618,13 +10619,24 @@ jQuery(document).ready(function($){
 
 		var newMargin;
 
+
+		console.log("Base margin: " + baseMargin);
+		console.log("From top: " + fromTop);
+		console.log("Current margin: " + overlayTopMargin);
+
+
 		if (fromTop > baseMargin) {
+			console.log("   RULE 1");
 			newMargin = 0;
 		} else if (overlayTopMargin <= baseMargin-fromTop && fromTop < baseMargin) {
+			console.log("   RULE 2");
 			newMargin = baseMargin - fromTop;
 		} else {
+			console.log("   RULE 3");
 			newMargin = baseMargin - fromTop;
 		};
+
+		console.log("New margin: " + newMargin);
 
 		$('.cd-overlay').css('marginTop', newMargin + 'px');
 	});
@@ -10736,29 +10748,25 @@ jQuery(document).ready(function($){
 			($('#cd-search').hasClass('is-visible')) ? $('.cd-overlay').addClass('is-visible') : $('.cd-overlay').removeClass('is-visible') ;
 		}
 	}
-    function toggleRibbonAction() {
+
+
+    function toggleRibbon() {
 		if ( $(document).innerWidth() >= 769 ) {
 			// main homepage + large media, swap between full & mini
-			if ( $('div#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
-				$('div#ribbon').removeClass('mini-ribbon');
+			if ( $('#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
+				$('#ribbon').removeClass('mini-ribbon');
 			} else {
-				$('div#ribbon').addClass('mini-ribbon');
+				$('#ribbon').addClass('mini-ribbon');
 			}
 		} else {
-			if ( $('div#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
-				$('div#ribbon').removeClass('mini-ribbon');
+			if ( $('#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
+				$('#ribbon').removeClass('mini-ribbon');
 			} else if ( $('.cd-overlay').hasClass('is-visible') ) {
-				$('div#ribbon').hide();
+				$('#ribbon').hide();
 			} else {
-				$('div#ribbon').show();
+				$('#ribbon').show();
 			}
 		}
-    }
-    window._navigation_toggleRibbonAction=toggleRibbonAction;
-    
-    function toggleRibbon() {
-    	/* use settimeout to get off the main thread and let the cd-overlay become invisible because it impacts our logic */
-    	setTimeout('window._navigation_toggleRibbonAction()',50)
     }
 
 
@@ -10791,8 +10799,8 @@ jQuery(document).ready(function($){
         closeNav();
 		$('.cd-overlay').removeClass('is-visible');
 		toggleSearch('close');
-		$('div#ribbon').removeClass('mini-ribbon');
-		$('div#ribbon').show();
+		$('#ribbon').removeClass('mini-ribbon');
+		$('#ribbon').show();
 
   		var desktop = checkWindowWidth();
         if ( desktop ) {

@@ -71,6 +71,37 @@ $fg-gutter: $gutter;
       height: 265px;
     }
   }
+
+
+  &.mini-ribbon {
+    background: url("../images/bc-ribbon-flat.png") !important;
+    background-repeat: no-repeat !important;
+    width: 228px !important;
+    height: 50px !important;
+
+    @include MQ(L) {
+      height: 80px !important;
+    }
+
+    div#logo {
+      background: url("../images/bc-logo-stacked.svg") !important;
+      background-size: contain !important;
+      margin: auto !important;
+      margin-top: 5px !important;
+      background-repeat: no-repeat !important;
+      background-position: top center !important;
+      height: 40px !important;
+
+      @include MQ(L) {
+        height: 65px !important;
+        background-repeat: no-repeat !important;
+      }
+    }
+  }
+
+
+
+
 }
 
 .short-ribbon {
@@ -94,32 +125,6 @@ $fg-gutter: $gutter;
       // originally 114x80
 	  width: 160px;
 	  height: 112px;
-    }
-  }
-}
-
-
-.mini-ribbon {
-  background: url("../images/bc-ribbon-flat.png") !important;
-  background-repeat: no-repeat;
-  width: 228px;
-  height: 50px !important;
-
-  @include MQ(L) {
-    height: 80px !important;
-  }
-
-  div#logo {
-    background: url("../images/bc-logo-stacked.svg");
-    background-size: contain;
-    margin: auto;
-    margin-top: 5px;
-    background-repeat: no-repeat;
-    background-position: top center;
-    height: 40px;
-
-    @include MQ(L) {
-      height: 65px;
     }
   }
 }
@@ -531,7 +536,6 @@ $fg-gutter: $gutter;
 }
 
 
-
 /* For news template in child theme 1 */
 
 #news-list {
@@ -540,11 +544,3 @@ $fg-gutter: $gutter;
     text-decoration: none;
   }
 }
-
-#slider-breadcrumbs {
-    a:link, a:hover, a:visited {
-      text-decoration: none;
-    }
-}
-
-

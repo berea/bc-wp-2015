@@ -621,7 +621,7 @@ Main components
 		.cd-secondary-nav, .cd-nav-gallery, .cd-nav-icons {
 			/* dropdown menu style */
 			position: absolute;
-			top: $header-height-L;
+			top: $header-height-L !important;
 			max-width: 1024px;
 			background: $color-4;
 			padding: 48px 64px 85px;
@@ -1155,4 +1155,48 @@ h3.cd-news-title {
 	text-overflow: ellipsis;
 	white-space: normal;
   }
+}
+
+.cd-item-as-button {
+	text-align:center;
+	display:block;
+	width:auto;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	margin: 20px;
+	background-color:$bc-orange !important;
+	color: $bc-white !important;
+	font-weight: bold;
+
+	@include MQ(L) {
+		// padding is offset to better center the text
+		padding-left:30px;
+		padding-right:0px;
+		margin-top: 10px;
+		margin-left: 0px;
+		margin-right:0px;
+	}
+}
+
+
+.button-green { 
+	background-color: $bc-buttongreen !important; 
+}
+.button-blue { 
+	background-color: $bc-buttonblue !important;
+}
+.button-purple { 
+	background-color: $bc-buttonpurple !important; 
+}
+//had to go to the id lebvel to get past the cascade!
+#admissions-apply-button,
+#admissions-eligible-button,
+#admissions-visit-button {
+	height:auto;
+	color: $bc-white !important;
+	line-height: 1.0em!important;
+	font-weight: bold;
+	border-bottom:none;
 }
