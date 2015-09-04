@@ -62,10 +62,7 @@
 	@include fontSize(14px);
 	font-family: $content;
 	padding: 20px 0 20px 50px;
-
-	a, a:visited {
-		border-bottom: solid 1px $primary-color;
-	}
+  
 }
 /* =Media
 ----------------------------------------------- */
