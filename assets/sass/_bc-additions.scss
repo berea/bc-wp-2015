@@ -541,4 +541,10 @@ $fg-gutter: $gutter;
   }
 }
 
+#slider-breadcrumbs {
+    a:link, a:hover, a:visited {
+      text-decoration: none;
+    }
+}
+
 
