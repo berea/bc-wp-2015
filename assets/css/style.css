@@ -2995,12 +2995,16 @@ input#s {
     .homepage-slider {
       text-align: right; } }
   .homepage-slider .slider-textblock {
-    position: relative;
-    margin: 20px;
-    margin-top: -60px;
     background-color: #FFFFFE;
-    padding: 20px;
-    padding-top: 0px; }
+    position: relative;
+    margin-top: -60px;
+    margin-right: 22px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; }
     @media only screen and (min-width: 769px) {
       .homepage-slider .slider-textblock {
         position: absolute;
@@ -3016,8 +3020,14 @@ input#s {
       .homepage-slider .slider-textblock-without-blogname {
         display: block;
         position: absolute;
-        margin: 0px;
         margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        padding-top: 0px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+        padding-left: 20px;
         bottom: 180px;
         right: 0px;
         width: 100%;
