@@ -412,9 +412,7 @@ $fg-gutter: $gutter;
 
 .homepage-slider-sizing-dept {
   width: 100%;
-  @include MQ(M) {
-    height: 192px;
-  }
+
   
   h1 {
     border-bottom:none;
