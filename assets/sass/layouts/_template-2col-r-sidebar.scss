@@ -4,46 +4,60 @@
 .page-template-page-templatestemplate-right-col-php {
 
 	h1.entry-title {
-		margin: 0;
-		text-align: left;
+	  font-size: 3em;
+	  margin: 0px 0px 15px 0px;
+	  font-weight: 700;
+	  font-style: Normal;
+	  font-family: $opensans;
+	  text-transform: uppercase;
+	  letter-spacing: -1px;
+	  color: $bc-orange;
+	  text-align: left;
+	}
+
+	#main {
+	  background-color: transparent;
+	  padding-left: 0px;
+	  padding-right: 0px;
+	  width: 1024px;
 	}
 
 	#primary {
+	  	background-color: $bc-white;
 		float: left !important;
+	  	padding: 20px 50px;
+	  	margin: 0px;
 		margin-left: 0px !important;
 		margin-right: 0px !important;
 		@include media($sm) {
 			@include span-columns(4);
 		}
 		@include media($md) {
-			@include span-columns(4);
-			margin-left: 1.6% !important;
+			@include span-columns(6);
 		}
         @include MQ(L) {
-		    margin-left: 20px !important;
+		  	@include span-columns(9);
         }
 	}
 	
 	#secondary {
-		position:relative;
-		z-index:1;
-		float: right !important;
-		margin-top: 20px !important;
-		margin-right: 0px !important;
-		margin-bottom: 0px !important;
-		padding-left: 0px !important;
-		background: none;
-		@include media($sm) {
-			@include span-columns(4);
-		}
-		@include media($md) {
-			@include span-columns(2);
-		    margin-top: -60px !important;
-			padding-left: 20px !important;
-			margin-right: 1.6% !important;
-		}
+	  	display: none !important;
+
         @include MQ(L) {
-			margin-right: 20px !important;
+		  @include span-columns(3);
+		  margin-top: 0px !important;
+		  margin-right: 0px !important;
+		  margin-left: 20px !important;
+
+		  padding-right: 0px !important;
+		  padding-left: 0px !important;
+
+		  display: block !important;
+		  position:relative;
+		  z-index:1;
+		  float: right !important;
+		  margin-bottom: 0px !important;
+		  background: none;
         }
 	}
 	#secondary-inner {
