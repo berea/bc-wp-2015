@@ -315,7 +315,7 @@ function berea_has_default_menu()
 	 return ($menu_items) ? true : false;
 }
 
-function berea_get_default_menu($for_mobile=false)
+function berea_get_default_menu($for_mobile=false, $comprehensive=false)
 {
 
 	$args = array(
@@ -341,39 +341,57 @@ function berea_get_default_menu($for_mobile=false)
 
 	foreach ($menu_items as $menu_item) {
 
-		// Increment item counter, because we just got a new item.
-		$item++;
+		if ($comprehensive) {
 
-		// Check for new column. This is signified by $menu_item->menu_item_parent = 0.
-		// If it's a new one, increment $column and reset $item.
-		if ($menu_item->menu_item_parent == 0) {
-			$column++;
-			$item = 0;
-		}
-		if ($column < $column_limit) {
-			// This is a column we should display.
+			if ($menu_item->menu_item_parent == 0) {
+				$column++;
+			}
 
-			if ($item < $item_limit) {
-				// Less than item max, display it.
-				//$output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->ID . ': ' . $menu_item->title . ', parent: ' . $menu_item->menu_item_parent . "</a>";
-				if ($for_mobile) {
-					//will depend on exact sequence to get to class="" for injecting things - so don't move it
-					$url=($menu_item->menu_item_parent == 0) ? '#' : $menu_item->url ;
-                	$output[$column][] = '<a href="' . $url . '">' . $menu_item->title . "</a>";
-				} else {
-                	$output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->title . "</a>";
-                }
-
+			// show all menu items, without limit on columns or item count
+			if ($for_mobile) {
+				//will depend on exact sequence to get to class="" for injecting things - so don't move it
+				$url = ($menu_item->menu_item_parent == 0) ? '#' : $menu_item->url;
+				$output[$column][] = '<a href="' . $url . '">' . $menu_item->title . "</a>";
 			} else {
-				// Greater than item_max, don't display it.
-
+				$output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->title . "</a>";
 			}
 
 		} else {
-			// This is not a column we should display.
 
+
+			// Increment item counter, because we just got a new item.
+			$item++;
+
+			// Check for new column. This is signified by $menu_item->menu_item_parent = 0.
+			// If it's a new one, increment $column and reset $item.
+			if ($menu_item->menu_item_parent == 0) {
+				$column++;
+				$item = 0;
+			}
+			if ($column < $column_limit) {
+				// This is a column we should display.
+
+				if ($item < $item_limit) {
+					// Less than item max, display it.
+					//$output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->ID . ': ' . $menu_item->title . ', parent: ' . $menu_item->menu_item_parent . "</a>";
+					if ($for_mobile) {
+						//will depend on exact sequence to get to class="" for injecting things - so don't move it
+						$url = ($menu_item->menu_item_parent == 0) ? '#' : $menu_item->url;
+						$output[$column][] = '<a href="' . $url . '">' . $menu_item->title . "</a>";
+					} else {
+						$output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->title . "</a>";
+					}
+
+				} else {
+					// Greater than item_max, don't display it.
+
+				}
+
+			} else {
+				// This is not a column we should display.
+
+			}
 		}
-
 	}
 
 
