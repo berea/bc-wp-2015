@@ -420,11 +420,15 @@ function berea_get_secondary_slider() {
     $child_slider = get_stylesheet_directory() . '/page-templates/partials/secondary_slider.php';
 
     if ( file_exists($child_slider) ) {
+		echo "<!-- Secondary Slider: using child slider -->\n";
         include($child_slider);
     }
     else {
+		echo "<!-- Secondary Slider: falling back to parent slider -->\n";
         include($parent_slider);
     }
+
+	echo "<!-- Secondary Slider: end of function -->\n";
 
 }
 
