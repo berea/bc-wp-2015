@@ -419,6 +419,9 @@ function berea_get_secondary_slider() {
     $parent_slider = get_template_directory() . '/page-templates/partials/secondary_slider.php';
     $child_slider = get_stylesheet_directory() . '/page-templates/partials/secondary_slider.php';
 
+    echo "<!-- Secondary Slider: parent_slider is [$parent_slider] -->\n";
+    echo "<!-- Secondary Slider: child_slider is [$child_slider] -->\n";
+
     if ( file_exists($child_slider) ) {
 		echo "<!-- Secondary Slider: using child slider -->\n";
         include($child_slider);
