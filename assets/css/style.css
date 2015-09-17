@@ -2432,7 +2432,25 @@ object {
   padding: 20px;
   background-color: #FFFFFF; }
 
+.page-template-page-templatestemplate-full-width-php h1.entry-title {
+  font-size: 3em;
+  margin: 0px 0px 15px 0px;
+  font-weight: 700;
+  font-style: Normal;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #C75B12;
+  text-align: left; }
+.page-template-page-templatestemplate-full-width-php #main {
+  background-color: transparent;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 1024px; }
 .page-template-page-templatestemplate-full-width-php #primary {
+  background-color: #FFFFFF;
+  padding: 20px 50px;
+  margin: 0px;
   width: 100%; }
 .page-template-page-templatestemplate-full-width-php #secondary {
   width: 100%; }
