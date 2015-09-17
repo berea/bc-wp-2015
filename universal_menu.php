@@ -6,8 +6,11 @@
 	
 	<?php if ($berea_should_have_default_menu) { ?>
 		<!-- subsite menu with Berea submenu -->
-		<?php 
-			foreach (berea_get_default_menu(true) as $col => $vals) {
+		<?php
+
+			$menus = berea_get_default_menu(true,true); // 2nd param: get all menu items
+
+			foreach ($menus as $col => $vals) {
 				$please_close_ul=false;
 				if (count($vals)>1) {
 					$please_close_ul=true;
