@@ -419,25 +419,9 @@ function berea_get_secondary_slider() {
     $parent_slider = get_template_directory() . '/page-templates/partials/secondary_slider.php';
     $child_slider = get_stylesheet_directory() . '/page-templates/partials/secondary_slider.php';
 
-
     $dir    = get_template_directory() . '/page-templates/partials/';
     echo "<!-- looking in [" . $dir . "] for files -->\n";
     $files1 = scandir($dir);
-    foreach ($files1 as $file) {
-        echo "<!-- found [" . $file . "]-->\n";
-    }
-
-
-
-
-    echo "<!-- Secondary Slider: parent_slider is [$parent_slider] -->\n";
-    echo "<!-- File perms for parent_slider [" . fileperms($parent_slider) . "] -->\n";
-    echo "<!-- Secondary Slider: child_slider is [$child_slider] -->\n";
-    echo "<!-- File perms for child_slider [" . fileperms($child_slider) . "] -->\n";
-
-
-
-    echo "<!-- get_stylesheet_directory_uri is [" . get_stylesheet_directory_uri() . "] -->\n";
 
     if ( file_exists($child_slider) ) {
 		echo "<!-- Secondary Slider: REALLY using child slider -->\n";
@@ -447,8 +431,6 @@ function berea_get_secondary_slider() {
 		echo "<!-- Secondary Slider: REALLY falling back to parent slider -->\n";
         include($parent_slider);
     }
-
-	echo "<!-- Secondary Slider: end of function -->\n";
 
 }
 
