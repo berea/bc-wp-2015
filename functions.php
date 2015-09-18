@@ -430,16 +430,20 @@ function berea_get_secondary_slider() {
 
 
     echo "<!-- Secondary Slider: parent_slider is [$parent_slider] -->\n";
+    echo "<!-- File perms for parent_slider [" . fileperms($parent_slider) . "] -->\n";
     echo "<!-- Secondary Slider: child_slider is [$child_slider] -->\n";
+    echo "<!-- File perms for child_slider [" . fileperms($child_slider) . "] -->\n";
+
+
 
     echo "<!-- get_stylesheet_directory_uri is [" . get_stylesheet_directory_uri() . "] -->\n";
 
     if ( file_exists($child_slider) ) {
-		echo "<!-- Secondary Slider: using child slider -->\n";
+		echo "<!-- Secondary Slider: REALLY using child slider -->\n";
         include($child_slider);
     }
     else {
-		echo "<!-- Secondary Slider: falling back to parent slider -->\n";
+		echo "<!-- Secondary Slider: REALLY falling back to parent slider -->\n";
         include($parent_slider);
     }
 
