@@ -421,6 +421,7 @@ function berea_get_secondary_slider() {
 
 
     $dir    = get_template_directory() . '/page-templates/partials/';
+    echo "<!-- looking in [" . $dir . "] for files -->\n";
     $files1 = scandir($dir);
     foreach ($files1 as $file) {
         echo "<!-- found [" . $file . "]-->\n";
