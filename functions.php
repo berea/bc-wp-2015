@@ -419,6 +419,16 @@ function berea_get_secondary_slider() {
     $parent_slider = get_template_directory() . '/page-templates/partials/secondary_slider.php';
     $child_slider = get_stylesheet_directory() . '/page-templates/partials/secondary_slider.php';
 
+
+    $dir    = get_template_directory() . '/page-templates/partials/';
+    $files1 = scandir($dir);
+    foreach ($files1 as $file) {
+        echo "<!-- found [" . $file . "]-->\n";
+    }
+
+
+
+
     echo "<!-- Secondary Slider: parent_slider is [$parent_slider] -->\n";
     echo "<!-- Secondary Slider: child_slider is [$child_slider] -->\n";
 
