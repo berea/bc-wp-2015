@@ -1,9 +1,31 @@
 .page-template-page-templatestemplate-full-width-php {
 
-	#primary {
-		@include fill-parent;
-	}
 
+  h1.entry-title {
+	font-size: 3em;
+	margin: 0px 0px 15px 0px;
+	font-weight: 700;
+	font-style: Normal;
+	font-family: $opensans;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	color: $bc-orange;
+	text-align: left;
+  }
+
+  #main {
+	background-color: transparent;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 1024px;
+  }
+
+  #primary {
+	background-color: $bc-white;
+	padding: 20px 50px;
+	margin: 0px;
+	@include fill-parent;
+  }
 	#secondary {
 		@include fill-parent;
 	}

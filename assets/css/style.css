@@ -2239,87 +2239,101 @@ object {
 6.4 Page Templates
 --------------------------------------------------------------*/
 .apply-2col-left-sidebar h1.entry-title,
+.page-template-template-news h1.entry-title,
 .page-template-page-templatestemplate-left-col-php h1.entry-title {
-  margin: 0;
+  font-size: 3em;
+  margin: 0px 0px 15px 0px;
+  font-weight: 700;
+  font-style: Normal;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #C75B12;
   text-align: left; }
+.apply-2col-left-sidebar #main,
+.page-template-template-news #main,
+.page-template-page-templatestemplate-left-col-php #main {
+  background-color: transparent;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 1024px; }
 .apply-2col-left-sidebar #primary,
+.page-template-template-news #primary,
 .page-template-page-templatestemplate-left-col-php #primary {
+  background-color: #FFFFFF;
   float: right !important;
+  padding: 20px 50px;
+  margin: 0px;
+  margin-left: 0px !important;
   margin-right: 0px !important; }
   @media screen and (min-width: 200px) {
     .apply-2col-left-sidebar #primary,
+    .page-template-template-news #primary,
     .page-template-page-templatestemplate-left-col-php #primary {
       float: left;
       display: block;
       margin-right: 6.66667%;
       width: 100%; }
       .apply-2col-left-sidebar #primary:last-child,
+      .page-template-template-news #primary:last-child,
       .page-template-page-templatestemplate-left-col-php #primary:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 769px) {
     .apply-2col-left-sidebar #primary,
+    .page-template-template-news #primary,
     .page-template-page-templatestemplate-left-col-php #primary {
       float: left;
       display: block;
       margin-right: 4.34783%;
-      width: 65.21739%;
-      margin-right: 1.6% !important; }
+      width: 100%; }
       .apply-2col-left-sidebar #primary:last-child,
+      .page-template-template-news #primary:last-child,
       .page-template-page-templatestemplate-left-col-php #primary:last-child {
         margin-right: 0; } }
   @media only screen and (min-width: 1171px) {
     .apply-2col-left-sidebar #primary,
+    .page-template-template-news #primary,
     .page-template-page-templatestemplate-left-col-php #primary {
-      margin-right: 20px !important; } }
-.apply-2col-left-sidebar #main,
-.page-template-page-templatestemplate-left-col-php #main {
-  padding-left: 20px !important;
-  padding-right: 20px !important; }
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 74.46809%; }
+      .apply-2col-left-sidebar #primary:last-child,
+      .page-template-template-news #primary:last-child,
+      .page-template-page-templatestemplate-left-col-php #primary:last-child {
+        margin-right: 0; } }
 .apply-2col-left-sidebar #secondary,
+.page-template-template-news #secondary,
 .page-template-page-templatestemplate-left-col-php #secondary {
-  position: relative;
-  z-index: 1;
-  float: left !important;
-  margin-top: 20px !important;
-  margin-left: 0px !important;
-  margin-bottom: 0px !important;
-  padding-right: 0px !important;
-  background: none; }
-  @media screen and (min-width: 200px) {
-    .apply-2col-left-sidebar #secondary,
-    .page-template-page-templatestemplate-left-col-php #secondary {
-      float: left;
-      display: block;
-      margin-right: 6.66667%;
-      width: 100%; }
-      .apply-2col-left-sidebar #secondary:last-child,
-      .page-template-page-templatestemplate-left-col-php #secondary:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 769px) {
-    .apply-2col-left-sidebar #secondary,
-    .page-template-page-templatestemplate-left-col-php #secondary {
-      float: left;
-      display: block;
-      margin-right: 4.34783%;
-      width: 30.43478%;
-      margin-top: -60px !important;
-      padding-right: 20px !important;
-      margin-left: 1.6% !important; }
-      .apply-2col-left-sidebar #secondary:last-child,
-      .page-template-page-templatestemplate-left-col-php #secondary:last-child {
-        margin-right: 0; } }
+  display: none !important; }
   @media only screen and (min-width: 1171px) {
     .apply-2col-left-sidebar #secondary,
+    .page-template-template-news #secondary,
     .page-template-page-templatestemplate-left-col-php #secondary {
-      margin-left: 20px !important; } }
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 23.40426%;
+      margin-top: 0 !important;
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      display: block !important;
+      position: relative;
+      z-index: 1;
+      float: left !important;
+      margin-bottom: 0px !important;
+      background: none; }
+      .apply-2col-left-sidebar #secondary:last-child,
+      .page-template-template-news #secondary:last-child,
+      .page-template-page-templatestemplate-left-col-php #secondary:last-child {
+        margin-right: 0; } }
 .apply-2col-left-sidebar #secondary-inner,
+.page-template-template-news #secondary-inner,
 .page-template-page-templatestemplate-left-col-php #secondary-inner {
   padding: 20px;
   background-color: #FFFFFF; }
-.apply-2col-left-sidebar footer,
-.page-template-page-templatestemplate-left-col-php footer {
-  clear: both;
-  display: table; }
 
 .apply-2col-right-sidebar h1.entry-title,
 .page-template-template-news h1.entry-title,
@@ -2418,7 +2432,25 @@ object {
   padding: 20px;
   background-color: #FFFFFF; }
 
+.page-template-page-templatestemplate-full-width-php h1.entry-title {
+  font-size: 3em;
+  margin: 0px 0px 15px 0px;
+  font-weight: 700;
+  font-style: Normal;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #C75B12;
+  text-align: left; }
+.page-template-page-templatestemplate-full-width-php #main {
+  background-color: transparent;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 1024px; }
 .page-template-page-templatestemplate-full-width-php #primary {
+  background-color: #FFFFFF;
+  padding: 20px 50px;
+  margin: 0px;
   width: 100%; }
 .page-template-page-templatestemplate-full-width-php #secondary {
   width: 100%; }

@@ -10,18 +10,48 @@
 
 get_header(); ?>
 
-        <div id="primary" class="content-area">
-        
-                <main id="main" class="site-main" role="main">
+<main id="main" class="site-main" role="main">
 
-                    <div class="entry-content">
+    <div id="primary" class="content-area">
+        <?php if ( have_posts() ) : ?>
 
-                        <?php the_content(); ?>
+            <?php /* Start the Loop */ ?>
+            <?php while ( have_posts() ) : the_post(); ?>
 
-                    </div>
+                <?php
+                /* Include the Post-Format-specific template for the content.
+                 * If you want to override this in a child theme, then include a file
+                 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+                 */
+                get_template_part( 'page-templates/partials/content', 'page' );
+                ?>
 
-                </main><!-- #main -->
+                <?php
+                // If comments are open or we have at least one comment, load up the comment template
+                if ( comments_open() || '0' != get_comments_number() ) :
+                    comments_template();
+                endif;
+                ?>
 
-        </div><!-- #primary -->
+            <?php endwhile; ?>
+
+            <?php berea_paging_nav(); ?>
+
+        <?php else : ?>
+
+            <?php get_template_part( 'partials/content', 'none' ); ?>
+
+            <?php
+            // If comments are open or we have at least one comment, load up the comment template
+            if ( comments_open() || '0' != get_comments_number() ) :
+                comments_template();
+            endif;
+            ?>
+
+        <?php endif; ?>
+
+    </div><!-- #primary -->
+
+</main><!-- #main -->
 
 <?php get_footer(); ?>
