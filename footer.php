@@ -93,7 +93,7 @@
                 </div>
 
                 <div id="berea_logo_leftside">
-                    <a href="http://www.berea.edu/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bc-logo-stacked.png" alt="Berea College"/></a>
+                    <a href="http://www.berea.edu/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bc-logo-stacked.svg" alt="Berea College"/></a>
                 </div>
 
             </div><!-- #topleft -->
