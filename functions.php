@@ -424,14 +424,14 @@ function berea_get_secondary_slider() {
 
     echo "<!-- get_stylesheet_directory_uri is [" . get_stylesheet_directory_uri() . "] -->\n";
 
-    if ( file_exists($child_slider) ) {
+//    if ( file_exists($child_slider) ) {
 		echo "<!-- Secondary Slider: using child slider -->\n";
         include($child_slider);
-    }
-    else {
+//    }
+//    else {
 		echo "<!-- Secondary Slider: falling back to parent slider -->\n";
         include($parent_slider);
-    }
+//    }
 
 	echo "<!-- Secondary Slider: end of function -->\n";
 
