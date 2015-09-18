@@ -422,6 +422,8 @@ function berea_get_secondary_slider() {
     echo "<!-- Secondary Slider: parent_slider is [$parent_slider] -->\n";
     echo "<!-- Secondary Slider: child_slider is [$child_slider] -->\n";
 
+    echo "<!-- get_stylesheet_directory_uri is [" . get_stylesheet_directory_uri() . "] -->\n";
+
     if ( file_exists($child_slider) ) {
 		echo "<!-- Secondary Slider: using child slider -->\n";
         include($child_slider);
