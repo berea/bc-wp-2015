@@ -32,7 +32,9 @@ var gulp 	= require('gulp'),
 	pipe 					= require('gulp-coffee'),
 	cache 				= require('gulp-cache'),
 	filter 			   = require('gulp-filter'),
-	insert 			   = require('gulp-insert');
+	insert 			   = require('gulp-insert'),
+	postcss 		   = require('gulp-postcss'),
+	unmq	 		   = require('postcss-unmq');
 ;
 
 /**
@@ -41,7 +43,7 @@ var gulp 	= require('gulp'),
  * Triggering the styles-compact and styles-minified tasks
 */
 gulp.task('styles', function () {
-	runSequence('styles-compact','styles-minified');
+	runSequence('styles-compact','styles-minified','styles-stopgap');
 });
 
 /**
@@ -88,6 +90,28 @@ gulp.task('styles-minified', function () {
 		.pipe(plumber.stop())
 		.pipe(gulp.dest(source+'css/'))
 		.pipe(notify({ message: 'Styles-Minifed task complete', onLast: true }))
+});
+
+
+/**
+ * Styles-StopGap
+ *
+ * Generate the stopgap intermediate styling files from the generated compact styles
+*/
+gulp.task('styles-stopgap', function () {
+	return gulp.src([source+'css/style.css'])
+		.pipe(rename({ suffix: '-stopgap' }))
+		.pipe(postcss([
+			unmq({
+				type: 'screen',
+				width: 1024,
+				height: 768,
+				resolution: '1dppx',
+				color: 3
+			})
+		]))
+		.pipe(gulp.dest(source+'css/'))
+		.pipe(notify({ message: 'Styles-StopGap task complete', onLast: true }))
 });
 
 
