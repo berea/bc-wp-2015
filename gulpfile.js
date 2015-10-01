@@ -119,9 +119,10 @@ gulp.task('styles-stopgap', function () {
  * Scripts
  *
  * Look at src/js and concatenate those files, send them to assets/js where we then minimize the concatenated file.
+ * note: vendor first, then custom so custom can forcefully override if necessary
 */
 gulp.task('js', function() {
-	return gulp.src([source+'js/vendor/**/*.js'])
+	return gulp.src([source+'js/vendor/**/*.js',source+'js/custom/**/*.js'])
 		// .pipe(jshint('.jshintrc')) // TO-DO: Reporting seems to be broken for js errors.
 		// .pipe(jshint.reporter('default'))
 		.pipe(concat('production.js'))
@@ -142,7 +143,7 @@ gulp.task('js', function() {
 */
 
 // Watch Task
-gulp.task('default', ['styles'], function () {
+gulp.task('default', ['styles','js'], function () {
     gulp.watch(source+"sass/**/*.scss", ['styles']);
-    //gulp.watch(source+"js/vendor/**/*.js", ['js']);
+    gulp.watch([source+'js/vendor/**/*.js',source+'js/custom/**/*.js'], ['js']);
 });
