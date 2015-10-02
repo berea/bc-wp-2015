@@ -124,15 +124,15 @@ jQuery(document).ready(function($){
 			//close search
 			$('.cd-search').removeClass('is-visible');
 			$('.cd-search-trigger').removeClass('search-is-visible');
-			$('.cd-overlay').removeClass('search-is-visible')
-			$('body').removeClass('search-is-visible')
+			$('.cd-overlay').removeClass('search-is-visible');
+			$('body').removeClass('search-is-visible');
 		} else {
 			//toggle search visibility
 			$('.cd-search').toggleClass('is-visible');
 			$('.cd-search-trigger').toggleClass('search-is-visible');
-			$('body').toggleClass('search-is-visible')
+			$('body').toggleClass('search-is-visible');
 			if($(window).width() > MqL && $('.cd-search').hasClass('is-visible')) $('.cd-search').find('input[type="search"]').focus();
-			($('#cd-search').hasClass('is-visible')) ? $('.cd-overlay').addClass('is-visible') : $('.cd-overlay').removeClass('is-visible') ;
+			($('#cd-search').hasClass('is-visible')) ? $('.cd-overlay').addClass('is-visible') : $('.cd-overlay').removeClass('is-visible');
 		}
 	}
 	function toggleRibbonAction() {
