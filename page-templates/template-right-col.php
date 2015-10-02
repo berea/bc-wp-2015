@@ -39,8 +39,6 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php berea_paging_nav(); ?>
-
 		<?php else : ?>
 
 			<?php get_template_part( 'partials/content', 'none' ); ?>
