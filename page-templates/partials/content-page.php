@@ -19,24 +19,6 @@
 
         <?php the_content(); ?>
 
-		<?php if ( function_exists( 'get_the_post_navigation' ) ) {
-
-				echo get_the_post_navigation( array(
-					'prev_text'	=> __('&larr; Previous Page', 'berea'),
-					'next_text'	=> __( 'Next Page &rarr;', 'berea'),
-					'screen_reader_text' => __( 'Page navigation', 'berea' )
-				));
-
-			} else {
-
-				wp_link_pages( array(
-					'before' => '<div class="page-links">' . __( 'Pages:', 'berea' ),
-					'after'  => '</div>',
-					) );
-
-			} ?>
-
-
 	</div><!-- .entry-content -->
 	<?php edit_post_link( __( 'Edit', 'berea' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 	<?php tha_entry_bottom(); ?>
