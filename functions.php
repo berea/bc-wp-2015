@@ -126,7 +126,7 @@ if ( !function_exists('berea_scripts') ) :
 
 
         //wp_register_script('megadropdown_jquery_menu_aim', get_template_directory_uri().'/assets/mega-site-navigation/js/jquery.menu-aim.js');
-        wp_register_script('megadropdown_main', get_template_directory_uri().'/assets/js/vendor/navigation.js');
+        //wp_register_script('megadropdown_main', get_template_directory_uri().'/assets/js/vendor/navigation.js');
     
         /*   REGISTER MEGA DROPDOWN STYLES <-- integrated with the other css files 	*/
     
