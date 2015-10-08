@@ -110,7 +110,8 @@
                             var myOptions = {
                                 zoom:14,
                                 center:new google.maps.LatLng(37.573,-84.2897),
-                                mapTypeId: google.maps.MapTypeId.TERRAIN
+                                mapTypeId: google.maps.MapTypeId.TERRAIN,
+								scrollwheel: false
                             };
 
                             map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
