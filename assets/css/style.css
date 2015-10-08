@@ -4000,6 +4000,18 @@ input#s {
   text-decoration: none;
 }
 
+.root-menu {
+  background-color: #005A8B;
+}
+.root-menu a {
+  color: #FFFFFE !important;
+  font-weight: 600;
+}
+.root-menu a::before, .root-menu a::after {
+  /* arrow icon in CSS - for element with nested unordered lists */
+  background: #FFFFFE;
+}
+
 /* For content entered in posts by users */
 h1.entry-title {
   font-size: 52px;
