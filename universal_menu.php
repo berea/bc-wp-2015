@@ -3,7 +3,7 @@
 
 <nav class="cd-nav">
 	<ul id="cd-primary-nav" class="cd-primary-nav is-fixed <?php echo ($berea_should_have_default_menu) ? 'apply-mobile-injected-menu': ''; ?>">
-	
+
 	<?php if ($berea_should_have_default_menu) { ?>
 		<!-- subsite menu with Berea submenu -->
 		<?php
@@ -15,8 +15,8 @@
 				if (count($vals)>1) {
 					$please_close_ul=true;
 					$first_val=array_shift($vals);
-					
-					echo '<li class="has-children menu-item-hide-on-large">' . $first_val . 
+
+					echo '<li class="has-children menu-item-hide-on-large">' . $first_val .
 						"\n<ul class=\"is-hidden\">\n".
 						'<li class="go-back"><a href="#0">BACK</a></li>';
 				}
@@ -26,7 +26,7 @@
 				if ($please_close_ul) { echo "</li></ul>"; }
 			}
 		?>
-		
+
 		<li class="has-children menu-item-hide-on-large root-menu">
 			<a href="#">MAIN NAVIGATION</a>
 			<ul class="is-hidden">
@@ -44,7 +44,12 @@
 </nav> <!-- cd-nav -->
 
 <div id="cd-search" class="cd-search">
-	<form>
-		<input type="search" placeholder="Search...">
+	<form method="get" action="http://www.google.com/search">
+			<input type="text" size="15" class="search-field"
+					name="q" id="s" value="Search Berea College Web Site"
+					onfocus="if(this.value == 'Search Berea College Web Site') {this.value = '';}"
+					onblur="if (this.value == '') {this.value = 'Search Berea College Web Site';}"/>
+			<input name="btnG" type="submit"  value="" class="search-go" />
+			<input type="hidden" name="sitesearch" value="https://berea.edu" />
 	</form>
 </div>
