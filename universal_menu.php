@@ -45,11 +45,7 @@
 
 <div id="cd-search" class="cd-search">
 	<form method="get" action="http://www.google.com/search">
-			<input type="text" size="15" class="search-field"
-					name="q" id="s" value="Search Berea College Web Site"
-					onfocus="if(this.value == 'Search Berea College Web Site') {this.value = '';}"
-					onblur="if (this.value == '') {this.value = 'Search Berea College Web Site';}"/>
-			<!-- <input name="btnG" type="submit"  value="" class="search-go" /> -->
+			<input type="search" name="q" placeholder="Search..." />
 			<input type="hidden" name="sitesearch" value="https://berea.edu" />
 	</form>
 </div>
