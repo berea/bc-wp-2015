@@ -37,7 +37,7 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 <div id="page" class="hfeed site">
 
 	<div id="ribbon" class="cd-header-ribbon">
-		<a href="<?php bloginfo('url'); ?>" class="ribbon-link"><div id="logo"></div></a>
+		<a href="<?php $root_url = network_home_url(); echo $root_url; ?>" class="ribbon-link"><div id="logo"></div></a>
 	</div>
 
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'berea' ); ?></a>
