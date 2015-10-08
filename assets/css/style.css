@@ -4132,3 +4132,6 @@ h1.entry-title {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   list-style-type: disc;
 }
+.entry-content ul li, .entry-content ol li {
+  list-style-type: disc;
+}

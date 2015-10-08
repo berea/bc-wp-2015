@@ -145,6 +145,10 @@ h1.entry-title {
     line-height: 1.4em;
     font-family: $sans-serif;
     list-style-type: disc;
+
+    li {
+      list-style-type: disc;
+    }
   }
 
 }
