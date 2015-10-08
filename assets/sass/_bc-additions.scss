@@ -43,7 +43,12 @@ $fg-gutter: $gutter;
   background-repeat: no-repeat;
   width: 180px;
   height: 80px;
-  z-index: $above-content;
+  z-index: $ultimate-top;
+  display: block;
+
+  a:hover {
+    opacity: 1;
+  }
 
   @include MQ(M) {
     background: url("../images/bc-ribbon.png");
@@ -260,7 +265,7 @@ $fg-gutter: $gutter;
     color: $bc-blue;
     text-align: center;
     font-size: 2.6em;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1em;
     padding-top: 20px;
     padding-bottom: 10px;
