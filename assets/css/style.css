@@ -3361,7 +3361,11 @@ input#s {
   background-repeat: no-repeat;
   width: 180px;
   height: 80px;
-  z-index: 3;
+  z-index: 9;
+  display: block;
+}
+.cd-header-ribbon a:hover {
+  opacity: 1;
 }
 @media only screen and (min-width: 769px) {
   .cd-header-ribbon {
@@ -3638,7 +3642,7 @@ input#s {
   color: #005A8B;
   text-align: center;
   font-size: 2.6em;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1em;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -4002,14 +4006,15 @@ input#s {
 /* For content entered in posts by users */
 h1.entry-title {
   font-size: 52px;
-  line-height: 75px;
+  line-height: 1.1em;
+  padding: 0px 0px 15px 0px;
   margin: 0px 0px 15px 0px;
   font-weight: 700;
   font-style: Normal;
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #005a8b;
+  color: #C75B12;
   text-align: left;
   border-bottom: 1px solid #C75B12;
 }
@@ -4026,14 +4031,13 @@ h1.entry-title {
 }
 .entry-content h1 {
   font-size: 52px;
-  line-height: 75px;
   margin: 0px 0px 15px 0px;
   font-weight: 700;
   font-style: Normal;
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #005a8b;
+  color: #C75B12;
 }
 .entry-content h2 {
   font-size: 40px;
@@ -4123,4 +4127,12 @@ h1.entry-title {
 }
 .entry-content a {
   color: #000000;
+}
+.entry-content ul, .entry-content ol {
+  margin: 0px 0px 25px 0px;
+  font-size: 16px;
+  line-height: 1.4em;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  list-style-type: disc !important;
+  list-style-position: inside;
 }
