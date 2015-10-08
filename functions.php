@@ -45,7 +45,9 @@ function berea_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_editor_style
 	 */
-	add_editor_style( '/assets/css/style-min.css' );
+
+// Removed per Charlie's request
+//	add_editor_style( '/assets/css/style-min.css' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary-navigation', __( 'Primary Menu', 'berea' ) );
@@ -155,7 +157,12 @@ if ( !function_exists('berea_scripts') ) :
 			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production.js', array( 'jquery' ), '1.0.0', false );
 
 			// Main Style
-			wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style.css' );
+			if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style.css' );
+			}
+			else {
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-stopgap.css' );
+			}
 
 		else :
 			// Concatonated Scripts
