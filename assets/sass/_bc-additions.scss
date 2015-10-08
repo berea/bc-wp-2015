@@ -565,4 +565,15 @@ $fg-gutter: $gutter;
   }
 }
 
+.root-menu {
+  background-color: $bc-blue;
+  a {
+    color: $bc-white !important;
+    font-weight: 600;
 
+    &::before, &::after {
+      /* arrow icon in CSS - for element with nested unordered lists */
+      background: $bc-white;
+    }
+  }
+}
