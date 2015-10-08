@@ -49,7 +49,7 @@
 					name="q" id="s" value="Search Berea College Web Site"
 					onfocus="if(this.value == 'Search Berea College Web Site') {this.value = '';}"
 					onblur="if (this.value == '') {this.value = 'Search Berea College Web Site';}"/>
-			<input name="btnG" type="submit"  value="" class="search-go" />
+			<!-- <input name="btnG" type="submit"  value="" class="search-go" /> -->
 			<input type="hidden" name="sitesearch" value="https://berea.edu" />
 	</form>
 </div>
