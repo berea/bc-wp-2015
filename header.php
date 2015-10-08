@@ -22,7 +22,15 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 <head>
 	<?php tha_head_top(); ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<?php
+		if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
+			echo '<meta name="viewport" content="width=device-width, initial-scale=1">' . "\n";
+		}
+		else {
+			echo '<meta name="viewport" content="width=1024">' . "\n";
+			echo '<style> html {width:1024px !important;} </style>' . "\n";
+		}
+	?>
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
