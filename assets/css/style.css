@@ -1094,9 +1094,6 @@ body {
 #primary ul {
   list-style: none;
 }
-#primary ul li {
-  list-style-type: none;
-}
 
 #secondary {
   background-color: #FFFFFE;
@@ -4133,6 +4130,5 @@ h1.entry-title {
   font-size: 16px;
   line-height: 1.4em;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  list-style-type: disc !important;
-  list-style-position: inside;
+  list-style-type: disc;
 }
