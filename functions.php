@@ -45,7 +45,9 @@ function berea_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_editor_style
 	 */
-	add_editor_style( '/assets/css/style-min.css' );
+
+// Removed per Charlie's request
+//	add_editor_style( '/assets/css/style-min.css' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary-navigation', __( 'Primary Menu', 'berea' ) );
@@ -126,7 +128,7 @@ if ( !function_exists('berea_scripts') ) :
 
 
         //wp_register_script('megadropdown_jquery_menu_aim', get_template_directory_uri().'/assets/mega-site-navigation/js/jquery.menu-aim.js');
-        wp_register_script('megadropdown_main', get_template_directory_uri().'/assets/js/vendor/navigation.js');
+        //wp_register_script('megadropdown_main', get_template_directory_uri().'/assets/js/vendor/navigation.js');
     
         /*   REGISTER MEGA DROPDOWN STYLES <-- integrated with the other css files 	*/
     
@@ -155,7 +157,12 @@ if ( !function_exists('berea_scripts') ) :
 			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production.js', array( 'jquery' ), '1.0.0', false );
 
 			// Main Style
-			wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style.css' );
+			if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style.css' );
+			}
+			else {
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-stopgap.css' );
+			}
 
 		else :
 			// Concatonated Scripts
@@ -420,6 +427,7 @@ function berea_get_secondary_slider() {
     $child_slider = get_stylesheet_directory() . '/page-templates/partials/secondary_slider.php';
 
     $dir    = get_template_directory() . '/page-templates/partials/';
+    echo "<!-- looking in [" . $dir . "] for files -->\n";
     $files1 = scandir($dir);
 
     if ( file_exists($child_slider) ) {

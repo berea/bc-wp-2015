@@ -22,12 +22,19 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 <head>
 	<?php tha_head_top(); ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<?php
+		if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
+			echo '<meta name="viewport" content="width=device-width, initial-scale=1">' . "\n";
+		}
+		else {
+			echo '<meta name="viewport" content="width=1200">' . "\n";
+			echo '<style> html {width:1200px !important;} </style>' . "\n";
+		}
+	?>
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Open+Sans+Condensed:300,400,600,700' rel='stylesheet' type='text/css'>
 
 	<?php tha_head_bottom(); ?>
 	<?php wp_head(); ?>
@@ -38,7 +45,7 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 <div id="page" class="hfeed site">
 
 	<div id="ribbon" class="cd-header-ribbon">
-		<a href="/"><div id="logo"></div></a>
+		<a href="<?php $root_url = network_home_url(); echo $root_url; ?>" class="ribbon-link"><div id="logo"></div></a>
 	</div>
 
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'berea' ); ?></a>

@@ -2,14 +2,15 @@
 
 h1.entry-title {
   font-size: 52px;
-  line-height: 75px;
+  line-height: 1.1em;
+  padding: 0px 0px 15px 0px;
   margin: 0px 0px 15px 0px;
   font-weight: 700;
   font-style: Normal;
   font-family: $opensans-condensed;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: rgba(0, 90, 139, 1);
+  color: $bc-orange;
   text-align: left;
   border-bottom: 1px solid $bc-orange;
 }
@@ -29,14 +30,13 @@ h1.entry-title {
 
   h1 {
     font-size: 52px;
-    line-height: 75px;
     margin: 0px 0px 15px 0px;
     font-weight: 700;
     font-style: Normal;
     font-family: $opensans-condensed;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: rgba(0, 90, 139, 1);
+    color: $bc-orange;
   }
 
   h2 {
@@ -137,6 +137,18 @@ h1.entry-title {
 
   a {
     color: $bc-black;
+  }
+
+  ul, ol {
+    margin: 0px 0px 25px 0px;
+    font-size: 16px;
+    line-height: 1.4em;
+    font-family: $sans-serif;
+    list-style-type: disc;
+
+    li {
+      list-style-type: disc;
+    }
   }
 
 }

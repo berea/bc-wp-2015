@@ -104,7 +104,7 @@ gulp.task('styles-stopgap', function () {
 		.pipe(postcss([
 			unmq({
 				type: 'screen',
-				width: 1024,
+				width: 1200,
 				height: 768,
 				resolution: '1dppx',
 				color: 3

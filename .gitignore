@@ -53,3 +53,7 @@ build
 #################
 config.codekit
 /min
+
+# CSS file for stopgap theme
+############################
+assets/css/style-stopgap.css
