@@ -10599,8 +10599,6 @@ window.Modernizr = (function( window, document, undefined ) {
 
 })(this, this.document);
 
-/* BIGASS COMMENT - BEGIN */
-
 jQuery(document).ready(function($){
 	//if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
 	var MqL = 1170;
