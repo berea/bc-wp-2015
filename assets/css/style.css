@@ -4014,6 +4014,15 @@ input#s {
   background: #FFFFFE;
 }
 
+/* For styling the links on posts. */
+.entry-meta a:link, .entry-meta a:visited, .entry-meta a:hover, .entry-meta a:active {
+  color: #005A8B;
+  font-weight: bold;
+}
+.entry-meta time {
+  color: #000;
+}
+
 /* For content entered in posts by users */
 h1.entry-title {
   font-size: 52px;

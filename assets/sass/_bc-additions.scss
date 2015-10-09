@@ -577,3 +577,15 @@ $fg-gutter: $gutter;
     }
   }
 }
+
+/* For styling the links on posts. */
+
+.entry-meta {
+  a:link, a:visited, a:hover, a:active {
+    color: $bc-blue;
+    font-weight: bold;
+  }
+  time {
+    color: #000;
+  }
+}
