@@ -45,6 +45,6 @@
 
 <div id="cd-search" class="cd-search">
 	<form>
-		<input type="search" placeholder="Search...">
+		<input type="search" placeholder="Search Berea College">
 	</form>
 </div>
