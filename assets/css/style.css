@@ -2560,6 +2560,94 @@ object {
 /*--------------------------------------------------------------
 6.4 Page Templates
 --------------------------------------------------------------*/
+.page-template-default h1.entry-title {
+  font-size: 3em;
+  margin: 0px 0px 15px 0px;
+  font-weight: 700;
+  font-style: Normal;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #C75B12;
+  text-align: left;
+}
+.page-template-default #main {
+  background-color: transparent;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 1024px;
+}
+.page-template-default #primary {
+  background-color: #FFFFFF;
+  float: left !important;
+  padding: 20px 50px;
+  margin: 0px;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+@media screen and (min-width: 200px) {
+  .page-template-default #primary {
+    float: left;
+    display: block;
+    margin-right: 6.66667%;
+    width: 100%;
+  }
+  .page-template-default #primary:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  .page-template-default #primary {
+    float: left;
+    display: block;
+    margin-right: 4.34783%;
+    width: 100%;
+  }
+  .page-template-default #primary:last-child {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1171px) {
+  .page-template-default #primary {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 74.46809%;
+  }
+  .page-template-default #primary:last-child {
+    margin-right: 0;
+  }
+}
+.page-template-default #secondary {
+  display: none !important;
+}
+@media only screen and (min-width: 1171px) {
+  .page-template-default #secondary {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-left: 20px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    display: block !important;
+    position: relative;
+    z-index: 1;
+    float: right !important;
+    margin-bottom: 0px !important;
+    background: none;
+  }
+  .page-template-default #secondary:last-child {
+    margin-right: 0;
+  }
+}
+.page-template-default #secondary-inner {
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
 .apply-2col-left-sidebar h1.entry-title,
 .page-template-template-news h1.entry-title,
 .page-template-page-templatestemplate-left-col-php h1.entry-title {
@@ -2670,120 +2758,6 @@ object {
 .apply-2col-left-sidebar #secondary-inner,
 .page-template-template-news #secondary-inner,
 .page-template-page-templatestemplate-left-col-php #secondary-inner {
-  padding: 20px;
-  background-color: #FFFFFF;
-}
-
-.apply-2col-right-sidebar h1.entry-title,
-.page-template-template-news h1.entry-title,
-.page-template-page-templatestemplate-right-col-php h1.entry-title {
-  font-size: 3em;
-  margin: 0px 0px 15px 0px;
-  font-weight: 700;
-  font-style: Normal;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  color: #C75B12;
-  text-align: left;
-}
-.apply-2col-right-sidebar #main,
-.page-template-template-news #main,
-.page-template-page-templatestemplate-right-col-php #main {
-  background-color: transparent;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 1024px;
-}
-.apply-2col-right-sidebar #primary,
-.page-template-template-news #primary,
-.page-template-page-templatestemplate-right-col-php #primary {
-  background-color: #FFFFFF;
-  float: left !important;
-  padding: 20px 50px;
-  margin: 0px;
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-}
-@media screen and (min-width: 200px) {
-  .apply-2col-right-sidebar #primary,
-  .page-template-template-news #primary,
-  .page-template-page-templatestemplate-right-col-php #primary {
-    float: left;
-    display: block;
-    margin-right: 6.66667%;
-    width: 100%;
-  }
-  .apply-2col-right-sidebar #primary:last-child,
-  .page-template-template-news #primary:last-child,
-  .page-template-page-templatestemplate-right-col-php #primary:last-child {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 769px) {
-  .apply-2col-right-sidebar #primary,
-  .page-template-template-news #primary,
-  .page-template-page-templatestemplate-right-col-php #primary {
-    float: left;
-    display: block;
-    margin-right: 4.34783%;
-    width: 100%;
-  }
-  .apply-2col-right-sidebar #primary:last-child,
-  .page-template-template-news #primary:last-child,
-  .page-template-page-templatestemplate-right-col-php #primary:last-child {
-    margin-right: 0;
-  }
-}
-@media only screen and (min-width: 1171px) {
-  .apply-2col-right-sidebar #primary,
-  .page-template-template-news #primary,
-  .page-template-page-templatestemplate-right-col-php #primary {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 74.46809%;
-  }
-  .apply-2col-right-sidebar #primary:last-child,
-  .page-template-template-news #primary:last-child,
-  .page-template-page-templatestemplate-right-col-php #primary:last-child {
-    margin-right: 0;
-  }
-}
-.apply-2col-right-sidebar #secondary,
-.page-template-template-news #secondary,
-.page-template-page-templatestemplate-right-col-php #secondary {
-  display: none !important;
-}
-@media only screen and (min-width: 1171px) {
-  .apply-2col-right-sidebar #secondary,
-  .page-template-template-news #secondary,
-  .page-template-page-templatestemplate-right-col-php #secondary {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 23.40426%;
-    margin-top: 0px !important;
-    margin-right: 0px !important;
-    margin-left: 20px !important;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    display: block !important;
-    position: relative;
-    z-index: 1;
-    float: right !important;
-    margin-bottom: 0px !important;
-    background: none;
-  }
-  .apply-2col-right-sidebar #secondary:last-child,
-  .page-template-template-news #secondary:last-child,
-  .page-template-page-templatestemplate-right-col-php #secondary:last-child {
-    margin-right: 0;
-  }
-}
-.apply-2col-right-sidebar #secondary-inner,
-.page-template-template-news #secondary-inner,
-.page-template-page-templatestemplate-right-col-php #secondary-inner {
   padding: 20px;
   background-color: #FFFFFF;
 }
