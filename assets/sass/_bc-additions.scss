@@ -43,7 +43,12 @@ $fg-gutter: $gutter;
   background-repeat: no-repeat;
   width: 180px;
   height: 80px;
-  z-index: $above-content;
+  z-index: $ultimate-top;
+  display: block;
+
+  a:hover {
+    opacity: 1;
+  }
 
   @include MQ(M) {
     background: url("../images/bc-ribbon.png");
@@ -260,7 +265,7 @@ $fg-gutter: $gutter;
     color: $bc-blue;
     text-align: center;
     font-size: 2.6em;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1em;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -399,6 +404,9 @@ $fg-gutter: $gutter;
   }
   &.ratio_1024x192:before{
     padding-top: 18.75%;
+  }
+  &.ratio_1024x440:before{
+    padding-top: 43%;
   }
 }
 
@@ -560,4 +568,27 @@ $fg-gutter: $gutter;
   }
 }
 
+.root-menu {
+  background-color: $bc-blue;
+  a {
+    color: $bc-white !important;
+    font-weight: 600;
 
+    &::before, &::after {
+      /* arrow icon in CSS - for element with nested unordered lists */
+      background: $bc-white;
+    }
+  }
+}
+
+/* For styling the links on posts. */
+
+.entry-meta {
+  a:link, a:visited, a:hover, a:active {
+    color: $bc-blue;
+    font-weight: bold;
+  }
+  time {
+    color: #000;
+  }
+}

@@ -117,6 +117,7 @@ jQuery(document).ready(function($){
 			$('body').removeClass('overflow-hidden');
 		});
 		if(!$('#cd-search').hasClass('is-visible')) $('.cd-overlay').removeClass('is-visible');
+		toggleOverlayShift();
 	}
 
 	function toggleSearch(type) {

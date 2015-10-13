@@ -1094,9 +1094,6 @@ body {
 #primary ul {
   list-style: none;
 }
-#primary ul li {
-  list-style-type: none;
-}
 
 #secondary {
   background-color: #FFFFFE;
@@ -1229,37 +1226,37 @@ Primary style
 
 /* ----------------------------------
 html {
-	font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-	font: {
-		size: 1.6rem;
-		family: $primary-font; // variables inside partials > _variables.scss
-	}
-	color: $color-1;
-	background-color: $color-4;
+    font: {
+        size: 1.6rem;
+        family: $primary-font; // variables inside partials > _variables.scss
+    }
+    color: $color-1;
+    background-color: $color-4;
 
-	@include MQ(maxL) { // layout mixins inside partials > _layout.scss
-		&.nav-on-left.overflow-hidden {
-			overflow: hidden;
-		}
-	}
+    @include MQ(maxL) { // layout mixins inside partials > _layout.scss
+        &.nav-on-left.overflow-hidden {
+            overflow: hidden;
+        }
+    }
 }
 
 a {
-	color: $color-5;
-	text-decoration: none;
+    color: $color-5;
+    text-decoration: none;
 }
 
 img {
-	// make images responsive 
-	max-width: 100%;
+    // make images responsive
+    max-width: 100%;
 }
 
 input {
-	font-family: $primary-font;
-	font-size: 1.6rem;
+    font-family: $primary-font;
+    font-size: 1.6rem;
 }
 ---------------------------------- */
 input[type="search"]::-ms-clear {
@@ -2143,12 +2140,14 @@ Main components
   width: 100%;
 }
 .cd-search input {
+  margin: 0px auto;
   border-radius: 0;
   border: none;
   background: #ffffff;
   height: 100%;
   -webkit-box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05);
+  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -2561,6 +2560,94 @@ object {
 /*--------------------------------------------------------------
 6.4 Page Templates
 --------------------------------------------------------------*/
+.page-template-default h1.entry-title {
+  font-size: 3em;
+  margin: 0px 0px 15px 0px;
+  font-weight: 700;
+  font-style: Normal;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #C75B12;
+  text-align: left;
+}
+.page-template-default #main {
+  background-color: transparent;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 1024px;
+}
+.page-template-default #primary {
+  background-color: #FFFFFF;
+  float: left !important;
+  padding: 20px 50px;
+  margin: 0px;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+@media screen and (min-width: 200px) {
+  .page-template-default #primary {
+    float: left;
+    display: block;
+    margin-right: 6.66667%;
+    width: 100%;
+  }
+  .page-template-default #primary:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  .page-template-default #primary {
+    float: left;
+    display: block;
+    margin-right: 4.34783%;
+    width: 100%;
+  }
+  .page-template-default #primary:last-child {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1171px) {
+  .page-template-default #primary {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 74.46809%;
+  }
+  .page-template-default #primary:last-child {
+    margin-right: 0;
+  }
+}
+.page-template-default #secondary {
+  display: none !important;
+}
+@media only screen and (min-width: 1171px) {
+  .page-template-default #secondary {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-left: 20px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    display: block !important;
+    position: relative;
+    z-index: 1;
+    float: right !important;
+    margin-bottom: 0px !important;
+    background: none;
+  }
+  .page-template-default #secondary:last-child {
+    margin-right: 0;
+  }
+}
+.page-template-default #secondary-inner {
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
 .apply-2col-left-sidebar h1.entry-title,
 .page-template-template-news h1.entry-title,
 .page-template-page-templatestemplate-left-col-php h1.entry-title {
@@ -2671,120 +2758,6 @@ object {
 .apply-2col-left-sidebar #secondary-inner,
 .page-template-template-news #secondary-inner,
 .page-template-page-templatestemplate-left-col-php #secondary-inner {
-  padding: 20px;
-  background-color: #FFFFFF;
-}
-
-.apply-2col-right-sidebar h1.entry-title,
-.page-template-template-news h1.entry-title,
-.page-template-page-templatestemplate-right-col-php h1.entry-title {
-  font-size: 3em;
-  margin: 0px 0px 15px 0px;
-  font-weight: 700;
-  font-style: Normal;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  color: #C75B12;
-  text-align: left;
-}
-.apply-2col-right-sidebar #main,
-.page-template-template-news #main,
-.page-template-page-templatestemplate-right-col-php #main {
-  background-color: transparent;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 1024px;
-}
-.apply-2col-right-sidebar #primary,
-.page-template-template-news #primary,
-.page-template-page-templatestemplate-right-col-php #primary {
-  background-color: #FFFFFF;
-  float: left !important;
-  padding: 20px 50px;
-  margin: 0px;
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-}
-@media screen and (min-width: 200px) {
-  .apply-2col-right-sidebar #primary,
-  .page-template-template-news #primary,
-  .page-template-page-templatestemplate-right-col-php #primary {
-    float: left;
-    display: block;
-    margin-right: 6.66667%;
-    width: 100%;
-  }
-  .apply-2col-right-sidebar #primary:last-child,
-  .page-template-template-news #primary:last-child,
-  .page-template-page-templatestemplate-right-col-php #primary:last-child {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 769px) {
-  .apply-2col-right-sidebar #primary,
-  .page-template-template-news #primary,
-  .page-template-page-templatestemplate-right-col-php #primary {
-    float: left;
-    display: block;
-    margin-right: 4.34783%;
-    width: 100%;
-  }
-  .apply-2col-right-sidebar #primary:last-child,
-  .page-template-template-news #primary:last-child,
-  .page-template-page-templatestemplate-right-col-php #primary:last-child {
-    margin-right: 0;
-  }
-}
-@media only screen and (min-width: 1171px) {
-  .apply-2col-right-sidebar #primary,
-  .page-template-template-news #primary,
-  .page-template-page-templatestemplate-right-col-php #primary {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 74.46809%;
-  }
-  .apply-2col-right-sidebar #primary:last-child,
-  .page-template-template-news #primary:last-child,
-  .page-template-page-templatestemplate-right-col-php #primary:last-child {
-    margin-right: 0;
-  }
-}
-.apply-2col-right-sidebar #secondary,
-.page-template-template-news #secondary,
-.page-template-page-templatestemplate-right-col-php #secondary {
-  display: none !important;
-}
-@media only screen and (min-width: 1171px) {
-  .apply-2col-right-sidebar #secondary,
-  .page-template-template-news #secondary,
-  .page-template-page-templatestemplate-right-col-php #secondary {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 23.40426%;
-    margin-top: 0px !important;
-    margin-right: 0px !important;
-    margin-left: 20px !important;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    display: block !important;
-    position: relative;
-    z-index: 1;
-    float: right !important;
-    margin-bottom: 0px !important;
-    background: none;
-  }
-  .apply-2col-right-sidebar #secondary:last-child,
-  .page-template-template-news #secondary:last-child,
-  .page-template-page-templatestemplate-right-col-php #secondary:last-child {
-    margin-right: 0;
-  }
-}
-.apply-2col-right-sidebar #secondary-inner,
-.page-template-template-news #secondary-inner,
-.page-template-page-templatestemplate-right-col-php #secondary-inner {
   padding: 20px;
   background-color: #FFFFFF;
 }
@@ -3361,7 +3334,11 @@ input#s {
   background-repeat: no-repeat;
   width: 180px;
   height: 80px;
-  z-index: 3;
+  z-index: 9;
+  display: block;
+}
+.cd-header-ribbon a:hover {
+  opacity: 1;
 }
 @media only screen and (min-width: 769px) {
   .cd-header-ribbon {
@@ -3638,7 +3615,7 @@ input#s {
   color: #005A8B;
   text-align: center;
   font-size: 2.6em;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1em;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -3840,6 +3817,9 @@ input#s {
 .homepage-slider-sizing-aspect-ratio.ratio_1024x192:before {
   padding-top: 18.75%;
 }
+.homepage-slider-sizing-aspect-ratio.ratio_1024x440:before {
+  padding-top: 43%;
+}
 
 .homepage-slider-sizing-main {
   /* height: 192px;
@@ -3999,17 +3979,39 @@ input#s {
   text-decoration: none;
 }
 
+.root-menu {
+  background-color: #005A8B;
+}
+.root-menu a {
+  color: #FFFFFE !important;
+  font-weight: 600;
+}
+.root-menu a::before, .root-menu a::after {
+  /* arrow icon in CSS - for element with nested unordered lists */
+  background: #FFFFFE;
+}
+
+/* For styling the links on posts. */
+.entry-meta a:link, .entry-meta a:visited, .entry-meta a:hover, .entry-meta a:active {
+  color: #005A8B;
+  font-weight: bold;
+}
+.entry-meta time {
+  color: #000;
+}
+
 /* For content entered in posts by users */
 h1.entry-title {
   font-size: 52px;
-  line-height: 75px;
+  line-height: 1.1em;
+  padding: 0px 0px 15px 0px;
   margin: 0px 0px 15px 0px;
   font-weight: 700;
   font-style: Normal;
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #005a8b;
+  color: #C75B12;
   text-align: left;
   border-bottom: 1px solid #C75B12;
 }
@@ -4026,14 +4028,13 @@ h1.entry-title {
 }
 .entry-content h1 {
   font-size: 52px;
-  line-height: 75px;
   margin: 0px 0px 15px 0px;
   font-weight: 700;
   font-style: Normal;
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #005a8b;
+  color: #C75B12;
 }
 .entry-content h2 {
   font-size: 40px;
@@ -4123,4 +4124,14 @@ h1.entry-title {
 }
 .entry-content a {
   color: #000000;
+}
+.entry-content ul, .entry-content ol {
+  margin: 0px 0px 25px 0px;
+  font-size: 16px;
+  line-height: 1.4em;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  list-style-type: disc;
+}
+.entry-content ul li, .entry-content ol li {
+  list-style-type: disc;
 }

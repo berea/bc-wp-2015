@@ -27,8 +27,8 @@
 			}
 		?>
 		
-		<li class="has-children menu-item-hide-on-large">
-			<a href="#">BEREA</a>
+		<li class="has-children menu-item-hide-on-large root-menu">
+			<a href="#">MAIN NAVIGATION</a>
 			<ul class="is-hidden">
 				<li class="go-back"><a href="#0">BACK</a></li>
 				<?php include('universal_menu_master.php'); ?>
@@ -45,6 +45,6 @@
 
 <div id="cd-search" class="cd-search">
 	<form>
-		<input type="search" placeholder="Search...">
+		<input type="search" placeholder="Search Berea College">
 	</form>
 </div>
