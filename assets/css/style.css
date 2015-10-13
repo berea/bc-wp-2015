@@ -3817,6 +3817,9 @@ input#s {
 .homepage-slider-sizing-aspect-ratio.ratio_1024x192:before {
   padding-top: 18.75%;
 }
+.homepage-slider-sizing-aspect-ratio.ratio_1024x440:before {
+  padding-top: 43%;
+}
 
 .homepage-slider-sizing-main {
   /* height: 192px;
