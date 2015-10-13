@@ -1,5 +1,10 @@
 <div class="cd-overlay"></div>
-<?php $berea_should_have_default_menu = berea_has_default_menu(); ?>
+<?php
+	$berea_should_have_default_menu = false;
+	if (get_current_theme() != 'Berea 2015 - Main Site Child Theme') {
+		$berea_should_have_default_menu = berea_has_default_menu();
+	}
+?>
 
 <nav class="cd-nav">
 	<ul id="cd-primary-nav" class="cd-primary-nav is-fixed <?php echo ($berea_should_have_default_menu) ? 'apply-mobile-injected-menu': ''; ?>">
