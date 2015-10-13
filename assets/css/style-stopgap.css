@@ -1026,6 +1026,8 @@ width: 100%;
 .entry-meta a:link, .entry-meta a:visited, .entry-meta a:hover, .entry-meta a:active { color: #005A8B; font-weight: bold; }
 .entry-meta time { color: #000; }
 
+.unused { display: none; }
+
 /* For content entered in posts by users */
 h1.entry-title { font-size: 52px; line-height: 1.1em; padding: 0px 0px 15px 0px; margin: 0px 0px 15px 0px; font-weight: 700; font-style: Normal; font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; color: #C75B12; text-align: left; border-bottom: 1px solid #C75B12; }
 
