@@ -21,7 +21,7 @@
 						'<li class="go-back"><a href="#0">BACK</a></li>';
 				}
 				foreach ($vals as $key => $val) {
-					echo "<li>" . $val . "</li>\n";
+					echo "<li class='menu-item-hide-on-large'>" . $val . "</li>\n";
 				}
 				if ($please_close_ul) { echo "</li></ul>"; }
 			}

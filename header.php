@@ -28,7 +28,7 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 		}
 		else {
 			echo '<meta name="viewport" content="width=1200">' . "\n";
-			echo '<style> html {width:1024px !important;} </style>' . "\n";
+			echo '<style> html {width:1200px !important;} </style>' . "\n";
 		}
 	?>
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
