@@ -123,8 +123,14 @@ ul {
 ol {
 	@extend %default-ol; // Adds browser default spacing back
 }
+
+.page-title {
+  font-size: 4em;
+  font-family: $opensans-condensed;
+}
+
 .entry-title {
-	font-family: $title;
+	font-family: $opensans-condensed;
 	text-align: center;
 
 	@include media($sm) {

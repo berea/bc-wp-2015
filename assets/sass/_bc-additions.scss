@@ -590,9 +590,11 @@ $fg-gutter: $gutter;
     font-weight: bold;
   }
   time {
-    color: #000;
+    color: $bc-blue;
   }
 }
+
+
 
 // Just to force a rewrite of stylesheets.
 .unused {
