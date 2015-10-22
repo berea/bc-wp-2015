@@ -322,7 +322,8 @@ $fg-gutter: $gutter;
   .tagline {
     font-family: $sans-serif;
     font-size: 11pt;
-    font-weight: 200;
+    font-weight: 600;
+    text-shadow: 0 0 10px #000;
     width: 90%;
     margin: 0 auto;
     letter-spacing: -0.015em;
