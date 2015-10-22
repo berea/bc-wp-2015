@@ -290,7 +290,9 @@ strong, b { font-size: 20px; font-size: 1.25rem; color: #000; font-family: "Helv
 /* https://css-tricks.com/almanac/properties/o/opacity/ */
 a:hover, a:visited:hover { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); opacity: 0.8; }
 
-.entry-title { font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; text-align: center; }
+.page-title { font-size: 4em; font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+
+.entry-title { font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; text-align: center; }
 .entry-title { font-size: 40px; font-size: 2.5rem; }
 .entry-title { font-size: 65px; font-size: 4.0625rem; }
 .entry-title { font-size: 100px; font-size: 6.25rem; }
@@ -735,19 +737,19 @@ embed, iframe, object { max-width: 100%; }
 /*--------------------------------------------------------------
 6.4 Page Templates
 --------------------------------------------------------------*/
-.page-template-default h1.entry-title { font-size: 3em; margin: 0px 0px 15px 0px; font-weight: 700; font-style: Normal; font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; text-transform: uppercase; letter-spacing: -1px; color: #C75B12; text-align: left; }
-.page-template-default #main { background-color: transparent; padding-left: 0px; padding-right: 0px; width: 1024px; }
-.page-template-default #primary { background-color: #FFFFFF; float: left !important; padding: 20px 50px; margin: 0px; margin-left: 0px !important; margin-right: 0px !important; }
-.page-template-default #primary { float: left; display: block; margin-right: 6.66667%; width: 100%; }
-.page-template-default #primary:last-child { margin-right: 0; }
-.page-template-default #primary { float: left; display: block; margin-right: 4.34783%; width: 100%; }
-.page-template-default #primary:last-child { margin-right: 0; }
-.page-template-default #primary { float: left; display: block; margin-right: 2.12766%; width: 74.46809%; }
-.page-template-default #primary:last-child { margin-right: 0; }
-.page-template-default #secondary { display: none !important; }
-.page-template-default #secondary { float: left; display: block; margin-right: 2.12766%; width: 23.40426%; margin-top: 0px !important; margin-right: 0px !important; margin-left: 20px !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important; position: relative; z-index: 1; float: right !important; margin-bottom: 0px !important; background: none; }
-.page-template-default #secondary:last-child { margin-right: 0; }
-.page-template-default #secondary-inner { padding: 20px; background-color: #FFFFFF; }
+.page-template-default h1.entry-title, .single-post h1.entry-title, .archive h1.entry-title { font-size: 3em; margin: 0px 0px 15px 0px; font-weight: 700; font-style: Normal; font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; text-transform: uppercase; letter-spacing: -1px; color: #C75B12; text-align: left; }
+.page-template-default #main, .single-post #main, .archive #main { background-color: transparent; padding-left: 0px; padding-right: 0px; width: 1024px; }
+.page-template-default #primary, .single-post #primary, .archive #primary { background-color: #FFFFFF; float: left !important; padding: 20px 50px; margin: 0px; margin-left: 0px !important; margin-right: 0px !important; }
+.page-template-default #primary, .single-post #primary, .archive #primary { float: left; display: block; margin-right: 6.66667%; width: 100%; }
+.page-template-default #primary:last-child, .single-post #primary:last-child, .archive #primary:last-child { margin-right: 0; }
+.page-template-default #primary, .single-post #primary, .archive #primary { float: left; display: block; margin-right: 4.34783%; width: 100%; }
+.page-template-default #primary:last-child, .single-post #primary:last-child, .archive #primary:last-child { margin-right: 0; }
+.page-template-default #primary, .single-post #primary, .archive #primary { float: left; display: block; margin-right: 2.12766%; width: 74.46809%; }
+.page-template-default #primary:last-child, .single-post #primary:last-child, .archive #primary:last-child { margin-right: 0; }
+.page-template-default #secondary, .single-post #secondary, .archive #secondary { display: none !important; }
+.page-template-default #secondary, .single-post #secondary, .archive #secondary { float: left; display: block; margin-right: 2.12766%; width: 23.40426%; margin-top: 0px !important; margin-right: 0px !important; margin-left: 20px !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important; position: relative; z-index: 1; float: right !important; margin-bottom: 0px !important; background: none; }
+.page-template-default #secondary:last-child, .single-post #secondary:last-child, .archive #secondary:last-child { margin-right: 0; }
+.page-template-default #secondary-inner, .single-post #secondary-inner, .archive #secondary-inner { padding: 20px; background-color: #FFFFFF; }
 
 .apply-2col-left-sidebar h1.entry-title, .page-template-template-news h1.entry-title, .page-template-page-templatestemplate-left-col-php h1.entry-title { font-size: 3em; margin: 0px 0px 15px 0px; font-weight: 700; font-style: Normal; font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; text-transform: uppercase; letter-spacing: -1px; color: #C75B12; text-align: left; }
 .apply-2col-left-sidebar #main, .page-template-template-news #main, .page-template-page-templatestemplate-left-col-php #main { background-color: transparent; padding-left: 0px; padding-right: 0px; width: 1024px; }
@@ -938,7 +940,7 @@ input#s { float: left; width: 70%; }
 .homepage-slider h1 { text-align: right; color: #FFFFFE; text-shadow: 0 0 10px #000; padding-bottom: 0px; border-bottom: none; font-size: 4em; line-height: 1.3em; }
 .homepage-slider p { text-align: left; color: #005A8B; }
 .homepage-slider p { text-align: right; color: #FFFFFE; }
-.homepage-slider .tagline { font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 11pt; font-weight: 200; width: 90%; margin: 0 auto; letter-spacing: -0.015em; }
+.homepage-slider .tagline { font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 11pt; font-weight: 600; text-shadow: 0 0 10px #000; width: 90%; margin: 0 auto; letter-spacing: -0.015em; }
 .homepage-slider .read-more { text-align: right; padding: 5px; }
 .homepage-slider .read-more a, .homepage-slider .read-more a:link, .homepage-slider .read-more a:hover, .homepage-slider .read-more a:visited, .homepage-slider .read-more a:active { font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 14px !important; text-transform: uppercase; text-decoration: none; font-weight: 700; border: none !important; color: #FFFFFE; border: 1px solid #6c3e21; border-color: #6c3e21 #593515 #492c0c; border-radius: 10px; -webkit-box-shadow: inset 0 1px 0 0 #e66716; box-shadow: inset 0 1px 0 0 #e66716; color: white; display: inline-block; font-size: inherit; font-weight: normal; line-height: 1; background-color: #C75B12; background-image: -webkit-linear-gradient(#C75B12, #a45902); background-image: -webkit-gradient(linear, left top, left bottom, from(#C75B12), to(#a45902)); background-image: linear-gradient(#C75B12, #a45902); padding: 7px; text-align: center; text-decoration: none; text-shadow: 0 -1px 1px #734519; background-clip: padding-box; }
 .homepage-slider .read-more a:hover:not(:disabled), .homepage-slider .read-more a:link:hover:not(:disabled), .homepage-slider .read-more a:hover:hover:not(:disabled), .homepage-slider .read-more a:visited:hover:not(:disabled), .homepage-slider .read-more a:active:hover:not(:disabled) { border: 1px solid #5b2f12; border-color: #5b2f12 #482607 #351d01; -webkit-box-shadow: inset 0 1px 0 0 #d46214; box-shadow: inset 0 1px 0 0 #d46214; cursor: pointer; background-color: #b25110; background-image: -webkit-linear-gradient(#b25110, #7c490e); background-image: -webkit-gradient(linear, left top, left bottom, from(#b25110), to(#7c490e)); background-image: linear-gradient(#b25110, #7c490e); text-shadow: 0 -1px 1px #5d330b; background-clip: padding-box; }
@@ -1024,12 +1026,12 @@ width: 100%;
 
 /* For styling the links on posts. */
 .entry-meta a:link, .entry-meta a:visited, .entry-meta a:hover, .entry-meta a:active { color: #005A8B; font-weight: bold; }
-.entry-meta time { color: #000; }
+.entry-meta time { color: #005A8B; }
 
 .unused { display: none; }
 
 /* For content entered in posts by users */
-h1.entry-title { font-size: 52px; line-height: 1.1em; padding: 0px 0px 15px 0px; margin: 0px 0px 15px 0px; font-weight: 700; font-style: Normal; font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; color: #C75B12; text-align: left; border-bottom: 1px solid #C75B12; }
+h1.entry-title, h1.entry-title a { font-size: 36px; line-height: 1.1em; padding: 0px 0px 15px 0px; margin: 0px 0px 15px 0px; font-weight: 700; font-style: Normal; font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; color: #C75B12; text-align: left; text-decoration: none; border-bottom: 0px solid #C75B12; }
 
 .entry-content body { padding: 0px 0 50px 0; font-size: 16px; min-height: 100%; font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-weight: 400; font-style: normal; line-height: 25px; background-color: #fffef9; }
 .entry-content h1 { font-size: 52px; margin: 0px 0px 15px 0px; font-weight: 700; font-style: Normal; font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; color: #C75B12; }
@@ -1043,6 +1045,6 @@ h1.entry-title { font-size: 52px; line-height: 1.1em; padding: 0px 0px 15px 0px;
 .entry-content div.content { text-align: left; width: 40%; padding: 50px 0px 0px 0px; background-color: white; }
 .entry-content p.quote { font-size: 23px; line-height: 28px; font-style: italic; color: #666666; margin: 0px; background-color: #FFFFFE; }
 .entry-content blockquote { font-size: 26px; line-height: 37px; margin-bottom: 25px; }
-.entry-content a { color: #000000; }
+.entry-content a { color: #005A8B; text-decoration: underline; }
 .entry-content ul, .entry-content ol { margin: 0px 0px 25px 0px; font-size: 16px; line-height: 1.4em; font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; list-style-type: disc; }
 .entry-content ul li, .entry-content ol li { list-style-type: disc; }
