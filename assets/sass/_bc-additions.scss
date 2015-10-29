@@ -595,6 +595,12 @@ $fg-gutter: $gutter;
 }
 
 
+.vc_inline-link::before {
+  content: ' / ';
+}
+
+
+
 
 // Just to force a rewrite of stylesheets.
 .unused {
