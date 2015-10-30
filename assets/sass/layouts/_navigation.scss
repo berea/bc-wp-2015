@@ -554,10 +554,11 @@ Main components
         position: static;
         padding: 0 80px 0 0;
         height: auto;
-        width: auto;
+        width: 100%;
         float: right;
         overflow: visible;
         background: transparent;
+        text-align: right;
         @include clearfix;
 
         &.moves-out > li > a {
@@ -567,6 +568,7 @@ Main components
         }
 
         ul {
+            text-align: left;
             position: static;
             height: auto;
             width: 1024px;
@@ -587,9 +589,22 @@ Main components
         }
 
         > li {
-            float: left;
-            margin-left: 0px;
+            /* float: left; */
+            display: inline-block;
+
+            > ul {
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
+
+        > li:first-child {
+            margin-left: auto;
+        }
+
 
         > li > a {
             /* main navigation buttons style */
