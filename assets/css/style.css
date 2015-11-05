@@ -964,10 +964,10 @@ width: 100%;
 @media only screen and (min-width: 1171px) { .menu-block-wrapper { display: block; } }
 
 .apply-mobile-injected-menu > li:not(.menu-item-hide-on-large) { display: none; }
-@media only screen and (min-width: 1171px) { .apply-mobile-injected-menu > li:not(.menu-item-hide-on-large) { display: block; } }
+@media only screen and (min-width: 1171px) { .apply-mobile-injected-menu > li:not(.menu-item-hide-on-large) { display: inline-block; } }
 
 .menu-item-hide-on-large { display: block; }
-@media only screen and (min-width: 1171px) { .menu-item-hide-on-large { display: none; } }
+@media only screen and (min-width: 1171px) { .menu-item-hide-on-large { display: none !important; } }
 
 .menu-item-show-on-large { display: none; }
 @media only screen and (min-width: 1171px) { .menu-item-show-on-large { display: block; } }

@@ -535,18 +535,18 @@ $fg-gutter: $gutter;
 }
 
 .apply-mobile-injected-menu {
-	& > li:not(.menu-item-hide-on-large) {
-	  display: none;
-	  @include MQ(L) {
-		display:block;
-	  }
-	}
+  & > li:not(.menu-item-hide-on-large) {
+    display: none;
+    @include MQ(L) {
+      display:inline-block;
+    }
+  }
 }
 
 .menu-item-hide-on-large {
   display:block;
   @include MQ(L) {
-    display:none;
+    display:none !important;
   }
 }
 
