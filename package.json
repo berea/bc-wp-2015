@@ -30,7 +30,7 @@
     "gulp-wp-rev": "0.0.1",
     "gulp-zip": "^2.0.2",
     "postcss": "^5.0.8",
-    "postcss-unmq": "^1.0.0",
+    "postcss-unmq": "^1.0.2",
     "swig": "^1.4.2"
   },
   "engines": {

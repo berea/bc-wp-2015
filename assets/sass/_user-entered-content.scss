@@ -1,7 +1,7 @@
 /* For content entered in posts by users */
 
-h1.entry-title {
-  font-size: 52px;
+h1.entry-title, h1.entry-title a {
+  font-size: 36px;
   line-height: 1.1em;
   padding: 0px 0px 15px 0px;
   margin: 0px 0px 15px 0px;
@@ -12,7 +12,8 @@ h1.entry-title {
   letter-spacing: 1px;
   color: $bc-orange;
   text-align: left;
-  border-bottom: 1px solid $bc-orange;
+  text-decoration: none;
+  border-bottom: 0px solid $bc-orange;
 }
 
 .entry-content {
@@ -136,7 +137,8 @@ h1.entry-title {
   }
 
   a {
-    color: $bc-black;
+    color: $bc-blue;
+    text-decoration: underline;
   }
 
   ul, ol {

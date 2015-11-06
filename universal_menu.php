@@ -1,7 +1,7 @@
 <div class="cd-overlay"></div>
 <?php
 	$berea_should_have_default_menu = false;
-	if (get_current_theme() != 'Berea 2015 - Main Site Child Theme') {
+	if (wp_get_theme()->get('Name') != 'Berea 2015 - Main Site Child Theme') {
 		$berea_should_have_default_menu = berea_has_default_menu();
 	}
 ?>

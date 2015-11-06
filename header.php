@@ -23,12 +23,12 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 	<?php tha_head_top(); ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<?php
-		if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
-			echo '<meta name="viewport" content="width=device-width, initial-scale=1">' . "\n";
+		if (wp_get_theme()->name == 'Berea 2015 - Stopgap Child Theme') {
+			echo '<meta name="viewport" content="width=1200">' . "\n";
+			echo '<style> html {width:1200px !important; margin-left: auto!important; margin-right: auto !important;} </style>' . "\n";
 		}
 		else {
-			echo '<meta name="viewport" content="width=1200">' . "\n";
-			echo '<style> html {width:1200px !important;} </style>' . "\n";
+			echo '<meta name="viewport" content="width=device-width, initial-scale=1">' . "\n";
 		}
 	?>
 	<title><?php wp_title( '|', true, 'right' ); ?></title>

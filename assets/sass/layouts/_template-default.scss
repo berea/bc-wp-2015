@@ -1,12 +1,12 @@
 // 2col Right Sidebar
-.page-template-default {
+.page-template-default, .single-post, .archive {
 
 	h1.entry-title {
 	  font-size: 3em;
 	  margin: 0px 0px 15px 0px;
 	  font-weight: 700;
 	  font-style: Normal;
-	  font-family: $opensans;
+	  font-family: $opensans-condensed;
 	  text-transform: uppercase;
 	  letter-spacing: -1px;
 	  color: $bc-orange;
