@@ -60,7 +60,7 @@ $fg-gutter: $gutter;
     background: url("../images/bc-logo-stacked.svg");
     background-size: contain;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 13px;
     background-repeat: no-repeat;
     background-position: top center;
     display: block;
@@ -85,20 +85,18 @@ $fg-gutter: $gutter;
     height: 50px !important;
 
     @include MQ(L) {
-      height: 80px !important;
+      height: 90px !important;
     }
 
     div#logo {
+      margin: 12px 0;
       background: url("../images/bc-logo-stacked.svg") !important;
       background-size: contain !important;
-      margin: auto !important;
-      margin-top: 5px !important;
       background-repeat: no-repeat !important;
       background-position: top center !important;
-      height: 40px !important;
 
       @include MQ(L) {
-        height: 65px !important;
+        height: 66px !important;
         background-repeat: no-repeat !important;
       }
     }

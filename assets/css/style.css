@@ -851,12 +851,12 @@ input#s { float: left; width: 70%; }
 .cd-header-ribbon { position: absolute; top: 0px; left: 45px; background: url("../images/bc-ribbon-flat.png"); background-repeat: no-repeat; width: 180px; height: 80px; z-index: 9; display: block; }
 .cd-header-ribbon a:hover { opacity: 1; }
 @media only screen and (min-width: 769px) { .cd-header-ribbon { background: url("../images/bc-ribbon.png"); width: 228px; height: 265px; } }
-.cd-header-ribbon div#logo { background: url("../images/bc-logo-stacked.svg"); background-size: contain; margin: auto; margin-top: 10px; background-repeat: no-repeat; background-position: top center; display: block; width: 114px; height: 80px; }
+.cd-header-ribbon div#logo { background: url("../images/bc-logo-stacked.svg"); background-size: contain; margin: auto; margin-top: 13px; background-repeat: no-repeat; background-position: top center; display: block; width: 114px; height: 80px; }
 @media only screen and (min-width: 769px) { .cd-header-ribbon div#logo { background: url("../images/primary_white_transparent.svg"); background-size: 210px; background-repeat: no-repeat; background-position: top center; width: 228px; height: 265px; } }
 .cd-header-ribbon.mini-ribbon { background: url("../images/bc-ribbon-flat.png") !important; background-repeat: no-repeat !important; width: 228px !important; height: 50px !important; }
-@media only screen and (min-width: 1171px) { .cd-header-ribbon.mini-ribbon { height: 80px !important; } }
-.cd-header-ribbon.mini-ribbon div#logo { background: url("../images/bc-logo-stacked.svg") !important; background-size: contain !important; margin: auto !important; margin-top: 5px !important; background-repeat: no-repeat !important; background-position: top center !important; height: 40px !important; }
-@media only screen and (min-width: 1171px) { .cd-header-ribbon.mini-ribbon div#logo { height: 65px !important; background-repeat: no-repeat !important; } }
+@media only screen and (min-width: 1171px) { .cd-header-ribbon.mini-ribbon { height: 90px !important; } }
+.cd-header-ribbon.mini-ribbon div#logo { margin: 12px 0; background: url("../images/bc-logo-stacked.svg") !important; background-size: contain !important; background-repeat: no-repeat !important; background-position: top center !important; }
+@media only screen and (min-width: 1171px) { .cd-header-ribbon.mini-ribbon div#logo { height: 66px !important; background-repeat: no-repeat !important; } }
 
 @media only screen and (min-width: 769px) { .short-ribbon .cd-header-ribbon { background: url("../images/bc-ribbon.png"); width: 228px; height: 145px; background-position: bottom center; } }
 @media only screen and (min-width: 769px) { .short-ribbon div#logo { background: url("../images/bc-logo-stacked.svg"); background-size: contain; margin: auto; margin-top: 24px; background-repeat: no-repeat; background-position: top center; width: 160px; height: 112px; } }
