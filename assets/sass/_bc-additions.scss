@@ -248,7 +248,10 @@ $fg-gutter: $gutter;
 	  color: $bc-white;
 	  margin-right: auto;
 	  margin-left:auto;
-	  width:90%;
+
+      @include MQ(L) {
+        width: 980px;
+      }
     }
 
     #breadcrumbs .breadcrumb_last:only-child {
@@ -286,7 +289,7 @@ $fg-gutter: $gutter;
     }
 
     @include MQ(L) {
-        width: 980px !important;
+        width: 980px;
     }
 
   }

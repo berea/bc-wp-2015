@@ -897,11 +897,13 @@ input#s { float: left; width: 70%; }
 .homepage-slider .slider-textblock-without-blogname { display: none; }
 @media only screen and (min-width: 769px) { .homepage-slider .slider-textblock-without-blogname { display: block; position: absolute; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 20px; padding-top: 0px; padding-right: 20px; padding-bottom: 0px; padding-left: 20px; bottom: 180px; right: 0px; width: 100%; background-color: transparent; } }
 .homepage-slider .slider-breadcrumbs { display: none; }
-@media only screen and (min-width: 769px) { .homepage-slider .slider-breadcrumbs { display: block; text-align: right; color: #FFFFFE; margin-right: auto; margin-left: auto; width: 90%; } }
+@media only screen and (min-width: 769px) { .homepage-slider .slider-breadcrumbs { display: block; text-align: right; color: #FFFFFE; margin-right: auto; margin-left: auto; } }
+@media only screen and (min-width: 769px) and (min-width: 1171px) { .homepage-slider .slider-breadcrumbs { width: 980px; } }
+
 .homepage-slider .slider-breadcrumbs #breadcrumbs .breadcrumb_last:only-child { display: none; }
 .homepage-slider h1 { font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; color: #005A8B; text-align: center; font-size: 2.6em; font-weight: 600; line-height: 1em; padding-top: 20px; padding-bottom: 10px; margin-top: 5px; margin-right: auto; margin-bottom: 15px; margin-left: auto; width: 90%; border-bottom: 3px solid #C75B12; }
 @media only screen and (min-width: 769px) { .homepage-slider h1 { text-align: right; color: #FFFFFE; text-shadow: 0 0 10px #000; padding-bottom: 0px; border-bottom: none; font-size: 4em; line-height: 1.3em; } }
-@media only screen and (min-width: 1171px) { .homepage-slider h1 { width: 980px !important; } }
+@media only screen and (min-width: 1171px) { .homepage-slider h1 { width: 980px; } }
 .homepage-slider p { text-align: left; color: #005A8B; }
 @media only screen and (min-width: 769px) { .homepage-slider p { text-align: right; color: #FFFFFE; } }
 .homepage-slider .tagline { font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 11pt; font-weight: 600; width: 90%; margin: 0 auto; letter-spacing: -0.015em; }
