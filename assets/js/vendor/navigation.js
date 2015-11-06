@@ -179,6 +179,8 @@ jQuery(document).ready(function($){
 			a = 'client';
 			e = document.documentElement || document.body;
 		}
+		//if its the stopgap theme always return true 
+		if ($('body').hasClass('child-theme-bc-wp-2015-child-theme-stopgap')) { return true; }
 		if ( e[ a+'Width' ] >= MqL ) {
 			return true;
 		} else {
