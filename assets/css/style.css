@@ -1000,6 +1000,10 @@ width: 100%;
 
 .unused { display: none; }
 
+#wp-admin-bar-user-actions li { margin-left: 16px !important; }
+#wp-admin-bar-user-actions li .ab-item { min-width: 100px !important; }
+#wp-admin-bar-user-actions #wp-admin-bar-user-info img.avatar { display: none; }
+
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a { font-size: 36px; line-height: 1.1em; padding: 0px 0px 15px 0px; margin: 0px 0px 15px 0px; font-weight: 700; font-style: Normal; font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; color: #C75B12; text-align: left; text-decoration: none; border-bottom: 0px solid #C75B12; }
 
