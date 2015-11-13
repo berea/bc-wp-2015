@@ -861,6 +861,8 @@ input#s { float: left; width: 70%; }
 @media only screen and (min-width: 769px) { .short-ribbon .cd-header-ribbon { background: url("../images/bc-ribbon.png"); width: 228px; height: 145px; background-position: bottom center; } }
 @media only screen and (min-width: 769px) { .short-ribbon div#logo { background: url("../images/bc-logo-stacked.svg"); background-size: contain; margin: auto; margin-top: 24px; background-repeat: no-repeat; background-position: top center; width: 160px; height: 112px; } }
 
+#ribbon.mini-ribbon div#logo { width: 100%; }
+
 .shift-down { margin-top: 54px; }
 @media only screen and (min-width: 1171px) { .shift-down { margin-top: 84px; } }
 
