@@ -211,21 +211,37 @@ if ( !function_exists('berea_optional_scripts') ) :
     function berea_optional_scripts() {
 
         // Header Image
-        if( get_header_image() == '') {
-
-        } else {
-            ?>
-            <style type="text/css">
+        if( get_header_image() == '' ) {
+			?>
+			<style type="text/css">
                 .homepage-slider-background {
-					background-image: url("<?php echo get_header_image(); ?>" );
+					background-image: url("<?php echo get_template_directory_uri(); ?>/assets/images/default_header.jpg");
 				}
             </style>
+			<?php
+        } else {
+			?>
+			<style type="text/css">
+				.homepage-slider-background {
+					background-image: url("<?php echo get_header_image(); ?>");
+				}
+			</style>
+			<?php
+		}
+
+		// Secondary Header Image
+		if ( get_theme_mod('berea_secondary_page_header_image') == '' ) {
+
+		}
+		else {
+			?>
             <style type="text/css">
                 .secondary-slider-background {
                     background-image: url("<?php echo get_theme_mod('berea_secondary_page_header_image') ?>" );
                 }
             </style>
-        <?php }
+        <?php
+		}
 
     }
     add_action( 'wp_head', 'berea_optional_scripts' );
