@@ -288,6 +288,7 @@ strong, b { font-size: 20px; font-size: 1.25rem; color: #000; font-family: "Helv
 
 /* To make links go to 80% opacity on hover */
 /* https://css-tricks.com/almanac/properties/o/opacity/ */
+a, a:visited { text-decoration: none; }
 a:hover, a:visited:hover { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); opacity: 0.8; }
 
 .page-title { font-size: 4em; font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
@@ -1063,7 +1064,7 @@ h1.entry-title, h1.entry-title a { font-size: 36px; line-height: 1.1em; padding:
 .entry-content div.content { text-align: left; width: 40%; padding: 50px 0px 0px 0px; background-color: white; }
 .entry-content p.quote { font-size: 23px; line-height: 28px; font-style: italic; color: #666666; margin: 0px; background-color: #FFFFFE; }
 .entry-content blockquote { font-size: 26px; line-height: 37px; margin-bottom: 25px; }
-.entry-content a { color: #005A8B; text-decoration: underline; }
+.entry-content a { color: #005A8B; /* text-decoration: underline; */ }
 .entry-content a:visited { color: #C75B12; }
 .entry-content ul, .entry-content ol { margin: 0px 0px 25px 0px; font-size: 16px; line-height: 1.4em; font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; list-style-type: disc; }
 .entry-content ul li, .entry-content ol li { list-style-type: disc; }
