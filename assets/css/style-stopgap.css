@@ -903,6 +903,8 @@ input#s { float: left; width: 70%; }
 .short-ribbon .cd-header-ribbon { background: url("../images/bc-ribbon.png"); width: 228px; height: 145px; background-position: bottom center; }
 .short-ribbon div#logo { background: url("../images/bc-logo-stacked.svg"); background-size: contain; margin: auto; margin-top: 24px; background-repeat: no-repeat; background-position: top center; width: 160px; height: 112px; }
 
+#ribbon.mini-ribbon div#logo { width: 100%; }
+
 .shift-down { margin-top: 54px; }
 .shift-down { margin-top: 84px; }
 
@@ -1042,6 +1044,10 @@ width: 100%;
 
 .unused { display: none; }
 
+#wp-admin-bar-user-actions li { margin-left: 16px !important; }
+#wp-admin-bar-user-actions li .ab-item { min-width: 100px !important; }
+#wp-admin-bar-user-actions #wp-admin-bar-user-info img.avatar { display: none; }
+
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a { font-size: 36px; line-height: 1.1em; padding: 0px 0px 15px 0px; margin: 0px 0px 15px 0px; font-weight: 700; font-style: Normal; font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; color: #C75B12; text-align: left; text-decoration: none; border-bottom: 0px solid #C75B12; }
 
@@ -1058,5 +1064,6 @@ h1.entry-title, h1.entry-title a { font-size: 36px; line-height: 1.1em; padding:
 .entry-content p.quote { font-size: 23px; line-height: 28px; font-style: italic; color: #666666; margin: 0px; background-color: #FFFFFE; }
 .entry-content blockquote { font-size: 26px; line-height: 37px; margin-bottom: 25px; }
 .entry-content a { color: #005A8B; text-decoration: underline; }
+.entry-content a:visited { color: #C75B12; }
 .entry-content ul, .entry-content ol { margin: 0px 0px 25px 0px; font-size: 16px; line-height: 1.4em; font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; list-style-type: disc; }
 .entry-content ul li, .entry-content ol li { list-style-type: disc; }

@@ -106,7 +106,7 @@ $fg-gutter: $gutter;
 
 }
 
-.short-ribbon {
+.short-ribbon { // body class
   .cd-header-ribbon {
 	@include MQ(M) {
 	  background: url("../images/bc-ribbon.png");
@@ -131,6 +131,9 @@ $fg-gutter: $gutter;
   }
 }
 
+#ribbon.mini-ribbon {
+  div#logo { width: 100% } // centered w/ margins
+}
 
 .shift-down {
   margin-top: 54px;
@@ -614,3 +617,25 @@ $fg-gutter: $gutter;
   display: none;
 }
 
+
+// No support for user's photos in admin profiles
+// so don't bother showing them in the toolbar
+
+#wp-admin-bar-user-actions {
+
+  li {
+    margin-left: 16px !important;
+
+    .ab-item {
+      min-width: 100px !important;
+    }
+
+  }
+
+  #wp-admin-bar-user-info {
+
+    img.avatar {
+      display: none;
+    }
+  }
+}
