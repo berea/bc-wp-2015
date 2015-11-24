@@ -162,15 +162,16 @@
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">BACK</a></li>
-						<li>The Berea College Difference</li>
-						<li>Quick Facts/Berea at a Glance</li>
-						<li>Ratings and Rankings</li>
-						<li>Berea in Words</li>
-						<li>Berea in Photographs</li>
-						<li>Our Mission</li>
-						<li>Our Vision</li>
-						<li>The Great Commitments</li>
-						<li>History &amp; Heritage</li>
+
+						<li><a href="#">The Berea College Difference</a></li>
+						<li><a href="#">Quick Facts/Berea at a Glance</a></li>
+						<li><a href="#">Ratings and Rankings</a></li>
+						<li><a href="#">Berea in Words</a></li>
+						<li><a href="#">Berea in Photographs</a></li>
+						<li><a href="#">Our Mission</a></li>
+						<li><a href="#">Our Vision</a></li>
+						<li><a href="#">The Great Commitments</a></li>
+						<li><a href="#">History &amp; Heritage</a></li>
 					</ul>
 				</li>
 
@@ -179,9 +180,10 @@
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">BACK</a></li>
-						<li>Office of the President/President's Message</li>
-						<li>Administrative Committee</li>
-						<li>Board of Trustees</li>
+
+						<li><a href="#">Office of the President/President's Message</a></li>
+						<li><a href="#">Administrative Committee</a></li>
+						<li><a href="#">Board of Trustees</a></li>
 					</ul>
 				</li>
 
@@ -190,24 +192,25 @@
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">BACK</a></li>
-						<li>Admissions</li>
-						<li>Alumni Relations</li>
-						<li>Development/Giving to Berea</li>
-						<li>Human Resources</li>
-						<li>Integrated Marketing &amp; Communications</li>
-						<li>Information Systems and Services</li>
-						<li>Public Safety</li>
-						<li>Partners for Education</li>
-						<li>Loyal Jones Appalachian Center</li>
-						<li>bell hooks Institute</li>
-						<li>Hutchins Library</li>
-						<li>Brushy Fork Institute</li>
-						<li>Carter G. Woodson Center for Interracial Education</li>
-						<li>Black Cultural Center</li>
-						<li>Center for Excellence in Learning Through Service (CELTS)</li>
-						<li>Center for Transformative Learning</li>
-						<li>Francis and Louise Hutchins Center for International Education</li>
-						<li>Willis D. Weatherford, Jr. Campus Christian Center</li>
+
+						<li><a href="#">Admissions</a></li>
+						<li><a href="#">Alumni Relations</a></li>
+						<li><a href="#">Development/Giving to Berea</a></li>
+						<li><a href="#">Human Resources</a></li>
+						<li><a href="#">Integrated Marketing &amp; Communications</a></li>
+						<li><a href="#">Information Systems and Services</a></li>
+						<li><a href="#">Public Safety</a></li>
+						<li><a href="#">Partners for Education</a></li>
+						<li><a href="#">Loyal Jones Appalachian Center</a></li>
+						<li><a href="#">bell hooks Institute</a></li>
+						<li><a href="#">Hutchins Library</a></li>
+						<li><a href="#">Brushy Fork Institute</a></li>
+						<li><a href="#">Carter G. Woodson Center for Interracial Education</a></li>
+						<li><a href="#">Black Cultural Center</a></li>
+						<li><a href="#">Center for Excellence in Learning Through Service (CELTS)</a></li>
+						<li><a href="#">Center for Transformative Learning</a></li>
+						<li><a href="#">Francis and Louise Hutchins Center for International Education</a></li>
+						<li><a href="#">Willis D. Weatherford, Jr. Campus Christian Center</a></li>
 					</ul>
 				</li>
 
@@ -216,16 +219,16 @@
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">BACK</a></li>
-						<li>Newsroom</li>
-						<li>Visit Berea College/Visitors Center</li>
-						<li>Virtual Tour</li>
-						<li>Bookstore</li>
-						<li>Contact Berea</li>
-						<li>Historic Boone Tavern</li>
-						<li>Student Crafts</li>
-						<li>Conference Center</li>
-						<li>Seabury Athletic Center</li>
-						<li>Employment Opportunities</li>
+						<li><a href="#">Newsroom</a></li>
+						<li><a href="#">Visit Berea College/Visitors Center</a></li>
+						<li><a href="#">Virtual Tour</a></li>
+						<li><a href="#">Bookstore</a></li>
+						<li><a href="#">Contact Berea</a></li>
+						<li><a href="#">Historic Boone Tavern</a></li>
+						<li><a href="#">Student Crafts</a></li>
+						<li><a href="#">Conference Center</a></li>
+						<li><a href="#">Seabury Athletic Center</a></li>
+						<li><a href="#">Employment Opportunities</a></li>
 					</ul>
 				</li>
 
