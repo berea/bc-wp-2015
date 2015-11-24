@@ -2,8 +2,13 @@
    
 $S:     481px;
 $M:     769px;
-$L:     1171px;
-$maxL:    $L - 1px;    
+$L:     1024px; // 1171px;
+$maxL:    $L - 1px;
+
+/*
+ * 	if you change the value of $L here, be sure to
+ *  update var MqL in navigation.js as well!
+ */
 
 //match the wordpress admin bar breakpoint
 $WPA:   782px;

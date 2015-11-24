@@ -288,7 +288,6 @@ strong, b { font-size: 20px; font-size: 1.25rem; color: #000; font-family: "Helv
 
 /* To make links go to 80% opacity on hover */
 /* https://css-tricks.com/almanac/properties/o/opacity/ */
-a, a:visited { text-decoration: none; }
 a:hover, a:visited:hover { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); opacity: 0.8; }
 
 .page-title { font-size: 4em; font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
@@ -328,6 +327,7 @@ input#s { float: left; width: 70%; }
 /*--------------------------------------------------------------
 6.0 Layout and Structure
 --------------------------------------------------------------*/
+/* 	if you change the value of $L here, be sure to update var MqL in navigation.js as well! */
 /* =Structure/Scaffolding
 -------------------------------------------------------------- */
 /* #TODO: replace @include media with @include MQ to better match other sass files  removed because it breaks the layout  */
@@ -384,6 +384,7 @@ body { color: #000; font-family: "Open Sans", sans-serif; line-height: 1.5em; wo
 /*--------------------------------------------------------------
 6.2 Navigation
 --------------------------------------------------------------*/
+/* 	if you change the value of $L here, be sure to update var MqL in navigation.js as well! */
 /* -------------------------------- 
 
 Primary style
