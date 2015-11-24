@@ -150,3 +150,84 @@
 		<li>
 			<a href="https://www.berea.edu/give-to-berea/the-berea-fund/">GIVE</a>
 		</li>
+
+		<li class="has-children">
+			<a href="#">ABOUT</a>
+
+			<ul class="cd-secondary-nav is-hidden">
+				<li class="go-back"><a href="#0">BACK</a></li>
+				<li class="see-all"><a href="#">ABOUT</a></li>
+				<li class="has-children">
+					<a href="#">OVERVIEW</a>
+
+					<ul class="is-hidden">
+						<li class="go-back"><a href="#0">BACK</a></li>
+						<li>The Berea College Difference</li>
+						<li>Quick Facts/Berea at a Glance</li>
+						<li>Ratings and Rankings</li>
+						<li>Berea in Words</li>
+						<li>Berea in Photographs</li>
+						<li>Our Mission</li>
+						<li>Our Vision</li>
+						<li>The Great Commitments</li>
+						<li>History &amp; Heritage</li>
+					</ul>
+				</li>
+
+				<li class="has-children">
+					<a href="#">LEADERSHIP AND GOVERNANCE</a>
+
+					<ul class="is-hidden">
+						<li class="go-back"><a href="#0">BACK</a></li>
+						<li>Office of the President/President's Message</li>
+						<li>Administrative Committee</li>
+						<li>Board of Trustees</li>
+					</ul>
+				</li>
+
+				<li class="has-children">
+					<a href="#">ADMINISTRATIVE OFFICES &amp; CENTERS</a>
+
+					<ul class="is-hidden">
+						<li class="go-back"><a href="#0">BACK</a></li>
+						<li>Admissions</li>
+						<li>Alumni Relations</li>
+						<li>Development/Giving to Berea</li>
+						<li>Human Resources</li>
+						<li>Integrated Marketing &amp; Communications</li>
+						<li>Information Systems and Services</li>
+						<li>Public Safety</li>
+						<li>Partners for Education</li>
+						<li>Loyal Jones Appalachian Center</li>
+						<li>bell hooks Institute</li>
+						<li>Hutchins Library</li>
+						<li>Brushy Fork Institute</li>
+						<li>Carter G. Woodson Center for Interracial Education</li>
+						<li>Black Cultural Center</li>
+						<li>Center for Excellence in Learning Through Service (CELTS)</li>
+						<li>Center for Transformative Learning</li>
+						<li>Francis and Louise Hutchins Center for International Education</li>
+						<li>Willis D. Weatherford, Jr. Campus Christian Center</li>
+					</ul>
+				</li>
+
+				<li class="has-children">
+					<a href="#">TITLE TBD</a>
+
+					<ul class="is-hidden">
+						<li class="go-back"><a href="#0">BACK</a></li>
+						<li>Newsroom</li>
+						<li>Visit Berea College/Visitors Center</li>
+						<li>Virtual Tour</li>
+						<li>Bookstore</li>
+						<li>Contact Berea</li>
+						<li>Historic Boone Tavern</li>
+						<li>Student Crafts</li>
+						<li>Conference Center</li>
+						<li>Seabury Athletic Center</li>
+						<li>Employment Opportunities</li>
+					</ul>
+				</li>
+
+			</ul>
+		</li>
