@@ -187,34 +187,6 @@
 					</ul>
 				</li>
 
-				<!-- <li class="has-children">
-					<a href="#">ADMINISTRATIVE OFFICES &amp; CENTERS</a>
-
-					<ul class="is-hidden">
-						<li class="go-back"><a href="#0">BACK</a></li>
-
-						<li><a href="#">Admissions</a></li>
-						<li><a href="#">Alumni Relations</a></li>
-						<li><a href="#">Development/Giving to Berea</a></li>
-						<li><a href="#">Human Resources</a></li>
-						<li><a href="#">Integrated Marketing &amp; Communications</a></li>
-						<li><a href="#">Information Systems and Services</a></li>
-						<li><a href="#">Public Safety</a></li>
-
-						<li><a href="#">Partners for Education</a></li>
-						<li><a href="#">Loyal Jones Appalachian Center</a></li>
-						<li><a href="#">bell hooks Institute</a></li>
-						<li><a href="#">Hutchins Library</a></li>
-						<li><a href="#">Brushy Fork Institute</a></li>
-						<li><a href="#">Carter G. Woodson Center for Interracial Education</a></li>
-						<li><a href="#">Black Cultural Center</a></li>
-						<li><a href="#">Center for Excellence in Learning Through Service (CELTS)</a></li>
-						<li><a href="#">Center for Transformative Learning</a></li>
-						<li><a href="#">Francis and Louise Hutchins Center for International Education</a></li>
-						<li><a href="#">Willis D. Weatherford, Jr. Campus Christian Center</a></li>
-					</ul>
-				</li> -->
-
 				<li class="has-children">
 						<a href="#">ADMINISTRATIVE OFFICES</a>
 
