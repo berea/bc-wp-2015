@@ -1,4 +1,7 @@
 <?php
+update_option( 'siteurl', 'http://primary.berea.edu' );
+update_option( 'home', 'http://primary.berea.edu' );
+
 /**
  * berea functions and definitions
  *
@@ -101,8 +104,8 @@ function berea_setup() {
 	// not using the tgm required plugin tools
 	// require_once( get_template_directory() . '/library/vendors/tgm-plugin-activation/required-plugins.php' );
 
-	/** 
-	 * Thumbnail used for news teaser in the universal nav and on the homepage 
+	/**
+	 * Thumbnail used for news teaser in the universal nav and on the homepage
 	 **/
 	add_image_size( 'news-thumbnail', 221, 147, true ); // (cropped)
 
@@ -122,7 +125,7 @@ if ( !function_exists('berea_scripts') ) :
 		if ( TRUE || SCRIPT_DEBUG || WP_DEBUG ) :
 			// jQuery 2.1.1 - required for megadropdown scripts
         	wp_deregister_script('jquery');
-        	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.js');  
+        	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.js');
 
 			// Concatonated Scripts
 			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production.js', array( 'jquery' ), '1.0.0', false );
@@ -139,7 +142,7 @@ if ( !function_exists('berea_scripts') ) :
 			// jQuery 2.1.1 - required for megadropdown scripts
         	wp_deregister_script('jquery');
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js');
-        	
+
 			// Concatenated Scripts
 			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production-min.js', array( 'jquery' ), '1.0.0', false );
 
@@ -156,7 +159,7 @@ if ( !function_exists('berea_scripts') ) :
 		}
 	}
 	add_action( 'wp_enqueue_scripts', 'berea_scripts' );
-	
+
 endif; // Enqueue Scripts and Styles
 
 /**
@@ -487,4 +490,3 @@ function berea_get_news_for_universal_nav() {
     }
 
 }
-
