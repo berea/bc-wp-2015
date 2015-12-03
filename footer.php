@@ -15,10 +15,10 @@
 		<?php include 'universal_menu.php'; ?>
 
    		<?php tha_footer_before(); ?>
-   		
+
    		<!-- footer-shim -->
 		<div id="footer-shim"><div class="footer-shim-inner"><div class="footer-shim-block"></div></div></div>
-		
+
 		<!-- footer -->
 		<footer id="colophon" class="site-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 			<?php tha_footer_top(); ?>
@@ -39,28 +39,12 @@
 		</div><!-- .footer-promise -->
 
 		<div class="footer-about">
-			<h3>ABOUT BEREA</h3>
-
-			<ul>
-				<li><a href="http://www.berea.edu/about/mission/">Our Mission</a></li>
-				<li><a href="http://www.berea.edu/visitors-center/">Visitor’s Center</a></li>
-				<li><a href="http://www.berea.edu/people-services/jobs/">Jobs</a></li>
-			</ul>
-
-
-
-			<ul>
-				<li><a href="#">Partners for Education</a></li>
-				<li><a href="http://www.berea.edu/seab/">Seabury Athletic Center</a></li>
-				<li><a href="http://www.berea.edu/appalachian-center/">Loyal Jones Appalachian Center</a></li>
-				<li><a href="#">bell hooks Institute</a></li>
-				<li><a href="http://libraryguides.berea.edu/">Hutchins Library</a></li>
-			</ul>
+			<h3>ABOUT THE BEREA COMMUNITY</h3>
 
 			<ul>
 				<li><a href="http://bereaky.gov/">City of Berea</a></li>
 				<li><a href="http://www.madisoncountyky.us/">Madison County</a></li>
-				<li><a href="http://kentucky.gov/Pages/home.aspx">Kentucky</a></li>
+				<li><a href="http://www.kentuckytourism.com/">Kentucky</a></li>
 			</ul>
 
 
