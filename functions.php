@@ -1,7 +1,4 @@
 <?php
-update_option( 'siteurl', 'http://primary.berea.edu' );
-update_option( 'home', 'http://primary.berea.edu' );
-
 /**
  * berea functions and definitions
  *
