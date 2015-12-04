@@ -359,11 +359,11 @@ body { color: #000; font-family: "Open Sans", sans-serif; line-height: 1.5em; wo
 #secondary:last-child { margin-right: 0; }
 #secondary a:link, #secondary a:visited, #secondary a:hover { color: #C75B12; }
 #secondary li { border-top: 1px solid #C75B12; list-style-type: none; }
-#secondary ul.menu { padding-left: 0px; margin-left: 0px; }
+#secondary ul.menu { text-indent: -1em; padding-left: 1em; margin-left: 0px; }
 #secondary ul.menu > li.menu-item > a { font-size: 1.25em; font-weight: 600; }
 #secondary ul.menu .menu-item { border: none; color: #005A8B; }
 #secondary ul.menu .menu-item a { color: #005A8B; text-transform: uppercase; }
-#secondary ul.menu .sub-menu { border-top: 2px solid #C75B12 !important; padding-top: 10px; }
+#secondary ul.menu .sub-menu { margin-left: -1em; border-top: 2px solid #C75B12 !important; padding-top: 10px; }
 #secondary ul.menu .sub-menu a { text-transform: none; }
 #secondary ul.menu .sub-menu:last-child { padding-bottom: 1em; }
 
