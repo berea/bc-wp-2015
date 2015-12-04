@@ -18,6 +18,16 @@ h1.entry-title, h1.entry-title a {
 
 .entry-content {
 
+  // Added for troubleshooting.
+  strong {
+    font-weight: bold;
+  }
+
+  // Added for troubleshooting.
+  em {
+    font-style: italic;
+  }
+
   body {
     padding: 0px 0 50px 0;
     font-size: 16px;
