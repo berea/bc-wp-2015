@@ -1011,8 +1011,8 @@ width: 100%;
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a { font-size: 36px; line-height: 1.1em; padding: 0px 0px 15px 0px; margin: 0px 0px 15px 0px; font-weight: 700; font-style: Normal; font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; color: #C75B12; text-align: left; text-decoration: none; border-bottom: 0px solid #C75B12; }
 
-.entry-content strong { font-weight: bold; }
-.entry-content em { font-style: italic; }
+.entry-content strong { font-weight: bold; font-size: 1em; }
+.entry-content em { font-style: italic; fornt-size: 1em; }
 .entry-content body { padding: 0px 0 50px 0; font-size: 16px; min-height: 100%; font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-weight: 400; font-style: normal; line-height: 25px; background-color: #fffef9; }
 .entry-content h1 { font-size: 52px; margin: 0px 0px 15px 0px; font-weight: 700; font-style: Normal; font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; color: #C75B12; }
 .entry-content h2 { font-size: 40px; line-height: 35px; margin: 0px 0px 25px 0px; font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-weight: 300; font-style: Normal; text-transform: uppercase; color: #c75b12; letter-spacing: 3px; }

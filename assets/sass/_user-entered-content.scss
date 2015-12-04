@@ -18,14 +18,16 @@ h1.entry-title, h1.entry-title a {
 
 .entry-content {
 
-  // Added for troubleshooting.
+  // Override for change made in _typography.
   strong {
     font-weight: bold;
+    font-size: 1em;
   }
 
-  // Added for troubleshooting.
+  // Override for change made in _typography.
   em {
     font-style: italic;
+    fornt-size: 1em;
   }
 
   body {
