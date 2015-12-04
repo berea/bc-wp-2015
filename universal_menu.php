@@ -8,7 +8,11 @@
 
 <nav class="cd-nav">
 	<ul id="cd-primary-nav" class="cd-primary-nav is-fixed <?php echo ($berea_should_have_default_menu) ? 'apply-mobile-injected-menu': ''; ?>">
-	
+
+		<li class="menu-item-hide-on-large root-menu">
+			<a href="<?php $root_url = network_home_url(); echo $root_url; ?>">BEREA COLLEGE</a>
+		</li>
+
 	<?php if ($berea_should_have_default_menu) { ?>
 		<!-- subsite menu with Berea submenu -->
 		<?php
