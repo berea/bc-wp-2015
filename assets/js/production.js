@@ -1547,7 +1547,7 @@ jQuery(document).ready(function($){
 		}
 	}
 	function toggleRibbonAction() {
-		if ( $(document).innerWidth() >= 1024 ) {
+		if ( $(document).innerWidth() >= 769 ) {
 			// main homepage + large media, swap between full & mini
 			if ( $('div#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
 				$('div#ribbon').removeClass('mini-ribbon');
@@ -1555,7 +1555,9 @@ jQuery(document).ready(function($){
 				$('div#ribbon').addClass('mini-ribbon');
 			}
 		} else {
-			if ( $('.cd-overlay').hasClass('is-visible') ) {
+			if ( $('div#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
+				$('div#ribbon').removeClass('mini-ribbon');
+			} else if ( $('.cd-overlay').hasClass('is-visible') ) {
 				$('div#ribbon').hide();
 			} else {
 				$('div#ribbon').show();
