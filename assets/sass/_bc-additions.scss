@@ -135,13 +135,13 @@ $fg-gutter: $gutter;
   div#logo { width: 100% } // centered w/ margins
 }
 
+//
 .shift-down {
   margin-top: 54px;
   @include MQ(L) {
     margin-top: 84px;
   }
 }
-
 
 .hero-nav-wrapper {
   @include outer-container;
@@ -435,10 +435,11 @@ $fg-gutter: $gutter;
   
   h1 {
     border-bottom:none;
-    padding-bottom:0px;
+    padding-bottom:20px;
     margin-bottom:0px;
 	@include MQ(M) {
 	  margin-top:-4px;
+      padding-bottom:0px;
 	  padding-top:0px;
 	}
   }

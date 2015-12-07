@@ -18,6 +18,18 @@ h1.entry-title, h1.entry-title a {
 
 .entry-content {
 
+  // Override for change made in _typography.
+  strong {
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  // Override for change made in _typography.
+  em {
+    font-style: italic;
+    fornt-size: 1em;
+  }
+
   body {
     padding: 0px 0 50px 0;
     font-size: 16px;
@@ -75,7 +87,9 @@ h1.entry-title, h1.entry-title a {
     color: rgba(147, 177, 204, 1);
     line-height: 25px;
     width: 960px;
+    color: $bc-blue;
   }
+  
 
   h5 {
     margin: 0px 0px 25px 0px;

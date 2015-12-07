@@ -1573,11 +1573,11 @@ jQuery(document).ready(function($){
 
 
 	function toggleOverlayShift() {
-		if ( $('.cd-overlay').hasClass('.shift-down')) {
-			$('.cd-overlay').removeClass('shift-down');
-		} else {
-			$('.cd-overlay').addClass('shift-down');
-		}
+        if ( $('.cd-overlay').hasClass('.shift-down')) {
+            $('.cd-overlay').removeClass('shift-down');
+        } else {
+            $('.cd-overlay').addClass('shift-down');
+        }
 	}
 
 

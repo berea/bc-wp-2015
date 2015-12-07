@@ -101,7 +101,8 @@ body {
 
   ul.menu {
 
-	padding-left: 0px;
+	text-indent: -1em;
+	padding-left: 1em;
 	margin-left: 0px;
 
 	> li.menu-item {
@@ -123,6 +124,7 @@ body {
 	}
 
 	.sub-menu {
+	  margin-left: -1em;
 	  border-top: 2px solid $bc-orange !important;
 	  padding-top: 10px;
 	  a {

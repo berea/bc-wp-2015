@@ -639,7 +639,7 @@ Main components
             top: $header-height-L !important;
             max-width: 1024px;
             background: $color-4;
-            padding: 48px 64px 85px;
+            padding: 48px 10px 85px 10px;
             box-shadow: inset 0 1px 0 $color-3, 0 3px 6px rgba(#000, .05);
             @include transform(translateX(0));
             @include clearfix;
@@ -707,8 +707,6 @@ Main components
                 margin-right: 2.66%;
                 border-right: 2px solid $bc-blue;
                 overflow: hidden;
-                overflow-x: hidden;
-                overflow-y: auto;
                 -webkit-overflow-scrolling: touch;
 
                 &:nth-child(4n+2) {
@@ -721,18 +719,18 @@ Main components
                     /* secondary nav title */
                     color: $bc-orange !important;
                     font-weight: bold;
-                    font-size: 1.4rem;
-                    margin-bottom: .6em;
+                    font-size: 16px;
+                    margin-bottom: 0;
                 }
             }
 
             a {
-                height: 40px;
-                line-height: 46px;
-                padding: 0 18% 0 0;
-                color: $color-1;
+                height: 30px;
+                line-height: 30px;
+                padding: 0;
+                color: $bc-blue;
                 border-bottom: none;
-                font-size: 1.4rem;
+                font-size: 16px;
 
                 &:hover {
                     color: $color-2;
@@ -952,7 +950,8 @@ Main components
         }
     }
 
-    .cd-secondary-nav > .has-children > a::before, .cd-secondary-nav > .has-children > a::after {
+    .cd-secondary-nav > .has-children > a::before,
+    .cd-secondary-nav > .has-children > a::after {
         /* remove arrows on secondary nav titles */
         display: none;
     }
