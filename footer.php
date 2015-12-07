@@ -42,12 +42,17 @@
 			<h3>ABOUT THE BEREA COMMUNITY</h3>
 
 			<ul>
-				<li><a href="http://bereaky.gov/">City of Berea</a></li>
+				<li><a href="http://www.visitberea.com/">City of Berea</a></li>
 				<li><a href="http://www.madisoncountyky.us/">Madison County</a></li>
 				<li><a href="http://www.kentuckytourism.com/">Kentucky</a></li>
 			</ul>
 
+			<h3>INITIATIVES</h3>
 
+			<ul>
+				<li><a href="https://www.berea.edu/brushy-fork-institute/">Brushy Fork Institute</a></li>
+				<li><a href="http://partners.berea.edu/">Partners for Education</a></li>
+			</ul>
 
 		</div><!-- .footer-about -->
 
