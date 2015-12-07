@@ -163,15 +163,15 @@
 	</ul>
     <div class="site-info-links">
         <ul>
-            <li><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></li><li><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li><li><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li><li><a href="#">Website Administration</a></li>
+            <li><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></li><li><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li><li><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li><li><a href="/wp-admin">Website Administration</a></li>
         </ul>
-        <p><a href="http://www.berea.edu/cisrk/">Consumer Information & Student Right to Know</a></p>
+        <p><a href="http://www.berea.edu/cisrk/">Consumer Information &amp; Student Right to Know</a></p>
     </div><!-- .site-info-links -->
     <div class="site-info-links-mobile">
         <p><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></p>
         <p><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></p>
         <p><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></p>
-        <p><a href="http://www.berea.edu/cisrk/">Consumer Information &<br />Student Right to Know</a></p>
+        <p><a href="http://www.berea.edu/cisrk/">Consumer Information &amp;<br />Student Right to Know</a></p>
     </div><!-- .site-info-links-mobile -->
 </div><!-- .site-info -->
 			<?php //tha_footer_bottom(); ?>
