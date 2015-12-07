@@ -48,15 +48,11 @@
 			</ul>
 
 			<h3>INITIATIVES</h3>
-<<<<<<< HEAD
-=======
 
 			<ul>
 				<li><a href="https://www.berea.edu/brushy-fork-institute/">Brushy Fork Institute</a></li>
 				<li><a href="http://partners.berea.edu">Partners for Education</a></li>
 			</ul>
-
->>>>>>> Footer Navigation Changes in Markup Only
 
 			<ul>
 				<li><a href="https://www.berea.edu/brushy-fork-institute/">Brushy Fork Institute</a></li>
