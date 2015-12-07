@@ -528,7 +528,7 @@ Main components
 
 .cd-primary-nav .cd-secondary-nav > .see-all a:hover, .cd-primary-nav .cd-nav-gallery > .see-all a:hover, .cd-primary-nav .cd-nav-icons > .see-all a:hover {/* Commenting out to remove the rollover effect *//* background: $color-1; *//* border-color: $color-1; *//* color: $color-4; */ }
 
-.cd-primary-nav .cd-secondary-nav > li {/* change the height according to your needs - you can even set height: auto */ height: 340px;/* here you set the number of columns - use width percentage */ width: 23%; float: left; margin-right: 2.66%; border-right: 2px solid #005A8B; overflow: hidden; -webkit-overflow-scrolling: touch; }
+.cd-primary-nav .cd-secondary-nav > li {/* change the height according to your needs - you can even set height: auto */ height: 340px;/* here you set the number of columns - use width percentage */ width: 25%; float: left; padding: 0 1.5%; border-right: 2px solid #005A8B; overflow: hidden; -webkit-overflow-scrolling: touch; }
 
 .cd-primary-nav .cd-secondary-nav > li:nth-child(4n+2) {/* +2 because we have 2 list items with display:none */ margin-right: 0; border-right: none; }
 

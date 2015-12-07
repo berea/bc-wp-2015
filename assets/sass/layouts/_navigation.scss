@@ -704,8 +704,8 @@ Main components
                 /* change the height according to your needs - you can even set height: auto */
                 height: 340px;
                 /* here you set the number of columns - use width percentage */
-                @include column(.23); // see partials > _layout.scss
-                margin-right: 2.66%;
+                @include column(.25); // see partials > _layout.scss
+                padding: 0 1.5%;
                 border-right: 2px solid $bc-blue;
                 overflow: hidden;
                 -webkit-overflow-scrolling: touch;
