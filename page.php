@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Two Column, Right-Sidebar
+ * Two Column, Right-Sidebar
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -28,13 +28,6 @@ get_header(); ?>
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
 					get_template_part( 'page-templates/partials/content', 'page' );
-				?>
-
-				<?php
-				        // If comments are open or we have at least one comment, load up the comment template
-				        if ( comments_open() || '0' != get_comments_number() ) :
-				                comments_template();
-				        endif;
 				?>
 
 			<?php endwhile; ?>
