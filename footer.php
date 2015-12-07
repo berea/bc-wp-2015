@@ -42,7 +42,7 @@
 			<h3>ABOUT THE BEREA COMMUNITY</h3>
 
 			<ul>
-				<li><a href="http://bereaky.gov/">City of Berea</a></li>
+				<li><a href="http://www.visitberea.com/">City of Berea</a></li>
 				<li><a href="http://www.madisoncountyky.us/">Madison County</a></li>
 				<li><a href="http://www.kentuckytourism.com/">Kentucky</a></li>
 			</ul>
@@ -51,10 +51,8 @@
 
 			<ul>
 				<li><a href="https://www.berea.edu/brushy-fork-institute/">Brushy Fork Institute</a></li>
-				<li><a href="http://partners.berea.edu">Partners for Education</a></li>
+				<li><a href="http://partners.berea.edu/">Partners for Education</a></li>
 			</ul>
-
-
 
 		</div><!-- .footer-about -->
 
@@ -63,8 +61,6 @@
 		<div class="footer-distinctly">
 			<h3>DISTINCTLY BEREAN</h3>
 
-				<a href="https://www.berea.edu/visitor-center/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/visitorcenter165x59.png" alt="Visitor Center &amp; Shoppe"/></a>
-				<br><br><br>
 				<a href="http://www.boonetavernhotel.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/boonetavern165x59.png" alt="Boone Tavern"/></a>
 				<br><br><br>
 				<a href="http://bereacollegecrafts.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/studentcrafts165x42.png" alt="Student Crafts"/></a>
@@ -151,7 +147,7 @@
 			<a href="http://www.youtube.com/berea"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/youtube.png" alt="YouTube" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">YouTube</span></span></a>
 			<a href="http://twitter.com/bereacollege"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter.png" alt="Twitter" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Twitter</span></span></a>
 			<a href="#"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/instagram.png" alt="Instagram" width="25" height="25" /><span class="vertical-center nudge-left nudge-half-right">Instagram</span></span></a>
-			<!-- <a href="http://www.blogtalkradio.com/bereacollege"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/rss.png" alt="RSS" width="25" height="25" /><span class="vertical-center nudge-half-right">RSS</span></span></a> -->
+			<a href="http://www.blogtalkradio.com/bereacollege"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/rss.png" alt="RSS" width="25" height="25" /><span class="vertical-center nudge-half-right">RSS</span></span></a>
 		</p>
 </div><!-- .footer-social -->
 
@@ -163,15 +159,15 @@
 	</ul>
     <div class="site-info-links">
         <ul>
-            <li><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></li><li><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li><li><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li><li><a href="/wp-admin">Website Administration</a></li>
+            <li><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></li><li><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li><li><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li><li><a href="#">Website Administration</a></li>
         </ul>
-        <p><a href="http://www.berea.edu/cisrk/">Consumer Information &amp; Student Right to Know</a></p>
+        <p><a href="http://www.berea.edu/cisrk/">Consumer Information & Student Right to Know</a></p>
     </div><!-- .site-info-links -->
     <div class="site-info-links-mobile">
         <p><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></p>
         <p><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></p>
         <p><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></p>
-        <p><a href="http://www.berea.edu/cisrk/">Consumer Information &amp;<br />Student Right to Know</a></p>
+        <p><a href="http://www.berea.edu/cisrk/">Consumer Information &<br />Student Right to Know</a></p>
     </div><!-- .site-info-links-mobile -->
 </div><!-- .site-info -->
 			<?php //tha_footer_bottom(); ?>
