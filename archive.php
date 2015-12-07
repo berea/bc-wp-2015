@@ -114,7 +114,7 @@ get_header(); ?>
 
 	<?php get_sidebar(); ?>
 
-	<div style="clear:both; background: red;"></div>
+	<div style="clear:both;"></div>
 
 </main><!-- #main -->
 
