@@ -53,7 +53,11 @@
 </nav> <!-- cd-nav -->
 
 <div id="cd-search" class="cd-search">
-	<form>
-		<input type="search" placeholder="Search Berea College">
+	<form method="get" action="http://www.google.com/search">
+		<input type="hidden" name="sitesearch" value="https://berea.edu" />
+		<input type="search"
+			   placeholder="Search Berea College Web Site"
+			   onfocus="if(this.value == 'Search Berea College Web Site') {this.value = '';}"
+			   onblur="if (this.value == '') {this.placeholder = 'Search Berea College Web Site';}" />
 	</form>
 </div>
