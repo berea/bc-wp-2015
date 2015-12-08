@@ -611,9 +611,8 @@ Main components
 .cd-primary-nav .go-back a::before, .cd-primary-nav .go-back a::after { left: 1px; }
 .cd-search { font-size: 3em; position: absolute; height: 50px; width: 100%; top: 50px; left: 0; z-index: 4; opacity: 0; visibility: hidden; -webkit-transition: opacity .3s 0s, visibility 0s .3s; transition: opacity .3s 0s, visibility 0s .3s; }
 .cd-search form { height: 100%; width: 100%; }
-.cd-search input { margin: 0px auto; border-radius: 0; border: none; background: #ffffff; height: 100%; -webkit-box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05); font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none; }
-.cd-search input { width: 100%; padding-left: 20px; }
-.cd-search input { width: 820px; padding: 0; }
+.cd-search input { margin: 0; border-radius: 0; border: none; background: #ffffff; height: 100%; width: -webkit-calc(100% - 36px); width: calc(100% - 36px); -webkit-box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05); font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none; }
+.cd-search input { width: 80%; padding: 0; }
 .cd-search input::-webkit-input-placeholder { color: #c9cbc4; }
 .cd-search input::-moz-placeholder { color: #c9cbc4; }
 .cd-search input:-moz-placeholder { color: #c9cbc4; }
