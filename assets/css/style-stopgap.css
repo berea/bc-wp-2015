@@ -918,7 +918,7 @@ input#s { float: left; width: 70%; }
 .hero-nav > li { display: block; float: left; }
 .hero-nav > li:last-child { margin-right: 0px; }
 .hero-nav { padding-top: 0px; }
-.hero-nav { width: 1150px; }
+.hero-nav { width: 100%; }
 
 .hero-nav-item { background-color: rgba(0, 90, 139, 0.8); margin-bottom: 10px; padding: 20px 0; float: left; display: block; margin-right: 2.12766%; width: 48.93617%; }
 .hero-nav-item:last-child { margin-right: 0; }
