@@ -100,22 +100,22 @@
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">BACK</a></li>
-						<li><a href="http://primary.berea.edu/admissions/visit-berea-college/bereas-academic-requirements/">Admission Requirements</a></li>
-						<li><a href="http://primary.berea.edu/admissions/applying-for-admission/">Application Forms</a></li>
-						<li><a href="http://primary.berea.edu/admissions/applying-freshman/">New Freshmen</a></li>
-						<li><a href="http://primary.berea.edu/admissions/international/">International Students</a></li>
-						<li><a href="http://primary.berea.edu/admissions/transfer-application/">Transfer Students</a></li>
+						<li><a href="http://primary.berea.edu/admissions/academic-requirements/">Admission Requirements</a></li>
+						<li><a href="http://primary.berea.edu/admissions/apply/">Application Forms</a></li>
+						<li><a href="http://primary.berea.edu/admissions/apply/new-freshman/">New Freshmen</a></li>
+						<li><a href="http://primary.berea.edu/admissions/apply/international-students/application/">International Students</a></li>
+						<li><a href="http://primary.berea.edu/admissions/apply/transfer-student/">Transfer Students</a></li>
 					</ul>
 				</li>
 				<li class="has-children">
-					<a href="http://primary.berea.edu/campus-life/">STUDENT LIFE</a>
+					<a href="http://www.berea.edu/campus-life/">STUDENT LIFE</a>
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">BACK</a></li>
-						<li><a href="http://primary.berea.edu/admissions/why-berea/career-preparation/">Career Preparation</a></li>
+						<li><a href="http://primary.berea.edu/ctl/for-students/career-development-graduate-school-funding/">Career Preparation</a></li>
 						<li><a href="http://www.bereaathletics.com/">Athletics</a></li>
 						<li><a href="https://www.berea.edu/cie/education-abroad-and-exchanges-menu/">Education Abroad</a></li>
-						<li><a href="http://primary.berea.edu/admissions/why-berea/service-and-leadership/">Service and Leadership</a></li>
+						<li><a href="https://www.berea.edu/celts/service-learning/">Service and Leadership</a></li>
 					</ul>
 				</li>
 				<li class="has-children">
@@ -123,19 +123,19 @@
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">BACK</a></li>
-						<li><a href="http://primary.berea.edu/admissions/financial-aid-scholarships/bereas-tuition-scholarship/">Tuition Promise Scholarship</a></li>
+						<li><a href="http://primary.berea.edu/admissions/tuition-promise/">Tuition Promise Scholarship</a></li>
 						<li><a href="https://www.berea.edu/student-financial-aid/types-of-financial-aid/">Labor Grant Aid</a></li>
 						<li><a href="http://primary.berea.edu/admissions/quick-estimator/">Financial Eligibility</a></li>
 						<li><a href="https://berea.studentaidcalculator.com">Estimate First-Year Costs</a></li>
-						<li><a href="http://primary.berea.edu/admissions/applying-for-admission/">Submit and RFQ</a></li>
+						<li><a href="http://primary.berea.edu/admissions/apply/">Submit and RFQ</a></li>
 					</ul>
 				</li>
 				<li class="has-children menu-item-show-on-large">
-					<div class="cd-item-as-button button-green"><a id="admissions-apply-button" href="http://primary.berea.edu/admissions/applying-for-admission/">APPLY TODAY</a></div>
+					<div class="cd-item-as-button button-green"><a id="admissions-apply-button" href="http://primary.berea.edu/admissions/apply/">APPLY TODAY</a></div>
 					<div class="cd-item-as-button button-blue"><a id="admissions-eligible-button" href="http://primary.berea.edu/admissions/quick-estimator/">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></div>
 					<div class="cd-item-as-button button-purple"><a id="admissions-visit-button" href="http://primary.berea.edu/admissions/visit-campus/">SCHEDULE A CAMPUS VISIT</a></div>
 				</li>
-				<li class="cd-item-as-button menu-item-hide-on-large button-green"><a id="admissions-apply-button" href="http://primary.berea.edu/admissions/applying-for-admission/">APPLY TODAY</a></li>
+				<li class="cd-item-as-button menu-item-hide-on-large button-green"><a id="admissions-apply-button" href="http://primary.berea.edu/admissions/apply/">APPLY TODAY</a></li>
 				<li class="cd-item-as-button menu-item-hide-on-large button-blue"><a id="admissions-eligible-button"href="http://primary.berea.edu/admissions/quick-estimator/">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></li>
 				<li class="cd-item-as-button menu-item-hide-on-large button-purple"><a id="admissions-visit-button" href="http://primary.berea.edu/admissions/visit-campus/">SCHEDULE A CAMPUS VISIT</a></li>
 			</ul>
