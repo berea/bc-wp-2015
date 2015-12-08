@@ -147,63 +147,65 @@
 				<li class="go-back"><a href="#0">BACK</a></li>
 				<li class="see-all"><a href="https://www.berea.edu/academics/">ACADEMICS</a></li>
 				<li>
-					<a class="cd-nav-item item-1" href="https://www.berea.edu/academics/">
+					<!-- EXAMPLE OF HOW IMAGES WERE DELIVERED VIA CLASS IN EXAMPLE -->
+					<!-- <a class="cd-nav-item item-1" href="https://www.berea.edu/academics/"> -->
+					<a class="cd-nav-item" href="https://www.berea.edu/academics/">
 						<h3>DEGREE PROGRAMS</h3>
 						<p>Bachelor of Arts and Bachelor of Science degrees in 28 fields</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-2" href="https://www.berea.edu/labor-program/">
+					<a class="cd-nav-item" href="https://www.berea.edu/labor-program/">
 						<h3>LABOR PROGRAM</h3>
 						<p>Students are engaged in a learning environment that encourages them to be active learners, workers, and servers.</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-3" href="http://libraryguides.berea.edu/">
+					<a class="cd-nav-item" href="http://libraryguides.berea.edu/">
 						<h3>LIBRARY</h3>
 						<p>Hutchins Library supports the educational mission of the college by maintaining a rich collection of materials in a variety of formats.</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-4" href="https://www.berea.edu/academics/">
+					<a class="cd-nav-item" href="https://www.berea.edu/academics/">
 						<h3>MAJORS &amp; MINORS</h3>
 						<p>Bachelor of Arts and Bachelor of Science degrees in 28 fields</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-5" href="http://community.berea.edu/calendar/main.php?calendarid=default&view=upcoming">
+					<a class="cd-nav-item" href="http://community.berea.edu/calendar/main.php?calendarid=default&view=upcoming">
 						<h3>ACADEMIC CALENDAR</h3>
 						<p>Browse our 2015-2016 Academic Calendar.</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-6" href="https://www.berea.edu/academics/">
+					<a class="cd-nav-item" href="https://www.berea.edu/academics/">
 						<h3>CENTERS</h3>
 						<p>Berea College boasts seven centers which serve our campus and community in a variety of ways.</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-7" href="http://catalog.berea.edu/en/Current/Catalog">
+					<a class="cd-nav-item" href="http://catalog.berea.edu/en/Current/Catalog">
 						<h3>CATALOG &amp; STUDENT HANDBOOK</h3>
 						<p>Browse our 2015-2016 course catalog and student handbook.</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-8" href="https://www.berea.edu/campus/">
+					<a class="cd-nav-item" href="https://www.berea.edu/campus/">
 						<h3>RESOURCES</h3>
 						<p>Explore common resources for campus and community.</p>
 					</a>
 				</li>
 
 				<li>
-					<a class="cd-nav-item item-8" href="https://www.berea.edu/avp/faculty-scholarly-works-2013-2014/">
+					<a class="cd-nav-item" href="https://www.berea.edu/avp/faculty-scholarly-works-2013-2014/">
 						<h3>FACULTY &amp; STAFF SCHOLARLY WORK</h3>
 						<p>While our faculty proudly focuses on being and becoming excellent classroom teachers, they are also active intellectuals and scholars.</p>
 					</a>
