@@ -35,7 +35,7 @@
 
 			<p>No student pays for tuition.</p>
 
-			<p>Our generous <strong>TUITION PROMISE SCHOLARSHIP</strong> makes it possible for you to graduate debt-free. Even if you borrow for special learning opportunites or to replace your family’s total contribution, you will have a low debt compared to national trends. We sometimes call Berea “the best education money can’t buy.”</p>
+			<p>Our generous <strong>TUTITION PROMISE SCHOLARSHIP</strong> makes it possible for you to graduate debt-free. Even if you borrow for special learning opportunites or to replace your family’s total contribution, you will have a low debt compared to national trends. We sometimes call Berea “the best education money can’t buy.”</p>
 		</div><!-- .footer-promise -->
 
 		<div class="footer-about">
