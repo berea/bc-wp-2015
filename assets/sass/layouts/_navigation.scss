@@ -553,11 +553,32 @@ Main components
         /* by default .cd-primary-nav is hidden - trick for iOS devices where you can see the navigation if you pull down */
         visibility: hidden;
         @include transition(visibility 0s .3s);
+        animation: animatedRightSideSlideOut 0.35s 0s 1 ease;
 
-        &.nav-is-visible {
-            visibility: visible;
-            @include transition(visibility 0s 0s);
-        }
+		&.nav-is-visible {
+			visibility: visible;
+			@include transition(visibility 0s 0s);
+			animation: animatedRightSideSlideIn 0.22s 0s 1 ease;
+		}
+		
+		@keyframes animatedRightSideSlideIn {
+			from {
+				@include transform(translateX($nav-width-S));
+			}
+			to {
+				@include transform(translateX(0));
+			}
+		}
+		
+		@keyframes animatedRightSideSlideOut {
+			from {
+				@include transform(translateX(0));
+			}
+			to {
+				@include transform(translateX($nav-width-S));
+			}
+		}
+
     }
 }
 
