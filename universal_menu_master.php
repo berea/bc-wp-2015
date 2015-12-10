@@ -49,11 +49,11 @@
 					<li><a href="https://www.berea.edu/imc">Integrated Marketing &amp; Communications</a></li>
 					<li><a href="https://www.berea.edu/public-safety/">Public Safety</a></li>
 					<li class="has-children">
-						<a href="#0">CENTERS</a>
+						<a href="#0">Centers &#62;</a>
 
 						<ul class="is-hidden">
 							<li class="go-back"><a href="#0">BACK</a></li>
-							<li><a href="https://www.facebook.com/bellhooksInstitute">bell hooks Institute</a></li>
+							<li><a href="http://www.bellhooksinstitute.com/">bell hooks Institute</a></li>
 							<li><a href="https://www.berea.edu/black-cultural-center/">Black Cultural Center</a></li>
 							<li><a href="https://www.berea.edu/cgwc/">Carter G. Woodson Center for Interracial Education</a></li>
 							<li><a href="https://www.berea.edu/celts/">Center for Excellence in Learning Through Service</a></li>
