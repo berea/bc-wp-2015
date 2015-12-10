@@ -11,7 +11,7 @@
 				<li class="go-back"><a href="#0">BACK</a></li>
 
 				<!-- <li><a href="#">The Berea College Difference</a></li> -->
-				<li><a href="http://primary.berea.edu/about/distinctions/">Quick Facts</a></li>
+				<li><a href="http://primary.berea.edu/about/quick-facts/">Quick Facts</a></li>
 				<!-- <li><a href="#">Ratings and Rankings</a></li> -->
 				<!-- <li><a href="#">Berea in Words</a></li> -->
 				<!-- <li><a href="#">Berea in Photographs</a></li> -->
@@ -241,4 +241,8 @@
 
 		<li>
 			<a href="http://primary.berea.edu/give-to-berea/">GIVE</a>
+		</li>
+
+		<li class="">
+			<a href="https://www.berea.edu/directory/">DIRECTORY</a>
 		</li>
