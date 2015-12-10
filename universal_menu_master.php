@@ -222,7 +222,7 @@
 
 			<ul class="cd-nav-gallery is-hidden">
 				<li class="go-back"><a href="#0">BACK</a></li>
-				<li class="see-all"><a href="#">MORE NEWS</a></li>
+				<li class="see-all"><a href="http://primary.berea.edu/news">MORE NEWS</a></li>
 
 				<?php
 
