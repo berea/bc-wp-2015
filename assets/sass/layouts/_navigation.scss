@@ -375,7 +375,7 @@ Main components
         font-weight: normal;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        overflow: visible;
+        overflow: hidden;
         border-bottom: 2px solid lighten($bc-orange, 5%);
         @include transform(translateZ(0));
         will-change: transform, opacity;
@@ -553,11 +553,32 @@ Main components
         /* by default .cd-primary-nav is hidden - trick for iOS devices where you can see the navigation if you pull down */
         visibility: hidden;
         @include transition(visibility 0s .3s);
+        animation: animatedRightSideSlideOut 0.35s 0s 1 ease;
 
-        &.nav-is-visible {
-            visibility: visible;
-            @include transition(visibility 0s 0s);
-        }
+		&.nav-is-visible {
+			visibility: visible;
+			@include transition(visibility 0s 0s);
+			animation: animatedRightSideSlideIn 0.22s 0s 1 ease;
+		}
+		
+		@keyframes animatedRightSideSlideIn {
+			from {
+				@include transform(translateX($nav-width-S));
+			}
+			to {
+				@include transform(translateX(0));
+			}
+		}
+		
+		@keyframes animatedRightSideSlideOut {
+			from {
+				@include transform(translateX(0));
+			}
+			to {
+				@include transform(translateX($nav-width-S));
+			}
+		}
+
     }
 }
 
@@ -999,25 +1020,21 @@ Main components
     }
 
     input {
-        margin: 0px auto;
+        margin: 0;
         border-radius: 0;
         border: none;
         background: $color-4;
         height: 100%;
+        width: calc(100% - 36px);
         box-shadow: inset 0 1px 0 $color-3, 0 3px 6px rgba(#000, .05);
         font-family: $opensans-condensed;
         @include appearance(none);
 
-
-        @include MQ(M) {
-            width: 100%;
-            padding-left: 20px;
+        @include MQ(L) {
+          width: 80%;
+          padding: 0;
+          margin: 0 auto;
         }
-
-      @include MQ(L) {
-        width: 820px;
-        padding: 0;
-      }
 
         @include placeholder {
             color: darken($color-3, 10%);
