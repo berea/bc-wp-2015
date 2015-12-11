@@ -108,7 +108,7 @@
 					</ul>
 				</li>
 				<li class="has-children">
-					<a href="http://www.berea.edu/campus-life/">STUDENT LIFE</a>
+					<a href="https://www.berea.edu/campus-life/">STUDENT LIFE</a>
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">BACK</a></li>

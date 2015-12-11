@@ -67,7 +67,7 @@
 				<br><br><br>
 				<a href="http://bereacollegecrafts.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/studentcrafts165x42.png" alt="Student Crafts"/></a>
 				<br><br><br>
-				<a href="http://www.berea.edu/conference-services/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/conference-services-165x42.png" alt="Conference Services"/></a>
+				<a href="https://www.berea.edu/conference-services/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/conference-services-165x42.png" alt="Conference Services"/></a>
 				<br><br><br>
 
 		</div><!-- .footer-distinctly -->
@@ -84,7 +84,7 @@
                 </div>
 
                 <div id="berea_logo_leftside">
-                    <a href="http://www.berea.edu/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bc-logo-stacked.svg" alt="Berea College"/></a>
+                    <a href="https://www.berea.edu/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bc-logo-stacked.svg" alt="Berea College"/></a>
                 </div>
 
             </div><!-- #topleft -->
@@ -92,7 +92,7 @@
             <div id="bottomright">
 
                 <div id="black-text">
-                    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+                    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
                     <div id="gmap_container">
                         <div id="gmap_canvas" style="height:250px;width:100%;"></div>
                     </div>
@@ -136,7 +136,7 @@
 	</div><!-- .footer-floats -->
 
 	<div class="footer-more">
-		<a href="http://www.berea.edu/about/" class="btn btn-large">MORE ABOUT BEREA &gt;</a>
+		<a href="https://www.berea.edu/about/" class="btn btn-large">MORE ABOUT BEREA &gt;</a>
 	</div><!-- .footer-more -->
 
 </div><!-- #footer-main -->
@@ -161,15 +161,15 @@
 	</ul>
     <div class="site-info-links">
         <ul>
-            <li><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></li><li><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li><li><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li><li><a href="/wp-admin">Website Administration</a></li>
+            <li><a href="https://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></li><li><a href="https://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li><li><a href="https://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li><li><a href="/wp-admin">Website Administration</a></li>
         </ul>
-        <p><a href="http://www.berea.edu/cisrk/">Consumer Information &amp; Student Right to Know</a></p>
+        <p><a href="https://www.berea.edu/cisrk/">Consumer Information &amp; Student Right to Know</a></p>
     </div><!-- .site-info-links -->
     <div class="site-info-links-mobile">
-        <p><a href="http://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></p>
-        <p><a href="http://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></p>
-        <p><a href="http://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></p>
-        <p><a href="http://www.berea.edu/cisrk/">Consumer Information &amp;<br />Student Right to Know</a></p>
+        <p><a href="https://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></p>
+        <p><a href="https://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></p>
+        <p><a href="https://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></p>
+        <p><a href="https://www.berea.edu/cisrk/">Consumer Information &amp;<br />Student Right to Know</a></p>
     </div><!-- .site-info-links-mobile -->
 </div><!-- .site-info -->
 			<?php //tha_footer_bottom(); ?>
