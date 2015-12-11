@@ -24,8 +24,8 @@
 				if (count($vals)>1) {
 					$please_close_ul=true;
 					$first_val=array_shift($vals);
-					
-					echo '<li class="has-children menu-item-hide-on-large">' . $first_val . 
+
+					echo '<li class="has-children menu-item-hide-on-large">' . $first_val .
 						"\n<ul class=\"is-hidden\">\n".
 						'<li class="go-back"><a href="#0">BACK</a></li>';
 				}
@@ -35,7 +35,7 @@
 				if ($please_close_ul) { echo "</li></ul>"; }
 			}
 		?>
-		
+
 		<li class="has-children menu-item-hide-on-large root-menu">
 			<a href="#">MAIN NAVIGATION</a>
 			<ul class="is-hidden">
@@ -53,11 +53,12 @@
 </nav> <!-- cd-nav -->
 
 <div id="cd-search" class="cd-search">
-	<form method="get" action="http://www.google.com/search">
-		<input type="hidden" name="sitesearch" value="https://berea.edu" />
-		<input type="search"
-			   placeholder="Search Berea College Web Site"
-			   onfocus="if(this.value == 'Search Berea College Web Site') {this.value = '';}"
-			   onblur="if (this.value == '') {this.placeholder = 'Search Berea College Web Site';}" />
+	<form method="get" action="https://www.google.com/search">
+			<input type="hidden" name="sitesearch" value="https://berea.edu" />
+			<input type="text"
+					name="q" value="Search Berea College Web Site"
+					onfocus="if(this.value == 'Search Berea College Web Site') {this.value = '';}"
+					onblur="if (this.value == '') {this.value = 'Search Berea College Web Site';}"/>
 	</form>
+
 </div>
