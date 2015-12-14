@@ -969,7 +969,8 @@ input#s { float: left; width: 70%; }
 .homepage-slider-sizing-aspect-ratio { /* based on aspect ratios hack: http://www.mademyday.de/css-height-equals-width-with-pure-css.html */ }
 .homepage-slider-sizing-aspect-ratio.homepage-slider { position: relative; width: 100%; }
 .homepage-slider-sizing-aspect-ratio.homepage-slider:before { content: ""; display: block; padding-top: 100%; /* initial aspect ratio of 1:1*/ }
-.homepage-slider-sizing-aspect-ratio .homepage-slider-background, .homepage-slider-sizing-aspect-ratio .secondary-slider-background { background-size: contain; background-repeat: no-repeat; background-position: center top; overflow: hidden; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; }
+.homepage-slider-sizing-aspect-ratio .homepage-slider-background, .homepage-slider-sizing-aspect-ratio .secondary-slider-background { background-size: contain; background-repeat: no-repeat; background-position: center top; overflow: hidden; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 168px; }
+.homepage-slider-sizing-aspect-ratio .homepage-slider-background, .homepage-slider-sizing-aspect-ratio .secondary-slider-background { bottom: 0px; }
 .homepage-slider-sizing-aspect-ratio.ratio_2x1:before { padding-top: 50%; }
 .homepage-slider-sizing-aspect-ratio.ratio_1x2:before { padding-top: 200%; }
 .homepage-slider-sizing-aspect-ratio.ratio_4x3:before { padding-top: 75%; }

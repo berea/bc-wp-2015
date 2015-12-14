@@ -497,8 +497,16 @@ Main components
   .cd-primary-nav .cd-nav-icons .cd-nav-item.item-6::before { background-image: url("img/line-icon-6.svg"); }
   .cd-primary-nav .cd-nav-icons .cd-nav-item.item-7::before { background-image: url("img/line-icon-7.svg"); }
   .cd-primary-nav .cd-nav-icons .cd-nav-item.item-8::before { background-image: url("img/line-icon-8.svg"); } }
-@media only screen and (max-width: 1023px) { .cd-primary-nav { /* by default .cd-primary-nav is hidden - trick for iOS devices where you can see the navigation if you pull down */ visibility: hidden; -webkit-transition: visibility 0s 0.3s; transition: visibility 0s 0.3s; }
-  .cd-primary-nav.nav-is-visible { visibility: visible; -webkit-transition: visibility 0s 0s; transition: visibility 0s 0s; } }
+@media only screen and (max-width: 1023px) { .cd-primary-nav { /* by default .cd-primary-nav is hidden - trick for iOS devices where you can see the navigation if you pull down */ visibility: hidden; -webkit-transition: visibility 0s 0.3s; transition: visibility 0s 0.3s; -webkit-animation: animatedRightSideSlideOut 0.35s 0s 1 ease; animation: animatedRightSideSlideOut 0.35s 0s 1 ease; }
+  .cd-primary-nav.nav-is-visible { visibility: visible; -webkit-transition: visibility 0s 0s; transition: visibility 0s 0s; -webkit-animation: animatedRightSideSlideIn 0.22s 0s 1 ease; animation: animatedRightSideSlideIn 0.22s 0s 1 ease; }
+  @-webkit-keyframes animatedRightSideSlideIn { from { -webkit-transform: translateX(300px); -ms-transform: translateX(300px); transform: translateX(300px); }
+    to { -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); } }
+  @keyframes animatedRightSideSlideIn { from { -webkit-transform: translateX(300px); -ms-transform: translateX(300px); transform: translateX(300px); }
+    to { -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); } }
+  @-webkit-keyframes animatedRightSideSlideOut { from { -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
+    to { -webkit-transform: translateX(300px); -ms-transform: translateX(300px); transform: translateX(300px); } }
+  @keyframes animatedRightSideSlideOut { from { -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
+    to { -webkit-transform: translateX(300px); -ms-transform: translateX(300px); transform: translateX(300px); } } }
 
 @media only screen and (min-width: 1024px) { .cd-primary-nav { position: static; padding: 0 80px 0 0; height: auto; width: 100%; float: right; overflow: visible; background: transparent; text-align: right; }
   .cd-primary-nav:after { content: ""; display: table; clear: both; }
@@ -927,7 +935,8 @@ input#s { float: left; width: 70%; }
 .homepage-slider-sizing-aspect-ratio { /* based on aspect ratios hack: http://www.mademyday.de/css-height-equals-width-with-pure-css.html */ }
 .homepage-slider-sizing-aspect-ratio.homepage-slider { position: relative; width: 100%; }
 .homepage-slider-sizing-aspect-ratio.homepage-slider:before { content: ""; display: block; padding-top: 100%; /* initial aspect ratio of 1:1*/ }
-.homepage-slider-sizing-aspect-ratio .homepage-slider-background, .homepage-slider-sizing-aspect-ratio .secondary-slider-background { background-size: contain; background-repeat: no-repeat; background-position: center top; overflow: hidden; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; }
+.homepage-slider-sizing-aspect-ratio .homepage-slider-background, .homepage-slider-sizing-aspect-ratio .secondary-slider-background { background-size: contain; background-repeat: no-repeat; background-position: center top; overflow: hidden; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 168px; }
+@media only screen and (min-width: 769px) { .homepage-slider-sizing-aspect-ratio .homepage-slider-background, .homepage-slider-sizing-aspect-ratio .secondary-slider-background { bottom: 0px; } }
 .homepage-slider-sizing-aspect-ratio.ratio_2x1:before { padding-top: 50%; }
 .homepage-slider-sizing-aspect-ratio.ratio_1x2:before { padding-top: 200%; }
 .homepage-slider-sizing-aspect-ratio.ratio_4x3:before { padding-top: 75%; }
