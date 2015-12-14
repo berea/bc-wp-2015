@@ -11,14 +11,14 @@
 				<li class="go-back"><a href="#0">BACK</a></li>
 
 				<!-- <li><a href="#">The Berea College Difference</a></li> -->
-				<li><a href="http://primary.berea.edu/about/distinctions/">Quick Facts</a></li>
+				<li><a href="http://primary.berea.edu/about/quick-facts/">Quick Facts</a></li>
 				<!-- <li><a href="#">Ratings and Rankings</a></li> -->
 				<!-- <li><a href="#">Berea in Words</a></li> -->
 				<!-- <li><a href="#">Berea in Photographs</a></li> -->
 				<li><a href="https://www.berea.edu/about/mission/">Our Mission</a></li>
 				<!-- <li><a href="#">Our Vision</a></li> -->
 				<li><a href="https://www.berea.edu/about/mission/">The Great Commitments</a></li>
-				<li><a href="https://www.berea.edu/about/history/">Our History</a></li>
+				<li><a href="https://www.berea.edu/about/history/">Early History</a></li>
 			</ul>
 		</li>
 
@@ -49,11 +49,11 @@
 					<li><a href="https://www.berea.edu/imc">Integrated Marketing &amp; Communications</a></li>
 					<li><a href="https://www.berea.edu/public-safety/">Public Safety</a></li>
 					<li class="has-children">
-						<a href="#0">CENTERS</a>
+						<a href="#0">Centers &#62;</a>
 
 						<ul class="is-hidden">
 							<li class="go-back"><a href="#0">BACK</a></li>
-							<li><a href="https://www.facebook.com/bellhooksInstitute">bell hooks Institute</a></li>
+							<li><a href="http://www.bellhooksinstitute.com/">bell hooks Institute</a></li>
 							<li><a href="https://www.berea.edu/black-cultural-center/">Black Cultural Center</a></li>
 							<li><a href="https://www.berea.edu/cgwc/">Carter G. Woodson Center for Interracial Education</a></li>
 							<li><a href="https://www.berea.edu/celts/">Center for Excellence in Learning Through Service</a></li>
@@ -241,4 +241,8 @@
 
 		<li>
 			<a href="http://primary.berea.edu/give-to-berea/">GIVE</a>
+		</li>
+
+		<li class="">
+			<a href="https://www.berea.edu/directory/">DIRECTORY</a>
 		</li>
