@@ -388,7 +388,12 @@ $fg-gutter: $gutter;
 	top:0px;
 	left:0px;
 	right:0px;
-	bottom:0px;
+	bottom:168px;
+
+    @include MQ(M) {
+      bottom: 0px;
+    }
+
   }
 
   /* based on aspect ratios hack: http://www.mademyday.de/css-height-equals-width-with-pure-css.html */
