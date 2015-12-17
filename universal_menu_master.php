@@ -55,12 +55,12 @@
 							<li class="go-back"><a href="#0">BACK</a></li>
 							<li><a href="http://www.bellhooksinstitute.com/">bell hooks Institute</a></li>
 							<li><a href="https://www.berea.edu/black-cultural-center/">Black Cultural Center</a></li>
-							<li><a href="https://www.berea.edu/cgwc/">Carter G. Woodson Center for Interracial Education</a></li>
 							<li><a href="https://www.berea.edu/celts/">Center for Excellence in Learning Through Service</a></li>
 							<li><a href="http://primary.berea.edu/ctl/">Center for Transformative Learning</a></li>
 							<li><a href="https://www.berea.edu/cie/">Francis and Louise Hutchins Center for International Education</a></li>
 							<li><a href="https://www.berea.edu/appalachian-center/">Loyal Jones Appalachian Center</a></li>
 							<li><a href="https://www.berea.edu/campus-christian-center/">Willis D. Weatherford, Jr. Campus Christian Center</a></li>
+							<li><a href="https://www.berea.edu/cgwc/">Carter G. Woodson Center for Interracial Education</a></li>
 						</ul>
 					</li>
 				</ul>
