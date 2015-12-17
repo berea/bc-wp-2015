@@ -101,7 +101,7 @@
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">BACK</a></li>
 						<li><a href="http://primary.berea.edu/admissions/academic-requirements/">Admission Requirements</a></li>
-						<li><a href="http://primary.berea.edu/admissions/apply/">Application Forms</a></li>
+						<li><a href="https://primary.berea.edu/admissions/home/publications-forms/">Admissions Publications &amp; Forms</a></li>
 						<li><a href="http://primary.berea.edu/admissions/apply/new-freshman/">New Freshmen</a></li>
 						<li><a href="http://primary.berea.edu/admissions/apply/international-students/application/">International Students</a></li>
 						<li><a href="http://primary.berea.edu/admissions/apply/transfer-student/">Transfer Students</a></li>
