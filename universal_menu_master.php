@@ -127,7 +127,7 @@
 						<li><a href="https://www.berea.edu/student-financial-aid/types-of-financial-aid/">Labor Grant Aid</a></li>
 						<li><a href="http://primary.berea.edu/admissions/quick-estimator/">Financial Eligibility</a></li>
 						<li><a href="https://berea.studentaidcalculator.com">Estimate First-Year Costs</a></li>
-						<li><a href="http://primary.berea.edu/admissions/apply/">Submit and RFQ</a></li>
+						<li><a href="http://primary.berea.edu/admissions/frq/">Submit an FRQ</a></li>
 					</ul>
 				</li>
 				<li class="has-children menu-item-show-on-large">
