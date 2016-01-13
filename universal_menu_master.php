@@ -14,7 +14,7 @@
 				<li><a href="http://primary.berea.edu/about/quick-facts/">Quick Facts</a></li>
 				<!-- <li><a href="#">Ratings and Rankings</a></li> -->
 				<!-- <li><a href="#">Berea in Words</a></li> -->
-				<!-- <li><a href="#">Berea in Photographs</a></li> -->
+				<!-- <li><a href="#">Berea in Photographs </a></li> -->
 				<li><a href="https://www.berea.edu/about/mission/">Our Mission</a></li>
 				<!-- <li><a href="#">Our Vision</a></li> -->
 				<li><a href="https://www.berea.edu/about/mission/">The Great Commitments</a></li>
