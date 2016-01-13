@@ -19,6 +19,7 @@
 				<!-- <li><a href="#">Our Vision</a></li> -->
 				<li><a href="https://www.berea.edu/about/mission/">The Great Commitments</a></li>
 				<li><a href="https://www.berea.edu/about/history/">Early History</a></li>
+				<li><a href="https://www.berea.edu/berea-numbers/">Berea By the Numbers</a></li>
 			</ul>
 		</li>
 
