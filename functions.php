@@ -122,7 +122,7 @@ if ( !function_exists('berea_scripts') ) :
 		if ( TRUE || SCRIPT_DEBUG || WP_DEBUG ) :
 			// jQuery 2.1.1 - required for megadropdown scripts
         	wp_deregister_script('jquery');
-        	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.js');
+        	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js');
 
 			// Concatonated Scripts
 			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production.js', array( 'jquery' ), '1.0.0', false );
