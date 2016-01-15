@@ -148,11 +148,6 @@ if ( !function_exists('berea_scripts') ) :
 
 		endif;
 
-		// Legacy Wall
-		// @TODO live's ID is 4592
-		if (is_single() && $post->ID == '4567') {
-			wp_enqueue_script('legacy-wall', get_template_directory_uri()) . '/assets/js/legacy-wall.js';
-		}
 
 		// Dashicons
 		 wp_enqueue_style( 'dashicons' );
@@ -164,6 +159,22 @@ if ( !function_exists('berea_scripts') ) :
 	add_action( 'wp_enqueue_scripts', 'berea_scripts' );
 
 endif; // Enqueue Scripts and Styles
+
+
+if ( !function_exists('berea_page_scripts') ) :
+	/*
+	 * For pages that need special files included
+	 */
+	function berea_page_scripts() {
+		// Legacy Wall
+		// @TODO live's ID is 4592
+		global $post;
+		if (is_single() && !is_admin() && $post->ID == '4567') {
+			wp_enqueue_script('legacy-wall', get_template_directory_uri() . '/assets/js/legacy-wall.js');
+		}
+	}
+	add_action('wp_enqueue_scripts', 'berea_page_scripts');
+endif; // Page Scripts
 
 /**
  * Register widgetized area and update sidebar with default widgets.
