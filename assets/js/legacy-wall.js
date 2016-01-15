@@ -13,7 +13,7 @@ jQuery(document).ready(function( $ ) {
 		var names = [];
 		var nameMap = {};
 		$.each(data.panelNames, function(i, panel) {
-			var year = panel.split(' ').unshift();
+			var year = panel.split(' ').shift();
 			if (!inArray(year, years)) {
 				years.push(year);
 			}
