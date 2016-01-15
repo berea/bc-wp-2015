@@ -17,7 +17,7 @@ jQuery(document).ready(function( $ ) {
 			if (!inArray(year, years)) {
 				years.push(year);
 			}
-			if (!year in yearPanels) {
+			if (!(year in yearPanels)) {
 				yearPanels[year] = [];
 			}
 			yearPanels[year].push(panel);
