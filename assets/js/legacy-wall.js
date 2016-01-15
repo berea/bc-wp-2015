@@ -8,10 +8,10 @@ jQuery(document).ready(function( $ ) {
 		data.panelNames.sort();
 
 		// Generate year and names lists
-		var years = {}
-		var yearPanels = [];
-		var names = {};
-		var nameMap = [];
+		var years = []
+		var yearPanels = {};
+		var names = [];
+		var nameMap = {};
 		$.each(data.panelNames, function(i, panel) {
 			var year = panel.split(' ').unshift();
 			if (!inArray(year, years)) {
