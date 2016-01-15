@@ -21,7 +21,7 @@ jQuery(document).ready(function( $ ) {
 				yearPanels[year] = [];
 			}
 			yearPanels[year].push(panel);
-			$.each(panels[panel].names, function(j, name){
+			$.each(data.panels[panel].names, function(j, name){
 				names.push(name);
 				nameMap[name] = panel;
 			});
