@@ -148,6 +148,12 @@ if ( !function_exists('berea_scripts') ) :
 
 		endif;
 
+		// Legacy Wall
+		// @TODO live's ID is 4592
+		if (is_single() && $post->ID == '4567') {
+			wp_enqueue_script('legacy-wall', get_template_directory_uri()) . '/assets/js/legacy-wall.js';
+		}
+
 		// Dashicons
 		 wp_enqueue_style( 'dashicons' );
 
