@@ -151,3 +151,8 @@ object {
 .infinity-end.neverending .site-footer {
 	display: block;
 }
+
+/* Leaflet icon images need an override from normalize style */
+.leaflet-container img {
+	max-height: none;
+}
