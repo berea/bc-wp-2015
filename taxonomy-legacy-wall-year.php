@@ -36,7 +36,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<div class="page-title">Legacy Wall, 
+				<h1 class="page-title">Legacy Wall, 
 					<?php
 					if (function_exists('get_the_archive_title')) :
 						echo get_the_archive_title();
@@ -99,7 +99,7 @@ get_header(); ?>
 						* END TO-DO
 						*/
 					?>
-				</div>
+				</h1>
 				<?php
 					// Show an optional term description.
 					$term_description = term_description();
