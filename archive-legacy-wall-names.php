@@ -14,8 +14,7 @@ $results = $wpdb->get_results(
     SELECT * FROM $wpdb->posts
     WHERE post_title LIKE '$letter%'
     AND post_type = 'legacy-wall-names'
-    AND post_status = 'publish'
-    ORDER BY title ASC; 
+    AND post_status = 'publish'; 
     "
 ); 
 
