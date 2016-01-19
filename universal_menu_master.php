@@ -73,7 +73,7 @@
 			<ul class="is-hidden">
 				<li class="go-back"><a href="#0">BACK</a></li>
 				<li><a href="http://primary.berea.edu/news/">Newsroom</a></li>
-				<li><a href="https://www.berea.edu/visitors-center/">Visit Berea College/Visitor Center&amp; Shoppe</a></li>
+				<li><a href="https://www.berea.edu/visitors-center/">Visit Berea College/Visitor Center &amp; Shoppe</a></li>
 				<!-- <li><a href="#">Virtual Tour</a></li> -->
 				<li><a href="http://www.boonetavernhotel.com/">Historic Boone Tavern</a></li>
 				<li><a href="http://bereacollegecrafts.com/">Student Crafts</a></li>
