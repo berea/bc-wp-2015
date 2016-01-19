@@ -156,3 +156,14 @@ object {
 .leaflet-container img {
 	max-height: none;
 }
+
+/* Legacy Wall Pages */
+.legacy-wall-names {
+	.entry-title {
+		font-size: 1.3rem;
+
+		a {
+			color: black;
+		}
+	}
+}
