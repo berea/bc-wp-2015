@@ -2,8 +2,8 @@
 /**
  * @package berea
  */
-global $post;
-d($post);
+$terms = wp_get_post_terms(the_ID(), 'legacy-wall-year');
+d($terms);
 ?>
 
 <?php tha_entry_before(); ?>
