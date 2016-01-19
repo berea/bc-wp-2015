@@ -105,7 +105,7 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php if ($results): ?>
 				<?php 
-				foreach ($result as $post) {
+				foreach ($results as $post) {
 					setup_postdata($post);
 					get_template_part( 'page-templates/partials/content', get_post_format() );
 				} ?>
