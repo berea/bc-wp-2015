@@ -7,6 +7,32 @@
  * @package berea
  */
 
+$args=array(
+  'post_type' => 'legacy-wall-names',
+  'post_status' => 'publish',
+  'posts_per_page' => -1,
+  'caller_get_posts'=> 1,
+  'tax_query' => array(
+  	array(
+  		'taxonomy' => 'legacy-wall-year',
+  		'field' => 'slug',
+  		'terms' => $wp_query->queried_object->name,
+  	),
+  )
+);
+$my_query = null;
+$my_query = new WP_Query($args);
+if( $my_query->have_posts() ) {
+  echo 'List of Posts';
+  while ($my_query->have_posts()) : $my_query->the_post(); ?>
+    <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
+    <?php
+  the_excerpt();
+  endwhile;
+}
+wp_reset_query();  // Restore global post data stomped by the_post().
+
+
 get_header(); ?>
 
 <main id="main" class="site-main" role="main">
@@ -16,7 +42,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1>Test</h1>
+				<h2>Legacy Wall</h2>
 				<h1 class="page-title">
 					<?php
 					if (function_exists('get_the_archive_title')) :
