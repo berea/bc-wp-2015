@@ -36,8 +36,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h2>Legacy Wall</h2>
-				<h1 class="page-title">
+				<div class="page-title">Legacy Wall, 
 					<?php
 					if (function_exists('get_the_archive_title')) :
 						echo get_the_archive_title();
@@ -100,7 +99,7 @@ get_header(); ?>
 						* END TO-DO
 						*/
 					?>
-				</h1>
+				</div>
 				<?php
 					// Show an optional term description.
 					$term_description = term_description();
@@ -118,7 +117,7 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'page-templates/partials/content', get_post_format() );
+					get_template_part( 'page-templates/partials/content', 'legacy-wall-name' );
 				?>
 
 			<?php endwhile; ?>
