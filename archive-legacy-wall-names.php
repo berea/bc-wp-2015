@@ -29,7 +29,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">Legacy Wall - <?php print $letter; ?></h1>
+				<h1 class="page-title">Legacy Wall, <?php print $letter; ?></h1>
 				<?php
 					// Show an optional term description.
 					$term_description = term_description();
