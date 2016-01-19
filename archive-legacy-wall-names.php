@@ -44,7 +44,7 @@ get_header(); ?>
 				<?php 
 				foreach ($results as $post) {
 					setup_postdata($post);
-					get_template_part( 'page-templates/partials/content', get_post_format() );
+					get_template_part( 'page-templates/partials/content', 'legacy-wall-name' );
 				} ?>
 			<?php endif; ?>
 
