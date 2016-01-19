@@ -2,7 +2,7 @@
 /**
  * @package berea
  */
-$terms = wp_get_post_terms(the_ID(), 'legacy-wall-year');
+$terms = wp_get_post_terms(get_the_ID(), 'legacy-wall-year');
 d($terms);
 ?>
 
