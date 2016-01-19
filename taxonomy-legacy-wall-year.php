@@ -12,7 +12,7 @@ $args=array(
   'post_status' => 'publish',
   'posts_per_page' => -1,
   'caller_get_posts'=> 1,
-  'order' => 'DESC',
+  'order' => 'ASC',
   'orderby' => 'title',
   'tax_query' => array(
   	array(
