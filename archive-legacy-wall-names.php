@@ -11,10 +11,11 @@ global $wpdb;
 $letter = isset($_GET['letter']) ? $_GET['letter'] : 'A';
 $results = $wpdb->get_results(
     "
-    SELECT * FROM $wpdb->posts
+    SELECT * FROM $wpdb->posts tb
     WHERE post_title LIKE '$letter%'
     AND post_type = 'legacy-wall-names'
-    AND post_status = 'publish'; 
+    AND post_status = 'publish'
+    ORDER BY tb.title ASC; 
     "
 ); 
 
