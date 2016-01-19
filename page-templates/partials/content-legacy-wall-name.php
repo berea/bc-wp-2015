@@ -2,6 +2,8 @@
 /**
  * @package berea
  */
+global $post;
+d($post);
 ?>
 
 <?php tha_entry_before(); ?>
