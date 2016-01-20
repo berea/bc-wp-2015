@@ -40,13 +40,15 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<?php if ($results): ?>
-				<?php 
-				foreach ($results as $post) {
-					setup_postdata($post);
-					get_template_part( 'page-templates/partials/content', 'legacy-wall-name' );
-				} ?>
-			<?php endif; ?>
+			<div id="legacy-name-list">
+				<?php if ($results): ?>
+					<?php 
+					foreach ($results as $post) {
+						setup_postdata($post);
+						get_template_part( 'page-templates/partials/content', 'legacy-wall-name' );
+					} ?>
+				<?php endif; ?>
+			</div>
 
 			<?php berea_paging_nav(); ?>
 

@@ -110,17 +110,19 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+			<div id="legacy-name-list">
+				<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'page-templates/partials/content', 'legacy-wall-name-no-link' );
-				?>
+					<?php
+						/* Include the Post-Format-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'page-templates/partials/content', 'legacy-wall-name-no-link' );
+					?>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
+			</div>
 
 			<?php berea_paging_nav(); ?>
 
