@@ -168,7 +168,7 @@ object {
 		}
 	}
 }
-#secondary .legacy-wall-sidebar {
+#secondary .menu.legacy-wall-sidebar {
 	h3 {
 		font-size: 1.5rem;
 	}
@@ -180,6 +180,8 @@ object {
 	}
 	.alpha-links {
 		text-indent: 0;
+		position: relative;
+		left: -12px;
 
 		li {
 			border-top: none;
@@ -198,8 +200,15 @@ object {
 	}
 
 	.year-links {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+
 		li {
 			border-top: none;
+			text-indent: 0;
+			position: relative;
+			left: -12px;
 		}
 	}
 }
