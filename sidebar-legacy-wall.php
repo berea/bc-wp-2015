@@ -9,10 +9,10 @@
 	<div id="secondary" class="widget-area" role="complementary">
 		<div id="secondary-inner">
 		<?php tha_sidebar_top(); ?>
-		<h2>Legacy Wall</h2>
+		<h3>Legacy Wall</h3>
 		<ul class="menu legacy-wall-sidebar">
+			<li><a href="/legacy-wall/names/?letter=A"></a>Browse by Name</li>
 			<li>
-				<h3>Browse by Name</h3>
 				<ul class="sub-menu alpha-links">
 					<li><a href="/legacy-wall/names/?letter=A">A</a></li>
 					<li><a href="/legacy-wall/names/?letter=B">B</a></li>
@@ -42,8 +42,8 @@
 					<li><a href="/legacy-wall/names/?letter=Z">Z</a></li>
 				</ul>
 			</li>
+			<li><a href="/legacy-wall/1855-1900/">Browse by Year</a></li>
 			<li>
-				<h3>Browse by Year</h3>
 				<ul class="sub-menu">
 				<?php
 					 $terms = get_terms( 'legacy-wall-year' );

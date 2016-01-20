@@ -168,3 +168,17 @@ object {
 		}
 	}
 }
+#secondary .legacy-wall-sidebar {
+	.alpha-links li {
+		border-top: none;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+
+		a {
+			display: inline-block;
+			font-size: 1.5em;
+			margin-right: 0.3em;
+		}
+	}
+}
