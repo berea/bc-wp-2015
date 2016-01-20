@@ -12,7 +12,7 @@
 		
 		<ul class="menu legacy-wall-sidebar">
 			<li><h3>Legacy Wall</h3></li>
-			<li><a href="/legacy-wall/names/?letter=A"></a>Browse by Name</li>
+			<li><a href="/legacy-wall/names/?letter=A">Browse by Name</a></li>
 			<li>
 				<ul class="sub-menu alpha-links">
 					<li><a href="/legacy-wall/names/?letter=A">A</a></li>

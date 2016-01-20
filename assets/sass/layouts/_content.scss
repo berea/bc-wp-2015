@@ -169,8 +169,14 @@ object {
 	}
 }
 #secondary .legacy-wall-sidebar {
-	ul {
-		border-top: none;
+	h3 {
+		font-size: 1.5rem;
+	}
+	li {
+		border: none;
+	}
+	.sub-menu {
+		padding-top: 2px;
 	}
 	.alpha-links {
 		text-indent: 0;
