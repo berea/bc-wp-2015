@@ -47,7 +47,7 @@
 			<li>
 				<ul class="sub-menu year-links">
 				<?php
-					 $terms = get_terms( 'legacy-wall-year' array('order'=>'DESC'));
+					 $terms = get_terms( 'legacy-wall-year', array('order'=>'DESC'));
 					 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 					     foreach ( $terms as $term ) {
 					       echo '<li><a href="' . get_term_link($term) . '">' . $term->name . '</a></li>';
