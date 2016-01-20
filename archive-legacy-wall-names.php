@@ -58,7 +58,7 @@ get_header(); ?>
 
 	</div><!-- #primary -->
 
-	<?php get_sidebar(); ?>
+	<?php get_sidebar('legacy-wall'); ?>
 
 	<div style="clear:both;"></div>
 
