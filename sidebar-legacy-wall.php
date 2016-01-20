@@ -38,7 +38,7 @@
 					<li><a href="/legacy-wall/names/?letter=U">U</a></li>
 					<li><a href="/legacy-wall/names/?letter=V">V</a></li>
 					<li><a href="/legacy-wall/names/?letter=W">W</a></li>
-					<li><a href="/legacy-wall/names/?letter=X">X</a></li>
+					<li>X</li>
 					<li><a href="/legacy-wall/names/?letter=Y">Y</a></li>
 					<li><a href="/legacy-wall/names/?letter=Z">Z</a></li>
 				</ul>
