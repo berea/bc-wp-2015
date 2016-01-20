@@ -9,8 +9,10 @@
 	<div id="secondary" class="widget-area" role="complementary">
 		<div id="secondary-inner">
 		<?php tha_sidebar_top(); ?>
+		<h2>Legacy Wall</h2>
 		<ul class="menu legacy-wall-sidebar">
 			<li>
+				<h3>Browse by Name</h3>
 				<ul class="sub-menu alpha-links">
 					<li><a href="/legacy-wall/names/?letter=A">A</a></li>
 					<li><a href="/legacy-wall/names/?letter=B">B</a></li>
@@ -41,9 +43,10 @@
 				</ul>
 			</li>
 			<li>
+				<h3>Browse by Year</h3>
 				<ul class="sub-menu">
 				<?php
-					 $terms = get_terms( 'my_taxonomy' );
+					 $terms = get_terms( 'legacy-wall-year' );
 					 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 					     foreach ( $terms as $term ) {
 					       echo '<li><a href="' . get_term_link($term) . '">' . $term->name . '</a></li>';
