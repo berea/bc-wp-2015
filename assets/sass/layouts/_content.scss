@@ -176,6 +176,8 @@ object {
 		-webkit-column-break-inside: avoid;
 	    page-break-inside: avoid;
 	    break-inside: avoid;
+	    margin-bottom: 0;
+	    padding-bottom: 1.5em;
 	}
 }
 #secondary .menu.legacy-wall-sidebar {
