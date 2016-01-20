@@ -169,16 +169,31 @@ object {
 	}
 }
 #secondary .legacy-wall-sidebar {
-	.alpha-links li {
+	ul {
 		border-top: none;
-		display: inline-block;
-		margin: 0;
-		padding: 0;
+	}
+	.alpha-links {
+		text-indent: 0;
 
-		a {
+		li {
+			border-top: none;
 			display: inline-block;
-			font-size: 1.5em;
-			margin-right: 0.3em;
+			margin: 0;
+			padding: 0;
+			text-indent: 0;
+
+			a {
+				display: inline-block;
+				font-size: 1.5em;
+				margin-right: 0.42em;
+				margin-bottom: 0.21em;
+			}
+		}
+	}
+
+	.year-links {
+		li {
+			border-top: none;
 		}
 	}
 }

@@ -9,8 +9,9 @@
 	<div id="secondary" class="widget-area" role="complementary">
 		<div id="secondary-inner">
 		<?php tha_sidebar_top(); ?>
-		<h3>Legacy Wall</h3>
+		
 		<ul class="menu legacy-wall-sidebar">
+			<li><h3>Legacy Wall</h3></li>
 			<li><a href="/legacy-wall/names/?letter=A"></a>Browse by Name</li>
 			<li>
 				<ul class="sub-menu alpha-links">
@@ -44,7 +45,7 @@
 			</li>
 			<li><a href="/legacy-wall/1855-1900/">Browse by Year</a></li>
 			<li>
-				<ul class="sub-menu">
+				<ul class="sub-menu year-links">
 				<?php
 					 $terms = get_terms( 'legacy-wall-year' );
 					 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
