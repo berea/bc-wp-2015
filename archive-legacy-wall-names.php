@@ -40,7 +40,7 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<div id="legacy-name-list">
+			<div class="legacy-name-list">
 				<?php if ($results): ?>
 					<?php 
 					foreach ($results as $post) {

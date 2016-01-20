@@ -110,7 +110,7 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<div id="legacy-name-list">
+			<div class="legacy-name-list">
 				<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
 					<?php
