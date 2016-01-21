@@ -2148,8 +2148,18 @@ h3.cd-news-title {
   color: white;
   text-decoration: none;
   transition: opacity 0.3s;
-  margin-bottom: 0.84em;
+  margin-bottom: 24px;
   font-size: 1.5em; }
+  .anchor-button:before {
+    content: '\f0da';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    float: right; }
+  @media screen and (min-width: 1024px) {
+    .anchor-button {
+      display: none; } }
 
 .anchor-button:hover {
   opacity: 0.8;
