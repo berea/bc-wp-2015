@@ -28,11 +28,12 @@
 		margin-right: 0px !important;
 		@include media($sm) {
 			@include span-columns(4);
+			float: none;
 		}
 		@include media($md) {
 			@include span-columns(6);
+			float: none;
 		}
-		float: none;
 		@include media($lg) {
 			float: left;
 		}

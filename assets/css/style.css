@@ -2391,14 +2391,14 @@ object {
   padding: 20px 50px;
   margin: 0px;
   margin-left: 0px !important;
-  margin-right: 0px !important;
-  float: none; }
+  margin-right: 0px !important; }
   @media screen and (min-width: 200px) {
     .page-template-default #primary, .single-post #primary, .archive #primary {
       float: left;
       display: block;
       margin-right: 6.66667%;
-      width: 100%; }
+      width: 100%;
+      float: none; }
       .page-template-default #primary:last-child, .single-post #primary:last-child, .archive #primary:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 769px) {
@@ -2406,7 +2406,8 @@ object {
       float: left;
       display: block;
       margin-right: 4.34783%;
-      width: 100%; }
+      width: 100%;
+      float: none; }
       .page-template-default #primary:last-child, .single-post #primary:last-child, .archive #primary:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 1024px) {
