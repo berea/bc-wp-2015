@@ -263,6 +263,8 @@ object {
 	background: $bc-orange;
 	color: white;
 	text-align: center;
-	padding: 19px;
+	padding: 19px 19px 19px 300px;
+	font-size: 1.3em;
+	line-height: 1.5;
 	@include clearfix;
 }
