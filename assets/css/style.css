@@ -2391,7 +2391,8 @@ object {
   padding: 20px 50px;
   margin: 0px;
   margin-left: 0px !important;
-  margin-right: 0px !important; }
+  margin-right: 0px !important;
+  float: none; }
   @media screen and (min-width: 200px) {
     .page-template-default #primary, .single-post #primary, .archive #primary {
       float: left;

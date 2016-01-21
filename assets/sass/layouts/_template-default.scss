@@ -32,6 +32,7 @@
 		@include media($md) {
 			@include span-columns(6);
 		}
+		float: none;
 		@include media($lg) {
 			float: left;
 		}
