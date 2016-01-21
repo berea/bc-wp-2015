@@ -268,10 +268,10 @@ object {
 	line-height: 1.5;
 	@include clearfix;
 
-	@include media($md) {
+	@include media($smbg) {
 		padding: 4px 19px 4px 240px;
 	}
-	@include media($lg) {
+	@include media($md) {
 		padding: 19px 19px 19px 300px;
 	}
 }
