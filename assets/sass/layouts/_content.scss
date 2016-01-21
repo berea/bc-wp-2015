@@ -183,49 +183,52 @@ object {
 	    padding-bottom: 1.5em;
 	}
 }
-.archive.tax-legacy-wall-year #secondary {
-	display: block;
-	.menu.legacy-wall-sidebar {
-		h3 {
-			font-size: 1.5rem;
-		}
-		li {
-			border: none;
-		}
-		.sub-menu {
-			padding-top: 5px;
-		}
-		.alpha-links {
-			text-indent: 0;
-
+.archive.tax-legacy-wall-year,
+.post-type-archive-legacy-wall-names {
+	#secondary {
+		display: block;
+		.menu.legacy-wall-sidebar {
+			h3 {
+				font-size: 1.5rem;
+			}
 			li {
-				border-top: none;
-				display: inline-block;
-				margin: 0;
-				padding: 0;
+				border: none;
+			}
+			.sub-menu {
+				padding-top: 5px;
+			}
+			.alpha-links {
 				text-indent: 0;
-				font-size: 1.5em;
-				margin-bottom: 0.42em;
-				width: 1.2em;
-				text-align: center;
 
-				a {
+				li {
+					border-top: none;
 					display: inline-block;
+					margin: 0;
+					padding: 0;
+					text-indent: 0;
+					font-size: 1.5em;
+					margin-bottom: 0.42em;
+					width: 1.2em;
+					text-align: center;
+
+					a {
+						display: inline-block;
+					}
 				}
 			}
-		}
 
-		.year-links {
-			-webkit-column-count: 2;
-			-moz-column-count: 2;
-			column-count: 2;
+			.year-links {
+				-webkit-column-count: 2;
+				-moz-column-count: 2;
+				column-count: 2;
 
-			li {
-				border-top: none;
-				text-indent: 0;
-				-webkit-column-break-inside: avoid;
-		        page-break-inside: avoid;
-		        break-inside: avoid;
+				li {
+					border-top: none;
+					text-indent: 0;
+					-webkit-column-break-inside: avoid;
+			        page-break-inside: avoid;
+			        break-inside: avoid;
+				}
 			}
 		}
 	}

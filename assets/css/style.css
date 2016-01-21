@@ -2326,17 +2326,23 @@ object {
   margin-bottom: 0;
   padding-bottom: 1.5em; }
 
-.archive.tax-legacy-wall-year #secondary {
+.archive.tax-legacy-wall-year #secondary,
+.post-type-archive-legacy-wall-names #secondary {
   display: block; }
-  .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar h3 {
+  .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar h3,
+  .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar h3 {
     font-size: 1.5rem; }
-  .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar li {
+  .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar li,
+  .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar li {
     border: none; }
-  .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .sub-menu {
+  .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .sub-menu,
+  .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .sub-menu {
     padding-top: 5px; }
-  .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .alpha-links {
+  .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .alpha-links,
+  .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .alpha-links {
     text-indent: 0; }
-    .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .alpha-links li {
+    .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .alpha-links li,
+    .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .alpha-links li {
       border-top: none;
       display: inline-block;
       margin: 0;
@@ -2346,13 +2352,16 @@ object {
       margin-bottom: 0.42em;
       width: 1.2em;
       text-align: center; }
-      .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .alpha-links li a {
+      .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .alpha-links li a,
+      .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .alpha-links li a {
         display: inline-block; }
-  .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links {
+  .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links,
+  .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2; }
-    .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links li {
+    .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links li,
+    .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links li {
       border-top: none;
       text-indent: 0;
       -webkit-column-break-inside: avoid;
