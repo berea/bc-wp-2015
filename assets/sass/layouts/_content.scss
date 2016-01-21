@@ -269,7 +269,7 @@ object {
 	@include clearfix;
 
 	@include media($smbg) {
-		padding: 4px 19px 4px 240px;
+		padding: 4px 19px 9px 240px;
 	}
 	@include media($md) {
 		padding: 19px 19px 19px 300px;
