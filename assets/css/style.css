@@ -2408,9 +2408,11 @@ object {
       width: 100%; }
       .page-template-default #primary:last-child, .single-post #primary:last-child, .archive #primary:last-child {
         margin-right: 0; } }
+  @media screen and (min-width: 1024px) {
+    .page-template-default #primary, .single-post #primary, .archive #primary {
+      float: left; } }
   @media only screen and (min-width: 1024px) {
     .page-template-default #primary, .single-post #primary, .archive #primary {
-      float: left;
       float: left;
       display: block;
       margin-right: 2.12766%;
