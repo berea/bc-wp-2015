@@ -72,7 +72,7 @@ body {
 #secondary {
 
   background-color: $bc-white;
-
+  outline: none;
   display: none;
 
   @include media($sm) {
