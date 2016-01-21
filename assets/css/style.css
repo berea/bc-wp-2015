@@ -274,6 +274,10 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
+/*
+ * 	if you change the value of $L here, be sure to
+ *  update var MqL in navigation.js as well!
+ */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -867,10 +871,6 @@ input#s {
 /*--------------------------------------------------------------
 6.0 Layout and Structure
 --------------------------------------------------------------*/
-/*
- * 	if you change the value of $L here, be sure to
- *  update var MqL in navigation.js as well!
- */
 /* =Structure/Scaffolding
 -------------------------------------------------------------- */
 /* #TODO: replace @include media with @include MQ to better match other sass files 
@@ -1037,10 +1037,6 @@ body {
 /*--------------------------------------------------------------
 6.2 Navigation
 --------------------------------------------------------------*/
-/*
- * 	if you change the value of $L here, be sure to
- *  update var MqL in navigation.js as well!
- */
 /* -------------------------------- 
 
 Primary style

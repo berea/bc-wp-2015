@@ -13,6 +13,15 @@ $grid-columns: 12;
 $max-width:100%;
 
 // Breakpoints
+/*
+ * 	if you change the value of $L here, be sure to
+ *  update var MqL in navigation.js as well!
+ */
+$S:     481px;
+$M:     769px;
+$L:     1024px; // 1171px;
+$maxL:    $L - 1px;
+$WPA:   782px; //match the wordpress admin bar breakpoint
 $sm: new-breakpoint(min-width 200px 4);
 $smbg: new-breakpoint(min-width 480px 4);
 $md: new-breakpoint(min-width 769px 6); // it was 768 - but not flipping over with other media queries so bumped by 1
