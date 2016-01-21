@@ -22,7 +22,6 @@
 
 	#primary {
 	  	background-color: $bc-white;
-		float: left;
 	  	padding: 20px 50px;
 	  	margin: 0px;
 		margin-left: 0px !important;
@@ -34,6 +33,7 @@
 			@include span-columns(6);
 		}
         @include MQ(L) {
+			float: left;
 		  	@include span-columns(9);
         }
 	}

@@ -2327,22 +2327,22 @@ object {
   padding-bottom: 1.5em; }
 
 .archive.tax-legacy-wall-year #secondary,
-.post-type-archive-legacy-wall-names #secondary {
+.archive.post-type-archive-legacy-wall-names #secondary {
   display: block; }
   .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar h3,
-  .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar h3 {
+  .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar h3 {
     font-size: 1.5rem; }
   .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar li,
-  .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar li {
+  .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar li {
     border: none; }
   .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .sub-menu,
-  .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .sub-menu {
+  .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .sub-menu {
     padding-top: 5px; }
   .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .alpha-links,
-  .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .alpha-links {
+  .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .alpha-links {
     text-indent: 0; }
     .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .alpha-links li,
-    .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .alpha-links li {
+    .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .alpha-links li {
       border-top: none;
       display: inline-block;
       margin: 0;
@@ -2353,15 +2353,15 @@ object {
       width: 1.2em;
       text-align: center; }
       .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .alpha-links li a,
-      .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .alpha-links li a {
+      .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .alpha-links li a {
         display: inline-block; }
   .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links,
-  .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links {
+  .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2; }
     .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links li,
-    .post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links li {
+    .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links li {
       border-top: none;
       text-indent: 0;
       -webkit-column-break-inside: avoid;
@@ -2388,7 +2388,6 @@ object {
   max-width: 1024px; }
 .page-template-default #primary, .single-post #primary, .archive #primary {
   background-color: #FFFFFF;
-  float: left;
   padding: 20px 50px;
   margin: 0px;
   margin-left: 0px !important;
@@ -2411,6 +2410,7 @@ object {
         margin-right: 0; } }
   @media only screen and (min-width: 1024px) {
     .page-template-default #primary, .single-post #primary, .archive #primary {
+      float: left;
       float: left;
       display: block;
       margin-right: 2.12766%;
