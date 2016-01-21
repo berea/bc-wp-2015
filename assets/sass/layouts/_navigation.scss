@@ -1252,11 +1252,13 @@ h3.cd-news-title {
 /* Anchor Button */
 .anchor-button {
     display: block;
-    padding: 4px 11px;
+    padding: 9px 13px;
     background: $bc-orange;
     color: white;
     text-decoration: none;
     transition: opacity 0.3s;
+    margin-bottom: 0.84em;
+    font-size: 1.5em;
 }
 .anchor-button:hover {
     opacity: 0.8;

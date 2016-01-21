@@ -206,13 +206,19 @@ object {
 					margin: 0;
 					padding: 0;
 					text-indent: 0;
-					font-size: 1.5em;
+					font-size: 2.5em;
 					margin-bottom: 0.42em;
+					margin-top: 0.42em;
 					width: 1.2em;
 					text-align: center;
 
 					a {
 						display: inline-block;
+					}
+
+					@include media($lg) {
+						font-size: 1.5em;
+						margin-top: 0;
 					}
 				}
 			}
@@ -228,6 +234,13 @@ object {
 					-webkit-column-break-inside: avoid;
 			        page-break-inside: avoid;
 			        break-inside: avoid;
+			        font-size: 2em;
+			        margin: 0.42em 0;
+
+					@include media($lg) {
+						font-size: 1rem;
+						margin: 0;
+					}
 				}
 			}
 		}

@@ -2143,11 +2143,13 @@ h3.cd-news-title {
 /* Anchor Button */
 .anchor-button {
   display: block;
-  padding: 4px 11px;
+  padding: 9px 13px;
   background: #C75B12;
   color: white;
   text-decoration: none;
-  transition: opacity 0.3s; }
+  transition: opacity 0.3s;
+  margin-bottom: 0.84em;
+  font-size: 1.5em; }
 
 .anchor-button:hover {
   opacity: 0.8;
@@ -2348,13 +2350,19 @@ object {
       margin: 0;
       padding: 0;
       text-indent: 0;
-      font-size: 1.5em;
+      font-size: 2.5em;
       margin-bottom: 0.42em;
+      margin-top: 0.42em;
       width: 1.2em;
       text-align: center; }
       .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .alpha-links li a,
       .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .alpha-links li a {
         display: inline-block; }
+      @media screen and (min-width: 1024px) {
+        .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .alpha-links li,
+        .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .alpha-links li {
+          font-size: 1.5em;
+          margin-top: 0; } }
   .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links,
   .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links {
     -webkit-column-count: 2;
@@ -2366,7 +2374,14 @@ object {
       text-indent: 0;
       -webkit-column-break-inside: avoid;
       page-break-inside: avoid;
-      break-inside: avoid; }
+      break-inside: avoid;
+      font-size: 2em;
+      margin: 0.42em 0; }
+      @media screen and (min-width: 1024px) {
+        .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links li,
+        .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links li {
+          font-size: 1rem;
+          margin: 0; } }
 
 /*--------------------------------------------------------------
 6.4 Page Templates
