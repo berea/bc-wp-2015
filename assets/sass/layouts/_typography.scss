@@ -89,9 +89,7 @@ cite {
 	font-style: italic;
 }
 strong, b {
-	@include fontSize(20px);
-	color: #000;
-	font-family: $title;
+	font-weight: bold;
 }
 // Commented out JLH 7/28/15 - we do not want links to fade into red!
 //a, a:visited {
