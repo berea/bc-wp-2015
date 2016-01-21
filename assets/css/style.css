@@ -2368,6 +2368,18 @@ object {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2; }
+    @media screen and (min-width: 769px) {
+      .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links,
+      .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3; } }
+    @media screen and (min-width: 1024px) {
+      .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links,
+      .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2; } }
     .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links li,
     .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links li {
       border-top: none;
@@ -2376,12 +2388,12 @@ object {
       page-break-inside: avoid;
       break-inside: avoid;
       font-size: 2em;
-      margin: 0.42em 0; }
+      padding: 0.42em 0; }
       @media screen and (min-width: 1024px) {
         .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links li,
         .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links li {
           font-size: 1rem;
-          margin: 0; } }
+          padding: 0 0 0.21em 0; } }
 
 /*--------------------------------------------------------------
 6.4 Page Templates
