@@ -2140,6 +2140,28 @@ h3.cd-news-title {
   font-weight: bold;
   border-bottom: none; }
 
+/* Anchor Button */
+.anchor-button {
+  display: block;
+  padding: 4px 11px;
+  background: #C75B12;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s; }
+
+.anchor-button:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s; }
+
+.anchor-button.bg-lightblue {
+  background: #BFDBEC; }
+
+.anchor-button.bg-blue {
+  background: #005A8B; }
+
+.anchor-button.bg-green {
+  background: #739600; }
+
 /*--------------------------------------------------------------
 6.3 Content
 --------------------------------------------------------------*/
@@ -2357,7 +2379,7 @@ object {
   max-width: 1024px; }
 .page-template-default #primary, .single-post #primary, .archive #primary {
   background-color: #FFFFFF;
-  float: left !important;
+  float: left;
   padding: 20px 50px;
   margin: 0px;
   margin-left: 0px !important;
@@ -2402,7 +2424,7 @@ object {
       display: block !important;
       position: relative;
       z-index: 1;
-      float: right !important;
+      float: right;
       margin-bottom: 0px !important;
       background: none; }
       .page-template-default #secondary:last-child, .single-post #secondary:last-child, .archive #secondary:last-child {

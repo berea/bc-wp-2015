@@ -37,6 +37,7 @@ get_header(); ?>
 						printf( '<div class="taxonomy-description">%s</div>', 	$term_description );
 					endif;
 				?>
+				<a href="#secondary" class="anchor-button">See More</a>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>

@@ -1248,3 +1248,26 @@ h3.cd-news-title {
     font-weight: bold;
     border-bottom:none;
 }
+
+/* Anchor Button */
+.anchor-button {
+    display: block;
+    padding: 4px 11px;
+    background: $bc-orange;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+.anchor-button:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+.anchor-button.bg-lightblue {
+    background: $bc-lightblue;
+}
+.anchor-button.bg-blue {
+    background: $bc-blue;
+}
+.anchor-button.bg-green {
+    background: $bc-green;
+}
