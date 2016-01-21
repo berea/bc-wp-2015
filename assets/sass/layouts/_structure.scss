@@ -79,7 +79,7 @@ body {
     display: block;
   }
 
-  @include media($md) {
+  @include media($lg) {
     display: block;
 	@include span-columns( 2 );
 	@include omega( block );

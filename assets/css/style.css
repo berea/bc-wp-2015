@@ -956,7 +956,7 @@ body {
   @media screen and (min-width: 200px) {
     #secondary {
       display: block; } }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1024px) {
     #secondary {
       display: block;
       float: left;
