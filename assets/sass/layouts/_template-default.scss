@@ -39,7 +39,7 @@
 	}
 	
 	#secondary {
-	  	display: none !important;
+	  	display: none;
 
         @include MQ(L) {
 		  @include span-columns(3);
