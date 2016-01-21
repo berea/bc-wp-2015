@@ -263,8 +263,15 @@ object {
 	background: $bc-orange;
 	color: white;
 	text-align: center;
-	padding: 19px 19px 19px 300px;
+	padding: 100px 19px 19px 19px;
 	font-size: 1.3em;
 	line-height: 1.5;
 	@include clearfix;
+
+	@include media($md) {
+		padding: 4px 19px 4px 240px;
+	}
+	@include media($lg) {
+		padding: 19px 19px 19px 300px;
+	}
 }
