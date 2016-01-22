@@ -45,7 +45,7 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 <?php tha_body_top(); ?>
 <div id="page" class="hfeed site">
 	<div id="bar-msg">
-		<strong>BEREA COLLEGE CLOSING:</strong> Due to inclement weather, Berea College will be closed on Friday. January 22, 2016. Only essential personnel should report to work.
+		<strong>BEREA COLLEGE CLOSING:</strong> Due to inclement weather, Berea College will be closed on Friday, January 22, 2016. Only essential personnel should report to work.
 	</div>
 
 	<div id="ribbon" class="cd-header-ribbon">
