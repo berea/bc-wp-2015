@@ -519,3 +519,9 @@ function berea_soliloquy_image_src($src, $id, $item, $data) {
 	return $base_url . $image_meta['file'];
 }
 add_filter('soliloquy_image_src', 'berea_soliloquy_image_src', 10, 4);
+
+// Hook to disable soliloquy's preloading which stops responsive images being used.
+function berea_soliloquy_disable_preloading($disabled, $data) {
+	return true;
+}
+add_filter('soliloquy_disable_preloading', 'berea_soliloquy_disable_preloading', 10, 2);
