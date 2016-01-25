@@ -506,6 +506,7 @@ function berea_soliloquy_output($slider, $data) {
 		preg_match( '/wp-image-([0-9]+)/i', $image, $class_id );
 		$attachment_id = absint( $class_id[1] );
 		$image_meta = get_post_meta( $attachment_id, '_wp_attachment_metadata', true );
+		d($image_meta);
 		// Ensure the image meta exists.
 	    if ( empty( $image_meta['sizes'] ) ) {
 	        d('no sizes');
