@@ -509,11 +509,7 @@ function berea_soliloquy_output($slider, $data) {
 add_filter('soliloquy_output', 'berea_soliloquy_output', 10, 2);
 // wp_make_content_images_responsive needs the img tags to have a class with their id
 function berea_soliloquy_image_slide_class($classes, $item, $i, $data, $mobile) {
-	//$classes[] = 'wp-image-' . $id;
-	d($item);
-	d($data);
-	d($classes);
-	d($mobile);
+	$classes[] = 'wp-image-' . $item['id'];
 	return $classes;
 }
 add_filter('soliloquy_output_item_image_classes', 'berea_soliloquy_image_slide_class', 10, 5);
