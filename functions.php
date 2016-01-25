@@ -501,6 +501,9 @@ function berea_get_news_for_universal_nav() {
 
 // Make Soliloquy sliders use wp's native responsive images with wp retina
 function berea_soliloquy_output($slider, $data) {
-	return wp_make_content_images_responsive($slider);
+	d($slider);
+	$modified = wp_make_content_images_responsive($slider);
+	d($modified);
+	return $modified;
 }
 add_filter('soliloquy_output', 'berea_soliloquy_output');
