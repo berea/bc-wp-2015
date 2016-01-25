@@ -503,13 +503,9 @@ function berea_get_news_for_universal_nav() {
 function berea_soliloquy_output($slider, $data) {
 	preg_match_all( '/<img [^>]+>/', $slider, $matches );
 	foreach( $matches[0] as $image ) {
-		d(strpos( $image, ' srcset=' ));
-		d(preg_match( '/wp-image-([0-9]+)/i', $image, $class_id ));
-		d($attachment_id = absint( $class_id[1] ));
-        if ( false === strpos( $image, ' srcset=' ) && preg_match( '/wp-image-([0-9]+)/i', $image, $class_id ) &&
-            ( $attachment_id = absint( $class_id[1] ) ) ) {
- 			d('all good here');
-        }
+		preg_match( '/wp-image-([0-9]+)/i', $image, $class_id );
+		$attachment_id = absint( $class_id[1] );
+		d(get_post_meta( $attachment_id, '_wp_attachment_metadata', true ));
     }
 
 	d($slider);
