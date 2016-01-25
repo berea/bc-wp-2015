@@ -501,59 +501,7 @@ function berea_get_news_for_universal_nav() {
 
 // Make Soliloquy sliders use wp's native responsive images with wp retina
 function berea_soliloquy_output($slider, $data) {
-	preg_match_all( '/<img [^>]+>/', $slider, $matches );
-	foreach( $matches[0] as $image ) {
-		preg_match( '/wp-image-([0-9]+)/i', $image, $class_id );
-		$attachment_id = absint( $class_id[1] );
-		$image_meta = get_post_meta( $attachment_id, '_wp_attachment_metadata', true );
-		d($image_meta);
-	    $image_src = preg_match( '/src="([^"]+)"/', $image, $match_src ) ? $match_src[1] : '';
-	    list( $image_src ) = explode( '?', $image_src );
-		// Ensure the image meta exists.
-	    if ( empty( $image_meta['sizes'] ) ) {
-	        d('no sizes');
-	    }
-	 
-	 
-	    // Return early if we couldn't get the image source.
-	    else if ( ! $image_src ) {
-	        d('no image_src');
-	    }
-	 
-	    // Bail early if an image has been inserted and later edited.
-	    else if ( preg_match( '/-e[0-9]{13}/', $image_meta['file'], $img_edit_hash ) &&
-	        strpos( wp_basename( $image_src ), $img_edit_hash[0] ) === false ) {
-	 
-	        d('image edited');
-	    }
-
-	    $base_url = trailingslashit( _wp_upload_dir_baseurl() );
-	    $image_base_url = $base_url;
-	 
-	    $dirname = dirname( $image_meta['file'] );
-	    if ( $dirname !== '.' ) {
-	        $image_base_url .= trailingslashit( $dirname );
-	    }
-	 
-	    $all_sizes = wp_list_pluck( $image_meta['sizes'], 'file' );
-	 
-	    foreach ( $all_sizes as $key => $file ) {
-	        $all_sizes[ $key ] = $image_base_url . $file;
-	    }
-	 
-	    // Add the original image.
-	    $all_sizes[] = $base_url . $image_meta['file'];
-	 
-	    // Bail early if the image src doesn't match any of the known image sizes.
-	    if ( ! in_array( $image_src, $all_sizes ) ) {
-	        d('original not in all sizes');
-	    }
-    }
-
-	//d($slider);
-	$modified = wp_make_content_images_responsive($slider);
-	//d($modified);
-	return $modified;
+	return wp_make_content_images_responsive($slider);
 }
 add_filter('soliloquy_output', 'berea_soliloquy_output', 10, 2);
 
@@ -568,7 +516,6 @@ add_filter('soliloquy_output_item_image_classes', 'berea_soliloquy_image_slide_c
 function berea_soliloquy_image_src($src, $id, $item, $data) {
 	$base_url = trailingslashit( _wp_upload_dir_baseurl() );
 	$image_meta = get_post_meta( $item['id'], '_wp_attachment_metadata', true );
-	d($src);
 	return $base_url . $image_meta['file'];
 }
 add_filter('soliloquy_image_src', 'berea_soliloquy_image_src', 10, 4);
