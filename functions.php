@@ -529,6 +529,28 @@ function berea_soliloquy_output($slider, $data) {
 	    else {
 	    	d('all good to this point');
 	    }
+
+	    $base_url = trailingslashit( _wp_upload_dir_baseurl() );
+	    $image_base_url = $base_url;
+	 
+	    $dirname = dirname( $image_meta['file'] );
+	    if ( $dirname !== '.' ) {
+	        $image_base_url .= trailingslashit( $dirname );
+	    }
+	 
+	    $all_sizes = wp_list_pluck( $image_meta['sizes'], 'file' );
+	 
+	    foreach ( $all_sizes as $key => $file ) {
+	        $all_sizes[ $key ] = $image_base_url . $file;
+	    }
+	 
+	    // Add the original image.
+	    $all_sizes[] = $base_url . $image_meta['file'];
+	 
+	    // Bail early if the image src doesn't match any of the known image sizes.
+	    if ( ! in_array( $image_src, $all_sizes ) ) {
+	        d('original not in all sizes');
+	    }
     }
 
 	d($slider);
