@@ -506,7 +506,7 @@ function berea_soliloquy_output($slider, $data) {
 	d($modified);
 	return $modified;
 }
-add_filter('soliloquy_output', 'berea_soliloquy_output');
+add_filter('soliloquy_output', 'berea_soliloquy_output', 10, 2);
 // wp_make_content_images_responsive needs the img tags to have a class with their id
 function berea_soliloquy_image_slide_class($classes, $item, $i, $data, $mobile) {
 	//$classes[] = 'wp-image-' . $id;
@@ -516,4 +516,4 @@ function berea_soliloquy_image_slide_class($classes, $item, $i, $data, $mobile) 
 	d($mobile);
 	return $classes;
 }
-add_filter('soliloquy_output_item_image_classes', 'berea_soliloquy_image_slide_class');
+add_filter('soliloquy_output_item_image_classes', 'berea_soliloquy_image_slide_class', 10, 5);
