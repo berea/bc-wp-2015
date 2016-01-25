@@ -507,24 +507,27 @@ function berea_soliloquy_output($slider, $data) {
 		$attachment_id = absint( $class_id[1] );
 		$image_meta = get_post_meta( $attachment_id, '_wp_attachment_metadata', true );
 		d($image_meta);
+	    $image_src = preg_match( '/src="([^"]+)"/', $image, $match_src ) ? $match_src[1] : '';
+	    list( $image_src ) = explode( '?', $image_src );
 		// Ensure the image meta exists.
 	    if ( empty( $image_meta['sizes'] ) ) {
 	        d('no sizes');
 	    }
 	 
-	    $image_src = preg_match( '/src="([^"]+)"/', $image, $match_src ) ? $match_src[1] : '';
-	    list( $image_src ) = explode( '?', $image_src );
 	 
 	    // Return early if we couldn't get the image source.
-	    if ( ! $image_src ) {
+	    else if ( ! $image_src ) {
 	        d('no image_src');
 	    }
 	 
 	    // Bail early if an image has been inserted and later edited.
-	    if ( preg_match( '/-e[0-9]{13}/', $image_meta['file'], $img_edit_hash ) &&
+	    else if ( preg_match( '/-e[0-9]{13}/', $image_meta['file'], $img_edit_hash ) &&
 	        strpos( wp_basename( $image_src ), $img_edit_hash[0] ) === false ) {
 	 
 	        d('image edited');
+	    }
+	    else {
+	    	d('all good to this point');
 	    }
     }
 
