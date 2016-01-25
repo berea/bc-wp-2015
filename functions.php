@@ -511,6 +511,9 @@ add_filter('soliloquy_output', 'berea_soliloquy_output');
 function berea_soliloquy_image_slide_class($classes, $item, $i, $data, $mobile) {
 	//$classes[] = 'wp-image-' . $id;
 	d($item);
+	d($data);
+	d($classes);
+	d($mobile);
 	return $classes;
 }
 add_filter('soliloquy_output_item_image_classes', 'berea_soliloquy_image_slide_class');
