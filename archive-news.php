@@ -7,8 +7,8 @@
  * @package berea
  */
 
+d('archive-news');
 get_header(); ?>
-
 <main id="main" class="site-main" role="main">
 
 	<div id="primary" class="content-area">

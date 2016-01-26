@@ -4,6 +4,7 @@
  *
  * @package berea
  */
+d('sidebar-news');
 ?>
 	<?php tha_sidebars_before(); ?>
 	<div id="secondary" class="widget-area" role="complementary">
@@ -12,7 +13,7 @@
 		<?php do_action( 'before_sidebar' ); ?>
 		
 		<h3>News</h3>
-		
+
 		<?php tha_sidebar_bottom(); ?>
 		</div>
 	</div><!-- #secondary -->
