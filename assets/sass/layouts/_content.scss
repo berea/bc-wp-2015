@@ -281,8 +281,12 @@ object {
 }
 
 /* News Archives */
-.news-link a {
-	font-size: 1.5em;
+.news-link 
+{
 	margin-left: 2em;
 	text-indent: -2em;
+	
+	a {
+		font-size: 1.5em;
+	}
 }
