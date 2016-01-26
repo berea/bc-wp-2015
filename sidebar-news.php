@@ -10,14 +10,14 @@
 		<div id="secondary-inner">
 		<?php tha_sidebar_top(); ?>
 		<?php do_action( 'before_sidebar' ); ?>
-		
-		<h3>Archives</h3>
-		<?php
 
-			$archives = wp_get_archives(['type'=>'yearly']);
-			d($archives);
+		<h4>News Archive</h4>
+		<?php wp_get_archives(['type'=>'yearly']); ?>
 
-		?>
+		<h4>Stay in Touch</h4>
+		<ul class="submenu">
+			<li><a href="/newsroom">Berea Newsroom</a></li>
+		</ul>
 
 		<?php tha_sidebar_bottom(); ?>
 		</div>
