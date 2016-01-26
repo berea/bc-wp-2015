@@ -19,11 +19,11 @@ $time_string = sprintf( $time_string,
 <?php tha_entry_before(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php tha_entry_top(); ?>
-	<header class="entry-header">
+	<section class="news-link">
 		<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 
 		<span class="post-date"></span> <?php print $time_string; ?>
-	</header><!-- .entry-header -->
+	</section><!-- .entry-header -->
 
 	<?php tha_entry_bottom(); ?>
 </article><!-- #post-## -->
