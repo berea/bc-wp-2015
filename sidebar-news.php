@@ -11,11 +11,11 @@
 		<?php tha_sidebar_top(); ?>
 		<?php do_action( 'before_sidebar' ); ?>
 		<ul class="menu">
-			<li><h4>News Archive</h4></li>
+			<li><a href="/news">News Archive</a></li>
 			<li><ul class="sub-menu">
 				<?php wp_get_archives(['type'=>'yearly']); ?>
 			</ul></li>
-			<li><h4>Stay in Touch</h4></li>
+			<li><a href="/newsroom">Stay in Touch</a></li>
 			<li><ul class="submenu">
 				<li><a href="/newsroom">Berea Newsroom</a></li>
 			</ul></li>
