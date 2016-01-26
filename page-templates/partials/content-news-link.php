@@ -2,20 +2,27 @@
 /**
  * @package berea
  */
+
+$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
+if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+	$time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
+}
+
+$time_string = sprintf( $time_string,
+	esc_attr( get_the_date( 'c' ) ),
+	esc_html( get_the_date() ),
+	esc_attr( get_the_modified_date( 'c' ) ),
+	esc_html( get_the_modified_date() )
+);
 ?>
 
 <?php tha_entry_before(); ?>
-<h1>test</h1>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php tha_entry_top(); ?>
 	<header class="entry-header">
-		<h3 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+		<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<span class="genericon genericon-time"></span> <?php berea_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
+		<span class="post-date"></span> <?php print $time_string; ?>
 	</header><!-- .entry-header -->
 
 	<?php tha_entry_bottom(); ?>
