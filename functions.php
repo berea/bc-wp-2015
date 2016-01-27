@@ -576,7 +576,7 @@ function berea_network_admin_broadcast_form() {
 				<select name="icon" id="icon">
 					<option value="bullhorn" <?php echo ($icon == 'bullhorn') ? 'SELECTED' : ''; ?>>Bullhorn</option>
 					<option value="graduation-cap" <?php echo ($icon == 'graduation-cap') ? 'SELECTED' : ''; ?>>Grad Cap</option>
-					<option value="hourglass-half" <?php echo ($icon == 'hourglass-half') ? 'SELECTED' : ''; ?>>Hourflass</option>
+					<option value="hourglass-half" <?php echo ($icon == 'hourglass-half') ? 'SELECTED' : ''; ?>>Hourglass</option>
 				</select>
 			</div>
 			<div>
