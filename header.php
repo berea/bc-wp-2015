@@ -46,10 +46,10 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 
 <?php
 	// See if the broadcast message is enabled
-
 	$broadcast_enabled = get_option('berea_broadcast_enabled', FALSE);
+	$broadcast_homepage = get_option('berea_broadcast_homepage', FALSE);
 
-	if ($broadcast_enabled) {
+	if ($broadcast_enabled && (!$broadcast_homepage || ($broadcast_homepage && is_front_page()))) {
 		$broadcast_message = get_option('berea_broadcast_message', 'Initial Message');
 		$broadcast_icon = get_option('berea_broadcast_icon', 'bullhorn');
 		?>

@@ -544,6 +544,7 @@ function berea_network_admin_broadcast_form() {
 	// See if the form has been submitted
 	if (isset($_POST[$hidden_field_name]) && $_POST[$hidden_field_name] == $hidden_field_value) {
 		update_option('berea_broadcast_enabled', isset($_POST['enabled']) ? TRUE : FALSE);
+		update_option('berea_broadcast_homepage', isset($_POST['homepage']) ? TRUE : FALSE);
 		update_option('berea_broadcast_message', $_POST['message']);
 		update_option('berea_broadcast_icon', $_POST['icon']);
 		?>
@@ -553,6 +554,7 @@ function berea_network_admin_broadcast_form() {
 
 	// Values
 	$enabled = get_option('berea_broadcast_enabled', FALSE);
+	$homepage = get_option('berea_broadcast_homepage', FALSE);
 	$message = get_option('berea_broadcast_message', 'Initial Message');
 	$icon = get_option('berea_broadcast_icon', 'bullhorn');
 
@@ -566,6 +568,10 @@ function berea_network_admin_broadcast_form() {
 			<div>
 				<label for="enabled">Message Enabled:</label>
 				<input type="checkbox" name="enabled" <?php echo $enabled ? 'checked' : ''; ?>>
+			</div>
+			<div>
+				<label for="homepage">Homepage Only:</label>
+				<input type="checkbox" name="homepage" <?php echo $homepage ? 'checked' : ''; ?>>
 			</div>
 			<div>
 				<label for="message">Message:</label>
