@@ -263,18 +263,19 @@ object {
 	background: $bc-orange;
 	color: white;
 	text-align: center;
-	padding: 100px 19px 19px 19px;
+	padding: 19px;
 	font-size: 1.5em;
 	line-height: 1.5;
 	@include clearfix;
 
-	@include media($smbg) {
-		padding: 4px 19px 9px 240px;
+	&.bkg-green {
+		background: $bc-green;
 	}
-	@include media($md) {
-		padding: 19px 19px 19px 300px;
+	&.bkg-blue {
+		background: $bc-blue;
 	}
 }
+
 /* Slider fixes */
 .soliloquy-container .soliloquy-image {
 	width: 100%;
