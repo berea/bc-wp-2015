@@ -578,11 +578,6 @@ function berea_network_admin_broadcast_form() {
 					<option value="graduation-cap" <?php echo ($icon == 'graduation-cap') ? 'SELECTED' : ''; ?>>Grad Cap</option>
 					<option value="hourglass-half" <?php echo ($icon == 'hourglass-half') ? 'SELECTED' : ''; ?>>Hourflass</option>
 				</select>
-				<ul style="font-size: 2em;">
-					<li><i class="fa fa-bullhorn"></i> Bullhorn</li>
-					<li><i class="fa fa-graduation-cap"></i> Grad Cap</li>
-					<li><i class="fa fa-hourglass-half"></i> Hourglass</li>
-				</ul>
 			</div>
 			<div>
 				<input type="submit" name="Submit" value="Save Changes">
