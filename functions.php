@@ -577,7 +577,7 @@ function berea_network_admin_broadcast_form() {
 			</div>
 			<div>
 				<label for="message">Message:</label>
-				<div><textarea name="message" id="message" cols="30" rows="10"><?php echo $message ?></textarea></div>
+				<div><textarea name="message" id="message" cols="84" rows="10"><?php echo $message ?></textarea></div>
 			</div>
 			<div>
 				<input type="submit" name="Submit" value="Save Changes">
