@@ -51,10 +51,18 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 
 	if ($broadcast_enabled) {
 		$broadcast_message = get_option('berea_broadcast_message', 'Initial Message');
-		$broadcast_color = get_option('berea_broadcast_color', 'orange');
+		$broadcast_icon = get_option('berea_broadcast_icon', 'bullhorn');
 		?>
-			<div id="bar-msg" class="bkg-<?php echo $broadcast_color; ?>">
-				<?php echo $broadcast_message; ?>
+			<div id="bar-msg">
+				<div class="table">
+					<div class="table-row">
+						<div class="table-cell">
+							<i class="fa fa-<?php echo $broadcast_icon; ?>"></i>
+						</div>
+						<div class="table-cell"><?php echo $broadcast_message; ?></div>
+					</div>
+				</div>
+				
 			</div>
 		<?php
 	}

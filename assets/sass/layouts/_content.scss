@@ -29,6 +29,15 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+.table {
+	display: table;
+}
+.table-row {
+	display: table-row;
+}
+.table-cell {
+	display: table-cell;
+}
 
 .aligncenter {
 	@include clearfix;
@@ -268,11 +277,8 @@ object {
 	line-height: 1.5;
 	@include clearfix;
 
-	&.bkg-green {
-		background: $bc-green;
-	}
-	&.bkg-blue {
-		background: $bc-blue;
+	i {
+		font-size: 2em;
 	}
 }
 

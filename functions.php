@@ -545,7 +545,7 @@ function berea_network_admin_broadcast_form() {
 	if (isset($_POST[$hidden_field_name]) && $_POST[$hidden_field_name] == $hidden_field_value) {
 		update_option('berea_broadcast_enabled', isset($_POST['enabled']) ? TRUE : FALSE);
 		update_option('berea_broadcast_message', $_POST['message']);
-		update_option('berea_broadcast_color', $_POST['color']);
+		update_option('berea_broadcast_icon', $_POST['icon']);
 		?>
 			<div class="updated">Settings have been saved.</div>
 		<?php
@@ -554,7 +554,7 @@ function berea_network_admin_broadcast_form() {
 	// Values
 	$enabled = get_option('berea_broadcast_enabled', FALSE);
 	$message = get_option('berea_broadcast_message', 'Initial Message');
-	$color = get_option('berea_broadcast_color', 'orange');
+	$icon = get_option('berea_broadcast_icon', 'bullhorn');
 
 	// Now the regular form
 	?>
@@ -568,16 +568,21 @@ function berea_network_admin_broadcast_form() {
 				<input type="checkbox" name="enabled" <?php echo $enabled ? 'checked' : ''; ?>>
 			</div>
 			<div>
-				<label for="color">Color:</label>
-				<select name="color" id="color">
-					<option value="orange" <?php echo ($color == 'orange') ? 'SELECTED' : ''; ?>>Orange</option>
-					<option value="blue" <?php echo ($color == 'blue') ? 'SELECTED' : ''; ?>>Blue</option>
-					<option value="green" <?php echo ($color == 'green') ? 'SELECTED' : ''; ?>>Green</option>
-				</select>
-			</div>
-			<div>
 				<label for="message">Message:</label>
 				<div><textarea name="message" id="message" cols="84" rows="10"><?php echo $message ?></textarea></div>
+			</div>
+			<div>
+				<label for="icon">Icon:</label>
+				<select name="icon" id="icon">
+					<option value="bullhorn" <?php echo ($icon == 'bullhorn') ? 'SELECTED' : ''; ?>>Bullhorn</option>
+					<option value="graduation-cap" <?php echo ($icon == 'graduation-cap') ? 'SELECTED' : ''; ?>>Grad Cap</option>
+					<option value="hourglass-half" <?php echo ($icon == 'hourglass-half') ? 'SELECTED' : ''; ?>>Hourflass</option>
+				</select>
+				<ul style="font-size: 2em;">
+					<li><i class="fa fa-bullhorn"></i> Bullhorn</li>
+					<li><i class="fa fa-graduation-cap"></i> Grad Cap</li>
+					<li><i class="fa fa-hourglass-half"></i> Hourglass</li>
+				</ul>
 			</div>
 			<div>
 				<input type="submit" name="Submit" value="Save Changes">
