@@ -533,7 +533,54 @@ function berea_network_admin_broadcast() {
 	add_submenu_page('settings.php', 'Broadcast Message', 'Broadcast', '', 'settings.php', 'berea_network_admin_broadcast_form');
 }
 function berea_network_admin_broadcast_form() {
-	echo '<h1>test</h1>';
+	// Must be a super admin
+	if (!is_super_admin()) {
+		wp_die(__('You do not have permission to access this page.'));
+	}
+
+	// Values
+	$enabled = get_option('berea_broadcast_enabled', FALSE);
+	$message = get_option('berea_broadcast_message', 'Initial Message');
+	$color = get_option('berea_broadcast_color', 'orange');
+
+	$hidden_field_name = 'icdaj3543fg943j';
+	$hidden_field_value = 'fida93a34js43';
+
+	// See if the form has been submitted
+	if (isset($_POST[$hidden_field_name]) && $_POST[$hidden_field_name] == $hidden_field_value) {
+		update_option('berea_broadcast_enabled', isset($_POST['enabled']) ? TRUE : FALSE);
+		update_option('berea_broadcast_message', $_POST['message']);
+		update_option('berea_broadcast_color', $_POST['color']);
+		?>
+			<div class="updated">Settings have been saved.</div>
+		<?php
+	}
+
+	// Now the regular form
+	?>
+		<h1>Berea Broadcast Message</h1>
+
+		<form action="" method="post" name="berea-broadcast">
+			<input type="hidden" name="<?php echo $hidden_field_name; ?>" value="<?php echo $hidden_field_value; ?>">
+
+			<div>
+				<label for="enabled">Message Enabled</label>
+				<input type="checkbox" name="enabled" <?php echo $enabled ? 'checked' : ''; ?>>
+			</div>
+			<div>
+				<label for="message">Message</label>
+				<textarea name="message" id="message" cols="30" rows="10"><?php echo $message ?></textarea>
+			</div>
+			<div>
+				<label for="color">Color</label>
+				<select name="color" id="color">
+					<option value="orange" <?php echo ($color == 'orange') ? 'SELECTED' : ''; ?>>Orange</option>
+					<option value="blue" <?php echo ($color == 'blue') ? 'SELECTED' : ''; ?>>Blue</option>
+					<option value="green" <?php echo ($color == 'green') ? 'SELECTED' : ''; ?>>Green</option>
+				</select>
+			</div>
+		</form>
+	<?php
 }
 add_action('network_admin_menu', 'berea_network_admin_broadcast');
 
