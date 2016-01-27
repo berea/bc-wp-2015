@@ -538,11 +538,6 @@ function berea_network_admin_broadcast_form() {
 		wp_die(__('You do not have permission to access this page.'));
 	}
 
-	// Values
-	$enabled = get_option('berea_broadcast_enabled', FALSE);
-	$message = get_option('berea_broadcast_message', 'Initial Message');
-	$color = get_option('berea_broadcast_color', 'orange');
-
 	$hidden_field_name = 'icdaj3543fg943j';
 	$hidden_field_value = 'fida93a34js43';
 
@@ -555,6 +550,11 @@ function berea_network_admin_broadcast_form() {
 			<div class="updated">Settings have been saved.</div>
 		<?php
 	}
+
+	// Values
+	$enabled = get_option('berea_broadcast_enabled', FALSE);
+	$message = get_option('berea_broadcast_message', 'Initial Message');
+	$color = get_option('berea_broadcast_color', 'orange');
 
 	// Now the regular form
 	?>
