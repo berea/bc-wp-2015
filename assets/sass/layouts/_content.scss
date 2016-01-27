@@ -280,11 +280,15 @@ object {
 	i {
 		font-size: 2em;
 		margin-right: 0.42em;
-	    position: relative;
-	    top: 0.1em;
 	}
 	.table {
 		margin: auto;
+		@include media($md) {
+			max-width: 75%;
+		}
+	}
+	.table-cell {
+		vertical-align: middle;
 	}
 }
 
