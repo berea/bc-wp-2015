@@ -564,20 +564,23 @@ function berea_network_admin_broadcast_form() {
 			<input type="hidden" name="<?php echo $hidden_field_name; ?>" value="<?php echo $hidden_field_value; ?>">
 
 			<div>
-				<label for="enabled">Message Enabled</label>
+				<label for="enabled">Message Enabled:</label>
 				<input type="checkbox" name="enabled" <?php echo $enabled ? 'checked' : ''; ?>>
 			</div>
 			<div>
-				<label for="message">Message</label>
-				<textarea name="message" id="message" cols="30" rows="10"><?php echo $message ?></textarea>
-			</div>
-			<div>
-				<label for="color">Color</label>
+				<label for="color">Color:</label>
 				<select name="color" id="color">
 					<option value="orange" <?php echo ($color == 'orange') ? 'SELECTED' : ''; ?>>Orange</option>
 					<option value="blue" <?php echo ($color == 'blue') ? 'SELECTED' : ''; ?>>Blue</option>
 					<option value="green" <?php echo ($color == 'green') ? 'SELECTED' : ''; ?>>Green</option>
 				</select>
+			</div>
+			<div>
+				<label for="message">Message:</label>
+				<div><textarea name="message" id="message" cols="30" rows="10"><?php echo $message ?></textarea></div>
+			</div>
+			<div>
+				<input type="submit" name="Submit" value="Save Changes">
 			</div>
 		</form>
 	<?php
