@@ -525,3 +525,15 @@ function berea_soliloquy_disable_preloading($disabled, $data) {
 	return true;
 }
 add_filter('soliloquy_disable_preloading', 'berea_soliloquy_disable_preloading', 10, 2);
+
+
+
+// Add setting to the network admin menu for broadcasting a message at the top of all sites
+function berea_network_admin_broadcast() {
+	add_submenu_page('settings.php', 'Broadcast Message', 'Broadcast', '', 'settings.php', 'berea_network_admin_broadcast_form');
+}
+function berea_network_admin_broadcast_form() {
+	echo '<h1>test</h1>';
+}
+add_action('network_admin_menu', 'berea_network_admin_broadcast');
+
