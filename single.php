@@ -9,6 +9,16 @@
  * @package berea
  */
 
+switch (get_post_type()) {
+	case 'media-coverage':
+		$sb = 'news';
+		break;
+
+	default: 
+		$sb = false;
+}
+
+
 get_header(); ?>
 
 
@@ -54,7 +64,7 @@ get_header(); ?>
 
 	</div><!-- #primary -->
 
-	<?php get_sidebar(); ?>
+	<?php ($sb) ? get_sidebar($sb) : get_sidebar(); ?>
 
 	<div style="clear:both;"></div>
 
