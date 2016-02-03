@@ -19,7 +19,7 @@
 
         <?php 
         	the_content(); 
-        	the_field( 'originally_published' )
+        	the_field( 'originally_published' );
 
         	if ( $source = get_field('source_url') ) {
         		?>
