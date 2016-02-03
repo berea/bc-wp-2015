@@ -17,13 +17,15 @@
 
 	<div class="entry-content" itemprop="mainContentOfPage">
 
-        <?php 
-        	the_content(); 
-        	the_field( 'originally_published' );
+        <?php the_content(); ?>
+        	
+        <div class="original-publish-date">Originally published <?php the_field( 'originally_published' ); ?>.</div>
+
+        <?php
 
         	if ( $source = get_field('source_url') ) {
         		?>
-        			<div class="source-url">Original article retrieved from <?php echo $source; ?>.</div>
+        			<div class="source-url-top">Article retrieved from <a href="<?php echo $source; ?>"><?php echo $source; ?></a>.</div>
         		<?php
         	}
         	if ( $full = get_field('full_text') ) {
@@ -36,9 +38,9 @@
 					<img class="full-text" src="<?php echo $scan; ?>" alt="Full Scan for this article">
         		<?php
         	}
-        	if ( $source = get_field('source_url') ) {
+        	if ( $source ) {
         		?>
-        			<div class="source-url">Original article retrieved from <?php echo $source; ?>.</div>
+        			<div class="source-url-bottom">Article retrieved from <a href="<?php echo $source; ?>"><?php echo $source; ?></a>.</div>
         		<?php
         	}
         ?>
