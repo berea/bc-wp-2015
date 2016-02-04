@@ -310,6 +310,7 @@ object {
 /* Countdown Timer */
 .countdown {
 	background: $bc-lightblue;
+	padding: 1.8em;
 
 	.countdown_section {
 		font-size: 1.5em;
@@ -344,5 +345,6 @@ object {
 	    text-transform: uppercase;
 		color: $bc-blue;
 		font-family: $opensans-condensed;
+		letter-spacing: 0.02em;
 	}
 }
