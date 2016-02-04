@@ -309,6 +309,8 @@ object {
 
 /* Countdown Timer */
 .countdown {
+	background: $bc-lightblue;
+
 	.countdown_section {
 		font-size: 1.5em;
 		text-transform: uppercase;
@@ -320,16 +322,18 @@ object {
 		    width: 2em;
 		    text-align: center;
 		    vertical-align: middle;
-		    background: #bbb;
+		    background: #fff;
 		    border-radius: 5px;
 		    margin-bottom: 0.5em;
 		    display: block;
 		    margin: auto;
+		    color: $bc-blue;
+		    font-family: $opensans-condensed;
+		    font-weight: bold;
 		}
 	}
 	.countdown_descr {
 		font-size: 2em;
-		background: $bc-blue;
 		display: block;
 		text-align: center;
 		padding: 17px;
