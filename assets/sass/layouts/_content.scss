@@ -313,7 +313,8 @@ object {
 
 	.countdown_section {
 		font-size: 1.5em;
-		text-transform: uppercase;
+	    text-transform: uppercase;
+	    margin-bottom: 1.4em;
 
 		.countdown_amount {
 			font-size: 3em;
@@ -333,9 +334,15 @@ object {
 		}
 	}
 	.countdown_descr {
-		font-size: 2em;
-		display: block;
-		text-align: center;
-		padding: 17px;
+		border-top: solid white 4px;
+	    font-size: 2em;
+	    display: block;
+	    text-align: center;
+	    padding: 1.2em 0;
+	    width: 92%;
+	    margin: auto;
+	    text-transform: uppercase;
+		color: $bc-blue;
+		font-family: $opensans-condensed;
 	}
 }
