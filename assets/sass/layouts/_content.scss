@@ -310,21 +310,28 @@ object {
 /* Countdown Timer */
 .countdown {
 	.countdown_section {
-		font-size: 2em;
+		font-size: 1.5em;
 		text-transform: uppercase;
 
 		.countdown_amount {
-			font-size: 2em;
-			height: 3.5em;
-			width: 2em;
-			text-align: center;
-			vertical-align: middle;
-			background: #bbb;
-			border-radius: 5px;
-			margin-bottom: 0.5em;
+			font-size: 3em;
+		    height: 3em;
+		    line-height: 3em;
+		    width: 2em;
+		    text-align: center;
+		    vertical-align: middle;
+		    background: #bbb;
+		    border-radius: 5px;
+		    margin-bottom: 0.5em;
+		    display: block;
+		    margin: auto;
 		}
 	}
 	.countdown_descr {
 		font-size: 2em;
+		background: $bc-blue;
+		display: block;
+		text-align: center;
+		padding: 17px;
 	}
 }
