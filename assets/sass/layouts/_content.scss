@@ -315,16 +315,19 @@ object {
 	.countdown_section {
 		font-size: 1.5em;
 	    text-transform: uppercase;
-	    margin: 0 auto 1.4em;
+	    margin: auto;
 		color: $bc-blue;
 		float: none;
-		display: inline-block;
+		display: block;
 		width: 160px;
+		text-align: left;
 
 		@include media($md) {
 			width: 17%;
 			display: inline-block;
 			width: 17%;
+			text-align: center;
+			margin-bottom: 1.4em;
 		}
 
 		br {
@@ -346,7 +349,6 @@ object {
 		    margin-bottom: 10px;
 		    margin-right: 10px;
 		    display: inline-block;
-		    margin: auto;
 		    font-family: $opensans-condensed;
 		    font-weight: bold;
 
@@ -356,8 +358,7 @@ object {
 			    height: 3em;
 			    line-height: 3em;
 		    	display: block;
-			    margin-bottom: 0.5em;
-			    margin-right: 0;
+		    	margin: auto;
 		    }
 		}
 	}
