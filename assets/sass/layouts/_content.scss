@@ -317,21 +317,45 @@ object {
 	    text-transform: uppercase;
 	    margin-bottom: 1.4em;
 		color: $bc-blue;
+		float: none;
+		display: inline-block;
+		width: 100%;
+
+		@include media($md) {
+			width: 17%;
+			display: inline-block;
+			width: 17%;
+		}
+
+		br {
+			display: none;
+
+			@include media($md) {
+				display: block;
+			}
+		}
 
 		.countdown_amount {
-			font-size: 3em;
-		    height: 3em;
-		    line-height: 3em;
-		    width: 2em;
+		    height: 2em;
+		    line-height: 2em;
+		    width: 1.5em;
 		    text-align: center;
 		    vertical-align: middle;
 		    background: #fff;
 		    border-radius: 5px;
 		    margin-bottom: 0.5em;
+		    margin-right: 0.2em;
 		    display: block;
 		    margin: auto;
 		    font-family: $opensans-condensed;
 		    font-weight: bold;
+
+		    @include media($md) {
+				font-size: 3em;
+		    	width: 2em;
+			    height: 3em;
+			    line-height: 3em;
+		    }
 		}
 	}
 	.countdown_descr {
@@ -347,5 +371,6 @@ object {
 		font-family: $opensans-condensed;
 		font-weight: bold;
 		letter-spacing: 0.02em;
+		line-height: 1.3;
 	}
 }
