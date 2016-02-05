@@ -345,7 +345,7 @@ object {
 		    border-radius: 5px;
 		    margin-bottom: 0.5em;
 		    margin-right: 0.2em;
-		    display: block;
+		    display: inline-block;
 		    margin: auto;
 		    font-family: $opensans-condensed;
 		    font-weight: bold;
@@ -355,6 +355,7 @@ object {
 		    	width: 2em;
 			    height: 3em;
 			    line-height: 3em;
+		    	display: block;
 		    }
 		}
 	}
