@@ -315,11 +315,11 @@ object {
 	.countdown_section {
 		font-size: 1.5em;
 	    text-transform: uppercase;
-	    margin-bottom: 1.4em;
+	    margin: 0 auto 1.4em;
 		color: $bc-blue;
 		float: none;
 		display: inline-block;
-		width: 100%;
+		width: 160px;
 
 		@include media($md) {
 			width: 17%;
@@ -343,8 +343,8 @@ object {
 		    vertical-align: middle;
 		    background: #fff;
 		    border-radius: 5px;
-		    margin-bottom: 0.5em;
-		    margin-right: 0.2em;
+		    margin-bottom: 10px;
+		    margin-right: 10px;
 		    display: inline-block;
 		    margin: auto;
 		    font-family: $opensans-condensed;
@@ -356,6 +356,8 @@ object {
 			    height: 3em;
 			    line-height: 3em;
 		    	display: block;
+			    margin-bottom: 0.5em;
+			    margin-right: 0;
 		    }
 		}
 	}
