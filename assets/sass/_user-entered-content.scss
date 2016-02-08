@@ -172,16 +172,17 @@ h1.entry-title, h1.entry-title a {
     }
   }
 
+  .original-publish-date, .source-url-top, .source-url-bottom {
+    font-size: 14px;
+    color: #444;
+  }
   .original-publish-date {
-    font-size: 16px;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.1em;
   }
   .source-url-top {
-    font-size: 16px;
     margin-bottom: 0.5em;
   }
   .source-url-bottom {
-    font-size: 16px;
     margin: 1em 0;
   }
 
