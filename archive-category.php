@@ -7,8 +7,19 @@
  * @package berea
  */
 
-$cat = get_query_var('catarchive');
-$cat = get_term($cat);
+$title = '';
+if ( $cat = get_query_var('catarchive') ) {
+	$cat = get_term($cat);
+	$title = $cat->name . ' Archive';
+}
+else {
+	$title = 'Features Archive';
+}
+if ( $year = get_query_var('year', false) ) {
+	$title .= ' - ' . $year;
+}
+
+
 
 get_header(); ?>
 
@@ -19,8 +30,8 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">
-					<?php echo $cat->name ?> Archives
+				<h1 class="entry-title">
+					<?php echo $title ?>  
 				</h1>
 				<?php
 					// Show an optional term description.
