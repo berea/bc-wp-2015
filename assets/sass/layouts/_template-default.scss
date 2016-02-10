@@ -72,10 +72,11 @@
 			  float: right;
 			  margin-bottom: 0px !important;
 			  background: $bc-white;
+			  
+			  #secondary-inner {
+				padding:20px;
+			  }
 	        }
 	    }
-	}
-	#secondary-inner {
-		padding:20px;
 	}
 }
