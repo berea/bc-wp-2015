@@ -49,21 +49,21 @@ if ( $results ) {
 
 ?>
 	<?php tha_sidebars_before(); ?>
-	<div id="secondary" class="widget-area" role="complementary">
+	<div id="secondary" class="sidebar-news mobile-visible" role="complementary">
 		<div id="secondary-inner">
 		<?php tha_sidebar_top(); ?>
 		<?php do_action( 'before_sidebar' ); ?>
 		<ul class="menu">
 			<li class="menu-item"><a href="/news">College News</a></li>
-			<li><ul class="sub-menu">
+			<li><ul class="sub-menu column-links">
 				<?php echo $news_archive; ?>
 			</ul></li>
 			<li class="menu-item"><a href="/features">Features Archive</a></li>
-			<li><ul class="sub-menu">
+			<li><ul class="sub-menu column-links">
 				<?php echo $features_archive; ?>
 			</ul></li>
 			<li class="menu-item"><a href="/media-coverage">Media Coverage</a></li>
-			<li><ul class="sub-menu">
+			<li><ul class="sub-menu column-links">
 				<?php wp_get_archives(array('post_type' => 'media-coverage', 'type' => 'yearly')); ?>
 			</ul></li>
 			<li class="menu-item"><a href="/newsroom">Stay in Touch</a></li>
