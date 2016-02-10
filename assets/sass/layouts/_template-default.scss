@@ -56,22 +56,24 @@
 	  		}
 		}
 
-        @include MQ(L) {
-		  @include span-columns(3);
-		  margin-top: 0px !important;
-		  margin-right: 0px !important;
-		  margin-left: 20px !important;
+		&, &.mobile-visible {
+	        @include MQ(L) {
+			  @include span-columns(3);
+			  margin-top: 0px !important;
+			  margin-right: 0px !important;
+			  margin-left: 20px !important;
 
-		  padding-right: 0px !important;
-		  padding-left: 0px !important;
+			  padding-right: 0px !important;
+			  padding-left: 0px !important;
 
-		  display: block !important;
-		  position:relative;
-		  z-index:1;
-		  float: right;
-		  margin-bottom: 0px !important;
-		  background: none;
-        }
+			  display: block !important;
+			  position:relative;
+			  z-index:1;
+			  float: right;
+			  margin-bottom: 0px !important;
+			  background: none;
+	        }
+	    }
 	}
 	#secondary-inner {
 		padding:20px;
