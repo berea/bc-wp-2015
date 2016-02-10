@@ -45,6 +45,16 @@
 	#secondary {
 	  	display: none;
 
+		&.mobile-visible {
+			display: block;
+	  		padding: 20px 50px;
+	  		margin-top: 0;
+
+	  		#secondary-inner {
+	  			padding: 0;
+	  		}
+		}
+
         @include MQ(L) {
 		  @include span-columns(3);
 		  margin-top: 0px !important;
