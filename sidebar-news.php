@@ -50,11 +50,11 @@ if ( $results ) {
 	$count = 0;
     foreach ( (array) $results as $result) {
     	if ($count == 5) {
-    		//$features_archive .= get_archives_link( '/features/older', 'Older', 'html', '', '' );
+    		//$features_archive .= get_archives_link( '/archive/features/older', 'Older', 'html', '', '' );
     		break;
     	}
 
-        $url = '/features/' . $result->year;
+        $url = '/archive/features/' . $result->year;
         $text = sprintf( '%d', $result->year );
         $features_archive .= get_archives_link( $url, $text, 'html', '', '' );
         $count++;
@@ -68,7 +68,7 @@ if ( $results ) {
 		<?php tha_sidebar_top(); ?>
 		<?php do_action( 'before_sidebar' ); ?>
 		<ul class="menu">
-			<li class="menu-item"><a href="/features">Features Archive</a></li>
+			<li class="menu-item"><a href="/archive/features">Features Archive</a></li>
 			<li><ul class="sub-menu column-links">
 				<?php echo $features_archive; ?>
 			</ul></li>
