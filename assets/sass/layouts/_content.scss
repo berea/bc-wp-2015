@@ -308,6 +308,10 @@ object {
 	
 	a {
 		font-size: 1.5em;
+
+		&:after {
+			content: ' - ';
+		}
 	}
 }
 
