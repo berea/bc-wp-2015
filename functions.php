@@ -553,7 +553,7 @@ function berea_network_admin_broadcast_form() {
 	if (isset($_POST[$hidden_field_name]) && $_POST[$hidden_field_name] == $hidden_field_value) {
 		update_option('berea_broadcast_enabled', isset($_POST['enabled']) ? TRUE : FALSE);
 		update_option('berea_broadcast_homepage', isset($_POST['homepage']) ? TRUE : FALSE);
-		update_option('berea_broadcast_message', $_POST['message']);
+		update_option('berea_broadcast_message', stripslashes($_POST['message']));
 		update_option('berea_broadcast_icon', $_POST['icon']);
 		?>
 			<div class="updated">Settings have been saved.</div>
