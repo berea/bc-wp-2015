@@ -26,7 +26,7 @@ if ( $results ) {
 	$count = 0;
     foreach ( (array) $results as $result) {
     	if ($count == 5) {
-    		$news_archive .= get_archives_link( '/archive/news/older', 'Older', 'html', '', '' );
+    		//$news_archive .= get_archives_link( '/archive/news/older', 'Older', 'html', '', '' );
     		break;
     	}
 
@@ -50,7 +50,7 @@ if ( $results ) {
 	$count = 0;
     foreach ( (array) $results as $result) {
     	if ($count == 5) {
-    		$features_archive .= get_archives_link( '/features/older', 'Older', 'html', '', '' );
+    		//$features_archive .= get_archives_link( '/features/older', 'Older', 'html', '', '' );
     		break;
     	}
 
