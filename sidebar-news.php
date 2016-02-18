@@ -72,7 +72,7 @@ if ( $results ) {
 			<li><ul class="sub-menu column-links">
 				<?php echo $features_archive; ?>
 			</ul></li>
-			<li class="menu-item"><a href="/news">Media Releases</a></li>
+			<li class="menu-item"><a href="/archive/news">Media Releases</a></li>
 			<li><ul class="sub-menu column-links">
 				<?php echo $news_archive; ?>
 			</ul></li>

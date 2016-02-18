@@ -16,7 +16,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="entry-title"> News Archive, 
+				<h1 class="entry-title"> Media Release Archive, 
 					<?php
 					if (function_exists('get_the_archive_title')) :
 						echo get_the_archive_title();
