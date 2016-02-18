@@ -54,7 +54,7 @@ get_header(); ?>
 
 	</div><!-- #primary -->
 
-	<?php get_sidebar(); ?>
+	<?php (in_category(array('news', 'features'))) ? get_sidebar('news') : get_sidebar(); ?>
 
 	<div style="clear:both;"></div>
 
