@@ -23,10 +23,17 @@ if ( ! $results = wp_cache_get( $key, 'posts' ) ) {
     wp_cache_set( $key, $results, 'posts' );
 }
 if ( $results ) {
+	$count = 0;
     foreach ( (array) $results as $result) {
+    	if ($count == 5) {
+    		$news_archive .= get_archives_link( '/archive/news/older', 'Older', 'html', '', '' );
+    		break;
+    	}
+
         $url = '/archive/news/' . $result->year;
         $text = sprintf( '%d', $result->year );
         $news_archive .= get_archives_link( $url, $text, 'html', '', '' );
+        $count++;
     }
 }
 
@@ -40,10 +47,17 @@ if ( ! $results = wp_cache_get( $key, 'posts' ) ) {
     wp_cache_set( $key, $results, 'posts' );
 }
 if ( $results ) {
+	$count = 0;
     foreach ( (array) $results as $result) {
+    	if ($count == 5) {
+    		$features_archive .= get_archives_link( '/features/older', 'Older', 'html', '', '' );
+    		break;
+    	}
+
         $url = '/features/' . $result->year;
         $text = sprintf( '%d', $result->year );
         $features_archive .= get_archives_link( $url, $text, 'html', '', '' );
+        $count++;
     }
 }
 
@@ -54,18 +68,18 @@ if ( $results ) {
 		<?php tha_sidebar_top(); ?>
 		<?php do_action( 'before_sidebar' ); ?>
 		<ul class="menu">
-			<li class="menu-item"><a href="/news">College News</a></li>
-			<li><ul class="sub-menu column-links">
-				<?php echo $news_archive; ?>
-			</ul></li>
 			<li class="menu-item"><a href="/features">Features Archive</a></li>
 			<li><ul class="sub-menu column-links">
 				<?php echo $features_archive; ?>
 			</ul></li>
-			<li class="menu-item"><a href="/media-coverage">Media Coverage</a></li>
+			<li class="menu-item"><a href="/news">Media Releases</a></li>
+			<li><ul class="sub-menu column-links">
+				<?php echo $news_archive; ?>
+			</ul></li>
+			<!--li class="menu-item"><a href="/media-coverage">Media Coverage</a></li>
 			<li><ul class="sub-menu column-links">
 				<?php wp_get_archives(array('post_type' => 'media-coverage', 'type' => 'yearly')); ?>
-			</ul></li>
+			</ul></li-->
 			<li class="menu-item"><a href="/newsroom">Stay in Touch</a></li>
 			<li><ul class="sub-menu">
 				<li class="menu-item"><a href="/newsroom">Berea Newsroom</a></li>
