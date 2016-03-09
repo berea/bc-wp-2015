@@ -13,8 +13,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<main id="main" class="site-main" role="main">
+		<div id="primary" class="content-area">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -38,10 +38,10 @@ get_header(); ?>
 			<?php get_template_part( 'page-templates/partials/content', 'none' ); ?>
 
 		<?php endif; ?>
-
-		</main><!-- #main -->
 		
-	</div><!-- #primary -->
+		</div><!-- #primary -->
+
+	</main><!-- #main -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
