@@ -601,3 +601,17 @@ function berea_network_admin_broadcast_form() {
 }
 add_action('network_admin_menu', 'berea_network_admin_broadcast');
 
+
+/*
+ * Add class based on current multisite to the body, to help with theming
+ * From: https://codex.wordpress.org/Plugin_API/Filter_Reference/body_class#Classes_in_WordPress_Multisite
+ */
+add_filter('body_class', 'multisite_body_classes');
+function multisite_body_classes($classes) {
+        $id = get_current_blog_id();
+        $slug = strtolower(str_replace(' ', '-', trim(get_bloginfo('name'))));
+        $classes[] = $slug;
+        $classes[] = 'site-id-'.$id;
+        return $classes;
+}
+
