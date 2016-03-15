@@ -148,6 +148,8 @@ if ( !function_exists('berea_scripts') ) :
 
 		endif;
 
+		// Berea Main JS
+		wp_enqueue_script( 'berea', get_template_directory_uri() . '/assets/js/custom/berea.js', '1.0.0', false );
 
 		// Dashicons
 		 wp_enqueue_style( 'dashicons' );
