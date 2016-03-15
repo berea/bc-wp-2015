@@ -211,7 +211,8 @@ $fg-gutter: $gutter;
       left: 50%;
       margin:0;
       margin-left: -490px;
-	  width: 980px;
+	  max-width: 980px;
+    width: 100%;
 	  background-color: transparent;
     }
   }
