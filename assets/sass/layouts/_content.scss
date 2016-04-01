@@ -300,6 +300,14 @@ object {
 	.table-cell {
 		vertical-align: middle;
 	}
+	a {
+		color: white;
+		text-decoration: underline;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
 }
 
 /* Slider fixes */
