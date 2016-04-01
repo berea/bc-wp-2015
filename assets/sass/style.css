@@ -2436,6 +2436,11 @@ object {
     content: "";
     display: table;
     clear: both; }
+  #bar-msg a {
+    color: white;
+    text-decoration: underline; }
+    #bar-msg a:hover {
+      opacity: 0.8; }
   #bar-msg i {
     font-size: 2em;
     margin-right: 0.42em; }
@@ -2446,11 +2451,6 @@ object {
         max-width: 75%; } }
   #bar-msg .table-cell {
     vertical-align: middle; }
-  #bar-msg a {
-    color: white;
-    text-decoration: underline; }
-    #bar-msg a:hover {
-      opacity: 0.8; }
 
 /* Slider fixes */
 .soliloquy-container .soliloquy-image {

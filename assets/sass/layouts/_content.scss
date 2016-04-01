@@ -287,6 +287,14 @@ object {
 	line-height: 1.5;
 	@include clearfix;
 
+	a {
+		color: white; 
+		text-decoration: underline;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
 	i {
 		font-size: 2em;
 		margin-right: 0.42em;
@@ -299,14 +307,6 @@ object {
 	}
 	.table-cell {
 		vertical-align: middle;
-	}
-	a {
-		color: white; 
-		text-decoration: underline;
-
-		&:hover {
-			opacity: 0.8;
-		}
 	}
 }
 
