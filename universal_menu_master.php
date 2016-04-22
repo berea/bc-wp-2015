@@ -151,7 +151,7 @@
 					<!-- EXAMPLE OF HOW IMAGES WERE DELIVERED VIA CLASS IN EXAMPLE -->
 					<!-- <a class="cd-nav-item item-1" href="https://www.berea.edu/academics/"> -->
 					<a class="cd-nav-item" href="https://www.berea.edu/academics/">
-						<h3>DEGREE PROGRAMS</h3>
+						<h3>ACADEMIC PROGRAMS</h3>
 						<p>Bachelor of Arts and Bachelor of Science degrees in 28 fields</p>
 					</a>
 				</li>
@@ -171,9 +171,9 @@
 				</li>
 
 				<li>
-					<a class="cd-nav-item" href="https://www.berea.edu/academics/">
-						<h3>MAJORS &amp; MINORS</h3>
-						<p>Bachelor of Arts and Bachelor of Science degrees in 28 fields</p>
+					<a class="cd-nav-item" href="https://www.berea.edu/registrar/">
+						<h3>REGISTRAR'S OFFICE</h3>
+						<p>Browse the site for information on classes, transcripts, and degree requirements.</p>
 					</a>
 				</li>
 
