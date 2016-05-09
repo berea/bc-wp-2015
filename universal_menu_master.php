@@ -214,10 +214,6 @@
 			</ul>
 		</li>
 
-		<li class="">
-			<a href="http://www.bereacollegealumni.com/s/925/start.aspx">ALUMNI</a>
-		</li>
-
 		<li class="has-children">
 			<a href="http://community.berea.edu/calendar/index.php?calendar=default">NEWS</a>
 
@@ -233,6 +229,10 @@
 
 
 			</ul>
+		</li>
+
+		<li class="">
+			<a href="http://www.bereacollegealumni.com/s/925/start.aspx">ALUMNI</a>
 		</li>
 
 		<li class="">
