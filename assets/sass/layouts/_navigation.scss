@@ -860,32 +860,29 @@ Main components
 
             .cd-nav-item {
                 border-bottom: none;
-                height: 124px;
+                height: 150px;
                 line-height: 1.2;
                 padding: 0 0 0 80px;
 
-                &:hover {
-                    background: lighten($color-3, 8%);
-                }
-
                 .academic-icon {
-                    max-width: 60px;
+                    max-width: 35px;
+                    max-height:35px;
                     float: left;
-                    margin-top:6%
+                    margin-top:8px;
+                    margin-right:16px;
+                    margin-bottom:100px;
                 }
                 h3 {
                     color: $color-2;
                     font-weight: bold;
                     padding: 0;
-                    float: right;
-                    max-width:78%;
+                    max-width:89%;
                     padding-top:0;
                     clear:none;
                     margin-bottom:8px;
                 }
                 p {
-                    float: right;
-                    max-width:70%;
+                    max-width:89%;
                 }
 
                 &::before {
