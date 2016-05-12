@@ -151,7 +151,7 @@
 					<!-- EXAMPLE OF HOW IMAGES WERE DELIVERED VIA CLASS IN EXAMPLE -->
 					<!-- <a class="cd-nav-item item-1" href="https://www.berea.edu/academics/"> -->
 					<a class="cd-nav-item" href="https://www.berea.edu/academics/">
-						<img src="/assets/images/icons/academic-programs.svg" alt="Academic Programs Icon"/>
+						<img src="https://bereaedu.staging.wpengine.com/wp-content/themes/bc-wp-2015/assets/images/icons/academic-programs.svg" alt="Academic Programs Icon"/>
 						<h3>ACADEMIC PROGRAMS</h3>
 						<p>Bachelor of Arts and Bachelor of Science degrees in 28 fields</p>
 					</a>
