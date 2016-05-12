@@ -836,7 +836,7 @@ Main components
                     margin-right: auto;
                     margin-bottom: .6em;
                 }
-                
+
 
                 h3 {
                     color: $color-2;
@@ -847,6 +847,7 @@ Main components
         }
 
         .cd-nav-icons {
+            background-color:blue;
             li {
                 /* set here number of columns - use width percentage */
                 @include column(.32);
