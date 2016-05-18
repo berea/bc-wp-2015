@@ -214,9 +214,9 @@
 				</li>
 
 				<li>
-					<a class="cd-nav-item" href="https://www.berea.edu/avp/faculty-scholarly-works-2013-2014/">
+					<a class="cd-nav-item" href="/avp/faculty-scholarly-creative-works-archive/">
 						<img class="academic-icon" src="https://bereaedu.staging.wpengine.com/wp-content/themes/bc-wp-2015/assets/images/icons/publications.svg" alt="Scholarly Work Icon"/>
-						<h3>FACULTY &amp; STAFF SCHOLARLY WORK</h3>
+						<h3>FACULTY SCHOLARLY &amp; CREATIVE WORKS</h3>
 						<p>While our faculty proudly focuses on being and becoming excellent classroom teachers, they are also active intellectuals and scholars.</p>
 					</a>
 				</li>
