@@ -434,3 +434,28 @@ object {
 		}
 	}
 }
+
+/* Search */
+#results {
+	.result-item {
+		margin-bottom: 21px;
+		
+		.result-title {
+			font-size: 1.1em;
+			margin-bottom: 0;
+		}
+		.result-url {
+			margin-bottom: 0;
+
+			a {
+				color: $bc-green;
+			}
+		}
+		img {
+			margin-right: 11px;
+			margin-bottom: 11px;
+		}
+	}
+}
+
+
