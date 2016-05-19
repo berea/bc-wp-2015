@@ -69,6 +69,8 @@
 				<br><br><br>
 				<a href="https://www.berea.edu/conference-services/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/conference-services-165x42.png" alt="Conference Services"/></a>
 				<br><br><br>
+				<a href="http://bereacollegefarmstore.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/farm_store.png" alt="Conference Services"/></a>
+				<br><br><br>
 
 		</div><!-- .footer-distinctly -->
 
