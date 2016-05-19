@@ -438,10 +438,15 @@ object {
 /* Search */
 #results {
 	.result-item {
-		margin-bottom: 11px;
-		padding-bottom: 11px;
+		margin-bottom: 21px;
+		padding-bottom: 3px;
 		border-bottom: solid 1px #eee;
 		@include clearfix;
+
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+		}
 
 		.result-title {
 			font-size: 18px;
