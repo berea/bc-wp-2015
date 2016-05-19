@@ -439,10 +439,15 @@ object {
 #results {
 	.result-item {
 		margin-bottom: 21px;
-		
+		@include clearfix;
+
 		.result-title {
-			font-size: 1.1em;
+			font-size: 18px;
 			margin-bottom: 0;
+
+			a {
+				color: $bc-blue;
+			}
 		}
 		.result-url {
 			margin-bottom: 0;
