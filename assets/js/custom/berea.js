@@ -1,4 +1,4 @@
-/*  Berea Custom JavaScripts (empty currently)  */
+/*  Berea Custom JavaScripts  */
 
 (function($) {
 	
