@@ -28,6 +28,7 @@
 
 					var newStart = $(this).attr('data-page') * 10 - 9;
 					$.getJSON(url + '&start=' + newStart, function(newData){
+						$("#search-page-box").get(0).scrollIntoView();
 						generateMetadata(newData, newStart);
 						generatePages(newData, newStart);
 						generateLinks(newData);

@@ -445,16 +445,16 @@ object {
 	}
 	.submit-holder {
 		position: relative;
+		margin-left: 7px;
 
 		input {
 			display: inline-block;
 			text-indent: -99999px;
 			padding: 0;
 			width: 31px;
-			height: 39px;
+			height: 31px;
 			background: $bc-orange;
 			border: solid 1px #999;
-			margin-left: 7px;
 		}
 
 		&:after {
@@ -468,8 +468,8 @@ object {
 		    left: 0;
 		    right: 0;
 		    text-align: center;
-		    top: -3px;
-		    font-size: 19px;
+		    top: -2px;
+		    font-size: 17px;
 		    color: white;
 		}
 	}
@@ -514,6 +514,8 @@ object {
 #search-more-links {
 	margin-top: 42px;
 	font-size: 1.4em;
+	margin-left: 0;
+	text-align: center;
 
 	li {
 		display: inline-block;
