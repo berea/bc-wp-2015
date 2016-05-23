@@ -7,7 +7,7 @@
 		if (q != null) {
 
 			// Set the search form input to the q string
-			$('#search-page-box input').val(q);
+			$('#search-page-box input[type="text"]').val(q);
 
 			// Get the search results
 			var url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyA6rfuiihKZeDvjfZyWjP6qd223SYPvFZY&cx=018174935032430318208:8kij2j8mmsy&count=10&q=' + q;
