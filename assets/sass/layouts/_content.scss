@@ -476,14 +476,15 @@ object {
 }
 #results {
 	.result-item {
-		margin-bottom: 21px;
+		padding-top: 21px;
 		padding-bottom: 3px;
-		border-bottom: solid 1px #eee;
 		@include clearfix;
 
-		&:last-child {
-			border-bottom: none;
-			margin-bottom: 0;
+		&:first-child {
+			padding-top: 0;
+		}
+		&:nth-child(2n) {
+			background: #f3f3f3;
 		}
 
 		.result-title {
