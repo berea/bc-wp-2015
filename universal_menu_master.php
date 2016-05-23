@@ -151,7 +151,7 @@
 					<!-- EXAMPLE OF HOW IMAGES WERE DELIVERED VIA CLASS IN EXAMPLE -->
 					<!-- <a class="cd-nav-item item-1" href="https://www.berea.edu/academics/"> -->
 					<a class="cd-nav-item" href="https://www.berea.edu/academics/">
-						<img class="academic-icon" src="https://bereaedu.staging.wpengine.com/wp-content/themes/bc-wp-2015/assets/images/icons/academic-programs.svg" alt="Academic Programs Icon"/>
+						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/academic-programs.svg" alt="Academic Programs Icon"/>
 						<h3>ACADEMIC PROGRAMS</h3>
 						<p>Bachelor of Arts and Bachelor of Science degrees in 28 fields</p>
 					</a>
@@ -159,7 +159,7 @@
 
 				<li>
 					<a class="cd-nav-item" href="https://www.berea.edu/labor-program/">
-						<img class="academic-icon" src="https://bereaedu.staging.wpengine.com/wp-content/themes/bc-wp-2015/assets/images/icons/labor-programs.svg" alt="Labor Programs Icon"/>
+						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/labor-programs.svg" alt="Labor Programs Icon"/>
 						<h3>LABOR PROGRAM</h3>
 						<p>Students are engaged in a learning environment that encourages them to be active learners, workers, and servers.</p>
 					</a>
@@ -167,7 +167,7 @@
 
 				<li>
 					<a class="cd-nav-item" href="http://libraryguides.berea.edu/">
-						<img class="academic-icon" src="https://bereaedu.staging.wpengine.com/wp-content/themes/bc-wp-2015/assets/images/icons/library.svg" alt="Library Icon"/>
+						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/library.svg" alt="Library Icon"/>
 						<h3>LIBRARY</h3>
 						<p>Hutchins Library supports the educational mission of the college by maintaining a rich collection of materials in a variety of formats.</p>
 					</a>
@@ -175,7 +175,7 @@
 
 				<li>
 					<a class="cd-nav-item" href="https://www.berea.edu/registrar/">
-						<img class="academic-icon" src="https://bereaedu.staging.wpengine.com/wp-content/themes/bc-wp-2015/assets/images/icons/registrar.svg" alt="Registrar's Office Icon"/>
+						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/registrar.svg" alt="Registrar's Office Icon"/>
 						<h3>REGISTRAR'S OFFICE</h3>
 						<p>Browse the site for information on classes, transcripts, and degree requirements.</p>
 					</a>
@@ -183,7 +183,7 @@
 
 				<li>
 					<a class="cd-nav-item" href="http://community.berea.edu/calendar/main.php?calendarid=default&view=upcoming">
-						<img class="academic-icon" src="https://bereaedu.staging.wpengine.com/wp-content/themes/bc-wp-2015/assets/images/icons/calendar.svg" alt="Academic Calendar Icon"/>
+						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/calendar.svg" alt="Academic Calendar Icon"/>
 						<h3>ACADEMIC CALENDAR</h3>
 						<p>Browse our 2015-2016 Academic Calendar.</p>
 					</a>
@@ -191,7 +191,7 @@
 
 				<li>
 					<a class="cd-nav-item" href="https://www.berea.edu/academics/">
-						<img class="academic-icon" src="https://bereaedu.staging.wpengine.com/wp-content/themes/bc-wp-2015/assets/images/icons/centers.svg" alt="Centers Icon"/>
+						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/centers.svg" alt="Centers Icon"/>
 						<h3>CENTERS</h3>
 						<p>Berea College boasts seven centers which serve our campus and community in a variety of ways.</p>
 					</a>
@@ -199,7 +199,7 @@
 
 				<li>
 					<a class="cd-nav-item" href="http://catalog.berea.edu/en/Current/Catalog">
-						<img class="academic-icon" src="https://bereaedu.staging.wpengine.com/wp-content/themes/bc-wp-2015/assets/images/icons/student-handbook.svg" alt="Student Handbook Icon"/>
+						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/student-handbook.svg" alt="Student Handbook Icon"/>
 						<h3>CATALOG &amp; STUDENT HANDBOOK</h3>
 						<p>Browse our 2015-2016 course catalog and student handbook.</p>
 					</a>
@@ -207,7 +207,7 @@
 
 				<li>
 					<a class="cd-nav-item" href="https://www.berea.edu/campus/">
-						<img class="academic-icon" src="https://bereaedu.staging.wpengine.com/wp-content/themes/bc-wp-2015/assets/images/icons/resources.svg" alt="Resources Icon"/>
+						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/resources.svg" alt="Resources Icon"/>
 						<h3>RESOURCES</h3>
 						<p>Explore common resources for campus and community.</p>
 					</a>
@@ -215,7 +215,7 @@
 
 				<li>
 					<a class="cd-nav-item" href="/avp/faculty-scholarly-creative-works/">
-						<img class="academic-icon" src="https://bereaedu.staging.wpengine.com/wp-content/themes/bc-wp-2015/assets/images/icons/publications.svg" alt="Scholarly Work Icon"/>
+						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/publications.svg" alt="Scholarly Work Icon"/>
 						<h3>FACULTY SCHOLARLY &amp; CREATIVE WORKS</h3>
 						<p>While our faculty proudly focuses on being and becoming excellent classroom teachers, they are also active intellectuals and scholars.</p>
 					</a>
