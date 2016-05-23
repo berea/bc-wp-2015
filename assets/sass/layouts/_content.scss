@@ -484,7 +484,10 @@ object {
 			padding-top: 0;
 		}
 		&:nth-child(2n) {
-			background: #f3f3f3;
+			background: #f7f7f7;
+			padding-left: 11px;
+			padding-right: 11px;
+			margin: 0 -11px;
 		}
 
 		.result-title {
