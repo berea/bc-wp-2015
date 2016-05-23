@@ -64,6 +64,8 @@
 	function generatePages(data, start) {
 		var currentPage = (start == null) ? 1 : (start - 1)/10 + 1;
 		var totalPages = Math.ceil(data.searchInformation.totalResults / 10);
+		// Google CSE currently restricted to 10 pages.
+			totalPages = (totalPages > 10) ? 10 : totalPages;
 		var firstPage = (currentPage <= 6) ? 1 : currentPage - 5;
 		var lastPage = (currentPage <= 6) ? 10 : currentPage + 4;
 		if (totalPages < lastPage) lastPage = totalPages;
