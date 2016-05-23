@@ -4,10 +4,19 @@
 	
 	$(document).ready(function(){
 		var q = getParameterByName('q');
-		console.log(q);
 		if (q != null) {
-			var url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyA6rfuiihKZeDvjfZyWjP6qd223SYPvFZY&cx=018174935032430318208:8kij2j8mmsy&q=' + q;
+
+			// Set the search form input to the q string
+			$('#search-page-box input').val(q);
+
+			// Get the search results
+			var url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyA6rfuiihKZeDvjfZyWjP6qd223SYPvFZY&cx=018174935032430318208:8kij2j8mmsy&count=10&q=' + q;
 			$.getJSON(url, function(data){
+
+				// Result metadata
+				$('#search-info').html('<p><strong>' + data.searchInformation.formattedTotalResults + '</strong> results founds in <strong>' + data.searchInformation.formattedSearchTime + '</strong> seconds.</p>');
+
+				// Result Items
 				var html = '';
 				console.log(data);
 				for (var i = 0; i < data.items.length; i++) {

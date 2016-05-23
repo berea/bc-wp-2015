@@ -436,6 +436,25 @@ object {
 }
 
 /* Search */
+#search-page-box {
+	input[type='text'] {
+		display: inline-block;
+		width: 420px;
+	}
+	input[type='submit'] {
+		display: inline-block;
+		text-indent: -99999px;
+
+		&:after {
+		    content: "\f002";
+		    font-family: FontAwesome;
+		    font-style: normal;
+		    font-weight: normal;
+		    text-decoration: inherit;
+		    text-indent: 0;
+		}
+	}
+}
 #results {
 	.result-item {
 		margin-bottom: 21px;
@@ -451,13 +470,15 @@ object {
 		.result-title {
 			font-size: 18px;
 			margin-bottom: 0;
+			line-height: 1;
 
 			a {
 				color: $bc-blue;
 			}
 		}
 		.result-url {
-			margin-bottom: 0;
+			margin-bottom: 4px;
+			font-size: 13px;
 
 			a {
 				color: $bc-green;
@@ -467,6 +488,7 @@ object {
 			margin-right: 11px;
 			margin-bottom: 11px;
 			margin-top: 3px;
+			border: solid black 1px;
 		}
 	}
 }
