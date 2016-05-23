@@ -441,10 +441,14 @@ object {
 		display: inline-block;
 		width: 420px;
 	}
-	input[type='submit'] {
-		display: inline-block;
-		text-indent: -99999px;
+	.submit-holder {
+		position: relative;
 
+		input {
+			display: inline-block;
+			text-indent: -99999px;
+		}
+		
 		&:after {
 		    content: "\f002";
 		    font-family: FontAwesome;
