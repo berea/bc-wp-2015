@@ -447,8 +447,14 @@ object {
 		input {
 			display: inline-block;
 			text-indent: -99999px;
+			padding: 0;
+			width: 42px;
+			height: 42px;
+			background: $bc-orange;
+			border-width: 1px;
+			border-color: #666;
 		}
-		
+
 		&:after {
 		    content: "\f002";
 		    font-family: FontAwesome;
@@ -456,6 +462,12 @@ object {
 		    font-weight: normal;
 		    text-decoration: inherit;
 		    text-indent: 0;
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    text-align: center;
+		    top: -2px;
+		    font-size: 19px;
 		}
 	}
 }
