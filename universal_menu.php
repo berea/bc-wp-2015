@@ -53,7 +53,7 @@
 </nav> <!-- cd-nav -->
 
 <div id="cd-search" class="cd-search">
-	<form method="get" action="https://www.google.com/search">
+	<form method="get" action="/search">
 			<input type="hidden" name="sitesearch" value="https://berea.edu" />
 			<input type="text"
 					name="q" value="Search Berea College Web Site"
