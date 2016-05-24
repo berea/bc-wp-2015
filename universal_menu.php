@@ -54,7 +54,6 @@
 
 <div id="cd-search" class="cd-search">
 	<form method="get" action="/search">
-			<input type="hidden" name="sitesearch" value="https://berea.edu" />
 			<input type="text"
 					name="q" value="Search Berea College Web Site"
 					onfocus="if(this.value == 'Search Berea College Web Site') {this.value = '';}"
