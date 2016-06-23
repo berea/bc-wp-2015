@@ -52,6 +52,7 @@
 			<ul>
 				<li><a href="https://www.berea.edu/brushy-fork-institute/">Brushy Fork Institute</a></li>
 				<li><a href="http://partners.berea.edu">Partners for Education</a></li>
+				<li><a href="http://growappalachia.berea.edu">Grow Appalachia</a></li>
 			</ul>
 
 		</div><!-- .footer-about -->
