@@ -43,8 +43,6 @@ get_header(); ?>
 				<?php endif; ?>
 			</div>
 
-			<?php berea_paging_nav(); ?>
-
 		<?php else : ?>
 
 			<?php get_template_part( 'page-templates/partials/content', 'none' ); ?>
