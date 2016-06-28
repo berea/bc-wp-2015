@@ -11,7 +11,6 @@
 
 get_header(); ?>
 
-<h1>test</h1>
 <main id="main" class="site-main" role="main">
 
 	<div id="primary" class="content-area">
@@ -25,7 +24,7 @@ get_header(); ?>
                  * If you want to override this in a child theme, then include a file
                  * called content-___.php (where ___ is the Post Format name) and that will be used instead.
                  */
-				get_template_part( 'page-templates/partials/content', 'page' );
+				get_template_part( 'page-templates/partials/content', 'people' );
 				?>
 
 				<?php
