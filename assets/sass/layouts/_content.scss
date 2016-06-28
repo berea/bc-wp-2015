@@ -552,7 +552,8 @@ object {
 	font-size: 16px;
 
 	.label {
-		width: 6em;
+		width: 9em;
+		display: inline-block;
 	}
 	.value {
 		font-weight: bold;
