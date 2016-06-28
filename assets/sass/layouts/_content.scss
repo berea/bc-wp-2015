@@ -548,4 +548,20 @@ object {
 	}
 }
 
+.people .entry-content {
+	font-size: 16px;
+
+	.label {
+		width: 6em;
+	}
+	.value {
+		font-weight: bold;
+
+		p {
+			display: inline;
+			font-size: inherit;
+		}
+	}
+}
+
 

@@ -19,7 +19,7 @@
 	<div class="entry-content" itemprop="mainContentOfPage">                	
 
                 <?php
-                        var $fields = array(
+                        $fields = array(
                                 'title' => 'Title',
                                 'department' => 'Department',
                                 'e-mail_address' => 'E-Mail Address',
