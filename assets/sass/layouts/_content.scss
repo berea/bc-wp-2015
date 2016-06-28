@@ -564,5 +564,15 @@ object {
 		}
 	}
 }
+.archive .people {
+	h1 {
+		margin-bottom: 0;
+		color: $bc-green;
+		font-size: 0.8em;
+	}
+	.entry-content {
+		margin-top: 0;
+	}
+}
 
 
