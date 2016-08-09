@@ -89,8 +89,11 @@
 	</ul>
 </li>
 
+		<li class="">
+			<a href="http://www.berea.edu/admissions">ADMISSIONS</a>
+		</li>
 
-		<li class="has-children">
+		<!-- <li class="has-children">
 			<a href="#">ADMISSIONS</a>
 
 			<ul class="cd-secondary-nav is-hidden">
@@ -140,7 +143,7 @@
 				<li class="cd-item-as-button menu-item-hide-on-large button-blue"><a id="admissions-eligible-button"href="http://primary.berea.edu/admissions/quick-estimator/">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></li>
 				<li class="cd-item-as-button menu-item-hide-on-large button-purple"><a id="admissions-visit-button" href="http://primary.berea.edu/admissions/visit-campus/">SCHEDULE A CAMPUS VISIT</a></li>
 			</ul>
-		</li>
+		</li> -->
 
 		<li class="has-children">
 			<a href="https://www.berea.edu/academics/">ACADEMICS</a>
