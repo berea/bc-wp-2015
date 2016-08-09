@@ -35,6 +35,7 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 	<link rel="profile" href="//gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<?php tha_head_bottom(); ?>
 	<?php wp_head(); ?>
@@ -42,6 +43,31 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 
 <body <?php body_class( $class_for_ribbon); ?>>
 <?php tha_body_top(); ?>
+
+<?php
+	// See if the broadcast message is enabled
+	$broadcast_enabled = get_option('berea_broadcast_enabled', FALSE);
+	$broadcast_homepage = get_option('berea_broadcast_homepage', FALSE);
+
+	if ($broadcast_enabled && (!$broadcast_homepage || ($broadcast_homepage && is_front_page()))) {
+		$broadcast_message = get_option('berea_broadcast_message', 'Initial Message');
+		$broadcast_icon = get_option('berea_broadcast_icon', 'bullhorn');
+		?>
+			<div id="bar-msg">
+				<div class="table">
+					<div class="table-row">
+						<div class="table-cell">
+							<i class="fa fa-<?php echo $broadcast_icon; ?>"></i>
+						</div>
+						<div class="table-cell"><?php echo $broadcast_message; ?></div>
+					</div>
+				</div>
+				
+			</div>
+		<?php
+	}
+?>
+
 <div id="page" class="hfeed site">
 
 	<div id="ribbon" class="cd-header-ribbon">

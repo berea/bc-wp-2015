@@ -148,6 +148,9 @@ if ( !function_exists('berea_scripts') ) :
 
 		endif;
 
+		// Berea Main JS
+		wp_enqueue_script( 'berea', get_template_directory_uri() . '/assets/js/custom/berea.js', '1.0.0', false );
+
 		// Dashicons
 		 wp_enqueue_style( 'dashicons' );
 
@@ -158,6 +161,16 @@ if ( !function_exists('berea_scripts') ) :
 	add_action( 'wp_enqueue_scripts', 'berea_scripts' );
 
 endif; // Enqueue Scripts and Styles
+
+
+if ( !function_exists('berea_page_scripts') ) :
+	/*
+	 * For pages that need special files included
+	 */
+	function berea_page_scripts() {
+	}
+	add_action('wp_enqueue_scripts', 'berea_page_scripts');
+endif; // Page Scripts
 
 /**
  * Register widgetized area and update sidebar with default widgets.
@@ -487,3 +500,120 @@ function berea_get_news_for_universal_nav() {
     }
 
 }
+
+// Make Soliloquy sliders use wp's native responsive images with wp retina
+function berea_soliloquy_output($slider, $data) {
+	if ($data['config']['type'] !== 'default') return $slider;
+
+	return wp_make_content_images_responsive($slider);
+}
+add_filter('soliloquy_output', 'berea_soliloquy_output', 10, 2);
+
+// wp_make_content_images_responsive needs the img tags to have a class with their id
+function berea_soliloquy_image_slide_class($classes, $item, $i, $data, $mobile) {
+	if ($data['config']['type'] !== 'default') return $classes;
+
+	$classes[] = 'wp-image-' . $item['id'];
+	return $classes;
+}
+add_filter('soliloquy_output_item_image_classes', 'berea_soliloquy_image_slide_class', 10, 5);
+
+// Alter the image source that soliloquy uses so that responsive images will work
+function berea_soliloquy_image_src($src, $id, $item, $data) {
+	if ($data['config']['type'] !== 'default') return $src;
+
+	$base_url = trailingslashit( _wp_upload_dir_baseurl() );
+	$image_meta = get_post_meta( $item['id'], '_wp_attachment_metadata', true );
+	return $base_url . $image_meta['file'];
+}
+add_filter('soliloquy_image_src', 'berea_soliloquy_image_src', 10, 4);
+
+// Hook to disable soliloquy's preloading which stops responsive images being used.
+function berea_soliloquy_disable_preloading($disabled, $data) {
+	if ($data['config']['type'] !== 'default') return $disabled;
+
+	return true;
+}
+add_filter('soliloquy_disable_preloading', 'berea_soliloquy_disable_preloading', 10, 2);
+
+
+
+// Add setting to the network admin menu for broadcasting a message at the top of all sites
+function berea_network_admin_broadcast() {
+	add_submenu_page('settings.php', 'Broadcast Message', 'Broadcast', '', 'settings.php', 'berea_network_admin_broadcast_form');
+}
+function berea_network_admin_broadcast_form() {
+	// Must be a super admin
+	if (!is_super_admin()) {
+		wp_die(__('You do not have permission to access this page.'));
+	}
+
+	$hidden_field_name = 'icdaj3543fg943j';
+	$hidden_field_value = 'fida93a34js43';
+
+	// See if the form has been submitted
+	if (isset($_POST[$hidden_field_name]) && $_POST[$hidden_field_name] == $hidden_field_value) {
+		update_option('berea_broadcast_enabled', isset($_POST['enabled']) ? TRUE : FALSE);
+		update_option('berea_broadcast_homepage', isset($_POST['homepage']) ? TRUE : FALSE);
+		update_option('berea_broadcast_message', stripslashes($_POST['message']));
+		update_option('berea_broadcast_icon', $_POST['icon']);
+		?>
+			<div class="updated">Settings have been saved.</div>
+		<?php
+	}
+
+	// Values
+	$enabled = get_option('berea_broadcast_enabled', FALSE);
+	$homepage = get_option('berea_broadcast_homepage', FALSE);
+	$message = get_option('berea_broadcast_message', 'Initial Message');
+	$icon = get_option('berea_broadcast_icon', 'bullhorn');
+
+	// Now the regular form
+	?>
+		<h1>Berea Broadcast Message</h1>
+
+		<form action="" method="post" name="berea-broadcast">
+			<input type="hidden" name="<?php echo $hidden_field_name; ?>" value="<?php echo $hidden_field_value; ?>">
+
+			<div>
+				<label for="enabled">Message Enabled:</label>
+				<input type="checkbox" name="enabled" <?php echo $enabled ? 'checked' : ''; ?>>
+			</div>
+			<div>
+				<label for="homepage">Homepage Only:</label>
+				<input type="checkbox" name="homepage" <?php echo $homepage ? 'checked' : ''; ?>>
+			</div>
+			<div>
+				<label for="message">Message:</label>
+				<div><textarea name="message" id="message" cols="84" rows="10"><?php echo $message ?></textarea></div>
+			</div>
+			<div>
+				<label for="icon">Icon:</label>
+				<select name="icon" id="icon">
+					<option value="bullhorn" <?php echo ($icon == 'bullhorn') ? 'SELECTED' : ''; ?>>Bullhorn</option>
+					<option value="graduation-cap" <?php echo ($icon == 'graduation-cap') ? 'SELECTED' : ''; ?>>Grad Cap</option>
+					<option value="hourglass-half" <?php echo ($icon == 'hourglass-half') ? 'SELECTED' : ''; ?>>Hourglass</option>
+				</select>
+			</div>
+			<div>
+				<input type="submit" name="Submit" value="Save Changes">
+			</div>
+		</form>
+	<?php
+}
+add_action('network_admin_menu', 'berea_network_admin_broadcast');
+
+
+/*
+ * Add class based on current multisite to the body, to help with theming
+ * From: https://codex.wordpress.org/Plugin_API/Filter_Reference/body_class#Classes_in_WordPress_Multisite
+ */
+add_filter('body_class', 'multisite_body_classes');
+function multisite_body_classes($classes) {
+        $id = get_current_blog_id();
+        $slug = strtolower(str_replace(' ', '-', trim(get_bloginfo('name'))));
+        $classes[] = $slug;
+        $classes[] = 'site-id-'.$id;
+        return $classes;
+}
+

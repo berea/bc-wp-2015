@@ -35,7 +35,7 @@
 
 			<p>No student pays for tuition.</p>
 
-			<p>Our generous <strong>TUITION PROMISE SCHOLARSHIP</strong> makes it possible for you to graduate debt-free. Even if you borrow for special learning opportunites or to replace your family’s total contribution, you will have a low debt compared to national trends. We sometimes call Berea “the best education money can’t buy.”</p>
+			<p>Our generous <strong>TUITION PROMISE SCHOLARSHIP</strong> makes it possible for you to graduate debt-free. Even if you borrow for special learning opportunities or to replace your family’s total contribution, you will have a low debt compared to national trends. We sometimes call Berea “the best education money can’t buy.”</p>
 		</div><!-- .footer-promise -->
 
 		<div class="footer-about">
@@ -52,6 +52,7 @@
 			<ul>
 				<li><a href="https://www.berea.edu/brushy-fork-institute/">Brushy Fork Institute</a></li>
 				<li><a href="http://partners.berea.edu">Partners for Education</a></li>
+				<li><a href="http://growappalachia.berea.edu">Grow Appalachia</a></li>
 			</ul>
 
 		</div><!-- .footer-about -->
@@ -68,6 +69,8 @@
 				<a href="http://bereacollegecrafts.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/studentcrafts165x42.png" alt="Student Crafts"/></a>
 				<br><br><br>
 				<a href="https://www.berea.edu/conference-services/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/conference-services-165x42.png" alt="Conference Services"/></a>
+				<br><br><br>
+				<a href="http://bereacollegefarmstore.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/farm_store.png" alt="Conference Services"/></a>
 				<br><br><br>
 
 		</div><!-- .footer-distinctly -->
@@ -92,36 +95,7 @@
             <div id="bottomright">
 
                 <div id="black-text">
-                    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
-                    <div id="gmap_container">
-                        <div id="gmap_canvas" style="height:250px;width:100%;"></div>
-                    </div>
-                    <script type="text/javascript">
-                        function init_map(){
-                            var myOptions = {
-                                zoom:14,
-                                center:new google.maps.LatLng(37.573,-84.2897),
-                                mapTypeId: google.maps.MapTypeId.TERRAIN,
-								scrollwheel: false
-                            };
-
-                            map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
-                            marker = new google.maps.Marker({
-                                map: map,position: new google.maps.LatLng(37.573, -84.2897)
-                            });
-							/*
-                            infowindow = new google.maps.InfoWindow({
-                                content:"<b>Berea College</b><br/>101 Chestunut Street<br/>40404 Kentucky"
-                            });
-                            google.maps.event.addListener(marker, "click", function(){
-                                infowindow.open(map,marker);
-                            });
-                            infowindow.open(map,marker);
-                            */
-                        }
-                        google.maps.event.addDomListener(window, 'load', init_map);
-                    </script>
-
+                    <a href="https://www.google.com/maps/place/Berea+College/@37.5716935,-84.2890655,17z/data=!4m2!3m1!1s0x8842e192a683f201:0x193cd1402103123a"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/map-image.png" alt="Map to Berea College"/></a></a>
                 </div>
 
                 <div id="gmap_links_undermap">

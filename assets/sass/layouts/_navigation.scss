@@ -837,6 +837,7 @@ Main components
                     margin-bottom: .6em;
                 }
 
+
                 h3 {
                     color: $color-2;
                     font-weight: bold;
@@ -859,21 +860,29 @@ Main components
 
             .cd-nav-item {
                 border-bottom: none;
-                height: 124px;
+                height: 150px;
                 line-height: 1.2;
                 padding: 0 0 0 80px;
 
-                &:hover {
-                    background: lighten($color-3, 8%);
+                .academic-icon {
+                    max-width: 35px;
+                    max-height:35px;
+                    float: left;
+                    margin-top:8px;
+                    margin-right:16px;
+                    margin-bottom:100px;
                 }
-
                 h3 {
-                    color: $bc-orange;
+                    color: $color-2;
                     font-weight: bold;
+                    padding: 0;
+                    max-width:89%;
+                    padding-top:0;
+                    clear:none;
+                    margin-bottom:8px;
                 }
-
                 p {
-                    display: block;
+                    max-width:89%;
                 }
 
                 &::before {
@@ -1247,4 +1256,42 @@ h3.cd-news-title {
     line-height: 1.0em!important;
     font-weight: bold;
     border-bottom:none;
+}
+
+/* Anchor Button */
+.anchor-button {
+    display: block;
+    padding: 9px 13px;
+    background: $bc-orange;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    margin-bottom: 24px;
+    font-size: 1.5em;
+
+    &:before {
+        content: '\f0da';
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        float: right;
+    }
+
+    @include media($lg) {
+        display: none;
+    }
+}
+.anchor-button:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+.anchor-button.bg-lightblue {
+    background: $bc-lightblue;
+}
+.anchor-button.bg-blue {
+    background: $bc-blue;
+}
+.anchor-button.bg-green {
+    background: $bc-green;
 }

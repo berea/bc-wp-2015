@@ -1,13 +1,12 @@
 // 2col Right Sidebar
-.page-template-default, .single-post, .archive {
+.page-template-default, .single-post, .archive, .blog, .single-media-coverage {
 
-	h1.entry-title {
+	h1 {
 	  font-size: 3em;
 	  margin: 0px 0px 15px 0px;
 	  font-weight: 700;
 	  font-style: Normal;
 	  font-family: $opensans-condensed;
-	  text-transform: uppercase;
 	  letter-spacing: -1px;
 	  color: $bc-orange;
 	  text-align: left;
@@ -17,21 +16,25 @@
 	  background-color: transparent;
 	  padding-left: 0px;
 	  padding-right: 0px;
-	  width: 1024px;
+	  max-width: 1024px;
 	}
 
 	#primary {
 	  	background-color: $bc-white;
-		float: left !important;
 	  	padding: 20px 50px;
 	  	margin: 0px;
 		margin-left: 0px !important;
 		margin-right: 0px !important;
 		@include media($sm) {
 			@include span-columns(4);
+			float: none;
 		}
 		@include media($md) {
 			@include span-columns(6);
+			float: none;
+		}
+		@include media($lg) {
+			float: left;
 		}
         @include MQ(L) {
 		  	@include span-columns(9);
@@ -39,27 +42,69 @@
 	}
 	
 	#secondary {
-	  	display: none !important;
+	  	display: none;
 
-        @include MQ(L) {
-		  @include span-columns(3);
-		  margin-top: 0px !important;
-		  margin-right: 0px !important;
-		  margin-left: 20px !important;
+		&.mobile-visible {
+			display: block;
+	  		padding: 20px 50px;
+	  		margin-top: 0;
+	  		background: #eee;
 
-		  padding-right: 0px !important;
-		  padding-left: 0px !important;
+	  		#secondary-inner {
+	  			padding: 0;
+	  		}
+		}
 
-		  display: block !important;
-		  position:relative;
-		  z-index:1;
-		  float: right !important;
-		  margin-bottom: 0px !important;
-		  background: none;
-        }
-	}
-	#secondary-inner {
-		padding:20px;
-		background-color:$bc-white;
+		&, &.mobile-visible {
+	        @include MQ(L) {
+			  @include span-columns(3);
+			  margin-top: 0px;
+			  margin-right: 0px;
+			  margin-left: 20px;
+			  margin-bottom: 0px;
+
+			  padding: 0px;
+
+			  display: block;
+			  position:relative;
+			  z-index: 1;
+			  float: right;
+			  background: $bc-white;
+
+			  #secondary-inner {
+				padding: 20px;
+			  }
+	        }
+	    }
+	    .column-links {
+			-webkit-column-count: 2;
+			-moz-column-count: 2;
+			column-count: 2;
+			@include media($md) {
+				-webkit-column-count: 3;
+				-moz-column-count: 3;
+				column-count: 3;
+			}
+			@include media($lg) {
+				-webkit-column-count: 2;
+				-moz-column-count: 2;
+				column-count: 2;
+			}
+
+			li {
+				border-top: none;
+				text-indent: 0;
+				-webkit-column-break-inside: avoid;
+		        page-break-inside: avoid;
+		        break-inside: avoid;
+		        font-size: 2em;
+		        padding: 0.42em 0;
+
+				@include media($lg) {
+					font-size: 1rem;
+					padding: 0 0 0.21em 0;
+				}
+			}
+		}
 	}
 }

@@ -70,16 +70,14 @@ body {
 
 }
 #secondary {
-
-  background-color: $bc-white;
-
+  outline: none;
   display: none;
 
   @include media($sm) {
     display: block;
   }
 
-  @include media($md) {
+  @include media($lg) {
     display: block;
 	@include span-columns( 2 );
 	@include omega( block );
@@ -94,7 +92,6 @@ body {
   }
 
   li {
-    border-top: 1px solid $bc-orange;
     list-style-type: none;
 
   }
@@ -113,7 +110,7 @@ body {
 	  }
 	}
 
-	.menu-item {
+	li {
 	  border: none;
 	  color: $bc-blue;
 

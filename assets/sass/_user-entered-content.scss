@@ -8,7 +8,6 @@ h1.entry-title, h1.entry-title a {
   font-weight: 700;
   font-style: Normal;
   font-family: $opensans-condensed;
-  text-transform: uppercase;
   letter-spacing: 1px;
   color: $bc-orange;
   text-align: left;
@@ -47,7 +46,6 @@ h1.entry-title, h1.entry-title a {
     font-weight: 700;
     font-style: Normal;
     font-family: $opensans-condensed;
-    text-transform: uppercase;
     letter-spacing: 1px;
     color: $bc-orange;
   }
@@ -59,7 +57,6 @@ h1.entry-title, h1.entry-title a {
     font-family: $opensans-condensed;
     font-weight: 300;
     font-style: Normal;
-    text-transform: uppercase;
     color: rgba(199, 91, 18, 1);
     letter-spacing: 3px;
   }
@@ -71,7 +68,6 @@ h1.entry-title, h1.entry-title a {
     font-family: $opensans-condensed;
     font-weight: 300;
     font-style: Normal;
-    text-transform: uppercase;
     color: rgba(115, 150, 0, 1);
     letter-spacing: 1px;
   }
@@ -81,12 +77,10 @@ h1.entry-title, h1.entry-title a {
     font-weight: 300;
     font-style: Normal;
     font-family: $opensans-condensed;
-    text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 25px;
     color: rgba(147, 177, 204, 1);
     line-height: 25px;
-    width: 960px;
     color: $bc-blue;
   }
   
@@ -96,10 +90,9 @@ h1.entry-title, h1.entry-title a {
     font-family: $opensans-condensed;
     font-weight: 300;
     font-style: Normal;
-    text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 1px;
-    line-height: 14px;
+    line-height: 20px;
     color: rgba(51, 51, 51, 1);
   }
 
@@ -170,6 +163,20 @@ h1.entry-title, h1.entry-title a {
     li {
       list-style-type: disc;
     }
+  }
+
+  .original-publish-date, .source-url-top, .source-url-bottom {
+    font-size: 14px;
+    color: #444;
+  }
+  .original-publish-date {
+    margin-bottom: 0.1em;
+  }
+  .source-url-top {
+    margin-bottom: 25px;
+  }
+  .source-url-bottom {
+    margin: 1em 0;
   }
 
 }

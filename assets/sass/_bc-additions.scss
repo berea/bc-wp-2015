@@ -189,7 +189,7 @@ $fg-gutter: $gutter;
   }
 }
 
-.hero-nav a,a:link,a:hover,a:visited {
+.hero-nav a {
   color: $bc-white;
 }
 
@@ -211,7 +211,8 @@ $fg-gutter: $gutter;
       left: 50%;
       margin:0;
       margin-left: -490px;
-	  width: 980px;
+	  max-width: 980px;
+    width: 100%;
 	  background-color: transparent;
     }
   }
