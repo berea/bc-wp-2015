@@ -82,7 +82,7 @@
 				<li><a href="http://www.bereaathletics.com/">Athletics</a></li>
 				<li><a href="https://www.berea.edu/convocations/">Convocations</a></li>
 				<li><a href="https://www.berea.edu/human-resources/prospective-employees/">Employment Opportunities</a></li>
-				<li><a href="http://primary.berea.edu/contact">Contact Berea</a></li>
+				<li><a href="http://primary.berea.edu/contact-us">Contact Berea</a></li>
 			</ul>
 		</li>
 
