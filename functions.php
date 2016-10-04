@@ -567,8 +567,8 @@ function berea_network_admin_broadcast_form() {
 }
 add_action('network_admin_menu', 'berea_network_admin_broadcast');
 
-//Add shortcode to a category description.  Specifically, we wanted to add a slider to the year category
-add_filter( 'category_description', 'do_shortcode' );
+//Add shortcode to a category, tag, or custom taxonomy descriptions.  Specifically, we wanted to add a slider to the year category
+add_filter( 'term_description', 'do_shortcode' );
 
 /*
  * Add class based on current multisite to the body, to help with theming
