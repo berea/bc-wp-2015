@@ -501,42 +501,6 @@ function berea_get_news_for_universal_nav() {
 
 }
 
-// Make Soliloquy sliders use wp's native responsive images with wp retina
-function berea_soliloquy_output($slider, $data) {
-	if ($data['config']['type'] !== 'default') return $slider;
-
-	return wp_make_content_images_responsive($slider);
-}
-add_filter('soliloquy_output', 'berea_soliloquy_output', 10, 2);
-
-// wp_make_content_images_responsive needs the img tags to have a class with their id
-function berea_soliloquy_image_slide_class($classes, $item, $i, $data, $mobile) {
-	if ($data['config']['type'] !== 'default') return $classes;
-
-	$classes[] = 'wp-image-' . $item['id'];
-	return $classes;
-}
-add_filter('soliloquy_output_item_image_classes', 'berea_soliloquy_image_slide_class', 10, 5);
-
-// Alter the image source that soliloquy uses so that responsive images will work
-function berea_soliloquy_image_src($src, $id, $item, $data) {
-	if ($data['config']['type'] !== 'default') return $src;
-
-	$base_url = trailingslashit( _wp_upload_dir_baseurl() );
-	$image_meta = get_post_meta( $item['id'], '_wp_attachment_metadata', true );
-	return $base_url . $image_meta['file'];
-}
-add_filter('soliloquy_image_src', 'berea_soliloquy_image_src', 10, 4);
-
-// Hook to disable soliloquy's preloading which stops responsive images being used.
-function berea_soliloquy_disable_preloading($disabled, $data) {
-	if ($data['config']['type'] !== 'default') return $disabled;
-
-	return true;
-}
-add_filter('soliloquy_disable_preloading', 'berea_soliloquy_disable_preloading', 10, 2);
-
-
 
 // Add setting to the network admin menu for broadcasting a message at the top of all sites
 function berea_network_admin_broadcast() {
@@ -603,6 +567,8 @@ function berea_network_admin_broadcast_form() {
 }
 add_action('network_admin_menu', 'berea_network_admin_broadcast');
 
+//Add shortcode to a category, tag, or custom taxonomy descriptions.  Specifically, we wanted to add a slider to the year category
+add_filter( 'term_description', 'do_shortcode' );
 
 /*
  * Add class based on current multisite to the body, to help with theming

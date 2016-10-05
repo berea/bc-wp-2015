@@ -17,7 +17,7 @@
 				<!-- <li><a href="#">Berea in Photographs </a></li> -->
 				<li><a href="https://www.berea.edu/about/mission/">Our Mission</a></li>
 				<!-- <li><a href="#">Our Vision</a></li> -->
-				<li><a href="https://www.berea.edu/about/mission/">The Great Commitments</a></li>
+				<!-- <li><a href="https://www.berea.edu/about/mission/">The Great Commitments</a></li> -->
 				<li><a href="https://www.berea.edu/about/history/">Early History</a></li>
 				<li><a href="https://www.berea.edu/berea-numbers/">Berea By the Numbers</a></li>
 			</ul>
@@ -82,15 +82,18 @@
 				<li><a href="http://www.bereaathletics.com/">Athletics</a></li>
 				<li><a href="https://www.berea.edu/convocations/">Convocations</a></li>
 				<li><a href="https://www.berea.edu/human-resources/prospective-employees/">Employment Opportunities</a></li>
-				<li><a href="http://primary.berea.edu/contact">Contact Berea</a></li>
+				<li><a href="http://primary.berea.edu/contact-us">Contact Berea</a></li>
 			</ul>
 		</li>
 
 	</ul>
 </li>
 
+		<li class="">
+			<a href="http://www.berea.edu/admissions">ADMISSIONS</a>
+		</li>
 
-		<li class="has-children">
+		<!-- <li class="has-children">
 			<a href="#">ADMISSIONS</a>
 
 			<ul class="cd-secondary-nav is-hidden">
@@ -140,7 +143,7 @@
 				<li class="cd-item-as-button menu-item-hide-on-large button-blue"><a id="admissions-eligible-button"href="http://primary.berea.edu/admissions/quick-estimator/">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></li>
 				<li class="cd-item-as-button menu-item-hide-on-large button-purple"><a id="admissions-visit-button" href="http://primary.berea.edu/admissions/visit-campus/">SCHEDULE A CAMPUS VISIT</a></li>
 			</ul>
-		</li>
+		</li> -->
 
 		<li class="has-children">
 			<a href="https://www.berea.edu/academics/">ACADEMICS</a>
