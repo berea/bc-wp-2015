@@ -27,12 +27,12 @@ var filter 			  = require('gulp-filter');
 var jshint 			  = require('gulp-jshint');
 var notify 			  = require('gulp-notify');
 var plumber 		  = require('gulp-plumber'); // Helps prevent stream crashing on errors
-var rename 			  = require('gulp-rename'),
+var rename 			  = require('gulp-rename');
 var sass 			    = require('gulp-sass');
 var sourcemaps		= require('gulp-sourcemaps');
-var uglify 			  = require('gulp-uglify');
+var minifyjs 			  = require('gulp-uglify');
 var minifycss 		= require('gulp-uglifycss');
-var gutil         = require('gulp-util');
+var gulputil        = require('gulp-util');
 var runSequence   = require('run-sequence');
 
 
@@ -62,16 +62,12 @@ gulp.task('styles', function() {
     .pipe(autoprefixer('last 2 versions','safari 5', 'ie 8','ie 9','opera 12.1','ios 6','android 4'))
     .pipe(sourcemaps.write('../maps'))//write external sourcemaps
     .pipe(plumber.stop())
-    .pipe(gulp.dest(source + 'css'))
-    .pipe(filter('**/*.css')) // Filtering stream to only css files
-    .pipe(reload({stream:true})) // when css is created, browserSync.reload
-    .pipe(rename({ suffix: '-min' }))
     .pipe(minifycss({
-      maxLineLen: 80,
+      //maxLineLen: 80,
     })) //minify CSS
     .pipe(gulp.dest(source + 'css'))
     .pipe(reload({stream:true})) // Inject Styles when min style file is created
-    .pipe(notify({ message: 'Styles task complete - create css, sourcemaps, minified', onLast: true }));
+    .pipe(notify({ message: 'Styles change made - created css, sourcemaps, minified', onLast: true }));
 });
 
 
@@ -94,17 +90,19 @@ gulp.task('styles', function() {
 ******************************************************************************/
 
 gulp.task('js', function() {
-  return gulp.src([source + 'js/custom/**/*.js'])
-  //remove vendor  is this needed?
+//  return gulp.src([source + 'js/custom/**/*.js'])
+  return gulp.src([source+'js/vendor/**/*.js',source+'js/custom/**/*.js'])
     .pipe(concat('production.js'))
+
+    .pipe(minifyjs()) // minify javascript
     .pipe(gulp.dest(source + 'js'))
-    .pipe(rename({
+    /*.pipe(rename({
       basename: 'production',
       suffix: '-min',
     }))
-    .pipe(uglify()) // minify js
-    .pipe(gulp.dest(source + 'js/'))
-    .pipe(notify({ message: 'Scripts task complete', onLast: true }));
+    
+    .pipe(gulp.dest(source + 'js/'))*/
+    .pipe(notify({ message: 'Scripts change made - concatenated, sourcemaps, minified, and production.js created, ', onLast: true }));
 });
 
 /**
@@ -115,8 +113,8 @@ gulp.task('js', function() {
 
 gulp.task('jsHint', function() {
   return gulp.src([source + 'js/custom/**/*.js'])
-    .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter('default'))
+        .pipe(jshint('.jshintrc'))
+        .pipe(jshint.reporter('jshint-stylish', {beep: true}))
     .pipe(notify({ message: 'jsHint task complete', onLast: true }));
 });
 
@@ -136,16 +134,15 @@ gulp.task('jsHint', function() {
 ******************************************************************************/
 
 //Default Gulp Task 
-//gulp.task('default', ['styles', 'js', 'jsHint'], function() {
   gulp.task('default', function() {
-
-  return gutil.log('Gulp is running!')
-  //gulp.watch(source + 'sass/**/*.scss', ['styles']); 
-
+  //set up to watch changes to sass and js files
+  gulp.watch(source + 'sass/**/*.scss', ['styles']); 
+  
   //gulp.watch(source + 'js/custom/**/*.js', ['js', browserSync.reload]);
-  //gulp.watch(source + 'js/custom/**/*.js', ['js']);
-  //gulp.watch(source + 'js/custom/**/*.js', ['jsHint']);
+  gulp.watch(source + 'js/custom/**/*.js', ['js']);
+  gulp.watch(source + 'js/custom/**/*.js', ['jsHint']);
   //NOTE: look into why a vendor js folder is needed
+  return gulputil.log('*******Gulp is running (the jewels)!******')
 });
 
 
