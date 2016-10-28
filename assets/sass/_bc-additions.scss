@@ -33,7 +33,9 @@ $fg-gutter: $gutter;
   &:nth-child(#{$nth}+1) { clear: none }
 }
 
-
+div#commitment_toggle_liberalarts {
+  display:none;
+}
 
 .cd-header-ribbon {
   position: absolute;
