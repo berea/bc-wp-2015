@@ -1,118 +1,74 @@
+'use strict';
 /**
  * Project Setup
  *
  * Setting up variables for project name and directories
 */
 
-// Project configuration
-var project     = 'bcwp2015', // Optional - Use your own project name here...
-	source      = './assets/'; 	// Your main project assets and naming 'source' instead of 'src' to avoid confusion with gulp.src
+/******************************************************************************
+| >   PROJECT VARIABLES
+******************************************************************************/
 
-// Load plugins
-var gulp 	= require('gulp'),
-	browserSync	= require('browser-sync'), // Asynchronous browser loading on .scss file changes
-	reload				= browserSync.reload,
-	autoprefixer 	= require('gulp-autoprefixer'), // Autoprefixing magic
-	minifycss 		= require('gulp-minify-css'),
-	jshint 				= require('gulp-jshint'),
-	uglify 				= require('gulp-uglify'),
-	imagemin 			= require('gulp-imagemin'),
-	newer 				= require('gulp-newer'),
-	rename 				= require('gulp-rename'),
-	concat 				= require('gulp-concat'),
-	notify 				= require('gulp-notify'),
-	cmq 					= require('gulp-combine-media-queries'),
-	runSequence 	= require('gulp-run-sequence'),
-	sass 					= require('gulp-ruby-sass'), // Our Sass compiler
-	plugins 			= require('gulp-load-plugins')({ camelize: true }),
-	ignore 				= require('gulp-ignore'), // Helps with ignoring files and directories in our run tasks
-	rimraf 				= require('gulp-rimraf'), // Helps with removing files and directories in our run tasks
-	zip 					= require('gulp-zip'), // Using to zip up our packaged theme into a tasty zip file that can be installed in WordPress!
-	plumber 			= require('gulp-plumber'), // Helps prevent stream crashing on errors
-	pipe 					= require('gulp-coffee'),
-	cache 				= require('gulp-cache'),
-	filter 			   = require('gulp-filter'),
-	insert 			   = require('gulp-insert'),
-	postcss 		   = require('gulp-postcss'),
-	unmq	 		   = require('postcss-unmq');
-;
+var project     = 'bcwp2015'; // Optional - Use your own project name here...
+var source      = './assets/'; 	// Your main project assets and naming 'source' instead of 'src' to avoid confusion with gulp.src
+
+
+/******************************************************************************
+| >   PLUGINS
+******************************************************************************/
+
+var browserSync	  = require('browser-sync'); // Asynchronous browser loading on .scss file changes
+var reload			  = browserSync.reload;
+var del 			    = require('del');
+var gulp 			    = require('gulp');
+var autoprefixer  = require('gulp-autoprefixer'); // Autoprefixing magic
+var concat 			  = require('gulp-concat');
+var filter 			  = require('gulp-filter');
+var jshint 			  = require('gulp-jshint');
+var notify 			  = require('gulp-notify');
+var plumber 		  = require('gulp-plumber'); // Helps prevent stream crashing on errors
+var rename 			  = require('gulp-rename');
+var sass 			    = require('gulp-sass');
+var sourcemaps		= require('gulp-sourcemaps');
+var minifyjs 			  = require('gulp-uglify');
+var minifycss 		= require('gulp-uglifycss');
+var gulputil        = require('gulp-util');
+var runSequence   = require('run-sequence');
+
+
+
 
 /**
  * Styles
  *
- * Triggering the styles-compact and styles-minified tasks
+ * create CSS, sourcemaps, minify
 */
-gulp.task('styles', function () {
-	runSequence('styles-compact','styles-minified','styles-stopgap');
+
+/******************************************************************************
+| >   STYLES
+******************************************************************************/
+
+gulp.task('styles', function() {
+  return gulp.src([source + 'sass/**/*.scss'])
+    .pipe(plumber({
+      errorHandler: function(err) {
+        console.log(err);
+        this.emit('end');//keep gulp from hanging on this task
+      },
+    }))
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer('last 2 versions','safari 5', 'ie 8','ie 9','opera 12.1','ios 6','android 4'))
+    .pipe(sourcemaps.write('.'))//write sourcemaps in same dir as styles.css
+    .pipe(plumber.stop())
+    .pipe(minifycss({
+      //maxLineLen: 80,
+    })) //minify CSS
+    .pipe(gulp.dest(source + 'css'))
+    .pipe(reload({stream:true})) // Inject Styles when min style file is created
+    .pipe(notify({ message: 'Styles change made - created css, sourcemaps, minified', onLast: true }));
 });
 
-/**
- * Styles-Compact
- *
- * Looking at src/sass and compiling the files into Compact format, Autoprefixing
-*/
-gulp.task('styles-compact', function () {
-	return gulp.src([source+'sass/**/*.scss'])
-		.pipe(plumber())
-		// use the compact style - 1 line per style block - so that the changes that autoprefixer makes do not throw off the map
-		.pipe(sass({ style: 'compact' }))
-		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4' ))
-		.pipe(plumber.stop())
-		.pipe(gulp.dest(source+'css/'))
-		// put back the sourceMappingURL comment that is stripped by autoprefixer - sourceMappingURL=style-min.css.map
-		.pipe(reload({stream:true})) // reload the stream and filter it so I can modify just the css files
-		.pipe(filter('**/*.css'))
-		.pipe(insert.append("\n/"+"*# sourceMappingURL=style.css.map *"+"/\n"))
-		.pipe(plumber.stop())
-		.pipe(gulp.dest(source+'css/'))
-		.pipe(notify({ message: 'Styles-Compact task complete', onLast: true }))
-});
-
-
-/**
- * Styles-Minified
- *
- * Looking at src/sass and compiling the files into Compressed (minify) format, Autoprefixing
-*/
-gulp.task('styles-minified', function () {
-	return gulp.src([source+'sass/**/*.scss'])
-		.pipe(plumber())
-		.pipe(rename({ suffix: '-min' }))
-		// use the compressed style - its the minified version
-		.pipe(sass({ style: 'compressed' }))
-		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4' ))
-		.pipe(plumber.stop())
-		.pipe(gulp.dest(source+'css/'))
-		// put back the sourceMappingURL comment that is stripped by autoprefixer - sourceMappingURL=style-min.css.map
-		.pipe(reload({stream:true})) // reload the stream and filter it so I can modify just the css files
-		.pipe(filter('**/*.css'))
-		.pipe(insert.append("\n/"+"*# sourceMappingURL=style-min.css.map *"+"/\n"))
-		.pipe(plumber.stop())
-		.pipe(gulp.dest(source+'css/'))
-		.pipe(notify({ message: 'Styles-Minifed task complete', onLast: true }))
-});
-
-
-/**
- * Styles-StopGap
- *
- * Generate the stopgap intermediate styling files from the generated compact styles
-*/
-gulp.task('styles-stopgap', function () {
-	return gulp.src([source+'css/style.css'])
-		.pipe(rename({ suffix: '-stopgap' }))
-		.pipe(postcss([
-			unmq({
-				type: 'screen',
-				width: 1200,
-				height: 768,
-				resolution: '1dppx',
-				color: 3
-			})
-		]))
-		.pipe(gulp.dest(source+'css/'))
-		.pipe(notify({ message: 'Styles-StopGap task complete', onLast: true }))
-});
 
 
 /**
@@ -121,29 +77,62 @@ gulp.task('styles-stopgap', function () {
  * Look at src/js and concatenate those files, send them to assets/js where we then minimize the concatenated file.
  * note: vendor first, then custom so custom can forcefully override if necessary
 */
+
+/******************************************************************************
+| >   JAVASCRIPT
+******************************************************************************/
+
 gulp.task('js', function() {
-	return gulp.src([source+'js/vendor/**/*.js',source+'js/custom/**/*.js'])
-		// .pipe(jshint('.jshintrc')) // TO-DO: Reporting seems to be broken for js errors.
-		// .pipe(jshint.reporter('default'))
-		.pipe(concat('production.js'))
-		.pipe(gulp.dest(source+'js/'))
-		.pipe(rename({ suffix: '-min' }))
-		.pipe(uglify())
-		.pipe(gulp.dest(source+'js/'))
-		.pipe(notify({ message: 'Scripts task complete', onLast: true }));
+  return gulp.src([source+'js/vendor/**/*.js',source+'js/custom/**/*.js']) 
+    .pipe(sourcemaps.init())
+    .pipe(concat('production.js'))
+    .pipe(minifyjs()) // minify javascript
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(source + 'js'))
+    .pipe(notify({ message: 'Scripts change made - concatenated, sourcemaps, minified, and production.js created, ', onLast: true }));
+});
+
+/**
+ * jsHint Tasks
+ *
+ * Detect potential problems in our javascript code
+ */
+
+gulp.task('jsHint', function() {
+  return gulp.src([source + 'js/custom/**/*.js']) //only show jsHint on our custom js
+        .pipe(jshint('.jshintrc'))
+        .pipe(jshint.reporter('jshint-stylish', {beep: true}))
+    .pipe(notify({ message: 'jsHint task complete', onLast: true }));
 });
 
 
-// ==== TASKS ==== //
+
+
 /**
  * Gulp Default Task
  *
- * Compiles styles, fires-up browser sync, watches js and php files. Note browser sync task watches php files
+ * Watch for sass and javascript changes
  *
 */
 
-// Watch Task
-gulp.task('default', ['styles','js'], function () {
-    gulp.watch(source+"sass/**/*.scss", ['styles']);
+/******************************************************************************
+| >   WATCH TASKS
+******************************************************************************/
+
+//Default Gulp Task 
+  gulp.task('default', function() {
+    //watch for sass changes
+    gulp.watch(source + 'sass/**/*.scss', ['styles']);
+    //watch for javascript changes in both custom and vendor folders 
     gulp.watch([source+'js/vendor/**/*.js',source+'js/custom/**/*.js'], ['js']);
+    //only use jsHint for our custom js folder
+    gulp.watch(source + 'js/custom/**/*.js', ['jsHint']);
+    
+    //later - add in some browserSync love!
+    //gulp.watch(source + 'js/custom/**/*.js', ['js', browserSync.reload]);
+
+    return gulputil.log('*******Gulp is running (the jewels)!******')
 });
+
+
+

@@ -49,6 +49,7 @@
 					<li><a href="https://www.berea.edu/iss/">Information Systems and Services</a></li>
 					<li><a href="https://www.berea.edu/imc">Integrated Marketing &amp; Communications</a></li>
 					<li><a href="https://www.berea.edu/public-safety/">Public Safety</a></li>
+					<li><a href="https://www.berea.edu/title-ix/">Title IX</a></li>
 					<li class="has-children">
 						<a href="#0">Centers &#62;</a>
 
