@@ -33,7 +33,8 @@ $fg-gutter: $gutter;
   &:nth-child(#{$nth}+1) { clear: none }
 }
 
-div#commitment_toggle_liberalarts {
+
+div[id^="toggleit"]{
   display:none;
 }
 

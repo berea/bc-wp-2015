@@ -1,11 +1,13 @@
 jQuery(document).ready(function(){
 
 
-    //$("#commitment_toggle_liberalarts").show();
-	//$("#commitment_toggle_liberalarts").hide();
-
-	$("#commitment_liberalarts").click(function(){
-        $("#commitment_toggle_liberalarts").slideToggle("slow");
+	$('[id^=commitment]').click(function(){
+       //toggle the proper commitment div
+       $('#toggleit_' + (this).id).slideToggle('slow');
+        //scroll to div
+  		if ($('#toggleit_' + (this).id).is(':visible')) {
+     		$('html, body').animate({scrollTop: $('#toggleit_' + (this).id).offset().top});
+  		}
     });
 
 
