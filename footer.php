@@ -66,7 +66,7 @@
 				<br><br><br>
 				<a href="http://www.boonetavernhotel.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/boonetavern165x59.png" alt="Boone Tavern"/></a>
 				<br><br><br>
-				<a href="https://www.berea.edu/student-crafts/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/studentcrafts165x42.png" alt="Student Crafts"/></a>
+				<a href="https://www.bereacrafts.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/studentcrafts165x42.png" alt="Student Crafts"/></a>
 				<br><br><br>
 				<a href="https://www.berea.edu/conference-services/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/conference-services-165x42.png" alt="Conference Services"/></a>
 				<br><br><br>
