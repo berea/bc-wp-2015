@@ -61,9 +61,6 @@ gulp.task('styles', function() {
     .pipe(autoprefixer('last 2 versions','safari 5', 'ie 8','ie 9','opera 12.1','ios 6','android 4'))
     .pipe(sourcemaps.write('.'))//write sourcemaps in same dir as styles.css
     .pipe(plumber.stop())
-    .pipe(minifycss({
-      //maxLineLen: 80,
-    })) //minify CSS
     .pipe(gulp.dest(source + 'css'))
     .pipe(reload({stream:true})) // Inject Styles when min style file is created
     .pipe(notify({ message: 'Styles change made - created css, sourcemaps, minified', onLast: true }));
@@ -86,7 +83,6 @@ gulp.task('js', function() {
   return gulp.src([source+'js/vendor/**/*.js',source+'js/custom/**/*.js']) 
     .pipe(sourcemaps.init())
     .pipe(concat('production.js'))
-    .pipe(minifyjs()) // minify javascript
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(source + 'js'))
     .pipe(notify({ message: 'Scripts change made - concatenated, sourcemaps, minified, and production.js created, ', onLast: true }));
@@ -120,7 +116,7 @@ gulp.task('jsHint', function() {
 ******************************************************************************/
 
 //Default Gulp Task 
-  gulp.task('default', function() {
+  gulp.task('default', ['styles','js'], function() {
     //watch for sass changes
     gulp.watch(source + 'sass/**/*.scss', ['styles']);
     //watch for javascript changes in both custom and vendor folders 
