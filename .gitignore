@@ -42,6 +42,7 @@ node_modules
 assets/.sass-cache
 .sass-cache
 build
+assets/css/style.css.map
 assets/js/production.js.map
 
 # PhpStorm project folder #
