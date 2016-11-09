@@ -154,6 +154,14 @@ if ( !function_exists('berea_scripts') ) :
 		// Dashicons
 		 wp_enqueue_style( 'dashicons' );
 
+		// Berea Main JS
+		//wp_enqueue_script( 'berea', get_template_directory_uri() . '/assets/js/custom/berea.js', '1.0.0', false );
+
+		 wp_enqueue_style( 'gc-style',  get_template_directory_uri() . '/assets/css/GreatCommitments-style.css' );
+		 //wp_enqueue_style( 'gc-style-reset',  get_template_directory_uri() . '/assets/css/reset.css' );
+
+
+
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
