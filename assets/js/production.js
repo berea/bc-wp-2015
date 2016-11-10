@@ -2352,12 +2352,18 @@ var hT = $('#scroll-to').offset().top,
        wH = $(window).height(),
        wS = $(this).scrollTop();
 
+
+if ($('#positionChange').length > 0){
 document.getElementById("positionChange").style.top = (hT-wS) + "px";
+}
+
+
 
 
 	if( $('.gc-cd-stretchy-nav').length > 0 ) {
 
-	 	var stretchyNavs = $('.gc-cd-stretchy-nav');
+	 
+   	var stretchyNavs = $('.gc-cd-stretchy-nav');
 		
  	stretchyNavs.each(function(){
 			var stretchyNav = $(this),
@@ -2374,6 +2380,8 @@ document.getElementById("positionChange").style.top = (hT-wS) + "px";
 		
 		});
 
+    
+
 
 
 /*
@@ -2384,6 +2392,7 @@ document.getElementById("positionChange").style.top = (hT-wS) + "px";
 
 
   // add jQuery transition to anchor 
+ 
   $("a").on('click', function(event) {
 
     
@@ -2401,6 +2410,7 @@ document.getElementById("positionChange").style.top = (hT-wS) + "px";
       } 
   
   });
+  
 
 
 
@@ -2415,7 +2425,7 @@ $(window).scroll(function() {
        hH = $('#scroll-to').outerHeight(),
        wH = $(window).height(),
        wS = $(this).scrollTop();
-
+//if document.getElementById('positionChange') !== null{
   
    if (wS > (hT)){
      //document.getElementById("positionChange").style.position = "fixed";
@@ -2424,11 +2434,9 @@ $(window).scroll(function() {
    else {
    		document.getElementById("positionChange").style.top = (hT-wS) + "px";
    }
-   /*
-   if (wS < (hT)){
-     //document.getElementById("positionChange").style.position = "absolute";
-     document.getElementById("positionChange").style.top = "700px";
-   }*/
+
+ //}
+ 
 });
 
 
