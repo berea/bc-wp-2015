@@ -1,5 +1,6 @@
 jQuery(document).ready(function(){
 
+if ($('#scroll-to').length > 0){
 
 var hT = $('#scroll-to').offset().top,
        hH = $('#scroll-to').outerHeight(),
@@ -11,7 +12,7 @@ if ($('#positionChange').length > 0){
 document.getElementById("positionChange").style.top = (hT-wS) + "px";
 }
 
-
+}
 
 
 	if( $('.gc-cd-stretchy-nav').length > 0 ) {
