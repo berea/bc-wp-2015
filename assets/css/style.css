@@ -3779,6 +3779,41 @@ h1.entry-title, h1.entry-title a {
   font-size: 16px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
 
+.entry-content p.commitment-quote {
+  font-size: 50px;
+  font-family: 'klinic slab bold';
+  line-height: 70px;
+  text-align: center; }
+
+.entry-content p.commitment-quote-author {
+  font-size: 25px;
+  font-family: 'open sans';
+  line-height: 50px;
+  text-align: right; }
+
+.entry-content p.commitment-desc {
+  font-size: 30px;
+  font-family: 'klinic slab';
+  line-height: 50px;
+  text-align: right; }
+
+@media only screen and (min-width: 1024px) {
+  .entry-content p.commitment-quote {
+    font-size: 81px;
+    font-family: 'klinic slab bold';
+    line-height: 70px;
+    text-align: center; }
+  .entry-content p.commitment-desc {
+    font-size: 49px;
+    font-family: 'klinic slab';
+    line-height: 50px;
+    text-align: right; }
+  .entry-content p.commitment-quote-author {
+    font-size: 32px;
+    font-family: 'open sans';
+    line-height: 50px;
+    text-align: right; } }
+
 .entry-content p.intro {
   font-size: 16px;
   line-height: 29px;

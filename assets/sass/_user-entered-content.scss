@@ -103,6 +103,59 @@ h1.entry-title, h1.entry-title a {
     font-family: $sans-serif;
   }
 
+  p.commitment-quote
+  {
+   font-size: 50px; 
+   font-family: 'klinic slab bold'; 
+   line-height: 70px; 
+   text-align: center;
+  }
+
+  p.commitment-quote-author
+  {
+  font-size: 25px; 
+  font-family: 'open sans'; 
+  line-height: 50px; 
+  text-align: right;
+  }
+
+  p.commitment-desc
+  {
+   font-size: 30px; 
+   font-family: 'klinic slab'; 
+   line-height: 50px; 
+   text-align: right;
+  }
+
+@media only screen and (min-width: 1024px){
+  p.commitment-quote
+  {
+   font-size: 81px; 
+   font-family: 'klinic slab bold'; 
+   line-height: 70px; 
+   text-align: center;
+  }
+
+  p.commitment-desc
+  {
+   font-size: 49px; 
+   font-family: 'klinic slab'; 
+   line-height: 50px; 
+   text-align: right;
+  }
+
+  p.commitment-quote-author
+  {
+  font-size: 32px; 
+  font-family: 'open sans'; 
+  line-height: 50px; 
+  text-align: right;
+  }
+
+  }
+
+
+
   p.intro {
     font-size: 16px;
     line-height: 29px;
