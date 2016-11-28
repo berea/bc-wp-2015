@@ -71,7 +71,7 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 <div id="page" class="hfeed site">
 
 	<div id="ribbon" class="cd-header-ribbon">
-		<a href="<?php $root_url = network_home_url(); echo $root_url; ?>" class="ribbon-link"><div id="logo"></div></a>
+		<a href="<?php $root_url = network_home_url(); echo $root_url; ?>" class="ribbon-link" alt="Berea College Home Page"><div id="logo"></div></a>
 	</div>
 
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'berea' ); ?></a>
@@ -82,8 +82,8 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 
 
 		<ul class="cd-header-buttons"><!-- Needed for mega-site-navigation -->
-			<li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>
-			<li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
+			<li><a class="cd-search-trigger" href="#cd-search" aria-label="Search Site"><span></span></a></li>
+			<li><a class="cd-nav-trigger" href="#cd-primary-nav" aria-label="Menu"><span></span></a></li>
 		</ul> <!-- cd-header-buttons -->
 
 
