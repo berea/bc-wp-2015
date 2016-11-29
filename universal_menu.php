@@ -55,7 +55,8 @@
 <div id="cd-search" class="cd-search">
 	<form method="get" action="https://www.google.com/search">
 			<input type="hidden" name="sitesearch" value="https://berea.edu" />
-			<input type="text"
+			<label class="screen-reader" for="berea-search-bar">Enter Search Text</label>
+			<input type="text" id="berea-search-bar"
 					name="q" value="Search Berea College Web Site"
 					onfocus="if(this.value == 'Search Berea College Web Site') {this.value = '';}"
 					onblur="if (this.value == '') {this.value = 'Search Berea College Web Site';}"/>

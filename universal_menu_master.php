@@ -5,7 +5,7 @@
 		<li class="go-back"><a href="#0">BACK</a></li>
 		<li class="see-all"><a href="http://primary.berea.edu/about">ABOUT</a></li>
 		<li class="has-children">
-			<a href="#">OVERVIEW</a>
+			<a>OVERVIEW</a>
 
 			<ul class="is-hidden">
 				<li class="go-back"><a href="#0">BACK</a></li>
@@ -40,7 +40,7 @@
 
 				<ul class="is-hidden">
 					<li class="go-back"><a href="#0">BACK</a></li>
-					<li class="see-all"><a href="#">ADMINISTRATIVE OFFICES</a></li>
+					<li class="see-all"><a>ADMINISTRATIVE OFFICES</a></li>
 					<li><a href="http://primary.berea.edu/admissions">Admissions</a></li>
 					<li><a href="http://www.alumni.berea.edu/">Alumni Relations</a></li>
 					<li><a href="http://primary.berea.edu/give-to-berea/">Development/Giving to Berea</a></li>
@@ -69,7 +69,7 @@
 			</li>
 
 		<li class="has-children">
-			<a href="#">ON CAMPUS</a>
+			<a>ON CAMPUS</a>
 
 			<ul class="is-hidden">
 				<li class="go-back"><a href="#0">BACK</a></li>

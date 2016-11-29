@@ -23,7 +23,8 @@ $base-spacing: $base-line-height * 1em;
 $base-z-index: 0;
 
 // Colors
-$blue: #477DCA;
+//$blue: #477DCA;
+$blue: #00666B;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #DDD;
@@ -32,7 +33,7 @@ $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 $bc-lightblue: #DBE4E8;
 $bc-blue: #005A8B;
-$bc-orange: #C75B12;
+$bc-orange: #C25700;
 $bc-white: #FFFFFE;
 $bc-black: #000000;
 $bc-buttongreen: rgb(95,153,2);
@@ -46,6 +47,7 @@ $base-background-color: $bc-lightblue;
 // Font Colors
 $base-font-color: $dark-gray;
 $base-accent-color: $blue;
+
 
 // Link Colors
 $base-link-color: $base-accent-color;

@@ -1,5 +1,6 @@
 // Berea College additions
 
+
 @import "components/buttons";
 @import "neat/_neat.scss";
 @import "base/_variables.scss";
@@ -33,7 +34,9 @@ $fg-gutter: $gutter;
   &:nth-child(#{$nth}+1) { clear: none }
 }
 
-
+label.screen-reader{
+  opacity:0;
+}
 
 .cd-header-ribbon {
   position: absolute;

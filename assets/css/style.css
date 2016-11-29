@@ -50,7 +50,7 @@ and Blueprint http://www.blueprintcss.org/
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
-  background-color: #477DCA;
+  background-color: #00666B;
   border-radius: 3px;
   color: white;
   display: inline-block;
@@ -61,7 +61,7 @@ input[type="submit"] {
   text-decoration: none; }
   button:hover,
   input[type="submit"]:hover {
-    background-color: #2c5999;
+    background-color: #001d1f;
     color: white; }
   button:disabled,
   input[type="submit"]:disabled {
@@ -110,12 +110,12 @@ p {
 
 a {
   transition: color 0.1s linear;
-  color: #477DCA;
+  color: #00666B;
   text-decoration: none; }
   a:hover {
-    color: #2c5999; }
+    color: #001d1f; }
   a:active, a:focus {
-    color: #2c5999;
+    color: #001d1f;
     outline: none; }
 
 hr {
@@ -184,8 +184,8 @@ select[multiple=multiple] {
   textarea:focus,
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus {
-    border-color: #477DCA;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    border-color: #00666B;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(0, 78, 82, 0.7);
     outline: none; }
 
 textarea {
@@ -869,7 +869,7 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
   word-break: break-word;
-  border-top: 4px solid #C75B12; }
+  border-top: 4px solid #C25700; }
 
 #page {
   max-width: 100%;
@@ -956,7 +956,7 @@ body {
       #secondary:last-child {
         margin-right: 0; } }
   #secondary a:link, #secondary a:visited, #secondary a:hover {
-    color: #C75B12; }
+    color: #C25700; }
   #secondary li {
     list-style-type: none; }
   #secondary ul.menu {
@@ -974,7 +974,7 @@ body {
         text-transform: uppercase; }
     #secondary ul.menu .sub-menu {
       margin-left: -1em;
-      border-top: 2px solid #C75B12 !important;
+      border-top: 2px solid #C25700 !important;
       padding-top: 10px; }
       #secondary ul.menu .sub-menu a {
         text-transform: none; }
@@ -1319,14 +1319,14 @@ Main components
     height: 56px;
     line-height: 50px;
     padding: 0 20px;
-    color: #C75B12 !important;
+    color: #C25700 !important;
     font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.5em;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow: hidden;
-    border-bottom: 2px solid #de6614;
+    border-bottom: 2px solid #dc6200;
     transform: translateZ(0);
     will-change: transform, opacity;
     transition: transform 0.3s, opacity 0.3s; }
@@ -1559,7 +1559,7 @@ Main components
           border-top: 1px solid #e2e3df;
           /* reset some inherited style */
           border-bottom: none;
-          background-color: #C75B12 !important;
+          background-color: #C25700 !important;
           color: #FFFFFF !important;
           margin: 0;
           padding: 0;
@@ -1585,7 +1585,7 @@ Main components
         border-right: none; }
       .cd-primary-nav .cd-secondary-nav > li > a {
         /* secondary nav title */
-        color: #C75B12 !important;
+        color: #C25700 !important;
         font-weight: bold;
         font-size: 16px;
         margin-bottom: 0; }
@@ -1922,7 +1922,7 @@ h3.cd-news-title {
   padding: 10px;
   border-radius: 5px;
   margin: 20px;
-  background-color: #C75B12 !important;
+  background-color: #C25700 !important;
   color: #FFFFFF !important;
   font-weight: bold; }
   @media only screen and (min-width: 1024px) {
@@ -1955,7 +1955,7 @@ h3.cd-news-title {
 .anchor-button {
   display: block;
   padding: 9px 13px;
-  background: #C75B12;
+  background: #C25700;
   color: white;
   text-decoration: none;
   transition: opacity 0.3s;
@@ -2237,7 +2237,7 @@ object {
 
 /* Notification Message */
 #bar-msg {
-  background: #C75B12;
+  background: #C25700;
   color: white;
   text-align: center;
   padding: 19px;
@@ -2368,7 +2368,7 @@ object {
   font-style: Normal;
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   letter-spacing: -1px;
-  color: #C75B12;
+  color: #C25700;
   text-align: left; }
 
 .page-template-default #main, .single-post #main, .archive #main, .blog #main, .single-media-coverage #main {
@@ -2475,7 +2475,7 @@ object {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: -1px;
-  color: #C75B12;
+  color: #C25700;
   text-align: left; }
 
 .apply-2col-left-sidebar #main,
@@ -2574,7 +2574,7 @@ object {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: -1px;
-  color: #C75B12;
+  color: #C25700;
   text-align: left; }
 
 .page-template-page-templatestemplate-full-width-php #main {
@@ -2835,7 +2835,7 @@ footer {
     margin-left: auto;
     background: #FFFFFF;
     border-radius: 10px;
-    color: #C75B12;
+    color: #C25700;
     display: block;
     font-size: 1.75em;
     font-weight: 700;
@@ -2844,14 +2844,14 @@ footer {
     text-align: center;
     text-transform: uppercase; }
     footer .footer-more a {
-      color: #C75B12; }
+      color: #C25700; }
     @media only screen and (min-width: 481px) {
       footer .footer-more {
         display: none; } }
   footer .footer-social {
     clear: left;
     color: #FFFFFF;
-    background: #C75B12;
+    background: #C25700;
     text-align: center;
     padding: 23px 20px 20px 20px;
     font-size: 1.3em;
@@ -3018,6 +3018,9 @@ input#s {
  * http://www.joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat/
  * "n order to use @include omega-reset(), you need to set Bourbon's $fg-column and $fg-gutter variables to match what Bourbon Neat is doing."
  */
+label.screen-reader {
+  opacity: 0; }
+
 .cd-header-ribbon {
   position: absolute;
   top: 0px;
@@ -3265,7 +3268,7 @@ input#s {
     margin-bottom: 15px;
     margin-left: auto;
     width: 90%;
-    border-bottom: 3px solid #C75B12; }
+    border-bottom: 3px solid #C25700; }
     @media only screen and (min-width: 769px) {
       .homepage-slider h1 {
         text-align: right;
@@ -3309,37 +3312,37 @@ input#s {
       font-weight: 700;
       border: none !important;
       color: #FFFFFE;
-      border: 1px solid #6c3e21;
-      border-color: #6c3e21 #593515 #492c0c;
+      border: 1px solid #643512;
+      border-color: #643512 #4e2c09 #3a2303;
       border-radius: 10px;
-      box-shadow: inset 0 1px 0 0 #e66716;
+      box-shadow: inset 0 1px 0 0 #e56301;
       color: white;
       display: inline-block;
       font-size: inherit;
       font-weight: normal;
       line-height: 1;
-      background-color: #C75B12;
-      background-image: linear-gradient(#C75B12, #a45902);
+      background-color: #C25700;
+      background-image: linear-gradient(#C25700, #8f5300);
       padding: 7px;
       text-align: center;
       text-decoration: none;
-      text-shadow: 0 -1px 1px #734519;
+      text-shadow: 0 -1px 1px #6a3e0b;
       background-clip: padding-box; }
       .homepage-slider .read-more a:hover:not(:disabled), .homepage-slider .read-more a:link:hover:not(:disabled), .homepage-slider .read-more a:hover:hover:not(:disabled), .homepage-slider .read-more a:visited:hover:not(:disabled), .homepage-slider .read-more a:active:hover:not(:disabled) {
-        border: 1px solid #5b2f12;
-        border-color: #5b2f12 #482607 #351d01;
-        box-shadow: inset 0 1px 0 0 #d46214;
+        border: 1px solid #502707;
+        border-color: #502707 #381d01 #1f1200;
+        box-shadow: inset 0 1px 0 0 #d05e01;
         cursor: pointer;
-        background-color: #b25110;
-        background-image: linear-gradient(#b25110, #7c490e);
-        text-shadow: 0 -1px 1px #5d330b;
+        background-color: #ab4d00;
+        background-image: linear-gradient(#ab4d00, #714302);
+        text-shadow: 0 -1px 1px #502b02;
         background-clip: padding-box; }
       .homepage-slider .read-more a:active:not(:disabled), .homepage-slider .read-more a:focus:not(:disabled), .homepage-slider .read-more a:link:active:not(:disabled), .homepage-slider .read-more a:link:focus:not(:disabled), .homepage-slider .read-more a:hover:active:not(:disabled), .homepage-slider .read-more a:hover:focus:not(:disabled), .homepage-slider .read-more a:visited:active:not(:disabled), .homepage-slider .read-more a:visited:focus:not(:disabled), .homepage-slider .read-more a:active:active:not(:disabled), .homepage-slider .read-more a:active:focus:not(:disabled) {
-        background: #8e4f18;
-        border: 1px solid #3a2006;
-        border-bottom: 1px solid #382203;
-        box-shadow: inset 0 0 6px 3px #643b08;
-        text-shadow: 0 -1px 1px #5c350f; }
+        background: #864909;
+        border: 1px solid #281601;
+        border-bottom: 1px solid #241700;
+        box-shadow: inset 0 0 6px 3px #543200;
+        text-shadow: 0 -1px 1px #4f2d05; }
       .homepage-slider .read-more a:disabled, .homepage-slider .read-more a:link:disabled, .homepage-slider .read-more a:hover:disabled, .homepage-slider .read-more a:visited:disabled, .homepage-slider .read-more a:active:disabled {
         opacity: 0.5;
         cursor: not-allowed; }
@@ -3511,7 +3514,7 @@ input#s {
       display: block; } }
 
 .menu-block {
-  background: #C75B12;
+  background: #C25700;
   padding: 20px 0;
   margin: 20px 0;
   float: left;
@@ -3590,10 +3593,10 @@ h1.entry-title, h1.entry-title a {
   font-style: Normal;
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   letter-spacing: 1px;
-  color: #C75B12;
+  color: #C25700;
   text-align: left;
   text-decoration: none;
-  border-bottom: 0px solid #C75B12; }
+  border-bottom: 0px solid #C25700; }
 
 .entry-content strong {
   font-weight: bold;
@@ -3620,7 +3623,7 @@ h1.entry-title, h1.entry-title a {
   font-style: Normal;
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   letter-spacing: 1px;
-  color: #C75B12; }
+  color: #C25700; }
 
 .entry-content h2 {
   font-size: 32px;
@@ -3708,7 +3711,7 @@ h1.entry-title, h1.entry-title a {
   color: #005A8B;
   /* text-decoration: underline; */ }
   .entry-content a:visited {
-    color: #C75B12; }
+    color: #C25700; }
 
 .entry-content ul, .entry-content ol {
   margin: 0px 0px 25px 0px;
