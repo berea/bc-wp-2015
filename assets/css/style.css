@@ -3739,6 +3739,8 @@ This gives more size options for when the standard h1/h2 isn't appropriate.*/
     list-style-type: disc; }
     .entry-content ul li, .entry-content ol li {
       list-style-type: disc; }
+  .entry-content li.circle {
+    list-style-type: circle; }
   .entry-content .original-publish-date, .entry-content .source-url-top, .entry-content .source-url-bottom {
     font-size: 14px;
     color: #444; }
