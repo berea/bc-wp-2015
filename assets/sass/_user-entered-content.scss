@@ -72,6 +72,47 @@ h1.entry-title, h1.entry-title a {
     letter-spacing: 1px;
   }
 
+  /*-----HEADING ACCESSIBILITY ADDITIONS
+This is for accessibility purposes We need to start with h1, then h2, etc.  
+h1.medium is the same as h2, h2.medium is the same as h3.
+This gives more size options for when the standard h1/h2 isn't appropriate.*/
+
+  h1.medium {
+    font-size: 32px;
+    line-height: 35px;
+    margin: 0px 0px 25px 0px;
+    font-family: $opensans-condensed;
+    font-weight: 300;
+    font-style: Normal;
+    color: rgba(199, 91, 18, 1);
+    letter-spacing: 3px;
+  }
+
+  h1.small {
+    font-size: 28px;
+    line-height: 30px;
+    margin: 0px 0px 19px 0px;
+    font-family: $opensans-condensed;
+    font-weight: 300;
+    font-style: Normal;
+    color: rgba(115, 150, 0, 1);
+    letter-spacing: 1px;
+  }
+
+    h2.medium {
+    font-size: 28px;
+    line-height: 30px;
+    margin: 0px 0px 19px 0px;
+    font-family: $opensans-condensed;
+    font-weight: 300;
+    font-style: Normal;
+    color: rgba(115, 150, 0, 1);
+    letter-spacing: 1px;
+  }
+
+  /*------END HEADING ACCESSIBILITY ADDITIONS------*/
+
+
   h4 {
     margin-bottom: 25px;
     font-weight: 300;
