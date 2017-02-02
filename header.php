@@ -11,6 +11,12 @@
 // EXCEPT the homepage in child-theme-1. That's the only page that
 // gets the tall ribbon.
 //
+//****ASTRONOMER*****
+require_once(dirname(__FILE__) . '/library/vendors/analytics-php/lib/Segment.php' );
+class_alias('Segment', 'analytics');
+analytics::init("MXJfDsoWzKiE5LSrG");
+//****END ASTRONOMER*****
+
 $class_for_ribbon = 'short-ribbon';
 if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Theme' ) {
     $class_for_ribbon = '';
