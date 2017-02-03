@@ -11,11 +11,7 @@
 // EXCEPT the homepage in child-theme-1. That's the only page that
 // gets the tall ribbon.
 //
-//****ASTRONOMER*****
-require_once(dirname(__FILE__) . '/library/vendors/analytics-php/lib/Segment.php' );
-class_alias('Segment', 'analytics');
-analytics::init("MXJfDsoWzKiE5LSrG");
-//****END ASTRONOMER*****
+
 
 $class_for_ribbon = 'short-ribbon';
 if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Theme' ) {
@@ -42,6 +38,15 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<script type="text/javascript">
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Astronomer snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.astronomer.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+  analytics.load("MXJfDsoWzKiE5LSrG");
+  analytics.page()
+  }}();
+</script>
+
+
 
 	<?php tha_head_bottom(); ?>
 	<?php wp_head(); ?>
