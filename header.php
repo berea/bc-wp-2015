@@ -45,7 +45,8 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
   analytics.page()
   analytics.ready(function () {
     ga('require', 'linker');
-    ga('linker:autoLink', ['securelb.imodules.com']);
+    ga('linker:autoLink', ['sevensensefest.com']);
+   // ga('linker:autoLink', ['securelb.imodules.com']);
 	});
   }}();
 </script>
