@@ -127,6 +127,21 @@ if ( !function_exists('berea_scripts') ) :
 			// Concatonated Scripts
 			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production.js', array( 'jquery' ), '1.0.0', false );
 
+
+            // specific page script files to trigger analytics tracking event "rt"
+			// at some point, we should implement something better than the above
+			if ( (is_page(735)&&is_page('think-know-berea-college')) || (is_page(736)&&is_page('endowment-isnt-enough')) || (is_page(737)&&is_page('shanitas-story')) || (is_page(738)&&is_page('homeless-to-thriving')) || (is_page(745)&&is_page('your-gifts-matter')) || (is_page(781)&&is_page('invest-in-lives-of-great-promise')) || (is_page(801)&&is_page('no-tuition-promise')) ) {
+    		
+
+				 ?>
+ 				 	<script>analytics.track('rt');</script>
+  				 <?php
+
+
+  			}
+
+  			
+
 			// Main Style
 			if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
 				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style.css' );
