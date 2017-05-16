@@ -1,9 +1,9 @@
 <li class="has-children">
-	<a href="http://primary.berea.edu/about">ABOUT</a>
+	<a href="http://www.berea.edu/about">ABOUT</a>
 
 	<ul class="cd-secondary-nav is-hidden">
 		<li class="go-back"><a href="#0">BACK</a></li>
-		<li class="see-all"><a href="http://primary.berea.edu/about">ABOUT</a></li>
+		<li class="see-all"><a href="http://www.berea.edu/about">ABOUT</a></li>
 		<li class="has-children">
 			<a>OVERVIEW</a>
 
@@ -11,7 +11,7 @@
 				<li class="go-back"><a href="#0">BACK</a></li>
 
 				<!-- <li><a href="#">The Berea College Difference</a></li> -->
-				<li><a href="http://primary.berea.edu/about/quick-facts/">Quick Facts</a></li>
+				<li><a href="http://www.berea.edu/about/quick-facts/">Quick Facts</a></li>
 				<!-- <li><a href="#">Ratings and Rankings</a></li> -->
 				<!-- <li><a href="#">Berea in Words</a></li> -->
 				<!-- <li><a href="#">Berea in Photographs </a></li> -->
@@ -41,9 +41,9 @@
 				<ul class="is-hidden">
 					<li class="go-back"><a href="#0">BACK</a></li>
 					<li class="see-all"><a>ADMINISTRATIVE OFFICES</a></li>
-					<li><a href="http://primary.berea.edu/admissions">Admissions</a></li>
+					<li><a href="http://www.berea.edu/admissions">Admissions</a></li>
 					<li><a href="http://www.alumni.berea.edu/">Alumni Relations</a></li>
-					<li><a href="http://primary.berea.edu/give-to-berea/">Development/Giving to Berea</a></li>
+					<li><a href="http://www.berea.edu/give-to-berea/">Development/Giving to Berea</a></li>
 					<li><a href="https://www.berea.edu/human-resources/">Human Resources</a></li>
 					<li><a href="http://libraryguides.berea.edu/">Hutchins Library</a></li>
 					<li><a href="https://www.berea.edu/iss/">Information Systems and Services</a></li>
@@ -58,7 +58,7 @@
 							<li><a href="http://www.bellhooksinstitute.com/">bell hooks Institute</a></li>
 							<li><a href="https://www.berea.edu/black-cultural-center/">Black Cultural Center</a></li>
 							<li><a href="https://www.berea.edu/celts/">Center for Excellence in Learning Through Service</a></li>
-							<li><a href="http://primary.berea.edu/ctl/">Center for Transformative Learning</a></li>
+							<li><a href="http://www.berea.edu/ctl/">Center for Transformative Learning</a></li>
 							<li><a href="https://www.berea.edu/cie/">Francis and Louise Hutchins Center for International Education</a></li>
 							<li><a href="https://www.berea.edu/appalachian-center/">Loyal Jones Appalachian Center</a></li>
 							<li><a href="https://www.berea.edu/campus-christian-center/">Willis D. Weatherford, Jr. Campus Christian Center</a></li>
@@ -73,7 +73,7 @@
 
 			<ul class="is-hidden">
 				<li class="go-back"><a href="#0">BACK</a></li>
-				<li><a href="http://primary.berea.edu/news/">Newsroom</a></li>
+				<li><a href="http://www.berea.edu/news/">Newsroom</a></li>
 				<li><a href="https://www.berea.edu/visitors-center/">Visit Berea College/Visitor Center &amp; Shoppe</a></li>
 				<!-- <li><a href="#">Virtual Tour</a></li> -->
 				<li><a href="http://www.boonetavernhotel.com/">Historic Boone Tavern</a></li>
@@ -83,7 +83,7 @@
 				<li><a href="http://www.bereaathletics.com/">Athletics</a></li>
 				<li><a href="https://www.berea.edu/convocations/">Convocations</a></li>
 				<li><a href="https://www.berea.edu/human-resources/prospective-employees/">Employment Opportunities</a></li>
-				<li><a href="http://primary.berea.edu/contact-us">Contact Berea</a></li>
+				<li><a href="http://www.berea.edu/contact-us">Contact Berea</a></li>
 			</ul>
 		</li>
 
@@ -99,17 +99,17 @@
 
 			<ul class="cd-secondary-nav is-hidden">
 				<li class="go-back"><a href="#0">BACK</a></li>
-				<li class="see-all"><a href="http://primary.berea.edu/admissions/">ADMISSIONS</a></li>
+				<li class="see-all"><a href="http://www.berea.edu/admissions/">ADMISSIONS</a></li>
 				<li class="has-children">
-					<a href="http://primary.berea.edu/admissions/">ADMISSION INFO</a>
+					<a href="http://www.berea.edu/admissions/">ADMISSION INFO</a>
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">BACK</a></li>
-						<li><a href="http://primary.berea.edu/admissions/academic-requirements/">Admission Requirements</a></li>
-						<li><a href="https://primary.berea.edu/admissions/home/publications-forms/">Admissions Publications &amp; Forms</a></li>
-						<li><a href="http://primary.berea.edu/admissions/apply/new-freshman/">New Freshmen</a></li>
-						<li><a href="https://primary.berea.edu/admissions/applying-for-admission/international-students/">International Students</a></li>
-						<li><a href="http://primary.berea.edu/admissions/apply/transfer-student/">Transfer Students</a></li>
+						<li><a href="http://www.berea.edu/admissions/academic-requirements/">Admission Requirements</a></li>
+						<li><a href="https://www.berea.edu/admissions/home/publications-forms/">Admissions Publications &amp; Forms</a></li>
+						<li><a href="http://www.berea.edu/admissions/apply/new-freshman/">New Freshmen</a></li>
+						<li><a href="https://www.berea.edu/admissions/applying-for-admission/international-students/">International Students</a></li>
+						<li><a href="http://www.berea.edu/admissions/apply/transfer-student/">Transfer Students</a></li>
 					</ul>
 				</li>
 				<li class="has-children">
@@ -117,7 +117,7 @@
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">BACK</a></li>
-						<li><a href="http://primary.berea.edu/ctl/for-students/career-development-graduate-school-funding/">Career Preparation</a></li>
+						<li><a href="http://www.berea.edu/ctl/for-students/career-development-graduate-school-funding/">Career Preparation</a></li>
 						<li><a href="http://www.bereaathletics.com/">Athletics</a></li>
 						<li><a href="https://www.berea.edu/cie/education-abroad-and-exchanges-menu/">Education Abroad</a></li>
 						<li><a href="https://www.berea.edu/celts/service-learning/">Service and Leadership</a></li>
@@ -128,21 +128,21 @@
 
 					<ul class="is-hidden">
 						<li class="go-back"><a href="#0">BACK</a></li>
-						<li><a href="http://primary.berea.edu/admissions/tuition-promise/">Tuition Promise Scholarship</a></li>
+						<li><a href="http://www.berea.edu/admissions/tuition-promise/">Tuition Promise Scholarship</a></li>
 						<li><a href="https://www.berea.edu/student-financial-aid/types-of-financial-aid/">Labor Grant Aid</a></li>
-						<li><a href="http://primary.berea.edu/admissions/quick-estimator/">Financial Eligibility</a></li>
+						<li><a href="http://www.berea.edu/admissions/quick-estimator/">Financial Eligibility</a></li>
 						<li><a href="https://berea.studentaidcalculator.com">Estimate First-Year Costs</a></li>
-						<li><a href="http://primary.berea.edu/admissions/frq/">Submit an FRQ</a></li>
+						<li><a href="http://www.berea.edu/admissions/frq/">Submit an FRQ</a></li>
 					</ul>
 				</li>
 				<li class="has-children menu-item-show-on-large">
-					<div class="cd-item-as-button button-green"><a id="admissions-apply-button" href="http://primary.berea.edu/admissions/apply/">APPLY TODAY</a></div>
-					<div class="cd-item-as-button button-blue"><a id="admissions-eligible-button" href="http://primary.berea.edu/admissions/quick-estimator/">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></div>
-					<div class="cd-item-as-button button-purple"><a id="admissions-visit-button" href="http://primary.berea.edu/admissions/visit-campus/">SCHEDULE A CAMPUS VISIT</a></div>
+					<div class="cd-item-as-button button-green"><a id="admissions-apply-button" href="http://www.berea.edu/admissions/apply/">APPLY TODAY</a></div>
+					<div class="cd-item-as-button button-blue"><a id="admissions-eligible-button" href="http://www.berea.edu/admissions/quick-estimator/">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></div>
+					<div class="cd-item-as-button button-purple"><a id="admissions-visit-button" href="http://www.berea.edu/admissions/visit-campus/">SCHEDULE A CAMPUS VISIT</a></div>
 				</li>
-				<li class="cd-item-as-button menu-item-hide-on-large button-green"><a id="admissions-apply-button" href="http://primary.berea.edu/admissions/apply/">APPLY TODAY</a></li>
-				<li class="cd-item-as-button menu-item-hide-on-large button-blue"><a id="admissions-eligible-button"href="http://primary.berea.edu/admissions/quick-estimator/">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></li>
-				<li class="cd-item-as-button menu-item-hide-on-large button-purple"><a id="admissions-visit-button" href="http://primary.berea.edu/admissions/visit-campus/">SCHEDULE A CAMPUS VISIT</a></li>
+				<li class="cd-item-as-button menu-item-hide-on-large button-green"><a id="admissions-apply-button" href="http://www.berea.edu/admissions/apply/">APPLY TODAY</a></li>
+				<li class="cd-item-as-button menu-item-hide-on-large button-blue"><a id="admissions-eligible-button"href="http://www.berea.edu/admissions/quick-estimator/">CONFIRM YOUR FINANCIAL ELIGIBILITY</a></li>
+				<li class="cd-item-as-button menu-item-hide-on-large button-purple"><a id="admissions-visit-button" href="http://www.berea.edu/admissions/visit-campus/">SCHEDULE A CAMPUS VISIT</a></li>
 			</ul>
 		</li> -->
 
@@ -232,7 +232,7 @@
 
 			<ul class="cd-nav-gallery is-hidden">
 				<li class="go-back"><a href="#0">BACK</a></li>
-				<li class="see-all"><a href="http://primary.berea.edu/news">MORE NEWS</a></li>
+				<li class="see-all"><a href="http://www.berea.edu/news">MORE NEWS</a></li>
 
 				<?php
 
@@ -254,7 +254,7 @@
 
 
 		<li>
-			<a href="http://primary.berea.edu/give-to-berea/">GIVE</a>
+			<a href="http://www.berea.edu/give-to-berea/">GIVE</a>
 		</li>
 
 		<li class="">
