@@ -19,7 +19,7 @@
 				<!-- <li><a href="#">Our Vision</a></li> -->
 				<!-- <li><a href="https://www.berea.edu/about/mission/">The Great Commitments</a></li> -->
 				<li><a href="https://www.berea.edu/about/history/">Early History</a></li>
-				<li><a href="https://www.berea.edu/berea-numbers/">Berea By the Numbers</a></li>
+				<li><a href="https://www.berea.edu/about/berea-by-the-numbers/">Berea By the Numbers</a></li>
 			</ul>
 		</li>
 
@@ -56,12 +56,12 @@
 						<ul class="is-hidden">
 							<li class="go-back"><a href="#0">BACK</a></li>
 							<li><a href="http://www.bellhooksinstitute.com/">bell hooks Institute</a></li>
-							<li><a href="https://www.berea.edu/black-cultural-center/">Black Cultural Center</a></li>
+							<li><a href="https://www.berea.edu/bcc/">Black Cultural Center</a></li>
 							<li><a href="https://www.berea.edu/celts/">Center for Excellence in Learning Through Service</a></li>
 							<li><a href="http://www.berea.edu/ctl/">Center for Transformative Learning</a></li>
 							<li><a href="https://www.berea.edu/cie/">Francis and Louise Hutchins Center for International Education</a></li>
 							<li><a href="https://www.berea.edu/appalachian-center/">Loyal Jones Appalachian Center</a></li>
-							<li><a href="https://www.berea.edu/campus-christian-center/">Willis D. Weatherford, Jr. Campus Christian Center</a></li>
+							<li><a href="https://www.berea.edu/ccc/">Willis D. Weatherford, Jr. Campus Christian Center</a></li>
 							<li><a href="https://www.berea.edu/cgwc/">Carter G. Woodson Center for Interracial Education</a></li>
 						</ul>
 					</li>
@@ -74,7 +74,7 @@
 			<ul class="is-hidden">
 				<li class="go-back"><a href="#0">BACK</a></li>
 				<li><a href="http://www.berea.edu/news/">Newsroom</a></li>
-				<li><a href="https://www.berea.edu/visitors-center/">Visit Berea College/Visitor Center &amp; Shoppe</a></li>
+				<li><a href="https://www.berea.edu/visitor-center/">Visit Berea College/Visitor Center &amp; Shoppe</a></li>
 				<!-- <li><a href="#">Virtual Tour</a></li> -->
 				<li><a href="http://www.boonetavernhotel.com/">Historic Boone Tavern</a></li>
 				<li><a href="http://www.bereacrafts.com/">Student Crafts</a></li>
