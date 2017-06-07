@@ -189,7 +189,7 @@
 					<a class="cd-nav-item" href="http://community.berea.edu/calendar/main.php?calendarid=default&view=upcoming">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/calendar.svg" alt="Academic Calendar Icon"/>
 						<h3>ACADEMIC CALENDAR</h3>
-						<p>Browse our 2015-2016 Academic Calendar.</p>
+						<p>Browse our current Academic Calendar.</p>
 					</a>
 				</li>
 
@@ -205,7 +205,7 @@
 					<a class="cd-nav-item" href="http://catalog.berea.edu/en/Current/Catalog">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/student-handbook.svg" alt="Student Handbook Icon"/>
 						<h3>CATALOG &amp; STUDENT HANDBOOK</h3>
-						<p>Browse our 2015-2016 course catalog and student handbook.</p>
+						<p>Browse our current course catalog and student handbook.</p>
 					</a>
 				</li>
 
