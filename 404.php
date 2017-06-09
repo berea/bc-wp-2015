@@ -1,4 +1,4 @@
 <?php
     header("Status: 301 Moved Permanently");
-    header("Location:http://berea.dea.dev/page-not-found/");
+    header("Location:https://www.berea.edu/page-not-found/");
 ?>
