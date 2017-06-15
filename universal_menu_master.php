@@ -162,7 +162,7 @@
 				</li>
 
 				<li>
-					<a class="cd-nav-item" href="https://www.berea.edu/labor-program/">
+					<a class="cd-nav-item" href="https://www.berea.edu/labor-program-office/">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/labor-programs.svg" alt="Labor Programs Icon"/>
 						<h3>LABOR PROGRAM</h3>
 						<p>Students are engaged in a learning environment that encourages them to be active learners, workers, and servers.</p>
