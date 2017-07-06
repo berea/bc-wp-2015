@@ -102,6 +102,9 @@
                 <div id="gmap_links_undermap">
                     <a href="https://www.google.com/maps/place/Berea+College/@37.5716935,-84.2890655,17z/data=!4m2!3m1!1s0x8842e192a683f201:0x193cd1402103123a">Google Maps</a> |
                     <a href="http://www.bing.com/maps/default.aspx?q=berea+college+maps&mkt=en&FORM=HDRSC4">Bing Maps</a>
+                    <br><br>
+					<p>101 Chestnut St.</p>
+					<p>Berea, KY 40404</p>
                 </div>
 
             </div><!-- #bottomright -->
