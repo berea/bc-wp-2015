@@ -598,3 +598,17 @@ function multisite_body_classes($classes) {
         return $classes;
 }
 
+function great_commitments_enqueue_custom_accordion() {
+	if (is_page(498)){
+		wp_enqueue_script("https://bereaedu.wpengine.com/the-great-commitments/wp-content/themes/bc-wp-2015/assets/js/custom.js");
+	}
+}
+function great_commitments_dequeue_vc_accordion() {
+	if (is_page(498)){
+		wp_dequeue_script("https://bereaedu.wpengine.com/the-great-commitments/wp-content/plugins/js_composer/assets/lib/vc_accordion/vc-accordion.min.js?ver=4.12.1");
+	}
+}
+//add_action( 'wp_enqueue_scripts', 'enqueue_nav_toggle')
+add_action( 'wp_enqueue_scripts', 'great_commitments_enqueue_custom_accordion');
+add_action( 'wp_print_scripts', 'great_commitments_dequeue_vc_accordion');
+
