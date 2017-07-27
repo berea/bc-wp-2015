@@ -2312,3 +2312,172 @@ References:
 
 /*  Berea Custom JavaScripts (empty currently)  */
 
+(function($) {
+	
+	$(document).ready(function(){
+		$('.ictst_content_cl').each(function(i, item) {
+			var height = 0;
+			// Find tallest item
+			$(item).find('> ul > li').each(function(j,li) {
+				var itemHeight = $(li).height();
+				if ( itemHeight > height ) height = itemHeight;
+			})
+			$(item).height(height);
+
+		})
+	})
+	
+})( jQuery );
+jQuery(document).ready(function(){
+
+if ($('#scroll-to').length > 0){
+
+var hT = $('#scroll-to').offset().top,
+       hH = $('#scroll-to').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+
+
+if ($('#positionChange').length > 0){
+document.getElementById("positionChange").style.top = (hT-wS) + "px";
+}
+
+}
+
+
+	if( $('.gc-cd-stretchy-nav').length > 0 ) {
+
+	 
+   	var stretchyNavs = $('.gc-cd-stretchy-nav');
+		
+ 	stretchyNavs.each(function(){
+			var stretchyNav = $(this),
+				stretchyNavTrigger = stretchyNav.find('.gc-cd-nav-trigger');
+			
+
+
+			stretchyNav.toggleClass('gc-nav-is-visible');
+			
+			stretchyNavTrigger.on('click', function(event){
+				event.preventDefault();
+				stretchyNav.toggleClass('gc-nav-is-visible');
+			});
+		
+		});
+
+    
+
+
+
+/*
+		$(document).on('click', function(event){
+			( !$(event.target).is('.gc-cd-nav-trigger') && !$(event.target).is('.gc-cd-nav-trigger span') ) && stretchyNavs.removeClass('gc-nav-is-visible');
+		});
+*/
+
+
+  // add jQuery transition to anchor 
+ 
+  $("a").on('click', function(event) {
+
+      
+      if (this.hash !== "") {
+      	
+        // Prevent default anchor click behavior
+        event.preventDefault();
+        /* 
+if (this.getAttribute("href == "faith"){
+      		this.className += " active";
+      	}
+ */
+        var hash = this.hash;
+
+      
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      } 
+  
+  });
+  
+
+
+
+	}
+
+
+
+
+
+$(window).scroll(function() {
+   var hT = $('#scroll-to').offset().top,
+       hH = $('#scroll-to').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+//if document.getElementById('positionChange') !== null{
+  
+   if (wS > (hT)){
+     //document.getElementById("positionChange").style.position = "fixed";
+          document.getElementById("positionChange").style.top = "0px";
+   }
+   else {
+   		document.getElementById("positionChange").style.top = (hT-wS) + "px";
+   }
+
+ //}
+ 
+});
+
+
+
+});
+
+
+
+jQuery(document).ready(function( $ ) {
+	
+	console.log('legacy wall');
+	$('.post .entry-content').append($('<div class="loading"></div>'));
+
+	$.getJSON('/wp-content/themes/bc-wp-2015/assets/js/custom/legacy-wall.json', function(data) {
+		console.log(data);
+		data.panelNames.sort();
+
+		// Generate year and names lists
+		var years = []
+		var yearPanels = {};
+		var names = [];
+		var nameMap = {};
+		$.each(data.panelNames, function(i, panel) {
+			var year = panel.split(' ').shift();
+			if (!inArray(year, years)) {
+				years.push(year);
+			}
+			if (!(year in yearPanels)) {
+				yearPanels[year] = [];
+			}
+			yearPanels[year].push(panel);
+			$.each(data.panels[panel].names, function(j, name){
+				names.push(name);
+				nameMap[name] = panel;
+			});
+		});
+		console.log(years);
+		console.log(yearPanels);
+		console.log(nameMap);
+
+	});
+});
+
+
+
+function inArray(needle, haystack) {
+    var length = haystack.length;
+    for(var i = 0; i < length; i++) {
+        if(haystack[i] == needle) return true;
+    }
+    return false;
+}
+//# sourceMappingURL=production.js.map
