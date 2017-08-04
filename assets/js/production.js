@@ -2509,4 +2509,4 @@ function inArray(needle, haystack) {
         if(haystack[i] == needle) return true;
     }
     return false;
-}]
+}
