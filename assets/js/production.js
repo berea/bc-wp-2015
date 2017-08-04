@@ -1,3 +1,4 @@
+
 /*! jQuery Mobile v1.4.5 | Copyright 2010, 2014 jQuery Foundation, Inc. | jquery.org/license */
 
 (function(e,t,n){typeof define=="function"&&define.amd?define(["jquery"],function(r){return n(r,e,t),r.mobile}):n(e.jQuery,e,t)})(this,document,function(e,t,n,r){(function(e,t,n,r){function T(e){while(e&&typeof e.originalEvent!="undefined")e=e.originalEvent;return e}function N(t,n){var i=t.type,s,o,a,l,c,h,p,d,v;t=e.Event(t),t.type=n,s=t.originalEvent,o=e.event.props,i.search(/^(mouse|click)/)>-1&&(o=f);if(s)for(p=o.length,l;p;)l=o[--p],t[l]=s[l];i.search(/mouse(down|up)|click/)>-1&&!t.which&&(t.which=1);if(i.search(/^touch/)!==-1){a=T(s),i=a.touches,c=a.changedTouches,h=i&&i.length?i[0]:c&&c.length?c[0]:r;if(h)for(d=0,v=u.length;d<v;d++)l=u[d],t[l]=h[l]}return t}function C(t){var n={},r,s;while(t){r=e.data(t,i);for(s in r)r[s]&&(n[s]=n.hasVirtualBinding=!0);t=t.parentNode}return n}function k(t,n){var r;while(t){r=e.data(t,i);if(r&&(!n||r[n]))return t;t=t.parentNode}return null}function L(){g=!1}function A(){g=!0}function O(){E=0,v.length=0,m=!1,A()}function M(){L()}function _(){D(),c=setTimeout(function(){c=0,O()},e.vmouse.resetTimerDuration)}function D(){c&&(clearTimeout(c),c=0)}function P(t,n,r){var i;if(r&&r[t]||!r&&k(n.target,t))i=N(n,t),e(n.target).trigger(i);return i}function H(t){var n=e.data(t.target,s),r;!m&&(!E||E!==n)&&(r=P("v"+t.type,t),r&&(r.isDefaultPrevented()&&t.preventDefault(),r.isPropagationStopped()&&t.stopPropagation(),r.isImmediatePropagationStopped()&&t.stopImmediatePropagation()))}function B(t){var n=T(t).touches,r,i,o;n&&n.length===1&&(r=t.target,i=C(r),i.hasVirtualBinding&&(E=w++,e.data(r,s,E),D(),M(),d=!1,o=T(t).touches[0],h=o.pageX,p=o.pageY,P("vmouseover",t,i),P("vmousedown",t,i)))}function j(e){if(g)return;d||P("vmousecancel",e,C(e.target)),d=!0,_()}function F(t){if(g)return;var n=T(t).touches[0],r=d,i=e.vmouse.moveDistanceThreshold,s=C(t.target);d=d||Math.abs(n.pageX-h)>i||Math.abs(n.pageY-p)>i,d&&!r&&P("vmousecancel",t,s),P("vmousemove",t,s),_()}function I(e){if(g)return;A();var t=C(e.target),n,r;P("vmouseup",e,t),d||(n=P("vclick",e,t),n&&n.isDefaultPrevented()&&(r=T(e).changedTouches[0],v.push({touchID:E,x:r.clientX,y:r.clientY}),m=!0)),P("vmouseout",e,t),d=!1,_()}function q(t){var n=e.data(t,i),r;if(n)for(r in n)if(n[r])return!0;return!1}function R(){}function U(t){var n=t.substr(1);return{setup:function(){q(this)||e.data(this,i,{});var r=e.data(this,i);r[t]=!0,l[t]=(l[t]||0)+1,l[t]===1&&b.bind(n,H),e(this).bind(n,R),y&&(l.touchstart=(l.touchstart||0)+1,l.touchstart===1&&b.bind("touchstart",B).bind("touchend",I).bind("touchmove",F).bind("scroll",j))},teardown:function(){--l[t],l[t]||b.unbind(n,H),y&&(--l.touchstart,l.touchstart||b.unbind("touchstart",B).unbind("touchmove",F).unbind("touchend",I).unbind("scroll",j));var r=e(this),s=e.data(this,i);s&&(s[t]=!1),r.unbind(n,R),q(this)||r.removeData(i)}}}var i="virtualMouseBindings",s="virtualTouchID",o="vmouseover vmousedown vmousemove vmouseup vclick vmouseout vmousecancel".split(" "),u="clientX clientY pageX pageY screenX screenY".split(" "),a=e.event.mouseHooks?e.event.mouseHooks.props:[],f=e.event.props.concat(a),l={},c=0,h=0,p=0,d=!1,v=[],m=!1,g=!1,y="addEventListener"in n,b=e(n),w=1,E=0,S,x;e.vmouse={moveDistanceThreshold:10,clickDistanceThreshold:10,resetTimerDuration:1500};for(x=0;x<o.length;x++)e.event.special[o[x]]=U(o[x]);y&&n.addEventListener("click",function(t){var n=v.length,r=t.target,i,o,u,a,f,l;if(n){i=t.clientX,o=t.clientY,S=e.vmouse.clickDistanceThreshold,u=r;while(u){for(a=0;a<n;a++){f=v[a],l=0;if(u===r&&Math.abs(f.x-i)<S&&Math.abs(f.y-o)<S||e.data(u,s)===f.touchID){t.preventDefault(),t.stopPropagation();return}}u=u.parentNode}}},!0)})(e,t,n),function(e){e.mobile={}}(e),function(e,t){var r={touch:"ontouchend"in n};e.mobile.support=e.mobile.support||{},e.extend(e.support,r),e.extend(e.mobile.support,r)}(e),function(e,t,r){function l(t,n,i,s){var o=i.type;i.type=n,s?e.event.trigger(i,r,t):e.event.dispatch.call(t,i),i.type=o}var i=e(n),s=e.mobile.support.touch,o="touchmove scroll",u=s?"touchstart":"mousedown",a=s?"touchend":"mouseup",f=s?"touchmove":"mousemove";e.each("touchstart touchmove touchend tap taphold swipe swipeleft swiperight scrollstart scrollstop".split(" "),function(t,n){e.fn[n]=function(e){return e?this.bind(n,e):this.trigger(n)},e.attrFn&&(e.attrFn[n]=!0)}),e.event.special.scrollstart={enabled:!0,setup:function(){function s(e,n){r=n,l(t,r?"scrollstart":"scrollstop",e)}var t=this,n=e(t),r,i;n.bind(o,function(t){if(!e.event.special.scrollstart.enabled)return;r||s(t,!0),clearTimeout(i),i=setTimeout(function(){s(t,!1)},50)})},teardown:function(){e(this).unbind(o)}},e.event.special.tap={tapholdThreshold:750,emitTapOnTaphold:!0,setup:function(){var t=this,n=e(t),r=!1;n.bind("vmousedown",function(s){function a(){clearTimeout(u)}function f(){a(),n.unbind("vclick",c).unbind("vmouseup",a),i.unbind("vmousecancel",f)}function c(e){f(),!r&&o===e.target?l(t,"tap",e):r&&e.preventDefault()}r=!1;if(s.which&&s.which!==1)return!1;var o=s.target,u;n.bind("vmouseup",a).bind("vclick",c),i.bind("vmousecancel",f),u=setTimeout(function(){e.event.special.tap.emitTapOnTaphold||(r=!0),l(t,"taphold",e.Event("taphold",{target:o}))},e.event.special.tap.tapholdThreshold)})},teardown:function(){e(this).unbind("vmousedown").unbind("vclick").unbind("vmouseup"),i.unbind("vmousecancel")}},e.event.special.swipe={scrollSupressionThreshold:30,durationThreshold:1e3,horizontalDistanceThreshold:30,verticalDistanceThreshold:30,getLocation:function(e){var n=t.pageXOffset,r=t.pageYOffset,i=e.clientX,s=e.clientY;if(e.pageY===0&&Math.floor(s)>Math.floor(e.pageY)||e.pageX===0&&Math.floor(i)>Math.floor(e.pageX))i-=n,s-=r;else if(s<e.pageY-r||i<e.pageX-n)i=e.pageX-n,s=e.pageY-r;return{x:i,y:s}},start:function(t){var n=t.originalEvent.touches?t.originalEvent.touches[0]:t,r=e.event.special.swipe.getLocation(n);return{time:(new Date).getTime(),coords:[r.x,r.y],origin:e(t.target)}},stop:function(t){var n=t.originalEvent.touches?t.originalEvent.touches[0]:t,r=e.event.special.swipe.getLocation(n);return{time:(new Date).getTime(),coords:[r.x,r.y]}},handleSwipe:function(t,n,r,i){if(n.time-t.time<e.event.special.swipe.durationThreshold&&Math.abs(t.coords[0]-n.coords[0])>e.event.special.swipe.horizontalDistanceThreshold&&Math.abs(t.coords[1]-n.coords[1])<e.event.special.swipe.verticalDistanceThreshold){var s=t.coords[0]>n.coords[0]?"swipeleft":"swiperight";return l(r,"swipe",e.Event("swipe",{target:i,swipestart:t,swipestop:n}),!0),l(r,s,e.Event(s,{target:i,swipestart:t,swipestop:n}),!0),!0}return!1},eventInProgress:!1,setup:function(){var t,n=this,r=e(n),s={};t=e.data(this,"mobile-events"),t||(t={length:0},e.data(this,"mobile-events",t)),t.length++,t.swipe=s,s.start=function(t){if(e.event.special.swipe.eventInProgress)return;e.event.special.swipe.eventInProgress=!0;var r,o=e.event.special.swipe.start(t),u=t.target,l=!1;s.move=function(t){if(!o||t.isDefaultPrevented())return;r=e.event.special.swipe.stop(t),l||(l=e.event.special.swipe.handleSwipe(o,r,n,u),l&&(e.event.special.swipe.eventInProgress=!1)),Math.abs(o.coords[0]-r.coords[0])>e.event.special.swipe.scrollSupressionThreshold&&t.preventDefault()},s.stop=function(){l=!0,e.event.special.swipe.eventInProgress=!1,i.off(f,s.move),s.move=null},i.on(f,s.move).one(a,s.stop)},r.on(u,s.start)},teardown:function(){var t,n;t=e.data(this,"mobile-events"),t&&(n=t.swipe,delete t.swipe,t.length--,t.length===0&&e.removeData(this,"mobile-events")),n&&(n.start&&e(this).off(u,n.start),n.move&&i.off(f,n.move),n.stop&&i.off(a,n.stop))}},e.each({scrollstop:"scrollstart",taphold:"tap",swipeleft:"swipe.left",swiperight:"swipe.right"},function(t,n){e.event.special[t]={setup:function(){e(this).bind(n,e.noop)},teardown:function(){e(this).unbind(n)}}})}(e,this)});
@@ -1409,229 +1410,229 @@ window.Modernizr = (function( window, document, undefined ) {
 })(this, this.document);
 
 jQuery(document).ready(function($){
-	//if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
-	var MqL = 1024;
-	//move nav element position according to window width
-	moveNavigation();
-	$(window).on('resize', function(){
-		(!window.requestAnimationFrame) ? setTimeout(moveNavigation, 300) : window.requestAnimationFrame(moveNavigation);
-	});
+  //if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
+  var MqL = 1024;
+  //move nav element position according to window width
+  moveNavigation();
+  $(window).on('resize', function(){
+    (!window.requestAnimationFrame) ? setTimeout(moveNavigation, 300) : window.requestAnimationFrame(moveNavigation);
+  });
 
-	$(window).scroll(function(){
-		var $o = $('<div class="cd-overlay shift-down"></div>').hide().appendTo('body');
-		var baseMargin = parseInt($o.css('marginTop'));
-		$o.remove();
+  $(window).scroll(function(){
+    var $o = $('<div class="cd-overlay shift-down"></div>').hide().appendTo('body');
+    var baseMargin = parseInt($o.css('marginTop'));
+    $o.remove();
 
-		var fromTop = $(window).scrollTop();
-		var overlayTopMargin = parseInt( $('.cd-overlay').css('marginTop') );
+    var fromTop = $(window).scrollTop();
+    var overlayTopMargin = parseInt( $('.cd-overlay').css('marginTop') );
 
-		var newMargin;
+    var newMargin;
 
-		if (fromTop > baseMargin) {
-			newMargin = 0;
-		} else if (overlayTopMargin <= baseMargin-fromTop && fromTop < baseMargin) {
-			newMargin = baseMargin - fromTop;
-		} else {
-			newMargin = baseMargin - fromTop;
-		};
+    if (fromTop > baseMargin) {
+      newMargin = 0;
+    } else if (overlayTopMargin <= baseMargin-fromTop && fromTop < baseMargin) {
+      newMargin = baseMargin - fromTop;
+    } else {
+      newMargin = baseMargin - fromTop;
+    };
 
-		$('.cd-overlay').css('marginTop', newMargin + 'px');
-	});
+    $('.cd-overlay').css('marginTop', newMargin + 'px');
+  });
 
-	//mobile - open lateral menu clicking on the menu icon
-	$('.cd-nav-trigger').on('click', function(event){
-		event.preventDefault();
+  //mobile - open lateral menu clicking on the menu icon
+  $('.cd-nav-trigger').on('click', function(event){
+    event.preventDefault();
 
-		if( $('.cd-overlay').hasClass('is-visible') && !$('.cd-search').hasClass('is-visible') ) {
-			closeNav();
-		} else {
-			$(this).addClass('nav-is-visible');
-			$('.cd-primary-nav').addClass('nav-is-visible');
-			$('.cd-main-header').addClass('nav-is-visible');
-			$('.cd-main-content').addClass('nav-is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-				$('body').addClass('overflow-hidden');
-			});
-			toggleSearch('close');
-			$('.cd-overlay').addClass('is-visible');
-		}
-		toggleRibbon();
-		toggleOverlayShift();
+    if( $('.cd-overlay').hasClass('is-visible') && !$('.cd-search').hasClass('is-visible') ) {
+      closeNav();
+    } else {
+      $(this).addClass('nav-is-visible');
+      $('.cd-primary-nav').addClass('nav-is-visible');
+      $('.cd-main-header').addClass('nav-is-visible');
+      $('.cd-main-content').addClass('nav-is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+        $('body').addClass('overflow-hidden');
+      });
+      toggleSearch('close');
+      $('.cd-overlay').addClass('is-visible');
+    }
+    toggleRibbon();
+    toggleOverlayShift();
 
-	});
+  });
 
-	//open search form
-	$('.cd-search-trigger').on('click', function(event){
-		event.preventDefault();
-		toggleSearch();
-		toggleRibbon();
-		toggleOverlayShift();
-		closeNav();
-	});
+  //open search form
+  $('.cd-search-trigger').on('click', function(event){
+    event.preventDefault();
+    toggleSearch();
+    toggleRibbon();
+    toggleOverlayShift();
+    closeNav();
+  });
 
-	//close lateral menu on mobile 
-	$('.cd-overlay').on('swiperight', function(){
-		if($('.cd-primary-nav').hasClass('nav-is-visible')) {
-			closeNav();
-			$('.cd-overlay').removeClass('is-visible');
-			toggleRibbon();
-		}
-	});
-	$('.nav-on-left .cd-overlay').on('swipeleft', function(){
-		if($('.cd-primary-nav').hasClass('nav-is-visible')) {
-			closeNav();
-			$('.cd-overlay').removeClass('is-visible');
-		}
-	});
-	$('.cd-overlay').on('click', function(){
-		closeNav();
-		toggleSearch('close');
-		$('.cd-overlay').removeClass('is-visible');
-		toggleRibbon();
-	});
-
-
-	//prevent default clicking on direct children of .cd-primary-nav 
-	$('.cd-primary-nav').children('.has-children').children('a').on('click', function(event){
-		event.preventDefault();
-	});
-	//open submenu
-	$('.has-children').children('a').on('click', function(event){
-		if( !checkWindowWidth() ) event.preventDefault();
-		var selected = $(this);
-		if( selected.next('ul').hasClass('is-hidden') ) {
-			//desktop version only
-			selected.addClass('selected').next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('moves-out');
-			selected.parent('.has-children').siblings('.has-children').children('ul').addClass('is-hidden').end().children('a').removeClass('selected');
-			$('.cd-overlay').addClass('is-visible');
-		} else {
-			selected.removeClass('selected').next('ul').addClass('is-hidden').end().parent('.has-children').parent('ul').removeClass('moves-out');
-			$('.cd-overlay').removeClass('is-visible');
-		}
-		toggleSearch('close');
-		toggleRibbon();
-	});
-
-	//submenu items - go back link
-	$('.go-back').on('click', function(){
-		$(this).parent('ul').addClass('is-hidden').parent('.has-children').parent('ul').removeClass('moves-out');
-	});
-
-	function closeNav() {
-		$('.cd-nav-trigger').removeClass('nav-is-visible');
-		$('.cd-main-header').removeClass('nav-is-visible');
-		$('.cd-primary-nav').removeClass('nav-is-visible');
-		$('.has-children ul').addClass('is-hidden');
-		$('.has-children a').removeClass('selected');
-		$('.moves-out').removeClass('moves-out');
-		$('.cd-main-content').removeClass('nav-is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-			$('body').removeClass('overflow-hidden');
-		});
-		if(!$('#cd-search').hasClass('is-visible')) $('.cd-overlay').removeClass('is-visible');
-		toggleOverlayShift();
-	}
-
-	function toggleSearch(type) {
-		if(type=="close") {
-			//close search
-			$('.cd-search').removeClass('is-visible');
-			$('.cd-search-trigger').removeClass('search-is-visible');
-			$('.cd-overlay').removeClass('search-is-visible');
-			$('body').removeClass('search-is-visible');
-		} else {
-			//toggle search visibility
-			$('.cd-search').toggleClass('is-visible');
-			$('.cd-search-trigger').toggleClass('search-is-visible');
-			$('body').toggleClass('search-is-visible');
-			if($(window).width() > MqL && $('.cd-search').hasClass('is-visible')) $('.cd-search').find('input[type="search"]').focus();
-			($('#cd-search').hasClass('is-visible')) ? $('.cd-overlay').addClass('is-visible') : $('.cd-overlay').removeClass('is-visible');
-		}
-	}
-	function toggleRibbonAction() {
-		if ( $(document).innerWidth() >= 1024 ) {
-			// main homepage + large media, swap between full & mini
-			if ( $('div#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
-				$('div#ribbon').removeClass('mini-ribbon');
-			} else {
-				$('div#ribbon').addClass('mini-ribbon');
-			}
-		} else {
-			if ( $('.cd-overlay').hasClass('is-visible') ) {
-				$('div#ribbon').hide();
-			} else {
-				$('div#ribbon').show();
-			}
-		}
-	}
-	window._navigation_toggleRibbonAction=toggleRibbonAction;
-
-	function toggleRibbon() {
-		/* use settimeout to get off the main thread and let the cd-overlay become invisible because it impacts our logic */
-		setTimeout('window._navigation_toggleRibbonAction()',50)
-	}
+  //close lateral menu on mobile 
+  $('.cd-overlay').on('swiperight', function(){
+    if($('.cd-primary-nav').hasClass('nav-is-visible')) {
+      closeNav();
+      $('.cd-overlay').removeClass('is-visible');
+      toggleRibbon();
+    }
+  });
+  $('.nav-on-left .cd-overlay').on('swipeleft', function(){
+    if($('.cd-primary-nav').hasClass('nav-is-visible')) {
+      closeNav();
+      $('.cd-overlay').removeClass('is-visible');
+    }
+  });
+  $('.cd-overlay').on('click', function(){
+    closeNav();
+    toggleSearch('close');
+    $('.cd-overlay').removeClass('is-visible');
+    toggleRibbon();
+  });
 
 
-	function toggleOverlayShift() {
+  //prevent default clicking on direct children of .cd-primary-nav 
+  $('.cd-primary-nav').children('.has-children').children('a').on('click', function(event){
+    event.preventDefault();
+  });
+  //open submenu
+  $('.has-children').children('a').on('click', function(event){
+    if( !checkWindowWidth() ) event.preventDefault();
+    var selected = $(this);
+    if( selected.next('ul').hasClass('is-hidden') ) {
+      //desktop version only
+      selected.addClass('selected').next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('moves-out');
+      selected.parent('.has-children').siblings('.has-children').children('ul').addClass('is-hidden').end().children('a').removeClass('selected');
+      $('.cd-overlay').addClass('is-visible');
+    } else {
+      selected.removeClass('selected').next('ul').addClass('is-hidden').end().parent('.has-children').parent('ul').removeClass('moves-out');
+      $('.cd-overlay').removeClass('is-visible');
+    }
+    toggleSearch('close');
+    toggleRibbon();
+  });
+
+  //submenu items - go back link
+  $('.go-back').on('click', function(){
+    $(this).parent('ul').addClass('is-hidden').parent('.has-children').parent('ul').removeClass('moves-out');
+  });
+
+  function closeNav() {
+    $('.cd-nav-trigger').removeClass('nav-is-visible');
+    $('.cd-main-header').removeClass('nav-is-visible');
+    $('.cd-primary-nav').removeClass('nav-is-visible');
+    $('.has-children ul').addClass('is-hidden');
+    $('.has-children a').removeClass('selected');
+    $('.moves-out').removeClass('moves-out');
+    $('.cd-main-content').removeClass('nav-is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+      $('body').removeClass('overflow-hidden');
+    });
+    if(!$('#cd-search').hasClass('is-visible')) $('.cd-overlay').removeClass('is-visible');
+    toggleOverlayShift();
+  }
+
+  function toggleSearch(type) {
+    if(type=="close") {
+      //close search
+      $('.cd-search').removeClass('is-visible');
+      $('.cd-search-trigger').removeClass('search-is-visible');
+      $('.cd-overlay').removeClass('search-is-visible');
+      $('body').removeClass('search-is-visible');
+    } else {
+      //toggle search visibility
+      $('.cd-search').toggleClass('is-visible');
+      $('.cd-search-trigger').toggleClass('search-is-visible');
+      $('body').toggleClass('search-is-visible');
+      if($(window).width() > MqL && $('.cd-search').hasClass('is-visible')) $('.cd-search').find('input[type="search"]').focus();
+      ($('#cd-search').hasClass('is-visible')) ? $('.cd-overlay').addClass('is-visible') : $('.cd-overlay').removeClass('is-visible');
+    }
+  }
+  function toggleRibbonAction() {
+    if ( $(document).innerWidth() >= 1024 ) {
+      // main homepage + large media, swap between full & mini
+      if ( $('div#ribbon').hasClass('mini-ribbon') && !$('.cd-overlay').hasClass('is-visible') ) {
+        $('div#ribbon').removeClass('mini-ribbon');
+      } else {
+        $('div#ribbon').addClass('mini-ribbon');
+      }
+    } else {
+      if ( $('.cd-overlay').hasClass('is-visible') ) {
+        $('div#ribbon').hide();
+      } else {
+        $('div#ribbon').show();
+      }
+    }
+  }
+  window._navigation_toggleRibbonAction=toggleRibbonAction;
+
+  function toggleRibbon() {
+    /* use settimeout to get off the main thread and let the cd-overlay become invisible because it impacts our logic */
+    setTimeout('window._navigation_toggleRibbonAction()',50)
+  }
+
+
+  function toggleOverlayShift() {
         if ( $('.cd-overlay').hasClass('.shift-down')) {
             $('.cd-overlay').removeClass('shift-down');
         } else {
             $('.cd-overlay').addClass('shift-down');
         }
-	}
+  }
 
 
-	function checkWindowWidth() {
-		//check window width (scrollbar included)
-		var e = window,
-			a = 'inner';
-		if (!('innerWidth' in window )) {
-			a = 'client';
-			e = document.documentElement || document.body;
-		}
-		//if its the stopgap theme always return true 
-		if ($('body').hasClass('child-theme-bc-wp-2015-child-theme-stopgap')) { return true; }
-		if ( e[ a+'Width' ] >= MqL ) {
-			return true;
-		} else {
-			return false;
-		}
-	}
+  function checkWindowWidth() {
+    //check window width (scrollbar included)
+    var e = window,
+      a = 'inner';
+    if (!('innerWidth' in window )) {
+      a = 'client';
+      e = document.documentElement || document.body;
+    }
+    //if its the stopgap theme always return true 
+    if ($('body').hasClass('child-theme-bc-wp-2015-child-theme-stopgap')) { return true; }
+    if ( e[ a+'Width' ] >= MqL ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
-	function moveNavigation(){
-		var navigation = $('.cd-nav');
-		closeNav();
-		$('.cd-overlay').removeClass('is-visible');
-		toggleSearch('close');
-		$('div#ribbon').removeClass('mini-ribbon');
-		$('div#ribbon').show();
+  function moveNavigation(){
+    var navigation = $('.cd-nav');
+    closeNav();
+    $('.cd-overlay').removeClass('is-visible');
+    toggleSearch('close');
+    $('div#ribbon').removeClass('mini-ribbon');
+    $('div#ribbon').show();
 
-		var desktop = checkWindowWidth();
-		if ( desktop ) {
-			navigation.detach();
-			navigation.insertBefore('.cd-header-buttons');
-		} else {
-			navigation.detach();
-			navigation.insertAfter('.cd-overlay');
-		}
-	}
+    var desktop = checkWindowWidth();
+    if ( desktop ) {
+      navigation.detach();
+      navigation.insertBefore('.cd-header-buttons');
+    } else {
+      navigation.detach();
+      navigation.insertAfter('.cd-overlay');
+    }
+  }
 });
 ( function() {
-	var is_webkit = navigator.userAgent.toLowerCase().indexOf( 'webkit' ) > -1,
-	    is_opera  = navigator.userAgent.toLowerCase().indexOf( 'opera' )  > -1,
-	    is_ie     = navigator.userAgent.toLowerCase().indexOf( 'msie' )   > -1;
+  var is_webkit = navigator.userAgent.toLowerCase().indexOf( 'webkit' ) > -1,
+      is_opera  = navigator.userAgent.toLowerCase().indexOf( 'opera' )  > -1,
+      is_ie     = navigator.userAgent.toLowerCase().indexOf( 'msie' )   > -1;
 
-	if ( ( is_webkit || is_opera || is_ie ) && 'undefined' !== typeof( document.getElementById ) ) {
-		var eventMethod = ( window.addEventListener ) ? 'addEventListener' : 'attachEvent';
-		window[ eventMethod ]( 'hashchange', function() {
-			var element = document.getElementById( location.hash.substring( 1 ) );
+  if ( ( is_webkit || is_opera || is_ie ) && 'undefined' !== typeof( document.getElementById ) ) {
+    var eventMethod = ( window.addEventListener ) ? 'addEventListener' : 'attachEvent';
+    window[ eventMethod ]( 'hashchange', function() {
+      var element = document.getElementById( location.hash.substring( 1 ) );
 
-			if ( element ) {
-				if ( ! /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) )
-					element.tabIndex = -1;
+      if ( element ) {
+        if ( ! /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) )
+          element.tabIndex = -1;
 
-				element.focus();
-			}
-		}, false );
-	}
+        element.focus();
+      }
+    }, false );
+  }
 })();
 
 /**
@@ -1751,582 +1752,573 @@ jQuery(document).ready(function($){
 /*
 selectivizr v1.0.2b - (c) Keith Clark, freely distributable under the terms
 of the MIT license.
-
 selectivizr.com
 */
 /*
-
 Notes about this source
 -----------------------
-
  * The #DEBUG_START and #DEBUG_END comments are used to mark blocks of code
    that will be removed prior to building a final release version (using a
    pre-compression script)
-
-
 References:
 -----------
-
  * CSS Syntax          : http://www.w3.org/TR/2003/WD-css3-syntax-20030813/#style
  * Selectors           : http://www.w3.org/TR/css3-selectors/#selectors
  * IE Compatability    : http://msdn.microsoft.com/en-us/library/cc351024(VS.85).aspx
  * W3C Selector Tests  : http://www.w3.org/Style/CSS/Test/CSS3/Selectors/current/html/tests/
-
 */
 
 (function(win) {
 
-	// If browser isn't IE, then stop execution! This handles the script
-	// being loaded by non IE browsers because the developer didn't use
-	// conditional comments.
-	if (/*@cc_on!@*/true) return;
-
-	// =========================== Init Objects ============================
-
-	var doc = document;
-	var root = doc.documentElement;
-	var xhr = getXHRObject();
-	var ieVersion = /MSIE (\d+)/.exec(navigator.userAgent)[1];
-
-	// If were not in standards mode, IE is too old / new or we can't create
-	// an XMLHttpRequest object then we should get out now.
-	if (doc.compatMode != 'CSS1Compat' || ieVersion<6 || ieVersion>8 || !xhr) {
-		return;
-	}
-
-
-	// ========================= Common Objects ============================
-
-	// Compatiable selector engines in order of CSS3 support. Note: '*' is
-	// a placholder for the object key name. (basically, crude compression)
-	var selectorEngines = {
-		"NW"								: "*.Dom.select",
-		"MooTools"							: "$$",
-		"DOMAssistant"						: "*.$",
-		"Prototype"							: "$$",
-		"YAHOO"								: "*.util.Selector.query",
-		"Sizzle"							: "*",
-		"jQuery"							: "*",
-		"dojo"								: "*.query"
-	};
-
-	var selectorMethod;
-	var enabledWatchers 					= [];     // array of :enabled/:disabled elements to poll
-	var ie6PatchID 							= 0;      // used to solve ie6's multiple class bug
-	var patchIE6MultipleClasses				= true;   // if true adds class bloat to ie6
-	var namespace 							= "slvzr";
-
-	// Stylesheet parsing regexp's
-	var RE_COMMENT							= /(\/\*[^*]*\*+([^\/][^*]*\*+)*\/)\s*/g;
-	var RE_IMPORT							= /@import\s*(?:(?:(?:url\(\s*(['"]?)(.*)\1)\s*\))|(?:(['"])(.*)\3))[^;]*;/g;
-	var RE_ASSET_URL 						= /\burl\(\s*(["']?)(?!data:)([^"')]+)\1\s*\)/g;
-	var RE_PSEUDO_STRUCTURAL				= /^:(empty|(first|last|only|nth(-last)?)-(child|of-type))$/;
-	var RE_PSEUDO_ELEMENTS					= /:(:first-(?:line|letter))/g;
-	var RE_SELECTOR_GROUP					= /(^|})\s*([^\{]*?[\[:][^{]+)/g;
-	var RE_SELECTOR_PARSE					= /([ +~>])|(:[a-z-]+(?:\(.*?\)+)?)|(\[.*?\])/g;
-	var RE_LIBRARY_INCOMPATIBLE_PSEUDOS		= /(:not\()?:(hover|enabled|disabled|focus|checked|target|active|visited|first-line|first-letter)\)?/g;
-	var RE_PATCH_CLASS_NAME_REPLACE			= /[^\w-]/g;
-
-	// HTML UI element regexp's
-	var RE_INPUT_ELEMENTS					= /^(INPUT|SELECT|TEXTAREA|BUTTON)$/;
-	var RE_INPUT_CHECKABLE_TYPES			= /^(checkbox|radio)$/;
-
-	// Broken attribute selector implementations (IE7/8 native [^=""], [$=""] and [*=""])
-	var BROKEN_ATTR_IMPLEMENTATIONS			= ieVersion>6 ? /[\$\^*]=(['"])\1/ : null;
-
-	// Whitespace normalization regexp's
-	var RE_TIDY_TRAILING_WHITESPACE			= /([(\[+~])\s+/g;
-	var RE_TIDY_LEADING_WHITESPACE			= /\s+([)\]+~])/g;
-	var RE_TIDY_CONSECUTIVE_WHITESPACE		= /\s+/g;
-	var RE_TIDY_TRIM_WHITESPACE				= /^\s*((?:[\S\s]*\S)?)\s*$/;
-
-	// String constants
-	var EMPTY_STRING						= "";
-	var SPACE_STRING						= " ";
-	var PLACEHOLDER_STRING					= "$1";
-
-	// =========================== Patching ================================
-
-	// --[ patchStyleSheet() ]----------------------------------------------
-	// Scans the passed cssText for selectors that require emulation and
-	// creates one or more patches for each matched selector.
-	function patchStyleSheet( cssText ) {
-		return cssText.replace(RE_PSEUDO_ELEMENTS, PLACEHOLDER_STRING).
-			replace(RE_SELECTOR_GROUP, function(m, prefix, selectorText) {
-    			var selectorGroups = selectorText.split(",");
-    			for (var c = 0, cs = selectorGroups.length; c < cs; c++) {
-    				var selector = normalizeSelectorWhitespace(selectorGroups[c]) + SPACE_STRING;
-    				var patches = [];
-    				selectorGroups[c] = selector.replace(RE_SELECTOR_PARSE,
-    					function(match, combinator, pseudo, attribute, index) {
-    						if (combinator) {
-    							if (patches.length>0) {
-    								applyPatches( selector.substring(0, index), patches );
-    								patches = [];
-    							}
-    							return combinator;
-    						}
-    						else {
-    							var patch = (pseudo) ? patchPseudoClass( pseudo ) : patchAttribute( attribute );
-    							if (patch) {
-    								patches.push(patch);
-    								return "." + patch.className;
-    							}
-    							return match;
-    						}
-    					}
-    				);
-    			}
-    			return prefix + selectorGroups.join(",");
-    		});
-	};
-
-	// --[ patchAttribute() ]-----------------------------------------------
-	// returns a patch for an attribute selector.
-	function patchAttribute( attr ) {
-		return (!BROKEN_ATTR_IMPLEMENTATIONS || BROKEN_ATTR_IMPLEMENTATIONS.test(attr)) ?
-			{ className: createClassName(attr), applyClass: true } : null;
-	};
-
-	// --[ patchPseudoClass() ]---------------------------------------------
-	// returns a patch for a pseudo-class
-	function patchPseudoClass( pseudo ) {
-
-		var applyClass = true;
-		var className = createClassName(pseudo.slice(1));
-		var isNegated = pseudo.substring(0, 5) == ":not(";
-		var activateEventName;
-		var deactivateEventName;
-
-		// if negated, remove :not()
-		if (isNegated) {
-			pseudo = pseudo.slice(5, -1);
-		}
-
-		// bracket contents are irrelevant - remove them
-		var bracketIndex = pseudo.indexOf("(")
-		if (bracketIndex > -1) {
-			pseudo = pseudo.substring(0, bracketIndex);
-		}
-
-		// check we're still dealing with a pseudo-class
-		if (pseudo.charAt(0) == ":") {
-			switch (pseudo.slice(1)) {
-
-				case "root":
-					applyClass = function(e) {
-						return isNegated ? e != root : e == root;
-					}
-					break;
-
-				case "target":
-					// :target is only supported in IE8
-					if (ieVersion == 8) {
-						applyClass = function(e) {
-							var handler = function() {
-								var hash = location.hash;
-								var hashID = hash.slice(1);
-								return isNegated ? (hash == EMPTY_STRING || e.id != hashID) : (hash != EMPTY_STRING && e.id == hashID);
-							};
-							addEvent( win, "hashchange", function() {
-								toggleElementClass(e, className, handler());
-							})
-							return handler();
-						}
-						break;
-					}
-					return false;
-
-				case "checked":
-					applyClass = function(e) {
-						if (RE_INPUT_CHECKABLE_TYPES.test(e.type)) {
-							addEvent( e, "propertychange", function() {
-								if (event.propertyName == "checked") {
-									toggleElementClass( e, className, e.checked !== isNegated );
-								}
-							})
-						}
-						return e.checked !== isNegated;
-					}
-					break;
-
-				case "disabled":
-					isNegated = !isNegated;
-
-				case "enabled":
-					applyClass = function(e) {
-						if (RE_INPUT_ELEMENTS.test(e.tagName)) {
-							addEvent( e, "propertychange", function() {
-								if (event.propertyName == "$disabled") {
-									toggleElementClass( e, className, e.$disabled === isNegated );
-								}
-							});
-							enabledWatchers.push(e);
-							e.$disabled = e.disabled;
-							return e.disabled === isNegated;
-						}
-						return pseudo == ":enabled" ? isNegated : !isNegated;
-					}
-					break;
-
-				case "focus":
-					activateEventName = "focus";
-					deactivateEventName = "blur";
-
-				case "hover":
-					if (!activateEventName) {
-						activateEventName = "mouseenter";
-						deactivateEventName = "mouseleave";
-					}
-					applyClass = function(e) {
-						addEvent( e, isNegated ? deactivateEventName : activateEventName, function() {
-							toggleElementClass( e, className, true );
-						})
-						addEvent( e, isNegated ? activateEventName : deactivateEventName, function() {
-							toggleElementClass( e, className, false );
-						})
-						return isNegated;
-					}
-					break;
-
-				// everything else
-				default:
-					// If we don't support this pseudo-class don't create
-					// a patch for it
-					if (!RE_PSEUDO_STRUCTURAL.test(pseudo)) {
-						return false;
-					}
-					break;
-			}
-		}
-		return { className: className, applyClass: applyClass };
-	};
-
-	// --[ applyPatches() ]-------------------------------------------------
-	// uses the passed selector text to find DOM nodes and patch them
-	function applyPatches(selectorText, patches) {
-		var elms;
-
-		// Although some selector libraries can find :checked :enabled etc.
-		// we need to find all elements that could have that state because
-		// it can be changed by the user.
-		var domSelectorText = selectorText.replace(RE_LIBRARY_INCOMPATIBLE_PSEUDOS, EMPTY_STRING);
-
-		// If the dom selector equates to an empty string or ends with
-		// whitespace then we need to append a universal selector (*) to it.
-		if (domSelectorText == EMPTY_STRING || domSelectorText.charAt(domSelectorText.length - 1) == SPACE_STRING) {
-			domSelectorText += "*";
-		}
-
-		// Ensure we catch errors from the selector library
-		try {
-			elms = selectorMethod( domSelectorText );
-		} catch (ex) {
-			// #DEBUG_START
-			log( "Selector '" + selectorText + "' threw exception '" + ex + "'" );
-			// #DEBUG_END
-		}
-
-
-		if (elms) {
-			for (var d = 0, dl = elms.length; d < dl; d++) {
-				var elm = elms[d];
-				var cssClasses = elm.className;
-				for (var f = 0, fl = patches.length; f < fl; f++) {
-					var patch = patches[f];
-
-					if (!hasPatch(elm, patch)) {
-						if (patch.applyClass && (patch.applyClass === true || patch.applyClass(elm) === true)) {
-							cssClasses = toggleClass(cssClasses, patch.className, true );
-						}
-					}
-				}
-				elm.className = cssClasses;
-			}
-		}
-	};
-
-	// --[ hasPatch() ]-----------------------------------------------------
-	// checks for the exsistence of a patch on an element
-	function hasPatch( elm, patch ) {
-		return new RegExp("(^|\\s)" + patch.className + "(\\s|$)").test(elm.className);
-	};
-
-
-	// =========================== Utility =================================
-
-	function createClassName( className ) {
-		return namespace + "-" + ((ieVersion == 6 && patchIE6MultipleClasses) ?
-			ie6PatchID++
-		:
-			className.replace(RE_PATCH_CLASS_NAME_REPLACE, function(a) { return a.charCodeAt(0) }));
-	};
-
-	// --[ log() ]----------------------------------------------------------
-	// #DEBUG_START
-	function log( message ) {
-		if (win.console) {
-			win.console.log(message);
-		}
-	};
-	// #DEBUG_END
-
-	// --[ trim() ]---------------------------------------------------------
-	// removes leading, trailing whitespace from a string
-	function trim( text ) {
-		return text.replace(RE_TIDY_TRIM_WHITESPACE, PLACEHOLDER_STRING);
-	};
-
-	// --[ normalizeWhitespace() ]------------------------------------------
-	// removes leading, trailing and consecutive whitespace from a string
-	function normalizeWhitespace( text ) {
-		return trim(text).replace(RE_TIDY_CONSECUTIVE_WHITESPACE, SPACE_STRING);
-	};
-
-	// --[ normalizeSelectorWhitespace() ]----------------------------------
-	// tidies whitespace around selector brackets and combinators
-	function normalizeSelectorWhitespace( selectorText ) {
-		return normalizeWhitespace(selectorText.
-			replace(RE_TIDY_TRAILING_WHITESPACE, PLACEHOLDER_STRING).
-			replace(RE_TIDY_LEADING_WHITESPACE, PLACEHOLDER_STRING)
-		);
-	};
-
-	// --[ toggleElementClass() ]-------------------------------------------
-	// toggles a single className on an element
-	function toggleElementClass( elm, className, on ) {
-		var oldClassName = elm.className;
-		var newClassName = toggleClass(oldClassName, className, on);
-		if (newClassName != oldClassName) {
-			elm.className = newClassName;
-			elm.parentNode.className += EMPTY_STRING;
-		}
-	};
-
-	// --[ toggleClass() ]--------------------------------------------------
-	// adds / removes a className from a string of classNames. Used to
-	// manage multiple class changes without forcing a DOM redraw
-	function toggleClass( classList, className, on ) {
-		var re = RegExp("(^|\\s)" + className + "(\\s|$)");
-		var classExists = re.test(classList);
-		if (on) {
-			return classExists ? classList : classList + SPACE_STRING + className;
-		} else {
-			return classExists ? trim(classList.replace(re, PLACEHOLDER_STRING)) : classList;
-		}
-	};
-
-	// --[ addEvent() ]-----------------------------------------------------
-	function addEvent(elm, eventName, eventHandler) {
-		elm.attachEvent("on" + eventName, eventHandler);
-	};
-
-	// --[ getXHRObject() ]-------------------------------------------------
-	function getXHRObject()
-	{
-		if (win.XMLHttpRequest) {
-			return new XMLHttpRequest;
-		}
-		try	{
-			return new ActiveXObject('Microsoft.XMLHTTP');
-		} catch(e) {
-			return null;
-		}
-	};
-
-	// --[ loadStyleSheet() ]-----------------------------------------------
-	function loadStyleSheet( url ) {
-		xhr.open("GET", url, false);
-		xhr.send();
-		return (xhr.status==200) ? xhr.responseText : EMPTY_STRING;
-	};
-
-	// --[ resolveUrl() ]---------------------------------------------------
-	// Converts a URL fragment to a fully qualified URL using the specified
-	// context URL. Returns null if same-origin policy is broken
-	function resolveUrl( url, contextUrl ) {
-
-		function getProtocolAndHost( url ) {
-			return url.substring(0, url.indexOf("/", 8));
-		};
-
-		// absolute path
-		if (/^https?:\/\//i.test(url)) {
-			return getProtocolAndHost(contextUrl) == getProtocolAndHost(url) ? url : null;
-		}
-
-		// root-relative path
-		if (url.charAt(0)=="/")	{
-			return getProtocolAndHost(contextUrl) + url;
-		}
-
-		// relative path
-		var contextUrlPath = contextUrl.split(/[?#]/)[0]; // ignore query string in the contextUrl
-		if (url.charAt(0) != "?" && contextUrlPath.charAt(contextUrlPath.length - 1) != "/") {
-			contextUrlPath = contextUrlPath.substring(0, contextUrlPath.lastIndexOf("/") + 1);
-		}
-
-		return contextUrlPath + url;
-	};
-
-	// --[ parseStyleSheet() ]----------------------------------------------
-	// Downloads the stylesheet specified by the URL, removes it's comments
-	// and recursivly replaces @import rules with their contents, ultimately
-	// returning the full cssText.
-	function parseStyleSheet( url ) {
-		if (url) {
-			return loadStyleSheet(url).replace(RE_COMMENT, EMPTY_STRING).
-			replace(RE_IMPORT, function( match, quoteChar, importUrl, quoteChar2, importUrl2 ) {
-				return parseStyleSheet(resolveUrl(importUrl || importUrl2, url));
-			}).
-			replace(RE_ASSET_URL, function( match, quoteChar, assetUrl ) {
-				quoteChar = quoteChar || EMPTY_STRING;
-				return " url(" + quoteChar + resolveUrl(assetUrl, url) + quoteChar + ") ";
-			});
-		}
-		return EMPTY_STRING;
-	};
-
-	// --[ init() ]---------------------------------------------------------
-	function init() {
-		// honour the <base> tag
-		var url, stylesheet;
-		var baseTags = doc.getElementsByTagName("BASE");
-		var baseUrl = (baseTags.length > 0) ? baseTags[0].href : doc.location.href;
-
-		/* Note: This code prevents IE from freezing / crashing when using
-		@font-face .eot files but it modifies the <head> tag and could
-		trigger the IE stylesheet limit. It will also cause FOUC issues.
-		If you choose to use it, make sure you comment out the for loop
-		directly below this comment.
-
-		var head = doc.getElementsByTagName("head")[0];
-		for (var c=doc.styleSheets.length-1; c>=0; c--) {
-			stylesheet = doc.styleSheets[c]
-			head.appendChild(doc.createElement("style"))
-			var patchedStylesheet = doc.styleSheets[doc.styleSheets.length-1];
-
-			if (stylesheet.href != EMPTY_STRING) {
-				url = resolveUrl(stylesheet.href, baseUrl)
-				if (url) {
-					patchedStylesheet.cssText = patchStyleSheet( parseStyleSheet( url ) )
-					stylesheet.disabled = true
-					setTimeout( function () {
-						stylesheet.owningElement.parentNode.removeChild(stylesheet.owningElement)
-					})
-				}
-			}
-		}
-		*/
-
-		for (var c = 0; c < doc.styleSheets.length; c++) {
-			stylesheet = doc.styleSheets[c]
-			if (stylesheet.href != EMPTY_STRING) {
-				url = resolveUrl(stylesheet.href, baseUrl);
-				if (url) {
-					stylesheet.cssText = patchStyleSheet( parseStyleSheet( url ) );
-				}
-			}
-		}
-
-		// :enabled & :disabled polling script (since we can't hook
-		// onpropertychange event when an element is disabled)
-		if (enabledWatchers.length > 0) {
-			setInterval( function() {
-				for (var c = 0, cl = enabledWatchers.length; c < cl; c++) {
-					var e = enabledWatchers[c];
-					if (e.disabled !== e.$disabled) {
-						if (e.disabled) {
-							e.disabled = false;
-							e.$disabled = true;
-							e.disabled = true;
-						}
-						else {
-							e.$disabled = e.disabled;
-						}
-					}
-				}
-			},250)
-		}
-	};
-
-	// Bind selectivizr to the ContentLoaded event.
-	ContentLoaded(win, function() {
-		// Determine the "best fit" selector engine
-		for (var engine in selectorEngines) {
-			var members, member, context = win;
-			if (win[engine]) {
-				members = selectorEngines[engine].replace("*", engine).split(".");
-				while ((member = members.shift()) && (context = context[member])) {}
-				if (typeof context == "function") {
-					selectorMethod = context;
-					init();
-					return;
-				}
-			}
-		}
-	});
-
-
-	/*!
-	 * ContentLoaded.js by Diego Perini, modified for IE<9 only (to save space)
-	 *
-	 * Author: Diego Perini (diego.perini at gmail.com)
-	 * Summary: cross-browser wrapper for DOMContentLoaded
-	 * Updated: 20101020
-	 * License: MIT
-	 * Version: 1.2
-	 *
-	 * URL:
-	 * http://javascript.nwbox.com/ContentLoaded/
-	 * http://javascript.nwbox.com/ContentLoaded/MIT-LICENSE
-	 *
-	 */
-
-	// @w window reference
-	// @f function reference
-	function ContentLoaded(win, fn) {
-
-		var done = false, top = true,
-		init = function(e) {
-			if (e.type == "readystatechange" && doc.readyState != "complete") return;
-			(e.type == "load" ? win : doc).detachEvent("on" + e.type, init, false);
-			if (!done && (done = true)) fn.call(win, e.type || e);
-		},
-		poll = function() {
-			try { root.doScroll("left"); } catch(e) { setTimeout(poll, 50); return; }
-			init('poll');
-		};
-
-		if (doc.readyState == "complete") fn.call(win, EMPTY_STRING);
-		else {
-			if (doc.createEventObject && root.doScroll) {
-				try { top = !win.frameElement; } catch(e) { }
-				if (top) poll();
-			}
-			addEvent(doc,"readystatechange", init);
-			addEvent(win,"load", init);
-		}
-	};
+  // If browser isn't IE, then stop execution! This handles the script
+  // being loaded by non IE browsers because the developer didn't use
+  // conditional comments.
+  if (/*@cc_on!@*/true) return;
+
+  // =========================== Init Objects ============================
+
+  var doc = document;
+  var root = doc.documentElement;
+  var xhr = getXHRObject();
+  var ieVersion = /MSIE (\d+)/.exec(navigator.userAgent)[1];
+
+  // If were not in standards mode, IE is too old / new or we can't create
+  // an XMLHttpRequest object then we should get out now.
+  if (doc.compatMode != 'CSS1Compat' || ieVersion<6 || ieVersion>8 || !xhr) {
+    return;
+  }
+
+
+  // ========================= Common Objects ============================
+
+  // Compatiable selector engines in order of CSS3 support. Note: '*' is
+  // a placholder for the object key name. (basically, crude compression)
+  var selectorEngines = {
+    "NW"                : "*.Dom.select",
+    "MooTools"              : "$$",
+    "DOMAssistant"            : "*.$",
+    "Prototype"             : "$$",
+    "YAHOO"               : "*.util.Selector.query",
+    "Sizzle"              : "*",
+    "jQuery"              : "*",
+    "dojo"                : "*.query"
+  };
+
+  var selectorMethod;
+  var enabledWatchers           = [];     // array of :enabled/:disabled elements to poll
+  var ie6PatchID              = 0;      // used to solve ie6's multiple class bug
+  var patchIE6MultipleClasses       = true;   // if true adds class bloat to ie6
+  var namespace               = "slvzr";
+
+  // Stylesheet parsing regexp's
+  var RE_COMMENT              = /(\/\*[^*]*\*+([^\/][^*]*\*+)*\/)\s*/g;
+  var RE_IMPORT             = /@import\s*(?:(?:(?:url\(\s*(['"]?)(.*)\1)\s*\))|(?:(['"])(.*)\3))[^;]*;/g;
+  var RE_ASSET_URL            = /\burl\(\s*(["']?)(?!data:)([^"')]+)\1\s*\)/g;
+  var RE_PSEUDO_STRUCTURAL        = /^:(empty|(first|last|only|nth(-last)?)-(child|of-type))$/;
+  var RE_PSEUDO_ELEMENTS          = /:(:first-(?:line|letter))/g;
+  var RE_SELECTOR_GROUP         = /(^|})\s*([^\{]*?[\[:][^{]+)/g;
+  var RE_SELECTOR_PARSE         = /([ +~>])|(:[a-z-]+(?:\(.*?\)+)?)|(\[.*?\])/g;
+  var RE_LIBRARY_INCOMPATIBLE_PSEUDOS   = /(:not\()?:(hover|enabled|disabled|focus|checked|target|active|visited|first-line|first-letter)\)?/g;
+  var RE_PATCH_CLASS_NAME_REPLACE     = /[^\w-]/g;
+
+  // HTML UI element regexp's
+  var RE_INPUT_ELEMENTS         = /^(INPUT|SELECT|TEXTAREA|BUTTON)$/;
+  var RE_INPUT_CHECKABLE_TYPES      = /^(checkbox|radio)$/;
+
+  // Broken attribute selector implementations (IE7/8 native [^=""], [$=""] and [*=""])
+  var BROKEN_ATTR_IMPLEMENTATIONS     = ieVersion>6 ? /[\$\^*]=(['"])\1/ : null;
+
+  // Whitespace normalization regexp's
+  var RE_TIDY_TRAILING_WHITESPACE     = /([(\[+~])\s+/g;
+  var RE_TIDY_LEADING_WHITESPACE      = /\s+([)\]+~])/g;
+  var RE_TIDY_CONSECUTIVE_WHITESPACE    = /\s+/g;
+  var RE_TIDY_TRIM_WHITESPACE       = /^\s*((?:[\S\s]*\S)?)\s*$/;
+
+  // String constants
+  var EMPTY_STRING            = "";
+  var SPACE_STRING            = " ";
+  var PLACEHOLDER_STRING          = "$1";
+
+  // =========================== Patching ================================
+
+  // --[ patchStyleSheet() ]----------------------------------------------
+  // Scans the passed cssText for selectors that require emulation and
+  // creates one or more patches for each matched selector.
+  function patchStyleSheet( cssText ) {
+    return cssText.replace(RE_PSEUDO_ELEMENTS, PLACEHOLDER_STRING).
+      replace(RE_SELECTOR_GROUP, function(m, prefix, selectorText) {
+          var selectorGroups = selectorText.split(",");
+          for (var c = 0, cs = selectorGroups.length; c < cs; c++) {
+            var selector = normalizeSelectorWhitespace(selectorGroups[c]) + SPACE_STRING;
+            var patches = [];
+            selectorGroups[c] = selector.replace(RE_SELECTOR_PARSE,
+              function(match, combinator, pseudo, attribute, index) {
+                if (combinator) {
+                  if (patches.length>0) {
+                    applyPatches( selector.substring(0, index), patches );
+                    patches = [];
+                  }
+                  return combinator;
+                }
+                else {
+                  var patch = (pseudo) ? patchPseudoClass( pseudo ) : patchAttribute( attribute );
+                  if (patch) {
+                    patches.push(patch);
+                    return "." + patch.className;
+                  }
+                  return match;
+                }
+              }
+            );
+          }
+          return prefix + selectorGroups.join(",");
+        });
+  };
+
+  // --[ patchAttribute() ]-----------------------------------------------
+  // returns a patch for an attribute selector.
+  function patchAttribute( attr ) {
+    return (!BROKEN_ATTR_IMPLEMENTATIONS || BROKEN_ATTR_IMPLEMENTATIONS.test(attr)) ?
+      { className: createClassName(attr), applyClass: true } : null;
+  };
+
+  // --[ patchPseudoClass() ]---------------------------------------------
+  // returns a patch for a pseudo-class
+  function patchPseudoClass( pseudo ) {
+
+    var applyClass = true;
+    var className = createClassName(pseudo.slice(1));
+    var isNegated = pseudo.substring(0, 5) == ":not(";
+    var activateEventName;
+    var deactivateEventName;
+
+    // if negated, remove :not()
+    if (isNegated) {
+      pseudo = pseudo.slice(5, -1);
+    }
+
+    // bracket contents are irrelevant - remove them
+    var bracketIndex = pseudo.indexOf("(")
+    if (bracketIndex > -1) {
+      pseudo = pseudo.substring(0, bracketIndex);
+    }
+
+    // check we're still dealing with a pseudo-class
+    if (pseudo.charAt(0) == ":") {
+      switch (pseudo.slice(1)) {
+
+        case "root":
+          applyClass = function(e) {
+            return isNegated ? e != root : e == root;
+          }
+          break;
+
+        case "target":
+          // :target is only supported in IE8
+          if (ieVersion == 8) {
+            applyClass = function(e) {
+              var handler = function() {
+                var hash = location.hash;
+                var hashID = hash.slice(1);
+                return isNegated ? (hash == EMPTY_STRING || e.id != hashID) : (hash != EMPTY_STRING && e.id == hashID);
+              };
+              addEvent( win, "hashchange", function() {
+                toggleElementClass(e, className, handler());
+              })
+              return handler();
+            }
+            break;
+          }
+          return false;
+
+        case "checked":
+          applyClass = function(e) {
+            if (RE_INPUT_CHECKABLE_TYPES.test(e.type)) {
+              addEvent( e, "propertychange", function() {
+                if (event.propertyName == "checked") {
+                  toggleElementClass( e, className, e.checked !== isNegated );
+                }
+              })
+            }
+            return e.checked !== isNegated;
+          }
+          break;
+
+        case "disabled":
+          isNegated = !isNegated;
+
+        case "enabled":
+          applyClass = function(e) {
+            if (RE_INPUT_ELEMENTS.test(e.tagName)) {
+              addEvent( e, "propertychange", function() {
+                if (event.propertyName == "$disabled") {
+                  toggleElementClass( e, className, e.$disabled === isNegated );
+                }
+              });
+              enabledWatchers.push(e);
+              e.$disabled = e.disabled;
+              return e.disabled === isNegated;
+            }
+            return pseudo == ":enabled" ? isNegated : !isNegated;
+          }
+          break;
+
+        case "focus":
+          activateEventName = "focus";
+          deactivateEventName = "blur";
+
+        case "hover":
+          if (!activateEventName) {
+            activateEventName = "mouseenter";
+            deactivateEventName = "mouseleave";
+          }
+          applyClass = function(e) {
+            addEvent( e, isNegated ? deactivateEventName : activateEventName, function() {
+              toggleElementClass( e, className, true );
+            })
+            addEvent( e, isNegated ? activateEventName : deactivateEventName, function() {
+              toggleElementClass( e, className, false );
+            })
+            return isNegated;
+          }
+          break;
+
+        // everything else
+        default:
+          // If we don't support this pseudo-class don't create
+          // a patch for it
+          if (!RE_PSEUDO_STRUCTURAL.test(pseudo)) {
+            return false;
+          }
+          break;
+      }
+    }
+    return { className: className, applyClass: applyClass };
+  };
+
+  // --[ applyPatches() ]-------------------------------------------------
+  // uses the passed selector text to find DOM nodes and patch them
+  function applyPatches(selectorText, patches) {
+    var elms;
+
+    // Although some selector libraries can find :checked :enabled etc.
+    // we need to find all elements that could have that state because
+    // it can be changed by the user.
+    var domSelectorText = selectorText.replace(RE_LIBRARY_INCOMPATIBLE_PSEUDOS, EMPTY_STRING);
+
+    // If the dom selector equates to an empty string or ends with
+    // whitespace then we need to append a universal selector (*) to it.
+    if (domSelectorText == EMPTY_STRING || domSelectorText.charAt(domSelectorText.length - 1) == SPACE_STRING) {
+      domSelectorText += "*";
+    }
+
+    // Ensure we catch errors from the selector library
+    try {
+      elms = selectorMethod( domSelectorText );
+    } catch (ex) {
+      // #DEBUG_START
+      log( "Selector '" + selectorText + "' threw exception '" + ex + "'" );
+      // #DEBUG_END
+    }
+
+
+    if (elms) {
+      for (var d = 0, dl = elms.length; d < dl; d++) {
+        var elm = elms[d];
+        var cssClasses = elm.className;
+        for (var f = 0, fl = patches.length; f < fl; f++) {
+          var patch = patches[f];
+
+          if (!hasPatch(elm, patch)) {
+            if (patch.applyClass && (patch.applyClass === true || patch.applyClass(elm) === true)) {
+              cssClasses = toggleClass(cssClasses, patch.className, true );
+            }
+          }
+        }
+        elm.className = cssClasses;
+      }
+    }
+  };
+
+  // --[ hasPatch() ]-----------------------------------------------------
+  // checks for the exsistence of a patch on an element
+  function hasPatch( elm, patch ) {
+    return new RegExp("(^|\\s)" + patch.className + "(\\s|$)").test(elm.className);
+  };
+
+
+  // =========================== Utility =================================
+
+  function createClassName( className ) {
+    return namespace + "-" + ((ieVersion == 6 && patchIE6MultipleClasses) ?
+      ie6PatchID++
+    :
+      className.replace(RE_PATCH_CLASS_NAME_REPLACE, function(a) { return a.charCodeAt(0) }));
+  };
+
+  // --[ log() ]----------------------------------------------------------
+  // #DEBUG_START
+  function log( message ) {
+    if (win.console) {
+      win.console.log(message);
+    }
+  };
+  // #DEBUG_END
+
+  // --[ trim() ]---------------------------------------------------------
+  // removes leading, trailing whitespace from a string
+  function trim( text ) {
+    return text.replace(RE_TIDY_TRIM_WHITESPACE, PLACEHOLDER_STRING);
+  };
+
+  // --[ normalizeWhitespace() ]------------------------------------------
+  // removes leading, trailing and consecutive whitespace from a string
+  function normalizeWhitespace( text ) {
+    return trim(text).replace(RE_TIDY_CONSECUTIVE_WHITESPACE, SPACE_STRING);
+  };
+
+  // --[ normalizeSelectorWhitespace() ]----------------------------------
+  // tidies whitespace around selector brackets and combinators
+  function normalizeSelectorWhitespace( selectorText ) {
+    return normalizeWhitespace(selectorText.
+      replace(RE_TIDY_TRAILING_WHITESPACE, PLACEHOLDER_STRING).
+      replace(RE_TIDY_LEADING_WHITESPACE, PLACEHOLDER_STRING)
+    );
+  };
+
+  // --[ toggleElementClass() ]-------------------------------------------
+  // toggles a single className on an element
+  function toggleElementClass( elm, className, on ) {
+    var oldClassName = elm.className;
+    var newClassName = toggleClass(oldClassName, className, on);
+    if (newClassName != oldClassName) {
+      elm.className = newClassName;
+      elm.parentNode.className += EMPTY_STRING;
+    }
+  };
+
+  // --[ toggleClass() ]--------------------------------------------------
+  // adds / removes a className from a string of classNames. Used to
+  // manage multiple class changes without forcing a DOM redraw
+  function toggleClass( classList, className, on ) {
+    var re = RegExp("(^|\\s)" + className + "(\\s|$)");
+    var classExists = re.test(classList);
+    if (on) {
+      return classExists ? classList : classList + SPACE_STRING + className;
+    } else {
+      return classExists ? trim(classList.replace(re, PLACEHOLDER_STRING)) : classList;
+    }
+  };
+
+  // --[ addEvent() ]-----------------------------------------------------
+  function addEvent(elm, eventName, eventHandler) {
+    elm.attachEvent("on" + eventName, eventHandler);
+  };
+
+  // --[ getXHRObject() ]-------------------------------------------------
+  function getXHRObject()
+  {
+    if (win.XMLHttpRequest) {
+      return new XMLHttpRequest;
+    }
+    try {
+      return new ActiveXObject('Microsoft.XMLHTTP');
+    } catch(e) {
+      return null;
+    }
+  };
+
+  // --[ loadStyleSheet() ]-----------------------------------------------
+  function loadStyleSheet( url ) {
+    xhr.open("GET", url, false);
+    xhr.send();
+    return (xhr.status==200) ? xhr.responseText : EMPTY_STRING;
+  };
+
+  // --[ resolveUrl() ]---------------------------------------------------
+  // Converts a URL fragment to a fully qualified URL using the specified
+  // context URL. Returns null if same-origin policy is broken
+  function resolveUrl( url, contextUrl ) {
+
+    function getProtocolAndHost( url ) {
+      return url.substring(0, url.indexOf("/", 8));
+    };
+
+    // absolute path
+    if (/^https?:\/\//i.test(url)) {
+      return getProtocolAndHost(contextUrl) == getProtocolAndHost(url) ? url : null;
+    }
+
+    // root-relative path
+    if (url.charAt(0)=="/") {
+      return getProtocolAndHost(contextUrl) + url;
+    }
+
+    // relative path
+    var contextUrlPath = contextUrl.split(/[?#]/)[0]; // ignore query string in the contextUrl
+    if (url.charAt(0) != "?" && contextUrlPath.charAt(contextUrlPath.length - 1) != "/") {
+      contextUrlPath = contextUrlPath.substring(0, contextUrlPath.lastIndexOf("/") + 1);
+    }
+
+    return contextUrlPath + url;
+  };
+
+  // --[ parseStyleSheet() ]----------------------------------------------
+  // Downloads the stylesheet specified by the URL, removes it's comments
+  // and recursivly replaces @import rules with their contents, ultimately
+  // returning the full cssText.
+  function parseStyleSheet( url ) {
+    if (url) {
+      return loadStyleSheet(url).replace(RE_COMMENT, EMPTY_STRING).
+      replace(RE_IMPORT, function( match, quoteChar, importUrl, quoteChar2, importUrl2 ) {
+        return parseStyleSheet(resolveUrl(importUrl || importUrl2, url));
+      }).
+      replace(RE_ASSET_URL, function( match, quoteChar, assetUrl ) {
+        quoteChar = quoteChar || EMPTY_STRING;
+        return " url(" + quoteChar + resolveUrl(assetUrl, url) + quoteChar + ") ";
+      });
+    }
+    return EMPTY_STRING;
+  };
+
+  // --[ init() ]---------------------------------------------------------
+  function init() {
+    // honour the <base> tag
+    var url, stylesheet;
+    var baseTags = doc.getElementsByTagName("BASE");
+    var baseUrl = (baseTags.length > 0) ? baseTags[0].href : doc.location.href;
+
+    /* Note: This code prevents IE from freezing / crashing when using
+    @font-face .eot files but it modifies the <head> tag and could
+    trigger the IE stylesheet limit. It will also cause FOUC issues.
+    If you choose to use it, make sure you comment out the for loop
+    directly below this comment.
+    var head = doc.getElementsByTagName("head")[0];
+    for (var c=doc.styleSheets.length-1; c>=0; c--) {
+      stylesheet = doc.styleSheets[c]
+      head.appendChild(doc.createElement("style"))
+      var patchedStylesheet = doc.styleSheets[doc.styleSheets.length-1];
+      if (stylesheet.href != EMPTY_STRING) {
+        url = resolveUrl(stylesheet.href, baseUrl)
+        if (url) {
+          patchedStylesheet.cssText = patchStyleSheet( parseStyleSheet( url ) )
+          stylesheet.disabled = true
+          setTimeout( function () {
+            stylesheet.owningElement.parentNode.removeChild(stylesheet.owningElement)
+          })
+        }
+      }
+    }
+    */
+
+    for (var c = 0; c < doc.styleSheets.length; c++) {
+      stylesheet = doc.styleSheets[c]
+      if (stylesheet.href != EMPTY_STRING) {
+        url = resolveUrl(stylesheet.href, baseUrl);
+        if (url) {
+          stylesheet.cssText = patchStyleSheet( parseStyleSheet( url ) );
+        }
+      }
+    }
+
+    // :enabled & :disabled polling script (since we can't hook
+    // onpropertychange event when an element is disabled)
+    if (enabledWatchers.length > 0) {
+      setInterval( function() {
+        for (var c = 0, cl = enabledWatchers.length; c < cl; c++) {
+          var e = enabledWatchers[c];
+          if (e.disabled !== e.$disabled) {
+            if (e.disabled) {
+              e.disabled = false;
+              e.$disabled = true;
+              e.disabled = true;
+            }
+            else {
+              e.$disabled = e.disabled;
+            }
+          }
+        }
+      },250)
+    }
+  };
+
+  // Bind selectivizr to the ContentLoaded event.
+  ContentLoaded(win, function() {
+    // Determine the "best fit" selector engine
+    for (var engine in selectorEngines) {
+      var members, member, context = win;
+      if (win[engine]) {
+        members = selectorEngines[engine].replace("*", engine).split(".");
+        while ((member = members.shift()) && (context = context[member])) {}
+        if (typeof context == "function") {
+          selectorMethod = context;
+          init();
+          return;
+        }
+      }
+    }
+  });
+
+
+  /*!
+   * ContentLoaded.js by Diego Perini, modified for IE<9 only (to save space)
+   *
+   * Author: Diego Perini (diego.perini at gmail.com)
+   * Summary: cross-browser wrapper for DOMContentLoaded
+   * Updated: 20101020
+   * License: MIT
+   * Version: 1.2
+   *
+   * URL:
+   * http://javascript.nwbox.com/ContentLoaded/
+   * http://javascript.nwbox.com/ContentLoaded/MIT-LICENSE
+   *
+   */
+
+  // @w window reference
+  // @f function reference
+  function ContentLoaded(win, fn) {
+
+    var done = false, top = true,
+    init = function(e) {
+      if (e.type == "readystatechange" && doc.readyState != "complete") return;
+      (e.type == "load" ? win : doc).detachEvent("on" + e.type, init, false);
+      if (!done && (done = true)) fn.call(win, e.type || e);
+    },
+    poll = function() {
+      try { root.doScroll("left"); } catch(e) { setTimeout(poll, 50); return; }
+      init('poll');
+    };
+
+    if (doc.readyState == "complete") fn.call(win, EMPTY_STRING);
+    else {
+      if (doc.createEventObject && root.doScroll) {
+        try { top = !win.frameElement; } catch(e) { }
+        if (top) poll();
+      }
+      addEvent(doc,"readystatechange", init);
+      addEvent(win,"load", init);
+    }
+  };
 })(this);
 
 /*  Berea Custom JavaScripts (empty currently)  */
 
 (function($) {
-	
-	$(document).ready(function(){
-		$('.ictst_content_cl').each(function(i, item) {
-			var height = 0;
-			// Find tallest item
-			$(item).find('> ul > li').each(function(j,li) {
-				var itemHeight = $(li).height();
-				if ( itemHeight > height ) height = itemHeight;
-			})
-			$(item).height(height);
+  
+  $(document).ready(function(){
+    $('.ictst_content_cl').each(function(i, item) {
+      var height = 0;
+      // Find tallest item
+      $(item).find('> ul > li').each(function(j,li) {
+        var itemHeight = $(li).height();
+        if ( itemHeight > height ) height = itemHeight;
+      })
+      $(item).height(height);
 
-		})
-	})
-	
+    })
+  })
+  
 })( jQuery );
 jQuery(document).ready(function(){
 
@@ -2345,34 +2337,34 @@ document.getElementById("positionChange").style.top = (hT-wS) + "px";
 }
 
 
-	if( $('.gc-cd-stretchy-nav').length > 0 ) {
+  if( $('.gc-cd-stretchy-nav').length > 0 ) {
 
-	 
-   	var stretchyNavs = $('.gc-cd-stretchy-nav');
-		
- 	stretchyNavs.each(function(){
-			var stretchyNav = $(this),
-				stretchyNavTrigger = stretchyNav.find('.gc-cd-nav-trigger');
-			
+   
+    var stretchyNavs = $('.gc-cd-stretchy-nav');
+    
+  stretchyNavs.each(function(){
+      var stretchyNav = $(this),
+        stretchyNavTrigger = stretchyNav.find('.gc-cd-nav-trigger');
+      
 
 
-			stretchyNav.toggleClass('gc-nav-is-visible');
-			
-			stretchyNavTrigger.on('click', function(event){
-				event.preventDefault();
-				stretchyNav.toggleClass('gc-nav-is-visible');
-			});
-		
-		});
+      stretchyNav.toggleClass('gc-nav-is-visible');
+      
+      stretchyNavTrigger.on('click', function(event){
+        event.preventDefault();
+        stretchyNav.toggleClass('gc-nav-is-visible');
+      });
+    
+    });
 
     
 
 
 
 /*
-		$(document).on('click', function(event){
-			( !$(event.target).is('.gc-cd-nav-trigger') && !$(event.target).is('.gc-cd-nav-trigger span') ) && stretchyNavs.removeClass('gc-nav-is-visible');
-		});
+    $(document).on('click', function(event){
+      ( !$(event.target).is('.gc-cd-nav-trigger') && !$(event.target).is('.gc-cd-nav-trigger span') ) && stretchyNavs.removeClass('gc-nav-is-visible');
+    });
 */
 
 
@@ -2386,13 +2378,13 @@ document.getElementById("positionChange").style.top = (hT-wS) + "px";
         for (i = 0; i < atags.length; i++){
           atags[i].classList.remove("active");
         }
-      	this.className += " active";
+        this.className += " active";
         // Prevent default anchor click behavior
         event.preventDefault(); 
         /* 
         if (this.getAttribute("href == "faith"){
-              		this.className += " active";
-              	}
+                  this.className += " active";
+                }
          */
         var hash = this.hash;
 
@@ -2409,7 +2401,7 @@ document.getElementById("positionChange").style.top = (hT-wS) + "px";
 
 
 
-	}
+  }
 
   jQuery(document).ready(function(){
 
@@ -2461,7 +2453,7 @@ $(window).scroll(function() {
       document.getElementById("positionChange").style.top = "0px";
    }
    else {
-   		document.getElementById("positionChange").style.top = (hT-wS) + "px";
+      document.getElementById("positionChange").style.top = (hT-wS) + "px";
    }
 
  //}
@@ -2475,38 +2467,38 @@ $(window).scroll(function() {
 
 
 jQuery(document).ready(function( $ ) {
-	
-	console.log('legacy wall');
-	$('.post .entry-content').append($('<div class="loading"></div>'));
+  
+  console.log('legacy wall');
+  $('.post .entry-content').append($('<div class="loading"></div>'));
 
-	$.getJSON('/wp-content/themes/bc-wp-2015/assets/js/custom/legacy-wall.json', function(data) {
-		console.log(data);
-		data.panelNames.sort();
+  $.getJSON('/wp-content/themes/bc-wp-2015/assets/js/custom/legacy-wall.json', function(data) {
+    console.log(data);
+    data.panelNames.sort();
 
-		// Generate year and names lists
-		var years = [];
-		var yearPanels = {};
-		var names = [];
-		var nameMap = {};
-		$.each(data.panelNames, function(i, panel) {
-			var year = panel.split(' ').shift();
-			if (!inArray(year, years)) {
-				years.push(year);
-			}
-			if (!(year in yearPanels)) {
-				yearPanels[year] = [];
-			}
-			yearPanels[year].push(panel);
-			$.each(data.panels[panel].names, function(j, name){
-				names.push(name);
-				nameMap[name] = panel;
-			});
-		});
-		console.log(years);
-		console.log(yearPanels);
-		console.log(nameMap);
+    // Generate year and names lists
+    var years = [];
+    var yearPanels = {};
+    var names = [];
+    var nameMap = {};
+    $.each(data.panelNames, function(i, panel) {
+      var year = panel.split(' ').shift();
+      if (!inArray(year, years)) {
+        years.push(year);
+      }
+      if (!(year in yearPanels)) {
+        yearPanels[year] = [];
+      }
+      yearPanels[year].push(panel);
+      $.each(data.panels[panel].names, function(j, name){
+        names.push(name);
+        nameMap[name] = panel;
+      });
+    });
+    console.log(years);
+    console.log(yearPanels);
+    console.log(nameMap);
 
-	});
+  });
 });
 
 
@@ -2517,5 +2509,4 @@ function inArray(needle, haystack) {
         if(haystack[i] == needle) return true;
     }
     return false;
-}
-//# sourceMappingURL=production.js.map
+}]
