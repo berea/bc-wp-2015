@@ -3636,8 +3636,8 @@ This gives more size options for when the standard h1/h2 isn't appropriate.*/
     font-style: Normal;
     color: #c75b12;
     letter-spacing: 3px; }
-  .entry-content h2.givingday {
-    font-size: 52px;
+  .entry-content h1.givingday {
+    font-size: 70px;
     line-height: 35px;
     margin: 0px 0px 25px 0px;
     font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
