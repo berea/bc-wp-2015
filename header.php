@@ -117,6 +117,8 @@ if ( is_front_page() && wp_get_theme()->name == 'Berea 2015 - Main Site Child Th
 				if (is_front_page()) {
 					berea_get_homepage_slider();
 				}
+				else if (is_page(498)){
+				}
 				else {
                     berea_get_secondary_slider();
                 }
