@@ -3008,6 +3008,7 @@ input#s {
  * http://www.joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat/
  * "n order to use @include omega-reset(), you need to set Bourbon's $fg-column and $fg-gutter variables to match what Bourbon Neat is doing."
  */
+
 label.screen-reader {
   opacity: 0; }
 
@@ -3887,7 +3888,7 @@ a.gc-font {
   position: relative; }
 
 .hero-textblock {
-  position: absolute;
+  position: absolut
   bottom: 80px;
   left: 50%;
   margin: 0;
