@@ -2150,11 +2150,9 @@ object {
 
 @media screen and (min-width: 769px) {
   .legacy-name-list {
-    -moz-column-count: 2;
     column-count: 2; } }
 
 .legacy-name-list .legacy-wall-names {
-  page-break-inside: avoid;
   break-inside: avoid;
   margin-bottom: 0;
   padding-bottom: 1.5em; }
@@ -2205,26 +2203,22 @@ object {
   .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links,
   .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links,
   .page.page-id-8334 #secondary .menu.legacy-wall-sidebar .year-links {
-    -moz-column-count: 2;
     column-count: 2; }
     @media screen and (min-width: 769px) {
       .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links,
       .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links,
       .page.page-id-8334 #secondary .menu.legacy-wall-sidebar .year-links {
-        -moz-column-count: 3;
         column-count: 3; } }
     @media screen and (min-width: 1024px) {
       .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links,
       .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links,
       .page.page-id-8334 #secondary .menu.legacy-wall-sidebar .year-links {
-        -moz-column-count: 2;
         column-count: 2; } }
     .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links li,
     .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links li,
     .page.page-id-8334 #secondary .menu.legacy-wall-sidebar .year-links li {
       border-top: none;
       text-indent: 0;
-      page-break-inside: avoid;
       break-inside: avoid;
       font-size: 2em;
       padding: 0.42em 0; }
@@ -2443,20 +2437,16 @@ object {
       .page-template-default #secondary #secondary-inner, .page-template-default #secondary.mobile-visible #secondary-inner, .single-post #secondary #secondary-inner, .single-post #secondary.mobile-visible #secondary-inner, .archive #secondary #secondary-inner, .archive #secondary.mobile-visible #secondary-inner, .blog #secondary #secondary-inner, .blog #secondary.mobile-visible #secondary-inner, .single-media-coverage #secondary #secondary-inner, .single-media-coverage #secondary.mobile-visible #secondary-inner {
         padding: 20px; } }
   .page-template-default #secondary .column-links, .single-post #secondary .column-links, .archive #secondary .column-links, .blog #secondary .column-links, .single-media-coverage #secondary .column-links {
-    -moz-column-count: 2;
     column-count: 2; }
     @media screen and (min-width: 769px) {
       .page-template-default #secondary .column-links, .single-post #secondary .column-links, .archive #secondary .column-links, .blog #secondary .column-links, .single-media-coverage #secondary .column-links {
-        -moz-column-count: 3;
         column-count: 3; } }
     @media screen and (min-width: 1024px) {
       .page-template-default #secondary .column-links, .single-post #secondary .column-links, .archive #secondary .column-links, .blog #secondary .column-links, .single-media-coverage #secondary .column-links {
-        -moz-column-count: 2;
         column-count: 2; } }
     .page-template-default #secondary .column-links li, .single-post #secondary .column-links li, .archive #secondary .column-links li, .blog #secondary .column-links li, .single-media-coverage #secondary .column-links li {
       border-top: none;
       text-indent: 0;
-      page-break-inside: avoid;
       break-inside: avoid;
       font-size: 2em;
       padding: 0.42em 0; }
@@ -4249,6 +4239,9 @@ Stretchy Nav style - common to:
 .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(5) a::after,
 .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(5) span.gc {
   animation-delay: 0.25s; }
+
+div[id^="toggleit"] {
+  display: none; }
 
 /* -------------------------------- 
 

@@ -2382,16 +2382,15 @@ document.getElementById("positionChange").style.top = (hT-wS) + "px";
       console.log("clicked da nav");
       
       if (this.hash !== "") {
-      	
-        // Prevent default anchor click behavior
-        event.preventDefault();
-        /* 
-if (this.getAttribute("href == "faith"){
-      		this.className += " active";
-      	}
- */
-        var hash = this.hash;
-
+         
+         var atags = document.getElementsByTagName("a");
+         for (i = 0; i < atags.length; i++){
+           atags[i].classList.remove("active");
+         }
+         this.className += " active";
+          // Prevent default anchor click behavior
+         event.preventDefault();
+         var hash = this.hash;
       
         $('html, body').animate({
           scrollTop: $(hash).offset().top
@@ -2430,6 +2429,40 @@ $(window).scroll(function() {
  
 });
 
+
+
+});
+
+  jQuery(document).ready(function(){
+
+
+  $('[id^=commitment]').click(function(){
+       //toggle the proper commitment div
+      console.log("CLICKED");
+      var active = document.getElementsByClassName("active");
+      //$('#toggleit_' + (active[0]).id).slideToggle('slow');
+      $('#toggleit_' + (this).id).slideToggle('slow');
+      active[0].classList.remove("active");
+      this.className += ' active';
+      var commitment = this.id.split("_")[1];
+      var allCommitments = document.getElementsByClassName("gc");
+      for (i = 0; i < allCommitments.length - 2; i++){
+        var selectedCommitment = allCommitments[i+2].childNodes[0];
+        console.log(selectedCommitment.hash.substr(1));
+        console.log(this.id.split("_")[1]);
+        selectedCommitment.classList.remove("active");
+        if (selectedCommitment.hash.substr(1) == this.id.split("_")[1]){
+          selectedCommitment.className += " active";
+        }
+      }
+      console.log(allCommitments);
+
+      //scroll to div
+      if ($('#toggleit_' + (this).id).is(':visible')) {
+        $('html, body').animate({scrollTop: $('#toggleit_' + (this).id).offset().top});
+      }
+      
+    });
 
 
 });
