@@ -2374,12 +2374,9 @@ document.getElementById("positionChange").style.top = (hT-wS) + "px";
 			( !$(event.target).is('.gc-cd-nav-trigger') && !$(event.target).is('.gc-cd-nav-trigger span') ) && stretchyNavs.removeClass('gc-nav-is-visible');
 		});
 */
+  
+$("a").on('click', function(event) {
 
-
-  // add jQuery transition to anchor 
- 
-  $("a").on('click', function(event) {
-      console.log("clicked da nav");
       
       if (this.hash !== "") {
          
@@ -2400,11 +2397,122 @@ document.getElementById("positionChange").style.top = (hT-wS) + "px";
       } 
   
   });
-  
+   $('.gc-education').on('click', function(event){
+    var allCommitments = document.getElementsByClassName("gc");
+    for (i = 0; i < allCommitments.length - 2; i++){
+        var selectedCommitment = allCommitments[i+2].childNodes[0];
+        selectedCommitment.classList.remove("active");
+      }
+    allCommitments[2].childNodes[0].className += " active";
+  }); 
 
+   $('.gc-liberalarts').on('click', function(event){
+    var allCommitments = document.getElementsByClassName("gc");
+    for (i = 0; i < allCommitments.length - 2; i++){
+        var selectedCommitment = allCommitments[i+2].childNodes[0];
+        selectedCommitment.classList.remove("active");
+      }
+    allCommitments[3].childNodes[0].className += " active";
+  });
+
+   $('.gc-christian').on('click', function(event){
+    var allCommitments = document.getElementsByClassName("gc");
+    for (i = 0; i < allCommitments.length - 2; i++){
+        var selectedCommitment = allCommitments[i+2].childNodes[0];
+        selectedCommitment.classList.remove("active");
+      }
+    allCommitments[4].childNodes[0].className += " active";
+  });
+
+   $('.gc-labor').on('click', function(event){
+    var allCommitments = document.getElementsByClassName("gc");
+    for (i = 0; i < allCommitments.length - 2; i++){
+        var selectedCommitment = allCommitments[i+2].childNodes[0];
+        selectedCommitment.classList.remove("active");
+      }
+    allCommitments[5].childNodes[0].className += " active";
+  });
+
+   $('.gc-kinship').on('click', function(event){
+    var allCommitments = document.getElementsByClassName("gc");
+    for (i = 0; i < allCommitments.length - 2; i++){
+        var selectedCommitment = allCommitments[i+2].childNodes[0];
+        selectedCommitment.classList.remove("active");
+      }
+    allCommitments[6].childNodes[0].className += " active";
+  });
+
+   $('.gc-democratic').on('click', function(event){
+    var allCommitments = document.getElementsByClassName("gc");
+    for (i = 0; i < allCommitments.length - 2; i++){
+        var selectedCommitment = allCommitments[i+2].childNodes[0];
+        selectedCommitment.classList.remove("active");
+      }
+    allCommitments[7].childNodes[0].className += " active";
+  });
+
+   $('.gc-sustainability').on('click', function(event){
+    var allCommitments = document.getElementsByClassName("gc");
+    for (i = 0; i < allCommitments.length - 2; i++){
+        var selectedCommitment = allCommitments[i+2].childNodes[0];
+        selectedCommitment.classList.remove("active");
+      }
+    allCommitments[8].childNodes[0].className += " active";
+  });
+
+   $('.gc-appalachia').on('click', function(event){
+    var allCommitments = document.getElementsByClassName("gc");
+    for (i = 0; i < allCommitments.length - 2; i++){
+        var selectedCommitment = allCommitments[i+2].childNodes[0];
+        selectedCommitment.classList.remove("active");
+      }
+    allCommitments[9].childNodes[0].className += " active";
+  });
 
 
 	}
+
+
+jQuery(document).ready(function(){
+
+
+  $('[id^=commitment]').click(function(){
+      var active = $('div.active');
+      for (i = 0; i < active.length; i++){
+        console.log(active[i]);
+      }
+      if (active.length != 0){
+        $('#toggleit_' + (active[0]).id).toggle();
+        active[0].classList.remove("active");
+      }
+      
+
+      $('#toggleit_' + (this).id).slideToggle('slow');
+      
+      if ($('#toggleit_' + (this).id).is(':visible')) {
+        //active = document.getElementsByClassName("active");
+        $('html, body').animate({scrollTop: $('#toggleit_' + (this).id).offset().top});
+      }
+      
+      
+      this.className += ' active';
+
+      var commitment = this.id.split("_")[1];
+      var allCommitments = document.getElementsByClassName("gc");
+      for (i = 0; i < allCommitments.length - 2; i++){
+        var selectedCommitment = allCommitments[i+2].childNodes[0];
+        console.log(selectedCommitment.hash.substr(1));
+        console.log(this.id.split("_")[1]);
+        selectedCommitment.classList.remove("active");
+        if (selectedCommitment.hash.substr(1) == this.id.split("_")[1]){
+          selectedCommitment.className += " active";
+        }
+      }
+
+
+    });
+
+});
 
 
 
@@ -2429,40 +2537,6 @@ $(window).scroll(function() {
  
 });
 
-
-
-});
-
-  jQuery(document).ready(function(){
-
-
-  $('[id^=commitment]').click(function(){
-       //toggle the proper commitment div
-      console.log("CLICKED");
-      var active = document.getElementsByClassName("active");
-      //$('#toggleit_' + (active[0]).id).slideToggle('slow');
-      $('#toggleit_' + (this).id).slideToggle('slow');
-      active[0].classList.remove("active");
-      this.className += ' active';
-      var commitment = this.id.split("_")[1];
-      var allCommitments = document.getElementsByClassName("gc");
-      for (i = 0; i < allCommitments.length - 2; i++){
-        var selectedCommitment = allCommitments[i+2].childNodes[0];
-        console.log(selectedCommitment.hash.substr(1));
-        console.log(this.id.split("_")[1]);
-        selectedCommitment.classList.remove("active");
-        if (selectedCommitment.hash.substr(1) == this.id.split("_")[1]){
-          selectedCommitment.className += " active";
-        }
-      }
-      console.log(allCommitments);
-
-      //scroll to div
-      if ($('#toggleit_' + (this).id).is(':visible')) {
-        $('html, body').animate({scrollTop: $('#toggleit_' + (this).id).offset().top});
-      }
-      
-    });
 
 
 });
