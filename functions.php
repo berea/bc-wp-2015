@@ -262,6 +262,18 @@ if ( !function_exists('berea_optional_scripts') ) :
 
 		}
 		else {
+			if(is_page(970)) {
+			?>
+				 <style type="text/css">
+                .secondary-slider-background {
+                    background-image: url(https://www.berea.edu/give/wp-content/uploads/sites/8/2017/08/20150503_Commencement_OA-380-high-res-2.jpg);
+                }
+
+            </style>
+            <?php
+
+			} 
+			else {
 			?>
             <style type="text/css">
                 .secondary-slider-background {
@@ -269,6 +281,7 @@ if ( !function_exists('berea_optional_scripts') ) :
                 }
             </style>
         <?php
+        	}
 		}
 
     }
