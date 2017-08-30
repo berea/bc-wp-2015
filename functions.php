@@ -459,8 +459,14 @@ function berea_get_homepage_slider() {
 // Not allowed to be overwritten in child themes.
 function berea_get_secondary_slider() {
 
+if(is_page(970)) {
+    $parent_slider = get_template_directory() . '/page-templates/partials/secondary_slider_givingday.php';
+    $child_slider = get_stylesheet_directory() . '/page-templates/partials/secondary_slider_givingday.php';
+}
+else {
     $parent_slider = get_template_directory() . '/page-templates/partials/secondary_slider.php';
     $child_slider = get_stylesheet_directory() . '/page-templates/partials/secondary_slider.php';
+}
 
     $dir    = get_template_directory() . '/page-templates/partials/';
     echo "<!-- looking in [" . $dir . "] for files -->\n";
