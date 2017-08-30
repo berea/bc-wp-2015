@@ -268,6 +268,10 @@ if ( !function_exists('berea_optional_scripts') ) :
                 .secondary-slider-background {
                     background-image: url(https://www.berea.edu/give/wp-content/uploads/sites/8/2017/08/20150503_Commencement_OA-380-high-res-2.jpg);
                 }
+                .homepage-slider-sizing-aspect-ratio.ratio_1024x192:before {
+				    padding-top: 45%;
+				}
+
 
             </style>
             <?php
