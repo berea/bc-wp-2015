@@ -10,12 +10,9 @@ License URI: license.txt
 Text Domain: berea
 Domain Path: /library/languages/
 Tags: white, light, one-column, two-columns, right-sidebar, responsive-layout, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, sticky-post, translation-ready, accessibility-ready
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
 Some Like it Neat is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
-
 Resetting and rebuilding styles have been helped along thanks to the fine work of
 Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
 along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
@@ -30,15 +27,14 @@ and Blueprint http://www.blueprintcss.org/
 4.0 - Forms
 5.0 - Components/ Add-ons
 6.0 - Layout and Structure
-	6.1 - Header
-	6.2 - Navigation
-	6.3 - Content
-	6.4 - Page Templates
-	6.5 - Sidebar
-	6.6 - Footer
-	6.7 - Accessbility
+  6.1 - Header
+  6.2 - Navigation
+  6.3 - Content
+  6.4 - Page Templates
+  6.5 - Sidebar
+  6.6 - Footer
+  6.7 - Accessbility
 7.0 - BC additions
-
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1.0 Bourbon, Bitters, Neat
@@ -273,7 +269,7 @@ input[type="submit"] {
   white-space: nowrap; }
 
 /*
- * 	if you change the value of $L here, be sure to
+ *  if you change the value of $L here, be sure to
  *  update var MqL in navigation.js as well!
  */
 * {
@@ -982,8 +978,8 @@ body {
         padding-bottom: 1em; }
 
 /*--------------------------------------------------------------
-	6.1 Layout and Structure
-	--------------------------------------------------------------*/
+  6.1 Layout and Structure
+  --------------------------------------------------------------*/
 .site-branding {
   text-align: center; }
   .site-branding .site-title {
@@ -1023,12 +1019,10 @@ body {
         font-size: 1.5625rem; } }
 
 /*--------------------------------------------------------------
-	6.2 Navigation
-	--------------------------------------------------------------*/
+  6.2 Navigation
+  --------------------------------------------------------------*/
 /* -------------------------------- 
-
 Primary style
-
 -------------------------------- */
 *, *::after, *::before {
   box-sizing: border-box; }
@@ -1037,7 +1031,6 @@ Primary style
 html {
     font-size: 62.5%;
 }
-
 body {
     font: {
         size: 1.6rem;
@@ -1045,24 +1038,20 @@ body {
     }
     color: $color-1;
     background-color: $color-4;
-
     @include MQ(maxL) { // layout mixins inside partials > _layout.scss
         &.nav-on-left.overflow-hidden {
             overflow: hidden;
         }
     }
 }
-
 a {
     color: $color-5;
     text-decoration: none;
 }
-
 img {
     // make images responsive
     max-width: 100%;
 }
-
 input {
     font-family: $primary-font;
     font-size: 1.6rem;
@@ -1079,9 +1068,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none; }
 
 /* -------------------------------- 
-
 Main components 
-
 -------------------------------- */
 .cd-main-content, .cd-main-header {
   /* Force Hardware Acceleration in WebKit */
@@ -1846,9 +1833,7 @@ body.search-is-visible .cd-overlay.is-visible {
       top: 46px; } }
 
 /* -------------------------------- 
-
 support for no js 
-
 -------------------------------- */
 .no-js .cd-primary-nav {
   position: relative;
@@ -1986,8 +1971,8 @@ h3.cd-news-title {
   background: #739600; }
 
 /*--------------------------------------------------------------
-	6.3 Content
-	--------------------------------------------------------------*/
+  6.3 Content
+  --------------------------------------------------------------*/
 /* =Content
 ----------------------------------------------- */
 .sticky {
@@ -2359,8 +2344,8 @@ object {
     border-bottom: none; }
 
 /*--------------------------------------------------------------
-	6.4 Page Templates
-	--------------------------------------------------------------*/
+  6.4 Page Templates
+  --------------------------------------------------------------*/
 .page-template-default h1, .single-post h1, .archive h1, .blog h1, .single-media-coverage h1 {
   font-size: 3em;
   margin: 0px 0px 15px 0px;
@@ -2593,8 +2578,8 @@ object {
   width: 100%; }
 
 /*--------------------------------------------------------------
-	6.5 Sidebar
-	--------------------------------------------------------------*/
+  6.5 Sidebar
+  --------------------------------------------------------------*/
 /* =Asides
 ----------------------------------------------- */
 .blog .format-aside .entry-title,
@@ -2615,8 +2600,8 @@ object {
   display: none; }
 
 /*--------------------------------------------------------------
-	6.6 Footer
-	--------------------------------------------------------------*/
+  6.6 Footer
+  --------------------------------------------------------------*/
 footer {
   position: relative;
   float: left;
@@ -2859,8 +2844,8 @@ footer {
     line-height: 2.5; }
 
 /*--------------------------------------------------------------
-	6.7 Accessbility
-	--------------------------------------------------------------*/
+  6.7 Accessbility
+  --------------------------------------------------------------*/
 /* Text meant only for screen readers */
 .screen-reader-text {
   position: absolute !important;
@@ -3193,16 +3178,13 @@ label.screen-reader {
     letter-spacing: -0.015em;
     text-align: left;
     line-height: 1.8em;
-
     @include MQ(S) {
       position: absolute;
       top: 35%;
     }
-
     @include MQ(M) {
       top: 45%;
     }
-
   } */ }
   @media only screen and (min-width: 481px) {
     .homepage-slider {
@@ -3941,42 +3923,34 @@ a.gc-font {
   overflow-x: auto; }
 
 /* -------------------------------- 
-
 From the GreatCommitments-style.css file
-
 -------------------------------- */
 /*
 *, *::after, *::before {
   box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
 }
-
 body {
   font-size: 1.6rem;
   font-family: "Source Sans Pro", sans-serif;
   color: #003c5d;
   
 }
-
 a {
   color: #9acd91;
   text-decoration: none;
 }
-
 img {
   max-width: 100%;
 }
 */
 /* -------------------------------- 
-
 Stretchy Nav style - common to:
  - basic navigation
  - add-content navigation
  - edit-content navigation
-
 -------------------------------- */
 .gc-cd-stretchy-wrapper {
   position: relative; }
@@ -4000,7 +3974,6 @@ Stretchy Nav style - common to:
   right:0px;
   transform: translateY(0%);
   
-
 }
 */
 .gc-cd-stretchy-nav {
@@ -4256,9 +4229,7 @@ div[id^="toggleit"] {
   display: none; }
 
 /* -------------------------------- 
-
 main content basic style
-
 -------------------------------- */
 .gc-cd-main-content {
   position: relative;
@@ -4269,9 +4240,7 @@ main content basic style
   /*backgroun-color:lightgrey;*/ }
 
 /* -------------------------------- 
-
 keyframes
-
 -------------------------------- */
 
 @keyframes scaleIn {

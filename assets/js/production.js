@@ -2479,32 +2479,28 @@ jQuery(document).ready(function(){
   $('[id^=commitment]').click(function(){
       var active = $('div.active');
       for (i = 0; i < active.length; i++){
-        console.log(active[i]);
-      }
-      if (active.length != 0){
-        $('#toggleit_' + (active[0]).id).toggle();
-        active[0].classList.remove("active");
+        if ('#toggleit_' + (active[i]).id != '#toggleit_' + (this).id){
+          $('#toggleit_' + (active[i]).id).toggle();
+          active[i].classList.remove("active");
+        }
       }
       
 
       $('#toggleit_' + (this).id).slideToggle('slow');
-      
-      if ($('#toggleit_' + (this).id).is(':visible')) {
-        //active = document.getElementsByClassName("active");
-        $('html, body').animate({scrollTop: $('#toggleit_' + (this).id).offset().top});
+      if (this.classList.contains("active")){
+        this.classList.remove("active");
+      }
+      else{
+        this.className += ' active';
       }
       
-      
-      this.className += ' active';
 
       var commitment = this.id.split("_")[1];
       var allCommitments = document.getElementsByClassName("gc");
       for (i = 0; i < allCommitments.length - 2; i++){
         var selectedCommitment = allCommitments[i+2].childNodes[0];
-        console.log(selectedCommitment.hash.substr(1));
-        console.log(this.id.split("_")[1]);
         selectedCommitment.classList.remove("active");
-        if (selectedCommitment.hash.substr(1) == this.id.split("_")[1]){
+        if (selectedCommitment.hash.substr(1) == this.id.split("_")[1] && !selectedCommitment.classList.contains("active")){
           selectedCommitment.className += " active";
         }
       }
