@@ -164,9 +164,6 @@ jQuery(document).ready(function(){
         this.className += ' active';
       }
       
-      if ($('#toggleit_' + (this).id).is(':visible')) {
-      }
-      
 
       var commitment = this.id.split("_")[1];
       var allCommitments = document.getElementsByClassName("gc");
