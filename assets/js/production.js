@@ -2493,6 +2493,10 @@ jQuery(document).ready(function(){
       else{
         this.className += ' active';
       }
+      if ($('#toggleit_' + (this).id).is(':visible')) {
+        $('html, body').animate({scrollTop: $('#toggleit_' + (this).id).offset().top});
+      }
+
       
 
       var commitment = this.id.split("_")[1];
