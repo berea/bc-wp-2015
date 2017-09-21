@@ -2537,7 +2537,13 @@ $(window).scroll(function() {
 
 });
 
+jQuery( function($) {
 
+$(document).on('click', 'li.vc_tta-tab a,li.vc_tta-tab,.vc_tta-panel-title', function(){
+   $('html, body').stop();
+});
+
+});
 
 jQuery(document).ready(function( $ ) {
 	
