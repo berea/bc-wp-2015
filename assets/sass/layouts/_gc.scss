@@ -104,9 +104,9 @@ a.gc-font{
 .entry-content p.commitment-desc {
   font-size: 49px; 
   font-weight: 500; 
-  line-height: 49px; text-align: right;
-  font-family: 'open sans condensed';
-  text-align: right;}
+  line-height: 49px;
+  text-align: right;
+  font-family: 'klinic_slabmedium';}
   
 
 @media only screen and (min-width: 1024px) {
@@ -117,8 +117,9 @@ a.gc-font{
     text-align: center; }
   .entry-content p.commitment-desc {
     font-size: 49px;
-    font-family: 'klinic slab';
-    line-height: 50px;
+    font-family: 'klinic_slabmedium';
+    line-height: 49px;
+    font-weight: 500;
     text-align: right; }
   .entry-content p.commitment-quote-author {
     font-size: 20px;
