@@ -680,3 +680,42 @@ keyframes
     transform: translateX(0);
   }
 }
+/* --------------------------------
+
+great commitments top nav icon styling
+
+-------------------------------- */
+@media only screen and (max-width: 480px) {
+  .gc-education {
+    margin-left: auto;
+      margin-right: auto
+  }
+  .gc-liberalarts {
+    margin-left: auto;
+      margin-right: auto
+  }
+  .gc-christian {
+    margin-left: auto;
+      margin-right: auto
+  }
+  .gc-labor {
+    margin-left: auto;
+      margin-right: auto
+  }
+  .gc-kinship {
+    margin-left: auto;
+      margin-right: auto
+  }
+  .gc-democratic {
+    margin-left: auto;
+      margin-right: auto
+  }
+  .gc-sustainability {
+    margin-left: auto;
+      margin-right: auto
+  }
+  .gc-appalachia {
+    margin-left: auto;
+      margin-right: auto
+  }
+}
