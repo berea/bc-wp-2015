@@ -23,7 +23,7 @@ get_header();?>
 		<ul class="gc">
 			<li class="gc"><a href="#education" class="active hat"><span style="text-decoration:none; display: inline-block;">Educational Opportunity</span></a></li>
 			<li class="gc"><a href="#liberalarts"><span style="text-decoration:none; display: inline-block;">The Liberal Arts</span></a></li>
-			<li class="gc"><a href="#faith" class="cross"><span style="text-decoration:none; display: inline-block;">The Cause of Christ</span></a></li>
+			<li class="gc"><a href="#faith" class="cross"><span style="text-decoration:none; display: inline-block;">Christian Values</span></a></li>
 			<li class="gc"><a href="#labor"><span style="text-decoration:none; display: inline-block;">The Dignity of Labor</span></a></li>
 			<li class="gc"><a href="#kinship"><span style="text-decoration:none; display: inline-block;">The Kinship of All People</span></a></li>
 			<li class="gc"><a href="#democratic" class="chatbubbles"><span style="text-decoration:none; display: inline-block;">Gender Equality</span></a></li>
