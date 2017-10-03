@@ -683,20 +683,47 @@ keyframes
 
 @media only screen and (max-device-width: 600px) {
   .gc-education {
-    text-align: center !important}
+    text-align: center !important; }
   .gc-liberalarts {
-    text-align: center !important }
+    text-align: center !important; }
   .gc-christian {
-    text-align: center !important }
+    text-align: center !important; }
   .gc-labor {
-    text-align: center !important}
+    text-align: center !important; }
   .gc-kinship {
-    text-align: center !important }
+    text-align: center !important; }
   .gc-democratic {
-    text-align: center !important }
+    text-align: center !important; }
   .gc-sustainability {
-    text-align: center !important }
+    text-align: center !important; }
   .gc-appalachia {
-    text-align: center !important }
+    text-align: center !important; }
+  .entry-content p.commitment-desc {
+    font-size: 34px;
+    line-height: 36px;}
+  p.gc-title-education {
+    margin-left: 30px;
+    font-size: 44px !important;}
+  p.gc-title-liberalarts {
+    margin-left: 30px;
+    font-size: 44px !important;}
+  p.gc-title-christian {
+    margin-left: 30px;
+    font-size: 44px !important;}
+  p.gc-title-labor {
+    margin-left: 30px;
+    font-size: 44px !important;}
+  p.gc-title-kinship {
+    margin-left: 30px;
+    font-size: 44px !important;}
+  p.gc-title-gender {
+    margin-left: 30px;
+    font-size: 44px !important;}
+  p.gc-title-sustainability {
+    margin-left: 30px;
+    font-size: 44px !important;}
+  p.gc-title-appalachia {
+    margin-left: 30px;
+    font-size: 44px !important;}
   }
 
