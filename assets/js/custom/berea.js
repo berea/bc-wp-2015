@@ -1,4 +1,5 @@
 /*  Berea Custom JavaScripts (empty currently)  */
+//some
 
 (function($) {
 	

@@ -2311,6 +2311,7 @@ References:
 })(this);
 
 /*  Berea Custom JavaScripts (empty currently)  */
+//some
 
 (function($) {
 	
@@ -2497,8 +2498,6 @@ jQuery(document).ready(function(){
         $('html, body').animate({scrollTop: $('#toggleit_' + (this).id).offset().top});
       }
 
-      
-
       var commitment = this.id.split("_")[1];
       var allCommitments = document.getElementsByClassName("gc");
       for (i = 0; i < allCommitments.length - 2; i++){
@@ -2548,6 +2547,8 @@ $(document).on('click', 'li.vc_tta-tab a,li.vc_tta-tab,.vc_tta-panel-title', fun
 });
 
 });
+
+
 
 jQuery(document).ready(function( $ ) {
 	
