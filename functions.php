@@ -140,6 +140,19 @@ if ( !function_exists('berea_scripts') ) :
 
   			}
 
+  			// specific page script files to trigger MediaMath analytics
+			// at some point, we should implement something better than the above
+
+			if ( (is_page(1048)&&is_page('promise-made-never-forgotten'))  ) {
+    		
+
+				 ?>
+ 				 	<script language='JavaScript1.1' async src='//pixel.mathtag.com/event/js?mt_id=1244600&mt_adid=197269&mt_exem=&mt_excl=&v1=&v2=&v3=&s1=&s2=&s3='></script>
+  				 <?php
+
+
+  			}
+
   			
 
 			// Main Style
