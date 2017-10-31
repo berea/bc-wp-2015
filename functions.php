@@ -630,4 +630,5 @@ function great_commitments_dequeue_vc_accordion() {
 //add_action( 'wp_enqueue_scripts', 'enqueue_nav_toggle')
 add_action( 'wp_enqueue_scripts', 'great_commitments_enqueue_custom_accordion');
 add_action( 'wp_print_scripts', 'great_commitments_dequeue_vc_accordion');
+remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
 
