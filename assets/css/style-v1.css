@@ -4382,4 +4382,8 @@ keyframes
   font-weight: normal;
   font-style: normal; }
 
+/* Formate fix for WooCommerce donation page */
+div.product div.summary {
+  width: 100% !important; }
+
 /*# sourceMappingURL=style-v1.css.map */
