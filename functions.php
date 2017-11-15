@@ -645,3 +645,97 @@ add_action( 'wp_enqueue_scripts', 'great_commitments_enqueue_custom_accordion');
 add_action( 'wp_print_scripts', 'great_commitments_dequeue_vc_accordion');
 remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
 
+if(get_current_blog_id() == 8){
+	remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
+	//remove_action( 'woocommerce_view_order', 'woocommerce_order_details_table', 10 );
+	add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );
+	add_filter( 'woocommerce_coupons_enabled', 'hide_coupon_field_on_cart' );
+	add_filter( 'woocommerce_coupons_enabled', 'hide_coupon_field_on_checkout' );
+	add_filter('add_to_cart_redirect', 'themeprefix_add_to_cart_redirect');
+	add_filter( 'woocommerce_enable_order_notes_field', '__return_false' );
+	add_filter( 'woocommerce_checkout_fields', 'unset_unwanted_checkout_fields' );
+	remove_action( 'woocommerce_checkout_order_review', 'woocommerce_order_review', 10 );
+	add_action( 'woocommerce_checkout_before_order_review', 'donation_amount_under_your_order_section', 10, 0);
+	add_filter( 'wc_add_to_cart_message_html', '__return_null' );
+
+	function donation_amount_under_your_order_section() {
+			echo '<script>
+					var element = document.getElementById("order_review_heading");
+					element.parentNode.removeChild(element);
+				</script>
+				<h3>Donation amount:</h3>
+				<font size="4"> $' . WC()->cart->subtotal . '</font>
+				<br><br>';
+	}
+
+	function unset_unwanted_checkout_fields( $fields ) {
+
+		// add or remove billing fields you do not want
+		// list of fields: http://docs.woothemes.com/document/tutorial-customising-checkout-fields-using-actions-and-filters/#section-2
+		$billing_keys = array(
+			'billing_company',
+			'billing_phone',
+			'billing_address_1',
+			'billing_address_2',
+			'billing_city',
+			'billing_postcode',
+			'billing_country',
+			'billing_state',
+		);
+		// unset each of those unwanted fields
+		foreach( $billing_keys as $key ) {
+			unset( $fields['billing'][$key] );
+
+		}
+		//unset($fields['order']['order_comments']); SAME
+		
+		return $fields;
+	}
+
+	function themeprefix_add_to_cart_redirect() {
+ 		global $woocommerce;
+ 		$checkout_url = $woocommerce->cart->get_checkout_url();
+ 		return $checkout_url;
+	}
+	 
+	function woo_custom_cart_button_text() {
+	 
+	        return __( 'Submit', 'woocommerce' );
+	 
+	}
+
+	function hide_coupon_field_on_cart( $enabled ) {
+		if ( is_cart() ) {
+			$enabled = false;
+		}
+		return $enabled;
+	}
+	
+	function hide_coupon_field_on_checkout( $enabled ) {
+		if ( is_checkout() ) {
+			$enabled = false;
+		}
+		return $enabled;
+	}
+	//add_action('woocommerce_cart_updated', 'growdev_woocommerce_cart_updated', 90);
+	function growdev_woocommerce_cart_updated ( $cart ){
+	// output subtotal
+		echo '<script>';
+  		echo 'console.log(' . WC()->cart->subtotal . ')';
+  		echo '</script>';
+	// output the
+		//error_log( "get_cart_subtotal: " . WC()->cart->get_cart_subtotal() );
+	}
+	add_action( 'woocommerce_thankyou', function( $order_id ){
+    $order = new WC_Order( $order_id );
+
+    $url = 'https://www.berea.edu/give/donation-processed/';
+
+    if ( $order->status != 'failed' ) { 
+        echo "<script type=\"text/javascript\">window.location = '".$url."'</script>";
+    }
+});
+
+	
+}
+
