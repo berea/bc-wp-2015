@@ -31,7 +31,7 @@
 		<div class="footer-promise">
 			<h3>NO-TUITION PROMISE</h3>
 
-			<p>Berea is the only one of America’s top colleges that awards every enrolled student a no-tuition promise.</p>
+			<p>Berea is the only one of America’s top colleges that makes a no-tuition promise to every enrolled student.</p>
 
 			<p>No student pays for tuition.</p>
 
