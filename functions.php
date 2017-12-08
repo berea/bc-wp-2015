@@ -617,6 +617,9 @@ add_action('network_admin_menu', 'berea_network_admin_broadcast');
 //Add shortcode to a category, tag, or custom taxonomy descriptions.  Specifically, we wanted to add a slider to the year category
 add_filter( 'term_description', 'do_shortcode' );
 
+// Enable shortcodes in text widgets
+add_filter('widget_text','do_shortcode');
+
 /*
  * Add class based on current multisite to the body, to help with theming
  * From: https://codex.wordpress.org/Plugin_API/Filter_Reference/body_class#Classes_in_WordPress_Multisite
