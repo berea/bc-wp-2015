@@ -27,7 +27,7 @@
 
 					echo '<li class="has-children menu-item-hide-on-large">' . $first_val .
 						"\n<ul class=\"is-hidden\">\n".
-						'<li class="go-back"><a href="#0">BACK</a></li>';
+						'<li class="go-back"><a href="index.php#0">BACK</a></li>';
 				}
 				foreach ($vals as $key => $val) {
 					echo "<li class='menu-item-hide-on-large'>" . $val . "</li>\n";
@@ -39,7 +39,7 @@
 		<li class="has-children menu-item-hide-on-large root-menu">
 			<a href="#">MAIN NAVIGATION</a>
 			<ul class="is-hidden">
-				<li class="go-back"><a href="#0">BACK</a></li>
+				<li class="go-back"><a href="index.php#0">BACK</a></li>
 				<?php include('universal_menu_master.php'); ?>
 			</ul>
 		</li>

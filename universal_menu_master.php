@@ -219,7 +219,7 @@
 			<a href="http://community.berea.edu/calendar/index.php?calendar=default">NEWS</a>
 
 			<ul class="cd-nav-gallery is-hidden">
-				<li class="go-back"><a href="#0">BACK</a></li>
+				<li class="go-back"><a href="index.php#0">BACK</a></li>
 				<li class="see-all"><a href="http://www.berea.edu/news">MORE NEWS</a></li>
 
 				<?php
