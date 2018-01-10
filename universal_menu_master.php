@@ -2,13 +2,13 @@
 	<a href="http://www.berea.edu/about">ABOUT</a>
 
 	<ul class="cd-secondary-nav is-hidden">
-		<li class="go-back"><a href="back">BACK</a></li>
+		<li class="go-back"><a>BACK</a></li>
 		<li class="see-all"><a href="http://www.berea.edu/about">ABOUT</a></li>
 		<li class="has-children">
 			<a>OVERVIEW</a>
 
 			<ul class="is-hidden">
-				<li class="go-back"><a href="index.php#0">BACK</a></li>
+				<li class="go-back"><a>BACK</a></li>
 
 				<!-- <li><a href="#">The Berea College Difference</a></li> -->
 				<li><a href="http://www.berea.edu/about/quick-facts/">Quick Facts</a></li>
@@ -27,7 +27,7 @@
 			<a href="http://catalog.berea.edu/en/Current/Faculty-Manual/Campus-Governance">LEADERSHIP AND GOVERNANCE</a>
 
 			<ul class="is-hidden">
-				<li class="go-back"><a href="index.php#0">BACK</a></li>
+				<li class="go-back"><a>BACK</a></li>
 
 				<li><a href="https://www.berea.edu/president/">President's Office</a></li>
 				<li><a href="https://www.berea.edu/president/administrative-committee/">Administrative Committee</a></li>
@@ -39,7 +39,7 @@
 				<a href="https://www.berea.edu/directory/list-of-administrative-departments/">ADMINISTRATIVE OFFICES</a>
 
 				<ul class="is-hidden">
-					<li class="go-back"><a href="index.php#0">BACK</a></li>
+					<li class="go-back"><a>BACK</a></li>
 					<li class="see-all"><a>ADMINISTRATIVE OFFICES</a></li>
 					<li><a href="http://www.berea.edu/admissions">Admissions</a></li>
 					<li><a href="http://www.alumni.berea.edu/">Alumni Relations</a></li>
@@ -60,7 +60,7 @@
 			<a>ON CAMPUS</a>
 
 			<ul class="is-hidden">
-				<li class="go-back"><a href="index.php#0">BACK</a></li>
+				<li class="go-back"><a>BACK</a></li>
 				<li><a href="http://www.berea.edu/news/">Newsroom</a></li>
 				<li><a href="https://www.berea.edu/visitor-center/">Visit Berea College/Visitor Center &amp; Shoppe</a></li>
 				<!-- <li><a href="#">Virtual Tour</a></li> -->
@@ -137,7 +137,7 @@
 		<li class="has-children">
 			<a href="https://www.berea.edu/academics/">ACADEMICS</a>
 			<ul class="cd-nav-icons is-hidden">
-				<li class="go-back"><a href="index.php#0">BACK</a></li>
+				<li class="go-back"><a>BACK</a></li>
 				<li class="see-all"><a href="https://www.berea.edu/academics/">ACADEMICS</a></li>
 				<li>
 					<!-- EXAMPLE OF HOW IMAGES WERE DELIVERED VIA CLASS IN EXAMPLE -->
@@ -219,7 +219,7 @@
 			<a href="http://community.berea.edu/calendar/index.php?calendar=default">NEWS</a>
 
 			<ul class="cd-nav-gallery is-hidden">
-				<li class="go-back"><a href="index.php#0">BACK</a></li>
+				<li class="go-back"><a>BACK</a></li>
 				<li class="see-all"><a href="http://www.berea.edu/news">MORE NEWS</a></li>
 
 				<?php
