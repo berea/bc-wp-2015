@@ -8,7 +8,7 @@
 			<a>OVERVIEW</a>
 
 			<ul class="is-hidden">
-				<li class="go-back"><a href="#0">BACK</a></li>
+				<li class="go-back"><a href="index.php#0">BACK</a></li>
 
 				<!-- <li><a href="#">The Berea College Difference</a></li> -->
 				<li><a href="http://www.berea.edu/about/quick-facts/">Quick Facts</a></li>
