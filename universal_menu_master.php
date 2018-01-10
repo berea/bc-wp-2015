@@ -2,7 +2,7 @@
 	<a href="http://www.berea.edu/about">ABOUT</a>
 
 	<ul class="cd-secondary-nav is-hidden">
-		<li class="go-back"><a href="index.php#0">BACK</a></li>
+		<li class="go-back"><a href="back">BACK</a></li>
 		<li class="see-all"><a href="http://www.berea.edu/about">ABOUT</a></li>
 		<li class="has-children">
 			<a>OVERVIEW</a>
