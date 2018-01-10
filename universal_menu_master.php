@@ -51,7 +51,7 @@
 					<li><a href="https://www.berea.edu/public-safety/">Public Safety</a></li>
 					<li><a href="https://www.berea.edu/title-ix/">Title IX</a></li>
 					<li>
-						<a href="https://www.berea.edu/centers">Centers &#62;</a>
+						<a href="https://www.berea.edu/centers">Centers</a>
 					</li>
 				</ul>
 			</li>
