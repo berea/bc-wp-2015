@@ -50,20 +50,8 @@
 					<li><a href="https://www.berea.edu/imc">Marketing &amp; Communications</a></li>
 					<li><a href="https://www.berea.edu/public-safety/">Public Safety</a></li>
 					<li><a href="https://www.berea.edu/title-ix/">Title IX</a></li>
-					<li class="has-children">
-						<a href="#0">Centers &#62;</a>
-
-						<ul class="is-hidden">
-							<li class="go-back"><a href="#0">BACK</a></li>
-							<li><a href="http://www.bellhooksinstitute.com/">bell hooks Institute</a></li>
-							<li><a href="https://www.berea.edu/bcc/">Black Cultural Center</a></li>
-							<li><a href="https://www.berea.edu/celts/">Center for Excellence in Learning Through Service</a></li>
-							<li><a href="http://www.berea.edu/ctl/">Center for Teaching and Learning</a></li>
-							<li><a href="https://www.berea.edu/cie/">Francis and Louise Hutchins Center for International Education</a></li>
-							<li><a href="https://www.berea.edu/appalachian-center/">Loyal Jones Appalachian Center</a></li>
-							<li><a href="https://www.berea.edu/ccc/">Willis D. Weatherford, Jr. Campus Christian Center</a></li>
-							<li><a href="https://www.berea.edu/cgwc/">Carter G. Woodson Center for Interracial Education</a></li>
-						</ul>
+					<li>
+						<a href="https://www.berea.edu/centers">Centers &#62;</a>
 					</li>
 				</ul>
 			</li>
