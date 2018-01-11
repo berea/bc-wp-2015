@@ -68,10 +68,12 @@ if ( $results ) {
 		<?php tha_sidebar_top(); ?>
 		<?php do_action( 'before_sidebar' ); ?>
 		<ul class="menu">
+		<!--
 			<li class="menu-item"><a href="/archive/features">Features Archive</a></li>
 			<li><ul class="sub-menu column-links">
 				<?php echo $features_archive; ?>
 			</ul></li>
+		-->
 			<li class="menu-item"><a href="/archive/news">Media Releases</a></li>
 			<li><ul class="sub-menu column-links">
 				<?php echo $news_archive; ?>
