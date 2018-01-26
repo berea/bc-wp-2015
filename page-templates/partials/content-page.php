@@ -11,6 +11,7 @@
 	<header class="entry-header">
 
 		<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
+		<p>By <?php echo get_the_author();?>&nbsp;&mdash;&nbsp;<?php echo get_the_date(); ?></p>
 
 	</header><!-- .entry-header -->
 
