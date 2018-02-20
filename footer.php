@@ -144,7 +144,7 @@
         <br /><strong><p><a href="https://www.berea.edu/cisrk/">Consumer Information &amp; Student Right to Know</a></p></strong><br />
     </div><!-- .site-info-links -->
     <div class="site-info-links-mobile">
-        <p><a href="https://www.berea.edu/legal-information/copyright-policy/">&copy; 2017 Berea College</a></p>
+        <p><a href="https://www.berea.edu/legal-information/copyright-policy/">&copy; 2018 Berea College</a></p>
         <p><a href="https://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></p>
         <p><a href="https://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></p>
         <p><a href="https://www.berea.edu/cisrk/">Consumer Information &amp;<br />Student Right to Know</a></p>
