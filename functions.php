@@ -741,4 +741,5 @@ if(get_current_blog_id() == 8){
 
 	
 }
+add_filter( 'gplc_remove_choices', '__return_false' );
 
