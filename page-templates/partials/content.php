@@ -3,7 +3,6 @@
  * @package berea
  */
 ?>
-
 <?php tha_entry_before(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemType="http://schema.org/BlogPosting" >
 	<?php tha_entry_top(); ?>
@@ -18,7 +17,6 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 	<div class="entry-summary" itemprop="description">
 		<?php the_excerpt(); ?>
@@ -73,3 +71,4 @@
 	<?php tha_entry_bottom(); ?>
 </article><!-- #post-## -->
 <?php tha_entry_after(); ?>
+
