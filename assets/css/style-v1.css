@@ -2079,18 +2079,22 @@ h3.cd-news-title {
 .wp-caption {
   clear: both;
   max-width: 100%;
-  background: #DBE4E8; }
-  .wp-caption .wp-caption-text {
-    text-align: left;
-    padding: 0.8075em 0;
-    max-width: 85%;
-    margin: 0 auto 2em; }
-  .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin: 0;
-    width: 100%; }
-  .wp-caption.alignleft .wp-caption-text {
-    margin-bottom: 0; }
+  /*background: #DBE4E8;*/ }
+
+.wp-caption .wp-caption-text {
+  text-align: left;
+  padding: 0.5em 0;
+  margin: 0 auto 2em;
+  font-size: 12px;
+  font-style: italic; }
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 0;
+  width: 100%; }
+
+.wp-caption.alignleft .wp-caption-text {
+  margin-bottom: 0; }
 
 .site-main .gallery {
   margin-bottom: 1.5em; }
@@ -2154,7 +2158,6 @@ object {
     column-count: 2; } }
 
 .legacy-name-list .legacy-wall-names {
-  page-break-inside: avoid;
   break-inside: avoid;
   margin-bottom: 0;
   padding-bottom: 1.5em; }
@@ -2357,6 +2360,9 @@ object {
   padding-bottom: 21px; }
   .office-of-the-president.blog .post.type-post:last-child {
     border-bottom: none; }
+
+p.byline {
+  color: #808080; }
 
 /*--------------------------------------------------------------
 	6.4 Page Templates
