@@ -139,7 +139,11 @@
 	</ul>
     <div class="site-info-links">
         <ul>
+<<<<<<< HEAD
             <!--<li><a href="https://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></li><li><a href="https://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li><li><a href="https://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li>--><li><a href="#"> &copy; 2017 Berea College</li><li><a href="/wp-admin">Website Administration</a></li>
+=======
+            <!--<li><a href="https://www.berea.edu/legal-information/copyright-policy/">&copy; 2015 Berea College</a></li><li><a href="https://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li><li><a href="https://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li>--><li>&copy; 2017 Berea College</a></li><li><a href="/wp-admin">Website Administration</a></li>
+>>>>>>> 34f08816a9cbc08c4786f28cffe7363b7c929a15
         </ul>
         <br /><strong><p><a href="https://www.berea.edu/cisrk/">Consumer Information &amp; Student Right to Know</a></p></strong><br />
     </div><!-- .site-info-links -->

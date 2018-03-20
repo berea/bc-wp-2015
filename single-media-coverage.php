@@ -34,8 +34,8 @@ get_header(); ?>
 					comments_template();
 				endif;
 				?>
-
 			<?php endwhile; ?>
+
 
 			<?php berea_paging_nav(); ?>
 

@@ -23,14 +23,19 @@
 				$please_close_ul=false;
 				if (count($vals)>1) {
 					$please_close_ul=true;
-					$first_val=array_shift($vals);
-
+					$first_val=$vals[0];
+					//$first_val=array_shift($vals);
 					echo '<li class="has-children menu-item-hide-on-large">' . $first_val .
 						"\n<ul class=\"is-hidden\">\n".
 						'<li class="go-back"><a>BACK</a></li>';
 				}
 				foreach ($vals as $key => $val) {
-					echo "<li class='menu-item-hide-on-large'>" . $val . "</li>\n";
+					if ($val == $vals[0] && sizeof($vals) > 1){
+						echo "<li class='menu-item-hide-on-large see-all'>" . $val . "</li>\n";
+					}
+					else {
+						echo "<li class='menu-item-hide-on-large'>" . $val . "</li>\n";
+					}
 				}
 				if ($please_close_ul) { echo "</li></ul>"; }
 			}

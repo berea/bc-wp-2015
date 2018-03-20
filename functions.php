@@ -406,8 +406,8 @@ function berea_get_default_menu($for_mobile=false, $comprehensive=false)
 			// show all menu items, without limit on columns or item count
 			if ($for_mobile) {
 				//will depend on exact sequence to get to class="" for injecting things - so don't move it
-				$url = ($menu_item->menu_item_parent == 0) ? '#' : $menu_item->url;
-				$output[$column][] = '<a href="' . $url . '">' . $menu_item->title . "</a>";
+				//$url = ($menu_item->menu_item_parent == 0) ? '#' : $menu_item->url;
+				$output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->title . "</a>";
 			} else {
 				$output[$column][] = '<a href="' . $menu_item->url . '">' . $menu_item->title . "</a>";
 			}
@@ -741,4 +741,5 @@ if(get_current_blog_id() == 8){
 
 	
 }
+add_filter( 'gplc_remove_choices', '__return_false' );
 
