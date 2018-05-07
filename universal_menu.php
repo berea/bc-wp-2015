@@ -26,18 +26,18 @@
 					$first_val=$vals[0];
 					//$first_val=array_shift($vals);
 					echo '<li class="has-children menu-item-hide-on-large">' . $first_val .
-						"\n<ul class=\"is-hidden\">\n".
+						'<ul class="is-hidden">'.
 						'<li class="go-back"><a>BACK</a></li>';
 				}
 				foreach ($vals as $key => $val) {
 					if ($val == $vals[0] && sizeof($vals) > 1){
-						echo "<li class='menu-item-hide-on-large see-all'>" . $val . "</li>\n";
+						echo "<li class='menu-item-hide-on-large see-all'>" . $val . "</li>";
 					}
 					else {
-						echo "<li class='menu-item-hide-on-large'>" . $val . "</li>\n";
+						echo "<li class='menu-item-hide-on-large'>" . $val . "</li>";
 					}
 				}
-				if ($please_close_ul) { echo "</li></ul>"; }
+				if ($please_close_ul) { echo "</ul></li>"; }
 			}
 		?>
 
