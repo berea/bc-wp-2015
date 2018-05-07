@@ -743,3 +743,13 @@ if(get_current_blog_id() == 8){
 }
 add_filter( 'gplc_remove_choices', '__return_false' );
 
+function add_class_to_single_event_body($classes) {
+    if ( is_singular( 'tribe_events' ) ) {
+    	$classes[] = 'page-template-default';
+    }
+    return $classes;
+     
+}
+
+add_filter( 'body_class', 'add_class_to_single_event_body' );
+
