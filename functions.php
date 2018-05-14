@@ -47,7 +47,7 @@ function berea_setup() {
 	 */
 
 // Removed per Charlie's request
-//	add_editor_style( '/assets/css/style-min.css' );
+//	add_editor_style( '/assets/css/style-min.css?e861c04ebd' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary-navigation', __( 'Primary Menu', 'berea' ) );
@@ -122,10 +122,10 @@ if ( !function_exists('berea_scripts') ) :
 		if ( TRUE || SCRIPT_DEBUG || WP_DEBUG ) :
 			// jQuery 2.1.1 - required for megadropdown scripts
         	wp_deregister_script('jquery');
-        	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js');
+        	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
 
 			// Concatonated Scripts
-			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production.js', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?9fa7d14eb0', get_template_directory_uri() . '/assets/js/production.js?9fa7d14eb0', array( 'jquery' ), '1.0.0', false );
 
 
             // specific page script files to trigger analytics tracking event "rt"
@@ -157,27 +157,27 @@ if ( !function_exists('berea_scripts') ) :
 
 			// Main Style
 			if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
-				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css' );
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?9df71bf586' );
 			}
 			else {
-				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-stopgap.css' );
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-stopgap.css?509d1a271c' );
 			}
 
 		else :
 			// jQuery 2.1.1 - required for megadropdown scripts
         	wp_deregister_script('jquery');
-        	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js');
+        	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
 
 			// Concatenated Scripts
-			wp_enqueue_script( 'production-js', get_template_directory_uri() . '/assets/js/production-min.js', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?9fa7d14eb0', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
 
 			// Main Style
-			wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-min.css' );
+			wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-min.css?e861c04ebd' );
 
 		endif;
 
 		// Berea Main JS
-		wp_enqueue_script( 'berea', get_template_directory_uri() . '/assets/js/custom/berea.js', '1.0.0', false );
+		wp_enqueue_script( 'berea', get_template_directory_uri() . '/assets/js/custom/berea.js?dbb4be220c', '1.0.0', false );
 
 		// Dashicons
 		 wp_enqueue_style( 'dashicons' );
@@ -327,7 +327,7 @@ add_action( 'tha_head_bottom', 'berea_add_selectivizr' );
 function berea_add_selectivizr() { ?>
 	<!--[if (gte IE 6)&(lte IE 8)]>
   		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/selectivizr/selectivizr-min.js"></script>
-  		<noscript><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style-min.css" /></noscript>
+  		<noscript><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style-min.css?e861c04ebd" /></noscript>
 	<![endif]-->
 <?php }
 
@@ -635,7 +635,7 @@ function multisite_body_classes($classes) {
 
 function great_commitments_enqueue_custom_accordion() {
 	if (is_page(498)){
-		wp_enqueue_script("https://bereaedu.wpengine.com/the-great-commitments/wp-content/themes/bc-wp-2015/assets/js/custom.js");
+		wp_enqueue_script("https://bereaedu.wpengine.com/the-great-commitments/wp-content/themes/bc-wp-2015/assets/js/custom.js?b823d51290");
 	}
 }
 function great_commitments_dequeue_vc_accordion() {
