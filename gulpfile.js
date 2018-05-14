@@ -34,6 +34,7 @@ var minifyjs 			  = require('gulp-uglify');
 var minifycss 		= require('gulp-uglifycss');
 var gulputil        = require('gulp-util');
 var runSequence   = require('run-sequence');
+var md5 = require("gulp-md5-assets"); // For fingerprinting assets
 
 
 
@@ -103,6 +104,29 @@ gulp.task('jsHint', function() {
 
 
 
+/**
+ * Fingerprint Assets
+ *
+ * Generates md5 hashes for all css and js files, then finds references to those files in the template files and
+ * appends the hash as a query parameter to those referenced filenames
+*/
+
+/******************************************************************************
+| >   FINGERPRINT ASSETS 
+******************************************************************************/
+
+gulp.task('cachebust:css', function () {
+  	return gulp.src('./assets/css/**/*.css')
+    	.pipe(md5(10,'./**/*.php'));
+});
+
+gulp.task('cachebust:js', function () {
+ 	return gulp.src('./assets/js/**/*.js')
+    	.pipe(md5(10,'./**/*.php'));
+});
+
+
+
 
 /**
  * Gulp Default Task
@@ -116,7 +140,7 @@ gulp.task('jsHint', function() {
 ******************************************************************************/
 
 //Default Gulp Task 
-  gulp.task('default', ['styles','js'], function() {
+  gulp.task('default', ['styles','js','cachebust:css','cachebust:js'], function() {
     //watch for sass changes
     gulp.watch(source + 'sass/**/*.scss', ['styles']);
     //watch for javascript changes in both custom and vendor folders 

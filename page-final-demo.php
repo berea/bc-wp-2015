@@ -67,6 +67,4 @@ get_header();?>
         </div><!-- #primary -->
 
 <?php get_footer();
-	//wp_dequeue_script("https://bereaedu.staging.wpengine.com/the-great-commitments/wp-content/plugins/js_composer/assets/lib/vc_accordion/vc-accordion.min.js?ver=4.12.1");
-	//wp_enqueue_script("https://bereaedu.staging.wpengine.com/the-great-commitments/wp-content/themes/bc-wp-2015/assets/js/custom.js");
 	?>
