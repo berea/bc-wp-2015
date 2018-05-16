@@ -115,15 +115,17 @@ gulp.task('jsHint', function() {
 | >   FINGERPRINT ASSETS 
 ******************************************************************************/
 
-gulp.task('cachebust:css', function () {
+gulp.task('cachebust:css',['default'], function () {
   	return gulp.src('./assets/css/**/*.css')
     	.pipe(md5(10,'./**/*.php'));
 });
 
-gulp.task('cachebust:js', function () {
+gulp.task('cachebust:js', ['default'], function () {
  	return gulp.src('./assets/js/**/*.js')
     	.pipe(md5(10,'./**/*.php'));
 });
+
+gulp.task('cachebust', ['cachebust:css','cachebust:js']);
 
 
 
@@ -140,7 +142,7 @@ gulp.task('cachebust:js', function () {
 ******************************************************************************/
 
 //Default Gulp Task 
-  gulp.task('default', ['styles','js','cachebust:css','cachebust:js'], function() {
+  gulp.task('default', ['styles','js'], function() {
     //watch for sass changes
     gulp.watch(source + 'sass/**/*.scss', ['styles']);
     //watch for javascript changes in both custom and vendor folders 
