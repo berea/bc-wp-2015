@@ -753,3 +753,23 @@ function add_class_to_single_event_body($classes) {
 
 add_filter( 'body_class', 'add_class_to_single_event_body' );
 
+function dequeue_tribe_bootstrap_datepicker() {
+    wp_deregister_script( 'tribe-events-bootstrap-datepicker' );
+     
+    wp_register_script( 'tribe-events-bootstrap-datepicker', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js', null, null, true );
+	wp_enqueue_script('tribe-events-bootstrap-datepicker');
+
+
+	// wp_register_script( 'bootstrapjs', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', null, null, true );
+	// wp_enqueue_script('bootstrapjs');
+
+	//wp_dequeue_style( 'tribe_events-bootstrap-datepicker' );
+	wp_register_style( 'tribe-events-bootstrap-datepicker-css', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css' );
+	wp_enqueue_style('tribe-events-bootstrap-datepicker-css');
+
+	// wp_register_style( 'bootstrap-datepicker', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css' );
+	// wp_enqueue_style('bootstrap-datepicker');
+ 
+}
+add_action( 'wp_enqueue_scripts', 'dequeue_tribe_bootstrap_datepicker', 100 );
+
