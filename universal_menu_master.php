@@ -185,7 +185,7 @@
 					<a class="cd-nav-item" href="https://www.berea.edu/academics/">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/centers.svg" alt="Centers Icon"/>
 						<h3>CENTERS</h3>
-						<p>Berea College boasts seven centers which serve our campus and community in a variety of ways.</p>
+						<p>Berea College boasts eight centers which serve our campus and community in a variety of ways.</p>
 					</a>
 				</li>
 
