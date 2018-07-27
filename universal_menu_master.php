@@ -192,7 +192,7 @@
 				<li>
 					<a class="cd-nav-item" href="http://catalog.berea.edu/en/Current/Catalog">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/student-handbook.svg" alt="Student Handbook Icon"/>
-						<h3>CATALOG &amp; STUDENT HANDBOOK</h3>
+						<h3>CATALOG </h3>
 						<p>Browse our current course catalog and student handbook.</p>
 					</a>
 				</li>
