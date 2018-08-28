@@ -42,7 +42,7 @@
 					<li class="go-back"><a>BACK</a></li>
 					<li class="see-all"><a>ADMINISTRATIVE OFFICES</a></li>
 					<li><a href="http://www.berea.edu/admissions">Admissions</a></li>
-					<li><a href="http://www.alumni.berea.edu/">Alumni Relations</a></li>
+					<li><a href="http://www.berea.edu/alumni/">Alumni Relations</a></li>
 					<li><a href="http://www.berea.edu/give-to-berea/">Development/Giving to Berea</a></li>
 					<li><a href="https://www.berea.edu/human-resources/">Human Resources</a></li>
 					<li><a href="http://libraryguides.berea.edu/">Hutchins Library</a></li>
@@ -233,7 +233,7 @@
 		</li>
 
 		<li class="">
-			<a href="http://www.bereacollegealumni.com/s/925/start.aspx">ALUMNI</a>
+			<a href="http://www.berea.edu/alumni/">ALUMNI</a>
 		</li>
 
 		<li class="">
