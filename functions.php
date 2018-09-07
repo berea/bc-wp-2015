@@ -744,7 +744,7 @@ if(get_current_blog_id() == 8){
 add_filter( 'gplc_remove_choices', '__return_false' );
 
 function add_class_to_single_event_body($classes) {
-    if ( is_singular( 'tribe_events' ) ) {
+    if ( is_singular( 'tribe_events' ) || is_singular( 'tribe_venue' ) || is_singular( 'tribe_organizer' )) {
     	$classes[] = 'page-template-default';
     }
     return $classes;
