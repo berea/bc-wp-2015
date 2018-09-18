@@ -690,7 +690,7 @@ h6 {
 
 blockquote {
   background-color: #f9f9f9;
-  border-left: solid 5px #ff0000;
+  border-left: solid 5px #C75B12;
   font-style: italic;
   padding: 20px; }
 
@@ -3592,6 +3592,23 @@ label.screen-reader {
 a.soliloquy-link:hover {
   opacity: 1; }
 
+.widget-title {
+  font-size: 1.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif; }
+
+.comments-title {
+  font-size: 1.75em;
+  font-family: "Open Sans"; }
+
+.reply-title {
+  font-size: 1.75em;
+  font-family: "Open Sans"; }
+
+.fieldset {
+  background: #FFFFFF; }
+
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a {
   font-size: 36px;
@@ -3754,9 +3771,9 @@ This gives more size options for when the standard h1/h2 isn't appropriate.*/
     font-size: 16px;
     line-height: 1.4em;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    list-style-type: disc; }
+    list-style-type: decimal; }
     .entry-content ul li, .entry-content ol li {
-      list-style-type: disc; }
+      list-style-type: decimal; }
   .entry-content li.circle {
     list-style-type: circle; }
   .entry-content .original-publish-date, .entry-content .source-url-top, .entry-content .source-url-bottom {

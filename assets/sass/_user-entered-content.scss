@@ -210,10 +210,10 @@ This gives more size options for when the standard h1/h2 isn't appropriate.*/
     font-size: 16px;
     line-height: 1.4em;
     font-family: $sans-serif;
-    list-style-type: disc;
+    list-style-type: decimal;
 
     li {
-      list-style-type: disc;
+      list-style-type: decimal; 
     }
   }
 
