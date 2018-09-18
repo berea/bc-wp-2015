@@ -3767,13 +3767,21 @@ This gives more size options for when the standard h1/h2 isn't appropriate.*/
     /* text-decoration: underline; */ }
     .entry-content a:visited {
       color: #C25700; }
-  .entry-content ul, .entry-content ol {
+  .entry-content ul {
+    margin: 0px 0px 25px 0px;
+    font-size: 16px;
+    line-height: 1.4em;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    list-style-type: disc; }
+    .entry-content ul li {
+      list-style-type: disc; }
+  .entry-content ol {
     margin: 0px 0px 25px 0px;
     font-size: 16px;
     line-height: 1.4em;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     list-style-type: decimal; }
-    .entry-content ul li, .entry-content ol li {
+    .entry-content ol li {
       list-style-type: decimal; }
   .entry-content li.circle {
     list-style-type: circle; }
