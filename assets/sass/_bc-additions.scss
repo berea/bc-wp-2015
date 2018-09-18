@@ -660,3 +660,24 @@ label.screen-reader{
 a.soliloquy-link:hover {
   opacity: 1;
 }
+
+.widget-title {
+  font-size: 1.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+
+.comments-title {
+  font-size: 1.75em;
+  font-family: "Open Sans";
+}
+
+.reply-title {
+  font-size: 1.75em;
+  font-family: "Open Sans";
+}
+
+.fieldset {
+  background: #FFFFFF;
+}
