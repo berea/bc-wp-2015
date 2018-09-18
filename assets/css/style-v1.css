@@ -3601,12 +3601,13 @@ a.soliloquy-link:hover {
   font-size: 1.75em;
   font-family: "Open Sans"; }
 
-.reply-title {
+.comment-reply-title {
   font-size: 1.75em;
   font-family: "Open Sans"; }
 
 .fieldset {
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  background-color: #FFFFFF; }
 
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a {
