@@ -68,7 +68,7 @@
 				<li><a href="http://www.bereacrafts.com/">Student Crafts</a></li>
 				<li><a href="https://www.berea.edu/conference-services/">Conference Center</a></li>
 				<li><a href="https://www.berea.edu/seab/">Seabury Athletic Center</a></li>
-				<li><a href="http://www.bereaathletics.com/">ATHLETICS</a></li>
+				<li><a href="http://www.bereaathletics.com/">Athletics</a></li>
 				<li><a href="https://www.berea.edu/convocations/">Convocations</a></li>
 				<li><a href="https://www.berea.edu/human-resources/prospective-employees/">Employment Opportunities</a></li>
 				<li><a href="http://www.berea.edu/contact-us">Contact Berea</a></li>
@@ -241,7 +241,7 @@
 		</li>
 		
 		<li class="">
-			<a href="http://www.bereaathletics.com/">Athletics</a>
+			<a href="http://www.bereaathletics.com/">ATHLETICS</a>
 		</li>
 
 
