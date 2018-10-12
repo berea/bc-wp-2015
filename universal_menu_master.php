@@ -239,6 +239,10 @@
 		<li class="">
 			<a href="http://community.berea.edu/calendar/index.php?calendar=default">EVENTS</a>
 		</li>
+		
+		<li class="">
+			<a href="http://www.bereaathletics.com/">Athletics</a>
+		</li>
 
 
 		<li>
