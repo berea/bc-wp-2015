@@ -3604,6 +3604,13 @@ a.soliloquy-link:hover {
   font-size: 1.95em;
   color: #C75B12; }
 
+li.menu-item-2443 :hover {
+  color: #FFFFFF; }
+
+#tribe-bar-collapse-toggle {
+  color: #000000;
+  text-align: left; }
+
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a {
   font-size: 36px;
