@@ -653,7 +653,7 @@ h1, h2, h3, h4, h5, h6 {
     display: table;
     clear: both; }
   h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited, h5 a, h5 a:visited, h6 a, h6 a:visited {
-    text-decoration: none; }
+    text-decoration: underline; }
     h1 a:hover, h1 a:visited:hover, h2 a:hover, h2 a:visited:hover, h3 a:hover, h3 a:visited:hover, h4 a:hover, h4 a:visited:hover, h5 a:hover, h5 a:visited:hover, h6 a:hover, h6 a:visited:hover {
       text-decoration: underline; }
 
@@ -3582,6 +3582,7 @@ label.screen-reader {
 a.soliloquy-link:hover {
   opacity: 1; }
 
+<<<<<<< Updated upstream
 .widget-title {
   font-size: 1.25em;
   font-weight: 600;
@@ -3610,6 +3611,10 @@ li.menu-item-2443 :hover {
 #tribe-bar-collapse-toggle {
   color: #000000;
   text-align: left; }
+=======
+a.upper {
+  text-transform: uppercase; }
+>>>>>>> Stashed changes
 
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a {

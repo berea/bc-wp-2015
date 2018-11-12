@@ -1,6 +1,11 @@
 <li class="has-children">
+<<<<<<< Updated upstream
 	<a href="http://www.berea.edu/about">ABOUT</a>
 
+=======
+	<a class ="upper" href="http://www.berea.edu/about">ABOUT</a>
+		
+>>>>>>> Stashed changes
 	<ul class="cd-secondary-nav is-hidden">
 		<li class="go-back"><a>BACK</a></li>
 		<li class="see-all"><a href="http://www.berea.edu/about">ABOUT</a></li>

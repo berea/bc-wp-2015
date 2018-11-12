@@ -204,7 +204,7 @@ label.screen-reader{
   @include MQ(S) {
     text-align: right;
   }
-  
+
   .slider-textblock {
     background-color: $bc-white;
     position:relative;
@@ -298,7 +298,7 @@ label.screen-reader{
     }
 
   }
-  
+
   p {
     text-align: left;
     color: $bc-blue;
@@ -330,7 +330,7 @@ label.screen-reader{
     }
 
   } */
-  
+
   .tagline {
     font-family: $sans-serif;
     font-size: 11pt;
@@ -379,7 +379,7 @@ label.screen-reader{
 	  position: relative;
 	  width:100%;
 	}
-	
+
 	&.homepage-slider:before{
 	  content: "";
 	  display: block;
@@ -447,7 +447,7 @@ label.screen-reader{
 .homepage-slider-sizing-dept {
   width: 100%;
 
-  
+
   h1 {
     border-bottom:none;
     padding-bottom:20px;
@@ -458,7 +458,7 @@ label.screen-reader{
 	  padding-top:0px;
 	}
   }
-  
+
   .slider-textblock {
     margin-top:-30px;
 	@include MQ(M) {
@@ -660,6 +660,7 @@ label.screen-reader{
 a.soliloquy-link:hover {
   opacity: 1;
 }
+<<<<<<< Updated upstream
 
 .widget-title {
   font-size: 1.25em;
@@ -697,3 +698,6 @@ li.menu-item-2443 :hover {
   text-align: left;
 }
 
+=======
+a.upper{text-transform: uppercase;}
+>>>>>>> Stashed changes
