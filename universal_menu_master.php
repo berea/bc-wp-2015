@@ -164,7 +164,7 @@
 
 				<li>
 					<a class="cd-nav-item" href="http://libraryguides.berea.edu/">
-						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/library.svg" alt="Library Icon"/>
+						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/library.svg" alt=" "/>
 						<h3>LIBRARY</h3>
 						<p>Hutchins Library supports the educational mission of the college by maintaining a rich collection of materials in a variety of formats.</p>
 					</a>
