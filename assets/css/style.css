@@ -3611,6 +3611,19 @@ li.menu-item-2443 :hover {
   color: #000000;
   text-align: left; }
 
+#tribe-bar-views {
+  color: #000000; }
+
+.footer-main a {
+  text-decoration: underline; }
+
+ul.gallery-item {
+  list-style-type: none !important;
+  padding-left: 0; }
+
+li.gallery-icon {
+  list-style-type: none !important; }
+
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a {
   font-size: 36px;
