@@ -3,7 +3,7 @@
  * Template Name: Two Column, Left-Sidebar
  *
  * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css?853d766416).
+ * and one of the two required files for a theme (the other being style.css?25a62cf1ea).
  * It is used to display a page when nothing more specific matches a query.
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
