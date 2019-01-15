@@ -1,14 +1,14 @@
 <li class="has-children">
-	<a class="element-uppercase" href="http://www.berea.edu/about">About</a>
+	<a href="http://www.berea.edu/about">ABOUT</a>
 
 	<ul class="cd-secondary-nav is-hidden">
-		<li class="go-back"><a class="element-uppercase">Back</a></li>
-		<li class="see-all"><a href="http://www.berea.edu/about" class="element-uppercase">About</a></li>
+		<li class="go-back"><a>BACK</a></li>
+		<li class="see-all"><a href="http://www.berea.edu/about">ABOUT</a></li>
 		<li class="has-children">
-			<a class="element-uppercase">Overview</a>
+			<a>OVERVIEW</a>
 
 			<ul class="is-hidden">
-				<li class="go-back"><a class="element-uppercase">Back</a></li>
+				<li class="go-back"><a>BACK</a></li>
 
 				<!-- <li><a href="#">The Berea College Difference</a></li> -->
 				<li><a href="http://www.berea.edu/about/quick-facts/">Quick Facts</a></li>
@@ -24,10 +24,10 @@
 		</li>
 
 		<li class="has-children">
-			<a href="http://catalog.berea.edu/en/Current/Faculty-Manual/Campus-Governance" class="element-uppercase">Leadership And Governance</a>
+			<a href="http://catalog.berea.edu/en/Current/Faculty-Manual/Campus-Governance">LEADERSHIP AND GOVERNANCE</a>
 
 			<ul class="is-hidden">
-				<li class="go-back"><a class="element-uppercase">Back</a></li>
+				<li class="go-back"><a>BACK</a></li>
 
 				<li><a href="https://www.berea.edu/president/">President's Office</a></li>
 				<li><a href="https://www.berea.edu/president/administrative-committee/">Administrative Committee</a></li>
@@ -36,11 +36,11 @@
 		</li>
 
 		<li class="has-children">
-				<a href="https://www.berea.edu/directory/list-of-administrative-departments/" class="element-uppercase">Administrative Office</a>
+				<a href="https://www.berea.edu/directory/list-of-administrative-departments/">ADMINISTRATIVE OFFICES</a>
 
 				<ul class="is-hidden">
-					<li class="go-back"><a class="element-uppercase">Back</a></li>
-					<li class="see-all"><a class="element-uppercase">Administrative Office</a></li>
+					<li class="go-back"><a>BACK</a></li>
+					<li class="see-all"><a>ADMINISTRATIVE OFFICES</a></li>
 					<li><a href="http://www.berea.edu/admissions">Admissions</a></li>
 					<li><a href="http://www.berea.edu/alumni/">Alumni Relations</a></li>
 					<li><a href="http://www.berea.edu/give-to-berea/">Development/Giving to Berea</a></li>
@@ -57,10 +57,10 @@
 			</li>
 
 		<li class="has-children">
-			<a>On Campus</a>
+			<a>ON CAMPUS</a>
 
 			<ul class="is-hidden">
-				<li class="go-back"><a class="element-uppercase">Back</a></li>
+				<li class="go-back"><a>BACK</a></li>
 				<li><a href="http://www.berea.edu/news/">Newsroom</a></li>
 				<li><a href="https://www.berea.edu/visitor-center/">Visit Berea College/Visitor Center &amp; Shoppe</a></li>
 				<!-- <li><a href="#">Virtual Tour</a></li> -->
@@ -79,7 +79,7 @@
 </li>
 
 		<li class="">
-			<a href="http://www.berea.edu/admissions" class="element-uppercase">Admissions</a>
+			<a href="http://www.berea.edu/admissions">ADMISSIONS</a>
 		</li>
 
 		<!-- <li class="has-children">
@@ -135,16 +135,16 @@
 		</li> -->
 
 		<li class="has-children">
-			<a href="https://www.berea.edu/academics/" class="element-uppercase">Academics</a>
+			<a href="https://www.berea.edu/academics/">ACADEMICS</a>
 			<ul class="cd-nav-icons is-hidden">
-				<li class="go-back"><a class="element-uppercase">Back</a></li>
-				<li class="see-all"><a href="https://www.berea.edu/academics/" class="element-uppercase">Academics</a></li>
+				<li class="go-back"><a>BACK</a></li>
+				<li class="see-all"><a href="https://www.berea.edu/academics/">ACADEMICS</a></li>
 				<li>
 					<!-- EXAMPLE OF HOW IMAGES WERE DELIVERED VIA CLASS IN EXAMPLE -->
 					<!-- <a class="cd-nav-item item-1" href="https://www.berea.edu/academics/"> -->
 					<a class="cd-nav-item" href="https://www.berea.edu/academics/">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/academic-programs.svg" alt="Academic Programs Icon"/>
-						<h3 class="element-uppercase">Academic Programs</h3>
+						<h3>ACADEMIC PROGRAMS</h3>
 						<p>Bachelor of Arts and Bachelor of Science degrees in 28 fields</p>
 					</a>
 				</li>
@@ -152,7 +152,7 @@
 				<li>
 					<a class="cd-nav-item" href="https://www.berea.edu/labor-program-office/">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/labor-programs.svg" alt="Labor Programs Icon"/>
-						<h3 class="element-uppercase">Labor Program</h3>
+						<h3>LABOR PROGRAM</h3>
 						<p>Students are engaged in a learning environment that encourages them to be active learners, workers, and servers.</p>
 					</a>
 				</li>
@@ -160,7 +160,7 @@
 				<li>
 					<a class="cd-nav-item" href="http://libraryguides.berea.edu/">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/library.svg" alt="Library Icon"/>
-						<h3 class="element-uppercase">Library</h3>
+						<h3>LIBRARY</h3>
 						<p>Hutchins Library supports the educational mission of the college by maintaining a rich collection of materials in a variety of formats.</p>
 					</a>
 				</li>
@@ -168,7 +168,7 @@
 				<li>
 					<a class="cd-nav-item" href="https://www.berea.edu/registrar/">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/registrar.svg" alt="Registrar's Office Icon"/>
-						<h3 class="element-uppercase">Registrar's Office</h3>
+						<h3>REGISTRAR'S OFFICE</h3>
 						<p>Browse the site for information on classes, transcripts, and degree requirements.</p>
 					</a>
 				</li>
@@ -176,7 +176,7 @@
 				<li>
 					<a class="cd-nav-item" href="http://community.berea.edu/calendar/main.php?calendarid=default&view=upcoming">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/calendar.svg" alt="Academic Calendar Icon"/>
-						<h3 class="element-uppercase">Academics Calendar</h3>
+						<h3>ACADEMIC CALENDAR</h3>
 						<p>Browse our current Academic Calendar.</p>
 					</a>
 				</li>
@@ -184,7 +184,7 @@
 				<li>
 					<a class="cd-nav-item" href="https://www.berea.edu/academics/">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/centers.svg" alt="Centers Icon"/>
-						<h3 class="element-uppercase">Centers</h3>
+						<h3>CENTERS</h3>
 						<p>Berea College boasts eight centers which serve our campus and community in a variety of ways.</p>
 					</a>
 				</li>
@@ -192,7 +192,7 @@
 				<li>
 					<a class="cd-nav-item" href="http://catalog.berea.edu/en/Current/Catalog">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/student-handbook.svg" alt="Student Handbook Icon"/>
-						<h3 class="element-uppercase">Catalog</h3>
+						<h3>CATALOG </h3>
 						<p>Browse our current course catalog.</p>
 					</a>
 				</li>
@@ -200,7 +200,7 @@
 				<li>
 					<a class="cd-nav-item" href="https://www.berea.edu/campus/">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/resources.svg" alt="Resources Icon"/>
-						<h3 class="element-uppercase">Resources</h3>
+						<h3>RESOURCES</h3>
 						<p>Explore common resources for campus and community.</p>
 					</a>
 				</li>
@@ -208,7 +208,7 @@
 				<li>
 					<a class="cd-nav-item" href="/avp/faculty-scholarly-creative-works/">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/publications.svg" alt="Scholarly Work Icon"/>
-						<h3 class="element-uppercase">Faculty Scholarly &amp; Creative Works</h3>
+						<h3>FACULTY SCHOLARLY &amp; CREATIVE WORKS</h3>
 						<p>While our faculty proudly focuses on being and becoming excellent classroom teachers, they are also active intellectuals and scholars.</p>
 					</a>
 				</li>
@@ -216,11 +216,11 @@
 		</li>
 
 		<li class="has-children">
-			<a href="http://community.berea.edu/calendar/index.php?calendar=default" class="element-uppercase">News</a>
+			<a href="http://community.berea.edu/calendar/index.php?calendar=default">NEWS</a>
 
 			<ul class="cd-nav-gallery is-hidden">
-				<li class="go-back"><a class="element-uppercase">Back</a></li>
-				<li class="see-all"><a href="http://www.berea.edu/news" class="element-uppercase">More News</a></li>
+				<li class="go-back"><a>BACK</a></li>
+				<li class="see-all"><a href="http://www.berea.edu/news">MORE NEWS</a></li>
 
 				<?php
 
@@ -233,22 +233,22 @@
 		</li>
 
 		<li class="">
-			<a href="http://www.berea.edu/alumni/" class="element-uppercase">Alumni</a>
+			<a href="http://www.berea.edu/alumni/">ALUMNI</a>
 		</li>
 
 		<li class="">
-			<a href="http://community.berea.edu/calendar/index.php?calendar=default" class="element-uppercase">Events</a>
+			<a href="http://community.berea.edu/calendar/index.php?calendar=default">EVENTS</a>
 		</li>
 		
 		<li class="">
-			<a href="http://www.bereaathletics.com/" class="element-uppercase">Athletics</a>
+			<a href="http://www.bereaathletics.com/">ATHLETICS</a>
 		</li>
 
 
 		<li>
-			<a href="http://www.berea.edu/give-to-berea/" class="element-uppercase">Give</a>
+			<a href="http://www.berea.edu/give-to-berea/">GIVE</a>
 		</li>
 
 		<li class="">
-			<a href="https://www.berea.edu/directory/" class="element-uppercase">Directory</a>
+			<a href="https://www.berea.edu/directory/">DIRECTORY</a>
 		</li>
