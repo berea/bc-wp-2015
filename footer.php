@@ -29,7 +29,7 @@
 	<div class="footer-floats">
 
 		<div class="footer-promise">
-			<h3>NO-TUITION PROMISE</h3>
+			<h3 class="element-uppercase">No-Tuition Promise</h3>
 
 			<p>Berea is the only one of America’s top colleges that makes a no-tuition promise to every enrolled student.</p>
 
@@ -39,7 +39,7 @@
 		</div><!-- .footer-promise -->
 
 		<div class="footer-about">
-			<h3>ABOUT THE BEREA COMMUNITY</h3>
+			<h3 class="element-uppercase">About The Berea Community</h3>
 
 			<ul>
 				<li><a href="http://www.visitberea.com/">City of Berea</a></li>
@@ -60,7 +60,7 @@
 
 
 		<div class="footer-distinctly">
-			<h3>DISTINCTLY BEREAN</h3>
+			<h3 class="element-uppercase">Distinctly Berean</h3>
 
 				<a href="https://www.berea.edu/visitor-center/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/visitorcenter165x59.png" alt="Visitor Center &amp; Shoppe"/></a>
 				<br><br><br>
@@ -80,7 +80,7 @@
 
             <div id="topleft">
 
-                <h3>MAPS &amp; DIRECTIONS</h3>
+                <h3 class="element-uppercase">Maps &amp; Directions</h3>
 
                 <div id="gmap_links_leftside">
                     <a href="https://www.google.com/maps/place/Berea+College/@37.5716935,-84.2890655,17z/data=!4m2!3m1!1s0x8842e192a683f201:0x193cd1402103123a">Google Maps</a> |
@@ -114,7 +114,7 @@
 	</div><!-- .footer-floats -->
 
 	<div class="footer-more">
-		<a href="https://www.berea.edu/about/" class="btn btn-large">MORE ABOUT BEREA &gt;</a>
+		<a href="https://www.berea.edu/about/" class="btn btn-large element-uppercase" >More About Berea &gt;</a>
 	</div><!-- .footer-more -->
 
 </div><!-- #footer-main -->
@@ -122,7 +122,7 @@
 
 <div class="footer-social">
 		<p>
-			<span class="vertical-center nudge-left">FOLLOW US:</span>
+			<span class="vertical-center nudge-left element-uppercase">Follow Us:</span>
             <a href="http://www.facebook.com/pages/Berea-KY/Berea-College/39126548204"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook.png" width="25" height="25" alt=""/><span class="vertical-center nudge-left nudge-half-right">Facebook</span></span></a>
 			<a href="http://www.youtube.com/berea"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/youtube.png" width="25" height="25"  alt=""/><span class="vertical-center nudge-left nudge-half-right">YouTube</span></span></a>
 			<a href="http://twitter.com/bereacollege"><span class="group-elements"><img class="vertical-center" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter.png" width="25" height="25"  alt=""/><span class="vertical-center nudge-left nudge-half-right">Twitter</span></span></a>
@@ -133,8 +133,8 @@
 
 <div class="site-info">
 	<ul class="site-info-school">
-		<li>BEREA COLLEGE</li>
-		<li>BEREA, KY</li>
+		<li class="element-uppercase">Berea College</li>
+		<li class="element-uppercase">Berea, Ky</li>
 		<li>859-985-3000</li>
 	</ul>
     <div class="site-info-links">

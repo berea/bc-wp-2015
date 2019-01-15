@@ -3624,6 +3624,9 @@ ul.gallery-item {
 li.gallery-icon {
   list-style-type: none !important; }
 
+.text-uppercase {
+  text-transform: uppercase; }
+
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a {
   font-size: 36px;
