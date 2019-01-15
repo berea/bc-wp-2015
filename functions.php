@@ -157,7 +157,7 @@ if ( !function_exists('berea_scripts') ) :
 
 			// Main Style
 			if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
-				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?bd3f31f6c3' );
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?fb7e423bed' );
 			}
 			else {
 				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-stopgap.css?509d1a271c' );
