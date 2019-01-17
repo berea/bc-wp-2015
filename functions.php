@@ -143,7 +143,13 @@ if ( !function_exists('berea_scripts') ) :
 
   			// analytics tracking for entire subsite
 
-  			$current_site = get_current_site()->site_name;
+  			//$current_site = get_current_site()->site_name;
+  			//apparently, get_blog_details() is what we actually need to fetch the subsite
+
+
+  			$current_site = get_blog_details()->blogname;
+
+  			
   		
   			if ($current_site=="Admissions"){
 
