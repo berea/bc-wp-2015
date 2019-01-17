@@ -140,6 +140,24 @@ if ( !function_exists('berea_scripts') ) :
 
   			}
 
+
+  			// analytics tracking for entire subsite
+
+  			$current_site = get_current_site();
+  			if ($current_site=="admissions"){
+
+
+  			
+
+  			?>
+
+  			<script>analytics.track('admissions');</script>
+
+  			 <?php
+
+
+  			}
+
   			// specific page script files to trigger MediaMath analytics
 			// at some point, we should implement something better than the above
 
