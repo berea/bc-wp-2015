@@ -143,7 +143,8 @@ if ( !function_exists('berea_scripts') ) :
 
   			// analytics tracking for entire subsite
 
-  			$current_site = get_current_site();
+  			$current_site = get_current_site()->site_name;
+  		
   			if ($current_site=="admissions"){
 
 
