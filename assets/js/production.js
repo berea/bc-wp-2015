@@ -1544,6 +1544,7 @@ jQuery(document).ready(function($){
 			$('body').toggleClass('search-is-visible');
 			if($(window).width() > MqL && $('.cd-search').hasClass('is-visible')) $('.cd-search').find('input[type="search"]').focus();
 			($('#cd-search').hasClass('is-visible')) ? $('.cd-overlay').addClass('is-visible') : $('.cd-overlay').removeClass('is-visible');
+			document.getElementById('berea-search-bar').focus();
 		}
 	}
 	function toggleRibbonAction() {
@@ -1613,6 +1614,18 @@ jQuery(document).ready(function($){
 			navigation.insertAfter('.cd-overlay');
 		}
 	}
+
+	// Close navbar and search when the escape key is pressed
+
+	$(document).keyup(function(e) {
+	    if (e.key === "Escape") {
+	    	console.log("Escape Key Pressed");
+	    	closeNav();
+		    if ($('.cd-search').hasClass('is-visible')) {
+		    	toggleSearch();
+		    }
+		}
+	});
 });
 ( function() {
 	var is_webkit = navigator.userAgent.toLowerCase().indexOf( 'webkit' ) > -1,
