@@ -145,7 +145,7 @@ if ( !function_exists('berea_scripts') ) :
 
   			$current_site = get_current_site()->site_name;
   		
-  			if ($current_site=="admissions"){
+  			if ($current_site=="Admissions"){
 
 
   			
