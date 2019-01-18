@@ -158,12 +158,7 @@ if ( !function_exists('berea_scripts') ) :
 
   			?>
 
-  			<script>
-
-  			analytics.track('admissionstrack');
-			ga('send', 'event', ’Site’, ‘page view’, ‘admissionstrackGA’);
-
-  			</script>
+  			<script>analytics.track('admissionstrack');</script>
 
   			 <?php
 
