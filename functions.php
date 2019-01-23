@@ -121,8 +121,9 @@ if ( !function_exists('berea_scripts') ) :
 		#TODO: allow script debug after minify workflow is resolved */
 		if ( TRUE || SCRIPT_DEBUG || WP_DEBUG ) :
 			// jQuery 2.1.1 - required for megadropdown scripts
-        	wp_deregister_script('jquery');
-        	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
+
+        	//wp_deregister_script('jquery');
+        	//wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
         	
 			// Concatonated Scripts
 			wp_enqueue_script( 'production.js?446828c672', get_template_directory_uri() . '/assets/js/production.js?446828c672', array( 'jquery' ), '1.0.0', false );
@@ -190,8 +191,8 @@ if ( !function_exists('berea_scripts') ) :
 
 		else :
 			// jQuery 2.1.1 - required for megadropdown scripts
-        	wp_deregister_script('jquery');
-        	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
+        	//wp_deregister_script('jquery');
+        	//wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
 
 			// Concatenated Scripts
 			wp_enqueue_script( 'production.js?446828c672', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
