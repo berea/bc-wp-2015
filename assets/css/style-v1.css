@@ -3627,6 +3627,20 @@ li.gallery-icon {
 .text-uppercase {
   text-transform: uppercase; }
 
+.soliloquy-next:focus {
+  opacity: .7;
+  -ms-filter: "alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  -moz-opacity: .7;
+  -khtml-opacity: .7; }
+
+.soliloquy-prev:focus {
+  opacity: .7;
+  -ms-filter: "alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  -moz-opacity: .7;
+  -khtml-opacity: .7; }
+
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a {
   font-size: 36px;
