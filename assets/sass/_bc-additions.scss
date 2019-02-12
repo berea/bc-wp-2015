@@ -716,3 +716,19 @@ li.gallery-icon {
   text-transform:uppercase;
 }
 
+.soliloquy-next:focus {
+  opacity: .7;
+  -ms-filter: "alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  -moz-opacity: .7;
+  -khtml-opacity: .7;
+}
+
+.soliloquy-prev:focus {
+  opacity: .7;
+  -ms-filter: "alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  -moz-opacity: .7;
+  -khtml-opacity: .7;
+}
+
