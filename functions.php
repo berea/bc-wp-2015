@@ -126,7 +126,7 @@ if ( !function_exists('berea_scripts') ) :
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
         	
 			// Concatonated Scripts
-			wp_enqueue_script( 'production.js?29412dfa65', get_template_directory_uri() . '/assets/js/production.js?29412dfa65', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?3368ef9d0c', get_template_directory_uri() . '/assets/js/production.js?3368ef9d0c', array( 'jquery' ), '1.0.0', false );
 
 
             // specific page script files to trigger analytics tracking event "rt"
@@ -183,7 +183,7 @@ if ( !function_exists('berea_scripts') ) :
 
 			// Main Style
 			if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
-				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?bdb74f56cc' );
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?fdda11cd1b' );
 			}
 			else {
 				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-stopgap.css?509d1a271c' );
@@ -195,7 +195,7 @@ if ( !function_exists('berea_scripts') ) :
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
 
 			// Concatenated Scripts
-			wp_enqueue_script( 'production.js?29412dfa65', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?3368ef9d0c', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
 
 			// Main Style
 			wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-min.css?e861c04ebd' );
