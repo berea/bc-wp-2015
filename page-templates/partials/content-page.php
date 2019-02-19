@@ -11,6 +11,7 @@
 	<header class="entry-header">
 
 		<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
+		<!-- CONTENT-PAGE -->
 		<?php
 			$categories = get_the_category();
 			$is_category_news = false;
@@ -20,15 +21,15 @@
 					$is_category_news = true;
 				}
 			}
-			if (get_current_blog_id() == 1 && $is_category_news == true){
+			//if ((get_current_blog_id() == 1 && $is_category_news == true) {
 				//$edited_date = the_modified_date();
-				$author = get_the_author();
-				echo "<div>";
-				echo "<p class='byline'> Posted: " . get_the_date() . "</p>";
-				echo "<br>";
-				echo "<p class='byline'> Author: " . $author . "</p>";
-				echo "</div>";
-			}
+			$author = get_the_author();
+			echo "<div>";
+			echo "<p class='byline'> Posted: " . get_the_date() . "</p>";
+			echo "<br>";
+			echo "<p class='byline'> Author: " . $author . "</p>";
+			echo "</div>";
+			//}
 		?>
 
 	</header><!-- .entry-header -->

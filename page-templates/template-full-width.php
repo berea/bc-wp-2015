@@ -11,6 +11,7 @@
 get_header(); ?>
 
 <main id="main" class="site-main" role="main">
+<!-- template file: template-full-width.php -->
 
     <div id="primary" class="content-area">
         <?php if ( have_posts() ) : ?>

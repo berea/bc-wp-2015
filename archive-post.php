@@ -10,6 +10,7 @@
 get_header(); ?>
 
 <main id="main" class="site-main" role="main">
+<!-- template file: archive-post.php -->
 
 	<div id="primary" class="content-area">
 

@@ -732,3 +732,41 @@ li.gallery-icon {
   -khtml-opacity: .7;
 }
 
+a.more-link {
+  text-transform:uppercase;
+  font-weight: bold;
+}
+div.nav-previous {
+  text-transform:uppercase;
+  font-weight: bold;
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+div.nav-next {
+  text-transform:uppercase;
+  font-weight: bold;
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+.page-numbers {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+.blog-roll-title {
+  font-size: 36px;
+  line-height: 1.1em;
+  padding: 0px 0px 15px 0px;
+  margin: 0px 0px 15px 0px;
+  font-weight: 700;
+  font-style: Normal;
+  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  letter-spacing: 1px;
+  color: #C25700;
+  text-align: left;
+  text-decoration: none;
+  border-bottom: 0px solid #C25700;
+}
+
