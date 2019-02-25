@@ -64,7 +64,6 @@ body { font-family: sans-serif; padding: 1em; }
 .left-panel {
   margin-left: 5px;
   padding: 25px;
-  background-color:red;
 }
 
 .ais-InstantSearch {
@@ -94,7 +93,15 @@ body { font-family: sans-serif; padding: 1em; }
   margin-bottom: 0.5em;
 }
 
-
+.h2-searchbar
+{
+font-size: 30px;
+    font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 300;
+    font-style: Normal;
+    text-decoration: underline;
+    color: #c75b12;
+}
 
 </style>
  
@@ -124,12 +131,13 @@ body { font-family: sans-serif; padding: 1em; }
 
 
 
-      <div id="secondary" class="left-panel">
+      <div id="secondary">
+        <div class="left-panel">
         <div id="clear-refinements"></div>
 
-        <h2 class="widget-title">Responsible Office 2</h2>
+        <h2 class="h2-searchbar">Responsible Office</h2>
         <div id="brand-list"></div>
-
+      </div>
 
       </div>
 
