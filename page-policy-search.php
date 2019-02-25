@@ -198,7 +198,7 @@ search.addWidget(
     container: '#hits',
     templates: {
       item: `
-        <a href = '{{url}}>
+        <a href = '{{url}}'>
         <div>
   
           <div class="hit-name">
