@@ -118,7 +118,7 @@ font-size: 30px;
 
 <main id="main" class="site-main" role="main">
 	
- 
+
 
          <div id="primary" class="right-panel">
 
@@ -150,7 +150,7 @@ font-size: 30px;
 
   </main>
 
-
+<?php get_footer(); ?>
  
 
     <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.32.0/dist/algoliasearchLite.min.js"></script>
