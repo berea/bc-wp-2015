@@ -121,6 +121,7 @@ if ( !function_exists('berea_scripts') ) :
 		#TODO: allow script debug after minify workflow is resolved */
 		if ( TRUE || SCRIPT_DEBUG || WP_DEBUG ) :
 			// jQuery 2.1.1 - required for megadropdown scripts
+
         	wp_deregister_script('jquery');
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
         	
@@ -158,7 +159,7 @@ if ( !function_exists('berea_scripts') ) :
 
   			?>
 
-  			<script>analytics.track('admissions');</script>
+  			<script>analytics.track('admissionstrack');</script>
 
   			 <?php
 
