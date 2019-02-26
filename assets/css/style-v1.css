@@ -3678,6 +3678,12 @@ div.nav-next {
   text-decoration: none;
   border-bottom: 0px solid #C25700; }
 
+a:focus {
+  color: #ffffff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  opacity: 0.6; }
+
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a {
   font-size: 36px;

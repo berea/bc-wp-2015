@@ -769,4 +769,10 @@ div.nav-next {
   text-decoration: none;
   border-bottom: 0px solid #C25700;
 }
+a:focus {
+  color: #ffffff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+}
 
