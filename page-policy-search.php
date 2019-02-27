@@ -29,7 +29,7 @@ get_header(); ?>
       href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"
     />
 <style>
-body { font-family: sans-serif; padding: 1em; }
+
 
 .ais-ClearRefinements {
   margin: 1em 0;
@@ -74,6 +74,10 @@ body { font-family: sans-serif; padding: 1em; }
   background-color: white;
 }
 
+input[type=text]{
+  padding: 0.5em 0.5em 0.5em 2em;
+}
+
 .ais-Hits-item {
   margin-bottom: 1em;
   width: calc(100% - 1rem);
@@ -91,6 +95,10 @@ body { font-family: sans-serif; padding: 1em; }
   color: #888;
   font-size: 14px;
   margin-bottom: 0.5em;
+}
+
+label {
+  font-weight: normal;
 }
 
 .h2-searchbar
@@ -120,12 +128,15 @@ font-size: 30px;
 	
 
 
-         <div id="primary" class="right-panel">
+         <div id="primary" class="content-area">
+          <div class="right-panel">
 
           <h1 class="entry-title" itemprop="name">Policy Search</h1>
         <div id="searchbox" class="ais-SearchBox"></div>
         <div id="hits"></div>
         <div id="pagination"></div>
+
+      </div>
       </div>
 
 
