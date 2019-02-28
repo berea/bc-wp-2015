@@ -9,7 +9,7 @@
 	<header class="entry-header">
 
 
-		<h1 class="entry-title" itemprop="name" ><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+		<h2 class="blog-roll-title" itemprop="name" ><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 		<!-- CONTENT -->
 
 		<?php if ( 'post' == get_post_type() ) : ?>
