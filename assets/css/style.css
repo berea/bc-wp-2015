@@ -3664,7 +3664,7 @@ div.nav-next {
   font-weight: bold;
   font-size: 14px; }
 
-.blog-roll-title {
+h2.blog-roll-title, h2.blog-roll-title a {
   font-size: 36px;
   line-height: 1.1em;
   padding: 0px 0px 15px 0px;
@@ -3673,7 +3673,7 @@ div.nav-next {
   font-style: Normal;
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   letter-spacing: 1px;
-  color: #C25700;
+  color: #c25700;
   text-align: left;
   text-decoration: none;
   border-bottom: 0px solid #C25700; }
@@ -3683,6 +3683,57 @@ a:focus {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
   filter: alpha(opacity=60);
   opacity: 0.6; }
+
+.submit-custom {
+  background: #c75b12;
+  border-radius: 20px;
+  box-shadow: none;
+  clear: both;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  margin: 10px 0;
+  padding: 20px;
+  transition: all 200ms ease-in-out; }
+
+.submit-custom:focus {
+  background: #c75b12;
+  border-radius: 20px;
+  box-shadow: none;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  padding: 20px; }
+
+.submit-custom:hover {
+  background: #c75b12;
+  border-radius: 20px;
+  box-shadow: none;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  padding: 20px; }
+
+#submit {
+  background: #c75b12;
+  border-radius: 6px;
+  border: 0px;
+  box-shadow: none;
+  clear: both;
+  font-family: "Open Sans";
+  margin: 10px 0;
+  padding: 20px;
+  transition: all 200ms ease-in-out; }
+
+#submit:focus {
+  background: #db6f26;
+  border-radius: 6px;
+  border: 0px;
+  box-shadow: none;
+  font-family: "Open Sans";
+  padding: 20px; }
+
+#submit:hover {
+  background: #db6f26;
+  border-radius: 6px;
+  border: 0px;
+  box-shadow: none;
+  font-family: "Open Sans";
+  padding: 20px; }
 
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a {
