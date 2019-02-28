@@ -21,15 +21,16 @@
 					$is_category_news = true;
 				}
 			}
+			if (is_single()) {
 			//if ((get_current_blog_id() == 1 && $is_category_news == true) {
 				//$edited_date = the_modified_date();
-			$author = get_the_author();
-			echo "<div>";
-			echo "<p class='byline'> Posted: " . get_the_date() . "</p>";
-			echo "<br>";
-			echo "<p class='byline'> Author: " . $author . "</p>";
-			echo "</div>";
-			//}
+				$author = get_the_author();
+				echo "<div>";
+				echo "<p class='byline'> Posted: " . get_the_date() . "</p>";
+				echo "<br>";
+				echo "<p class='byline'> Author: " . $author . "</p>";
+				echo "</div>";
+			}
 		?>
 
 	</header><!-- .entry-header -->
