@@ -131,7 +131,7 @@ font-size: 30px;
          <div id="primary" class="content-area">
           <div class="right-panel">
 
-          <h1 class="entry-title" itemprop="name">Policy Search</h1>
+          <h1 class="entry-title" itemprop="name">People Search</h1>
         <div id="searchbox" class="ais-SearchBox"></div>
         <div id="hits"></div>
         <div id="pagination"></div>
@@ -146,7 +146,7 @@ font-size: 30px;
         <div class="left-panel">
         <div id="clear-refinements"></div>
 
-        <h2 class="h2-searchbar">Responsible Office</h2>
+        <h2 class="h2-searchbar">Department</h2>
         <div id="brand-list"></div>
       </div>
 
@@ -179,10 +179,9 @@ const search = instantsearch({
 */
 
 const search = instantsearch({
-  indexName: 'policy_search',
-  searchClient: algoliasearch('42PGXXD20K', '943c926b0cdbacf1e42679377f098fcb'),
+  indexName: 'people-search',
+  searchClient: algoliasearch('42PGXXD20K', 'a69d01eef0ac31b44301e3095904ae19'),
 });
-
 
 
 search.addWidget(
@@ -200,8 +199,8 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.refinementList({
     container: '#brand-list',
-    attribute: 'responsible_office',
-    limit: 100,
+    attribute: 'department',
+    limit: 50,
   })
 );
 
@@ -210,18 +209,18 @@ search.addWidget(
     container: '#hits',
     templates: {
       item: `
-        <a href = '{{url}}'>
         <div>
   
           <div class="hit-name">
-            {{#helpers.highlight}}{ "attribute": "title" }{{/helpers.highlight}}
+            {{#helpers.highlight}}{ "attribute": "DisplayName" }{{/helpers.highlight}}
           </div>
           <div class="hit-description">
-            {{#helpers.highlight}}{ "attribute": "description" }{{/helpers.highlight}}
+            {{#helpers.highlight}}{ "attribute": "title" }{{/helpers.highlight}}
+            <br>Phone: {{department}}
+            <br>Phone: 859-985-{{telephoneNumber}}
+            <br>Email: {{mail}}
           </div>
-          <div class="hit-price">Last Revision: {{last_revision}}</div>
         </div>
-        </a>
       `,
     },
   })
