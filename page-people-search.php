@@ -215,9 +215,9 @@ search.addWidget(
             {{#helpers.highlight}}{ "attribute": "DisplayName" }{{/helpers.highlight}}
           </div>
           <div class="hit-description">
-            {{#helpers.highlight}}{ "attribute": "title" }{{/helpers.highlight}}
-            <br>Phone: {{department}}
-            <br>Phone: 859-985-{{telephoneNumber}}
+            Title: {{#helpers.highlight}}{ "attribute": "title" }{{/helpers.highlight}}
+            <br>Department: {{department}}
+            <br>Phone Ext.: {{telephoneNumber}}
             <br>Email: {{mail}}
           </div>
         </div>
