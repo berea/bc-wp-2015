@@ -1,7 +1,11 @@
 .imghover{
-  cursor:pointer;}
-  .imghover:hover{
-    opacity:0.7;
+  cursor:pointer;
+}
+.imghover:hover{
+  opacity:0.7;
+}
+.imghover:focus{
+  opacity:0.7;
 }
 
 a.gc-font{
@@ -555,6 +559,24 @@ right: 11px;
   text-decoration:none;
   display: inline-block;
 }
+.no-touch .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a:focus {
+  color: rgba(10, 10, 10, 0.7);
+  visibility: visible;
+  font-size: 1.0rem;
+}
+.no-touch .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a:focus::after {
+  opacity: 1;
+}
+.no-touch .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a:focus span.gc {
+  -webkit-transform: translateX(-5px);
+  -moz-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  -o-transform: translateX(-5px);
+  transform: translateX(-5px);
+  color: rgba(10, 10, 10, 0.7);
+  text-decoration:none;
+  display: inline-block;
+}
 .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:first-of-type a::after,
 .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:first-of-type span.gc {
   -webkit-animation-delay: 0.05s;
@@ -589,7 +611,9 @@ right: 11px;
 div[id^="toggleit"] {
   display: none; }
 
-
+.vc_tta-title-text {
+  color: #333333;
+}
 
 /* -------------------------------- 
 
@@ -724,6 +748,8 @@ keyframes
     font-size: 44px !important;}
   p.gc-title-appalachia {
     margin-left: 30px;
-    font-size: 44px !important;}
+    font-size: 44px !important;
   }
+}
+
 
