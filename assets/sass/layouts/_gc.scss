@@ -1,9 +1,11 @@
 .imghover{
-  cursor:pointer;}
-  .imghover:hover{
-    opacity:0.7;
-  .imghover:focus{
-    opacity:0.7;
+  cursor:pointer;
+}
+.imghover:hover{
+  opacity:0.7;
+}
+.imghover:focus{
+  opacity:0.7;
 }
 
 a.gc-font{
@@ -749,3 +751,5 @@ keyframes
     font-size: 44px !important;
   }
 }
+
+
