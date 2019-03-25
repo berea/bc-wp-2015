@@ -3924,186 +3924,13 @@ This gives more size options for when the standard h1/h2 isn't appropriate.*/
   cursor: pointer; }
 
 .imghover:hover {
-  opacity: 0.7; }
-
-a.gc-font {
-  font-weight: bold;
-  text-align: left;
-  /*padding: 5px 176px 10px 15px;*/
-  font-size: 33px;
-  font-family: 'klinic_slabmedium';
-  text-align: left;
-  color: #c75b12;
-  background-color: white; }
-
-.entry-content strong {
-  font-weight: bold;
-  font-size: 1em; }
-
-.entry-content em {
-  font-style: italic;
-  fornt-size: 1em; }
-
-.entry-content body {
-  padding: 0px 0 50px 0;
-  font-size: 16px;
-  min-height: 100%;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 25px;
-  background-color: #fffef9; }
-
-.entry-content h1 {
-  font-size: 36px;
-  margin: 0px 0px 15px 0px;
-  font-weight: 700;
-  font-style: Normal;
-  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  letter-spacing: 1px;
-  color: #C75B12; }
-
-.entry-content h2 {
-  font-size: 32px;
-  line-height: 35px;
-  margin: 0px 0px 25px 0px;
-  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 300;
-  font-style: Normal;
-  color: #c75b12;
-  letter-spacing: 3px; }
-
-.entry-content h3 {
-  font-size: 28px;
-  line-height: 30px;
-  margin: 0px 0px 19px 0px;
-  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 300;
-  font-style: Normal;
-  color: #739600;
-  letter-spacing: 1px; }
-
-.entry-content h4 {
-  margin-bottom: 25px;
-  font-weight: 300;
-  font-style: Normal;
-  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  letter-spacing: 1px;
-  font-size: 25px;
-  color: #93b1cc;
-  line-height: 25px;
-  color: #005A8B; }
-
-.entry-content h5 {
-  margin: 0px 0px 25px 0px;
-  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 300;
-  font-style: Normal;
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 20px;
-  color: #333333; }
-
-.entry-content p {
-  margin: 0px 0px 25px 0px;
-  text-transform: inherit;
-  font-size: 16px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
-
-.entry-content p.commitment-quote {
-  font-size: 38px;
-  font-family: 'open sans';
-  line-height: 38px;
-  text-align: left; }
-
-.entry-content p.commitment-quote-author {
-  font-size: 20px;
-  font-family: 'open sans';
-  line-height: 50px;
-  text-align: right; }
-
-.entry-content p.commitment-desc {
-  font-size: 49px;
-  font-weight: 500;
-  line-height: 49px;
-  text-align: right;
-  font-family: 'klinic_slabmedium'; }
-
-@media only screen and (min-width: 1024px) {
-  .entry-content p.commitment-quote {
-    font-size: 38px;
-    font-family: 'klinic slab bold';
-    line-height: 38px;
-    text-align: center; }
-  .entry-content p.commitment-desc {
-    font-size: 49px;
-    font-family: 'klinic_slabmedium';
-    line-height: 49px;
-    font-weight: 500;
-    text-align: right; }
-  .entry-content p.commitment-quote-author {
-    font-size: 20px;
-    font-family: 'open sans';
-    line-height: 50px;
-    text-align: right; } }
-
-.entry-content p.intro {
-  font-size: 16px;
-  line-height: 29px;
-  margin: 0px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #005a8b;
-  padding: 5px; }
-
-.gc-hero {
-  background: url("/the-great-commitments/wp-content/uploads/sites/154/2017/08/main_header.jpg");
-  background-size: cover;
-  text-align: right;
-  height: 35vw;
-  width: 100vw;
-  position: relative; }
-
-.hero-textblock {
-  position: absolute;
-  bottom: 80px;
-  left: 50%;
-  margin: 0;
-  margin-left: -490px;
-  max-width: 980px;
-  width: 100%;
-  background-color: transparent; }
-
-.gc-hero h1 {
-  font-family: "Open Sans Condensed";
-  font-size: 36pt;
-  font-style: bold;
-  color: #FFFFFE;
-  font-weight: 600;
-  text-shadow: 0 0 10px #000;
-  width: 90%;
-  margin: 0 auto; }
-
-@media screen and (max-width: 769px) {
-  .hero-textblock {
-    bottom: 30px;
-    left: 460px; }
-  .gc-hero h1 {
-    font-size: 24pt; } }
-
-#double-space {
-  line-height: 30px; }
-
-#responsive_table {
-  overflow-x: auto; }
-
-/* -------------------------------- 
+  opacity: 0.7;
+  /* -------------------------------- 
 
 From the GreatCommitments-style.css file
 
 -------------------------------- */
-/*
+  /*
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -4128,7 +3955,7 @@ img {
   max-width: 100%;
 }
 */
-/* -------------------------------- 
+  /* -------------------------------- 
 
 Stretchy Nav style - common to:
  - basic navigation
@@ -4136,20 +3963,7 @@ Stretchy Nav style - common to:
  - edit-content navigation
 
 -------------------------------- */
-.gc-cd-stretchy-wrapper {
-  position: relative; }
-
-.gc-cd-stretchy-parent {
-  position: relative;
-  /* background-color: red;*/ }
-
-.gc-cd-stretchy-child {
-  position: fixed;
-  z-index: 9;
-  right: 0px;
-  top: 0px; }
-
-/*
+  /*
 .gc-cd-stretchy-child-again {
   position: absolute;
   z-index: 2;
@@ -4161,276 +3975,402 @@ Stretchy Nav style - common to:
 
 }
 */
-.gc-cd-stretchy-nav {
-  position: fixed;
-  /* z-index: 2;*/
-  z-index: 12;
-  bottom: auto;
-  right: 0px;
-  /*transform: translateX(200%); */
-  pointer-events: none;
-  /* background-color:blue;*/ }
-
-.gc-cd-stretchy-nav .gc-stretchy-nav-bg {
-  /* this is the stretching navigation background */
-  position: absolute;
-  /*z-index: 1;*/
-  z-index: 11;
-  top: 40px;
-  right: 0;
-  width: 60px;
-  height: 60px;
-  /* 
-    height: 100%;
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);*/
-  /* can remove if need be*/
-  /* Dan - changed border-radius and background */
-  border-radius: 30px 0px 0px 30px;
-  background: #C75B12;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  /*add that back, if need be */
-  transition: height 0.2s, box-shadow 0.2s; }
-
-.gc-cd-stretchy-nav.gc-nav-is-visible {
-  pointer-events: auto; }
-
-.gc-cd-stretchy-nav.gc-nav-is-visible .gc-stretchy-nav-bg {
-  height: 94%;
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); }
-
-.gc-cd-nav-trigger {
-  position: absolute;
-  z-index: 13;
-  top: 40px;
-  right: 0;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  /* replace text with image */
-  overflow: hidden;
-  white-space: nowrap;
-  color: transparent;
-  pointer-events: auto; }
-
-.gc-cd-nav-trigger span.gc, .gc-cd-nav-trigger span.gc::after, .gc-cd-nav-trigger span.gc::before {
-  /* this is the hamburger icon */
-  position: absolute;
-  width: 16px;
-  height: 2px;
-  background-color: #ffffff; }
-
-.gc-cd-nav-trigger span.gc {
-  /* middle line of the hamburger icon */
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  transform: translateX(-50%) translateY(-50%);
-  transition: background-color 0.2s; }
-
-.gc-cd-nav-trigger span.gc::after, .gc-cd-nav-trigger span.gc::before {
-  /* top and bottom lines of the hamburger icon */
-  content: '';
-  top: 0;
-  left: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transition: transform 0.2s; }
-
-.gc-cd-nav-trigger span.gc::before {
-  transform: translateY(-6px); }
-
-.gc-cd-nav-trigger span.gc::after {
-  transform: translateY(6px); }
-
-.no-touch .gc-cd-nav-trigger:hover ~ .gc-stretchy-nav-bg {
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); }
-
-.gc-nav-is-visible .gc-cd-nav-trigger span.gc {
-  background-color: transparent; }
-
-.gc-nav-is-visible .gc-cd-nav-trigger span.gc::before {
-  transform: rotate(-45deg); }
-
-.gc-nav-is-visible .gc-cd-nav-trigger span.gc::after {
-  transform: rotate(45deg); }
-
-.gc-cd-stretchy-nav li.gc {
-  list-style-type: none; }
-
-.gc-cd-stretchy-nav ul.gc {
-  list-style: none;
-  position: relative;
-  z-index: 12;
-  padding: 100px 0 0;
-  visibility: visible;
-  /*changed from hidden*/
-  transition: visibility 0.3s;
-  text-align: right; }
-
-.gc-cd-stretchy-nav ul.gc a {
-  /*visibility: hidden;*/
-  position: relative;
-  display: block;
-  height: 35px;
-  line-height: 35px;
-  padding: 0 calc(1em + 60px) 0 1em;
-  color: rgba(10, 10, 10, 0.7);
-  /*name of item*/
-  font-size: 0rem;
-  transition: color 0.2s; }
-
-.gc-cd-stretchy-nav ul.gc a::after {
-  /* navigation item icons */
-  content: '';
-  position: absolute;
-  height: 25px;
-  width: 25px;
-  right: 13px;
-  top: 50%;
-  transform: translateY(-50%) scale(0);
-  opacity: .6;
-  background: url(../images/cd-sprite-1-Great-Commitments.svg) no-repeat 0 0; }
-
-.gc-cd-stretchy-nav ul.gc a.cross::after {
-  height: 32px; }
-
-.gc-cd-stretchy-nav ul.gc a.hat::after {
-  width: 35px;
-  right: 10px; }
-
-.gc-cd-stretchy-nav ul.gc a.chatbubbles::after {
-  width: 30px;
-  right: 11px; }
-
-.gc-cd-stretchy-nav ul.gc a.quilt::after {
-  width: 32px;
-  height: 32px;
-  right: 11px; }
-
-.gc-cd-stretchy-nav ul.gc a::before {
-  /* line visible next to the active navigation item */
-  content: '';
-  position: absolute;
-  width: 3px;
-  height: 16px;
-  top: 50%;
-  right: 60px;
-  transform: translateX(3px) translateY(-50%) scaleY(0);
-  background-color: #643107;
-  /*item highlight*/ }
-
-.gc-cd-stretchy-nav ul.gc li:first-of-type a::after {
-  /* change custom icon using image sprites */
-  background-position: 0 0; }
-
-.gc-cd-stretchy-nav ul.gc li:nth-of-type(2) a::after {
-  background-position: -35px 0; }
-
-.gc-cd-stretchy-nav ul.gc li:nth-of-type(3) a::after {
-  background-position: -60px 0; }
-
-.gc-cd-stretchy-nav ul.gc li:nth-of-type(4) a::after {
-  background-position: -90px 0; }
-
-.gc-cd-stretchy-nav ul.gc li:nth-of-type(5) a::after {
-  background-position: -120px 0; }
-
-.gc-cd-stretchy-nav ul.gc li:nth-of-type(6) a::after {
-  background-position: -150px 0; }
-
-.gc-cd-stretchy-nav ul.gc li:nth-of-type(7) a::after {
-  background-position: -180px 0; }
-
-.gc-cd-stretchy-nav ul.gc li:nth-of-type(8) a::after {
-  background-position: -210px 0; }
-
-.gc-cd-stretchy-nav ul.gc span.gc {
-  /* navigation item labels */
-  display: block;
-  opacity: 0;
-  transform: translateX(-25px); }
-
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc {
-  visibility: visible; }
-
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a::after {
-  /* navigation item icons */
-  transform: translateY(-50%) scale(1);
-  animation: scaleIn 0.15s backwards;
-  transition: opacity 0.2s; }
-
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a.active {
-  color: #ffffff; }
-
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a.active::after {
-  opacity: 1; }
-
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a.active::before {
-  transform: translateX(3px) translateY(-50%) scaleY(1);
-  transition: transform 0.15s 0.3s; }
-
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc span.gc {
-  opacity: 1;
-  transform: translateX(0);
-  animation: slideIn 0.15s backwards;
-  transition: transform 0.2s; }
-
-.no-touch .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a:hover {
-  color: rgba(10, 10, 10, 0.7);
-  visibility: visible;
-  font-size: 1.0rem; }
-
-.no-touch .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a:hover::after {
-  opacity: 1; }
-
-.no-touch .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a:hover span.gc {
-  transform: translateX(-5px);
-  color: rgba(10, 10, 10, 0.7);
-  text-decoration: none;
-  display: inline-block; }
-
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:first-of-type a::after,
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:first-of-type span.gc {
-  animation-delay: 0.05s; }
-
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(2) a::after,
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(2) span.gc {
-  animation-delay: 0.1s; }
-
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(3) a::after,
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(3) span.gc {
-  animation-delay: 0.15s; }
-
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(4) a::after,
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(4) span.gc {
-  animation-delay: 0.2s; }
-
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(5) a::after,
-.gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(5) span.gc {
-  animation-delay: 0.25s; }
-
-div[id^="toggleit"] {
-  display: none; }
-
-/* -------------------------------- 
+  /* -------------------------------- 
 
 main content basic style
 
 -------------------------------- */
-.gc-cd-main-content {
-  position: relative;
-  z-index: 1;
-  min-height: 10vh;
-  padding: 100px 0;
-  /*background-color: #003c5d;*/
-  /*backgroun-color:lightgrey;*/ }
-
-/* -------------------------------- 
+  /* -------------------------------- 
 
 keyframes
 
--------------------------------- */
+-------------------------------- */ }
+  .imghover:hover .imghover:focus {
+    opacity: 0.7; }
+  .imghover:hover a.gc-font {
+    font-weight: bold;
+    text-align: left;
+    /*padding: 5px 176px 10px 15px;*/
+    font-size: 33px;
+    font-family: 'klinic_slabmedium';
+    text-align: left;
+    color: #c75b12;
+    background-color: white; }
+  .imghover:hover .entry-content strong {
+    font-weight: bold;
+    font-size: 1em; }
+  .imghover:hover .entry-content em {
+    font-style: italic;
+    fornt-size: 1em; }
+  .imghover:hover .entry-content body {
+    padding: 0px 0 50px 0;
+    font-size: 16px;
+    min-height: 100%;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 25px;
+    background-color: #fffef9; }
+  .imghover:hover .entry-content h1 {
+    font-size: 36px;
+    margin: 0px 0px 15px 0px;
+    font-weight: 700;
+    font-style: Normal;
+    font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    letter-spacing: 1px;
+    color: #C75B12; }
+  .imghover:hover .entry-content h2 {
+    font-size: 32px;
+    line-height: 35px;
+    margin: 0px 0px 25px 0px;
+    font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 300;
+    font-style: Normal;
+    color: #c75b12;
+    letter-spacing: 3px; }
+  .imghover:hover .entry-content h3 {
+    font-size: 28px;
+    line-height: 30px;
+    margin: 0px 0px 19px 0px;
+    font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 300;
+    font-style: Normal;
+    color: #739600;
+    letter-spacing: 1px; }
+  .imghover:hover .entry-content h4 {
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-style: Normal;
+    font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: #93b1cc;
+    line-height: 25px;
+    color: #005A8B; }
+  .imghover:hover .entry-content h5 {
+    margin: 0px 0px 25px 0px;
+    font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 300;
+    font-style: Normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #333333; }
+  .imghover:hover .entry-content p {
+    margin: 0px 0px 25px 0px;
+    text-transform: inherit;
+    font-size: 16px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+  .imghover:hover .entry-content p.commitment-quote {
+    font-size: 38px;
+    font-family: 'open sans';
+    line-height: 38px;
+    text-align: left; }
+  .imghover:hover .entry-content p.commitment-quote-author {
+    font-size: 20px;
+    font-family: 'open sans';
+    line-height: 50px;
+    text-align: right; }
+  .imghover:hover .entry-content p.commitment-desc {
+    font-size: 49px;
+    font-weight: 500;
+    line-height: 49px;
+    text-align: right;
+    font-family: 'klinic_slabmedium'; }
+  @media only screen and (min-width: 1024px) {
+    .imghover:hover .entry-content p.commitment-quote {
+      font-size: 38px;
+      font-family: 'klinic slab bold';
+      line-height: 38px;
+      text-align: center; }
+    .imghover:hover .entry-content p.commitment-desc {
+      font-size: 49px;
+      font-family: 'klinic_slabmedium';
+      line-height: 49px;
+      font-weight: 500;
+      text-align: right; }
+    .imghover:hover .entry-content p.commitment-quote-author {
+      font-size: 20px;
+      font-family: 'open sans';
+      line-height: 50px;
+      text-align: right; } }
+  .imghover:hover .entry-content p.intro {
+    font-size: 16px;
+    line-height: 29px;
+    margin: 0px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #005a8b;
+    padding: 5px; }
+  .imghover:hover .gc-hero {
+    background: url("/the-great-commitments/wp-content/uploads/sites/154/2017/08/main_header.jpg");
+    background-size: cover;
+    text-align: right;
+    height: 35vw;
+    width: 100vw;
+    position: relative; }
+  .imghover:hover .hero-textblock {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    margin: 0;
+    margin-left: -490px;
+    max-width: 980px;
+    width: 100%;
+    background-color: transparent; }
+  .imghover:hover .gc-hero h1 {
+    font-family: "Open Sans Condensed";
+    font-size: 36pt;
+    font-style: bold;
+    color: #FFFFFE;
+    font-weight: 600;
+    text-shadow: 0 0 10px #000;
+    width: 90%;
+    margin: 0 auto; }
+  @media screen and (max-width: 769px) {
+    .imghover:hover .hero-textblock {
+      bottom: 30px;
+      left: 460px; }
+    .imghover:hover .gc-hero h1 {
+      font-size: 24pt; } }
+  .imghover:hover #double-space {
+    line-height: 30px; }
+  .imghover:hover #responsive_table {
+    overflow-x: auto; }
+  .imghover:hover .gc-cd-stretchy-wrapper {
+    position: relative; }
+  .imghover:hover .gc-cd-stretchy-parent {
+    position: relative;
+    /* background-color: red;*/ }
+  .imghover:hover .gc-cd-stretchy-child {
+    position: fixed;
+    z-index: 9;
+    right: 0px;
+    top: 0px; }
+  .imghover:hover .gc-cd-stretchy-nav {
+    position: fixed;
+    /* z-index: 2;*/
+    z-index: 12;
+    bottom: auto;
+    right: 0px;
+    /*transform: translateX(200%); */
+    pointer-events: none;
+    /* background-color:blue;*/ }
+  .imghover:hover .gc-cd-stretchy-nav .gc-stretchy-nav-bg {
+    /* this is the stretching navigation background */
+    position: absolute;
+    /*z-index: 1;*/
+    z-index: 11;
+    top: 40px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    /* 
+    height: 100%;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);*/
+    /* can remove if need be*/
+    /* Dan - changed border-radius and background */
+    border-radius: 30px 0px 0px 30px;
+    background: #C75B12;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    /*add that back, if need be */
+    transition: height 0.2s, box-shadow 0.2s; }
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible {
+    pointer-events: auto; }
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible .gc-stretchy-nav-bg {
+    height: 94%;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); }
+  .imghover:hover .gc-cd-nav-trigger {
+    position: absolute;
+    z-index: 13;
+    top: 40px;
+    right: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    /* replace text with image */
+    overflow: hidden;
+    white-space: nowrap;
+    color: transparent;
+    pointer-events: auto; }
+  .imghover:hover .gc-cd-nav-trigger span.gc, .imghover:hover .gc-cd-nav-trigger span.gc::after, .imghover:hover .gc-cd-nav-trigger span.gc::before {
+    /* this is the hamburger icon */
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background-color: #ffffff; }
+  .imghover:hover .gc-cd-nav-trigger span.gc {
+    /* middle line of the hamburger icon */
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    transition: background-color 0.2s; }
+  .imghover:hover .gc-cd-nav-trigger span.gc::after, .imghover:hover .gc-cd-nav-trigger span.gc::before {
+    /* top and bottom lines of the hamburger icon */
+    content: '';
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 0.2s; }
+  .imghover:hover .gc-cd-nav-trigger span.gc::before {
+    transform: translateY(-6px); }
+  .imghover:hover .gc-cd-nav-trigger span.gc::after {
+    transform: translateY(6px); }
+  .imghover:hover .no-touch .gc-cd-nav-trigger:hover ~ .gc-stretchy-nav-bg {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); }
+  .imghover:hover .gc-nav-is-visible .gc-cd-nav-trigger span.gc {
+    background-color: transparent; }
+  .imghover:hover .gc-nav-is-visible .gc-cd-nav-trigger span.gc::before {
+    transform: rotate(-45deg); }
+  .imghover:hover .gc-nav-is-visible .gc-cd-nav-trigger span.gc::after {
+    transform: rotate(45deg); }
+  .imghover:hover .gc-cd-stretchy-nav li.gc {
+    list-style-type: none; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc {
+    list-style: none;
+    position: relative;
+    z-index: 12;
+    padding: 100px 0 0;
+    visibility: visible;
+    /*changed from hidden*/
+    transition: visibility 0.3s;
+    text-align: right; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc a {
+    /*visibility: hidden;*/
+    position: relative;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 calc(1em + 60px) 0 1em;
+    color: rgba(10, 10, 10, 0.7);
+    /*name of item*/
+    font-size: 0rem;
+    transition: color 0.2s; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc a::after {
+    /* navigation item icons */
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    opacity: .6;
+    background: url(../images/cd-sprite-1-Great-Commitments.svg) no-repeat 0 0; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc a.cross::after {
+    height: 32px; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc a.hat::after {
+    width: 35px;
+    right: 10px; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc a.chatbubbles::after {
+    width: 30px;
+    right: 11px; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc a.quilt::after {
+    width: 32px;
+    height: 32px;
+    right: 11px; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc a::before {
+    /* line visible next to the active navigation item */
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 16px;
+    top: 50%;
+    right: 60px;
+    transform: translateX(3px) translateY(-50%) scaleY(0);
+    background-color: #643107;
+    /*item highlight*/ }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc li:first-of-type a::after {
+    /* change custom icon using image sprites */
+    background-position: 0 0; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc li:nth-of-type(2) a::after {
+    background-position: -35px 0; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc li:nth-of-type(3) a::after {
+    background-position: -60px 0; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc li:nth-of-type(4) a::after {
+    background-position: -90px 0; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc li:nth-of-type(5) a::after {
+    background-position: -120px 0; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc li:nth-of-type(6) a::after {
+    background-position: -150px 0; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc li:nth-of-type(7) a::after {
+    background-position: -180px 0; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc li:nth-of-type(8) a::after {
+    background-position: -210px 0; }
+  .imghover:hover .gc-cd-stretchy-nav ul.gc span.gc {
+    /* navigation item labels */
+    display: block;
+    opacity: 0;
+    transform: translateX(-25px); }
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc {
+    visibility: visible; }
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a::after {
+    /* navigation item icons */
+    transform: translateY(-50%) scale(1);
+    animation: scaleIn 0.15s backwards;
+    transition: opacity 0.2s; }
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a.active {
+    color: #ffffff; }
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a.active::after {
+    opacity: 1; }
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a.active::before {
+    transform: translateX(3px) translateY(-50%) scaleY(1);
+    transition: transform 0.15s 0.3s; }
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc span.gc {
+    opacity: 1;
+    transform: translateX(0);
+    animation: slideIn 0.15s backwards;
+    transition: transform 0.2s; }
+  .imghover:hover .no-touch .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a:hover {
+    color: rgba(10, 10, 10, 0.7);
+    visibility: visible;
+    font-size: 1.0rem; }
+  .imghover:hover .no-touch .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a:hover::after {
+    opacity: 1; }
+  .imghover:hover .no-touch .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a:hover span.gc {
+    transform: translateX(-5px);
+    color: rgba(10, 10, 10, 0.7);
+    text-decoration: none;
+    display: inline-block; }
+  .imghover:hover .no-touch .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a:focus {
+    color: rgba(10, 10, 10, 0.7);
+    visibility: visible;
+    font-size: 1.0rem; }
+  .imghover:hover .no-touch .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a:focus::after {
+    opacity: 1; }
+  .imghover:hover .no-touch .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc a:focus span.gc {
+    transform: translateX(-5px);
+    color: rgba(10, 10, 10, 0.7);
+    text-decoration: none;
+    display: inline-block; }
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:first-of-type a::after,
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:first-of-type span.gc {
+    animation-delay: 0.05s; }
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(2) a::after,
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(2) span.gc {
+    animation-delay: 0.1s; }
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(3) a::after,
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(3) span.gc {
+    animation-delay: 0.15s; }
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(4) a::after,
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(4) span.gc {
+    animation-delay: 0.2s; }
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(5) a::after,
+  .imghover:hover .gc-cd-stretchy-nav.gc-nav-is-visible ul.gc li:nth-of-type(5) span.gc {
+    animation-delay: 0.25s; }
+  .imghover:hover div[id^="toggleit"] {
+    display: none; }
+  .imghover:hover .gc-cd-main-content {
+    position: relative;
+    z-index: 1;
+    min-height: 10vh;
+    padding: 100px 0;
+    /*background-color: #003c5d;*/
+    /*backgroun-color:lightgrey;*/ }
 
 @keyframes scaleIn {
   from {
@@ -4445,51 +4385,52 @@ keyframes
   to {
     opacity: 1;
     transform: translateX(0); } }
-
-@media only screen and (max-device-width: 600px) {
-  .gc-education {
-    text-align: center !important; }
-  .gc-liberalarts {
-    text-align: center !important; }
-  .gc-christian {
-    text-align: center !important; }
-  .gc-labor {
-    text-align: center !important; }
-  .gc-kinship {
-    text-align: center !important; }
-  .gc-democratic {
-    text-align: center !important; }
-  .gc-sustainability {
-    text-align: center !important; }
-  .gc-appalachia {
-    text-align: center !important; }
-  .entry-content p.commitment-desc {
-    font-size: 34px;
-    line-height: 36px; }
-  p.gc-title-education {
-    margin-left: 30px;
-    font-size: 44px !important; }
-  p.gc-title-liberalarts {
-    margin-left: 30px;
-    font-size: 44px !important; }
-  p.gc-title-christian {
-    margin-left: 30px;
-    font-size: 44px !important; }
-  p.gc-title-labor {
-    margin-left: 30px;
-    font-size: 44px !important; }
-  p.gc-title-kinship {
-    margin-left: 30px;
-    font-size: 44px !important; }
-  p.gc-title-gender {
-    margin-left: 30px;
-    font-size: 44px !important; }
-  p.gc-title-sustainability {
-    margin-left: 30px;
-    font-size: 44px !important; }
-  p.gc-title-appalachia {
-    margin-left: 30px;
-    font-size: 44px !important; } }
+  .imghover:hover .vc_tta-title-text {
+    color: #333333; }
+  @media only screen and (max-device-width: 600px) {
+    .imghover:hover .gc-education {
+      text-align: center !important; }
+    .imghover:hover .gc-liberalarts {
+      text-align: center !important; }
+    .imghover:hover .gc-christian {
+      text-align: center !important; }
+    .imghover:hover .gc-labor {
+      text-align: center !important; }
+    .imghover:hover .gc-kinship {
+      text-align: center !important; }
+    .imghover:hover .gc-democratic {
+      text-align: center !important; }
+    .imghover:hover .gc-sustainability {
+      text-align: center !important; }
+    .imghover:hover .gc-appalachia {
+      text-align: center !important; }
+    .imghover:hover .entry-content p.commitment-desc {
+      font-size: 34px;
+      line-height: 36px; }
+    .imghover:hover p.gc-title-education {
+      margin-left: 30px;
+      font-size: 44px !important; }
+    .imghover:hover p.gc-title-liberalarts {
+      margin-left: 30px;
+      font-size: 44px !important; }
+    .imghover:hover p.gc-title-christian {
+      margin-left: 30px;
+      font-size: 44px !important; }
+    .imghover:hover p.gc-title-labor {
+      margin-left: 30px;
+      font-size: 44px !important; }
+    .imghover:hover p.gc-title-kinship {
+      margin-left: 30px;
+      font-size: 44px !important; }
+    .imghover:hover p.gc-title-gender {
+      margin-left: 30px;
+      font-size: 44px !important; }
+    .imghover:hover p.gc-title-sustainability {
+      margin-left: 30px;
+      font-size: 44px !important; }
+    .imghover:hover p.gc-title-appalachia {
+      margin-left: 30px;
+      font-size: 44px !important; } }
 
 /*! Generated by Font Squirrel (https://www.fontsquirrel.com) on September 26, 2017 */
 @font-face {
