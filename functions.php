@@ -126,7 +126,7 @@ if ( !function_exists('berea_scripts') ) :
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
         	
 			// Concatonated Scripts
-			wp_enqueue_script( 'production.js?b9a7b6d90d', get_template_directory_uri() . '/assets/js/production.js?b9a7b6d90d', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?717a1f7061', get_template_directory_uri() . '/assets/js/production.js?717a1f7061', array( 'jquery' ), '1.0.0', false );
 
 
             // specific page script files to trigger analytics tracking event "rt"
@@ -195,7 +195,7 @@ if ( !function_exists('berea_scripts') ) :
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
 
 			// Concatenated Scripts
-			wp_enqueue_script( 'production.js?b9a7b6d90d', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?717a1f7061', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
 
 			// Main Style
 			wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-min.css?e861c04ebd' );
@@ -674,6 +674,7 @@ add_action( 'wp_enqueue_scripts', 'great_commitments_enqueue_custom_accordion');
 add_action( 'wp_print_scripts', 'great_commitments_dequeue_vc_accordion');
 remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
 
+
 if(get_current_blog_id() == 8){
 	remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
 	//remove_action( 'woocommerce_view_order', 'woocommerce_order_details_table', 10 );
@@ -779,3 +780,20 @@ function add_class_to_single_event_body($classes) {
 
 add_filter( 'body_class', 'add_class_to_single_event_body' );
 
+
+// add_filter( 'wpseo_breadcrumb_links', 'wpse_100012_override_yoast_breadcrumb_trail' );
+
+// function wpse_100012_override_yoast_breadcrumb_trail( $links ) {
+//     global $post;
+
+//     if ( is_home() || is_singular( 'post' ) || is_archive() ) {
+//         $breadcrumb[] = array(
+//             'url' => get_permalink( get_option( 'page_for_posts' ) ),
+//             'text' => 'Blog',
+//         );
+
+//         array_splice( $links, 1, -2, $breadcrumb );
+//     }
+
+//     return $links;
+// }
