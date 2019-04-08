@@ -781,19 +781,22 @@ function add_class_to_single_event_body($classes) {
 add_filter( 'body_class', 'add_class_to_single_event_body' );
 
 
-// add_filter( 'wpseo_breadcrumb_links', 'wpse_100012_override_yoast_breadcrumb_trail' );
+add_filter( 'wpseo_breadcrumb_links', 'wpse_100012_override_yoast_breadcrumb_trail' );
 
-// function wpse_100012_override_yoast_breadcrumb_trail( $links ) {
-//     global $post;
+function wpse_100012_override_yoast_breadcrumb_trail( $links ) {
+    global $post;
+    $url = get_permalink();
+    $last_link = end($links);
 
-//     if ( is_home() || is_singular( 'post' ) || is_archive() ) {
-//         $breadcrumb[] = array(
-//             'url' => get_permalink( get_option( 'page_for_posts' ) ),
-//             'text' => 'Blog',
-//         );
+    if (strpos($url, '/legacy-wall/') !== false && is_page(8334) == false) {
+    	
+        $breadcrumb[] = array(
+            'url' => get_permalink(8334),
+            'text' => get_the_title(8334),
+        );
 
-//         array_splice( $links, 1, -2, $breadcrumb );
-//     }
+        array_splice( $links, 1, -2, $breadcrumb );
+    }
 
-//     return $links;
-// }
+    return $links;
+}
