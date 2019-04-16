@@ -139,7 +139,7 @@
 	</ul>
     <div class="site-info-links">
         <ul>
-            <li>&copy; <?php echo date("Y"); ?> Berea College</li><li><a href="/wp-admin">Website Administration</a></li><li><a href="https://www.berea.edu/web-accessibility/">Accessibility</a></li>
+            <li>&copy; <?php echo date("Y"); ?> Berea College</li><li><a href="/wp-admin">Website Administration</a></li><li><a href="https://www.berea.edu/web-accessibility/">Accessibility</a></li><li><a href="https://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li><li><a href="https://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li>
         </ul>
         <br /><strong><p><a href="https://www.berea.edu/cisrk/">Consumer Information &amp; Student Right to Know</a></p></strong><br />
     </div><!-- .site-info-links -->
@@ -147,6 +147,8 @@
         <p>&copy; <?php echo date("Y"); ?> Berea College</p>
         <p><a href="/wp-admin">Website Administration</a></p>
         <p><a href="https://www.berea.edu/web-accessibility/">Accessibility</a></p>
+        <p><a href="https://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></p>
+        <p><a href="https://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></p>
         <p><a href="https://www.berea.edu/cisrk/">Consumer Information &amp;<br />Student Right to Know</a></p>
     </div><!-- .site-info-links-mobile -->
 </div><!-- .site-info -->
