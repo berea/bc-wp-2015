@@ -3735,6 +3735,10 @@ a:focus {
   font-family: "Open Sans";
   padding: 20px; }
 
+.upper {
+  text-transform: uppercase;
+  text-align: center; }
+
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a {
   font-size: 36px;
