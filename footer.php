@@ -53,6 +53,7 @@
 				<li><a href="https://www.berea.edu/brushy-fork-institute/">Brushy Fork Institute</a></li>
 				<li><a href="https://www.berea.edu/pfe/">Partners for Education</a></li>
 				<li><a href="http://growappalachia.berea.edu">Grow Appalachia</a></li>
+				<li><a href="http://airinstitute.org/">AIR Institute</a></li>
 			</ul>
 
 		</div><!-- .footer-about -->
@@ -71,8 +72,6 @@
 				<a href="https://www.berea.edu/conference-services/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/conference-services-165x42.png" alt="Conference Services"/></a>
 				<br><br><br>
 				<a href="http://bereacollegefarmstore.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/farm_store.png" alt="Farm Store"/></a>
-				<br><br><br>
-				<a href="http://airinstitute.org/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/air_institute.png" alt="Air Institute"/></a>
 
 		</div><!-- .footer-distinctly -->
 
