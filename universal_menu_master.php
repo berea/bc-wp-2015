@@ -236,9 +236,11 @@
 			<a href="http://www.berea.edu/alumni/" class="text-uppercase">Alumni</a>
 		</li>
 
+<!--REMOVED 
 		<li class="">
 			<a href="http://community.berea.edu/calendar/index.php?calendar=default" class="text-uppercase">Events</a>
 		</li>
+-->
 		
 		<li class="">
 			<a href="http://www.bereaathletics.com/" class="text-uppercase">Athletics</a>

@@ -395,7 +395,9 @@ label.screen-reader{
 	top:0px;
 	left:0px;
 	right:0px;
-	bottom:168px;
+	/*
+  bottom:168px;
+  */
 
     @include MQ(M) {
       bottom: 0px;

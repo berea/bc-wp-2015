@@ -1504,7 +1504,7 @@ Main components
       display: inline-block;
       height: 80px;
       line-height: 80px;
-      padding: 0 10px;
+      padding: 0 9px;
       color: #2e3233;
       overflow: visible;
       border-bottom: none;
@@ -3406,7 +3406,9 @@ label.screen-reader {
     top: 0px;
     left: 0px;
     right: 0px;
-    bottom: 168px; }
+    /*
+  bottom:168px;
+  */ }
     @media only screen and (min-width: 769px) {
       .homepage-slider-sizing-aspect-ratio .homepage-slider-background, .homepage-slider-sizing-aspect-ratio .secondary-slider-background {
         bottom: 0px; } }
