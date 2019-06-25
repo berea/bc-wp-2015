@@ -1,5 +1,5 @@
 // tracking code for Admissions partner - 
-
+/*
 
    var _ss = _ss || [];
    _ss.push(['_setDomain', 'https://koi-3QNJCQ0Q7O.marketingautomation.services/net']);
@@ -12,3 +12,5 @@
    var scr = document.getElementsByTagName('script')[0];
    scr.parentNode.insertBefore(ss, scr);
 })();
+
+*/

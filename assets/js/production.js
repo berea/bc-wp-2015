@@ -2607,7 +2607,7 @@ function inArray(needle, haystack) {
     return false;
 }
 // tracking code for Admissions partner - 
-
+/*
 
    var _ss = _ss || [];
    _ss.push(['_setDomain', 'https://koi-3QNJCQ0Q7O.marketingautomation.services/net']);
@@ -2621,6 +2621,7 @@ function inArray(needle, haystack) {
    scr.parentNode.insertBefore(ss, scr);
 })();
 
+*/
 /**
  * @file The core file for the events calendar plugin javascript.
  * This file must load on all front facing events pages and be the first file loaded after vendor dependencies.
