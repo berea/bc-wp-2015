@@ -2608,7 +2608,7 @@ function inArray(needle, haystack) {
 }
 // tracking code for Admissions partner - 
 
-
+/*
    var _ss = _ss || [];
    _ss.push(['_setDomain', 'https://koi-3QNJCQ0Q7O.marketingautomation.services/net']);
    _ss.push(['_setAccount', 'KOI-44JNNTK8CO']);
@@ -2620,6 +2620,7 @@ function inArray(needle, haystack) {
    var scr = document.getElementsByTagName('script')[0];
    scr.parentNode.insertBefore(ss, scr);
 })();
+*/
 
 
 /* OLD ONE
