@@ -800,3 +800,13 @@ function wpse_100012_override_yoast_breadcrumb_trail( $links ) {
 
     return $links;
 }
+
+add_filter('wp_title', 'filter_pagetitle');
+function filter_pagetitle($title) {
+	if (!is_front_page()) {
+    	return "Berea College - ";
+	}
+	else {
+		return $title;
+	}
+}
