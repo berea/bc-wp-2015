@@ -47,7 +47,7 @@
 					<li><a href="https://www.berea.edu/human-resources/">Human Resources</a></li>
 					<li><a href="http://libraryguides.berea.edu/">Hutchins Library</a></li>
 					<li><a href="https://www.berea.edu/iss/">Information Systems and Services</a></li>
-					<li><a href="https://www.berea.edu/imc">Marketing &amp; Communications</a></li>
+					<li><a href="https://www.berea.edu/mc">Marketing &amp; Communications</a></li>
 					<li><a href="https://www.berea.edu/public-safety/">Public Safety</a></li>
 					<li><a href="https://www.berea.edu/title-ix/">Title IX</a></li>
 					<li>
@@ -206,7 +206,7 @@
 				</li>
 
 				<li>
-					<a class="cd-nav-item" href="/avp/faculty-scholarly-creative-works/">
+					<a class="cd-nav-item" href="/oaa/faculty-scholarly-creative-works/">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/publications.svg" alt=""/>
 						<h3 class="text-uppercase">Faculty Scholarly &amp; Creative Works</h3>
 						<p>While our faculty proudly focuses on being and becoming excellent classroom teachers, they are also active intellectuals and scholars.</p>
