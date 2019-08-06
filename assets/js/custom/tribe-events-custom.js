@@ -50,6 +50,7 @@ var tribe_debug = true;
  */
 
 window.debug = (function() {
+	'use strict';
 	var window = this,
 		aps = Array.prototype.slice,
 		con = window.console,
@@ -66,9 +67,8 @@ window.debug = (function() {
 		(function( method ) {
 
 			that[ method ] = function() {
-				log_level !== 0 && con && con[ method ]
-				&& con[ method ].apply( con, arguments );
-			}
+				log_level !== 0 && con && con[ method ] && con[ method ].apply( con, arguments );
+			};
 
 		})( pass_methods[idx] );
 	}

@@ -2323,9 +2323,10 @@ References:
 	};
 })(this);
 
-/*  Berea Custom JavaScripts (empty currently)  */
 
-(function($) {
+/*  Berea Custom JavaScripts (empty currently)  */
+'use strict';
+(function ($) {
 	
 	$(document).ready(function(){
 		$('.ictst_content_cl').each(function(i, item) {
@@ -2333,71 +2334,73 @@ References:
 			// Find tallest item
 			$(item).find('> ul > li').each(function(j,li) {
 				var itemHeight = $(li).height();
-				if ( itemHeight > height ) height = itemHeight;
-			})
+				if ( itemHeight > height ) {
+					height = itemHeight;
+				}
+			});
 			$(item).height(height);
 
-		})
-	})
+		});
+	});
 	
-})( jQuery );
+})();
 jQuery(document).ready(function(){
 
+'use strict';
 if ($('#scroll-to').length > 0){
 
 var hT = $('#scroll-to').offset().top,
-       hH = $('#scroll-to').outerHeight(),
-       wH = $(window).height(),
        wS = $(this).scrollTop();
 
 
 if ($('#positionChange').length > 0){
-document.getElementById("positionChange").style.top = (hT-wS) + "px";
+document.getElementById('positionChange').style.top = (hT-wS) + 'px';
 }
 
 }
 
 
-	if( $('.gc-cd-stretchy-nav').length > 0 ) {
+  if( $('.gc-cd-stretchy-nav').length > 0 ) {
 
-	 
-   	var stretchyNavs = $('.gc-cd-stretchy-nav');
-		
- 	stretchyNavs.each(function(){
-			var stretchyNav = $(this),
-				stretchyNavTrigger = stretchyNav.find('.gc-cd-nav-trigger');
-			
+   
+    var stretchyNavs = $('.gc-cd-stretchy-nav');
+    
+  stretchyNavs.each(function(){
+      var stretchyNav = $(this),
+        stretchyNavTrigger = stretchyNav.find('.gc-cd-nav-trigger');
+      
 
 
-			stretchyNav.toggleClass('gc-nav-is-visible');
-			
-			stretchyNavTrigger.on('click', function(event){
-				event.preventDefault();
-				stretchyNav.toggleClass('gc-nav-is-visible');
-			});
-		
-		});
+      stretchyNav.toggleClass('gc-nav-is-visible');
+      
+      stretchyNavTrigger.on('click', function(event){
+        event.preventDefault();
+        stretchyNav.toggleClass('gc-nav-is-visible');
+      });
+    
+    });
 
     
 
 
 
 /*
-		$(document).on('click', function(event){
-			( !$(event.target).is('.gc-cd-nav-trigger') && !$(event.target).is('.gc-cd-nav-trigger span') ) && stretchyNavs.removeClass('gc-nav-is-visible');
-		});
+    $(document).on('click', function(event){
+      ( !$(event.target).is('.gc-cd-nav-trigger') && !$(event.target).is('.gc-cd-nav-trigger span') ) && stretchyNavs.removeClass('gc-nav-is-visible');
+    });
 */
   
-$("a").on('click', function(event) {
+$('a').on('click', function(event) {
 
       
-      if (this.hash !== "") {
+      if (this.hash !== '') {
          
-         var atags = document.getElementsByTagName("a");
+         var atags = document.getElementsByTagName('a');
+         var i;
          for (i = 0; i < atags.length; i++){
-           atags[i].classList.remove("active");
+           atags[i].classList.remove('active');
          }
-         this.className += " active";
+         this.className += ' active';
           // Prevent default anchor click behavior
          event.preventDefault();
          var hash = this.hash;
@@ -2411,79 +2414,87 @@ $("a").on('click', function(event) {
   
   });
    $('.gc-education').on('click', function(event){
-    var allCommitments = document.getElementsByClassName("gc");
+    var allCommitments = document.getElementsByClassName('gc');
+    var i;
     for (i = 0; i < allCommitments.length - 2; i++){
         var selectedCommitment = allCommitments[i+2].childNodes[0];
-        selectedCommitment.classList.remove("active");
+        selectedCommitment.classList.remove('active');
       }
-    allCommitments[2].childNodes[0].className += " active";
+    allCommitments[2].childNodes[0].className += ' active';
   }); 
 
    $('.gc-liberalarts').on('click', function(event){
-    var allCommitments = document.getElementsByClassName("gc");
+    var allCommitments = document.getElementsByClassName('gc');
+    var i;
     for (i = 0; i < allCommitments.length - 2; i++){
         var selectedCommitment = allCommitments[i+2].childNodes[0];
-        selectedCommitment.classList.remove("active");
+        selectedCommitment.classList.remove('active');
       }
-    allCommitments[3].childNodes[0].className += " active";
+    allCommitments[3].childNodes[0].className += ' active';
   });
 
    $('.gc-christian').on('click', function(event){
-    var allCommitments = document.getElementsByClassName("gc");
+    var allCommitments = document.getElementsByClassName('gc');
+    var i;
     for (i = 0; i < allCommitments.length - 2; i++){
         var selectedCommitment = allCommitments[i+2].childNodes[0];
-        selectedCommitment.classList.remove("active");
+        selectedCommitment.classList.remove('active');
       }
-    allCommitments[4].childNodes[0].className += " active";
+    allCommitments[4].childNodes[0].className += ' active';
   });
 
    $('.gc-labor').on('click', function(event){
-    var allCommitments = document.getElementsByClassName("gc");
+    var allCommitments = document.getElementsByClassName('gc');
+    var i;
     for (i = 0; i < allCommitments.length - 2; i++){
         var selectedCommitment = allCommitments[i+2].childNodes[0];
-        selectedCommitment.classList.remove("active");
+        selectedCommitment.classList.remove('active');
       }
-    allCommitments[5].childNodes[0].className += " active";
+    allCommitments[5].childNodes[0].className += ' active';
   });
 
    $('.gc-kinship').on('click', function(event){
-    var allCommitments = document.getElementsByClassName("gc");
+    var allCommitments = document.getElementsByClassName('gc');
+    var i;
     for (i = 0; i < allCommitments.length - 2; i++){
         var selectedCommitment = allCommitments[i+2].childNodes[0];
-        selectedCommitment.classList.remove("active");
+        selectedCommitment.classList.remove('active');
       }
-    allCommitments[6].childNodes[0].className += " active";
+    allCommitments[6].childNodes[0].className += ' active';
   });
 
    $('.gc-democratic').on('click', function(event){
-    var allCommitments = document.getElementsByClassName("gc");
+    var allCommitments = document.getElementsByClassName('gc');
+    var i;
     for (i = 0; i < allCommitments.length - 2; i++){
         var selectedCommitment = allCommitments[i+2].childNodes[0];
-        selectedCommitment.classList.remove("active");
+        selectedCommitment.classList.remove('active');
       }
-    allCommitments[7].childNodes[0].className += " active";
+    allCommitments[7].childNodes[0].className += ' active';
   });
 
    $('.gc-sustainability').on('click', function(event){
-    var allCommitments = document.getElementsByClassName("gc");
+    var allCommitments = document.getElementsByClassName('gc');
+    var i;
     for (i = 0; i < allCommitments.length - 2; i++){
         var selectedCommitment = allCommitments[i+2].childNodes[0];
-        selectedCommitment.classList.remove("active");
+        selectedCommitment.classList.remove('active');
       }
-    allCommitments[8].childNodes[0].className += " active";
+    allCommitments[8].childNodes[0].className += ' active';
   });
 
    $('.gc-appalachia').on('click', function(event){
-    var allCommitments = document.getElementsByClassName("gc");
+    var allCommitments = document.getElementsByClassName('gc');
+    var i;
     for (i = 0; i < allCommitments.length - 2; i++){
         var selectedCommitment = allCommitments[i+2].childNodes[0];
-        selectedCommitment.classList.remove("active");
+        selectedCommitment.classList.remove('active');
       }
-    allCommitments[9].childNodes[0].className += " active";
+    allCommitments[9].childNodes[0].className += ' active';
   });
 
 
-	}
+  }
 
 
 jQuery(document).ready(function(){
@@ -2491,17 +2502,18 @@ jQuery(document).ready(function(){
 
   $('[id^=commitment]').click(function(){
       var active = $('div.active');
+      var i;
       for (i = 0; i < active.length; i++){
-        if ('#toggleit_' + (active[i]).id != '#toggleit_' + (this).id){
+        if ('#toggleit_' + (active[i]).id !== '#toggleit_' + (this).id){
           $('#toggleit_' + (active[i]).id).toggle();
-          active[i].classList.remove("active");
+          active[i].classList.remove('active');
         }
       }
       
 
       $('#toggleit_' + (this).id).slideToggle('slow');
-      if (this.classList.contains("active")){
-        this.classList.remove("active");
+      if (this.classList.contains('active')){
+        this.classList.remove('active');
       }
       else{
         this.className += ' active';
@@ -2510,13 +2522,12 @@ jQuery(document).ready(function(){
         $('html, body').animate({scrollTop: $('#toggleit_' + (this).id).offset().top});
       }
 
-      var commitment = this.id.split("_")[1];
-      var allCommitments = document.getElementsByClassName("gc");
+      var allCommitments = document.getElementsByClassName('gc');
       for (i = 0; i < allCommitments.length - 2; i++){
         var selectedCommitment = allCommitments[i+2].childNodes[0];
-        selectedCommitment.classList.remove("active");
-        if (selectedCommitment.hash.substr(1) == this.id.split("_")[1] && !selectedCommitment.classList.contains("active")){
-          selectedCommitment.className += " active";
+        selectedCommitment.classList.remove('active');
+        if (selectedCommitment.hash.substr(1) === this.id.split('_')[1] && !selectedCommitment.classList.contains('active')){
+          selectedCommitment.className += ' active';
         }
       }
 
@@ -2531,17 +2542,15 @@ jQuery(document).ready(function(){
 
 $(window).scroll(function() {
    var hT = $('#scroll-to').offset().top,
-       hH = $('#scroll-to').outerHeight(),
-       wH = $(window).height(),
        wS = $(this).scrollTop();
 //if document.getElementById('positionChange') !== null{
   
    if (wS > (hT)){
-     //document.getElementById("positionChange").style.position = "fixed";
-          document.getElementById("positionChange").style.top = "0px";
+     //document.getElementById('positionChange').style.position = 'fixed';
+          document.getElementById('positionChange').style.top = '0px';
    }
    else {
-   		document.getElementById("positionChange").style.top = (hT-wS) + "px";
+      document.getElementById('positionChange').style.top = (hT-wS) + 'px';
    }
 
  //}
@@ -2554,17 +2563,15 @@ $(window).scroll(function() {
 
 jQuery( function($) {
 
+'use strict';
 $(document).on('click', 'li.vc_tta-tab a,li.vc_tta-tab,.vc_tta-panel-title', function(){
    $('html, body').stop();
 });
 
 });
-
-
-
 // tracking code for Admissions partner - 
 
-
+   'use strict';
    var _ss = _ss || [];
    _ss.push(['_setDomain', 'https://koi-3QNJCQ0Q7O.marketingautomation.services/net']);
    _ss.push(['_setAccount', 'KOI-44JNNTK8CO']);
@@ -2572,7 +2579,7 @@ $(document).on('click', 'li.vc_tta-tab a,li.vc_tta-tab,.vc_tta-panel-title', fun
 (function() {
    var ss = document.createElement('script');
    ss.type = 'text/javascript'; ss.async = true;
-   ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QNJCQ0Q7O.marketingautomation.services/client/ss.js?ver=1.1.1';
+   ss.src = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'koi-3QNJCQ0Q7O.marketingautomation.services/client/ss.js?ver=1.1.1';
    var scr = document.getElementsByTagName('script')[0];
    scr.parentNode.insertBefore(ss, scr);
 })();
@@ -2645,6 +2652,7 @@ var tribe_debug = true;
  */
 
 window.debug = (function() {
+	'use strict';
 	var window = this,
 		aps = Array.prototype.slice,
 		con = window.console,
@@ -2661,9 +2669,8 @@ window.debug = (function() {
 		(function( method ) {
 
 			that[ method ] = function() {
-				log_level !== 0 && con && con[ method ]
-				&& con[ method ].apply( con, arguments );
-			}
+				log_level !== 0 && con && con[ method ] && con[ method ].apply( con, arguments );
+			};
 
 		})( pass_methods[idx] );
 	}
