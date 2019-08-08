@@ -158,7 +158,7 @@ jQuery(document).ready(function(){
       var active = $('div.active');
       var i;
       for (i = 0; i < active.length; i++){
-        if ('#toggleit_' + (active[i]).id !== '#toggleit_' + (this).id){
+        if ('#toggleit_' + (active[i]).id != '#toggleit_' + (this).id){
           $('#toggleit_' + (active[i]).id).toggle();
           active[i].classList.remove('active');
         }
@@ -180,7 +180,7 @@ jQuery(document).ready(function(){
       for (i = 0; i < allCommitments.length - 2; i++){
         var selectedCommitment = allCommitments[i+2].childNodes[0];
         selectedCommitment.classList.remove('active');
-        if (selectedCommitment.hash.substr(1) === this.id.split('_')[1] && !selectedCommitment.classList.contains('active')){
+        if (selectedCommitment.hash.substr(1) == this.id.split('_')[1] && !selectedCommitment.classList.contains('active')){
           selectedCommitment.className += ' active';
         }
       }
