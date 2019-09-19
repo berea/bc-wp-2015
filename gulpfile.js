@@ -104,30 +104,6 @@ gulp.task('jsHint', function() {
 
 
 
-/**
- * Fingerprint Assets
- *
- * Generates md5 hashes for all css and js files, then finds references to those files in the template files and
- * appends the hash as a query parameter to those referenced filenames
-*/
-
-/******************************************************************************
-| >   FINGERPRINT ASSETS 
-******************************************************************************/
-
-gulp.task('cachebust:css',['default'], function () {
-  	return gulp.src('./assets/css/**/*.css')
-    	.pipe(md5(10,'./**/*.php'));
-});
-
-gulp.task('cachebust:js', ['default'], function () {
- 	return gulp.src('./assets/js/**/*.js')
-    	.pipe(md5(10,'./**/*.php'));
-});
-
-gulp.task('cachebust', ['cachebust:css','cachebust:js']);
-
-
 
 
 /**
@@ -142,19 +118,41 @@ gulp.task('cachebust', ['cachebust:css','cachebust:js']);
 ******************************************************************************/
 
 //Default Gulp Task 
-  gulp.task('default', ['styles','js'], function() {
+  gulp.task('default', gulp.series('styles', 'js', function() {
     //watch for sass changes
-    gulp.watch(source + 'sass/**/*.scss', ['styles']);
+    gulp.watch(source + 'sass/**/*.scss', gulp.series('styles'));
     //watch for javascript changes in both custom and vendor folders 
-    gulp.watch([source+'js/vendor/**/*.js',source+'js/custom/**/*.js'], ['js']);
+    gulp.watch([source+'js/vendor/**/*.js',source+'js/custom/**/*.js'], gulp.series('js'));
     //only use jsHint for our custom js folder
-    gulp.watch(source + 'js/custom/**/*.js', ['jsHint']);
+    gulp.watch(source + 'js/custom/**/*.js', gulp.series('jsHint'));
     
     //later - add in some browserSync love!
     //gulp.watch(source + 'js/custom/**/*.js', ['js', browserSync.reload]);
 
     return gulputil.log('*******Gulp is running (the jewels)!******')
-});
+}));
 
 
 
+/**
+ * Fingerprint Assets
+ *
+ * Generates md5 hashes for all css and js files, then finds references to those files in the template files and
+ * appends the hash as a query parameter to those referenced filenames
+*/
+
+/******************************************************************************
+| >   FINGERPRINT ASSETS 
+******************************************************************************/
+
+gulp.task('cachebust:css', gulp.series('default', function () {
+    return gulp.src('./assets/css/**/*.css')
+        .pipe(md5(10,'./**/*.php'));
+}));
+
+gulp.task('cachebust:js', gulp.series('default', function () {
+    return gulp.src('./assets/js/**/*.js')
+        .pipe(md5(10,'./**/*.php'));
+}));
+
+gulp.task('cachebust', gulp.series('cachebust:css', 'cachebust:js'));
