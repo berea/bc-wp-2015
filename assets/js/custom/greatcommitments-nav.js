@@ -1,6 +1,5 @@
 jQuery(document).ready(function(){
 
-'use strict';
 if ($('#scroll-to').length > 0){
 
 var hT = $('#scroll-to').offset().top,
