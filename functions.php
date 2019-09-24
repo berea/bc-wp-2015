@@ -126,7 +126,7 @@ if ( !function_exists('berea_scripts') ) :
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
         	
 			// Concatonated Scripts
-			wp_enqueue_script( 'production.js?83b2a82305', get_template_directory_uri() . '/assets/js/production.js?83b2a82305', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?f3e9726f03', get_template_directory_uri() . '/assets/js/production.js?f3e9726f03', array( 'jquery' ), '1.0.0', false );
 
 
             // specific page script files to trigger analytics tracking event "rt"
@@ -183,7 +183,7 @@ if ( !function_exists('berea_scripts') ) :
 
 			// Main Style
 			if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
-				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?b6cfffbee1' );
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?81b8f90232' );
 			}
 			else {
 				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-stopgap.css?509d1a271c' );
@@ -195,7 +195,7 @@ if ( !function_exists('berea_scripts') ) :
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
 
 			// Concatenated Scripts
-			wp_enqueue_script( 'production.js?83b2a82305', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?f3e9726f03', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
 
 			// Main Style
 			wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-min.css?e861c04ebd' );
@@ -203,7 +203,7 @@ if ( !function_exists('berea_scripts') ) :
 		endif;
 
 		// Berea Main JS
-		wp_enqueue_script( 'berea', get_template_directory_uri() . '/assets/js/custom/berea.js?dbb4be220c', '1.0.0', false );
+		wp_enqueue_script( 'berea', get_template_directory_uri() . '/assets/js/custom/berea.js?0da2c94154', '1.0.0', false );
 
 		// Dashicons
 		 wp_enqueue_style( 'dashicons' );
