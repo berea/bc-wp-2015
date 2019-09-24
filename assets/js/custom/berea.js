@@ -2,7 +2,7 @@
 'use strict';
 (function ($) {
 	
-	$(document).ready(function(){
+	jQuery(document).ready(function($){
 		$('.ictst_content_cl').each(function(i, item) {
 			var height = 0;
 			// Find tallest item

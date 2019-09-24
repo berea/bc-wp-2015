@@ -2328,7 +2328,7 @@ References:
 'use strict';
 (function ($) {
 	
-	$(document).ready(function(){
+	jQuery(document).ready(function($){
 		$('.ictst_content_cl').each(function(i, item) {
 			var height = 0;
 			// Find tallest item
@@ -2346,7 +2346,6 @@ References:
 })();
 jQuery(document).ready(function(){
 
-'use strict';
 if ($('#scroll-to').length > 0){
 
 var hT = $('#scroll-to').offset().top,
@@ -4164,10 +4163,12 @@ Date.prototype.format = function( mask, utc ) {
 // Usability analytics script from Siteimprove
 
 /*<![CDATA[*/
+
 (function() {
- var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
- sz.src = '//siteimproveanalytics.com/js/siteanalyze_90779361.js';
- var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+	'use strict';
+	 var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+	 sz.src = '//siteimproveanalytics.com/js/siteanalyze_90779361.js';
+	 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
 })();
 /*]]>*/
 //# sourceMappingURL=production.js.map
