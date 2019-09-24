@@ -104,6 +104,29 @@ gulp.task('jsHint', function() {
 
 
 
+/**
+ * Fingerprint Assets
+ *
+ * Generates md5 hashes for all css and js files, then finds references to those files in the template files and
+ * appends the hash as a query parameter to those referenced filenames
+*/
+
+/******************************************************************************
+| >   FINGERPRINT ASSETS 
+******************************************************************************/
+
+gulp.task('cachebust:css', function () {
+    return gulp.src('./assets/css/**/*.css')
+        .pipe(md5(10,'./**/*.php'));
+});
+
+gulp.task('cachebust:js', function () {
+    return gulp.src('./assets/js/**/*.js')
+        .pipe(md5(10,'./**/*.php'));
+});
+
+//gulp.task('cachebust', gulp.series('default', 'cachebust:css', 'cachebust:js'));
+
 
 
 /**
@@ -118,7 +141,7 @@ gulp.task('jsHint', function() {
 ******************************************************************************/
 
 //Default Gulp Task 
-  gulp.task('default', gulp.series('styles', 'js', function() {
+  gulp.task('default', gulp.series('styles', 'js', 'cachebust:css', 'cachebust:js', function() {
     //watch for sass changes
     gulp.watch(source + 'sass/**/*.scss', gulp.series('styles'));
     //watch for javascript changes in both custom and vendor folders 
@@ -132,27 +155,3 @@ gulp.task('jsHint', function() {
     return gulputil.log('*******Gulp is running (the jewels)!******')
 }));
 
-
-
-/**
- * Fingerprint Assets
- *
- * Generates md5 hashes for all css and js files, then finds references to those files in the template files and
- * appends the hash as a query parameter to those referenced filenames
-*/
-
-/******************************************************************************
-| >   FINGERPRINT ASSETS 
-******************************************************************************/
-
-gulp.task('cachebust:css', gulp.series('default', function () {
-    return gulp.src('./assets/css/**/*.css')
-        .pipe(md5(10,'./**/*.php'));
-}));
-
-gulp.task('cachebust:js', gulp.series('default', function () {
-    return gulp.src('./assets/js/**/*.js')
-        .pipe(md5(10,'./**/*.php'));
-}));
-
-gulp.task('cachebust', gulp.series('cachebust:css', 'cachebust:js'));
