@@ -174,7 +174,7 @@
 				</li>
 
 				<li>
-					<a class="cd-nav-item" href="http://community.berea.edu/calendar/main.php?calendarid=default&view=upcoming">
+					<a class="cd-nav-item" href="https://www.berea.edu/registrar/academic-calendar/">
 						<img class="academic-icon" src="/wp-content/themes/bc-wp-2015/assets/images/icons/calendar.svg" alt=""/>
 						<h3 class="text-uppercase">Academic Calendar</h3>
 						<p>Browse our current Academic Calendar.</p>
