@@ -60,11 +60,11 @@ input[type="submit"] {
   padding: 0.75em 1em;
   text-decoration: none; }
   button:hover,
-  input[type="submit"]:hover {
+  input:hover[type="submit"] {
     background-color: #001d1f;
     color: white; }
   button:disabled,
-  input[type="submit"]:disabled {
+  input:disabled[type="submit"] {
     cursor: not-allowed;
     opacity: 0.5; }
 
@@ -643,7 +643,12 @@ body {
   font-size: 12px;
   font-size: 0.75rem; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both;
   float: none;
   line-height: 1.25em;

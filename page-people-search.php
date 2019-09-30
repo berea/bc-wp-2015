@@ -218,7 +218,7 @@ search.addWidget(
             Title: {{#helpers.highlight}}{ "attribute": "title" }{{/helpers.highlight}}
             <br>Department: {{department}}
             <br>Phone Ext.: {{telephoneNumber}}
-            <br>Email: {{mail}}
+            <br>Email: <a href='mailto:{{mail}}' target='_top'>{{mail}}</a>
           </div>
         </div>
       `,

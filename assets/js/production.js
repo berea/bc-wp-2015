@@ -2323,7 +2323,6 @@ References:
 	};
 })(this);
 
-
 /*  Berea Custom JavaScripts (empty currently)  */
 'use strict';
 (function ($) {
