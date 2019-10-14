@@ -1,4 +1,4 @@
-// Berea College additions
+// Berea College additions 2
 
 
 @import "components/buttons";
@@ -824,4 +824,214 @@ a:focus {
   font-family: "Open Sans";
   padding: 20px; }
 
+@media only screen and (min-width: 768px) {
+  .gettysburg-top-left {
+    margin-right: -5px !important;
+    margin-bottom: -5px !important; }
+
+  .gettysburg-top-right {
+    margin-left: -5px !important;
+    margin-bottom: -5px !important; }
+
+  .gettysburg-bottom-left {
+    margin-right: -5px !important;
+    margin-top: -10px !important; }
+
+  .gettysburg-bottom-right {
+    margin-left: -5px !important;
+    margin-top: -10px !important; }
+
+  a.gettysburg-two-thirds:hover p.gettysburg-two-thirds {
+    display: block !important;
+  }
+  a.gettysburg-two-thirds {
+    padding-top: 56.25%;
+  }
+  h2.gettysburg-two-thirds {
+    font-size: 40px !important;
+  }
+
+  a.gettysburg-one-third:hover p.gettysburg-one-third {
+    display: block !important;
+  }
+  a.gettysburg-one-third {
+    padding-top: 118.8%;
+  }
+  h2.gettysburg-one-third {
+    font-size: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .gettysburg-top-left {
+    margin-bottom: -40px !important; }
+
+  .gettysburg-top-right {
+    margin-bottom: -40px !important; }
+
+  .gettysburg-bottom-left {
+    margin-bottom: -40px !important; }
+
+  .gettysburg-bottom-right { }
+
+  a.gettysburg-two-thirds {
+    padding-top: 20%;
+  }
+  h2.gettysburg-two-thirds {
+    font-size: 26px !important;
+  }
+
+  a.gettysburg-one-third {
+    padding-top: 20%;
+  }
+  h2.gettysburg-one-third {
+    font-size: 26px !important;
+  }
+}
+a.gettysburg-top-left-img {
+  background: linear-gradient( rgba(0,0,0,0.25), rgba(0,0,0,0.25) ), url('/wp-content/uploads/2016/11/campus-aerials_JEB.jpg');
+}
+a.gettysburg-top-left-img:hover {
+  background: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6) ), url('/wp-content/uploads/2016/11/campus-aerials_JEB.jpg');
+}
+
+a.gettysburg-top-right-img {
+  background: linear-gradient( rgba(0,0,0,0.25), rgba(0,0,0,0.25) ), url('/wp-content/uploads/2016/11/CampusShots_CR-166.jpg');
+}
+a.gettysburg-top-right-img:hover {
+  background: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6) ), url('/wp-content/uploads/2016/11/CampusShots_CR-166.jpg');
+}
+
+a.gettysburg-bottom-left-img {
+  background: linear-gradient( rgba(0,0,0,0.25), rgba(0,0,0,0.25) ), url('/wp-content/uploads/2017/06/20170507_Great-Commitments-Shoot-Baccalaureate_CR-32.jpg');
+}
+a.gettysburg-bottom-left-img:hover {
+  background: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6) ), url('/wp-content/uploads/2017/06/20170507_Great-Commitments-Shoot-Baccalaureate_CR-32.jpg');
+}
+
+a.gettysburg-bottom-right-img {
+  background: linear-gradient( rgba(0,0,0,0.25), rgba(0,0,0,0.25) ), url('/wp-content/uploads/2016/11/Telescope.jpg');
+}
+a.gettysburg-bottom-right-img:hover {
+  background: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6) ), url('/wp-content/uploads/2016/11/Telescope.jpg');
+}
+
+a.gettysburg-two-thirds {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+a.gettysburg-two-thirds:hover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  opacity: 1;
+  text-decoration: none !important;
+}
+
+h2.gettysburg-two-thirds {
+  display: block !important;
+  font-weight: bold !important;
+  font-family: "Open Sans Condensed" !important;
+  color: white !important;
+  padding-top: 20px;
+  padding-left: 28px;
+}
+
+h2.gettysburg-two-thirds:hover {
+  display: block !important;
+  font-weight: bold !important;
+  font-family: "Open Sans Condensed" !important;
+  color: white !important;
+  padding-top: 20px;
+  padding-left: 28px;
+}
+
+p.gettysburg-two-thirds {
+  display: none;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  font-family: "Open Sans Condensed" !important;
+  color: white !important;
+  padding-top: 0px;
+  padding-left: 30px;
+}
+
+/*------------*/
+
+a.gettysburg-one-third {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+a.gettysburg-one-third:hover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  opacity: 1;
+  text-decoration: none !important;
+}
+
+h2.gettysburg-one-third {
+  display: block !important;
+  font-weight: bold !important;
+  font-family: "Open Sans Condensed" !important;
+  color: white !important;
+  padding-top: 10px;
+  padding-left: 28px;
+}
+
+h2.gettysburg-one-third:hover {
+  display: block !important;
+  font-weight: bold !important;
+  font-family: "Open Sans Condensed" !important;
+  color: white !important;
+  padding-top: 10px;
+  padding-left: 28px;
+}
+
+p.gettysburg-one-third {
+  display: none;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  font-family: "Open Sans Condensed" !important;
+  color: white !important;
+  padding-top: 0px;
+  padding-left: 30px;
+}
+
+
+
+div.gettysburg-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  vertical-align: top;
+}
+
+table.table-condensed {
+  width: auto !important;
+}
 

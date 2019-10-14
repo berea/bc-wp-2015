@@ -18,3 +18,7 @@
 	});
 	
 })();
+
+window.onload = function(){
+    $('#validation_error').focus();
+};

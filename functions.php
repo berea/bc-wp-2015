@@ -124,9 +124,10 @@ if ( !function_exists('berea_scripts') ) :
 
         	wp_deregister_script('jquery');
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
-        	
+        	//wp_register_script('jquery','https://code.jquery.com/jquery-3.4.1.min.js');
+
 			// Concatonated Scripts
-			wp_enqueue_script( 'production.js?f3e9726f03', get_template_directory_uri() . '/assets/js/production.js?f3e9726f03', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?282a90f5fa', get_template_directory_uri() . '/assets/js/production.js?282a90f5fa', array( 'jquery' ), '1.0.0', false );
 
 
             // specific page script files to trigger analytics tracking event "rt"
@@ -183,7 +184,7 @@ if ( !function_exists('berea_scripts') ) :
 
 			// Main Style
 			if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
-				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?81b8f90232' );
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?e2caa98f0c' );
 			}
 			else {
 				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-stopgap.css?509d1a271c' );
@@ -195,7 +196,7 @@ if ( !function_exists('berea_scripts') ) :
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
 
 			// Concatenated Scripts
-			wp_enqueue_script( 'production.js?f3e9726f03', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?282a90f5fa', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
 
 			// Main Style
 			wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-min.css?e861c04ebd' );
@@ -203,7 +204,7 @@ if ( !function_exists('berea_scripts') ) :
 		endif;
 
 		// Berea Main JS
-		wp_enqueue_script( 'berea', get_template_directory_uri() . '/assets/js/custom/berea.js?0da2c94154', '1.0.0', false );
+		wp_enqueue_script( 'berea', get_template_directory_uri() . '/assets/js/custom/berea.js?36a69ed9ff', '1.0.0', false );
 
 		// Dashicons
 		 wp_enqueue_style( 'dashicons' );
@@ -809,4 +810,17 @@ function filter_pagetitle($title) {
 	else {
 		return $title;
 	}
+}
+
+
+add_filter( 'gform_field_content', 'add_aria_describedby_to_gform_elements', 10, 5 );
+function add_aria_describedby_to_gform_elements( $content, $field, $value, $lead_id, $form_id ) {
+    $content = str_replace('aria-required="true" ','aria-required="true" aria-describedby="group-err" ',$content);
+    $content = str_replace("class='gfield_description validation_message'","class='gfield_description validation_message' id='group-err'",$content);
+    return $content;
+}
+
+add_filter( 'gform_validation_message', 'change_message', 10, 2 );
+function change_message( $message, $form ) {
+    return "<div tabindex='-1' id='validation_error' class='validation_error'>" . esc_html__( 'There was a problem with your submission.', 'gravityforms' ) . ' ' . esc_html__( 'Errors have been highlighted below.', 'gravityforms' ) . '</div>';
 }
