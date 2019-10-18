@@ -1088,6 +1088,12 @@ a:focus {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  p.gettysburg-quote {
+    font-size:12px !important;
+  }
+}
+
 
 div.gettysburg-top-left-2-img {
   background: url('/wp-content/uploads/2019/10/quotationBG.png');
