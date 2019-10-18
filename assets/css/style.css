@@ -4018,7 +4018,6 @@ p.gettysburg-quote {
   padding-left: 30px;
   padding-right: 30px; }
 
-/*------------*/
 a.gettysburg-one-third {
   background-repeat: no-repeat;
   background-size: cover;
@@ -4087,14 +4086,19 @@ div.gettysburg-container {
   left: 0px;
   vertical-align: top; }
 
-p.gettysburg-quote-symbol {
+div.gettysburg-quote-symbol {
   height: 100%;
-  font-size: 100px;
-  font-family: cursive;
+  width: 72px;
   float: left;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: -12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  display: inline-block; }
+
+img.gettysburg-quote-symbol {
+  height: 42px;
+  width: 56px;
+  float: left;
   display: inline-block; }
 
 /* For content entered in posts by users */
