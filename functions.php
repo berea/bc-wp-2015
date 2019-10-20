@@ -179,7 +179,7 @@ if ( !function_exists('berea_scripts') ) :
     		
 
 				 ?>
- 				 	<script>analytics.track('no-tuition');</script>
+ 				 	<script>analytics.track('labor');</script>
   				 <?php
 
 
