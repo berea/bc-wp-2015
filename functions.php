@@ -141,6 +141,50 @@ if ( !function_exists('berea_scripts') ) :
 
   			}
 
+  			//tracking for no-tuition page from CNN traffic
+  			if ( (is_page(2177)&&is_page('no-tuition'))  ) {
+    		
+
+				 ?>
+ 				 	<script>analytics.track('no-tuition');</script>
+  				 <?php
+
+
+  			}
+
+  			 //tracking for changemakers page from CNN traffic
+  			if ( (is_page(83444)&&is_page('alumni-who-change-the-world'))  ) {
+    		
+
+				 ?>
+ 				 	<script>analytics.track('alumni-who-change-the-world');</script>
+  				 <?php
+
+
+  			}
+
+  			//tracking for 1855-to-today from CNN traffic
+  			if ( (is_page(83441)&&is_page('1855-to-today'))  ) {
+    		
+
+				 ?>
+ 				 	<script>analytics.track('inclusivity');</script>
+  				 <?php
+
+
+  			}
+
+  			//tracking for labor page from CNN traffic
+  			if ( (is_page(2763)&&is_page('visitors'))  ) {
+    		
+
+				 ?>
+ 				 	<script>analytics.track('no-tuition');</script>
+  				 <?php
+
+
+  			}
+
 
   			// analytics tracking for entire subsite
 
