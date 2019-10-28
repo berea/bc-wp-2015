@@ -183,7 +183,7 @@ if ( !function_exists('berea_scripts') ) :
 
 			// Main Style
 			if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
-				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?590efc751d' );
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?2475c87348' );
 			}
 			else {
 				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-stopgap.css?509d1a271c' );
@@ -810,3 +810,16 @@ function filter_pagetitle($title) {
 		return $title;
 	}
 }
+
+add_filter( 'gform_field_content', 'add_aria_describedby_to_gform_elements', 10, 5 );
+function add_aria_describedby_to_gform_elements( $content, $field, $value, $lead_id, $form_id ) {
+    $content = str_replace('aria-required="true" ','aria-required="true" aria-describedby="group-err" ',$content);
+    $content = str_replace("class='gfield_description validation_message'","class='gfield_description validation_message' id='group-err'",$content);
+    return $content;
+}
+
+add_filter( 'gform_validation_message', 'change_message', 10, 2 );
+function change_message( $message, $form ) {
+    return "<div tabindex='-1' id='validation_error' class='validation_error'>" . esc_html__( 'There was a problem with your submission.', 'gravityforms' ) . ' ' . esc_html__( 'Errors have been highlighted below.', 'gravityforms' ) . '</div>';
+}
+
