@@ -3742,6 +3742,387 @@ a:focus {
   font-family: "Open Sans";
   padding: 20px; }
 
+@media only screen and (min-width: 975px) {
+  a.gettysburg-two-thirds {
+    padding-top: 56.25%; }
+  div.gettysburg-two-thirds {
+    padding-top: 56.25%; }
+  h2.gettysburg-two-thirds {
+    font-size: 40px !important; }
+  a.gettysburg-one-third {
+    padding-top: 118.8%; }
+  h2.gettysburg-one-third {
+    font-size: 40px !important; }
+  p.gettysburg-quote {
+    font-size: 23px !important; } }
+
+@media only screen and (max-width: 975px) {
+  a.gettysburg-two-thirds {
+    padding-top: 56.25%; }
+  div.gettysburg-two-thirds {
+    padding-top: 56.25%; }
+  h2.gettysburg-two-thirds {
+    font-size: 40px !important; }
+  a.gettysburg-one-third {
+    padding-top: 118.8%; }
+  h2.gettysburg-one-third {
+    font-size: 40px !important; }
+  p.gettysburg-quote {
+    font-size: 20px !important; } }
+
+@media only screen and (max-width: 888px) {
+  a.gettysburg-two-thirds {
+    padding-top: 56.25%; }
+  div.gettysburg-two-thirds {
+    padding-top: 56.25%; }
+  h2.gettysburg-two-thirds {
+    font-size: 40px !important; }
+  a.gettysburg-one-third {
+    padding-top: 118.8%; }
+  h2.gettysburg-one-third {
+    font-size: 40px !important; }
+  p.gettysburg-quote {
+    font-size: 18px !important; } }
+
+@media only screen and (max-width: 812px) {
+  a.gettysburg-two-thirds {
+    padding-top: 56.25%; }
+  div.gettysburg-two-thirds {
+    padding-top: 56.25%; }
+  h2.gettysburg-two-thirds {
+    font-size: 40px !important; }
+  a.gettysburg-one-third {
+    padding-top: 118.8%; }
+  h2.gettysburg-one-third {
+    font-size: 40px !important; }
+  p.gettysburg-quote {
+    font-size: 16px !important; } }
+
+@media only screen and (min-width: 766px) {
+  a.gettysburg-two-thirds:hover p.gettysburg-two-thirds {
+    opacity: 1;
+    padding-top: 0px;
+    transition: 0.6s; }
+  a.gettysburg-one-third:hover p.gettysburg-one-third {
+    opacity: 1;
+    padding-top: 0px;
+    transition: 0.6s; }
+  .gettysburg-top-left {
+    margin-right: -5px !important;
+    margin-bottom: -5px !important; }
+  .gettysburg-top-right {
+    margin-left: -5px !important;
+    margin-bottom: -5px !important; }
+  .gettysburg-middle-left {
+    margin-right: -5px !important;
+    margin-top: -10px !important;
+    margin-bottom: -10px !important; }
+  .gettysburg-middle-right {
+    margin-left: -5px !important;
+    margin-top: -10px !important;
+    margin-bottom: -10px !important; }
+  .gettysburg-bottom-left {
+    margin-right: -5px !important;
+    margin-top: -5px !important; }
+  .gettysburg-bottom-right {
+    margin-left: -5px !important;
+    margin-top: -5px !important; } }
+
+@media only screen and (max-width: 766px) {
+  .gettysburg-top-left {
+    margin-bottom: -40px !important; }
+  .gettysburg-top-right {
+    margin-bottom: -40px !important; }
+  .gettysburg-middle-left {
+    margin-bottom: -40px !important; }
+  .gettysburg-middle-right {
+    margin-bottom: -40px !important; }
+  .gettysburg-bottom-left {
+    margin-bottom: -40px !important; }
+  a.gettysburg-two-thirds {
+    padding-top: 25%; }
+  div.gettysburg-two-thirds {
+    padding-top: 20%;
+    margin-top: -38px;
+    margin-left: -50px;
+    height: 42vw !important;
+    width: 100vw !important; }
+  h2.gettysburg-two-thirds {
+    font-size: 26px !important; }
+  a.gettysburg-one-third {
+    padding-top: 25%; }
+  h2.gettysburg-one-third {
+    font-size: 26px !important; }
+  p.gettysburg-quote {
+    font-size: 22px !important; }
+  a.gettysburg-top-right-2-img {
+    background-position: top !important; }
+  a.gettysburg-bottom-left-img {
+    background-position: top !important; } }
+
+@media only screen and (max-width: 630px) {
+  .gettysburg-top-left {
+    margin-bottom: -40px !important; }
+  .gettysburg-top-right {
+    margin-bottom: -40px !important; }
+  .gettysburg-middle-left {
+    margin-bottom: -40px !important; }
+  .gettysburg-middle-right {
+    margin-bottom: -40px !important; }
+  .gettysburg-bottom-left {
+    margin-bottom: -40px !important; }
+  div.gettysburg-two-thirds {
+    padding-top: 20%;
+    margin-top: -38px;
+    margin-left: -50px;
+    height: 42vw !important;
+    width: 100vw !important; }
+  h2.gettysburg-two-thirds {
+    font-size: 26px !important; }
+  h2.gettysburg-one-third {
+    font-size: 26px !important; }
+  p.gettysburg-quote {
+    font-size: 20px !important; } }
+
+@media only screen and (max-width: 560px) {
+  .gettysburg-top-left {
+    margin-bottom: -40px !important; }
+  .gettysburg-top-right {
+    margin-bottom: -40px !important; }
+  .gettysburg-middle-left {
+    margin-bottom: -40px !important; }
+  .gettysburg-middle-right {
+    margin-bottom: -40px !important; }
+  .gettysburg-bottom-left {
+    margin-bottom: -40px !important; }
+  div.gettysburg-two-thirds {
+    padding-top: 20%;
+    margin-top: -38px;
+    margin-left: -50px;
+    height: 42vw !important;
+    width: 100vw !important; }
+  h2.gettysburg-two-thirds {
+    font-size: 26px !important; }
+  h2.gettysburg-one-third {
+    font-size: 26px !important; }
+  p.gettysburg-quote {
+    font-size: 16px !important; } }
+
+@media only screen and (max-width: 470px) {
+  p.gettysburg-quote {
+    font-size: 13px !important; } }
+
+@media only screen and (max-width: 430px) {
+  h2.gettysburg-two-thirds {
+    font-size: 18px !important; }
+  h2.gettysburg-one-third {
+    font-size: 18px !important; } }
+
+@media only screen and (max-width: 394px) {
+  p.gettysburg-quote {
+    font-size: 11px !important; } }
+
+@media only screen and (max-width: 360px) {
+  p.gettysburg-quote {
+    font-size: 9px !important; }
+  h2.gettysburg-two-thirds {
+    font-size: 12px !important; }
+  h2.gettysburg-one-third {
+    font-size: 12px !important; } }
+
+div.gettysburg-top-left-2-img {
+  background: url("/wp-content/uploads/2019/10/quotationBG.png"); }
+
+a.gettysburg-top-right-2-img {
+  background: url("/wp-content/uploads/2019/10/ApplyandVisit.jpg");
+  box-shadow: 0px 1000px rgba(0, 0, 0, 0.25) inset;
+  transition: box-shadow 0.6s; }
+
+a.gettysburg-top-right-2-img:hover {
+  background: url("/wp-content/uploads/2019/10/ApplyandVisit.jpg");
+  box-shadow: 0px 1000px rgba(0, 0, 0, 0.6) inset;
+  transition: box-shadow 0.6s; }
+
+a.gettysburg-top-left-img {
+  background: url("/wp-content/uploads/2019/10/HistoricalPhoto.jpg");
+  box-shadow: 0px 1000px rgba(0, 0, 0, 0.25) inset;
+  transition: box-shadow 0.6s; }
+
+a.gettysburg-top-left-img:hover {
+  background: url("/wp-content/uploads/2019/10/HistoricalPhoto.jpg");
+  box-shadow: 0px 1000px rgba(0, 0, 0, 0.6) inset;
+  transition: box-shadow 0.6s; }
+
+a.gettysburg-top-right-img {
+  background: url("/wp-content/uploads/2019/10/Labor.jpg");
+  box-shadow: 0px 1000px rgba(0, 0, 0, 0.25) inset;
+  transition: box-shadow 0.6s; }
+
+a.gettysburg-top-right-img:hover {
+  background: url("/wp-content/uploads/2019/10/Labor.jpg");
+  box-shadow: 0px 1000px rgba(0, 0, 0, 0.6) inset;
+  transition: box-shadow 0.6s; }
+
+a.gettysburg-bottom-left-img {
+  background: url("/wp-content/uploads/2019/10/FundingModel.jpg");
+  box-shadow: 0px 1000px rgba(0, 0, 0, 0.25) inset;
+  transition: box-shadow 0.6s; }
+
+a.gettysburg-bottom-left-img:hover {
+  background: url("/wp-content/uploads/2019/10/FundingModel.jpg");
+  box-shadow: 0px 1000px rgba(0, 0, 0, 0.6) inset;
+  transition: box-shadow 0.6s; }
+
+a.gettysburg-bottom-right-img {
+  background: url("/wp-content/uploads/2019/10/ChancetoChangetheWorld.jpg");
+  box-shadow: 0px 1000px rgba(0, 0, 0, 0.25) inset;
+  transition: box-shadow 0.6s; }
+
+a.gettysburg-bottom-right-img:hover {
+  background: url("/wp-content/uploads/2019/10/ChancetoChangetheWorld.jpg");
+  box-shadow: 0px 1000px rgba(0, 0, 0, 0.6) inset;
+  transition: box-shadow 0.6s; }
+
+a.gettysburg-two-thirds {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer; }
+
+a.gettysburg-two-thirds:hover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  opacity: 1;
+  text-decoration: none !important; }
+
+h2.gettysburg-two-thirds {
+  display: block !important;
+  font-weight: bold !important;
+  font-family: "Open Sans Condensed" !important;
+  color: white !important;
+  padding-top: 20px;
+  padding-left: 28px;
+  text-shadow: 0 0 10px #000; }
+
+h2.gettysburg-two-thirds:hover {
+  display: block !important;
+  font-weight: bold !important;
+  font-family: "Open Sans Condensed" !important;
+  color: white !important;
+  padding-top: 20px;
+  padding-left: 28px;
+  text-shadow: 0 0 10px #000; }
+
+p.gettysburg-two-thirds {
+  opacity: 0;
+  transition: 0.6s;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  font-family: "klinic_slabbook" !important;
+  color: white !important;
+  padding-top: 20px;
+  padding-left: 30px; }
+
+p.gettysburg-quote {
+  display: block;
+  font-family: "klinic_slabbook" !important;
+  color: black !important;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+a.gettysburg-one-third {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer; }
+
+a.gettysburg-one-third:hover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  opacity: 1;
+  text-decoration: none !important;
+  padding-left: 20px; }
+
+h2.gettysburg-one-third {
+  display: block !important;
+  font-weight: bold !important;
+  font-family: "Open Sans Condensed" !important;
+  color: white !important;
+  padding-top: 20px;
+  padding-left: 28px;
+  text-shadow: 0 0 10px #000; }
+
+h2.gettysburg-one-third:hover {
+  display: block !important;
+  font-weight: bold !important;
+  font-family: "Open Sans Condensed" !important;
+  color: white !important;
+  padding-top: 20px;
+  padding-left: 28px;
+  text-shadow: 0 0 10px #000; }
+
+p.gettysburg-one-third {
+  opacity: 0;
+  transition: 0.6s;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  font-family: "klinic_slabbook" !important;
+  color: white !important;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+div.gettysburg-two-thirds {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+div.gettysburg-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  vertical-align: top; }
+
+div.gettysburg-quote-symbol {
+  height: 100%;
+  width: 72px;
+  float: left;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  display: inline-block; }
+
+img.gettysburg-quote-symbol {
+  height: 42px;
+  width: 56px;
+  float: left;
+  display: inline-block; }
+
 /* For content entered in posts by users */
 h1.entry-title, h1.entry-title a {
   font-size: 36px;

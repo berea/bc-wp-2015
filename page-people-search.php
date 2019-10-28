@@ -3,7 +3,7 @@
  * Two Column, Right-Sidebar
  *
  * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css?eb754cb075).
+ * and one of the two required files for a theme (the other being style.css?880383b789).
  * It is used to display a page when nothing more specific matches a query.
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
@@ -218,7 +218,7 @@ search.addWidget(
             Title: {{#helpers.highlight}}{ "attribute": "title" }{{/helpers.highlight}}
             <br>Department: {{department}}
             <br>Phone Ext.: {{telephoneNumber}}
-            <br>Email: {{mail}}
+            <br>Email: <a href='mailto:{{mail}}' target='_top'>{{mail}}</a>
           </div>
         </div>
       `,

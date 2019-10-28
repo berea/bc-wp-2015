@@ -126,7 +126,7 @@ if ( !function_exists('berea_scripts') ) :
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
         	
 			// Concatonated Scripts
-			wp_enqueue_script( 'production.js?f3e9726f03', get_template_directory_uri() . '/assets/js/production.js?f3e9726f03', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?cf946a8180', get_template_directory_uri() . '/assets/js/production.js?cf946a8180', array( 'jquery' ), '1.0.0', false );
 
 
             // specific page script files to trigger analytics tracking event "rt"
@@ -136,6 +136,50 @@ if ( !function_exists('berea_scripts') ) :
 
 				 ?>
  				 	<script>analytics.track('rt');</script>
+  				 <?php
+
+
+  			}
+
+  			//tracking for no-tuition page from CNN traffic
+  			if ( (is_page(2177)&&is_page('no-tuition'))  ) {
+    		
+
+				 ?>
+ 				 	<script>analytics.track('no-tuition');</script>
+  				 <?php
+
+
+  			}
+
+  			 //tracking for changemakers page from CNN traffic
+  			if ( (is_page(83444)&&is_page('alumni-who-change-the-world'))  ) {
+    		
+
+				 ?>
+ 				 	<script>analytics.track('alumni-who-change-the-world');</script>
+  				 <?php
+
+
+  			}
+
+  			//tracking for 1855-to-today from CNN traffic
+  			if ( (is_page(83441)&&is_page('1855-to-today'))  ) {
+    		
+
+				 ?>
+ 				 	<script>analytics.track('inclusivity');</script>
+  				 <?php
+
+
+  			}
+
+  			//tracking for labor page from CNN traffic
+  			if ( (is_page(2763)&&is_page('visitors'))  ) {
+    		
+
+				 ?>
+ 				 	<script>analytics.track('labor');</script>
   				 <?php
 
 
@@ -183,7 +227,7 @@ if ( !function_exists('berea_scripts') ) :
 
 			// Main Style
 			if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
-				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?81b8f90232' );
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?590efc751d' );
 			}
 			else {
 				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-stopgap.css?509d1a271c' );
@@ -195,7 +239,7 @@ if ( !function_exists('berea_scripts') ) :
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
 
 			// Concatenated Scripts
-			wp_enqueue_script( 'production.js?f3e9726f03', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?cf946a8180', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
 
 			// Main Style
 			wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-min.css?e861c04ebd' );
