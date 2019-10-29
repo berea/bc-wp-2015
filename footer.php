@@ -47,7 +47,7 @@
 				<li><a href="http://www.kentuckytourism.com/">Kentucky</a></li>
 			</ul>
 
-			<h3 class="text-uppercase">Initiatives</h3>
+			<h3>Initiatives</h3>
 
 			<ul>
 				<li><a href="https://www.berea.edu/brushy-fork-institute/">Brushy Fork Institute</a></li>
