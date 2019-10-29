@@ -65,7 +65,7 @@
 				<li><a href="https://www.berea.edu/visitor-center/">Visit Berea College/Visitor Center &amp; Shoppe</a></li>
 				<!-- <li><a href="#">Virtual Tour</a></li> -->
 				<li><a href="http://www.boonetavernhotel.com/">Historic Boone Tavern</a></li>
-				<li><a href="http://www.bereacrafts.com/">Student Crafts</a></li>
+				<li><a href="https://www.bcstudentcraft.com">Student Crafts</a></li>
 				<li><a href="https://www.berea.edu/conference-services/">Conference Center</a></li>
 				<li><a href="https://www.berea.edu/seab/">Seabury Athletic Center</a></li>
 				<li><a href="http://www.bereaathletics.com/">Athletics</a></li>
