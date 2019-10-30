@@ -67,7 +67,7 @@
 	}
 }
 
-#submit {
+#submit-notinuse {
 	@include neat-buttons($button-bg: #000, $border-radius: 0, $border-color: #555 );
 		&:hover {
 			background-color: #555;
@@ -83,7 +83,7 @@
 	@include neat-3d-buttons();
 }
 
-input[type="submit"] {
+input-notinuse[type="submit"] {
 	@include neat-buttons($button-bg: #000, $border-radius: 0, $border-color: #555 );
 	margin: 0;
 	padding: 8px;

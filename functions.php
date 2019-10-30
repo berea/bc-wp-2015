@@ -227,7 +227,7 @@ if ( !function_exists('berea_scripts') ) :
 
 			// Main Style
 			if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
-				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?590efc751d' );
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?815d33d0d1' );
 			}
 			else {
 				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-stopgap.css?509d1a271c' );
@@ -854,6 +854,7 @@ function filter_pagetitle($title) {
 		return $title;
 	}
 }
+
 
 add_filter( 'gform_field_content', 'add_aria_describedby_to_gform_elements', 10, 5 );
 function add_aria_describedby_to_gform_elements( $content, $field, $value, $lead_id, $form_id ) {
