@@ -868,3 +868,11 @@ function change_message( $message, $form ) {
     return "<div tabindex='-1' id='validation_error' class='validation_error'>" . esc_html__( 'There was a problem with your submission.', 'gravityforms' ) . ' ' . esc_html__( 'Errors have been highlighted below.', 'gravityforms' ) . '</div>';
 }
 
+function equeue_custom_tribe_js() {
+
+	wp_enqueue_script( 'custom-tribe-js', get_template_directory_uri() . '/assets/js/tribe-events.js');
+
+}
+
+add_action( 'wp_enqueue_scripts', 'equeue_custom_tribe_js' );
+
