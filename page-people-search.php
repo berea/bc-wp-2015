@@ -170,6 +170,9 @@ font-size: 30px;
 
     <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.32.0/dist/algoliasearchLite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@^4.0.0"></script>
+
+
+    <script>
       
 
 /* global instantsearch algoliasearch */
