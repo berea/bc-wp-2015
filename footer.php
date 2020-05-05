@@ -53,7 +53,6 @@
 				<li><a href="https://www.berea.edu/brushy-fork-institute/">Brushy Fork Institute</a></li>
 				<li><a href="https://www.berea.edu/pfe/">Partners for Education</a></li>
 				<li><a href="http://growappalachia.berea.edu">Grow Appalachia</a></li>
-				<li><a href="http://airinstitute.org/">AIR Institute</a></li>
 				<li><a href="https://www.berea.edu/sustainability/">Office of Sustainability</a></li>
 			</ul>
 
