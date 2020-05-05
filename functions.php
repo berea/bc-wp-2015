@@ -126,7 +126,7 @@ if ( !function_exists('berea_scripts') ) :
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
         	
 			// Concatonated Scripts
-			wp_enqueue_script( 'production.js?cf946a8180', get_template_directory_uri() . '/assets/js/production.js?cf946a8180', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?b7ef3b6fe5', get_template_directory_uri() . '/assets/js/production.js?b7ef3b6fe5', array( 'jquery' ), '1.0.0', false );
 
 
             // specific page script files to trigger analytics tracking event "rt"
@@ -239,7 +239,7 @@ if ( !function_exists('berea_scripts') ) :
         	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
 
 			// Concatenated Scripts
-			wp_enqueue_script( 'production.js?cf946a8180', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
+			wp_enqueue_script( 'production.js?b7ef3b6fe5', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
 
 			// Main Style
 			wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-min.css?e861c04ebd' );
@@ -248,6 +248,10 @@ if ( !function_exists('berea_scripts') ) :
 
 		// Berea Main JS
 		wp_enqueue_script( 'berea', get_template_directory_uri() . '/assets/js/custom/berea.js?0da2c94154', '1.0.0', false );
+
+		// Siteimprove analytics script
+		wp_register_script('siteimprove_analytics', get_template_directory_uri() . '/assets/js/siteimprove-analytics.js?d8aa05686c', array(), '1.0.0', true);
+		wp_enqueue_script('siteimprove_analytics');
 
 		// Dashicons
 		 wp_enqueue_style( 'dashicons' );
@@ -870,7 +874,7 @@ function change_message( $message, $form ) {
 
 function equeue_custom_tribe_js() {
 
-	wp_enqueue_script( 'custom-tribe-js', get_template_directory_uri() . '/assets/js/tribe-events.js');
+	wp_enqueue_script( 'custom-tribe-js', get_template_directory_uri() . '/assets/js/tribe-events.js?fbc0d875e1');
 
 }
 
