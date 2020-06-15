@@ -2598,6 +2598,14 @@ $(document).on('click', 'li.vc_tta-tab a,li.vc_tta-tab,.vc_tta-panel-title', fun
 })();
 
 */
+
+/*<![CDATA[*/
+(function() {
+var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+sz.src = '//siteimproveanalytics.com/js/siteanalyze_90779361.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+})();
+/*]]>*/
 /**
  * @file The core file for the events calendar plugin javascript.
  * This file must load on all front facing events pages and be the first file loaded after vendor dependencies.
