@@ -67,7 +67,7 @@
 				<br><br><br>
 				<a href="http://www.boonetavernhotel.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/boonetavern165x59.png" aria-label="Boone Tavern"/></a>
 				<br><br><br>
-				<a href="https://www.facebook.com/Loghousecraftgallery/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/log-house.png" aria-label="Log House Gallery"/></a>
+				<a href="https://www.bcloghousecrafts.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/log-house.png" aria-label="Log House Gallery"/></a>
 				<br><br><br>
 				<a href="https://www.bcstudentcraft.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/studentcrafts165x42.png" aria-label="Student Crafts"/></a>
 				<br><br><br>
