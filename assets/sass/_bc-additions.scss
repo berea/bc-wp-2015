@@ -1331,39 +1331,3 @@ input.button {
 }
 
 
-/*
-****DONATE Button
-*/
-@media only screen and (min-width: 1023px) {
-  
-a.buttonDonate {
-  display: inline-block !important;
-  padding: 0.5em 0.5em !important;
-  /*border: 0.18em solid #FFFFFF;*/
-  border-radius: 0.6em;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight:bold;
-  color: #FFFFFF !important;
-  text-align: center;
-  transition: all 0.2s;
-  text-transform: uppercase;
-  height: 40px !important;
-  line-height: 19px !important;
-  background-color:#C75B12 !important;
-   }
-
-a.buttonDonate:hover {
-  border-color: white; }
-
-}
-
-@media all and (max-width: 30em) {
-  a.buttonDonate {
-    display: block;
-    margin: 0.2em auto; } }
-
-/*
-****END DONATE Button
-*/

@@ -257,5 +257,5 @@
 		</li>
 
 		<li>
-			<a href="http://www.berea.edu/give-to-berea/" class="buttonDonate">Donate</a>
+			<a href="http://www.berea.edu/give-to-berea/" class="buttonDonate">DONATE</a>
 		</li>
