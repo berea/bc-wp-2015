@@ -39,7 +39,7 @@
 		</div><!-- .footer-promise -->
 
 		<div class="footer-about">
-			<h3 class="element-uppercase">About The Berea Community</h3>
+			<h3 class="element-uppercase">About the Berea Community</h3>
 
 			<ul>
 				<li><a href="http://www.visitberea.com/">City of Berea</a></li>
