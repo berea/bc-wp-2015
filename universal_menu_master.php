@@ -257,5 +257,5 @@
 		</li>
 
 		<li>
-			<a href="https://give.berea.edu/give/296305/#!/donation/checkout?c_src=GIV20ONLINE" class="buttonDonate">DONATE</a>
+			<a href="https://give.berea.edu/give/191405/#!/donation/checkout" class="buttonDonate">DONATE</a>
 		</li>
