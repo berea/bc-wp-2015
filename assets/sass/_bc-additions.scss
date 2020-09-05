@@ -463,7 +463,7 @@ label.screen-reader{
   
   .slider-textblock {
     margin-top:-30px;
-	@include MQ(L) {
+	@include MQ(M) {
 	  bottom:60px;
 	}
   }
