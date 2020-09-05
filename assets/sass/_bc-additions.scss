@@ -463,14 +463,14 @@ label.screen-reader{
   
   .slider-textblock {
     margin-top:-30px;
-	@include MQ(M) {
+	@include MQ(L) {
 	  bottom:60px;
 	}
   }
 
   .slider-textblock-without-blogname {
     margin-top:-30px;
-    @include MQ(M) {
+    @include MQ(Mnewbreak) {
       bottom:80px;
     }
   }
