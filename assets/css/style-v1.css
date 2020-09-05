@@ -3066,7 +3066,7 @@ label.screen-reader {
   display: block; }
   .cd-header-ribbon a:hover {
     opacity: 1; }
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 1024px) {
     .cd-header-ribbon {
       background: url("../images/bc-ribbon.png");
       width: 228px;
@@ -3108,14 +3108,14 @@ label.screen-reader {
           height: 66px !important;
           background-repeat: no-repeat !important; } }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
   .short-ribbon .cd-header-ribbon {
     background: url("../images/bc-ribbon.png");
     width: 228px;
     height: 145px;
     background-position: bottom center; } }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
   .short-ribbon div#logo {
     background: url("../images/bc-logo-stacked.svg");
     background-size: contain;
