@@ -454,7 +454,7 @@ label.screen-reader{
     border-bottom:none;
     padding-bottom:20px;
     margin-bottom:0px;
-	@include MQ(Mnewbreak) {
+	@include MQ(M) {
 	  margin-top:-4px;
       padding-bottom:0px;
 	  padding-top:0px;
