@@ -3309,8 +3309,10 @@ label.screen-reader {
         text-shadow: 0 0 10px #000;
         padding-bottom: 0px;
         border-bottom: none;
-        font-size: 3em;
         line-height: 1.3em; } }
+    @media only screen and (min-width: 824px) {
+      .homepage-slider h1 {
+        font-size: 4em; } }
     @media only screen and (min-width: 1024px) {
       .homepage-slider h1 {
         width: 980px; } }

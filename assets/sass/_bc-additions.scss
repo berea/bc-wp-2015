@@ -289,11 +289,11 @@ label.screen-reader{
       text-shadow: 0 0 10px #000;
       padding-bottom: 0px;
       border-bottom: none;
-      font-size: 3em;
       line-height: 1.3em;
     }
 
-    @include MQ(Mnewbreak) {
+    
+    @media only screen and (min-width: 824px){
       font-size: 4em;
     }
 
