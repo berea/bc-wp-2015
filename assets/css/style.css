@@ -3482,11 +3482,6 @@ label.screen-reader {
     border-bottom: none;
     padding-bottom: 20px;
     margin-bottom: 0px; }
-    @media only screen and (min-width: 769px) {
-      .homepage-slider-sizing-dept h1 {
-        margin-top: -4px;
-        padding-bottom: 0px;
-        padding-top: 0px; } }
   .homepage-slider-sizing-dept .slider-textblock {
     margin-top: -30px; }
     @media only screen and (min-width: 1024px) {
@@ -3494,6 +3489,9 @@ label.screen-reader {
         bottom: 60px; } }
   .homepage-slider-sizing-dept .slider-textblock-without-blogname {
     margin-top: -30px; }
+    @media only screen and (min-width: 769px) {
+      .homepage-slider-sizing-dept .slider-textblock-without-blogname {
+        bottom: 80px; } }
 
 .vertical-center {
   vertical-align: middle; }

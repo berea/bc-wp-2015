@@ -454,7 +454,7 @@ label.screen-reader{
     border-bottom:none;
     padding-bottom:20px;
     margin-bottom:0px;
-	@include MQ(M) {
+	@include MQ(Mnewbreak) {
 	  margin-top:-4px;
       padding-bottom:0px;
 	  padding-top:0px;
@@ -470,7 +470,7 @@ label.screen-reader{
 
   .slider-textblock-without-blogname {
     margin-top:-30px;
-    @include MQ(Mnewbreak) {
+    @include MQ(M) {
       bottom:80px;
     }
   }
