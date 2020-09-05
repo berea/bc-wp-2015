@@ -73,7 +73,7 @@ label.screen-reader{
     width: 114px;
     height: 80px;
 
-    @include MQ(M) {
+    @include MQ(L) {
       background: url("../images/primary_white_transparent.svg");
       background-size: 210px;
       background-repeat: no-repeat;

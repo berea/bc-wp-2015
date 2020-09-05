@@ -3081,7 +3081,7 @@ label.screen-reader {
     display: block;
     width: 114px;
     height: 80px; }
-    @media only screen and (min-width: 769px) {
+    @media only screen and (min-width: 1024px) {
       .cd-header-ribbon div#logo {
         background: url("../images/primary_white_transparent.svg");
         background-size: 210px;
