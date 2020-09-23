@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "del": "^2.0.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^3.1.0",
@@ -9,12 +9,12 @@
     "gulp-jshint": "^2.1.0",
     "gulp-md5-assets": "^1.0.1",
     "gulp-notify": "^3.2.0",
-    "gulp-plumber": "^1.0.1",
+    "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^1.5.1",
     "gulp-uglify": "^1.1.0",
-    "gulp-uglifycss": "^1.0.4",
+    "gulp-uglifycss": "^1.1.0",
     "gulp-util": "^3.0.7",
     "jshint-stylish": "^2.2.1",
     "run-sequence": "^1.1.4"
@@ -30,6 +30,6 @@
     "gulp-json-concat": "^0.1.1",
     "jshint": "^2.10.2",
     "minimatch": "^3.0.2",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.14.1"
   }
 }

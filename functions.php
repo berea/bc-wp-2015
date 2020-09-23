@@ -3,6 +3,7 @@
  * berea functions and definitions
  *
  * @package berea
+ test 2
  */
 
 if ( ! function_exists( 'berea_setup' ) ) :
@@ -227,7 +228,7 @@ if ( !function_exists('berea_scripts') ) :
 
 			// Main Style
 			if (wp_get_theme()->name != 'Berea 2015 - Stopgap Child Theme') {
-				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?859add9fb1' );
+				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-v1.css?2b74f0e4e5' );
 			}
 			else {
 				wp_enqueue_style( 'berea-style',  get_template_directory_uri() . '/assets/css/style-stopgap.css?509d1a271c' );
@@ -859,6 +860,33 @@ function filter_pagetitle($title) {
 	}
 }
 
+/* adding filter to add Puerto Rico */
+
+add_filter( 'gform_address_types', 'expanded_united_states', 10, 2 );
+
+function expanded_united_states( $address_types, $form_id ) {
+
+    $address_types['usa'] = array(
+
+                                                'label'       => 'Expanded United States',
+
+            'zip_label'   => 'Zip Code',
+
+            'state_label' => 'State',
+
+            'country'     => 'United States',
+
+            'states'      => array('Alabama', 'Alaska', 'American Samoa', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'District of Columbia', 'Federated States of Micronesia', 'Florida', 'Georgia', 'Guam', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Marshall Islands', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Northern Mariana Islands', 'Ohio', 'Oklahoma', 'Oregon', 'Palau', 'Pennsylvania', 'Puerto Rico', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virgin Islands', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming', 'Armed Forces Americas', 'Armed Forces Europe', 'Armed Forces Pacific'
+
+                                                )
+
+                );
+
+   return $address_types;
+
+}
+
+/* end filter */
 
 add_filter( 'gform_field_content', 'add_aria_describedby_to_gform_elements', 10, 5 );
 function add_aria_describedby_to_gform_elements( $content, $field, $value, $lead_id, $form_id ) {
