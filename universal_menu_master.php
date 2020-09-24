@@ -246,15 +246,16 @@
 			<a href="http://www.bereaathletics.com/" class="text-uppercase">Athletics</a>
 		</li>
 
+		<li class="">
+			<a href="https://www.berea.edu/directory/" class="text-uppercase">Directory</a>
+		</li>
 
 		<li>
 			<a href="http://www.berea.edu/give-to-berea/" class="text-uppercase">Giving</a>
 		</li>
 
 
-		<li class="">
-			<a href="https://www.berea.edu/directory/" class="text-uppercase">Directory</a>
-		</li>
+
 
 		<li>
 			<a href="https://give.berea.edu/give/191405/#!/donation/checkout" class="buttonDonate">DONATE</a>
