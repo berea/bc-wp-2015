@@ -1096,7 +1096,7 @@ Main components
 .cd-main-content, .cd-main-header {
   position: relative;
   transition: transform 0.3s; }
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 1014px) {
     .cd-main-content.nav-is-visible, .cd-main-header.nav-is-visible {
       transform: translateX(-300px); }
     .nav-on-left .cd-main-content.nav-is-visible, .nav-on-left .cd-main-header.nav-is-visible {
@@ -1120,7 +1120,7 @@ Main components
     top: 0;
     left: 0;
     width: 100%; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .cd-main-header {
       height: 80px; }
       .cd-main-header:after {
@@ -1134,11 +1134,11 @@ Main components
   left: 5%; }
   .cd-logo img {
     display: block; }
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 1014px) {
     .nav-on-left .cd-logo {
       left: auto;
       right: 5%; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .cd-logo {
       top: 26px;
       left: 4em; } }
@@ -1150,13 +1150,13 @@ Main components
   right: 5%; }
   .cd-header-buttons li {
     display: inline-block; }
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 1014px) {
     .nav-on-left .cd-header-buttons {
       right: auto;
       left: 5%; }
       .nav-on-left .cd-header-buttons li {
         float: right; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .cd-header-buttons {
       top: 18px;
       right: 1em; } }
@@ -1299,7 +1299,7 @@ Main components
 .cd-nav-trigger.nav-is-visible span::after {
   transform: translateX(4px) translateY(2px) rotate(-45deg); }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1015px) {
   .cd-nav-trigger {
     display: none; } }
 
@@ -1335,7 +1335,7 @@ Main components
     transform: translateZ(0);
     will-change: transform, opacity;
     transition: transform 0.3s, opacity 0.3s; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .cd-primary-nav a, .cd-primary-nav ul a {
       color: #005A8B !important;
       font-size: 1em; } }
@@ -1355,7 +1355,7 @@ Main components
     .admin-bar .cd-primary-nav ul {
       top: 46px; } }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1014px) {
   .nav-on-left .cd-primary-nav, .nav-on-left .cd-primary-nav ul {
     right: auto;
     left: 0; } }
@@ -1381,7 +1381,7 @@ Main components
       padding-top: 13px;
       margin-top: 0px;
       margin-bottom: 0px; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .cd-primary-nav .cd-nav-gallery .cd-nav-item, .cd-primary-nav .cd-nav-icons .cd-nav-item {
       /* items with picture (or icon) and title */
       height: 80px;
@@ -1438,7 +1438,7 @@ Main components
         background-image: url("img/line-icon-7.svg"); }
       .cd-primary-nav .cd-nav-icons .cd-nav-item.item-8::before {
         background-image: url("img/line-icon-8.svg"); } }
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 1014px) {
     .cd-primary-nav {
       /* by default .cd-primary-nav is hidden - trick for iOS devices where you can see the navigation if you pull down */
       visibility: hidden;
@@ -1459,7 +1459,7 @@ Main components
       to {
         transform: translateX(300px); } } }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1015px) {
   .cd-primary-nav {
     position: static;
     padding: 0 80px 0 0;
@@ -1701,7 +1701,7 @@ Main components
     transform: rotate(45deg); }
   .has-children > a::after, .go-back a::after {
     transform: rotate(-45deg); }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after {
       background: #c9cbc4; }
     .has-children > a:hover::before, .has-children > a:hover::after, .go-back a:hover::before, .go-back a:hover::after {
@@ -1724,7 +1724,7 @@ Main components
     left: 20px;
     transform-origin: 1px 50%; }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1015px) {
   .has-children > a::before, .has-children > a::after {
     right: 15%; }
   .cd-primary-nav > .has-children > a {
@@ -1784,7 +1784,7 @@ Main components
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1015px) {
       .cd-search input {
         width: 80%;
         padding: 0;
@@ -1805,7 +1805,7 @@ Main components
     transition: opacity .3s 0s, visibility 0s 0s; }
   .nav-is-fixed .cd-search {
     position: fixed; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .cd-search {
       height: 120px;
       top: 120px; }
@@ -1833,7 +1833,7 @@ Main components
     opacity: 1;
     visibility: visible;
     transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s; }
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 1014px) {
     .cd-overlay.is-visible {
       transform: translateX(-300px); }
     .nav-on-left .cd-overlay.is-visible {
@@ -1869,7 +1869,7 @@ support for no js
   opacity: 1;
   visibility: visible; }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1015px) {
   .no-js .cd-primary-nav {
     position: absolute;
     z-index: 3;
@@ -1900,7 +1900,7 @@ h3.cd-news-title {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1015px) {
   .cd-nav li {
     text-transform: none; }
   a.cd-nav-item > img {
@@ -1930,7 +1930,7 @@ h3.cd-news-title {
   background-color: #C25700 !important;
   color: #FFFFFF !important;
   font-weight: bold; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .cd-item-as-button {
       padding-left: 30px;
       padding-right: 0px;
@@ -2441,7 +2441,7 @@ p.byline {
   @media screen and (min-width: 1024px) {
     .page-template-default #primary, .single-post #primary, .archive #primary, .blog #primary, .single-media-coverage #primary {
       float: left; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .page-template-default #primary, .single-post #primary, .archive #primary, .blog #primary, .single-media-coverage #primary {
       float: left;
       display: block;
@@ -2459,7 +2459,7 @@ p.byline {
     background: #eee; }
     .page-template-default #secondary.mobile-visible #secondary-inner, .single-post #secondary.mobile-visible #secondary-inner, .archive #secondary.mobile-visible #secondary-inner, .blog #secondary.mobile-visible #secondary-inner, .single-media-coverage #secondary.mobile-visible #secondary-inner {
       padding: 0; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .page-template-default #secondary, .page-template-default #secondary.mobile-visible, .single-post #secondary, .single-post #secondary.mobile-visible, .archive #secondary, .archive #secondary.mobile-visible, .blog #secondary, .blog #secondary.mobile-visible, .single-media-coverage #secondary, .single-media-coverage #secondary.mobile-visible {
       float: left;
       display: block;
@@ -2552,7 +2552,7 @@ p.byline {
       .page-template-template-news #primary:last-child,
       .page-template-page-templatestemplate-left-col-php #primary:last-child {
         margin-right: 0; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .apply-2col-left-sidebar #primary,
     .page-template-template-news #primary,
     .page-template-page-templatestemplate-left-col-php #primary {
@@ -2569,7 +2569,7 @@ p.byline {
 .page-template-template-news #secondary,
 .page-template-page-templatestemplate-left-col-php #secondary {
   display: none !important; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .apply-2col-left-sidebar #secondary,
     .page-template-template-news #secondary,
     .page-template-page-templatestemplate-left-col-php #secondary {
@@ -3066,7 +3066,7 @@ label.screen-reader {
   display: block; }
   .cd-header-ribbon a:hover {
     opacity: 1; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .cd-header-ribbon {
       background: url("../images/bc-ribbon.png");
       width: 228px;
@@ -3081,7 +3081,7 @@ label.screen-reader {
     display: block;
     width: 114px;
     height: 80px; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1015px) {
       .cd-header-ribbon div#logo {
         background: url("../images/primary_white_transparent.svg");
         background-size: 210px;
@@ -3094,7 +3094,7 @@ label.screen-reader {
     background-repeat: no-repeat !important;
     width: 228px !important;
     height: 50px !important; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1015px) {
       .cd-header-ribbon.mini-ribbon {
         height: 90px !important; } }
     .cd-header-ribbon.mini-ribbon div#logo {
@@ -3103,19 +3103,19 @@ label.screen-reader {
       background-size: contain !important;
       background-repeat: no-repeat !important;
       background-position: top center !important; }
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 1015px) {
         .cd-header-ribbon.mini-ribbon div#logo {
           height: 66px !important;
           background-repeat: no-repeat !important; } }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1015px) {
   .short-ribbon .cd-header-ribbon {
     background: url("../images/bc-ribbon.png");
     width: 228px;
     height: 145px;
     background-position: bottom center; } }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1015px) {
   .short-ribbon div#logo {
     background: url("../images/bc-logo-stacked.svg");
     background-size: contain;
@@ -3131,7 +3131,7 @@ label.screen-reader {
 
 .shift-down {
   margin-top: 54px; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .shift-down {
       margin-top: 84px; } }
 
@@ -3174,7 +3174,7 @@ label.screen-reader {
   @media only screen and (min-width: 769px) {
     .hero-nav {
       padding-top: 0px; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .hero-nav {
       width: 100%; } }
 
@@ -3282,7 +3282,7 @@ label.screen-reader {
         color: #FFFFFE;
         margin-right: auto;
         margin-left: auto; } }
-  @media only screen and (min-width: 769px) and (min-width: 1024px) {
+  @media only screen and (min-width: 769px) and (min-width: 1015px) {
     .homepage-slider .slider-breadcrumbs {
       width: 980px; } }
     .homepage-slider .slider-breadcrumbs #breadcrumbs .breadcrumb_last:only-child {
@@ -3313,7 +3313,7 @@ label.screen-reader {
     @media only screen and (min-width: 824px) {
       .homepage-slider h1 {
         font-size: 4em; } }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1015px) {
       .homepage-slider h1 {
         width: 980px; } }
   .homepage-slider p {
@@ -3333,7 +3333,7 @@ label.screen-reader {
     @media only screen and (min-width: 769px) {
       .homepage-slider .tagline {
         text-shadow: 0 0 10px #000; } }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1015px) {
       .homepage-slider .tagline {
         width: 980px !important; } }
   .homepage-slider .read-more {
@@ -3530,25 +3530,25 @@ label.screen-reader {
     content: "";
     display: table;
     clear: both; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .menu-block-wrapper {
       display: block; } }
 
 .apply-mobile-injected-menu > li:not(.menu-item-hide-on-large) {
   display: none; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .apply-mobile-injected-menu > li:not(.menu-item-hide-on-large) {
       display: inline-block; } }
 
 .menu-item-hide-on-large {
   display: block; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .menu-item-hide-on-large {
       display: none !important; } }
 
 .menu-item-show-on-large {
   display: none; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1015px) {
     .menu-item-show-on-large {
       display: block; } }
 

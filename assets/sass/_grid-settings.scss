@@ -20,7 +20,7 @@ $max-width:100%;
 $S:     481px;
 $M:     769px;
 $Mnewbreak:     824px;
-$L:     1024px; // 1171px;
+$L:     1015px; // changes from 1024px
 $maxL:    $L - 1px;
 $WPA:   782px; //match the wordpress admin bar breakpoint
 $sm: new-breakpoint(min-width 200px 4);
