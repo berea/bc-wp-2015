@@ -950,7 +950,7 @@ body {
   @media screen and (min-width: 200px) {
     #secondary {
       display: block; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1150px) {
     #secondary {
       display: block;
       float: left;
@@ -1973,7 +1973,7 @@ h3.cd-news-title {
     font-weight: normal;
     text-decoration: inherit;
     float: right; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1150px) {
     .anchor-button {
       display: none; } }
 
@@ -2234,7 +2234,7 @@ object {
       .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .alpha-links li a,
       .page.page-id-8334 #secondary .menu.legacy-wall-sidebar .alpha-links li a {
         display: inline-block; }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1150px) {
         .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .alpha-links li,
         .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .alpha-links li,
         .page.page-id-8334 #secondary .menu.legacy-wall-sidebar .alpha-links li {
@@ -2249,7 +2249,7 @@ object {
       .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links,
       .page.page-id-8334 #secondary .menu.legacy-wall-sidebar .year-links {
         column-count: 3; } }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1150px) {
       .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links,
       .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links,
       .page.page-id-8334 #secondary .menu.legacy-wall-sidebar .year-links {
@@ -2262,7 +2262,7 @@ object {
       break-inside: avoid;
       font-size: 2em;
       padding: 0.42em 0; }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1150px) {
         .archive.tax-legacy-wall-year #secondary .menu.legacy-wall-sidebar .year-links li,
         .archive.post-type-archive-legacy-wall-names #secondary .menu.legacy-wall-sidebar .year-links li,
         .page.page-id-8334 #secondary .menu.legacy-wall-sidebar .year-links li {
@@ -2438,7 +2438,7 @@ p.byline {
       float: none; }
       .page-template-default #primary:last-child, .single-post #primary:last-child, .archive #primary:last-child, .blog #primary:last-child, .single-media-coverage #primary:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1150px) {
     .page-template-default #primary, .single-post #primary, .archive #primary, .blog #primary, .single-media-coverage #primary {
       float: left; } }
   @media only screen and (min-width: 1150px) {
@@ -2484,7 +2484,7 @@ p.byline {
     @media screen and (min-width: 769px) {
       .page-template-default #secondary .column-links, .single-post #secondary .column-links, .archive #secondary .column-links, .blog #secondary .column-links, .single-media-coverage #secondary .column-links {
         column-count: 3; } }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1150px) {
       .page-template-default #secondary .column-links, .single-post #secondary .column-links, .archive #secondary .column-links, .blog #secondary .column-links, .single-media-coverage #secondary .column-links {
         column-count: 2; } }
     .page-template-default #secondary .column-links li, .single-post #secondary .column-links li, .archive #secondary .column-links li, .blog #secondary .column-links li, .single-media-coverage #secondary .column-links li {
@@ -2493,7 +2493,7 @@ p.byline {
       break-inside: avoid;
       font-size: 2em;
       padding: 0.42em 0; }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1150px) {
         .page-template-default #secondary .column-links li, .single-post #secondary .column-links li, .archive #secondary .column-links li, .blog #secondary .column-links li, .single-media-coverage #secondary .column-links li {
           font-size: 1rem;
           padding: 0 0 0.21em 0; } }
