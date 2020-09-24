@@ -20,13 +20,13 @@ $max-width:100%;
 $S:     481px;
 $M:     769px;
 $Mnewbreak:     824px;
-$L:     1150px; // changing back to 1024px for now. Needs to be 1150px
+$L:     1024px; // changing back to 1024px for now. Needs to be 1150px
 $maxL:    $L - 1px;
 $WPA:   782px; //match the wordpress admin bar breakpoint
 $sm: new-breakpoint(min-width 200px 4);
 $smbg: new-breakpoint(min-width 480px 4);
 $md: new-breakpoint(min-width 769px 6); // it was 768 - but not flipping over with other media queries so bumped by 1
-$lg: new-breakpoint(min-width 1150px 6);
+$lg: new-breakpoint(min-width 1024px 6);
 $hg: new-breakpoint(min-width 1140px 12);
 
 // Neat Breakpoints
