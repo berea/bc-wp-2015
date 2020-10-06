@@ -67,7 +67,7 @@
 				<li><a href="https://www.bcstudentcraft.com">Student Crafts</a></li>
 				<li><a href="https://www.berea.edu/conference-services/">Conference Center</a></li>
 				<li><a href="https://www.berea.edu/seab/">Seabury Athletic Center</a></li>
-				<li><a href="http://www.bereaathletics.com/">Athletics</a></li>
+				<li><a href="https://calendar.berea.edu/">Events</a></li>
 				<li><a href="https://www.berea.edu/convocations/">Convocations</a></li>
 				<li><a href="https://www.berea.edu/facilities-management/">Facilities Management</a></li>
 				<li><a href="https://www.berea.edu/human-resources/prospective-employees/">Employment Opportunities</a></li>
