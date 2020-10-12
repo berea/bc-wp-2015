@@ -12,6 +12,7 @@
 
 				<!-- <li><a href="#">The Berea College Difference</a></li> -->
 				<li><a href="http://www.berea.edu/about/quick-facts/">Quick Facts</a></li>
+				<li><a href="https://www.berea.edu/about/rankings-recognition/">Rankings and Faculty Recognition</a></li>
 				<!-- <li><a href="#">Ratings and Rankings</a></li> -->
 				<!-- <li><a href="#">Berea in Words</a></li> -->
 				<!-- <li><a href="#">Berea in Photographs </a></li> -->
@@ -19,7 +20,7 @@
 				<!-- <li><a href="#">Our Vision</a></li> -->
 				<!-- <li><a href="https://www.berea.edu/about/mission/">The Great Commitments</a></li> -->
 				<li><a href="https://www.berea.edu/about/history/">Early History</a></li>
-				<li><a href="https://www.berea.edu/about/berea-by-the-numbers/">Berea By the Numbers</a></li>
+				<li><a href="https://www.berea.edu/about/berea-by-the-numbers/">Berea by the Numbers</a></li>
 			</ul>
 		</li>
 
