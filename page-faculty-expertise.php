@@ -131,7 +131,7 @@ font-size: 30px;
          <div id="primary" class="content-area">
           <div class="right-panel">
 
-          <h1 class="entry-title" itemprop="name">People Search</h1>
+          <h1 class="entry-title" itemprop="name">Faculty Expertise Search</h1>
         <div id="searchbox" class="ais-SearchBox"></div>
         <div id="hits"></div>
         <div id="pagination"></div>
@@ -146,7 +146,7 @@ font-size: 30px;
         <div class="left-panel">
         <div id="clear-refinements"></div>
 
-        <h2 class="h2-searchbar">Department</h2>
+        <h2 class="h2-searchbar">Graduate School</h2>
         <div id="brand-list"></div>
       </div>
 
@@ -205,7 +205,7 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.refinementList({
     container: '#brand-list',
-    attribute: 'department',
+    attribute: 'Graduate',
     limit: 50,
   })
 );
@@ -222,7 +222,7 @@ search.addWidget(
             <br>Email: <a href='mailto:{{mail}}' target='_top'>{{Email}}</a>
           </div>
           <div class="hit-description">
-            Title: {{#helpers.highlight}}{ "attribute": "Topics of Expertise" }{{/helpers.highlight}}
+            Areas of Expertise: {{#helpers.highlight}}{ "attribute": "Topics of Expertise" }{{/helpers.highlight}}
             <br>Undergrad: {{UnderGrad}}
             <br>Graduate: {{Graduate}}
           </div>
