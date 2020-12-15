@@ -220,11 +220,13 @@ search.addWidget(
           <div class="hit-name">
             {{Last Name}}, {{First Name}}
             <br>Email: <a href='mailto:{{mail}}' target='_top'>{{Email}}</a>
+            <br>LinkedIn: <a href='LinkedIn' target='_top'>{{LinkedIn}}</a>
           </div>
           <div class="hit-description">
             Areas of Expertise: {{#helpers.highlight}}{ "attribute": "Topics of Expertise" }{{/helpers.highlight}}
             <br>Undergrad: {{UnderGrad}}
             <br>Graduate: {{Graduate}}
+            <br>Post-Graduate: {{Post-Graduate}}
           </div>
         </div>
       `,
