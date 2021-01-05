@@ -149,11 +149,13 @@
 </div><!-- .footer-social -->
 
 <div class="site-info">
+	<!--
 	<ul class="site-info-school">
 		<li class="element-uppercase">Berea College</li>
 		<li class="element-uppercase">Berea, Ky</li>
 		<li>859-985-3000</li>
 	</ul>
+-->
     <div class="site-info-links">
         <ul>
             <li>&copy; <?php echo date("Y"); ?> Berea College</li><li><a href="/wp-admin">Website Administration</a></li><li><a href="https://www.berea.edu/web-accessibility/">Accessibility</a></li><li><a href="https://www.berea.edu/legal-information/privacy-policy/">Privacy Policy</a></li><li><a href="https://www.berea.edu/legal-information/terms-of-use/">Terms of Use</a></li>
