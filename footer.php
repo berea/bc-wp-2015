@@ -81,8 +81,10 @@
 
             <div id="topleft">
 
-                <h3 class="element-uppercase">Maps &amp; Directions</h3>
+                <!--h3 class="element-uppercase">Maps &amp; Directions</h3-->
+				<h3 class="element-uppercase">Berea College</h3>
 
+<!--
                 <div id="gmap_links_leftside">
                     <a href="https://www.google.com/maps/place/Berea+College/@37.5716935,-84.2890655,17z/data=!4m2!3m1!1s0x8842e192a683f201:0x193cd1402103123a">Google Maps</a> |
                     <a href="http://www.bing.com/maps/default.aspx?q=berea+college+maps&mkt=en&FORM=HDRSC4">Bing Maps</a>
@@ -91,14 +93,18 @@
                 <div id="berea_logo_leftside">
                     <a href="https://www.berea.edu/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bc-logo-stacked.svg" aria-label="Berea College"/></a>
                 </div>
+-->
 
             </div><!-- #topleft -->
 
             <div id="bottomright">
-
+<!--
                 <div id="black-text">
                     <a href="https://www.google.com/maps/place/Berea+College/@37.5716935,-84.2890655,17z/data=!4m2!3m1!1s0x8842e192a683f201:0x193cd1402103123a"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/map-image.png" aria-label="Map to Berea College"/></a></a>
                 </div>
+-->
+
+<!--
 
                 <div id="gmap_links_undermap">
                     <a href="https://www.google.com/maps/place/Berea+College/@37.5716935,-84.2890655,17z/data=!4m2!3m1!1s0x8842e192a683f201:0x193cd1402103123a">Google Maps</a> |
@@ -106,6 +112,16 @@
                     <br><br>
 					<p>101 Chestnut St.</p>
 					<p>Berea, KY 40404</p>
+                </div>
+
+-->
+
+                <div id="gmap_links_undermap">
+					<p>101 Chestnut St.</p>
+					<p>Berea, KY 40404</p>
+					<p>859-985-3000</p>
+					<br><br>
+					<a href="https://www.berea.edu/campus-map/">Maps &amp; Directions</a>
                 </div>
 
             </div><!-- #bottomright -->
