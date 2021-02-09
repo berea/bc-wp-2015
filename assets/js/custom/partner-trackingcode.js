@@ -20,8 +20,6 @@
 
 // monsido
 
-/*
-
 <script type="text/javascript">
     window._monsido = window._monsido || {
         token: "5hgcBGlDuyJ7XbCqLaRkOg",
@@ -34,14 +32,7 @@
                 documentExt: ["pdf","doc","ppt","docx","pptx"],
             },
         },
-        heatmap: {
-            enabled: true,
-        },
-        pageCorrect: {
-            enabled: true,
-        },
     };
 </script>
-<script type="text/javascript" async src="https://app-script.monsido.com/v2/monsido-script.js"></script>
+<script type="text/javascript" async src='https://app-script.monsido.com/v2/monsido-script.js'></script>
 
-*/
