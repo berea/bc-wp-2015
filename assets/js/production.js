@@ -2589,6 +2589,8 @@ $(document).on('click', 'li.vc_tta-tab a,li.vc_tta-tab,.vc_tta-panel-title', fun
 
 // monsido
 
+/*
+
 <script type="text/javascript">
     window._monsido = window._monsido || {
         token: "5hgcBGlDuyJ7XbCqLaRkOg",
@@ -2610,6 +2612,8 @@ $(document).on('click', 'li.vc_tta-tab a,li.vc_tta-tab,.vc_tta-panel-title', fun
     };
 </script>
 <script type="text/javascript" async src="https://app-script.monsido.com/v2/monsido-script.js"></script>
+
+*/
 
 /*<![CDATA[*/
 (function() {

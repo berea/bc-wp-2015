@@ -20,6 +20,8 @@
 
 // monsido
 
+/*
+
 <script type="text/javascript">
     window._monsido = window._monsido || {
         token: "5hgcBGlDuyJ7XbCqLaRkOg",
@@ -41,3 +43,5 @@
     };
 </script>
 <script type="text/javascript" async src="https://app-script.monsido.com/v2/monsido-script.js"></script>
+
+*/
