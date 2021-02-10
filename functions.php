@@ -236,8 +236,11 @@ if ( !function_exists('berea_scripts') ) :
 
 		else :
 			// jQuery 2.1.1 - required for megadropdown scripts
-        	wp_deregister_script('jquery');
-        	wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
+			//***removed***
+        	//wp_deregister_script('jquery');
+        	//wp_register_script('jquery', get_template_directory_uri().'/assets/js/jquery-2.1.1.min.js?e40ec2161f');
+
+        	//***end removed***
 
 			// Concatenated Scripts
 			wp_enqueue_script( 'production.js?cb2fe2aa0f', get_template_directory_uri() . '/assets/js/production-min.js?533fa321c3', array( 'jquery' ), '1.0.0', false );
