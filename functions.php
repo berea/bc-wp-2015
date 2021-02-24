@@ -187,6 +187,24 @@ if ( !function_exists('berea_scripts') ) :
   			}
 
 
+  			//adding jquery to Great Commitments for temporary fix
+  				if ( (is_page(498)&&is_page('Homepage'))) {
+    		
+    		
+
+				 ?>
+ 				 
+
+  				 <?php
+
+  				  				 			// jquery script
+				wp_register_script('gc_jquery', get_template_directory_uri() . '/assets/js/jquery-2.1.1.min.js', array(), '1.0.0', true);
+				wp_enqueue_script('gc_jquery');
+  				
+
+  			}
+
+
   			// analytics tracking for entire subsite
 
   			//$current_site = get_current_site()->site_name;
