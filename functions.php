@@ -198,8 +198,8 @@ if ( !function_exists('berea_scripts') ) :
   				 <?php
 
   				  				 			// jquery script
-				wp_register_script('gc_jquery', get_template_directory_uri() . '/assets/js/jquery-2.1.1.min.js?e40ec2161f', array(), '1.0.0', true);
-				wp_enqueue_script('gc_jquery');
+			//	wp_register_script('gc_jquery', get_template_directory_uri() . '/assets/js/jquery-2.1.1.min.js?e40ec2161f', array(), '1.0.0', true);
+			//	wp_enqueue_script('gc_jquery');
   				
 
   			}
