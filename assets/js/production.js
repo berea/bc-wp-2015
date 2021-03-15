@@ -2343,7 +2343,7 @@ References:
 	});
 	
 })();
-jQuery(document).ready(function(){
+jQuery(document).ready(function($){
 
 if ($('#scroll-to').length > 0){
 
